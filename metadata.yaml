@@ -1,0 +1,28 @@
+
+---
+# Title of the book
+title: "2D Game Development: From Zero To Hero"
+# Inspiring Quote
+initquote: "Perseverance is the backbone of success."
+# Quote Author
+initquoteauthor: "Anonymous"
+# Dedication
+dedication:
+    - To my family
+    - To my friends, both international and not
+    - To whom never gives up
+# Space between quote and dedications
+vspace: 200
+# Index?
+toc: True
+# List of figures?
+lof: True
+# List of tables?
+lot: True
+# Geometry
+geometry:
+    - "lmargin=2.5cm"
+    - "rmargin=2.5cm"
+    - "tmargin=2.5cm"
+    - "lmargin=2.5cm"
+---
