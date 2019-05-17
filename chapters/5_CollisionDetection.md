@@ -17,8 +17,11 @@ Collision Reaction
 ### The "Before and After" Method
 <!-- Snapshot before and after updating, react accordingly, allows for more advanced stuff -->
 
+Some wilder stuff
+-------------------
+
 ### The "Tile + Offset" Method
-<!-- Useful for games like pacman -->
+<!-- Useful for games like pacman, check the direction where you are going using the offset, if the next cell is a wall, react -->
 
 Common Issues with Collision Detection
 ----------------------------------------
