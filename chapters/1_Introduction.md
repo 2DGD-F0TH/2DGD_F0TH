@@ -1,5 +1,5 @@
 Introduction
 =============
 
-Conventions
+Conventions used in this book
 -----------
