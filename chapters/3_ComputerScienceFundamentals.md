@@ -25,7 +25,7 @@ There are 3 types of Asymptotic notation you should know: $\Omega$, $\Theta$ and
 
 **O()** represents **an upper bound**: it's the most used notation and means that the algorithm will take **at most** as many cycles as specified.
 
-**$\Theta$()** is a **tight bound**, used when the big-O notation and the big-$\Theta$ notation have the same value, which can help define the behaviour of the algorithm better.
+**$\Theta$()** is a **tight bound**, used when the big-O notation and the big-$\Omega$ notation have the same value, which can help define the behaviour of the algorithm better.
 
 We will now talk about the most common Big-O notations, from "most efficient" to "least efficient".
 
