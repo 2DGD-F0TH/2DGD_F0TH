@@ -6,7 +6,13 @@ Finding out who hit what
 
 ### The Brute Force Method
 
+<!-- Runs at O(n^2) and is simple to implement, but can get really slow when
+there are many items on screen to check -->
+
 ### Building Quad Trees
+
+<!-- Easier on the CPU but harder to implement, every frame you build a quad tree
+and use that to check on collisions -->
 
 Collision Reaction
 --------------------
@@ -27,3 +33,6 @@ Common Issues with Collision Detection
 ----------------------------------------
 
 ### The "Bullet Through Paper" problem
+
+<!-- How a really small object at fast speeds can go through a thin wall without
+the collision detection algorithm realizing it -->

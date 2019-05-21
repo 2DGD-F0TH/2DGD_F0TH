@@ -151,7 +151,7 @@ Let's take the following truth table:
 
 Said table can contain any number of variables (we'll see how to implement those). To be precise, this table represents the formula `A XOR B` (XOR means 'exclusive or').
 
-Let's arrange it into a double-entry table, like this:
+Let's arrange it into a double-entry table, like this (Values of A are on top, values of B are on the left):
 
 |  A/B  | **0** | **1** |
 |:-----:|:-----:|:-----:|
