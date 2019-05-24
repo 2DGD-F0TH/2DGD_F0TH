@@ -1,6 +1,8 @@
 Introduction
 =============
 
+Welcome to the book! This book aims to be an organized collection of the community's knowledge on game development techniques, algorithms and experience with the objective of being as comprehensive as possible.
+
 Conventions used in this book
 -----------
 
