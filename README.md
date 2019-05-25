@@ -16,3 +16,8 @@ To build the book you need the following software:
 - GNU Make or equivalent
 
 To Build the book you need to clone this repository and use the `make` command from the main directory.
+
+License
+--------
+
+This project is meant to be a free source of knowledge for who wants to develop their first game (but also be a reference book you can come back to), currently this project is under the Creative Commons Attribution-NonCommercial License.
