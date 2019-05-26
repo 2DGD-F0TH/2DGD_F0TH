@@ -103,7 +103,35 @@ Digital Rights Management (DRM)
 it can weigh on your game's performance and even drive away
 consumers if it's something known to spy on its users -->
 
+Another thing that can make or break a game's enjoyability is the presence of a Digital Rights Management System (shortly referred to as "DRM").
 
+A DRM is a piece of software that silently sits in the background of a game to verify its authenticity, thus limiting piracy for the first months of the game being released.
+
+A question comes up to mind: Why would an invisible piece of software influence a game?
+
+There are some major reasons why a DRM System could drive away customers:
+
+- The DRM interacts with the game in an annoying way;
+- The DRM behaves outside of its scope;
+- (An extension of the previous point) The DRM is known to spy on its users.
+
+We have cases of "DRMs interacting with the games badly" left and right, for instance the "always online" DRMs that stop you from playing the game if your connection drops for a second, or some famous instances where more DRM Systems were stacked on top of each other, slowing down the game's performance.
+
+This brings to something that many find annoying and unfair: people pay to play an original game and are hindered by DRM, while pirates are free from such hindrance for the fact that they pirated the game. You paid for the game, and you pay the price for other people pirating it, in the form of frame drops, slowdowns and sometimes flat out unplayability.
+
+Another thing players hate is having a piece of software that acts out of its scope, or even worse as a *malware*~[g]~.
+
+There have been cases of DRM systems installing themselves as *rootkits*~[g]~, making it impossible for the player to uninstall them, even after removing the game said DRM was tied to.
+
+For instance that's what happened with the free game "Sonic Gather Battle", a tournament fighter fan game starring the beloved Blue Hedgehog. This game contained a piece of software that would track your browser tabs: if you searched for cheats/mods/hacks, it would close your browser and enable a "protection stage", making the game impossible to play, by adding immortal enemies that would one-shot you.
+
+At the same time such DRM would have raw disk access and would also search for Cheat Engine installations. To top it off, the game would send the computer IP to a server to be saved in a list, so that the "protection stage" would still engage, even after a fresh install.
+
+Some research found out that the game would sometimes require administrative access to the system, which shouldn't usually happen.
+
+The bottom line is: a DRM doesn't always guarantee more people will play your game, so if you have to implement a DRM system, **do it well**, do some tests, see if there are framerate drops, stutters, see how the game behaves when the internet goes down while playing, etcetera...
+
+Some games even decided to go DRM-less, such as any game sold on the GOG (Good Old Games) marketplace. This is another important decision you have to think through, to ensure your game has the highest chance of succeeding as possible.
 
 Free-to-Play Economies and LootBoxes
 ------------------------------------
