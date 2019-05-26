@@ -118,7 +118,7 @@ bubbleSort(A : list of sortable items )
     until not swapped
 ~~~~
 
-Anything with complexity higher than `O(n^2^)` is usually considered unusable.
+Anything with complexity higher than O(n^2^) is usually considered unusable.
 
 ### O(2^n^)
 
