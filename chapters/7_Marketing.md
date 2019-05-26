@@ -54,7 +54,7 @@ Most important thing to keep in mind is: never promise without keeping your word
 You're not a big publisher, people don't trust you and will not pay you for a promise. You have to give them something worth the price, immediately enjoyable.
 Overpricing your game and justifying that because of "future release/contents" is NOT going to work either.
 
-Patreon (or crowdfunding websites in general) could be an interesting compromise for such situation, but you have to use it in the right way, and never abuse your supporters trust. Keep in mind all the basic tips for managing hype we just discussed, and make sure to respect releases/updates related to a certain amount of income.
+Patreon (or crowdfunding websites in general) could be an interesting compromise for such situation, but you have to use it in the right way, and never abuse your supporters trust. Keep in mind all the basic tips for managing hype we just discussed, and make sure to respect promised releases/updates when related to a certain amount of income from your crowdfunding (so-called crowdfunding "goals").
 
 
 Downloadable Content
