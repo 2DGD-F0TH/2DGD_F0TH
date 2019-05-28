@@ -7,6 +7,8 @@ Here follows a list of game engines, libraries and frameworks, complete with the
 SFML
 -----
 
+<https://www.sfml-dev.org/>
+
 SFML (Simple Fast Multimedia Library) is a library dedicated to creation of multimedia applications (not limited to videogames), providing a simple interface to the system's components.
 
 Relevant Bindings:
@@ -27,6 +29,8 @@ SFML is distributed under the ZLib/png license, which allows for both commercial
 
 SDL
 -------
+
+<https://www.libsdl.org/>
 
 SDL (Simple DirectMedia Layer) is one of the most famous libraries around to make multimedia applications as well as videogames.
 
@@ -55,6 +59,8 @@ The versions of SDL up to version 1.2 are instead distributed under the GNU LGPL
 Löve
 -----
 
+<http://love2d.org/>
+
 Löve is a lua-based framework for creating games, features an extensive documentation and features some levels of abstraction that help with game development.
 
 Relevant Bindings:
@@ -73,6 +79,8 @@ Löve is distributed under the ZLib/png license, which allows for both commercia
 
 Unity 3D
 --------
+
+<https://unity.com/>
 
 Unity is probably among the most famous 3D engines used to create videogames, as well as other projects that make use of its 3D capabilities (like VR/AR-based projects). It uses the C# programming language.
 
@@ -94,6 +102,8 @@ Unity is a proprietary engine, distributed under a proprietary license, with a F
 IRRlicht
 --------
 
+<http://irrlicht.sourceforge.net/>
+
 IRRlicht is a 3D engine (as in does only 3D rendering) made in C++ that aims to be high-performance.
 
 Relevant Bindings:
@@ -114,6 +124,8 @@ IRRlicht distributed under the ZLib/png license, which allows for both commercia
 Ogre3D
 ------
 
+<https://www.ogre3d.org/>
+
 Ogre3D is an open source 3D graphics engine (it's used to render 3D graphics only).
 
 Relevant Bindings:
@@ -132,6 +144,8 @@ Ogre3D comes in 2 versions: version 1.x is distributed under the GNU LGPL licens
 
 Panda3D
 ---------
+
+<https://www.panda3d.org/>
 
 Panda3D is a complete and open source 3D game engine.
 
