@@ -182,3 +182,8 @@ This mechanism has two major positives:
 - If they do it once, they're probably going to do it again. At the end they willingly watch advertisement for you.
 
 It is obvious that you shouldn't kill your player in-game over and over so you can offer them the chance of watching an advertisement to continue playing, that will be seen as a form of "pay to play", from the player's perspective.
+
+Asset Flips
+-----------
+
+<!-- Talk about how "going cheap" and just making an asset flip can hurt your game -->
