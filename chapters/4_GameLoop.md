@@ -24,10 +24,18 @@ function game():
         draw()
 ~~~~~~
 
+This abstraction will become really useful when dealing with many rows of code and keeping it neatly organized.
+
 Input
 -----
 
 ### Events vs Real Time Input
+
+Some frameworks may be able to further abstract how they process input by giving an *API~[g]~* that allows to make use of **events**.
+
+Most of the time, events will be put in a queue that will be processed separately. This way it's easier to program how to react to each event and keep our code neatly organized. The downside is that the performance of an event-driven input processing is directly tied to how many events are triggered: the more events are triggered, the longer the wait may be before we get to our processed input. Also in case of conflicting inputs (for instance pressing left and right on the keyboard), the one that gets processed later in the queue might take over.
+
+On the opposite side, we have so-called "real-time input", where at a certain point of our update routine, we check for the instantaneous status of the input peripherals and process it immediately. This allows for a faster, more reactive code and to apply some different logic (for instance pressing left and right on the keyboard can be coded to make the character stop).
 
 Timing your loop
 ----------------

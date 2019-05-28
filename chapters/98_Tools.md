@@ -2,5 +2,34 @@
 Some other useful tools
 ========================
 
-<!-- Talk about LMMS, SFXR, Gimp, Krita and other free tools to create your resources -->
-<!-- Tiled -->
+Graphics
+---------
+
+### Gimp
+
+### Krita
+
+### Aseprite
+
+### Inkscape
+
+### Blender
+
+Sounds and Music
+------------------
+
+### LMMS
+
+### SFXR/BFXR/CFXR
+
+### Audacity
+
+### Rimshot
+
+<!-- Stabyourself's drum machine -->
+
+Maps
+-----
+
+### Tiled
+
