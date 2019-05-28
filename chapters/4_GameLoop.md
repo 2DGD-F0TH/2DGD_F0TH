@@ -5,6 +5,25 @@ The Game Loop
 The Input-Update-Draw Abstraction
 -----------------------------------
 
+As animations and movies are an illusion, so are games. Games and movies show still images tens of times per second, giving us the illusion of movement.
+
+Any game and its menus can be abstracted into 3 main operations that are performed one after the other, in a loop:
+
+1) Process the user input
+2) Update the world (or menu) status
+3) Display (Draw) the updated world (or again, menu) to the screen
+
+So a pseudocode implementation of such loop would be something like the following:
+
+~~~~~~
+function game():
+    game_is_running=True
+    while game_is_running:
+        process_user_input()
+        update_world()
+        draw()
+~~~~~~
+
 Input
 -----
 
