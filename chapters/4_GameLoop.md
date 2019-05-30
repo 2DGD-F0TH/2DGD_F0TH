@@ -60,9 +60,9 @@ dt = 1.0/60.0
 game_is_running = True
 
 while game_is_running:
-    process_input()
+    process_user_input()
     update_world(dt)
-    render()
+    draw()
 ~~~~~
 
 Everything is great, until our computer starts slowing down (high load or just not enough horsepower), in that case the game will slow down.
@@ -82,9 +82,9 @@ game_is_running = True
 
 while game_is_running:
     dt = measure_time_from_last_frame()
-    process_input()
+    process_user_input()
     update_world(dt)
-    render()
+    draw()
 ~~~~~
 
 This allows to smooth the possible lag spikes, even allowing us to disable Vertical Sync and have a bit less input lag, but this approach has some drawbacks too.
@@ -93,18 +93,56 @@ Since the delta time now depends on the speed of the game, the game can "catch u
 
 Also this method can be a bit harder to manage, since every movement will have to be scaled with `dt`.
 
+### Semi-fixed Time Steps
+
+This is a special case, where we set an upper limit for our time steps and let the update loop execute as fast as possible. This way we can still simulate the world in a somewhat reliable way, avoiding the dangers of higher spikes.
+
+A semi-fixed time step approach is the following (assuming 60 fps or $dt=\frac{1}{60}$):
+
+~~~~~
+dt = 1.0/60.0
+game_is_running = True
+
+while game_is_running:
+    frametime = measure_time_from_last_frame()
+
+    while frametime > 0.0:
+        deltaTime = min(dt, frametime)
+        process_user_input()
+        update_world(dt)
+        frametime = frametime - deltaTime
+    draw()
+~~~~~
+
+This way, if the loop is running too slow, the game will slow down and the simulation won't blow up. The main disadvantage of this approach is that we're taking more update steps for each draw step, which is fine if drawing takes more than updating the world. If instead the update phase of the loop takes more than drawing it, we will spiral into a terrible situation.
+
+We can call it a "spiral of death", where the simulation will take Y seconds (real time) to simulate X seconds (of game time), with $Y>X$, being behind in your simulation makes the simulation take more steps, which will make the simulation fall behind even more, thus making the simulation lag behind more and more.
+
 ### Frame Limiting
 
-<!-- A special case of Variable Time Steps, where you have the update cycle
-run as fast as possible, while the render cycle updates at 30 or 60 fps,
-this solves some issues but is a bit harder to manage -->
+Frame limiting is a technique where we aim for a certain duration of our game loop. If an iteration of the game loop is faster than intended, such iteration will wait until we get to our target loop duration.
+
+Let's again consider a loop running at 60fps (or $dt=\frac{1}{60}$):
+
+~~~~
+targetTime = 1.0/60.0
+game_is_running = True
+
+while game_is_running:
+    dt = measure_time_from_last_frame()
+    process_user_input()
+    update_world(dt)
+    draw()
+    wait(targetTime - time_spent_this_frame())
+~~~~
+
+Even if the frame is limited, it's necessary that all updates are tied to our delta time to work correctly. With this loop the game will run **at most** at 60 frames per second, if there is a slowdown the game will slow down under 60 fps, if the game runs faster it won't go over 60fps.
 
 ### Frame Skipping/Dropping
 
-<!-- When a frame takes too long to update and render, it might be useful to
-just update the world "on paper" and skip the frame rendering, this will
-cause a small stutter in the game, but will allow the render to "catch up"
-to the update -->
+A common solution used when a frame takes longer to update and render than the target time is using the so-called "frame dropping". The game won't render the next frame, in an effort to "catch up" to the desired frame rate.
+
+This will obviously cause a perceptible visual stutter.
 
 ### Multithreaded Loops
 
