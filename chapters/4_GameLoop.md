@@ -40,15 +40,58 @@ On the opposite side, we have so-called "real-time input", where at a certain po
 Timing your loop
 ----------------
 
+When it comes to anything that remotely relates to physics (that includes videogames), we need to set the relation to time in our loop. There are many ways to set our delta time (or time steps), we'll see some of the most common.
+
+### What is a time step
+
+A time step (or delta time) is a number that will define "how much time passed" between two "snapshots" of our world (remember, the world is updating and showing in discrete intervals, giving the illusion of movement). This number will allow us to make our loop more flexible and react better to the changes of load and machines.
+
 ### Fixed Time Steps
 
-<!-- Accurate but depends on the speed of the PC: slower PC = slower game -->
+The first and simplest way is to use a fixed time step, our delta time is fixed to a certain number, which makes the simulation easier to calculate but also makes some heavy assumptions:
+
+- Vertical Synchronization is active in the game
+- The PC is powerful enough to make our game work well, 100% of the time
+
+An example of fixed time step loop can be the following (assuming 60 frames per second or $dt=\frac{1}{60}$):
+
+~~~~~
+dt = 1.0/60.0
+game_is_running = True
+
+while game_is_running:
+    process_input()
+    update_world(dt)
+    render()
+~~~~~
+
+Everything is great, until our computer starts slowing down (high load or just not enough horsepower), in that case the game will slow down.
+
+This means that every time the computer slows down, even for a microsecond, the game will slow down too, which can be annoying.
 
 ### Variable Time Steps
 
-<!-- Better with slower PCs, allows to disable VSync and have less input lag,
-but tends to blow up at really slow framerates (players jump higher with lower framerates,
-bullet-through-paper problem) also every movement has to be scaled with dt -->
+A way to limit the issues given by a fixed time step approach is to make use of variable time steps, which are simple in theory, but can prove hard to manage.
+
+The secret is measuring how much time passed between the last frame and the current frame, and use that value to update our world.
+
+An example in pseudocode could be the following:
+
+~~~~~
+game_is_running = True
+
+while game_is_running:
+    dt = measure_time_from_last_frame()
+    process_input()
+    update_world(dt)
+    render()
+~~~~~
+
+This allows to smooth the possible lag spikes, even allowing us to disable Vertical Sync and have a bit less input lag, but this approach has some drawbacks too.
+
+Since the delta time now depends on the speed of the game, the game can "catch up" in case of slowdowns; that can result in a slightly different feeling, depending on the framerate, but if there is a really bad slowdown `dt` can become really big and break our simulation, and collision detection will probably be the first victim.
+
+Also this method can be a bit harder to manage, since every movement will have to be scaled with `dt`.
 
 ### Frame Limiting
 
