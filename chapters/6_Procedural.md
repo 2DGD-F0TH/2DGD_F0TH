@@ -104,3 +104,9 @@ Where it can be used
 --------------------
 
 <!-- World generation, item generation, textures, graphics, sound, ... -->
+
+Some procedural Algorithms
+--------------------------
+
+### Maze generation
+
