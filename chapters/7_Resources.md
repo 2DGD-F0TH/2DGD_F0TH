@@ -5,7 +5,11 @@ Creating your resources
 Graphics
 ---------
 
-<!-- Underline the importance of saturation between levels, talk about pixel art, etc...-->
+### Using saturation to separate layers
+<!-- Underline the importance of saturation between levels -->
+
+### Pixel Art
+<!-- talk about pixel art, etc...-->
 
 Sounds
 ------
