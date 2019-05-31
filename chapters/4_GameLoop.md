@@ -146,6 +146,10 @@ This will obviously cause a perceptible visual stutter.
 
 ### Multithreaded Loops
 
-<!-- Talk about how you can split the game loop into an "update thread" and a
-"render thread" and how some issues are solved by making the rendering happen
-on frame later than the update, and how this introduces input lag -->
+Higher budget (AAA) games don't usually use a variation of the "classic" game loop, but instead make use of the capabilities of newer hardware. Using multiple threads (lines of execution) executing at the same time, making everything quicker and the framerate higher.
+
+Multithreaded loops are created in a way that separates the input-update part of the game loop from the drawing part of it. This way the update thread can take care of updating our simulation, while the drawing/rendering loop can take care of drawing the result to screen.
+
+The catch is that we can't just wait for the input-update thread to finish before rendering, that wouldn't make it quicker than just using a one-threaded game loop: instead we make the rendering thread "lag behind" the input-update thread by *1 frame* - this way while the input-update thread takes care of the frame number $n$, the drawing thread will be rendering the prepared frame number $n-1$.
+
+This 1-frame difference between updating and rendering introduces lag that can be quantified between *16.67ms* (at 60fps) and *33.3ms* (at 30fps), which needs to be added with the 2-5 ms of the LCD refresh rate, and other factors that can contribute to lag. In some games where extreme precision is needed, this could be considered unacceptable, so a single-threaded loop could be considered more fitting.
