@@ -49,6 +49,17 @@ Graphically it can be represented by placing the tail of the arrow `v` on the he
 
 <!-- Talk about how to get a vector's length/magnitude and how to obtain a unit vector from that -->
 
+Matrices
+---------
+
+### What is a matrix
+
+### Matrix sum and subtraction
+
+### Multiplication by a scalar
+
+### Multiplication between matrices
+
 Coordinate Systems on computers
 ---------------------------------
 

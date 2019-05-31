@@ -152,4 +152,10 @@ Multithreaded loops are created in a way that separates the input-update part of
 
 The catch is that we can't just wait for the input-update thread to finish before rendering, that wouldn't make it quicker than just using a one-threaded game loop: instead we make the rendering thread "lag behind" the input-update thread by *1 frame* - this way while the input-update thread takes care of the frame number $n$, the drawing thread will be rendering the prepared frame number $n-1$.
 
+| Thread       |        |        |        |        |        |        |
+| :----------: | :----: | :----: | :----: | :----: | :----: | :----: |
+| Updating     | 1      | 2      | 3      | 4      | 5      | 6      |
+| Rendering    |        | 1      | 2      | 3      | 4      | 5      |
+
+
 This 1-frame difference between updating and rendering introduces lag that can be quantified between *16.67ms* (at 60fps) and *33.3ms* (at 30fps), which needs to be added with the 2-5 ms of the LCD refresh rate, and other factors that can contribute to lag. In some games where extreme precision is needed, this could be considered unacceptable, so a single-threaded loop could be considered more fitting.
