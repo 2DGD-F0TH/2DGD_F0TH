@@ -43,14 +43,16 @@ Graphically it can be represented by placing the tail of the arrow `v` on the he
 
 ### Scaling Vectors
 
-<!-- Talk about multiplying a vector by a scalar -->
+<!-- TODO: Talk about multiplying a vector by a scalar -->
 
 ### Normalizing Vectors
 
-<!-- Talk about how to get a vector's length/magnitude and how to obtain a unit vector from that -->
+<!-- TODO: Talk about how to get a vector's length/magnitude and how to obtain a unit vector from that -->
 
 Matrices
 ---------
+
+<!-- TODO: Explain matrices -->
 
 ### What is a matrix
 

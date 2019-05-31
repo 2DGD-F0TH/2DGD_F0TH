@@ -103,10 +103,11 @@ Being uncertain, procedural generation makes set events harder to script, if not
 Where it can be used
 --------------------
 
-<!-- World generation, item generation, textures, graphics, sound, ... -->
+<!-- TODO: World generation, item generation, textures, graphics, sound, ... -->
 
 Some procedural Algorithms
 --------------------------
 
-### Maze generation
+### Recursive Backtracker Algorithm
 
+<!-- TODO: Introduce the user to maze generation with the recursive backtracker algorithm -->

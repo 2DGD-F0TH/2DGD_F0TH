@@ -24,4 +24,4 @@ Code listings will be shown in monotype fonts, using syntax highlighting where p
 def pythonExample(phrase):
     print(phrase)
 ~~~~
-<!-- Show how code lists are rendered, etc... -->
+<!-- TODO: Insert more conventions, assumptions... -->

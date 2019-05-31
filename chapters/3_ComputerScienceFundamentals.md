@@ -130,6 +130,8 @@ Given an input of `n` elements, an algorithm that executes in O(2^n^) will execu
 A primer on calculating the order of your algorithms
 -----------------------------------------------------
 
+<!-- TODO: Teach people how to estimate their algorithms -->
+
 Simplifying your conditionals with Karnaugh Maps
 ------------------------------------------------
 

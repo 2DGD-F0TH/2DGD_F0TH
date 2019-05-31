@@ -6,6 +6,18 @@
 Glossary
 ========
 
+A
+--
+
+API
+: Short for "Application Programming Interface", it's a set of definitions, tools and clearly defined methods of communication between various software components.
+
+E
+--
+
+EULA
+: Short of "End User License Agreement", is essentially a contract that estabilishes the purchaser's right to use the software, usually with some limitations on how the copy can be used.
+
 M
 --
 

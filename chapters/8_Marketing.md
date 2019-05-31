@@ -6,10 +6,6 @@ Marketing your game
 The importance of being pro-consumer
 ------------------------------------
 
-<!-- Mostly explain that the publisher mentality of "getting all the money" is wrong and not
-appliable to small indie developers, and how the success of a game is based more on customer
-satisfaction than mere sales -->
-
 We live in a "Money-Driven" world. This is a fact, not an opinion. So, leaving morality out of the discussion, you can argue that the general game publisher mentality of "getting all the money" is not that wrong.
 But you don't have to be an idealist to realize that we should see the world for what it could be, and not for what it is at the moment. We should apply this mentality to every aspect of our world, game industry included.
 
@@ -201,5 +197,3 @@ This circles back to "being pro-consumer": you're not selling to a single person
 Flipping assets is the equivalent of betraying your customers, as well as living entirely on the work of who made said assets.
 
 In short: assets are a good basis to work on your game (or make placeholders), but they need to be refined to elevate the quality of your game.
-
-<!-- Talk about how "going cheap" and just making an asset flip can hurt your game -->
