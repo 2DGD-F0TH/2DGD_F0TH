@@ -159,3 +159,13 @@ The catch is that we can't just wait for the input-update thread to finish befor
 
 
 This 1-frame difference between updating and rendering introduces lag that can be quantified between *16.67ms* (at 60fps) and *33.3ms* (at 30fps), which needs to be added with the 2-5 ms of the LCD refresh rate, and other factors that can contribute to lag. In some games where extreme precision is needed, this could be considered unacceptable, so a single-threaded loop could be considered more fitting.
+
+Issues and possible solutions
+-----------------------------
+
+In this section we have a little talk about some common issues related to the game loop and its timing, and some possible solutions
+
+### Frame/Screen Tearing
+
+<!-- TODO: What is screen tearing, why it happens and explain how double buffering can be used to avoid it, also mention 3x buffer for smoothing at the cost of more input lag -->
+
