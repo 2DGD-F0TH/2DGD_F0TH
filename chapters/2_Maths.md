@@ -29,13 +29,13 @@ The pain of learning about vectors is paid off by their capacity of being added 
 
 Adding vectors is as easy as adding its "members". Let's consider the following vectors:
 
-`v = (2,4)`
+$v = (2,4)$
 
-`u = (1,5)`
+$u = (1,5)$
 
 The sum vector `s` will then be:
 
-`s = u + v = (2+1, 4+5) = (3,9)`
+$s = u + v = (2+1, 4+5) = (3,9)$
 
 Graphically it can be represented by placing the tail of the arrow `v` on the head of the arrow `u`, or vice-versa:
 
@@ -43,7 +43,29 @@ Graphically it can be represented by placing the tail of the arrow `v` on the he
 
 ### Scaling Vectors
 
-<!-- TODO: Talk about multiplying a vector by a scalar -->
+There may be situations where you need to make a vector $x$ times longer. This operation is called "scalar multiplication" and it is performed as follows:
+
+$v = (2,4)$
+
+$3 \cdot v = (2 \cdot 3, 4 \cdot 3) = (6,12)$
+
+![Example of a vector multiplied by a value of 3](./images/maths/vector_mul_3.pdf){width=30%}
+
+Obviously this works with scalars with values between $0$ and $1$:
+
+$v = (2,4)$
+
+$\frac{1}{2} \cdot v = (\frac{1}{2} \cdot 2, \frac{1}{2} \cdot 4) = (1,2)$
+
+![Example of a vector multiplied by a value of 0.5](./images/maths/vector_mul_half.pdf){width=30%}
+
+When you multiply the vector by a value less than $0$, the vector will rotate by $180\degree$.
+
+$v = (2,4)$
+
+$-2 \cdot v = (-2 \cdot 2, -2 \cdot 4) = (-4, -8)$
+
+![Example of a vector multiplied by a value of -2](./images/maths/vector_mul_minus2.pdf){width=30%}
 
 ### Normalizing Vectors
 
