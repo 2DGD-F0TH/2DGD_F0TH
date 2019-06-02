@@ -167,5 +167,14 @@ In this section we have a little talk about some common issues related to the ga
 
 ### Frame/Screen Tearing
 
-<!-- TODO: What is screen tearing, why it happens and explain how double buffering can be used to avoid it, also mention 3x buffer for smoothing at the cost of more input lag -->
+Screen tearing is a phenomenon that happens when the "generate output" stage of the game loop happens in the middle of the screen drawing a frame.
 
+This makes it so that a part of the drawn frame shows the result of an output stage, while another part shows a more updated version of the frame, given by a more recent game loop iteration.
+
+![An example of screen tearing](./images/gameloop/screentearing.png)
+
+A very used fix for this phenomenon is **double buffering**, where two color buffers are used. While the first is shown on screen, the game loop updates and draws on the second color buffer.
+
+When comes the time to draw the color buffer on screen, an operation called "flipping" is performed, where the second color buffer is shown on screen, so that the game loop can draw on the first color buffer.
+
+To smooth the game, a technique called "triple buffering" can be used, which adds a third color buffer is used to make the animation smoother at the cost of a higher input lag.
