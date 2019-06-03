@@ -192,9 +192,85 @@ The best way to understand this algorithm properly is to test it by hand and con
 
 This is a very light algorithm but can quickly become heavy on the CPU when there are many objects to check for collision. We'll see later how to limit the number of checks and make collision detection an operation that is not as heavy on our precious CPU cycles.
 
-### Line-Line collision
+### Line/Point Collision
 
-<!-- TODO: Can be useful for line-based puzzle games -->
+We can represent a segment by using its two extreme points, which proves to be a quite inexpensive way to represent a line (it's just two points). Now how do we know if a point is colliding with a line?
+
+To know if a point is colliding with a line we need... Triangles!
+
+Every triangle can be represented with 3 points, and there is a really useful theorem that we can make use of:
+
+> The sum of the lengths of any two sides must be greater than, or equal, to the length of the remaining side.
+
+So, given a triangle ABC:
+
+![Example of the triangle inequality theorem](./images/collision_detection/triangle_ineq1.pdf){width=30%}
+
+We get the following 3 inequalities:
+
+$$ \overline{AB} + \overline{BC} \leq \overline{AC} $$
+$$ \overline{AC} + \overline{BC} \leq \overline{AB} $$
+$$ \overline{AB} + \overline{AC} \leq \overline{BC} $$
+
+What is more interesting to us is that when the one of the vertices of the triangle is **on** its opposite side, the triangle degenerates:
+
+![Example of a degenerate triangle](./images/collision_detection/triangle_ineq2.pdf){width=30%}
+
+And the theorem degenerates too, to the following:
+
+$$ \overline{AC} + \overline{BC} = \overline{AB}$$
+
+So we can calculate the distance between the point and each of the two extremes of the line and we know that when the sum of such distances is equal to the length of the line, the point will be colliding with the line.
+
+In code, it would look something like the following:
+
+~~~~
+structure Point:
+    Integer x
+    Integer y
+
+structure Line:
+    Integer A
+    Integer B
+
+function distance(Point A, Point B):
+    // Calculates the distance between two points
+    return square_root((A.x + B.x)^2 + (A.y + B.y)^2)
+
+function line_point_collision(Point pt, Line ln):
+    // First, let's calculate the length of the line
+    length = distance(ln.A, ln.B)
+    // Now let's calculate the distance between the point pt
+    // and the point "A" of the line
+    pt_a = distance(ln.A, pt)
+    // Same Goes for the distance between pt and "B"
+    pt_b = distance(ln.B, pt)
+    // Now for the detection
+    if (pt_a + pt_b == length):
+        return True
+    else:
+        return False
+~~~~
+
+It could prove useful to put a "buffer zone" in here too, so that the collision detection doesn't result too jerky and precise.
+
+<!-- TODO: Line vs Point with buffer zone -->
+
+### Line/Circle Collision
+
+<!-- TODO: Dot product is used to find the closest point on the line, then Pythagorean Theorem to calculate distance between circle and line, if distance < radius, we have a hit -->
+
+### Circle/Rectangle Collision
+
+<!-- TODO: Like Line/Circle, but with the closest rectangle edge -->
+
+### Line/Line Collision
+
+<!-- TODO: Can be useful for line-based puzzle games, like the untangle puzzle -->
+
+### Line/Rectangle Collision
+
+<!-- TODO: Just a Line/Line collision done 4 times: one for each side of the rectangle -->
 
 ### Pixel-Perfect collision
 
