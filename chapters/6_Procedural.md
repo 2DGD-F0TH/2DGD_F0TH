@@ -103,9 +103,17 @@ Being uncertain, procedural generation makes set events harder to script, if not
 Where it can be used
 --------------------
 
-<!-- TODO: World generation, item generation, textures, graphics, sound, ... -->
+Procedural (and random) generation can be used practically anywhere inside of a videogame, some examples could be the following:
 
-Some procedural Algorithms
+- **World Generation:** Using an algorithm called "Perlin noise", you can generate a so-called "noise map" that can be used to generate 3D terrain, using giving areas with higher concentration a higher height. For dungeon-crawling games you might want to use a variation of maze generation algorithms, and so on so forth;
+- **Environment Population:** You can use an algorithm to position certain items in the world, and if an element of randomness is required, positioning items in a world is certainly a very easy task and can add a lot to your game, but be careful not to spawn items into walls!;
+- **Item Creation:** As stated previously, you can use procedural generation to create unique and randomized items, with different "parts" or different "stats", the possibilities are endless!;
+- **Enemies and NPCs:** Even enemies and NPCs can be affected by procedural (and randomized) generation, giving every NPC a slightly different appearance, or scaling an enemy size to create a "behemoth" version of a slime, maybe by pumping its health points too, randomizing texture colors, again the possibilities are endless;
+- **Textures:** It's possible to colorize textures, giving environments different flavours, as well adding a layer of randomness to a procedurally generated texture can greatly enhance a game's possibilities;
+- **Animations:** An example of procedurally generated animations are the so-called "ragdoll physics", where you calculate the forces impacting a certain body (and it's "virtual skeleton"). A simpler way could be making the program choose randomly between a set of pre-defined "jumping animations" to spice up the game;
+- **Sounds:** You can use sound manipulation libraries to change the pitch of a sound, to give a bit of randomness to it, as well as using "sound spatialization" by changing the volume of a sound to make it come from a certain place, compared to the player's position.
+
+Some useful Algorithms
 --------------------------
 
 ### Recursive Backtracker Algorithm
