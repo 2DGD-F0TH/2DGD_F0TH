@@ -3,7 +3,7 @@
 
 This is a small project that aims to gather some knowledge about game development and make it available to everyone.
 
-As well as being a source of knowledge this project aims to be a learning experience too, by gathering contributions from the community.
+As well as being a source of knowledge this project aims to be a learning experience for everyone involved too, by gathering contributions from the community, teaching others how to make a game, teaching algorithms but also learning tips and tricks from people who are more experienced.
 
 
 Building the book
