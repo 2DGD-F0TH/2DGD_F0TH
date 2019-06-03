@@ -67,6 +67,24 @@ $-2 \cdot v = (-2 \cdot 2, -2 \cdot 4) = (-4, -8)$
 
 ![Example of a vector multiplied by a value of -2](./images/maths/vector_mul_minus2.pdf){width=30%}
 
+### Dot Product
+
+The dot product (or scalar product, projection product or inner product) is defined as follows:
+
+Given two n-dimensional vectors $v = [v_1, v_2, ... v_n]$ and $u = [u_1, u_2, ..., u_n]$ the dot product is defined as:
+
+$$ v \cdot u = \sum\limits_{i=1}^n (v_i \cdot u_i) = (v_1 \cdot u_1) + ... + (v_n \cdot u_n)$$
+
+So in our case, we can easily calculate the dot product of two two-dimensional vectors $v = [v_1, v_2]$ and $u = [u_1, u_2]$ as:
+
+$$ v \cdot u = (v_1 \cdot u_1) + (v_2 \cdot u_2)$$
+
+Let's make an example:
+
+Given the vectors $v = [1,2]$ and $u = [4,3]$, the dot vector is:
+
+$$ v \cdot u = (1 \cdot 4) + (2 \cdot 3) = 4 + 6 = 10 $$
+
 ### Normalizing Vectors
 
 <!-- TODO: Talk about how to get a vector's length/magnitude and how to obtain a unit vector from that -->
