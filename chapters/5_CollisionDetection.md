@@ -39,6 +39,10 @@ function point_collision(point A, point B):
 
 This algorithm consists in a constant number of operations, so it runs in O(1).
 
+Since numbers in computers can be **really** precise, a collision between two points may be a bit too precise, so it could prove useful to have a "buffer" around the point, so that we can say that the two points collided when they're **around the same place**.
+
+<!-- TODO: Add point/point collision with buffer zone -->
+
 ### Collision Between A Point and a Circle
 
 Now a circle comes into the mix, a circle has two major characteristics: a **center** and a **radius**.
@@ -191,6 +195,10 @@ This is a very light algorithm but can quickly become heavy on the CPU when ther
 ### Line-Line collision
 
 <!-- TODO: Can be useful for line-based puzzle games -->
+
+### Pixel-Perfect collision
+
+<!-- TODO: Talk about pixel-perfect (bitmask) collision -->
 
 Finding out who hit what
 ------------------------
