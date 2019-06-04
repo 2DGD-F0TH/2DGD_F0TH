@@ -230,8 +230,8 @@ structure Point:
     Integer y
 
 structure Line:
-    Integer A
-    Integer B
+    Point A
+    Point B
 
 function distance(Point A, Point B):
     // Calculates the distance between two points
