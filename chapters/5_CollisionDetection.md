@@ -274,7 +274,48 @@ It could prove useful to put a "buffer zone" in here too, so that the collision 
 
 ### Pixel-Perfect collision
 
-<!-- TODO: Talk about pixel-perfect (bitmask) collision -->
+Pixel perfect collision is the most precise type of collision detection, but it's also by far the slowest.
+
+The usual way to perform collision detection is using **bitmasks** which are 1-bit per pixel representation of the sprites (white is usually considered a "1" while black is considered a "0").
+
+A logic "AND" operation is performed, pixel-by-pixel, on the bitmasks; with the sprite position taken in consideration, as soon as the first AND returns a "True" a collision occurred.
+
+~~~~
+structure Color:
+    Integer colorData
+    Boolean isWhite()
+
+structure Bitmask:
+    Color[] data
+    Color getColor(x, y)
+
+structure Sprite:
+    Bitmask bitmask
+    Integer x
+    Integer y
+    Integer width
+    Integer height
+
+function pixel_perfect_collision(Sprite A, Sprite B):
+    // Calculate the intersecting rectangle to limit checks
+    x1 = max(A.x, B.x)
+    x2 = min((A.x + A.width), (B.x + B.width))
+
+    y1 = max(A.y, B.y)
+    y2 = min((A.y + A.height), (B.y + B.height))
+
+    // For each pixes in the intersecting rectangle, let's check
+    for each y from y1 to y2:
+        for each x from x1 to x2:
+            a = A.bitmask.getColor(x - A.x, y - A.y)
+            b = B.bitmask.getColor(x - B.x, y - B.y)
+
+            if (a.isWhite() AND b.isWhite()):
+                return True
+
+    // If no collision is occurred by the end of the checking, we're safe
+    return False
+~~~~
 
 Finding out who hit what
 ------------------------
