@@ -23,6 +23,7 @@ I
 
 IDE
 : Short for "Integrated Development Environment", it is a program that integrates a text editor with syntax highlighting, a compiler, a code checker, a project explorer and other features (like a tag explorer, for instance).
+
 M
 --
 
