@@ -18,6 +18,11 @@ E
 EULA
 : Short of "End User License Agreement", is essentially a contract that estabilishes the purchaser's right to use the software, usually with some limitations on how the copy can be used.
 
+I
+--
+
+IDE
+: Short for "Integrated Development Environment", it is a program that integrates a text editor with syntax highlighting, a compiler, a code checker, a project explorer and other features (like a tag explorer, for instance).
 M
 --
 
