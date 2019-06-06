@@ -20,6 +20,13 @@ Don't forget to eat, take regular breaks, go to bed early and just keep some hea
 
 If you don't keep a healthy work style, your productivity is going to take a dive: you'll find yourself having trouble solving the simplest problems, your creativity will be nonexistent and you'll get extremely frustrated.
 
+Stick to what you know
+-----------------------
+
+A Game Jam event is not a good place where you learn a new language or game engine, you barely have time to make a game, let alone learn a completely new language and even a new engine!
+
+If you find yourself having to choose between the newest game engine and something you already used two or three times: **go with what you know**.
+
 Hacking is better than planning (But still plan ahead!)
 -------------------------------------------------------
 
@@ -95,4 +102,14 @@ A Post-Mortem is a reflection on what happened and how to make yourself and your
 
 Obviously a smart move would be reading a bunch of Post-Mortems yourself, so to learn more about Game Jams and avoid some common pitfalls of such an experience.
 
-<!-- TODO: One of the most useful things to do is looking back and see what went well and what didn't. Another good thing is reading about other people's post-mortems -->
+An interesting take on Post-Mortems could be making a time-lapse video of your work, there are applications ready to use that will take screenshots at regular intervals of your desktop and your webcam (with a nice picture-in-picture) if enabled. At the end of everything, the program will take care of composing a time-lapse video for you. It's interesting to see a weekend go fast forward and say "oh, I remember that".
+
+Most common pitfalls in Game Jams
+----------------------------------
+
+To conclude this section, we'll see some of the most common problems in game jams:
+
+- **Bite more than you can chew:** Aiming too high and being victims of "feature creep" is a real problem, the only solution is staying focused and keep everything as simple as possible and be really choosy on the features to add to the game: take time to refine what you have, instead of adding features;
+- **Limitations related to tools:** If your tools have issues importing a certain asset or you are not able to create your art for the game then you're in real trouble. You can't afford to waste time troubleshooting something that is not even related to your game. You need to be prepared when the jam starts, test your tools and gather a toolbox you can rely on, something that will guarantee you stability and productivity.
+- **Packaging:** This is a hard one - sometimes the people who want to try your game won't be able to play it, either because of installer issues or missing DDLs. Make sure to package your game with everything needed and eventually to link to the possible missing components (like the Visual C++ Redist from Microsoft). The easier it is for the evaluators to try your game, the better.
+- **Running out of time or motivation:** plan well and be optimistic, you can do it!
