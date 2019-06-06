@@ -41,7 +41,7 @@ Graphically it can be represented by placing the tail of the arrow `v` on the he
 
 ![Graphical representation of a sum of vectors](./images/maths/vector_sum.pdf){width=30%}
 
-### Scaling Vectors
+### Scaling Vectors {#scalingvectors}
 
 There may be situations where you need to make a vector $x$ times longer. This operation is called "scalar multiplication" and it is performed as follows:
 
@@ -85,9 +85,21 @@ Given the vectors $v = [1,2]$ and $u = [4,3]$, the dot vector is:
 
 $$ v \cdot u = (1 \cdot 4) + (2 \cdot 3) = 4 + 6 = 10 $$
 
-### Normalizing Vectors
+### Vector Length and Normalization
 
-<!-- TODO: Talk about how to get a vector's length/magnitude and how to obtain a unit vector from that -->
+Given a vector $a = [a_1, a_2, ..., a_n]$, you can define the length of the vector as:
+
+$$ ||a|| = \sqrt{a_1^2 + a_2^2 + ... + a_n^2}$$
+
+Or alternatively
+
+$$ ||a|| = \sqrt{a \cdot a}$$
+
+We can get a 1-unit long vector by "normalizing" it, getting a vector that is useful to affect (or indicate) direction without affecting magnitude. A normalized vector is usually indicated with a "hat", so the normalized vector of $a = [a_1, a_2, ..., a_n]$ is
+
+$$ \hat{a} = \frac{a}{||a||} $$
+
+Knowing that the length of a vector is a scalar (a number, not a vector), normal scalar multiplication rules apply. (See [Scaling Vectors](#scalingvectors))
 
 Matrices
 ---------
