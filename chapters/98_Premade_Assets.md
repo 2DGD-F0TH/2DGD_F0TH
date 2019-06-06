@@ -7,5 +7,5 @@ In this appendix we'll take a look at a small list of websites that contain reso
 | Address                                   | Graphics   | Music      | Sound Samples | Models   | Knowledge  |
 | :--------:                                | :------:   | :----:     | :-----------: | :------: | :--------: |
 | <https://github.com/sindresorhus/awesome> |            |            |               |          | \checkmark |
-| <https://openclipart.org/>               | \checkmark |            |               |          |            |
+| <https://openclipart.org/>                | \checkmark |            |               |          |            |
 | <https://freesound.org/>                  |            | \checkmark | \checkmark    |          |            |

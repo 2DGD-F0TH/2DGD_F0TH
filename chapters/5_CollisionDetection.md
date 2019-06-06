@@ -357,13 +357,19 @@ function line_circle_collision(Circle circle, Line line):
 
 Circle/Rectangle collision is performed by executing a Circle/Line algorithm with the circle and the closest side of the rectangle as arguments.
 
+\placeholder
+
 <!-- TODO: Like Line/Circle, but with the closest rectangle edge -->
 
 ### Line/Line Collision
 
+\placeholder
+
 <!-- TODO: Can be useful for line-based puzzle games, like the untangle puzzle -->
 
 ### Line/Rectangle Collision
+
+\placeholder
 
 <!-- TODO: Just a Line/Line collision done 4 times: one for each side of the rectangle -->
 
@@ -454,6 +460,8 @@ In this example, the algorithm completes in 49 steps, but you can imagine how a 
 
 ### Building Quad Trees
 
+\placeholder
+
 <!-- TODO: Easier on the CPU but harder to implement, every frame you build a quad tree
 and use that to check on collisions -->
 
@@ -461,15 +469,24 @@ Collision Reaction
 --------------------
 
 ### The Direction + Velocity Method
+
+\placeholder
+
 <!-- TODO: A-la mario 1, you get inside a block, and react according to where the character is going-->
 
 ### The "Before and After" Method
+
+\placeholder
+
 <!-- TODO: Snapshot before and after updating, react accordingly, allows for more advanced stuff -->
 
 Some wilder stuff
 -------------------
 
 ### The "Tile + Offset" Method
+
+\placeholder
+
 <!-- TODO: Useful for games like pacman, check the direction where you are going using the offset, if the next cell is a wall, react -->
 
 Common Issues with Collision Detection
@@ -477,9 +494,13 @@ Common Issues with Collision Detection
 
 ### The "Bullet Through Paper" problem
 
+\placeholder
+
 <!-- TODO: How a really small object at fast speeds can go through a thin wall without
 the collision detection algorithm realizing it -->
 
 ### Precision Issues
+
+\placeholder
 
 <!-- TODO: Sometimes when sub-pixel precision is involved, there might be instances where the character stays "floating" for a single frame, giving a "spazzy" animation -->

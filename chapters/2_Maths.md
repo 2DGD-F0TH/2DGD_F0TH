@@ -187,6 +187,8 @@ $$A_{2,3}^T  = \begin{bmatrix}
 
 ### Multiplication between matrices
 
+\placeholder
+
 <!-- TODO: Try to explain matrix multiplication in a decent way -->
 
 Coordinate Systems on computers
