@@ -104,15 +104,90 @@ Knowing that the length of a vector is a scalar (a number, not a vector), normal
 Matrices
 ---------
 
-<!-- TODO: Explain matrices -->
-
 ### What is a matrix
+
+Matrices are essentially an $m \times n$ array of numbers, which are used to represent linear transformations.
+
+Here is an example of a $2 \times 3$ matrix.
+
+$$A_{2,3} =\begin{bmatrix}
+    2 & 1 & 4\\
+    3 & 2 & 0
+\end{bmatrix}$$
 
 ### Matrix sum and subtraction
 
+Summing and subtracting $m \times n$ matrices is done by summing or subtracting each element, here is a simple example. Given the following matrices:
+
+$$ A_{2,3} = \begin{bmatrix}
+    2 & 1 & 4\\
+    3 & 2 & 0
+\end{bmatrix} B_{2,3} = \begin{bmatrix}
+    1 & 3 & 0\\
+    4 & 2 & 4
+\end{bmatrix}$$
+
+We have that:
+
+$$ A_{2,3} + B_{2,3} = \begin{bmatrix}
+    2 & 1 & 4\\
+    3 & 2 & 0
+\end{bmatrix} + \begin{bmatrix}
+    1 & 3 & 0\\
+    4 & 2 & 4
+\end{bmatrix} = \begin{bmatrix}
+    2+1 & 1+3 & 4+0 \\
+    3+4 & 2+2 & 0+4
+\end{bmatrix} = \begin{bmatrix}
+    3 & 4 & 4\\
+    7 & 4 & 4
+\end{bmatrix}$$
+
 ### Multiplication by a scalar
 
+Multiplication by a scalar works in a similar fashion to vectors, given the matrix:
+
+$$A_{2,3} =\begin{bmatrix}
+    2 & 1 & 4\\
+    3 & 2 & 0
+\end{bmatrix}$$
+
+Multiplication by a scalar is performed by multiplying each member of the matrix by the scalar, like the following example:
+
+$$3 \cdot A_{2,3} = 3 \cdot \begin{bmatrix}
+    2 & 1 & 4\\
+    3 & 2 & 0
+\end{bmatrix} = \begin{bmatrix}
+    3 \cdot 2 & 3 \cdot 1 & 3 \cdot 4\\
+    3 \cdot 3 & 3 \cdot 2 & 3 \cdot 0
+\end{bmatrix} = \begin{bmatrix}
+    6 & 3 & 12\\
+    9 & 6 & 0
+\end{bmatrix}
+$$
+
+### Transposition
+
+Given an $m \times n$ matrix $A$, its transposition is an $n \times m$ matrix $A^T$ constructed by turning rows into columns and columns into rows.
+
+Given the matrix:
+
+$$A_{2,3} =\begin{bmatrix}
+    2 & 1 & 4\\
+    3 & 2 & 0
+\end{bmatrix}$$
+
+The transpose matrix is:
+
+$$A_{2,3}^T  = \begin{bmatrix}
+    2 & 3\\
+    1 & 2\\
+    4 & 0
+\end{bmatrix}$$
+
 ### Multiplication between matrices
+
+<!-- TODO: Try to explain matrix multiplication in a decent way -->
 
 Coordinate Systems on computers
 ---------------------------------
