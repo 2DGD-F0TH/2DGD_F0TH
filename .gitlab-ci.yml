@@ -6,6 +6,7 @@ build_pdf:
     script:
         - make
     artifacts:
-        - Book.pdf
+        paths:
+            - Book.pdf
     only:
         - master
