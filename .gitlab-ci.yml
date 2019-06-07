@@ -1,0 +1,11 @@
+build_pdf:
+    image: aergus/latex
+    before_script:
+        - apt-get update -y
+        - apt-get install -y pandoc
+    script:
+        - make
+    artifacts:
+        - Book.pdf
+    only:
+        - master
