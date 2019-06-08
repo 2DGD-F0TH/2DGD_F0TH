@@ -11,6 +11,12 @@ Genre-Specific Tips, Tricks and Algorithms
 
 <!-- TODO: Just add a constant acceleration down -->
 
+### Parallax Scrolling
+
+\placeholder
+
+<!-- TODO: talk about image "loop points", how big the image should be (at least 2x the screen size in the scrolling direction) and how to loop and make a seemingly infinite background-->
+
 ### Ladders
 
 \placeholder
