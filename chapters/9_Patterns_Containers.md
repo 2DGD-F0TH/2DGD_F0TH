@@ -43,3 +43,10 @@ Each state can be created so it has its own member variables and methods: in a m
 \placeholder
 
 <!-- TODO: A simple finite state machine that allows to change states, useful for menus and stuff -->
+
+Particle Systems
+-----------------
+
+\placeholder
+
+<!-- TODO: Talk about particle systems, particles and particle emitters -->
