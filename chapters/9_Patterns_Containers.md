@@ -50,3 +50,24 @@ Particle Systems
 \placeholder
 
 <!-- TODO: Talk about particle systems, particles and particle emitters -->
+
+Timers
+------
+
+\placeholder
+
+<!-- TODO: A timer class that allows to execute a certain instruction every x seconds, abstracting the concept of frames -->
+
+Inbetweening
+--------
+
+\placeholder
+
+<!-- TODO: Also known as "tweening", allows to "smear" a value over time, usually used to generate key frames in an animation to make it seem like it moves smoothly over time, while in reality you just set the beginning and end positions, along with the time the movement should take -->
+
+Chaining
+--------
+
+\placeholder
+
+<!-- TODO: An abstraction that allows to chain operations one after another, usually said operations are timed or related to tweening -->

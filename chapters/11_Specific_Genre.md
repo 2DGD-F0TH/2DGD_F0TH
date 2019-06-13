@@ -46,3 +46,12 @@ Rhythm Games
 \placeholder
 
 <!-- TODO: Basic Beat detection or how to somehow sync music and gameplay -->
+
+Match-x Games
+--------------
+
+### Finding and processing Matches
+
+\placeholder
+
+<!-- TODO: How to find the matches in match-3 style games -->
