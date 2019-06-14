@@ -9,3 +9,4 @@ In this appendix we'll take a look at a small list of websites that contain reso
 | <https://github.com/sindresorhus/awesome> |            |            |               |          | \checkmark |
 | <https://openclipart.org/>                | \checkmark |            |               |          |            |
 | <https://freesound.org/>                  |            | \checkmark | \checkmark    |          |            |
+| <https://opengameart.org/>                | \checkmark | \checkmark | \checkmark    |          |            |
