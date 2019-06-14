@@ -50,8 +50,20 @@ Rhythm Games
 Match-x Games
 --------------
 
-### Finding and processing Matches
+### Finding Matches
 
 \placeholder
 
 <!-- TODO: How to find the matches in match-3 style games -->
+
+### Removing Matches
+
+\placeholder
+
+<!-- TODO: Remove matches by setting the matrix elements to null -->
+
+### Replacing the removed tiles
+
+\placeholder
+
+<!-- TODO: Make the tiles fall by instantly setting the tile IDs in the matrix but tween the graphics -->
