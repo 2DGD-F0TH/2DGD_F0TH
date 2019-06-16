@@ -197,3 +197,10 @@ This circles back to "being pro-consumer": you're not selling to a single person
 Flipping assets is the equivalent of betraying your customers, as well as living entirely on the work of who made said assets.
 
 In short: assets are a good basis to work on your game (or make placeholders), but they need to be refined to elevate the quality of your game.
+
+Crowdfunding
+-------------
+
+\placeholder
+
+<!--TODO: Talk about what is crowdfunding how you should avoid "betraying your crowdfunders" (for instance by shifting marketplaces because you get a cash infusion) -->
