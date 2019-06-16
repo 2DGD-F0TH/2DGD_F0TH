@@ -69,7 +69,7 @@ Everything is great, until our computer starts slowing down (high load or just n
 
 This means that every time the computer slows down, even for a microsecond, the game will slow down too, which can be annoying.
 
-### Variable Time Steps
+### Variable Time Steps {#variable_timesteps}
 
 A way to limit the issues given by a fixed time step approach is to make use of variable time steps, which are simple in theory, but can prove hard to manage.
 
