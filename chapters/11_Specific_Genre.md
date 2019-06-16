@@ -29,6 +29,12 @@ Genre-Specific Tips, Tricks and Algorithms
 
 <!-- TODO: How to walk on slanted ground -->
 
+### Stairs
+
+\placeholder
+
+<!-- TODO: How to walk on stairs -->
+
 Top-view RPG-Like Games
 -----------------------
 
