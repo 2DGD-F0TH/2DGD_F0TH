@@ -35,6 +35,12 @@ Genre-Specific Tips, Tricks and Algorithms
 
 <!-- TODO: How to walk on stairs -->
 
+### Timed Jumps
+
+\placeholder
+
+<!-- TODO: Patterns and snippets of code to allow players to jump higher the more the jump button is pressed, mario style -->
+
 Top-view RPG-Like Games
 -----------------------
 
