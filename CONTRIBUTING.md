@@ -15,11 +15,19 @@ If you want to contribute to this project, you can follow this procedure.
 
 There are some requirements the contributions need to meet to be added to the book.
 
-- Algorithms **must** be written in pseudo-code first, in a platform agnostic way. (If you want to put other type of code, like C++ or Python, you can, but there must be a pseudo-code version first), unless they are meant to just state an example and are not meant to be applied in a real-life scenario.
+- Algorithms **must** be written in pseudo-code first, in a platform agnostic way. (If you want to put other type of code, like C++ or Python, you can, in the appropriate listings folders but there must be a pseudo-code version).
 - All algorithms **must** have at least a big-O estimate of their worst case, other estimates in addition to this one are welcome.
 - You should avoid using overly technical terms, if possible. If that is not possible, then you should define such term in the "Glossary" appendix of the book and add a ~[g]~ at the end of the term (so that the reader knows such term is in the glossary).
 
 These are not strict requirements, as in they won't make your pull request get rejected, but you may be asked to fix some things.
+
+### Adding a new programming language
+
+This book is built in a way that allows everyone to have the book in their own favourite programming language, as long as the listings for such language are available. LaTeX will take care of the highlighting.
+
+If you want to add a new programming language, navigate to the `listings` folder, copy the `pseudocode` folder and name it with your language's name.
+
+The only thing left to do is translating all the pseudo-code listings into your favourite programming language.
 
 ### Pictures
 
