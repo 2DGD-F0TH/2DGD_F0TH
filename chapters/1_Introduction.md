@@ -20,8 +20,6 @@ The logical negation of a variable will be represented with a straight line on t
 
 Code listings will be shown in monotype fonts, using syntax highlighting where possible:
 
-~~~~{.python .numberlines}
-def pythonExample(phrase):
-    print(phrase)
-~~~~
+\code{introduction/example}
+
 <!-- TODO: Insert more conventions, assumptions... -->
