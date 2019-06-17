@@ -1,0 +1,8 @@
+binarySearch(elements, element_to_find):
+    get middle element
+    is it the element_to_find?
+        yes: return the middle element position
+    else:
+        is the element to find bigger than the "middle element"?
+            yes: perform binarySearch on the half of the list bigger than "middle element"
+            no: perform binarySearch on the half of the list smaller than "middle element"

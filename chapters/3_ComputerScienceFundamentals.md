@@ -36,10 +36,7 @@ An algorithm that executes in **O(1)** is said to execute "in constant time", wh
 
 An example of a simple O(1) algorithm is an algorithm that, given a list of elements (with at least one element), returns `True` if the first element is `null`.
 
-~~~~ {.python .numberlines}
-def isFirstElementNull(elements):
-    return elements[0] == None
-~~~~
+\code{computer_science/o1}
 
 To be precise, this algorithm will perform both in O(1) and $\Omega(1)$, so it will perform in $\Theta(1)$.
 
@@ -49,16 +46,7 @@ An algorithm that executes in O(log(n)) is said to execute in "logarithmic time"
 
 An example of a O(log(n)) algorithm is the so-called "binary search" on a ordered list of items.
 
-~~~~
-binarySearch(elements, element_to_find):
-    get middle element
-    is it the element_to_find?
-        yes: return the middle element position
-    else:
-        is the element to find bigger than the "middle element"?
-            yes: perform binarySearch on the half of the list bigger than "middle element"
-            no: perform binarySearch on the half of the list smaller than "middle element"
-~~~~
+\code{computer_science/binary_search}
 
 The best case is the time when you get the element to find to be the "middle element" of the list, in that case the algorithm will execute in linear time: $\Theta(1)$ - You need **at least one lookup** ($\Omega(1)$) and **at most one lookup** ($O(1)$).
 
@@ -70,11 +58,7 @@ An algorithm that executes in O(n) is said to execute in "linear time", which me
 
 An example of a simple O(n) algorithm is the one that prints a list, element by element.
 
-~~~~
-printList(list):
-    for each element in list:
-        print element
-~~~~
+\code{computer_science/printlist}
 
 It's evident that this algorithm will call the `print` function `n` times, where `n` is the size of the list. This translates in a $\Theta(n)$ complexity, which is both $O(n)$ and $\Omega(n)$.
 
@@ -104,19 +88,7 @@ Given an input of **n** elements, these algorithms execute **n^2^** cycles, whic
 
 A simple example of a quadratic algorithm is "bubble sort". A pseudo-code implementation is written here.
 
-~~~~
-bubbleSort(A : list of sortable items )
-    n = length(A)
-    repeat
-        swapped = false
-        for i = 1 to n-1 inclusive do
-            if A[i-1] > A[i] then
-                swap( A[i-1], A[i] )
-                swapped = true
-            end if
-        end for
-    until not swapped
-~~~~
+\code{computer_science/bubblesort}
 
 Anything with complexity higher than O(n^2^) is usually considered unusable.
 
