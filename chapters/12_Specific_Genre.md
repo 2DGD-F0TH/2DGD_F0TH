@@ -92,32 +92,7 @@ Similarly we can do the same algorithm for vertical matches, by running through 
 
 Here is a pseudo-code example:
 
-~~~~
-function findHorizontalMatches():
-    matchLength = 0
-    minMatchLength = 3
-    for each row in matrix:
-        lastMatchingTile = null
-        for each column in row:
-            currentTile = matrix[row][column].tile
-            if currentTile == lastMatchingTile:
-                matchLength = matchLength + 1
-            else:
-                if matchLength >= minMatchLength:
-                    // We need to memorize all the tiles involved in the match
-                    for each tile from matrix[row][column-matchLength] to matrix[row][column]:
-                        memorize(tile)
-                else:
-                    // No matches, reset the counter and set the current tile as last matching
-                    matchLength = 1
-                    lastMatchingTile = currentTile
-            // We need to account for the right-hand border corner case
-            if column == size(matrix[row]):
-                if matchLength >= minMatchLength:
-                    // We need to memorize all the tiles involved in the match
-                    for each tile from matrix[row][column-matchLength] to matrix[row][column]:
-                        memorize(tile)
-~~~~
+\code{specific_genre/match3_findhorizontalmatches}
 
 Let's talk a second about the last rows in the algorithm: they are specifically tailored to address a corner case that happens when there is a match that ends on the right border of the screen.
 
@@ -125,32 +100,7 @@ If such code was not there, the match number would grow by one, then the for loo
 
 Similarly, we can make an algorithm that allows for vertical matches to be memorized for later removal:
 
-~~~~
-function findVerticalMatches():
-    matchLength = 0
-    minMatchLength = 3
-    for each column in matrix:
-        lastMatchingTile = null
-        for each row in column:
-            currentTile = matrix[row][column].tile
-            if currentTile == lastMatchingTile:
-                matchLength = matchLength + 1
-            else:
-                if matchLength >= minMatchLength:
-                    // We need to memorize all the tiles involved in the match
-                    for each tile from matrix[row-matchLength][column] to matrix[row][column]:
-                        memorize(tile)
-                else:
-                    // No matches, reset the counter and set the current tile as last matching
-                    matchLength = 1
-                    lastMatchingTile = currentTile
-            // We need to account for the bottom border corner case
-            if row == size(matrix[column]):
-                if matchLength >= minMatchLength:
-                    // We need to memorize all the tiles involved in the match
-                    for each tile from matrix[row-matchLength][column] to matrix[row][column]:
-                        memorize(tile)
-~~~~
+\code{specific_genre/match3_findverticalmatches}
 
 Both algorithms run in $O(n)$, where "n" is the number of tiles on the screen.
 
