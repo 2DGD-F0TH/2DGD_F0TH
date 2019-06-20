@@ -1,9 +1,9 @@
 language: generic
-os: trusty
+os: xenial
 
 before_install:
-    - apt-get install pandoc
-    - apt-get install texlive
+    - sudo apt-get install -y pandoc
+    - sudo apt-get install -y texlive
 
 script:
     - make
