@@ -1,0 +1,14 @@
+language: generic
+os: trusty
+
+before_install:
+    - apt-get install pandoc
+    - apt-get install texlive
+
+script:
+    - make
+
+deploy:
+    file: "Book.pdf"
+    on:
+        branch: master
