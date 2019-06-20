@@ -3,7 +3,7 @@ os: xenial
 
 before_install:
     - sudo apt-get install -y pandoc
-    - sudo apt-get install -y texlive
+    - sudo apt-get install -y texlive-full
 
 script:
     - make
