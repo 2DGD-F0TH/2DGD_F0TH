@@ -25,7 +25,7 @@ These are not strict requirements, as in they won't make your pull request get r
 
 This book is built in a way that allows everyone to have the book in their own favourite programming language, as long as the listings for such language are available. LaTeX will take care of the highlighting.
 
-If you want to add a new programming language, navigate to the `listings` folder, copy the `pseudocode` folder and name it with your language's name.
+If you want to add a new programming language, navigate to the `listings` folder, copy the `pseudocode` folder and name it with your language's name - [check this link](https://en.wikibooks.org/wiki/LaTeX/Source_Code_Listings#Supported_languages) for the languages supported by the plugin used.
 
 The only thing left to do is translating all the pseudo-code listings into your favourite programming language.
 
