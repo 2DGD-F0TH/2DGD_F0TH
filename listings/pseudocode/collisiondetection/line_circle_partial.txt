@@ -1,0 +1,20 @@
+structure Point:
+    Integer x
+    Integer y
+
+structure Line:
+    Point A
+    Point B
+
+structure Circle:
+    Point center
+    Integer radius
+
+...
+
+function line_circle_collision(Circle circle, Line line):
+    collides_A = circle_point_collision(circle, line.A)
+    collides_B = circle_point_collision(circle, line.B)
+    if (collides_A OR collides_B):
+        return True
+    ...

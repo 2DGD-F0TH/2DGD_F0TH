@@ -22,20 +22,11 @@ This is the simplest case: points are uni-dimensional objects, and the only way 
 
 An example algorithm would be the following:
 
-~~~~
-function point_collision(point A, point B):
-    if A.x == B.x AND A.y == B.y:
-        return True
-    else
-        return False
-~~~~
+\code{collisiondetection/point_to_point}
 
 A possible lazy/shorter version could be:
 
-~~~~
-function point_collision(point A, point B):
-    return A.x == B.x AND A.y == B.y
-~~~~
+\code{collisiondetection/point_to_point_lazy}
 
 This algorithm consists in a constant number of operations, so it runs in O(1).
 
@@ -53,38 +44,11 @@ So we need a function that calculates the distance between two points, and then 
 
 An example could be the following:
 
-~~~~
-structure Circle:
-    // Let's define a circle class/structure
-    Point center;
-    Integer radius
-
-function distance(Point A, Point B):
-    // Calculates the distance between two points
-    return square_root((A.x + B.x)^2 + (A.y + B.y)^2)
-
-function circle_point_collision(Circle A, Point B):
-    if distance(A.center, B) <= A.radius:
-        return True
-    else:
-        return False
-~~~~
+\code{collisiondetection/point_circle}
 
 Again, the lazier version:
 
-~~~~
-structure Circle:
-    // Let's define a circle class/structure
-    Point center;
-    Integer radius
-
-function distance(Point A, Point B):
-    // Calculates the distance between two points
-    return square_root((A.x + B.x)^2 + (A.y + B.y)^2)
-
-function circle_point_collision(Circle A, Point B):
-    return distance(A.center, B) <= A.radius:
-~~~~
+\code{collisiondetection/point_circle_lazy}
 
 Although slightly more heavy, computation-wise, this algorithm still runs in O(1).
 
@@ -96,38 +60,11 @@ Let's add another circle into the mix now, we can declare:
 
 In pseudo code this would be:
 
-~~~~
-structure Circle:
-    // Let's define a circle class/structure
-    Point center;
-    Integer radius
-
-function distance(Point A, Point B):
-    // Calculates the distance between two points
-    return square_root((A.x + B.x)^2 + (A.y + B.y)^2)
-
-function circle_circle_collision(Circle A, Circle B):
-    if distance(A.center, B.center) <= A.radius + B.radius:
-        return True
-    else:
-        return False
-~~~~
+\code{collisiondetection/circle_circle}
 
 The shorter version would be:
 
-~~~~
-structure Circle:
-    // Let's define a circle class/structure
-    Point center;
-    Integer radius
-
-function distance(Point A, Point B):
-    // Calculates the distance between two points
-    return square_root((A.x + B.x)^2 + (A.y + B.y)^2)
-
-function circle_circle_collision(Circle A, Circle B):
-    return distance(A.center, B.center) <= A.radius + B.radius:
-~~~~
+\code{collisiondetection/circle_circle_lazy}
 
 Again, this algorithm performs a number of operations that is constant, so it runs in O(1).
 
@@ -158,26 +95,7 @@ This has to happen for all four sides of one of the rectangle.
 
 Now we can try putting down a bit of code, we'll assume that rectangles are defined by their top-left corner (as usually happens) and their width and height:
 
-~~~~
-structure Point:
-    // Rewritten as a memo
-    Integer x
-    Integer y
-
-structure Rectangle:
-    Point corner
-    Integer width
-    Integer height
-
-function rect_rect_collision(Rectangle A, Rectangle B):
-    if (A.corner.x < B.corner.x + B.width) AND
-       (A.corner.x + A.width > B.corner.x) AND
-       (A.corner.y < B.corner.y + B.height) AND
-       (A.corner.y + A.height > A.corner.y):
-        return True
-    else:
-        return False
-~~~~
+\code{collisiondetection/AABB}
 
 This complex conditional checks 4 things:
 
@@ -224,33 +142,7 @@ So we can calculate the distance between the point and each of the two extremes 
 
 In code, it would look something like the following:
 
-~~~~
-structure Point:
-    Integer x
-    Integer y
-
-structure Line:
-    Point A
-    Point B
-
-function distance(Point A, Point B):
-    // Calculates the distance between two points
-    return square_root((A.x + B.x)^2 + (A.y + B.y)^2)
-
-function line_point_collision(Point pt, Line ln):
-    // First, let's calculate the length of the line
-    length = distance(ln.A, ln.B)
-    // Now let's calculate the distance between the point pt
-    // and the point "A" of the line
-    pt_a = distance(ln.A, pt)
-    // Same Goes for the distance between pt and "B"
-    pt_b = distance(ln.B, pt)
-    // Now for the detection
-    if (pt_a + pt_b == length):
-        return True
-    else:
-        return False
-~~~~
+\code{collisiondetection/line_point}
 
 It could prove useful to put a "buffer zone" in here too, so that the collision detection doesn't result too jerky and precise.
 
@@ -260,28 +152,7 @@ It could prove useful to put a "buffer zone" in here too, so that the collision 
 
 As in the previous paragraph, we memorize a line as a pair of Points, so checking if the circle collides with either end of the line is easy, using the Point/Circle collision algorithm.
 
-~~~~
-structure Point:
-    Integer x
-    Integer y
-
-structure Line:
-    Point A
-    Point B
-
-structure Circle:
-    Point center
-    Integer radius
-
-...
-
-function line_circle_collision(Circle circle, Line line):
-    collides_A = circle_point_collision(circle, line.A)
-    collides_B = circle_point_collision(circle, line.B)
-    if (collides_A OR collides_B):
-        return True
-    ...
-~~~~
+\code{collisiondetection/line_circle_partial}
 
 Now our next objective is finding the closest point **on the line** to the center of our circle. The details and demonstrations on the math behind this will be spared, just know the following:
 
@@ -302,56 +173,7 @@ After we made sure the point is on the line, we can measure the distance between
 
 The final algorithm should look something like this:
 
-~~~~
-structure Point:
-    Integer x
-    Integer y
-
-structure Line:
-    Point A
-    Point B
-
-structure Circle:
-    Point center
-    Integer radius
-
-function distance(Point A, Point B):
-    // Calculates the distance between two points
-    return square_root((A.x + B.x)^2 + (A.y + B.y)^2)
-
-function line_point_collision:
-    ...
-
-function circle_point_collision:
-    ...
-
-function line_circle_collision(Circle circle, Line line):
-    // We check the ends first
-    collides_A = circle_point_collision(circle, line.A)
-    collides_B = circle_point_collision(circle, line.B)
-    if (collides_A OR collides_B):
-        return True
-    // We pre-calculate "u", we'll use some variables for readability
-    x1 = line.A.x
-    x2 = line.B.x
-    xk = circle.center.x
-    y1 = line.A.y
-    y2 = line.B.y
-    yk = circle.center.y
-    u = ((xk - x1) * (x2 - x1) + (yk - y1) * (y2 - y1))/(distance(line.A, line.B))^2
-    // Now let's calculate the x and y coordinates
-    x = x1 + u * (x2 - x1)
-    y = y1 + u * (y2 - y1)
-    // "Reuse", we'll use some older functions, let's create a point, with the coordinates we found
-    P = Point(x,y)
-    // Let's check if the "closest point" we found is on the line
-    if (line_point_collision(line, P)) == False:
-        // If the point is outside the line, we return false, because the ends have already been checked against collisions
-        return False
-    else:
-        // Let's Reuse the Point/Circle Algorithm
-        return circle_point_collision(circle, P)
-~~~~
+\code{collisiondetection/line_circle}
 
 ### Circle/Rectangle Collision
 
@@ -381,42 +203,7 @@ The usual way to perform collision detection is using **bitmasks** which are 1-b
 
 A logic "AND" operation is performed, pixel-by-pixel, on the bitmasks; with the sprite position taken in consideration, as soon as the first AND returns a "True" a collision occurred.
 
-~~~~
-structure Color:
-    Integer colorData
-    Boolean isWhite()
-
-structure Bitmask:
-    Color[] data
-    Color getColor(x, y)
-
-structure Sprite:
-    Bitmask bitmask
-    Integer x
-    Integer y
-    Integer width
-    Integer height
-
-function pixel_perfect_collision(Sprite A, Sprite B):
-    // Calculate the intersecting rectangle to limit checks
-    x1 = max(A.x, B.x)
-    x2 = min((A.x + A.width), (B.x + B.width))
-
-    y1 = max(A.y, B.y)
-    y2 = min((A.y + A.height), (B.y + B.height))
-
-    // For each pixes in the intersecting rectangle, let's check
-    for each y from y1 to y2:
-        for each x from x1 to x2:
-            a = A.bitmask.getColor(x - A.x, y - A.y)
-            b = B.bitmask.getColor(x - B.x, y - B.y)
-
-            if (a.isWhite() AND b.isWhite()):
-                return True
-
-    // If no collision is occurred by the end of the checking, we're safe
-    return False
-~~~~
+\code{collisiondetection/pixel_perfect}
 
 Finding out who hit what
 ------------------------
@@ -439,20 +226,7 @@ So if we consider a list of 7 game objects, we'll need to see if 1 collides with
 
 An algorithm of this type could be the following:
 
-~~~~
-function is_collision(item A, item B):
-    // Defines how two items collide (being circles, this could be a difference of radii)
-
-items = [1, 2, 3, 4, 5, 6, 7]
-colliding_items = []
-
-for A in items:
-    for B in items:
-        if A is not B:
-            // We avoid checking if an item collides with itself, for obvious reasons
-            if is_collision(A, B):
-                colliding_items.add((A, B))
-~~~~
+\code{collisiondetection/brute_force}
 
 This algorithms runs in O(n^2^), because it checks every item with every other, even with itself.
 

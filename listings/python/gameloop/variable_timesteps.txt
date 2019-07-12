@@ -1,0 +1,7 @@
+game_is_running = True
+
+while game_is_running:
+    dt = measure_time_from_last_frame()
+    process_user_input()
+    update_world(dt)
+    draw()

@@ -1,0 +1,68 @@
+def circle_point_collision(circle, point):
+    """
+    Defines if a circle and a point are colliding
+    """
+    # Already defined earlier...
+    pass
+
+
+class Point(object):
+
+    """A simple Point"""
+
+    def __init__(self, x, y):
+        """
+        Creates the point
+        :x: The X Coordinate of the point
+        :y: The Y Coordinate of the point
+        """
+        self.x = x
+        self.y = y
+
+
+class Line(object):
+
+    """Defines a line, drawn between two points"""
+
+    def __init__(self, A, B):
+        """
+        Initializes a line between 2 points
+
+        :A: TODO
+        :B: TODO
+
+        """
+        self.A = A
+        self.B = B
+
+
+class Circle(object):
+
+    """Defines a circle, with center and radius"""
+
+    def __init__(self, center, radius):
+        """
+        Initializes the circle
+
+        :center: Center of the circle, as a point
+        :radius: Radius of the circle, as a float
+
+        """
+        self._center = center
+        self._radius = radius
+
+
+def line_circle_collision(circle, line):
+    """
+    Defines if a line collides with a circle
+
+    :circle: TODO
+    :line: TODO
+    :returns: TODO
+
+    """
+    collides_A = circle_point_collision(circle, line.A)
+    collides_B = circle_point_collision(circle, line.B)
+    if (collides_A or collides_B):
+        return True
+    # ...

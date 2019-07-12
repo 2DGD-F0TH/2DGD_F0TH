@@ -1,0 +1,66 @@
+from math import sqrt
+
+
+class Point(object):
+
+    """A simple Point"""
+
+    def __init__(self, x, y):
+        """
+        Creates the point
+        :x: The X Coordinate of the point
+        :y: The Y Coordinate of the point
+        """
+        self.x = x
+        self.y = y
+
+
+class Line(object):
+
+    """Defines a line, drawn between two points"""
+
+    def __init__(self, A, B):
+        """
+        Initializes a line between 2 points
+
+        :A: TODO
+        :B: TODO
+
+        """
+        self.A = A
+        self.B = B
+
+
+def distance(A, B):
+    """
+    Calculates the distance between two points
+
+    :A: First point
+    :B: Second Point
+    :returns: A float that represents the distance between A and B
+
+    """
+    return sqrt((A.x + B.x)**2 + (A.y + B.y)**2)
+
+
+def line_point_collision(pt, ln):
+    """
+    Calculates a possible line/point collision
+
+    :pt: A point
+    :ln: A line
+    :returns: A boolean telling us if the point and line collide
+
+    """
+    # First, let's calculate the length of the line
+    length = distance(ln.A, ln.B)
+    # Now let's calculate the distance between the point pt
+    # and the point "A" of the line
+    pt_a = distance(ln.A, pt)
+    # Same Goes for the distance between pt and "B"
+    pt_b = distance(ln.B, pt)
+    # Now for the detection
+    if (pt_a + pt_b == length):
+        return True
+    else:
+        return False

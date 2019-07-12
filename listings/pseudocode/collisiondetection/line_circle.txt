@@ -1,0 +1,48 @@
+structure Point:
+    Integer x
+    Integer y
+
+structure Line:
+    Point A
+    Point B
+
+structure Circle:
+    Point center
+    Integer radius
+
+function distance(Point A, Point B):
+    // Calculates the distance between two points
+    return square_root((A.x + B.x)^2 + (A.y + B.y)^2)
+
+function line_point_collision:
+    ...
+
+function circle_point_collision:
+    ...
+
+function line_circle_collision(Circle circle, Line line):
+    // We check the ends first
+    collides_A = circle_point_collision(circle, line.A)
+    collides_B = circle_point_collision(circle, line.B)
+    if (collides_A OR collides_B):
+        return True
+    // We pre-calculate "u", we'll use some variables for readability
+    x1 = line.A.x
+    x2 = line.B.x
+    xk = circle.center.x
+    y1 = line.A.y
+    y2 = line.B.y
+    yk = circle.center.y
+    u = ((xk - x1) * (x2 - x1) + (yk - y1) * (y2 - y1))/(distance(line.A, line.B))^2
+    // Now let's calculate the x and y coordinates
+    x = x1 + u * (x2 - x1)
+    y = y1 + u * (y2 - y1)
+    // "Reuse", we'll use some older functions, let's create a point, with the coordinates we found
+    P = Point(x,y)
+    // Let's check if the "closest point" we found is on the line
+    if (line_point_collision(line, P)) == False:
+        // If the point is outside the line, we return false, because the ends have already been checked against collisions
+        return False
+    else:
+        // Let's Reuse the Point/Circle Algorithm
+        return circle_point_collision(circle, P)
