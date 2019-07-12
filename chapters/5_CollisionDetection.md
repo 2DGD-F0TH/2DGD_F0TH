@@ -465,6 +465,14 @@ In this example, the algorithm completes in 49 steps, but you can imagine how a 
 <!-- TODO: Easier on the CPU but harder to implement, every frame you build a quad tree
 and use that to check on collisions -->
 
+### Calculating the position of tiles
+
+\placeholder
+
+<!-- TODO: This is used in games that use tiles as means to create a level, you can calculate the
+position of an entity in the tilemap (as a tile) and immediately know what tiles can be collided with,
+without having to check every single tile -->
+
 Collision Reaction
 --------------------
 
