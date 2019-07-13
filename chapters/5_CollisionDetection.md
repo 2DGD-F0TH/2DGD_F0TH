@@ -241,11 +241,41 @@ and use that to check on collisions -->
 
 ### Calculating the position of tiles
 
-\placeholder
+When you are using tiles to build a level, it can prove hard to be able to use quad trees or brute force methods to limit the number of collision checks inside your game.
 
-<!-- TODO: This is used in games that use tiles as means to create a level, you can calculate the
-position of an entity in the tilemap (as a tile) and immediately know what tiles can be collided with,
-without having to check every single tile -->
+Using a bit of math is probably the easiest and most efficient method to find out which collisions happened.
+
+Let's take an example level:
+
+![Example tile-based level](images/collision_detection/Tile_Calc_Example_Level_1.png){width=40%}
+
+If a game entity is falling, like in the following example:
+
+![Tile-based example: falling](images/collision_detection/Tile_Calc_Falling.png){width=40%}
+
+Using the simple AABB collision detection, we will need to check only if the two lowest points of the sprite have collided with any tile in the level.
+
+First of all let's consider a level as a 2-dimensional array of tiles and all the tiles have the same size, it is evident that we have two game entities that work with different measures: the character moves pixel-by-pixel, the ground instead uses tiles. We need something to make a conversion.
+
+Assuming `TILE_WIDTH` and `TILE_HEIGHT` as the sizes of the single tiles, we'll have the following function:
+
+\code{collisiondetection/tile_conversion}
+
+To know which tiles we need to check for collision, we just have to check the two red points (see the previous image), use the conversion function and then do a simple AABB check on them.
+
+\code{collisiondetection/tile_collision}
+
+Considering that this algorithm calculates its own colliding tiles, we can state that its complexity is `O(n)` with `n` equal to the number of possibly colliding tiles calculated.
+
+If an object is bigger than a single tile, like the following example:
+
+![Example tile-based level with a bigger object](images/collision_detection/Tile_Calc_Example_Level_2.png){width=40%}
+
+We will need to calculate a series of intermediate points (using the `TILE_WIDTH` and `TILE_HEIGHT` measures) that will be used for the test
+
+![Tile-based example with a bigger object: falling](images/collision_detection/Tile_Calc_Falling_2.png){width=40%}
+
+And using the same method the colliding tiles can be found without much more calculations than the previous algorithm, actually we can use exactly the same algorithm with a different list of points to test.
 
 Collision Reaction
 --------------------
