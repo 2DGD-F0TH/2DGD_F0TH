@@ -18,6 +18,12 @@ E
 EULA
 : Short of "End User License Agreement", is essentially a contract that estabilishes the purchaser's right to use the software, usually with some limitations on how the copy can be used.
 
+H
+--
+
+HUD
+: Short of "Heads Up Display", in games it usually shows your health, ammunition, minimap and other information.
+
 I
 --
 
