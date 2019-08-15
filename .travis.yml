@@ -10,5 +10,8 @@ script:
 
 deploy:
     file: "Book.pdf"
+    draft: true
+    api_key:
+        secure: a787b312d872383e265362bbf8a022d77214f1fc
     on:
         branch: master
