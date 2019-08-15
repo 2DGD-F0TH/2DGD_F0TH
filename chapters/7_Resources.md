@@ -33,6 +33,8 @@ The items get scaled accordingly and there is no real need to do heavy calculati
 
 ### Using limited color palettes
 
+\placeholder
+
 <!-- TODO: Talk about how to make your art consistent using palettes, talk about DawnBringer's palette -->
 
 ### Dithering
