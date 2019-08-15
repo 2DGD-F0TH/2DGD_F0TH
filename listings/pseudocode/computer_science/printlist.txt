@@ -1,0 +1,3 @@
+printList(list):
+    for each element in list:
+        print element

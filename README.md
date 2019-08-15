@@ -15,6 +15,11 @@ To build the book you need the following software:
 - TexLive or equivalent
 - GNU Make or equivalent
 
+Before building the book, you might want to set your programming language in the `metadata.yaml` file. The programming languages currently available are:
+
+- Pseudocode (which is the empty "" option)
+- Python (proglang set to "python")
+
 To Build the book you need to clone this repository and use the `make` command from the main directory.
 
 License

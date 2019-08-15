@@ -15,14 +15,7 @@ Any game and its menus can be abstracted into 3 main operations that are perform
 
 So a pseudocode implementation of such loop would be something like the following:
 
-~~~~~~
-function game():
-    game_is_running=True
-    while game_is_running:
-        process_user_input()
-        update_world()
-        draw()
-~~~~~~
+\code{gameloop/gameloop}
 
 This abstraction will become really useful when dealing with many rows of code and keeping it neatly organized.
 
@@ -55,15 +48,7 @@ The first and simplest way is to use a fixed time step, our delta time is fixed 
 
 An example of fixed time step loop can be the following (assuming 60 frames per second or $dt=\frac{1}{60}$):
 
-~~~~~
-dt = 1.0/60.0
-game_is_running = True
-
-while game_is_running:
-    process_user_input()
-    update_world(dt)
-    draw()
-~~~~~
+\code{gameloop/fixed_timesteps}
 
 Everything is great, until our computer starts slowing down (high load or just not enough horsepower), in that case the game will slow down.
 
@@ -77,15 +62,7 @@ The secret is measuring how much time passed between the last frame and the curr
 
 An example in pseudocode could be the following:
 
-~~~~~
-game_is_running = True
-
-while game_is_running:
-    dt = measure_time_from_last_frame()
-    process_user_input()
-    update_world(dt)
-    draw()
-~~~~~
+\code{gameloop/variable_timesteps}
 
 This allows to smooth the possible lag spikes, even allowing us to disable Vertical Sync and have a bit less input lag, but this approach has some drawbacks too.
 
@@ -99,20 +76,7 @@ This is a special case, where we set an upper limit for our time steps and let t
 
 A semi-fixed time step approach is the following (assuming 60 fps or $dt=\frac{1}{60}$):
 
-~~~~~
-dt = 1.0/60.0
-game_is_running = True
-
-while game_is_running:
-    frametime = measure_time_from_last_frame()
-
-    while frametime > 0.0:
-        deltaTime = min(dt, frametime)
-        process_user_input()
-        update_world(dt)
-        frametime = frametime - deltaTime
-    draw()
-~~~~~
+\code{gameloop/semifixed_timesteps}
 
 This way, if the loop is running too slow, the game will slow down and the simulation won't blow up. The main disadvantage of this approach is that we're taking more update steps for each draw step, which is fine if drawing takes more than updating the world. If instead the update phase of the loop takes more than drawing it, we will spiral into a terrible situation.
 
@@ -124,17 +88,7 @@ Frame limiting is a technique where we aim for a certain duration of our game lo
 
 Let's again consider a loop running at 60fps (or $dt=\frac{1}{60}$):
 
-~~~~
-targetTime = 1.0/60.0
-game_is_running = True
-
-while game_is_running:
-    dt = measure_time_from_last_frame()
-    process_user_input()
-    update_world(dt)
-    draw()
-    wait(targetTime - time_spent_this_frame())
-~~~~
+\code{gameloop/frame_limiting}
 
 Even if the frame is limited, it's necessary that all updates are tied to our delta time to work correctly. With this loop the game will run **at most** at 60 frames per second, if there is a slowdown the game will slow down under 60 fps, if the game runs faster it won't go over 60fps.
 

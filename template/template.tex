@@ -137,6 +137,11 @@ $if(listings)$
 \newcommand{\passthrough}[1]{\lstset{mathescape=false}#1\lstset{mathescape=true}}
 \usepackage{listings}
 \usepackage{color}
+$if(proglang)$
+\newcommand{\code}[1]{\lstinputlisting[language=$proglang$]{./listings/$proglang$/#1.txt}}
+$else$
+\newcommand{\code}[1]{\lstinputlisting{./listings/pseudocode/#1.txt}}
+$endif$
 
 \definecolor{mygreen}{rgb}{0,0.6,0}
 \definecolor{mygray}{rgb}{0.5,0.5,0.5}
@@ -166,7 +171,6 @@ $if(listings)$
   stepnumber=2,                    % the step between two line-numbers. If it's 1, each line will be numbered
   stringstyle=\color{mymauve},     % string literal style
   tabsize=4,	                   % sets default tabsize to 2 spaces
-  title=\lstname                   % show the filename of files included with \lstinputlisting; also try caption instead of title
 }
 $endif$
 $if(lhs)$

@@ -156,6 +156,29 @@ You could question me, stating that lootboxes are gambling microtransactions. Yo
 
 Now many countries are making an effort to regulate lootboxes (some even making them straight up illegal), so you should be always informed about local laws, and if you decide to implement them, you should know the duties that come with it.
 
+#### The human and social consequences of Lootboxes
+
+Among all monetization schemes, lootboxes are probably among the most controversial. At least the ones that are paid with real-life money.
+
+The objective of lootboxes and microtransactions is to generate a secondary revenue that some experts call "recurrent user spending".
+
+The idea behind lootboxes is having a prize pool from where a random prize is selected, the user buys a lootbox and gets a randomized item (or set of items), usually accompanied by an epic set of animations, colors and music.
+
+This mechanic can remind someone of slot machines, which share the same psychological principle behind their idea.
+
+Flashy lights and music are tailored to trigger certain chemical reactions in our brains, which will make them seem fun. This adds to all the "off by one" psychology, that will hook you to have "one more go" (how many times you heard of people losing the lottery because of numbers "off by one digit"?).
+
+The situation gets even more serious when you want a very specific item in the prize pool, which lowers the chances of a win in the player's eyes and consolidates the "one more go" way of thinking.
+
+Things become horrible when kids are involved, if they see their father buying them a lootbox and learn how to do it, sooner or later the credit card will be rejected (and it happened - [internet archive link to a BBC article](http://web.archive.org/web/20190712061732/https://www.bbc.com/news/technology-48908766)).
+
+The situation becomes catastrophic when you start putting people with compulsive disorders, or people with gaming addiction, gambling addiction and the so-called "whales" (people with high amounts of money and high willingness to spend such money in videogames). Some people use videogames as a mean to escape their gambling addiction and lootboxes can trigger the same mechanisms in the peoples' brains.
+
+This obviously has serious consequences when it comes to consumer trust and the image of your game development studio (or even yourself) that can culminate into a full-blown boycott of your products.
+
+Remember: you are not a big publisher, you cannot take the hit of a really bad decision.
+
+
 ### Free-to-Play gaming and Mobile Games
 
 Let's talk a bit about free to play games.

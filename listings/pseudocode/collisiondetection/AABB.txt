@@ -1,0 +1,18 @@
+structure Point:
+    // Rewritten as a memo
+    Integer x
+    Integer y
+
+structure Rectangle:
+    Point corner
+    Integer width
+    Integer height
+
+function rect_rect_collision(Rectangle A, Rectangle B):
+    if (A.corner.x < B.corner.x + B.width) AND
+       (A.corner.x + A.width > B.corner.x) AND
+       (A.corner.y < B.corner.y + B.height) AND
+       (A.corner.y + A.height > A.corner.y):
+        return True
+    else:
+        return False

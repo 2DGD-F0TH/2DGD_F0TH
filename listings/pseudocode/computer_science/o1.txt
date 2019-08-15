@@ -1,0 +1,2 @@
+function isFirstElementNull(elements):
+    return true if elements[0] is null

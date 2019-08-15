@@ -1,0 +1,5 @@
+function point_collision(point A, point B):
+    if A.x == B.x AND A.y == B.y:
+        return True
+    else
+        return False

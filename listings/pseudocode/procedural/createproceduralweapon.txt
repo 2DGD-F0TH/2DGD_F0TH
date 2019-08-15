@@ -1,0 +1,10 @@
+function createProceduralWeapon():
+    load body "body0001.png"
+    load scope "scope0051.png"
+    load barrel "barrel0045.png"
+    load ammo magazine "mag0009.png"
+    put together the loaded pieces
+    set weapon damage to 45
+    set weapon range to 15
+    set weapon spread to 23
+    return generated weapon

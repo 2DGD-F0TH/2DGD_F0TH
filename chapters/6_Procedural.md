@@ -17,33 +17,11 @@ Let's make a simple example: we want our Super-duper-shooter to make use of proc
 
 This is a possible algorithm for a procedural weapon:
 
-~~~~
-function createProceduralWeapon():
-    load body "body0001.png"
-    load scope "scope0051.png"
-    load barrel "barrel0045.png"
-    load ammo magazine "mag0009.png"
-    put together the loaded pieces
-    set weapon damage to 45
-    set weapon range to 15
-    set weapon spread to 23
-    return generated weapon
-~~~~
+\code{procedural/createproceduralweapon}
 
 This instead is a possible algorithm for a random weapon, for simplicity we assume that the pieces are all compatible:
 
-~~~~
-function createRandomizedWeapon():
-    load a random body from the folder "weaponBodies/shotguns"
-    load a random scope from the folder "weaponScopes/shotguns"
-    load a random barrel from the folder "weaponBarrels/shotguns"
-    load a random ammo magazine from the folder "weaponMagazines/shotguns"
-    put together the loaded pieces
-    set weapon damage to a value between 35 and 50
-    set weapon range to a value between 13 and 18
-    set weapon spread to a value between 20 and 30
-    return generated weapon
-~~~~
+\code{procedural/createrandomizedweapon}
 
 As you can see, the algorithms are very similar to each other, but the second one has an element of randomness added to it.
 
