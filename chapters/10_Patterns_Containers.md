@@ -80,6 +80,30 @@ Let's explain the variables used:
 
 Note that the measure (time / duration) represents the "percentage of completion" of the tweening.
 
+In some cases a Linear tweening is not enough, that's where *easing* comes into play.
+
+Before introducing easing let's analyze the function again, if you try plugging in some data into the function, you will find that there is always going to be:
+
+$$ (change\ in\ property) \cdot (factor) + (beginning\ value)$$
+
+So we can use our function substituting `begin` with 0 and `change` with 1 to calculate `factor` and have a code similar to this one:
+
+\code{patterns_containers/way_to_easing}
+
+With linear tweening, the function degenerates to $\frac{time}{duration}$, but now we can replace our linear tween with the following function:
+
+\code{patterns_containers/easeIn}
+
+By changing the `power` parameter, we change the behaviour of the easing, making the movement slower at the beginning and pick up the pace more and more, until the destination is reached. This is called a "ease-in".
+
+For an "ease-out", where the animation starts fast and slows down towards the end, we use the following function instead:
+
+\code{patterns_containers/easeOut}
+
+With some calculations, and if statements on the time passed, you can combine the two and get an "ease-in-out" function.
+
+\placeholder
+
 <!-- TODO: Also known as "tweening", allows to "smear" a value over time, usually used to generate key frames in an animation to make it seem like it moves smoothly over time, while in reality you just set the beginning and end positions, along with the time the movement should take -->
 
 Chaining

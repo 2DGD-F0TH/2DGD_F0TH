@@ -1,0 +1,2 @@
+def easeIn(time, duration, power):
+    return (time/duration) ** power
