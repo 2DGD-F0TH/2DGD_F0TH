@@ -23,6 +23,12 @@ Aseprite is an open-source and commercial tool for creating pixel-art graphics. 
 
 <https://www.aseprite.org/>
 
+### Piskel
+
+Piskel is an open-source web-based tool for creating pixel-art graphics and animations. On the website there is a downloadable version too, but usually the web-based one is a bit more performing.
+
+<https://www.piskelapp.com/>
+
 ### Inkscape
 
 Inkscape is an open-source software to work with vector graphics, if you want to give a really clean look to your graphics, you should probably take a look at this software.
