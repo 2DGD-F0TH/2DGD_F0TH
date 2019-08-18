@@ -1,17 +1,15 @@
 language: generic
 os: xenial
-
 before_install:
-    - sudo apt-get install -y pandoc
-    - sudo apt-get install -y texlive-full
-
+- sudo apt-get install -y pandoc
+- sudo apt-get install -y texlive-full
 script:
-    - make
-
+- make
 deploy:
-    provider: releases
-    file: "Book.pdf"
-    draft: true
-    skip_cleanup: true
-    on:
-        branch: master
+  provider: releases
+  api_key:
+    secure: WHD8pO+LUan2tQQeEuvry22u45lqpRbNPEWRJ2hzrcODISjn6bup84arixKFbeaSZKiNQUbY/ddCVVUSZi8r4DWy/d0FVbxsVmtZ5ouTaUPkzOHNQRPutTheov5W7fBVrHZ/a8RnPhT5ZWgWpbaF9D5gDh8j5oCzKpC/DHPywTr6xD6wU/i8/Pugm3LUdCzPMp0ZpdiZPsQAtdfKjAAbuiwqsN3Lpbmv4QR0stmKgExK19aNaTQuM01iJv7UmumF107fm+NT5H8wW52bvYJv9UuLAdq3pGvlZ82veKLP0bdl9uGEvbtg/2AiGo7ja6kQu3jo+PNi3qxlngIfylFAdH0mONxCoSvbbHH54AGCcvFOmTFc/DfjvEHf1Ynb03jfZm33ppwQD/7SHlm4lGyvjUEh975aqS3KQ6lgXlYGWvLJGde0Imz/g4rroOhehmpOw9xRCdjAkJB/T3JsWoZrdk5zkSc0kQeE0PdOvfGYccLCNHAdrirB/m3fKxETHZqltsy6DaZ9CziXw/DBCWFC4Cm5Vj9xlFkoai7yiVfy25FLY+w9AEuahMgOayg6qbnzwP+NHXiSDDy0LHmwza3WZ4FFRCo1vOF21J0hY/NBkCN1Ww4oZgynVYDOJoyYFPpAX8tI9ySBGhT9nUSKtMgGSYkFOr2q+GoJmSpqj5VVBcE=
+  file: Book.pdf
+  on:
+    repo: Penaz91/2DGD_F0TH
+    branch: master
