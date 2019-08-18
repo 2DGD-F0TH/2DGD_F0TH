@@ -9,7 +9,9 @@ script:
     - make
 
 deploy:
+    provider: releases
     file: "Book.pdf"
     draft: true
+    skip_cleanup: true
     on:
         branch: master
