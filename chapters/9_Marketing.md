@@ -16,7 +16,7 @@ Focus your effort on customer satisfaction, you have to be pro-consumer!
 
 My first advice is: instead of implementing a thousand features, make one single thing a thousand times better (Bruce Lee style). If you promise the client a ton of features to do you can generate hype (we will discuss it later), but if you are an indie developer (and most of times even if you're not) making one thing extremely enjoyable is way better.
 
-Why? Because your goal is to realize something (even if it's only one thing) that will make the customer remember your game: Quality over Quantity.
+Why? Because your goal is to create something (even if it's only one thing) that will make the customer remember your game: Quality over Quantity.
 
 Satisfying customers is no easy feat, we all know this. So one question you may ask is: How in hell can I be original? Answer is: You don't have to.
 

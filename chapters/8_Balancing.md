@@ -52,7 +52,7 @@ In this case the approach you should have is rebalancing the game, instead of li
 
 When it comes to cheat prevention, usually the first order of action is giving the game the ability to "check the validity" of an instruction.
 
-For instance if a player character has its coordinates at (5,5) on frame $n$ and coordinates at (1500, 5) at frame $n+1$, there is something fishing going on, since maybe the player can only move 500 pixels per second (while it moved 995 in one frame: $\frac{1}{60}$ of a second).
+For instance if a player character has its coordinates at (5,5) on frame $n$ and coordinates at (1500, 5) at frame $n+1$, there is something fishy going on, since maybe the player can only move 500 pixels per second (while it moved 995 in one frame: $\frac{1}{60}$ of a second).
 
 Such checks will slow down the processing, but will allow you to put a limit to cheating, possibly intervening in an active way, by resetting the space walked to the maximum amount possible in one frame, although this could give some issues with slower computers and [variable time steps](#variable_timesteps).
 
@@ -60,7 +60,7 @@ Such checks will slow down the processing, but will allow you to put a limit to 
 
 When it comes to multiplayer and "leaderboards", cheating can be create some major damage to the game's enjoyability. It is honestly disheartening seeing a level that has been completed in 0 seconds on top of the leaderboard, totally unreachable with normal gameplay.
 
-When competitive gameplay comes into the picture, playing against a cheater is frustrating and maddening, you feel powerless and the game is not fun and sometimes it even feels "broken", even though it is stable and playable.
+When competitive gameplay comes into the picture, playing against a cheater is frustrating and maddening, you feel powerless, the game is not fun and sometimes it even feels "broken", even though it is stable and playable.
 
 Here we will distinguish between the two main forms of multiplayer: Peer-to-peer gameplay and dedicated servers.
 
