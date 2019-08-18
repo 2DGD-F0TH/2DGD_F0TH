@@ -61,7 +61,24 @@ Timers
 Inbetweening
 --------
 
-\placeholder
+Inbetweening, also known as "tweening", is a method that allows to "smear" a value over time, this is usually done with animations, where you set the beginning and end position of a certain object, as well as the time the movement should take, and let the program take care of the animation.
+
+This is particularly useful in animating *UI*~[g]~ objects, to give a more refined feel to the game.
+
+Here we will present some simple tweenings that can be programmed, and explain them.
+
+Let's start with a *linear* tweening, usually the following function is used:
+
+\code{patterns_containers/tween_linear}
+
+Let's explain the variables used:
+
+- **time**: The current time of the tween. This can be any unit (frames, seconds, steps, ...), as long as it is the same unit as the "duration" variable;
+- **begin**: represents the beginning value of the property being inbetweened;
+- **change**: represents the change between the beginning and destination value of the property;
+- **duration**: represents the duration of the tween.
+
+Note that the measure (time / duration) represents the "percentage of completion" of the tweening.
 
 <!-- TODO: Also known as "tweening", allows to "smear" a value over time, usually used to generate key frames in an animation to make it seem like it moves smoothly over time, while in reality you just set the beginning and end positions, along with the time the movement should take -->
 

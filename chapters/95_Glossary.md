@@ -41,3 +41,9 @@ R
 
 Rootkit
 : Usually associated with malware, a rootkit is a software that manages to get access to reserved areas of an operating system, usually to hide its own, or other softwares' presence.
+
+U
+--
+
+UI
+: Short of *User Interface*, defines the elements shown to and interacted by the user in a software or, in this case, a videogame menu.
