@@ -102,6 +102,8 @@ For an "ease-out", where the animation starts fast and slows down towards the en
 
 With some calculations, and if statements on the time passed, you can combine the two and get an "ease-in-out" function.
 
+Obviously these functions have an issue: they don't clamp the value between 0 and 1, that will have to be done in the movement function or by adding a check, or using some math, for instance using `min(calculated_value, 1)`.
+
 \placeholder
 
 <!-- TODO: Also known as "tweening", allows to "smear" a value over time, usually used to generate key frames in an animation to make it seem like it moves smoothly over time, while in reality you just set the beginning and end positions, along with the time the movement should take -->
