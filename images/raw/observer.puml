@@ -1,0 +1,26 @@
+@startuml
+
+abstract class Observer{
+    + update()
+}
+
+class Subject{
+    + observers: List[Observer]
+    + registerObserver(new: Observer)
+    + unregisterObserver(toRemove: Observer)
+    + notifyObservers()
+}
+
+class ConcreteObserver{
+    + update()
+}
+
+class AnotherConcreteObserver{
+    + update()
+}
+
+Observer --o Subject
+Observer <|-- ConcreteObserver
+Observer <|-- AnotherConcreteObserver
+
+@enduml
