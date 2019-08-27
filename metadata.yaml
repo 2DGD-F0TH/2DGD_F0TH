@@ -26,5 +26,5 @@ geometry:
     - "tmargin=2.5cm"
     - "lmargin=2.5cm"
 # Programming Language, leave "" for pseudocode
-proglang: "python"
+proglang: ""
 ---

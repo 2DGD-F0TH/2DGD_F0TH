@@ -420,3 +420,28 @@ Find the biggest rectangles:
 \end{table}
 
 Extract the result: $f = (A \land \bar{C}) \lor (A \land \bar{B}) \lor (B \land C \land \bar{D})$
+
+Object Oriented Programming
+----------------------------
+
+<!-- TODO: a lean introduction to the concept of objects and abstraction -->
+
+\placeholder
+
+
+Reading UML diagrams
+--------------------
+
+<!-- TODO: Give a primer on how to read UML diagrams -->
+
+### Use Case Diagrams
+
+\placeholder
+
+### Class Diagrams
+
+\placeholder
+
+### Activity Diagrams
+
+\placeholder
