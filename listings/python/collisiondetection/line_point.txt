@@ -23,8 +23,8 @@ class Line(object):
         """
         Initializes a line between 2 points
 
-        :A: TODO
-        :B: TODO
+        :A: First point of the line
+        :B: Second Point of the Line
 
         """
         self.A = A

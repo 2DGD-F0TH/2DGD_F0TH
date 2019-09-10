@@ -39,8 +39,8 @@ class Line(object):
         """
         Initializes a line between 2 points
 
-        :A: TODO
-        :B: TODO
+        :A: First point of the line
+        :B: Second Point of the Line
 
         """
         self.A = A
@@ -79,9 +79,9 @@ def line_circle_collision(circle, line):
     """
     Defines if a line collides with a circle
 
-    :circle: TODO
-    :line: TODO
-    :returns: TODO
+    :circle: The Circle To check collision for
+    :line: The line which we should check collision for
+    :returns: A boolean telling us if the line and circle collide
 
     """
     collides_A = circle_point_collision(circle, line.A)
