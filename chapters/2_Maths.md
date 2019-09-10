@@ -187,9 +187,107 @@ $$A_{2,3}^T  = \begin{bmatrix}
 
 ### Multiplication between matrices
 
+Given 2 matrices with sizes $m \times n$ and $n \times p$:
+
+$$ A_{3, 2} = \begin{bmatrix}
+    2 & 3\\
+    1 & 2\\
+    4 & 0
+\end{bmatrix} B_{2,3} = \begin{bmatrix}
+    2 & 3 & 4\\
+    0 & 1 & 0
+\end{bmatrix}$$
+
+We can calculate the multiplication between these two matrices, in the following way.
+
+First of all let's get the size of the resulting matrix, which will be always $m \times p$.
+
+Now we have the following situation:
+
+$$ \begin{bmatrix}
+    2 & 3\\
+    1 & 2\\
+    4 & 0
+\end{bmatrix} \times \begin{bmatrix}
+    2 & 3 & 4\\
+    0 & 1 & 0
+\end{bmatrix} = \begin{bmatrix}
+    ? & ? & ?\\
+    ? & ? & ?\\
+    ? & ? & ?
+\end{bmatrix}$$
+
+Matrix multiplication is called a "rows by columns" multiplication, so to calculate the first row - first column value we'll need the first row of one matrix and the first column of the other.
+
+$$ \begin{bmatrix}
+    \textcolor{red}{2} & \textcolor{red}{3}\\
+    1 & 2\\
+    4 & 0
+\end{bmatrix} \times \begin{bmatrix}
+    \textcolor{red}{2} & 3 & 4\\
+    \textcolor{red}{0} & 1 & 0
+\end{bmatrix} = \begin{bmatrix}
+    \textcolor{red}{?} & ? & ?\\
+    ? & ? & ?\\
+    ? & ? & ?
+\end{bmatrix}$$
+
+The values in the example will be combines as follows:
+
+$$2 \cdot 2 + 3 \cdot 0 = 4$$
+
+Obtaining the following:
+
+$$ \begin{bmatrix}
+    2 & 3\\
+    1 & 2\\
+    4 & 0
+\end{bmatrix} \times \begin{bmatrix}
+    2 & 3 & 4\\
+    0 & 1 & 0
+\end{bmatrix} = \begin{bmatrix}
+    4 & ? & ?\\
+    ? & ? & ?\\
+    ? & ? & ?
+\end{bmatrix}$$
+
+Let's try the next value:
+
+$$ \begin{bmatrix}
+    \textcolor{red}{2} & \textcolor{red}{3}\\
+    1 & 2\\
+    4 & 0
+\end{bmatrix} \times \begin{bmatrix}
+    2 & \textcolor{red}{3} & 4\\
+    0 & \textcolor{red}{1} & 0
+\end{bmatrix} = \begin{bmatrix}
+    4 & \textcolor{red}{?} & ?\\
+    ? & ? & ?\\
+    ? & ? & ?
+\end{bmatrix}$$
+
+The values will be combined as follows:
+
+$$ 2 \cdot 3 + 3 \cdot 1 = 9$$
+
+Obtaining:
+
+$$ \begin{bmatrix}
+    2 & 3\\
+    1 & 2\\
+    4 & 0
+\end{bmatrix} \times \begin{bmatrix}
+    2 & 3 & 4\\
+    0 & 1 & 0
+\end{bmatrix} = \begin{bmatrix}
+    4 & 9 & ?\\
+    ? & ? & ?\\
+    ? & ? & ?
+\end{bmatrix}$$
+
 \placeholder
 
-<!-- TODO: Try to explain matrix multiplication in a decent way -->
+<!-- TODO: Finish -->
 
 Coordinate Systems on computers
 ---------------------------------
