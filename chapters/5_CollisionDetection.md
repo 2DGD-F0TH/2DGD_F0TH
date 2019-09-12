@@ -318,10 +318,11 @@ The "bullet through paper" is a common problem with collision detection, when an
 
 ![Example of the "Bullet through paper" problem](./images/collision_detection/Bullet_Through_Paper.pdf){width=40%}
 
-\placeholder
+The object is going so fast that it manages to go through the entirety of the obstacle in a single frame.
 
-<!-- TODO: How a really small object at fast speeds can go through a thin wall without
-the collision detection algorithm realizing it -->
+Possible solutions to this problems are various, some even going out of the realm of the so-called "time-stepping techniques" (like speculative contacts or ray casting) that can be very expensive from a computational standpoint.
+
+Such solutions should therefore be enabled (or implemented) only for fast-moving objects and only if necessary, since resources and time are at a premium in most cases.
 
 ### Precision Issues
 
