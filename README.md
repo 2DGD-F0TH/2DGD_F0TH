@@ -22,6 +22,11 @@ Before building the book, you might want to set your programming language in the
 
 To Build the book you need to clone this repository and use the `make` command from the main directory.
 
+Branches
+--------
+
+The `master` branch is automatically compiled into PDF format by the Gitlab CI/CD system and is usually pretty much final (its contents will be expanded but probably not modified), while the `develop` branch is more up-to-date but its content is subject to change.
+
 License
 --------
 
