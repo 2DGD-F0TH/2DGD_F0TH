@@ -277,16 +277,24 @@ We will need to calculate a series of intermediate points (using the `TILE_WIDTH
 
 And using the same method the colliding tiles can be found without much more calculations than the previous algorithm, actually we can use exactly the same algorithm with a different list of points to test.
 
-Collision Reaction
---------------------
+Collision Reaction/Correction
+------------------------------
+
+When you are sure, via any algorithm, that a collision has occurred, you now have to decide how to react to such collision. You may want to destroy the player or the target, or you may want to correct the behaviour, thus avoiding items getting inside walls.
 
 ### The Direction + Velocity Method
 
 \placeholder
 
+This is the simplest method, computationally speaking: as soon as the objects gets inside of a wall, you push it back according to the direction its velocity has.
+
 <!-- TODO: A-la mario 1, you get inside a block, and react according to where the character is going-->
 
-### The "Before and After" Method
+### The "Snapshot" Method
+
+This method is a bit more involved, but allows for a finer control over how you go through or collide with certain obstacles.
+
+The secret to this method is taking a snapshot of the object's position before its update phase and do a series of comparisons with the position after the update.
 
 \placeholder
 
@@ -305,6 +313,10 @@ Common Issues with Collision Detection
 ----------------------------------------
 
 ### The "Bullet Through Paper" problem
+
+The "bullet through paper" is a common problem with collision detection, when an obstacle is really thin (our "paper"), and the object is really fast and small (the "bullet") it can happen that collision is not detected.
+
+![Example of the "Bullet through paper" problem](./images/collision_detection/Bullet_Through_Paper.pdf){width=40%}
 
 \placeholder
 
