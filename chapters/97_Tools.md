@@ -74,6 +74,12 @@ Rimshot is a simple but effective drum machine that can be used to lay down the 
 
 <http://stabyourself.net/rimshot/>
 
+### MilkyTracker
+
+MilkyTracker is an editor for tracker files, Amiga-style that takes a lot of inspiration from FastTracker II, it has a lot of functionality, it's well-documented and the community is active.o
+
+<https://milkytracker.titandemo.org/>
+
 Maps
 -----
 
