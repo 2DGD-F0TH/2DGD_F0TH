@@ -285,7 +285,7 @@ $endif$
 \usepackage[pages=some]{background}
 \backgroundsetup{
 scale=1,
-color=black,opacity=0.4,
+color=black,opacity=1,
 angle=0,
 contents = {%
     \includegraphics[width=\paperwidth, height=\paperheight]{images/page_background.pdf}
@@ -296,18 +296,20 @@ contents = {%
 \pagestyle{empty}
 \begin{titlepage}
     \BgThispage
-    \begin{center}
-        \noindent\makebox[\linewidth]{\rule{.8\paperwidth}{0.4pt}}\\
-        \vfill
-        \Huge{$title$}\\
-        \vfill
-        \Large{A compendium of the community knowledge on game development}
-        \vfill
-        \normalsize
-        \vfill
-        \noindent\makebox[\linewidth]{\rule{.8\paperwidth}{0.4pt}}\\
-    \end{center}
-    \clearpage
+    \null
+    \newpage
+    %\begin{center}
+        %\noindent\makebox[\linewidth]{\rule{.8\paperwidth}{0.4pt}}\\
+        %\vfill
+        %\Huge{$title$}\\
+        %\vfill
+        %\Large{A compendium of the community knowledge on game development}
+        %\vfill
+        %\normalsize
+        %\vfill
+        %\noindent\makebox[\linewidth]{\rule{.8\paperwidth}{0.4pt}}\\
+    %\end{center}
+    %\clearpage
 \end{titlepage}
 
 % Copyright page
