@@ -282,7 +282,13 @@ Collision Reaction/Correction
 
 When you are sure, via any algorithm, that a collision has occurred, you now have to decide how to react to such collision. You may want to destroy the player or the target, or you may want to correct the behaviour, thus avoiding items getting inside walls.
 
-### The Direction + Velocity Method
+### HitBoxes vs HurtBoxes
+
+<!-- TODO: Explain the difference between hitboxes (where the player can "hit stuff") and hurtboxes (where the player can "get hurt" by stuff) -->
+
+### Collision Reaction Methods
+
+#### The Direction + Velocity Method
 
 \placeholder
 
@@ -290,7 +296,7 @@ This is the simplest method, computationally speaking: as soon as the objects ge
 
 <!-- TODO: A-la mario 1, you get inside a block, and react according to where the character is going-->
 
-### The "Snapshot" Method
+#### The "Snapshot" Method
 
 This method is a bit more involved, but allows for a finer control over how you go through or collide with certain obstacles.
 
@@ -300,10 +306,7 @@ The secret to this method is taking a snapshot of the object's position before i
 
 <!-- TODO: Snapshot before and after updating, react accordingly, allows for more advanced stuff -->
 
-Some wilder stuff
--------------------
-
-### The "Tile + Offset" Method
+#### The "Tile + Offset" Method
 
 \placeholder
 

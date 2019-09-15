@@ -424,10 +424,38 @@ Extract the result: $f = (A \land \bar{C}) \lor (A \land \bar{B}) \lor (B \land 
 Object Oriented Programming
 ----------------------------
 
-<!-- TODO: a lean introduction to the concept of objects and abstraction -->
+### Introduction
 
 \placeholder
 
+### Objects
+
+\placeholder
+
+### Abstraction
+
+\placeholder
+
+### Inheritance
+
+\placeholder
+
+### Composition
+
+\placeholder
+
+### "Composition over Inheritance" design
+
+\placeholder
+
+<!-- TODO: a lean introduction to the concept of objects and abstraction -->
+
+Data Driven Design
+-------------------
+
+\placeholder
+
+<!-- TODO: How to design entities as data (config files) and leverage generalized objects to get more readable and flexible code -->
 
 Reading UML diagrams
 --------------------
