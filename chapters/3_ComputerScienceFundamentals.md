@@ -450,12 +450,47 @@ Object Oriented Programming
 
 <!-- TODO: a lean introduction to the concept of objects and abstraction -->
 
-Data Driven Design
+Designing entities as data
 -------------------
 
-\placeholder
+Sometimes it can be useful to design your entities as data, instead of making them into static objects that possibly require a new release of your product.
 
-<!-- TODO: How to design entities as data (config files) and leverage generalized objects to get more readable and flexible code -->
+Designing your objects as data allows you to use configuration files to create, configure, tinker and extend your product, as well as allow for modifications by people who are fans of your game.
+
+For instance, in a fantasy RPG you could have 3 types of enemies all defined as classes:
+
+- Skeleton
+- Zombie
+- Ghost Swordsman
+
+Which all have the same behaviour but different animations and sprites.
+
+These classes can inherit from an "entity" abstract class which defines the base behaviour and then can be extended to create each unique enemy.
+
+Another idea could be designing an "entity" class that can be instantiated, and have a configuration file that defines what each entity is and what its properties are.
+
+An idea could be the following
+
+~~~~.yaml
+entity:
+  name: skeleton
+  health: 10
+  damage_on_hit: 2.5
+  spritesheet: "./skelly.png"
+  animations:
+    walking:
+      start_sprite: 4
+      frame_no: 4
+      duration: 0.2
+    attacking:
+      start_sprite: 9
+      frame_no: 2
+      duration: 0.1
+~~~~
+
+With more complex building algorithms, it is possible to change behaviours and much more with just a configuration file, and this gives itself well to roguelike games, which random selection of enemies can benefit from an extension of the enemy pool. In fact, it's really easy to configure a new type of enemy and have it work inside the game without recompiling anything.
+
+This allows for more readable code and a higher extensibility.
 
 Reading UML diagrams
 --------------------
