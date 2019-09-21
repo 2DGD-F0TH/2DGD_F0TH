@@ -284,7 +284,15 @@ When you are sure, via any algorithm, that a collision has occurred, you now hav
 
 ### HitBoxes vs HurtBoxes
 
-<!-- TODO: Explain the difference between hitboxes (where the player can "hit stuff") and hurtboxes (where the player can "get hurt" by stuff) -->
+First of all, we need to explain the difference between a "HurtBox" and a "HitBox".
+
+Such difference can be more or less important, depending on the game that is coded, and sometimes the two concepts can be confused.
+
+A **HitBox** is a shape (usually a rectangle, see [Collision Between Two Axis-Aligned Rectangles (AABB)]) that is used to identify where a certain entity can *hit* another entity. For the player a "hitbox" could encase their sword while attacking.
+
+A **HurtBox** is instead a shape that is used to identify where a certain entity can *get hurt* by another entity. For the player a "hurtbox" could be their body.
+
+![Example of a hitbox (red) and a hurtbox (blue)](./images/collision_detection/hithurt.png){width=40%}
 
 ### Collision Reaction Methods
 
@@ -292,7 +300,7 @@ When you are sure, via any algorithm, that a collision has occurred, you now hav
 
 \placeholder
 
-This is the simplest method, computationally speaking: as soon as the objects gets inside of a wall, you push it back according to the direction its velocity has.
+This is the simplest method, computationally speaking: as soon as the objects gets inside of a wall, you push it back according to the direction its velocity has or just the direction of the character itself.
 
 <!-- TODO: A-la mario 1, you get inside a block, and react according to where the character is going-->
 
@@ -329,6 +337,6 @@ Such solutions should therefore be enabled (or implemented) only for fast-moving
 
 ### Precision Issues
 
-\placeholder
+Sometimes it can happen that the position is reset incorrectly due to machine precision or wrong rounding, this can lead to the character that looks spazzy or just going through the floor at random times. The solution to these issues is making sure that the position and state are set correctly so that there are no useless state changes between frames.
 
-<!-- TODO: Sometimes when sub-pixel precision is involved, there might be instances where the character stays "floating" for a single frame, giving a "spazzy" animation -->
+Sometimes the "spazziness" of the character derives from the fact that collision reaction sets the character one pixel over the floor, triggering the "falling" state, the next frame the state would be changed to "idle" and then in the frame "n+2" the cycle would restart with collision reaction putting the character one pixel over the floor.
