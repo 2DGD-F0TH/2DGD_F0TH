@@ -426,17 +426,48 @@ Object Oriented Programming
 
 ### Introduction
 
-\placeholder
+One of the biggest programming paradigms in use is surely the "Object Oriented Programming" (from now on: "OOP") paradigm. The fundamental unit of a program, in this paradigm is the *Object*. This paradigm allows to structure your code in a more modular and re-usable way, as well as implementing abstractions, allowing for more solid code and making it possible for other code to make use of your own code without needing to know any details besides it *Interface*.
 
 ### Objects
 
-\placeholder
+Objects are the fundamental unit in OOP, objects are essentially a collection of data and functions. Objects are actually the physical instantiation of what is called a "Class".
 
-### Abstraction
+To simplify the concept: a "Class" is a house blueprint, an "Object" is the house itself.
 
-\placeholder
+Objects contain data and functions, for the sake of precision, we will use their technical names:
 
-### Inheritance
+- Functions that are part of an object are called **methods** and they can be classified as:
+    - *Instance Methods* when they act on a single object instance;
+    - *Static Methods* when they don't (usually they're utility functions), that also means that these methods belong to the Class itself and not to its instance.
+- Each piece of data contained in the class is called a **Field** and they can be classified as:
+    - *Instance Fields* when they're part of the instance and can change from instance to instance;
+    - *Static Fields* when they're part of the class but don't change between instances (**Caution:** it does not mean they cannot change, in that case the change will snowball into all the instances).
+
+### Abstraction and Interfaces
+
+Abstraction is a fundamental point in OOP, and it is usually taken care of via so-called **Interfaces**.
+
+Interfaces are the front-end that an object offers to other objects so they can interact.
+
+As an example: the interface to your PC is given by Keyboard, Mouse and Screen - you don't need to know how the single electron travels through the circuits to be able to use a computer; same goes for a class that offers a well-abstracted interface.
+
+Being able to abstract a concept, removing the necessity to know the internal workings of the code that is used, is fundamental to be able to write solid and maintainable code, because implementations change, but interfaces rarely do.
+
+Making classes work together with interfaces allows you to modify and optimize your code without having each edit snowball into a flurry of compiler (or interpreter) errors. For instance: a rectangle class exposes in its interface a method `getArea()` - you don't need to know how to calculate the area, you just call that method and know it will return the area of the rectangle.
+
+The concept of keeping the internal workings of a class is called *Information Hiding*.
+
+### Inheritance and Polymorphism
+
+One of the biggest aspects of OOP is **inheritance**: you can create other classes based on a so-called "base class", allowing for extendability of your software.
+
+You can create a "Person" class, with a name, surname and age as fields, and by inheriting from the "Person" class you can create a "Student" class, which has all the fields from Person, plus the "clubs" and "grade" fields.
+
+This allows to create a "tree of classes" that represents part of your software.
+
+From inheritance, OOP presents a concept called **Polymorphism** (From "Poly" - Many, "Morph" - Shape), where you can use the base class to represent the entire class tree, allowing for substitution.
+
+In our "Person-Student" example, you could use a pointer to either a Person or a Student for the sake of getting their first name.
 
 \placeholder
 
@@ -447,6 +478,20 @@ Object Oriented Programming
 ### "Composition over Inheritance" design
 
 \placeholder
+
+### Coupling
+
+\placeholder
+
+### SOLID Principles
+
+SOLID is a mnemonic acronym that condenses five principles of good design, to make code and software that is understandable, flexible and maintainable.
+
+- **Single Responsibility**: Each class should have a single responsibility, it should take care of one part of the software specification and each change to said specification should affect only said class. This means you should avoid the so-called "God Classes", classes that take care of too much, know too much about the system and in a nutshell: have too much responsibility in your software.
+- **Open-closed Principle**: Each software entity should be open to extension, but closed for modification. This means that each class (for instance) should be extensible, either via inheritance or composition, but it should not be possible to modify the class's code. This is practically enforcing *Information Hiding*.
+- **Liskov Substitution Principle**: Objects in a program should be replaceable with instances of their subtypes and the correctness of the program should not be affected. This is the base of inheritance and polimorphism, if by substituting a base class with one of its child (which should have a Child-is-a-Base relationship, for instance "Circle is a shape") the program is not correct anymore, either something is wrong with the program, or the classes should not be in a "IS-A" relationship.
+- **Interface Segregation**: Classes should provide many specific interfaces instead of one general-purpose interface, this means that no client should depend on methods that it doesn't use. This makes the software easier to refactor and maintain, and reduces coupling.
+- **Dependency Inversion**: Software components should depend on abstractions and not concretions. This is another staple of nutshell programming and OOP - Each class should make use of some other class's interface, not its inner workings. This allows for maintainability and easier update and change of code, without having the changes snowball into an Armageddon of errors.
 
 <!-- TODO: a lean introduction to the concept of objects and abstraction -->
 
