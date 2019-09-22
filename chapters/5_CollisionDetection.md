@@ -177,11 +177,11 @@ The final algorithm should look something like this:
 
 ### Circle/Rectangle Collision
 
-Circle/Rectangle collision is performed by executing a Circle/Line algorithm with the circle and the closest side of the rectangle as arguments.
+First of all we need to identify which side of the rectangle we should test against, so if the centre of the circle is to the right of the rectangle, we will test against the right edge of the rectangle, if it's above we'll test against the top edge and so on...
 
-\placeholder
+After that, we just perform some math on the distances and calculated values to detect if the circle collides with the rectangle.
 
-<!-- TODO: Like Line/Circle, but with the closest rectangle edge -->
+\code{collisiondetection/rectangle_circle}
 
 ### Line/Line Collision
 
