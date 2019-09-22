@@ -1,7 +1,7 @@
 2D Game Development: From Zero To Hero
 ======================================
 
-**Status:** +[Pipeline Status](https://img.shields.io/gitlab/pipeline/penaz/2DGD_F0TH?style=for-the-badge)  ![Project Activity](https://img.shields.io/badge/Activity-Active-brightgreen?style=for-the-badge)
+**Status:** ![Pipeline Status](https://img.shields.io/gitlab/pipeline/penaz/2DGD_F0TH?style=for-the-badge)  ![Project Activity](https://img.shields.io/badge/Activity-Active-brightgreen?style=for-the-badge)
 
 This is a small project that aims to gather some knowledge about game development and make it available to everyone.
 
