@@ -142,8 +142,6 @@ Sounds And Music
 ### Digital Sound Processing (DSP)
 
 
-<!-- TODO: Talk about the advantages of using DSP to create variety in sounds, list some effects, etc... -->
-
 Let's think about a simple situation: we want to play a "walk" sound effect: every time our character's foot hits the ground, we play a "step" sound effect.
 
 If we play the same sound over and over, it will become boring really quickly, breaking the immersion. An idea could be saving different sounds for a footstep and then every time the player takes a step, a random footstep sound will be played.
@@ -152,26 +150,37 @@ This solves the problem, at a cost: we need to use more memory to keep track of 
 
 An alternative solution could be using DSP: editing the sound sample in real time to add more variety and depth while saving memory, the trade-off would be CPU time, but it's an acceptable deal.
 
-\placeholder
-
 #### Reverb
 
-\placeholder
+When you take a stroll on a sidewalk, you have a certain "openness" on the footstep sounds you hear, but that surely changes if you're walking with hard shoes on a hard floor inside of a small cave. You can hear a lot of reverb and echo at every single step.
 
-<!-- TODO: Usually used to give more depth in sound effects, like a swordfight in a small cave -->
+Reverb is the first of the sound effects that we encounter in our journey: it allows to give more depth to our sound effects, making it sound like we're inside of a small cave or a very large room.
 
 #### Pitch Shift
 
-\placeholder
+A way to give more variety to a sound effect without much work is using pitch shift to make our sound a bit higher or lower, randomly, so that each step is slightly different from the other: this way our ears will get less tired of hearing said sound effect.
+
+Pitch shifting must be used with caution, since abusing it will distort the sound effect and break the immersion in our game.
+
+Another example of pitch shift is used in racing games, where the car roar is pitch-shifted up or down according to the acceleration given to the car.
 
 #### Filtering
-\placeholder
 
-<!-- TODO: Talk about low pass, high pass and band pass filters, bring the explosion example (low pass filter + slowdown + high frequency "whistle") -->
+Another sound effect we can use is filtering, which are divided in 3 main sections, according to the frequency they "allow to pass through":
+
+- **Low Pass Filter:** This filter allows low frequencies to pass through unfiltered, while the frequencies higher than a defined threshold will be cut. This allows for effects where the bass is unaltered but higher frequencies are cut away;
+- **High Pass Filter:** Opposite of the previous filter, this filter allows high frequencies to pass through unaltered while the frequencies lower than a defined threshold will be cut;
+- **Band Pass Filter:** A combination of the two previous filters, this filter let's through all the frequencies between two defined threshold values. This allows for more interesting effects like a music sounding through an old radio.
+
+An interesting example is when an explosion happens near the player, in that case the "stun" effect is given by using a low pass filter on an explosion sound (which makes it sound really low and muffles), eventually a slowdown is applied and a secondary sound effect of a very high pitch sound is added (something similar to what you hear when your ears are ringing).
 
 #### Doppler Effect
 
-\placeholder
+To give more depth to your sound effects, you can use pitch shift to create the "Doppler Effect" that we hear in real life when a police car passes by: when the car approaches us the pitch is higher, when the car is in front of us we hear the siren as it should be, and when the car passes us we hear a lower pitched version of the siren sound effect.
+
+The Doppler effect can be really useful when applied to car racing games again, when we overtake one of our opponents (or one of our opponents overtakes us) using the doppler effect can help the player feel more "immersed" in the experience.
+
+The doppler effect would actually apply to light too, but we would need to have something travelling at a really high speed or said object to be really far away (like a planet).
 
 ### "Swappable" sound effects
 
@@ -195,7 +204,3 @@ footsteps:
 ~~~
 
 Making a configuration file instead of hard-coding the elements allows for easy extensibility and modding, which everyone loves (See [Designing entities as data](#entitiesasdata)).
-
-\placeholder
-
-<!-- TODO: Talk about how to use a data structure that has different effects per class helps with variety (one class per surface in case of footsteps for instance) -->
