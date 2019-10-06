@@ -495,7 +495,7 @@ SOLID is a mnemonic acronym that condenses five principles of good design, to ma
 
 <!-- TODO: a lean introduction to the concept of objects and abstraction -->
 
-Designing entities as data
+Designing entities as data {#entitiesasdata}
 -------------------
 
 Sometimes it can be useful to design your entities as data, instead of making them into static objects that possibly require a new release of your product.

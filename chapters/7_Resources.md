@@ -141,9 +141,18 @@ Sounds And Music
 
 ### Digital Sound Processing (DSP)
 
-\placeholder
 
 <!-- TODO: Talk about the advantages of using DSP to create variety in sounds, list some effects, etc... -->
+
+Let's think about a simple situation: we want to play a "walk" sound effect: every time our character's foot hits the ground, we play a "step" sound effect.
+
+If we play the same sound over and over, it will become boring really quickly, breaking the immersion. An idea could be saving different sounds for a footstep and then every time the player takes a step, a random footstep sound will be played.
+
+This solves the problem, at a cost: we need to use more memory to keep track of such sounds, multiply that for tens of sound effects and the game can easily run out of memory.
+
+An alternative solution could be using DSP: editing the sound sample in real time to add more variety and depth while saving memory, the trade-off would be CPU time, but it's an acceptable deal.
+
+\placeholder
 
 #### Reverb
 
@@ -165,6 +174,27 @@ Sounds And Music
 \placeholder
 
 ### "Swappable" sound effects
+
+Back to our walking example, an idea to increase the variety of sound effects at our disposal would be keeping a list of "swappable sounds": sounds that are still part of the class we're considering, but are radically different.
+
+For instance we could have different walking sounds for different floors, so that walking on grass and walking on a stone pavement will be different. In this case it would be useful to make the sounds configurable and give the sound manager the chance to inspect what type of floor we're walking on.
+
+An example of "swappable sound effects" configuration is given in the following file, which is written in YAML:
+
+~~~.yaml
+footsteps:
+  grass:
+    - grasswalk1.wav
+    - grasswalk2.wav
+  stone:
+    - stonewalk1.wav
+    - stonewalk2.wav
+  metal:
+    - metalstep1.wav
+    - metalstep2.wav
+~~~
+
+Making a configuration file instead of hard-coding the elements allows for easy extensibility and modding, which everyone loves (See [Designing entities as data](#entitiesasdata)).
 
 \placeholder
 
