@@ -28,7 +28,11 @@ Some frameworks may be able to further abstract how they process input by giving
 
 Most of the time, events will be put in a queue that will be processed separately. This way it's easier to program how to react to each event and keep our code neatly organized. The downside is that the performance of an event-driven input processing is directly tied to how many events are triggered: the more events are triggered, the longer the wait may be before we get to our processed input. Also in case of conflicting inputs (for instance pressing left and right on the keyboard), the one that gets processed later in the queue might take over.
 
-On the opposite side, we have so-called "real-time input", where at a certain point of our update routine, we check for the instantaneous status of the input peripherals and process it immediately. This allows for a faster, more reactive code and to apply some different logic (for instance pressing left and right on the keyboard can be coded to make the character stop).
+This usually depends on the implementation of the event queue: usually an event queue is less wasteful in terms of resources and allows for less coupled code, but the queue could be cluttered with events we're not interested in (for instance mouse movement events in a game that uses only keyboard for controls) so we need to take the time to configure our event handler to ignore certain events when not necessary.
+
+On the opposite side, we have so-called "real-time input", where at a certain point of our update routine, we check for the instantaneous status of the input peripherals and process it immediately. This allows for a faster, more reactive code and to apply some different logic (for instance pressing left and right on the keyboard can be coded to make the character stop). Besides being more immediate, this system shares a lot of traits with "polling" which can be performance-heavy, as well as inducing some undesired code coupling.
+
+A well-implemented and well-configured event-based system should feel no different from real-time input, with the advantage of having better performance and having less code coupling.
 
 Timing your loop
 ----------------
