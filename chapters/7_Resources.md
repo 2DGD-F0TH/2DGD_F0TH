@@ -131,9 +131,41 @@ Nothing is ever set in stone, and no rules should keep you from playing a bit ou
 
 <!-- TODO: talk about pixel art, etc...-->
 
-Sounds
-------
+Sounds And Music
+----------------
 
 \placeholder
 
-<!-- TODO: Talk about the importance of good sound quality, introduce people to chip tunes and tools to create music and sounds -->
+<!-- TODO: Talk about the importance of good sound quality, introduce people to chip tunes and tools to create music and sounds , talk about the importance of having areas where you have to apply a certain effect or it will happen on the whole level -->
+
+
+### Digital Sound Processing (DSP)
+
+\placeholder
+
+<!-- TODO: Talk about the advantages of using DSP to create variety in sounds, list some effects, etc... -->
+
+#### Reverb
+
+\placeholder
+
+<!-- TODO: Usually used to give more depth in sound effects, like a swordfight in a small cave -->
+
+#### Pitch Shift
+
+\placeholder
+
+#### Filtering
+\placeholder
+
+<!-- TODO: Talk about low pass, high pass and band pass filters, bring the explosion example (low pass filter + slowdown + high frequency "whistle") -->
+
+#### Doppler Effect
+
+\placeholder
+
+### "Swappable" sound effects
+
+\placeholder
+
+<!-- TODO: Talk about how to use a data structure that has different effects per class helps with variety (one class per surface in case of footsteps for instance) -->

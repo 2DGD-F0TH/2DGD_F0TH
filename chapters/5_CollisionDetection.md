@@ -18,7 +18,7 @@ First of all, we need to see how we can make sure that two objects really collid
 
 ### Collision Between Two Points
 
-This is the simplest case: points are uni-dimensional objects, and the only way two points can collide is when they have the same coordinates.
+This is the simplest case: points are mono-dimensional objects, and the only way two points can collide is when they have the same coordinates.
 
 An example algorithm would be the following:
 
@@ -193,7 +193,13 @@ After that, we just perform some math on the distances and calculated values to 
 
 \placeholder
 
-<!-- TODO: Just a Line/Line collision done 4 times: one for each side of the rectangle -->
+<!-- TODO: Just a Line/Line collision done 4 times: one for each side of the rectangle, unless the line is completely inside the rect -->
+
+### Polygon/Polygon Collision
+
+\placeholder
+
+<!-- TODO: add an algorithm to check for convex polygons colliding each other (hulls) -->
 
 ### Pixel-Perfect collision
 
@@ -204,6 +210,20 @@ The usual way to perform collision detection is using **bitmasks** which are 1-b
 A logic "AND" operation is performed, pixel-by-pixel, on the bitmasks; with the sprite position taken in consideration, as soon as the first AND returns a "True" a collision occurred.
 
 \code{collisiondetection/pixel_perfect}
+
+### Multi-pass collision detection
+
+It's possible to have a more precise collision detection at a lower cost by combining different collision detection algorithms.
+
+The most common way to apply a multi-pass collision detection is by dividing the process in a "broad" and a "fine" pass.
+
+The broad pass can use a very simple algorithm to check for the possibility of a collision, the algorithms used are usually computationally cheap, such as:
+
+- Circle/Circle Collision Detection
+- AABB Collision detection
+
+When the simpler algorithm detects the possibility of a collision, a more precise algorithm is used to check if a collision really happened, usually such finer algorithms are computationally expensive and will benefit from the first "broad pass" filter, thus avoiding useless heavy calculations.
+
 
 Finding out who hit what
 ------------------------
