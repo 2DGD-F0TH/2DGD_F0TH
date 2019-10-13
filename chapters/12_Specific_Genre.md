@@ -55,6 +55,12 @@ For ease of explanation let's consider a screen scrolls towards the right, when 
 
 <!-- TODO: Patterns and snippets of code to allow players to jump higher the more the jump button is pressed, mario style -->
 
+### Jump Buffering
+
+\placecholder
+
+<!-- TODO: When the player presses the jump button (usually before the character lands), start a timer: when the character lands, if the timer is > 0 then jump automatically. This allows for smoother gameplay when precise jumping is needed, giving the player some leeway -->
+
 Top-view RPG-Like Games
 -----------------------
 
