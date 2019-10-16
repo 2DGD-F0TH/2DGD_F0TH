@@ -33,12 +33,41 @@ Giving some leeway to the player, for instance by having a more generous hit-box
 
 There are infinite ways to make a game challenging without having to force the player into accepting very precise hit-boxes or extremely tight gameplay.
 
-Cheating
----------
+
+A primer on Cheating
+--------------------
 
 Cheating is the act of fraudulently altering the game's mechanics in advantage of the player, performed by the players themselves.
 
 It is something that many game developers and designers have to battle against, so here are some suggestions and tips to limit cheating in your game.
+
+### Information-based cheating
+
+Information-based cheats are all those cheats that rely additional information to the cheater, such information can give a sizeable advantage. A possible example is a cheat that removes the so-called "Fog of War" in a real-time strategy (RTS) game: having possibility of seeing all the enemy units allows the cheater to put up some countermeasures against the units that are being created.
+
+These cheats include also x-ray hacks, all cheats that invalidate invisibility (as the server or peer would still need to transmit the coordinates of the hidden unit) and anything that can show information that is not meant to be shown to the user.
+
+A possibile solution is for the game to just "not transmit" the data, making the cheat useless, but sometimes that is just not possible.
+
+### Mechanics-based cheating
+
+Another category of cheats is comprised of all those hacks that alter the game mechanics themselves, like killing all the players on the map. These kind of cheats are usually made possible by exploits or just because the cheater owns the server people are playing on.
+
+These kinds of cheats can easily hinder the playability of a game, or even make it outright unplayable.
+
+A possible solution to these cheats would be using a cheat-detection program (which would start a "cat and mouse" game, where hacks are updated to avoid detection, and detection programs are updated to detect new hacks) and also inserting some client-side verification of server commands (in case the server contains the "authoritative game state"); for instance if all players are killed at the same time, the clients could flag the server as possibly cheating.
+
+### Man-in-the-middle
+
+This attack is well known in the networking environment: an external machine is used to route and intercept all the traffic directed to the game. This can be a real issue since the attacking program is "outside of the game environment", making nearly all cheat-detection programs useless.
+
+A man-in-the-middle attack can also be used to further exploit the game and find new vulnerabilities.
+
+A possible solution could be completely encrypting all the game's traffic, but that will be an issue since encryption takes away precious CPU cycles, and this could lead to an hindered gaming experience.
+
+
+How cheating influences gameplay and enjoyability
+-------------------------------------------------
 
 ### Single Player
 
@@ -93,3 +122,5 @@ Such server contains the authoritative game state and decides what is right and 
 Usually a dedicated server software has been specifically made to limit cheating, as well as offering better performance than the P2P counterpart (it doesn't have to run graphics, for instance).
 
 If a consistent leaderboard and lack of cheating is important (for instance in a heavily competitive multiplayer game), you should probably choose this option.
+
+This section assumes that the game is using a third-party game server, and none of the players has direct access to said server, as this would enable cheating on the owner's part.

@@ -57,9 +57,15 @@ For ease of explanation let's consider a screen scrolls towards the right, when 
 
 ### Jump Buffering
 
-\placecholder
+\placeholder
 
 <!-- TODO: When the player presses the jump button (usually before the character lands), start a timer: when the character lands, if the timer is > 0 then jump automatically. This allows for smoother gameplay when precise jumping is needed, giving the player some leeway -->
+
+### Coyote Time
+
+\placeholder
+
+<!-- TODO: This technique allows the player to jump after they walked off a platform for a few fractions of a second, making the game seem a bit more fair -->
 
 Top-view RPG-Like Games
 -----------------------
