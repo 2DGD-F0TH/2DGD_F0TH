@@ -11,6 +11,19 @@ In this chapter we'll assume you already know what the following terms mean:
 - Truth Table
 - Algorithm
 
+De Morgan's Laws and Conditional Expressions
+----------------
+
+De Morgan's laws are fundamental in computer science as well as in any subject that involves propositional logic. We will take a quick look at the strictly coding-related meaning.
+
+De Morgan's laws can be written as:
+
+> not (A and B) = not A or not B
+
+> not (A or B) = not A and not B
+
+These laws allow us to express our own conditionals in different ways, allowing for more readability and maybe avoid some boolean manipulation that can hinder the performance of our game.
+
 Estimating the order of algorithms
 ---------------------------------------
 
@@ -96,7 +109,7 @@ Anything with complexity higher than O(n^2^) is usually considered unusable.
 
 Algorithms that execute in exponential time are considered a major code red, an will usually be replaced with heuristic algorithms (which trade some precision for a lower complexity).
 
-Given an input of `n` elements, an algorithm that executes in O(2^n^) will execute 2^20^ = 1 048 576 cycles!
+Given an input of `20` elements, an algorithm that executes in O(2^n^) will execute 2^20^ = 1 048 576 cycles!
 
 
 A primer on calculating the order of your algorithms
