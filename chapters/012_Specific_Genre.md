@@ -57,9 +57,18 @@ For ease of explanation let's consider a screen scrolls towards the right, when 
 
 ### Jump Buffering
 
-\placeholder
+A nice trick used mostly in 2D platformers to allow for smoother gameplay is "jump buffering".
 
-<!-- TODO: When the player presses the jump button (usually before the character lands), start a timer: when the character lands, if the timer is > 0 then jump automatically. This allows for smoother gameplay when precise jumping is needed, giving the player some leeway -->
+Normally when a character is mid-air, the jump button does nothing, in code:
+
+\code{specific_genre/jump_buffering_nobuffer}
+
+Jump Buffering consists in allowing the player to "buffer" a jump slightly before the character lands, making the controls a bit less stiff and the gameplay more fluid.
+
+Jump buffering usually is put into practice using a timer, in a fashion similar to the following:
+
+\code{specific_genre/jump_buffering_buffer}
+
 
 ### Coyote Time
 
