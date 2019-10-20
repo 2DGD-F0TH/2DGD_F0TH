@@ -1,6 +1,13 @@
 \null\clearpage
-Genre-Specific Tips, Tricks and Algorithms
+Tips, Tricks and Algorithms
 ==========================================
+
+General Purpose
+---------------
+
+### Make that last Health Point count
+
+<!-- TODO: Explain how giving players more "near deaths" and making them survive enhances their experience (via making the last HP be multiple HPs or giving them temporary invincibility when hitting 1HP) -->
 
 2D Platformers
 ---------------
