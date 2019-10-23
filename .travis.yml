@@ -3,6 +3,9 @@ os: xenial
 before_install:
 - sudo apt-get install -y pandoc
 - sudo apt-get install -y texlive-full
+branches:
+  only:
+    - master
 script:
 - make
 deploy:
