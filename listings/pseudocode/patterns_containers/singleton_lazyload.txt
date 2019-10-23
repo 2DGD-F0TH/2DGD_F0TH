@@ -1,0 +1,19 @@
+class LazySingleton {
+
+    private static LazySingleton instance = null;
+
+    private LazySingleton() {}
+
+    public static Singleton getInstance() {
+        if (instance == null) {
+            // Multi-threading: manage race conditions
+            // ----- Critical region start -----
+            if (instance == null) {
+                instance = new Singleton();
+            }
+            // ----- Critical region end -----
+        }
+
+        return instance;
+    }
+}

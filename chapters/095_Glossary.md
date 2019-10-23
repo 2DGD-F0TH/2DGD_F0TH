@@ -39,6 +39,9 @@ Malware
 R
 --
 
+Race Condition
+: A condition where two or more threads are competing for a resource (variable, screen buffer, ...) and the order that the threads happen to take hold of such resource changes the result.
+
 Rootkit
 : Usually associated with malware, a rootkit is a software that manages to get access to reserved areas of an operating system, usually to hide its own, or other softwares' presence.
 
