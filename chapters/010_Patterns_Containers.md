@@ -48,12 +48,26 @@ Before applying the singleton pattern, ask yourself the following questions:
 
 ### Command Pattern
 
+It may be necessary, during our software development, to abstract our functions into something that can be assigned and treated as an object.
+
+Many programming languages now feature functions as "first class citizens", allowing to treat functions as objects: assigning functions to variables, calling functions, lambdas, inline functions, functors, function pointers...
+
+The command pattern allows us to abstract a function (or any executable line of code) into its own object that can be handled as such, allowing us to package a request into its own object for later use.
+
+This pattern can be useful to code GUIs, making actions in our games that can be undone, macros, replays and much more.
+
 \placeholder
 
 <!-- TODO: Talk about the command pattern and how to transform a function into an object -->
 <!-- TODO: Add pattern reference table -->
 
 ### Flyweight
+
+Sometimes it may be necessary to keep track of a large number of very similar objects.
+
+Imagine a lot of sprites of trees that have the same texture and size, but have different positions: it could prove to be really resource-heavy to keep all the sprite objects in memory, each one with its own copy of the texture and size. This could prove to be performance-heavy too, since all those textures will have to be moved to the GPU.
+
+Here comes the Flyweight pattern: we try to share as much of the so-called "intrinsic state" of the objects between the object that contain the so-called "extrinsic state".
 
 \placeholder
 
