@@ -343,7 +343,7 @@ The secret to this method is taking a snapshot of the object's position before i
 Common Issues with Collision Detection
 ----------------------------------------
 
-### The "Bullet Through Paper" problem
+### The "Bullet Through Paper" problem {#bulletthroughpaper}
 
 The "bullet through paper" is a common problem with collision detection, when an obstacle is really thin (our "paper"), and the object is really fast and small (the "bullet") it can happen that collision is not detected.
 

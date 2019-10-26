@@ -7,16 +7,24 @@ General Purpose
 
 ### Make that last Health Point count
 
-<!-- TODO: Explain how giving players more "near deaths" and making them survive enhances their experience (via making the last HP be multiple HPs or giving them temporary invincibility when hitting 1HP) -->
+Players love that rush of adrenaline they get when they escape a difficult situation with just one health point. That "just barely survived" situation can be "helped" by the game itself: some programmers decide to program the last HP in a special way.
+
+Some prefer giving the last health point a value that is higher than the other health points (kind of like a "hidden health reserve"), others instead prefer giving a brief period of invincibility when that last "1HP" threshold is hit.
+
+These small devices allow you to give players more of those "near death" experiences that can give players that confidence boost to keep them playing through a hard stage, while at the same time, reducing the chance that they will rage-quit.
 
 2D Platformers
 ---------------
 
 ### Simulating Gravity
 
-\placeholder
+Gravity in a 2D platformer is quite easy to simulate: you just need to apply a constant acceleration towards the direction your gravity is pulling (it doesn't have to be towards the bottom of the screen!) and move your objects accordingly to such acceleration.
 
-<!-- TODO: Just add a constant acceleration down -->
+Your acceleration should not be precise (like the physics constant $9.81 m/s^2$), you don't want to make a physics engine: you want to make a somewhat convincing (or even better: entertaining) approximation of reality.
+
+This is usually done before the player movement is used to update the character's status (but after the player input has been captured). Remember to add this acceleration before the collision detection is processed.
+
+A useful precaution to avoid the [bullet through paper](#bulletthroughpaper) problem when you are working with long falls: put a limit at the fall velocity (kind of like air friction limits an object's fall velocity) of your objects. By applying a hard limit to the velocity, your gravity will be realistic but won't break your simulation.
 
 ### Scrolling Backgrounds and Parallax Scrolling
 
@@ -27,6 +35,10 @@ In a game that uses a scrolling background, the background used should be at lea
 Loop points are points where the image repeats itself, thus allowing us to create an image that is virtually infinite, scrolling through the screen.
 
 The image below shows a background and its loop points.
+
+\placeholder
+
+<!-- TODO: Add code example -->
 
 ![Demonstration of an image with loop points](./images/specific_genre/Loop_Points.png){width=40%}
 
