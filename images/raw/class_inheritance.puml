@@ -1,0 +1,16 @@
+@startuml
+
+class Person{
+    + name: string
+    + age: int
+}
+
+
+class Student{
+    + grades: list
+    + getGPA()
+}
+
+Student --|> Person
+
+@enduml

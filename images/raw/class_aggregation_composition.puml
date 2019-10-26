@@ -1,0 +1,26 @@
+@startuml
+
+class Student{
+    + name: string
+    + age: int
+}
+
+
+class Teacher{
+    + name: string
+    + age: int
+}
+
+class University{
+    + name: string
+}
+
+class UniversityDepartment{
+    + name: string
+}
+
+Teacher o-- Student
+
+University *-- UniversityDepartment
+
+@enduml

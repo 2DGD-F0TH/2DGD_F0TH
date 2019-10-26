@@ -561,7 +561,53 @@ Reading UML diagrams
 
 ### Class Diagrams
 
-\placeholder
+#### Classes
+
+Class diagrams are used a step after analyzing your game, since they are used for planning classes. The central element of a class diagram is the "class", which is represented as follows:
+
+![Example of classes in UML](./images/computer_science/class_example.png){width=60%}
+
+Classes are made up by a class name, which is shown on top of the class; abstract classes are shown with a name in *italics*.
+
+Public members are highlighted by a "+" symbol (or in our case, a green symbol) before their name, protected members use a "#" symbol (or a yellow symbol) and private members use a "-" symbol.
+
+Static members are shown with an \underline{underlined} name, while abstract members are shown in *italics*.
+
+#### Relationships between classes
+
+Expressing only single classes on their own doesn't give UML a lot of expressive power when it comes to planning your games. Here we'll take a quick look at the most used relationships between classes.
+
+![Relationships between classes in an UML Diagram](./images/computer_science/class_relationships.png){width=60%}
+
+##### Inheritance
+
+Inheritance is represented via an empty triangular arrow head that points towards the base class, this means that the classes are in a "supertype and subtype" relationship.
+
+![Example of inheritance in UML class diagrams](./images/computer_science/class_inheritance.png){width=15%}
+
+In this example we say that "Student IS-A Person" and inherits all Person's methods and fields.
+
+##### Association
+
+Association represents a static relationship between two classes. This is usually represented with a solid line with an arrow. In case the relationship is bi-directional, the arrow points are omitted, leaving only a solid line between the two classes.
+
+![Example of association in UML class diagrams](./images/computer_science/class_association.png){width=15%}
+
+An example of an association is the relationship between a "Person" and a "Magazine", such relationship is the "Subscription". In this case the relationship is bi-directional, since a "Magazine" can be subscribed by many people, but a single "Person" can subscribe to many "Magazine"s.
+
+##### Aggregation and Composition
+
+Aggregation is a special case of the association relationship, and represents a more specific case of it. Aggregation is a variant of a "has-a" relationship and represents a part-whole relationship.
+
+Aggregation is represented with a hollow diamond and a line that points to the *contained* class, classes involved in an aggregation relationships *do not* have their life cycles dependant one another, that means that if the container is destroyed, the contained objects will keep on living. An example could be a teacher and their students, if the teacher dies the students will keep on living.
+
+![Example of aggregation and composition in UML class diagrams](./images/computer_science/class_aggregation_composition.png){width=35%}
+
+Composition is represented with a filled diamond instead than a hollow one, in this case there is a life cycle dependency, so when the container is destroyed the contents are destroyed too. Like when a university is dissolved, its departments will cease to exist.
+
+##### Dependency
+
+The dependency relationship is the one that gives us the least amount of coupling, it represents a "supplier-client" relationships, where the supplier supplies its functions (methods) to the client. The association is represented in a dashed line with an open arrow that points towards the supplier.
 
 ### Activity Diagrams
 

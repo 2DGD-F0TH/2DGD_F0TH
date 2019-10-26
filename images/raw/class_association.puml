@@ -1,0 +1,15 @@
+@startuml
+
+class Person{
+    + name: string
+    + age: int
+}
+
+
+class Magazine{
+    + title: string
+}
+
+Person "0..*" -- "0..*" Magazine: subscriber
+
+@enduml

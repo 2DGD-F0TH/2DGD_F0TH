@@ -1,0 +1,16 @@
+@startuml
+
+class ClassName{
+    + publicMethodName()
+    # protectedMethodName()
+    - privateMethodName()
+    + {static} publicStaticMethod()
+    - privateVariableType privateVariable
+}
+
+
+abstract class AbstractClassName{
+    + {abstract} publicAbstractMethodName()
+}
+
+@enduml
