@@ -26,6 +26,10 @@ This is usually done before the player movement is used to update the character'
 
 A useful precaution to avoid the [bullet through paper](#bulletthroughpaper) problem when you are working with long falls: put a limit at the fall velocity (kind of like air friction limits an object's fall velocity) of your objects. By applying a hard limit to the velocity, your gravity will be realistic but won't break your simulation.
 
+\placeholder
+
+<!-- TODO: Add code example -->
+
 ### Scrolling Backgrounds and Parallax Scrolling
 
 When doing any kind of game that features a scrolling background, you should construct your art accordingly, allowing for enough variety to make the game interesting while avoiding creating huge artwork that weighs on the game's performance.
@@ -35,10 +39,6 @@ In a game that uses a scrolling background, the background used should be at lea
 Loop points are points where the image repeats itself, thus allowing us to create an image that is virtually infinite, scrolling through the screen.
 
 The image below shows a background and its loop points.
-
-\placeholder
-
-<!-- TODO: Add code example -->
 
 ![Demonstration of an image with loop points](./images/specific_genre/Loop_Points.png){width=40%}
 
