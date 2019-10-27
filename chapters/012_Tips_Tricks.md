@@ -15,11 +15,13 @@ These small devices allow you to give players more of those "near death" experie
 
 ### Scrolling Backgrounds and Parallax Scrolling
 
+#### Infinitely Scrolling Backgrounds
+
 When doing any kind of game that features a scrolling background, you should construct your art accordingly, allowing for enough variety to make the game interesting while avoiding creating huge artwork that weighs on the game's performance.
 
 In a game that uses a scrolling background, the background used should be at least two times the screen size, in the scrolling direction ([Virtual Resolution] can prove really useful in this case) and the image should have what are called "loop points".
 
-Loop points are points where the image repeats itself, thus allowing us to create an image that is virtually infinite, scrolling through the screen.
+Loop points are points where the image repeats itself, thus allowing us to create an image that is virtually infinite, scrolling through the screen. To have a so-called "loop point" the image should be at least twice the size of the screen, in the scrolling direction.
 
 The image below shows a background and its loop points.
 
@@ -31,7 +33,25 @@ For ease of explanation let's consider a screen scrolls towards the right, when 
 
 \placeholder
 
-<!-- TODO: talk about image "loop points", how big the image should be (at least 2x the screen size in the scrolling direction) and how to loop and make a seemingly infinite background-->
+#### Parallax Scrolling
+
+Parallax in games is an effect that can give more depth to our environment: it looks like objects farther away are moving much slower than the objects closer to us.
+
+This can be used to our advantage, along with some other tricks to enhance the perception of depth explained in [the chapter dedicated to graphics](#GraphicsResources).
+
+Creating a parallax effect is quite easy: first we need at least two background layers (although three seems to be the best compromise between performance and depth of the effect):
+
+- The **sprite layer** that will represent the closest layer to us, that will move at a certain speed that will be decided while developing the game;
+- A **moving background** that will move slower compared to the sprite layer, thus giving the parallax effect;
+- A **fixed background** that will represent our horizon and the farthest objects.
+
+As stated earlier, a third optional background can be added to deepen the parallax scrolling effect, such background can take any of these positions:
+
+- **Above** the sprite layer: in this case this "foreground layer" will need to move **faster** than the sprite layer and it should include very unobtrusive graphics, to avoid hiding important gameplay elements (like enemies);
+- **Between the sprite layer and the first moving background**: in this case, the optional background should move **slower** than the sprite layer, but **faster** than the first moving background;
+- **Between the first moving background and the fixed background**: in this case, the optional background will have to move **slower** than the first moving background.
+
+The backgrounds should move all in the same direction, depending on the direction our character is moving: if our character is moving right, our moving backgrounds should move left.
 
 ### Sprite Stenciling
 
@@ -181,6 +201,12 @@ If we deleted the horizontal match immediately, we would lose the possibility of
 Instead we memorize everything first, and then delete all the matches at once, without the risk of losing anything.
 
 ### Replacing the removed tiles and applying gravity
+
+At this point, it is easy to make the "floating tiles" get into the right position: the hardest part is taking care of the graphics inbetweening that will give us that "falling effect" that we see in many match-x games.
+
+After the graphics tweening, we need to create the new tiles that will go and fill up the holes that have been created by our matches and moved tiles.
+
+After creating the tiles and tweening them in place, it will be necessary to check for more matches that have been created from the falling tiles (and eventually notify some kind of "combo system" to apply a "score multipier system" or even an achievement system using the [Observer Pattern](#ObserverPattern)).
 
 \placeholder
 

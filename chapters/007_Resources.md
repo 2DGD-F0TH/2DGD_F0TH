@@ -2,7 +2,7 @@
 Creating your resources
 =======================
 
-Graphics
+Graphics {#GraphicsResources}
 ---------
 
 ### Virtual Resolution
