@@ -13,6 +13,12 @@ Some prefer giving the last health point a value that is higher than the other h
 
 These small devices allow you to give players more of those "near death" experiences that can give players that confidence boost to keep them playing through a hard stage, while at the same time, reducing the chance that they will rage-quit.
 
+### Sprite Stenciling
+
+\placeholder
+
+<!-- TODO: A shape that cuts out a sprite, pixel by pixel, allowing for certain effects like "going through a door" -->
+
 2D Platformers
 ---------------
 
