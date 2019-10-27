@@ -607,6 +607,13 @@ Use cases are represented with an ellipse with the name of the use case inside. 
 
 <!-- TODO: Talk about notes in use cases -->
 
+#### Sub-Use Cases
+
+\placeholder
+
+<!-- TODO: Talk about how you can split use cases diagrams into smaller and more detailed sub-use case diagrams -->
+
+
 ### Class Diagrams
 
 #### Classes
@@ -675,4 +682,44 @@ As with Use Case diagrams, class diagrams can make use of notes too, and the gra
 
 ### Activity Diagrams
 
+Activity diagrams are the more powerful version of flow charts: they represent the flux of an activity in detail, allowing to have a better understanding of a process or algorithm.
+
+<!--TODO: Add example of activity diagram -->
+
 \placeholder
+
+#### Start and End Nodes
+
+\placeholder
+
+#### Actions
+
+\placeholder
+
+#### Decisions (Conditionals)
+
+\placeholder
+
+#### Synchronization
+
+\placeholder
+
+#### Signals
+
+\placeholder
+
+#### Swimlanes
+
+\placeholder
+
+#### Notes
+
+As with Use Case and Class diagrams, Activity Diagrams can make use of notes, in the same way as the other two diagrams we presented in this book do.
+
+<!-- TODO: Add an activity diagram with notes -->
+
+\placeholder
+
+#### A note on activity diagrams
+
+The components of activity diagrams shown here are just a small part of the used components, but they should be enough to get you started designing and reading most of the activity diagrams that exist.
