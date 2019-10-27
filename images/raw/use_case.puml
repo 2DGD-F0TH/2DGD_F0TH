@@ -1,0 +1,15 @@
+@startuml
+
+Player --> (Start The Game)
+
+Player --> (Open the Options Menu)
+
+Player --> (Open the Credits Screen)
+
+Player --> (Exit to Desktop)
+
+note "Remember to clear the menu stack!" as N
+
+(Start The Game) .. N
+
+@enduml

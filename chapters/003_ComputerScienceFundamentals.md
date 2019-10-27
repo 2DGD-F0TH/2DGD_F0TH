@@ -557,7 +557,55 @@ Reading UML diagrams
 
 ### Use Case Diagrams
 
+Use Case Diagrams are usually used in software engineering to gather requirements for the software that will come to exist. In the world of game development, use case diagrams can prove useful to have an "outside view" of our game, and understand how an user can interact with our game.
+
+Here is an example of a use case diagram for a game:
+
+![Example of a use case diagram](./images/computer_science/use_case.png){width=60%}
+
+#### Actors {#UMLUserCaseActors}
+
+Actors are any entity that can interface with our system (in this case, our game) without being part of it. Actors can both be human, machines or even other systems.
+
+Actors are represented with a stick figure and can inherit from each other: this will create an "IS-A" relationship between actors.
+
+![Example of an actor hierarchy](./images/computer_science/actors.png){width=20%}
+
+In the previous example, we can see that a "Free User" is an "Authenticated User", as well as a "Power User" (which could be a paying user) is itself an "Authenticated User" while an "Ultimate User" (which could be a higher tier of paying user) is a "Power User" (thus has all the "Power User" capabilities, plus some unique) and by transitive property an "Authenticated User".
+
+As seen, inheritance between actors is represented with a solid line with a hollow closed arrow. Such arrow points towards the "supertype" or "parent" from which the subject (or "subtype", or "child") inherits.
+
+This representation will come back in the UML language for other diagrams too.
+
+#### Use Cases
+
+Use cases represent the functionalities that our system offers, and the relationships between them.
+
+Use cases are represented with an ellipse with the name of the use case inside. Choosing the right name for a use case is extremely important, since they will represent the functionality that will be developed in our game.
+
+##### Inheritance
+
 \placeholder
+
+<!-- TODO: Talk about inheritance between use cases -->
+
+##### Extensions
+
+\placeholder
+
+<!-- TODO: Talk about extension between use cases -->
+
+##### Inclusions
+
+\placeholder
+
+<!-- TODO: Talk about inclusions between use cases -->
+
+#### Notes
+
+\placeholder
+
+<!-- TODO: Talk about notes in use cases -->
 
 ### Class Diagrams
 
@@ -581,7 +629,7 @@ Expressing only single classes on their own doesn't give UML a lot of expressive
 
 ##### Inheritance
 
-Inheritance is represented via an empty triangular arrow head that points towards the base class, this means that the classes are in a "supertype and subtype" relationship.
+Inheritance is represented via a hollow closed arrow head that points towards the base class (exactly like in [Actor inheritance](#UMLUserCaseActors)), this means that the classes are in a "supertype and subtype" relationship.
 
 ![Example of inheritance in UML class diagrams](./images/computer_science/class_inheritance.png){width=15%}
 
@@ -616,6 +664,14 @@ There are many categories of dependency, like `<<create>` or `<<call>>` that exp
 An example could be between a "Car Factory" and a class "Car": the "CarFactory" class depends on the "Car" class, and such dependency is an instantiation dependency.
 
 ![Example of dependency in UML class diagrams](./images/computer_science/class_dependency.png){width=15%}
+
+#### Notes
+
+As with Use Case diagrams, class diagrams can make use of notes too, and the graphical language used to represent them is exactly the same one used in the Use Case Diagrams.
+
+<!-- TODO: Add example of note in class diagram -->
+
+\placeholder
 
 ### Activity Diagrams
 

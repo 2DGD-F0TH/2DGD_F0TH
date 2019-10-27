@@ -1,0 +1,17 @@
+@startuml
+
+:Authenticated User: as AU
+
+:Free User: as FU
+
+:Power User: as PU
+
+:Ultimate User: as UU
+
+FU --|> AU
+
+PU --|> AU
+
+UU --|> PU
+
+@enduml
