@@ -1,0 +1,5 @@
+@startuml
+
+CarFactory ..> Car
+
+@enduml

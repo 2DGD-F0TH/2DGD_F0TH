@@ -609,6 +609,14 @@ Composition is represented with a filled diamond instead than a hollow one, in t
 
 The dependency relationship is the one that gives us the least amount of coupling, it represents a "supplier-client" relationships, where the supplier supplies its functions (methods) to the client. The association is represented in a dashed line with an open arrow that points towards the supplier.
 
+This means that the client class requires, needs or depends on the supplier.
+
+There are many categories of dependency, like `<<create>` or `<<call>>` that explain further the type of dependency exists between the supplier and the client.
+
+An example could be between a "Car Factory" and a class "Car": the "CarFactory" class depends on the "Car" class, and such dependency is an instantiation dependency.
+
+![Example of dependency in UML class diagrams](./images/computer_science/class_dependency.png){width=15%}
+
 ### Activity Diagrams
 
 \placeholder
