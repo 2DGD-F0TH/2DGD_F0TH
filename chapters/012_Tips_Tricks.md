@@ -13,6 +13,26 @@ Some prefer giving the last health point a value that is higher than the other h
 
 These small devices allow you to give players more of those "near death" experiences that can give players that confidence boost to keep them playing through a hard stage, while at the same time, reducing the chance that they will rage-quit.
 
+### Scrolling Backgrounds and Parallax Scrolling
+
+When doing any kind of game that features a scrolling background, you should construct your art accordingly, allowing for enough variety to make the game interesting while avoiding creating huge artwork that weighs on the game's performance.
+
+In a game that uses a scrolling background, the background used should be at least two times the screen size, in the scrolling direction ([Virtual Resolution] can prove really useful in this case) and the image should have what are called "loop points".
+
+Loop points are points where the image repeats itself, thus allowing us to create an image that is virtually infinite, scrolling through the screen.
+
+The image below shows a background and its loop points.
+
+![Demonstration of an image with loop points](./images/specific_genre/Loop_Points.png){width=40%}
+
+To make an image appear like it's scrolling infinitely we need to move it back and forth between loop points when the screen passes over them.
+
+For ease of explanation let's consider a screen scrolls towards the right, when we have reached a loop point, we reset the image position back to the position it was at the beginning and, since the image has been crafted to loop, the player won't notice that the background has been reset.
+
+\placeholder
+
+<!-- TODO: talk about image "loop points", how big the image should be (at least 2x the screen size in the scrolling direction) and how to loop and make a seemingly infinite background-->
+
 ### Sprite Stenciling
 
 \placeholder
@@ -35,26 +55,6 @@ A useful precaution to avoid the [bullet through paper](#bulletthroughpaper) pro
 \placeholder
 
 <!-- TODO: Add code example -->
-
-### Scrolling Backgrounds and Parallax Scrolling
-
-When doing any kind of game that features a scrolling background, you should construct your art accordingly, allowing for enough variety to make the game interesting while avoiding creating huge artwork that weighs on the game's performance.
-
-In a game that uses a scrolling background, the background used should be at least two times the screen size, in the scrolling direction ([Virtual Resolution] can prove really useful in this case) and the image should have what are called "loop points".
-
-Loop points are points where the image repeats itself, thus allowing us to create an image that is virtually infinite, scrolling through the screen.
-
-The image below shows a background and its loop points.
-
-![Demonstration of an image with loop points](./images/specific_genre/Loop_Points.png){width=40%}
-
-To make an image appear like it's scrolling infinitely we need to move it back and forth between loop points when the screen passes over them.
-
-For ease of explanation let's consider a screen scrolls towards the right, when we have reached a loop point, we reset the image position back to the position it was at the beginning and, since the image has been crafted to loop, the player won't notice that the background has been reset.
-
-\placeholder
-
-<!-- TODO: talk about image "loop points", how big the image should be (at least 2x the screen size in the scrolling direction) and how to loop and make a seemingly infinite background-->
 
 ### Ladders
 
