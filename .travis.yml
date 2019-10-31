@@ -1,8 +1,9 @@
 language: generic
 os: xenial
-before_install:
-- sudo apt-get install -y pandoc
-- sudo apt-get install -y texlive-full
+addons:
+  apt_packages:
+    - texlive-full
+    - pandoc
 branches:
   only:
     - master
