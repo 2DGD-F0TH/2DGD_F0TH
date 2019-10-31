@@ -1,9 +1,13 @@
 language: generic
 os: xenial
 addons:
-  apt_packages:
-    - texlive-full
-    - pandoc
+  apt:
+    packages:
+      - pandoc
+      - texlive-latex-base
+      - texlive-latex-recommended
+      - texlive-latex-extra
+      - texlive-full
 branches:
   only:
     - master
