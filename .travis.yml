@@ -1,13 +1,6 @@
-language: generic
-os: xenial
-addons:
-  apt:
-    packages:
-      - pandoc
-      - texlive-latex-base
-      - texlive-latex-recommended
-      - texlive-latex-extra
-      - texlive-full
+# The R language image seems to contain pandoc and texlive
+language: r
+os: linux
 branches:
   only:
     - master
