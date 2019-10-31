@@ -1,6 +1,14 @@
-# The R language image seems to contain pandoc and texlive
-language: r
-os: linux
+language: generic
+dist: bionic
+addons:
+  apt:
+    update: true
+    packages:
+    - texlive-latex-base
+    - texlive-latex-recommended
+    - texlive-latex-extra
+    - texlive-full
+    - pandoc
 branches:
   only:
     - master
