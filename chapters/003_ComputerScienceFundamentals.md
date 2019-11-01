@@ -49,7 +49,7 @@ An algorithm that executes in **O(1)** is said to execute "in constant time", wh
 
 An example of a simple O(1) algorithm is an algorithm that, given a list of elements (with at least one element), returns `True` if the first element is `null`.
 
-\code{computer_science/o1}
+\code{computer_science/o1}{Example of an O(1) algorithm}
 
 To be precise, this algorithm will perform both in O(1) and $\Omega(1)$, so it will perform in $\Theta(1)$.
 
@@ -59,7 +59,7 @@ An algorithm that executes in O(log(n)) is said to execute in "logarithmic time"
 
 An example of a O(log(n)) algorithm is the so-called "binary search" on a ordered list of items.
 
-\code{computer_science/binary_search}
+\code{computer_science/binary_search}{Example of an O(log(n)) algorithm (Binary Search)}
 
 The best case is the time when you get the element to find to be the "middle element" of the list, in that case the algorithm will execute in linear time: $\Theta(1)$ - You need **at least one lookup** ($\Omega(1)$) and **at most one lookup** ($O(1)$).
 
@@ -71,7 +71,7 @@ An algorithm that executes in O(n) is said to execute in "linear time", which me
 
 An example of a simple O(n) algorithm is the one that prints a list, element by element.
 
-\code{computer_science/printlist}
+\code{computer_science/printlist}{Example of an O(n) algorithm (printing of a list)}
 
 It's evident that this algorithm will call the `print` function `n` times, where `n` is the size of the list. This translates in a $\Theta(n)$ complexity, which is both $O(n)$ and $\Omega(n)$.
 
@@ -101,7 +101,7 @@ Given an input of **n** elements, these algorithms execute **n^2^** cycles, whic
 
 A simple example of a quadratic algorithm is "bubble sort". A pseudo-code implementation is written here.
 
-\code{computer_science/bubblesort}
+\code{computer_science/bubblesort}{Example of an O(n²) algorithm (bubble sort)}
 
 Anything with complexity higher than O(n^2^) is usually considered unusable.
 
@@ -529,7 +529,7 @@ Another idea could be designing an "entity" class that can be instantiated, and 
 
 An idea could be the following
 
-~~~~.yaml
+```{.yaml caption="Example of an entity declared as data"}
 entity:
   name: skeleton
   health: 10
@@ -544,7 +544,7 @@ entity:
       start_sprite: 9
       frame_no: 2
       duration: 0.1
-~~~~
+```
 
 With more complex building algorithms, it is possible to change behaviours and much more with just a configuration file, and this gives itself well to roguelike games, which random selection of enemies can benefit from an extension of the enemy pool. In fact, it's really easy to configure a new type of enemy and have it work inside the game without recompiling anything.
 

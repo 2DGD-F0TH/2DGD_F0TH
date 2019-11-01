@@ -19,11 +19,11 @@ The UML diagram for a singleton is really simple.
 
 ![The UML diagram for a singleton pattern](./images/patterns_containers/singleton.png){width=20%}
 
-\code{patterns_containers/singleton}
+\code{patterns_containers/singleton}{Example of a singleton pattern}
 
 The previous singleton instantiates immediately, which may not always be necessary, in that case a good idea could be implementing the so-called "lazy loading", where the instantiation happens the first time you ask the object for its own instance.
 
-\code{patterns_containers/singleton_lazyload}
+\code{patterns_containers/singleton_lazyload}{Example of a singleton pattern with lazy loading}
 
 If multiple threads are involved in using a lazy-loading singleton, you may need to take care of preventing *race conditions*~[g]~ that could result in multiple instances of the singleton being created.
 
@@ -95,7 +95,7 @@ Here we can see the Observer abstract class (it can be an interface), a concrete
 
 Here we can see an implementation of the observer pattern:
 
-\code{patterns_containers/observer}
+\code{patterns_containers/observer}{Code for an observer pattern}
 
 If needed, you can pass information between the subject and the observers just by calling each `update()` method with the necessary arguments.
 
@@ -191,7 +191,7 @@ Here we will present some simple tweenings that can be programmed, and explain t
 
 Let's start with a *linear* tweening, usually the following function is used:
 
-\code{patterns_containers/tween_linear}
+\code{patterns_containers/tween_linear}{Linear Tweening}
 
 Let's explain the variables used:
 
@@ -210,17 +210,17 @@ $$ (change\ in\ property) \cdot (factor) + (beginning\ value)$$
 
 So we can use our function substituting `begin` with 0 and `change` with 1 to calculate `factor` and have a code similar to this one:
 
-\code{patterns_containers/way_to_easing}
+\code{patterns_containers/way_to_easing}{Example of a simple easing function}
 
 With linear tweening, the function degenerates to $\frac{time}{duration}$, but now we can replace our linear tween with the following function:
 
-\code{patterns_containers/easeIn}
+\code{patterns_containers/easeIn}{Ease-in}
 
 By changing the `power` parameter, we change the behaviour of the easing, making the movement slower at the beginning and pick up the pace more and more, until the destination is reached. This is called a "ease-in".
 
 For an "ease-out", where the animation starts fast and slows down towards the end, we use the following function instead:
 
-\code{patterns_containers/easeOut}
+\code{patterns_containers/easeOut}{Ease-out}
 
 With some calculations, and if statements on the time passed, you can combine the two and get an "ease-in-out" function.
 

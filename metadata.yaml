@@ -19,6 +19,8 @@ toc: True
 lof: True
 # List of tables?
 lot: True
+# List of Listings?
+lol: True
 # Geometry
 geometry:
     - "lmargin=2.5cm"

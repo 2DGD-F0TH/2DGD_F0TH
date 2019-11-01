@@ -106,13 +106,13 @@ A nice trick used mostly in 2D platformers to allow for smoother gameplay is "ju
 
 Normally when a character is mid-air, the jump button does nothing, in code:
 
-\code{specific_genre/jump_buffering_nobuffer}
+\code{specific_genre/jump_buffering_nobuffer}{Code for jumping without buffering}
 
 Jump Buffering consists in allowing the player to "buffer" a jump slightly before the character lands, making the controls a bit less stiff and the gameplay more fluid.
 
 Jump buffering usually is put into practice using a timer, in a fashion similar to the following:
 
-\code{specific_genre/jump_buffering_buffer}
+\code{specific_genre/jump_buffering_buffer}{Jump buffering example}
 
 
 ### Coyote Time
@@ -172,7 +172,7 @@ Similarly we can do the same algorithm for vertical matches, by running through 
 
 Here is a pseudo-code example:
 
-\code{specific_genre/match3_findhorizontalmatches}
+\code{specific_genre/match3_findhorizontalmatches}{Finding horizontal matches in a match-3 game}
 
 Let's talk a second about the last rows in the algorithm: they are specifically tailored to address a corner case that happens when there is a match that ends on the right border of the screen.
 
@@ -180,7 +180,7 @@ If such code was not there, the match number would grow by one, then the for loo
 
 Similarly, we can make an algorithm that allows for vertical matches to be memorized for later removal:
 
-\code{specific_genre/match3_findverticalmatches}
+\code{specific_genre/match3_findverticalmatches}{Finding vertical matches in a match-3 game}
 
 Both algorithms run in $O(n)$, where "n" is the number of tiles on the screen.
 

@@ -136,11 +136,12 @@ $endif$
 $if(listings)$
 \newcommand{\passthrough}[1]{\lstset{mathescape=false}#1\lstset{mathescape=true}}
 \usepackage{listings}
+\renewcommand*{\lstlistlistingname}{List of Code Listings}
 \usepackage{color}
 $if(proglang)$
-\newcommand{\code}[1]{\lstinputlisting[language=$proglang$]{./listings/$proglang$/#1.txt}}
+\newcommand{\code}[2]{\lstinputlisting[language=$proglang$,caption={#2},captionpos=b]{./listings/$proglang$/#1.txt}}
 $else$
-\newcommand{\code}[1]{\lstinputlisting{./listings/pseudocode/#1.txt}}
+\newcommand{\code}[2]{\lstinputlisting[caption={#2},captionpos=b]{./listings/pseudocode/#1.txt}}
 $endif$
 
 \definecolor{mygreen}{rgb}{0,0.6,0}
@@ -371,6 +372,9 @@ $if(lot)$
 $endif$
 $if(lof)$
 \listoffigures
+$endif$
+$if(lol)$
+\lstlistoflistings
 $endif$
 \clearpage
 \pagenumbering{arabic}

@@ -213,7 +213,7 @@ For instance we could have different walking sounds for different floors, so tha
 
 An example of "swappable sound effects" configuration is given in the following file, which is written in YAML:
 
-~~~.yaml
+```{.yaml caption="Example of swappable sound effects"}
 footsteps:
   grass:
     - grasswalk1.wav
@@ -224,6 +224,6 @@ footsteps:
   metal:
     - metalstep1.wav
     - metalstep2.wav
-~~~
+```
 
 Making a configuration file instead of hard-coding the elements allows for easy extensibility and modding, which everyone loves (See [Designing entities as data](#entitiesasdata)).
