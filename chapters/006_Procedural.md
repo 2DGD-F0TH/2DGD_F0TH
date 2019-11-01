@@ -18,11 +18,11 @@ Let's make a simple example: we want our Super-duper-shooter to make use of proc
 
 This is a possible algorithm for a procedural weapon:
 
-\code{procedural/createproceduralweapon}
+\code{procedural/createproceduralweapon}{Example procedural weapon creation}
 
 This instead is a possible algorithm for a random weapon, for simplicity we assume that the pieces are all compatible:
 
-\code{procedural/createrandomizedweapon}
+\code{procedural/createrandomizedweapon}{Example Randomized weapon creation}
 
 As you can see, the algorithms are very similar to each other, but the second one has an element of randomness added to it.
 

@@ -23,6 +23,11 @@ De Morgan's laws can be written as:
 
 > not (A or B) = not A and not B
 
+In symbols:
+
+$$ \overline{(A \land B)} = \bar{A} \lor \bar{B} $$
+$$ \overline{(A \lor B)} = \bar{A} \land \bar{B} $$
+
 These laws allow us to express our own conditionals in different ways, allowing for more readability and maybe avoid some boolean manipulation that can hinder the performance of our game.
 
 Estimating the order of algorithms
@@ -50,7 +55,7 @@ An algorithm that executes in **O(1)** is said to execute "in constant time", wh
 
 An example of a simple O(1) algorithm is an algorithm that, given a list of elements (with at least one element), returns `True` if the first element is `null`.
 
-\code{computer_science/o1}
+\code{computer_science/o1}{Example of an O(1) algorithm}
 
 To be precise, this algorithm will perform both in O(1) and $\Omega(1)$, so it will perform in $\Theta(1)$.
 
@@ -60,7 +65,7 @@ An algorithm that executes in O(log(n)) is said to execute in "logarithmic time"
 
 An example of a O(log(n)) algorithm is the so-called "binary search" on a ordered list of items.
 
-\code{computer_science/binary_search}
+\code{computer_science/binary_search}{Example of an O(log(n)) algorithm (Binary Search)}
 
 The best case is the time when you get the element to find to be the "middle element" of the list, in that case the algorithm will execute in linear time: $\Theta(1)$ - You need **at least one lookup** ($\Omega(1)$) and **at most one lookup** ($O(1)$).
 
@@ -72,7 +77,7 @@ An algorithm that executes in O(n) is said to execute in "linear time", which me
 
 An example of a simple O(n) algorithm is the one that prints a list, element by element.
 
-\code{computer_science/printlist}
+\code{computer_science/printlist}{Example of an O(n) algorithm (printing of a list)}
 
 It's evident that this algorithm will call the `print` function `n` times, where `n` is the size of the list. This translates in a $\Theta(n)$ complexity, which is both $O(n)$ and $\Omega(n)$.
 
@@ -102,7 +107,7 @@ Given an input of **n** elements, these algorithms execute **n^2^** cycles, whic
 
 A simple example of a quadratic algorithm is "bubble sort". A pseudo-code implementation is written here.
 
-\code{computer_science/bubblesort}
+\code{computer_science/bubblesort}{Example of an O(n²) algorithm (bubble sort)}
 
 Anything with complexity higher than O(n^2^) is usually considered unusable.
 
@@ -485,15 +490,29 @@ In our "Person-Student" example, you could use a pointer to either a Person or a
 
 \placeholder
 
-### Composition
+### The Diamond Problem
+
+<!-- TODO: Talk about the diamond problem created via inheritance -->
 
 \placeholder
 
-### "Composition over Inheritance" design
+### Composition
+
+As opposed to inheritance's "IS-A" relationship, composition makes use of a "HAS-A" type of relationship.
+
+Composition allows to define objects by declaring which properties they have: a player character can be a sprite with a "Movable" component, or a box could have a "RigidBody" component.
+
+This way we can create new objects by reusing basic components, making maintenance easier as well as saving lines of code, avoiding "the diamond problem" and reducing coupling.
 
 \placeholder
 
 ### Coupling
+
+Coupling is a term used to define the phenomenon where an edit to some part of a software snowballs into a bunch of edits in parts of the software that depend on the modified part, and the part that depend on the previously edited dependency, etc...
+
+Introducing unnecessary coupling in our software will come back to bite us in the future, affecting maintainability in a very negative way, since any edit we make (for instance, to fix a bug) can potentially lead to edit the rest of the software (or game) we are writing.
+
+This means that it's in our best interest to reduce code coupling as much as possible, following the good principles of "nutshell programming" and following the SOLID principles, shown next.
 
 \placeholder
 
@@ -506,6 +525,10 @@ SOLID is a mnemonic acronym that condenses five principles of good design, to ma
 - **Liskov Substitution Principle**: Objects in a program should be replaceable with instances of their subtypes and the correctness of the program should not be affected. This is the base of inheritance and polimorphism, if by substituting a base class with one of its child (which should have a Child-is-a-Base relationship, for instance "Circle is a shape") the program is not correct anymore, either something is wrong with the program, or the classes should not be in a "IS-A" relationship.
 - **Interface Segregation**: Classes should provide many specific interfaces instead of one general-purpose interface, this means that no client should depend on methods that it doesn't use. This makes the software easier to refactor and maintain, and reduces coupling.
 - **Dependency Inversion**: Software components should depend on abstractions and not concretions. This is another staple of nutshell programming and OOP - Each class should make use of some other class's interface, not its inner workings. This allows for maintainability and easier update and change of code, without having the changes snowball into an Armageddon of errors.
+
+### "Composition over Inheritance" design
+
+\placeholder
 
 <!-- TODO: a lean introduction to the concept of objects and abstraction -->
 
@@ -530,7 +553,7 @@ Another idea could be designing an "entity" class that can be instantiated, and 
 
 An idea could be the following
 
-~~~~.yaml
+```{.yaml caption="Example of an entity declared as data"}
 entity:
   name: skeleton
   health: 10
@@ -545,7 +568,7 @@ entity:
       start_sprite: 9
       frame_no: 2
       duration: 0.1
-~~~~
+```
 
 With more complex building algorithms, it is possible to change behaviours and much more with just a configuration file, and this gives itself well to roguelike games, which random selection of enemies can benefit from an extension of the enemy pool. In fact, it's really easy to configure a new type of enemy and have it work inside the game without recompiling anything.
 

@@ -136,42 +136,53 @@ $endif$
 $if(listings)$
 \newcommand{\passthrough}[1]{\lstset{mathescape=false}#1\lstset{mathescape=true}}
 \usepackage{listings}
+\renewcommand*{\lstlistlistingname}{List of Code Listings}
 \usepackage{color}
+\usepackage{xcolor}
 $if(proglang)$
-\newcommand{\code}[1]{\lstinputlisting[language=$proglang$]{./listings/$proglang$/#1.txt}}
+\newcommand{\code}[2]{\lstinputlisting[language=$proglang$,caption={#2}]{./listings/$proglang$/#1.txt}}
 $else$
-\newcommand{\code}[1]{\lstinputlisting{./listings/pseudocode/#1.txt}}
+\newcommand{\code}[2]{\lstinputlisting[caption={#2}]{./listings/pseudocode/#1.txt}}
 $endif$
 
 \definecolor{mygreen}{rgb}{0,0.6,0}
 \definecolor{mygray}{rgb}{0.5,0.5,0.5}
 \definecolor{mymauve}{rgb}{0.58,0,0.82}
 \lstset{
-  backgroundcolor=\color{white},   % choose the background color; you must add \usepackage{color} or \usepackage{xcolor}; should come as last argument
-  basicstyle=\footnotesize\ttfamily,        % the size of the fonts that are used for the code
-  breakatwhitespace=false,         % sets if automatic breaks should only happen at whitespace
-  breaklines=true,                 % sets automatic line breaking
-  captionpos=b,                    % sets the caption-position to bottom
-  commentstyle=\color{mygreen},    % comment style
-  deletekeywords={...},            % if you want to delete keywords from the given language
-  escapeinside={\%*}{*)},          % if you want to add LaTeX within your code
-  extendedchars=true,              % lets you use non-ASCII characters; for 8-bits encodings only, does not work with UTF-8
-  firstnumber=1,                % start line enumeration with line 1000
-  frame=single,	                   % adds a frame around the code
-  keepspaces=true,                 % keeps spaces in text, useful for keeping indentation of code (possibly needs columns=flexible)
-  keywordstyle=\color{blue},       % keyword style
-  morekeywords={*,...},            % if you want to add more keywords to the set
-  numbers=left,                    % where to put the line-numbers; possible values are (none, left, right)
-  numbersep=5pt,                   % how far the line-numbers are from the code
-  numberstyle=\tiny\color{mygray}, % the style that is used for the line-numbers
-  rulecolor=\color{black},         % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. comments (green here))
-  showspaces=false,                % show spaces everywhere adding particular underscores; it overrides 'showstringspaces'
-  showstringspaces=false,          % underline spaces within strings only
-  showtabs=false,                  % show tabs within strings adding particular underscores
-  stepnumber=2,                    % the step between two line-numbers. If it's 1, each line will be numbered
-  stringstyle=\color{mymauve},     % string literal style
-  tabsize=4,	                   % sets default tabsize to 2 spaces
+    basicstyle=\footnotesize\ttfamily, % Default font
+    breaklines=true,
+    commentstyle=\color{mygreen},
+    extendedchars=true,
+    firstnumber=1,
+    keepspaces=true,
+    keywordstyle=\color{blue},
+    numbers=left,              % Location of line numbers
+    numberstyle=\tiny,          % Style of line numbers
+    stepnumber=2,              % Margin between line numbers
+    numbersep=5pt,              % Margin between line numbers and text
+    tabsize=4,                  % Size of tabs
+    extendedchars=true,
+    breaklines=true,            % Lines will be wrapped
+    keywordstyle=\color{red},
+    frame=b,
+    % keywordstyle=[1]\textbf,
+    % keywordstyle=[2]\textbf,
+    % keywordstyle=[3]\textbf,
+    % keywordstyle=[4]\textbf,   \sqrt{\sqrt{}}
+    stringstyle=\color{mymauve},     % string literal style
+    showspaces=false,
+    showtabs=false,
+    xleftmargin=17pt,
+    framexleftmargin=17pt,
+    framexrightmargin=5pt,
+    framexbottommargin=4pt,
+    % backgroundcolor=\color{lightgray},
+    showstringspaces=false
 }
+\usepackage{caption}
+\DeclareCaptionFont{white}{\color{white}}
+\DeclareCaptionFormat{listing}{\colorbox[cmyk]{0.43, 0.35, 0.35,0.01}{\parbox{\textwidth}{\hspace{15pt}#1#2#3}}}
+\captionsetup[lstlisting]{format=listing,labelfont=white,textfont=white, singlelinecheck=false, margin=0pt, font={bf,footnotesize}}
 $endif$
 $if(lhs)$
 \lstnewenvironment{code}{\lstset{language=Haskell,basicstyle=\small\ttfamily}}{}
@@ -371,6 +382,9 @@ $if(lot)$
 $endif$
 $if(lof)$
 \listoffigures
+$endif$
+$if(lol)$
+\lstlistoflistings
 $endif$
 \clearpage
 \pagenumbering{arabic}

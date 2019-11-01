@@ -23,11 +23,11 @@ This is the simplest case: points are mono-dimensional objects, and the only way
 
 An example algorithm would be the following:
 
-\code{collisiondetection/point_to_point}
+\code{collisiondetection/point_to_point}{Point to point collision detection}
 
 A possible lazy/shorter version could be:
 
-\code{collisiondetection/point_to_point_lazy}
+\code{collisiondetection/point_to_point_lazy}{Shortened version of a point to point collision detection}
 
 This algorithm consists in a constant number of operations, so it runs in O(1).
 
@@ -45,11 +45,11 @@ So we need a function that calculates the distance between two points, and then 
 
 An example could be the following:
 
-\code{collisiondetection/point_circle}
+\code{collisiondetection/point_circle}{Point to circle collision detection}
 
 Again, the lazier version:
 
-\code{collisiondetection/point_circle_lazy}
+\code{collisiondetection/point_circle_lazy}{Shorter version of a point to circle collision detection}
 
 Although slightly more heavy, computation-wise, this algorithm still runs in O(1).
 
@@ -61,11 +61,11 @@ Let's add another circle into the mix now, we can declare:
 
 In pseudo code this would be:
 
-\code{collisiondetection/circle_circle}
+\code{collisiondetection/circle_circle}{Circle to Circle Collision Detection}
 
 The shorter version would be:
 
-\code{collisiondetection/circle_circle_lazy}
+\code{collisiondetection/circle_circle_lazy}{Shorter Version of a Circle to Circle Collision Detection}
 
 Again, this algorithm performs a number of operations that is constant, so it runs in O(1).
 
@@ -96,7 +96,7 @@ This has to happen for all four sides of one of the rectangle.
 
 Now we can try putting down a bit of code, we'll assume that rectangles are defined by their top-left corner (as usually happens) and their width and height:
 
-\code{collisiondetection/AABB}
+\code{collisiondetection/AABB}{Axis-Aligned Bounding Box Collision Detection}
 
 This complex conditional checks 4 things:
 
@@ -143,7 +143,7 @@ So we can calculate the distance between the point and each of the two extremes 
 
 In code, it would look something like the following:
 
-\code{collisiondetection/line_point}
+\code{collisiondetection/line_point}{Line to Point Collision detection}
 
 It could prove useful to put a "buffer zone" in here too, so that the collision detection doesn't result too jerky and precise.
 
@@ -153,7 +153,7 @@ It could prove useful to put a "buffer zone" in here too, so that the collision 
 
 As in the previous paragraph, we memorize a line as a pair of Points, so checking if the circle collides with either end of the line is easy, using the Point/Circle collision algorithm.
 
-\code{collisiondetection/line_circle_partial}
+\code{collisiondetection/line_circle_partial}{Partial Implementation of a Line to Circle Collision Detection}
 
 Now our next objective is finding the closest point **on the line** to the center of our circle. The details and demonstrations on the math behind this will be spared, just know the following:
 
@@ -174,7 +174,7 @@ After we made sure the point is on the line, we can measure the distance between
 
 The final algorithm should look something like this:
 
-\code{collisiondetection/line_circle}
+\code{collisiondetection/line_circle}{Line to circle collision detection}
 
 ### Circle/Rectangle Collision
 
@@ -182,7 +182,7 @@ First of all we need to identify which side of the rectangle we should test agai
 
 After that, we just perform some math on the distances and calculated values to detect if the circle collides with the rectangle.
 
-\code{collisiondetection/rectangle_circle}
+\code{collisiondetection/rectangle_circle}{Rectangle to Circle Collision Detection}
 
 ### Line/Line Collision
 
@@ -210,7 +210,7 @@ The usual way to perform collision detection is using **bitmasks** which are 1-b
 
 A logic "AND" operation is performed, pixel-by-pixel, on the bitmasks; with the sprite position taken in consideration, as soon as the first AND returns a "True" a collision occurred.
 
-\code{collisiondetection/pixel_perfect}
+\code{collisiondetection/pixel_perfect}{Example of a possibile implementation of pixel perfect collision detection}
 
 ### Multi-pass collision detection
 
@@ -247,7 +247,7 @@ So if we consider a list of 7 game objects, we'll need to see if 1 collides with
 
 An algorithm of this type could be the following:
 
-\code{collisiondetection/brute_force}
+\code{collisiondetection/brute_force}{Brute Force Method of collision search}
 
 This algorithms runs in O(n^2^), because it checks every item with every other, even with itself.
 
@@ -280,11 +280,11 @@ First of all let's consider a level as a 2-dimensional array of tiles and all th
 
 Assuming `TILE_WIDTH` and `TILE_HEIGHT` as the sizes of the single tiles, we'll have the following function:
 
-\code{collisiondetection/tile_conversion}
+\code{collisiondetection/tile_conversion}{Converting player coordinates into tile coordinates}
 
 To know which tiles we need to check for collision, we just have to check the two red points (see the previous image), use the conversion function and then do a simple AABB check on them.
 
-\code{collisiondetection/tile_collision}
+\code{collisiondetection/tile_collision}{Tile-based collision detection}
 
 Considering that this algorithm calculates its own colliding tiles, we can state that its complexity is `O(n)` with `n` equal to the number of possibly colliding tiles calculated.
 
