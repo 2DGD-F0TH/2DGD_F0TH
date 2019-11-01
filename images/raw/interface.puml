@@ -1,0 +1,9 @@
+@startuml
+
+interface SearchInterface <<interface>>
+
+class SearchProvider
+
+SearchInterface <|-- SearchProvider
+
+@enduml

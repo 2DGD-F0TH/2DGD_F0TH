@@ -1,0 +1,17 @@
+@startuml
+
+left to right direction
+
+skinparam packageStyle rectangle
+
+actor User
+
+rectangle System{
+
+    User -- (Login)
+
+    (Login) <.. (Help on Login): <<include>>
+
+}
+
+@enduml

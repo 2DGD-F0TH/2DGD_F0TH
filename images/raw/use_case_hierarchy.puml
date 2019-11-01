@@ -1,0 +1,21 @@
+@startuml
+
+left to right direction
+
+skinparam packageStyle rectangle
+
+actor Player
+
+rectangle Website{
+
+    Player -- (Search)
+
+    (Search By Name) --|> (Search)
+
+    (Search By Category) --|> (Search)
+
+    (Search By Tag) --|> (Search)
+
+}
+
+@enduml

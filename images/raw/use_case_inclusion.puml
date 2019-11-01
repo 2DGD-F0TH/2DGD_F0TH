@@ -1,0 +1,21 @@
+@startuml
+
+left to right direction
+
+skinparam packageStyle rectangle
+
+actor User
+
+rectangle System{
+
+    User -- (Deposit)
+
+    User -- (Withdraw)
+
+    (Customer Authentication) <.. (Deposit): <<include>>
+
+    (Customer Authentication) <.. (:ithdraw): <<include>>
+
+}
+
+@enduml

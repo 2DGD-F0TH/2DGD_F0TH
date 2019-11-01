@@ -1,15 +1,24 @@
 @startuml
 
-Player --> (Start The Game)
+left to right direction
 
-Player --> (Open the Options Menu)
+skinparam packageStyle rectangle
 
-Player --> (Open the Credits Screen)
+actor Player
 
-Player --> (Exit to Desktop)
+rectangle GameMenu{
 
-note "Remember to clear the menu stack!" as N
+    Player -- (Start The Game)
 
-(Start The Game) .. N
+    Player -- (Open the Options Menu)
+
+    Player -- (Open the Credits Screen)
+
+    Player -- (Exit to Desktop)
+
+    note "Remember to clear the menu stack!" as N
+
+    (Start The Game) .. N
+}
 
 @enduml

@@ -576,7 +576,13 @@ This allows for more readable code and a higher extensibility.
 Reading UML diagrams
 --------------------
 
-<!-- TODO: Give a primer on how to read UML diagrams -->
+UML (Universal Modeling Language) is a set of graphical tools that allow a team to better organize and plan a software product. Diagrams are drawn in such a way to give the reader an overall assessment of the situation described while being easy to read and understand.
+
+In this chapter we will take a look at 3 diagrams used in UML:
+
+- Use Case Diagrams
+- Class Diagrams
+- Activity Diagrams
 
 ### Use Case Diagrams
 
@@ -606,36 +612,45 @@ Use cases represent the functionalities that our system offers, and the relation
 
 Use cases are represented with an ellipse with the name of the use case inside. Choosing the right name for a use case is extremely important, since they will represent the functionality that will be developed in our game.
 
+![Example of a use case](./images/computer_science/use_case_single.png){width=15%}
+
 ##### Inheritance
 
-\placeholder
+As with many other elements used in UML, use cases can inherit from each other. Inheritance (also called "Generalization") is represented with a closed hollow arrow that points towards the parent use case.
 
-<!-- TODO: Talk about inheritance between use cases -->
+![Example of a use case hierarchy](./images/computer_science/use_case_hierarchy.png){width=40%}
 
 ##### Extensions
 
-\placeholder
+Use case extensions specify how and when optional behaviour takes place. Extended use cases are meaningful on their own and are independent from the extending use case, while the extending use case define the optional behaviour that may not have much sense by itself.
 
-<!-- TODO: Talk about extension between use cases -->
+Extensions are represented via a dashed line with an open arrow on the end, labeled with the `<<extend>>` keyword, pointing towards the extending use case.
+
+![Example of a use case extension](./images/computer_science/use_case_extension.png){width=40%}
 
 ##### Inclusions
 
-\placeholder
+Inclusions specify how the behaviour of the included use case is inserted in the behaviour of the including use case. Inclusions are usually used to simplify large use cases by splitting them or extract common behaviours of two or more use cases.
 
-<!-- TODO: Talk about inclusions between use cases -->
+In this situation, the including use case **is not** complete by itself.
+
+Inclusions are represented via a dashed line with an open arrow on the end, labeled with the `<<include>>` pointing towards the included use case.
+
+![Example of a use case inclusion](./images/computer_science/use_case_inclusion.png){width=40%}
 
 #### Notes
 
-\placeholder
+In use case diagrams, as well as in many other UML diagrams, notes are used to jot down conditions, comments and everything useful to better understanding the diagram that cannot be conveyed through a well definite structure inside of UML.
 
-<!-- TODO: Talk about notes in use cases -->
+Notes are shaped like a sheet of paper with a folded corner and are usually connected to the diagram with a dashed line. Each note can be connected to more than one piece of the diagram.
+
+You can see a note at the beginning of this chapter, in the use case diagram explanation.
 
 #### Sub-Use Cases
 
-\placeholder
+Use cases can be further detailed by creating sub-use cases, like the following example.
 
-<!-- TODO: Talk about how you can split use cases diagrams into smaller and more detailed sub-use case diagrams -->
-
+![Example of a sub-use case](./images/computer_science/subuse_case.png){width=40%}
 
 ### Class Diagrams
 
@@ -699,9 +714,17 @@ An example could be between a "Car Factory" and a class "Car": the "CarFactory" 
 
 As with Use Case diagrams, class diagrams can make use of notes too, and the graphical language used to represent them is exactly the same one used in the Use Case Diagrams.
 
-<!-- TODO: Add example of note in class diagram -->
+#### Interfaces
 
-\placeholder
+Sometimes there is a need to convey the concept of "interface" inside a UML class diagram, that can easily be done in 2 ways:
+
+- By using the class construct, with the keyword (called "stereotype") `<<interface>>` written on top of it;
+- By using the "lollipop notation" (called "interface realization").
+
+![Defining an interface in UML](./images/computer_science/interface.png){width=15%}
+
+![Interface Realization in UML](./images/computer_science/interface_realization.png){width=15%}
+
 
 ### Activity Diagrams
 

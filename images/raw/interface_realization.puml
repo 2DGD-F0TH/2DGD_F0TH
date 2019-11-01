@@ -1,0 +1,9 @@
+@startuml
+
+left to right direction
+
+class SearchProvider
+
+SearchInterface ()- SearchProvider
+
+@enduml
