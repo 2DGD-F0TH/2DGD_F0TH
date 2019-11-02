@@ -765,7 +765,7 @@ Synchronization (or parallel processing) is represented in activity diagrams by 
 
 ![Example of concurrent processes in activity diagrams](./images/computer_science/activity_concurrent.png){width=30%}
 
-\placeholder
+In the previous example, the activities "Send Order Confirmation" and "Process Order" are processed in parallel, independently from each other, the first activity that finishes will wait until the other activity finishes before entering the end node.
 
 #### Signals
 

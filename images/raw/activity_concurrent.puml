@@ -1,0 +1,10 @@
+@startuml
+start
+:Take Order;
+fork
+    :Send Order confirmation;
+fork again
+    :Process Order;
+end fork
+stop
+@enduml
