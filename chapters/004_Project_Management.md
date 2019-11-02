@@ -14,4 +14,6 @@ The "it would be cool to" trap, formally called "feature creep", is a huge probl
 
 Saying "it would be cool to do xxxx: let's implement it!" can spiral out of control and try to implement new features, keeping us from taking care of the basics.
 
+Try to stick to the basics first, and then eventually expand when your game is already released, if it's worth it: First make it work, only then make it work well.
+
 \placeholder
