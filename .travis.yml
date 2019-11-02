@@ -1,7 +1,12 @@
 language: generic
-os: xenial
+dist: bionic
 addons:
-  apt_packages:
+  apt:
+    update: true
+    packages:
+    - texlive-latex-base
+    - texlive-latex-recommended
+    - texlive-latex-extra
     - texlive-full
     - pandoc
 branches:
