@@ -1,0 +1,25 @@
+@startuml
+|Customer|
+start
+:Place Order;
+fork
+    :Receive Confirmation;
+fork again
+    |Order|
+    :Take Order;
+    |Accounting|
+    :Process Order;
+    |Shipping|
+    :Packaging;
+    |Accounting|
+    :Record Shipping;
+    |Shipping|
+    :Ship Order;
+    |Customer|
+end fork
+:Receive Order;
+:Pay Bill;
+|Accounting|
+:Close Order;
+stop
+@enduml

@@ -781,9 +781,7 @@ The "Sent Signal" symbol is represented with a convex pentagon (which reminds an
 
 Swimlanes are a way to organize and group related activities in columns. For instance a shopping activity diagram can have the "Customer", "Order", "Accounting" and "Shipping" swimlanes, each of which contains activities related to their own categories.
 
-![Example of swimlanes in activity diagrams](./images/computer_science/activity_swimlanes.png){width=30%}
-
-\placeholder
+![Example of swimlanes in activity diagrams](./images/computer_science/activity_swimlanes.png){width=50%}
 
 #### Notes
 
