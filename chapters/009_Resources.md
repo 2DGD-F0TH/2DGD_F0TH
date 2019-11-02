@@ -1,4 +1,5 @@
 \null\clearpage
+
 Creating your resources
 =======================
 

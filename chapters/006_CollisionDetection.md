@@ -1,4 +1,5 @@
 \null\clearpage
+
 Collision Detection and Reaction
 =================================
 
