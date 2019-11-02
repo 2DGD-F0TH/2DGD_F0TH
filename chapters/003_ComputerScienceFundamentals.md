@@ -738,15 +738,11 @@ Each diagram begins what a "start node", represented with a filled black circle,
 
 ![Example of activity diagrams start and end nodes](./images/computer_science/activity_start_end.png){width=30%}
 
-\placeholder
-
 #### Actions
 
 Each action taken by the software is represented in the diagram via a rounded rectangle, a very short description of the action is written inside the rounded rectangle space.
 
 ![Example of Action in activity diagrams](./images/computer_science/activity_action.png){width=30%}
-
-\placeholder
 
 #### Decisions (Conditionals) and loops
 
