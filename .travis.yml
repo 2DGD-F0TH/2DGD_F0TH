@@ -4,9 +4,6 @@ addons:
   apt:
     update: true
     packages:
-    - texlive-latex-base
-    - texlive-latex-recommended
-    - texlive-latex-extra
     - texlive-full
     - pandoc
 branches:
