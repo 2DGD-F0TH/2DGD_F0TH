@@ -730,31 +730,61 @@ Sometimes there is a need to convey the concept of "interface" inside a UML clas
 
 Activity diagrams are the more powerful version of flow charts: they represent the flux of an activity in detail, allowing to have a better understanding of a process or algorithm.
 
-<!--TODO: Add example of activity diagram -->
-
-\placeholder
+![Example of an activity diagram](./images/computer_science/activity.png){width=30%}
 
 #### Start and End Nodes
+
+Each diagram begins what a "start node", represented with a filled black circle, and they end with an "end node" which is represented with a filled black circle inside of a hollow circle.
+
+![Example of activity diagrams start and end nodes](./images/computer_science/activity_start_end.png){width=30%}
 
 \placeholder
 
 #### Actions
 
+Each action taken by the software is represented in the diagram via a rounded rectangle, a very short description of the action is written inside the rounded rectangle space.
+
+![Example of Action in activity diagrams](./images/computer_science/activity_action.png){width=30%}
+
 \placeholder
 
-#### Decisions (Conditionals)
+#### Decisions (Conditionals) and loops
+
+Decisions and loops are enclosed in diamonds. If a condition needs to be written, the diamond can become an hexagon, to make space for the condition to be written or guards can be used to express the condition.
+
+![Example of decision, using hexagons to represent the condition](./images/computer_science/activity_decision_hex.png){width=30%}
+
+![Example of loops, using guards to represent the condition](./images/computer_science/activity_loop_guards.png){width=30%}
+
+All the branches that depend on a condition or are part of a loop start and end on a diamond, as shown below.
+
+![Example of how nested loops and conditions are performed](./images/computer_science/nested_activity.png){width=30%}
 
 \placeholder
 
 #### Synchronization
 
+Synchronization (or parallel processing) is represented in activity diagrams by using filled black bars that enclose the concurrent processes: the bars are called "synchronization points" or "forks" and "joins"
+
+![Example of concurrent processes in activity diagrams](./images/computer_science/activity_concurrent.png){width=30%}
+
 \placeholder
 
 #### Signals
 
+Signals are used to represent how activities can be influenced or modified from outside the system. There are two symbols used to represent signals.
+
+The "Sent Signal" symbol is represented with a convex pentagon (which reminds an arrow going away from our system), while the "Received Signal" is represented by a concave pentagon (which reminds a "slot" where the "sent signal" symbol can connect to).
+
+![Example of signals in activity diagrams](./images/computer_science/activity_signals.png){width=30%}
+
 \placeholder
 
 #### Swimlanes
+
+Swimlanes are a way to organize and group related activities in columns. For instance a shopping activity diagram can have the "Customer", "Order", "Accounting" and "Shipping" swimlanes, each of which contains activities related to their own categories.
+
+![Example of swimlanes in activity diagrams](./images/computer_science/activity_swimlanes.png){width=30%}
 
 \placeholder
 
@@ -762,7 +792,7 @@ Activity diagrams are the more powerful version of flow charts: they represent t
 
 As with Use Case and Class diagrams, Activity Diagrams can make use of notes, in the same way as the other two diagrams we presented in this book do.
 
-<!-- TODO: Add an activity diagram with notes -->
+![Example of a note inside of an activity diagram](./images/computer_science/activity_notes.png){width=30%}
 
 \placeholder
 
