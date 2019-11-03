@@ -1,0 +1,17 @@
+@startuml
+|Customer|
+start
+:Search product;
+:Put product in basket;
+:Place Order>
+detach
+|Store|
+:Accept Order<
+:Take products from store;
+:Deliver Products>
+stop
+|Customer|
+:Deliverer rings<
+:Confirm Receipt;
+stop
+@enduml
