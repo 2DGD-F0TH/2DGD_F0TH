@@ -19,7 +19,7 @@ toc: True
 lof: True
 # List of tables?
 lot: True
-# List of Listings?
+# List of Code Listings?
 lol: True
 # Geometry
 geometry:
