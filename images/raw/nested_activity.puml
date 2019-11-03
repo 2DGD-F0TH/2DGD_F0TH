@@ -1,0 +1,15 @@
+@startuml
+start
+while (There are more rows in table) is (yes)
+    while (There are more cells in the row) is (yes)
+        :Read cell;
+        if (cell is even) then (yes)
+            :Double the cell value;
+        else
+            :Triple the cell value;
+        endif
+        :Write cell value to console;
+    endwhile
+endwhile
+stop
+@enduml

@@ -1,0 +1,16 @@
+@startuml
+start
+:Take Shopping cart;
+note right
+    Make sure the shopping cart works well!
+end note
+repeat
+    :Take Item;
+    :Put Item in Shopping Cart;
+    :Delete Item name from Shopping list;
+repeat while (More Items in Shopping List?) is (yes)
+-> no;
+:Go to checkout;
+:Pay;
+stop
+@enduml

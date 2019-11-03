@@ -757,8 +757,6 @@ All the branches that depend on a condition or are part of a loop start and end 
 
 ![Example of how nested loops and conditions are performed](./images/computer_science/nested_activity.png){width=30%}
 
-\placeholder
-
 #### Synchronization
 
 Synchronization (or parallel processing) is represented in activity diagrams by using filled black bars that enclose the concurrent processes: the bars are called "synchronization points" or "forks" and "joins"
@@ -787,9 +785,7 @@ Swimlanes are a way to organize and group related activities in columns. For ins
 
 As with Use Case and Class diagrams, Activity Diagrams can make use of notes, in the same way as the other two diagrams we presented in this book do.
 
-![Example of a note inside of an activity diagram](./images/computer_science/activity_notes.png){width=30%}
-
-\placeholder
+![Example of a note inside of an activity diagram](./images/computer_science/activity_notes.png){width=50%}
 
 #### A note on activity diagrams
 

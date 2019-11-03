@@ -1,0 +1,11 @@
+@startuml
+start
+:Create random number between 0 and 10;
+repeat
+    :Get input;
+    :Compare with number;
+repeat while () is ([Wrong number])
+-> [Right number];
+:You won;
+stop
+@enduml

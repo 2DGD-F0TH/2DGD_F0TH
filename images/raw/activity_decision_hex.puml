@@ -1,0 +1,10 @@
+@startuml
+start
+:Get Input number;
+if (number bigger than 0) then (yes)
+    :Double the number;
+else (no)
+    :Triple the number;
+endif
+stop
+@enduml
