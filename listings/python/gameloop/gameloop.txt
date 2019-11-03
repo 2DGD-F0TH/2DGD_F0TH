@@ -1,4 +1,4 @@
-function game():
+def game():
     game_is_running=True
     while game_is_running:
         process_user_input()
