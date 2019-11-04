@@ -73,9 +73,7 @@ This is usually done before the player movement is used to update the character'
 
 A useful precaution to avoid the [bullet through paper](#bulletthroughpaper) problem when you are working with long falls: put a limit at the fall velocity (kind of like air friction limits an object's fall velocity) of your objects. By applying a hard limit to the velocity, your gravity will be realistic but won't break your simulation.
 
-\placeholder
-
-<!-- TODO: Add code example -->
+\code{specific_genre/gravity}{Code for applying gravity to an object}
 
 ### Ladders
 
