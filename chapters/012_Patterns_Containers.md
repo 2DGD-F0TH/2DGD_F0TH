@@ -116,6 +116,22 @@ If needed, you can pass information between the subject and the observers just b
 **Disadvantages**     Can be a bit hard to set up, makes the architecture more complex, if un-registration is not done well there could be serious memory leaks (even in garbage-collected languages).
 ------------------------------------------------------------------------------------------------
 
+### Chain of Responsibility
+
+\placeholder
+
+### Abstract Factory
+
+\placeholder
+
+### Builder
+
+\placeholder
+
+### Component
+
+\placeholder
+
 Resource Manager
 -----------------
 
