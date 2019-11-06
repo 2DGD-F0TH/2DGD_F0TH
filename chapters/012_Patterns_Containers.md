@@ -3,10 +3,14 @@
 Useful Patterns, Containers and Classes
 ========================================
 
+In this chapter we will introduce some useful design patterns, data containers and classes that could help you solve some issues or increase your game's maintainability and flexibility.
+
 Design Patterns
 ----------------
 
-<!-- TODO: Gentle introduction to design patterns and decoupling -->
+Design Patterns are essentially "pre-made solutions for known problems" and can help decoupling elements of your game, increasing maintainability.
+
+Obviously design patterns are not a cure-all, they can introduce overhead and could lead to over-engineering: balance is key when it comes to creating a game (or any software in general).
 
 ### Singleton Pattern
 
