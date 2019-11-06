@@ -74,6 +74,8 @@ Imagine a lot of sprites of trees that have the same texture and size, but have 
 
 Here comes the Flyweight pattern: we try to share as much of the so-called "intrinsic state" of the objects between the object that contain the so-called "extrinsic state".
 
+\code{patterns_containers/flyweight}{Code for a flyweight pattern}
+
 \placeholder
 
 <!-- TODO: Extracting intrinsic stuff in a separate class and use lightweight classes for extrinsic stuff (intrinsic: rock meshes and textures, extrinsic: rock positions and orientations) -->

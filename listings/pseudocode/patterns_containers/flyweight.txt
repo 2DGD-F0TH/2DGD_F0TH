@@ -1,0 +1,14 @@
+class Common{
+    // Contains the common data for a 3D Object to be replicated
+    private:
+        Mesh mesh;
+        Texture texture;
+}
+
+class FlyWeight{
+    // Contains only the necessary data to create an instance of the item
+    private:
+        Common common_pointer;
+        Vector position;
+        float scale_factor;
+}
