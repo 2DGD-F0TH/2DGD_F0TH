@@ -1,0 +1,26 @@
+@startuml
+
+class Client
+
+abstract class Strategy{
+    + algorithm()
+}
+
+class ConcreteStrategy1{
+    + algorithm()
+}
+
+class ConcreteStrategy2{
+    + algorithm()
+}
+
+class ConcreteStrategy3{
+    + algorithm()
+}
+
+ConcreteStrategy1 --|> Strategy
+ConcreteStrategy2 --|> Strategy
+ConcreteStrategy3 --|> Strategy
+
+Client --> Strategy
+@enduml
