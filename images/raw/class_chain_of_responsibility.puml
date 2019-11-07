@@ -1,0 +1,29 @@
+@startuml
+
+class Sender
+
+abstract class Handler{
+    + handle_request()
+}
+
+class Receiver1{
+    + handle_request()
+}
+
+class Receiver2{
+    + handle_request()
+}
+
+class Receiver3{
+    + handle_request()
+}
+
+Receiver1 --|> Handler
+Receiver2 --|> Handler
+Receiver3 --|> Handler
+
+Sender --> Handler: handler
+
+Handler --> Handler: successor
+
+@enduml

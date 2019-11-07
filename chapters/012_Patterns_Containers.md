@@ -74,12 +74,21 @@ Imagine a lot of sprites of trees that have the same texture and size, but have 
 
 Here comes the Flyweight pattern: we try to share as much of the so-called "intrinsic state" of the objects between the object that contain the so-called "extrinsic state".
 
+![UML Diagram of the Flyweight pattern](./images/patterns_containers/flyweight.png){width=60%}
+
+Below is an example code for the flyweight pattern.
+
 \code{patterns_containers/flyweight}{Code for a flyweight pattern}
 
-\placeholder
+------------------    ------------------------------------------------------------------------------
+**Pattern Name**      Flyweight
 
-<!-- TODO: Extracting intrinsic stuff in a separate class and use lightweight classes for extrinsic stuff (intrinsic: rock meshes and textures, extrinsic: rock positions and orientations) -->
-<!-- TODO: Add pattern reference table -->
+**When to Use it**    When you need to support a large number of similar objects efficiently, when you need to avoid creating a large number of objects.
+
+**Advantages **       Saves memory when a large number of similar objects is involved, avoids some of the overhead given by the creation of many objects.
+
+**Disadvantages**     The intrinsic state must be "context independent", so it cannot change (or all the flyweights that refer to that state will change too). Flyweight instantiation requires particular attention in multithreaded environments, due to the shared memory.
+------------------------------------------------------------------------------------------------
 
 ### Observer Pattern {#ObserverPattern}
 
@@ -116,9 +125,31 @@ If needed, you can pass information between the subject and the observers just b
 **Disadvantages**     Can be a bit hard to set up, makes the architecture more complex, if un-registration is not done well there could be serious memory leaks (even in garbage-collected languages).
 ------------------------------------------------------------------------------------------------
 
-### Chain of Responsibility
+### Strategy
 
 \placeholder
+
+### Chain of Responsibility
+
+Sometimes we have the necessity of handling conditionals that are themselves connected to runtime conditions. This is where the *chain of responsibility pattern* comes into play, being essentially an object-oriented version of an `if ... else if ... else` statement.
+
+![UML Diagram of the Chain of Responsibility Pattern](./images/patterns_containers/chain_of_responsibility.png){width=60%}
+
+As can be seen from the diagram, the sender is not directly connected to the receiver, but instead it's connected to a "Handler" interface, making them independent.
+
+As with a chain of responsibility in a company relays a task to "higher ups" if the task cannot be handled, the chain of responsibility pattern involves each received reviewing the request and if possible, process it, if not possible, relay it to the next receiver in the chain.
+
+\code{patterns_containers/chain_of_responsibility}{Code for a chain of responsibility pattern}
+
+------------------    ------------------------------------------------------------------------------
+**Pattern Name**      Chain of Responsibility
+
+**When to Use it**    When you need to implement flexible if...else if...else statements that change on runtime. When you want to decouple a sender from a receiver.
+
+**Advantages **       Decoupling, added flexibility.
+
+**Disadvantages**     Some overhead is added by the objects and late binding, could lead to proliferation of similar-looking handlers/receivers.
+------------------------------------------------------------------------------------------------
 
 ### Abstract Factory
 

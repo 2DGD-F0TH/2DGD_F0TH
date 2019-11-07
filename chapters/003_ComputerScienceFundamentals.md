@@ -683,7 +683,9 @@ In this example we say that "Student IS-A Person" and inherits all Person's meth
 
 ##### Association
 
-Association represents a static relationship between two classes. This is usually represented with a solid line with an arrow. In case the relationship is bi-directional, the arrow points are omitted, leaving only a solid line between the two classes.
+Association represents a static relationship between two classes. This is usually represented with a solid line with an arrow. The arrow usually shows the reading order of the association, so if you see an "Author" class and a "Book" class, the "wrote" association will be pointing from the "Author" to the "Book" class.
+
+In case the relationship is bi-directional, the arrow points are omitted, leaving only a solid line between the two classes.
 
 ![Example of association in UML class diagrams](./images/computer_science/class_association.png){width=15%}
 

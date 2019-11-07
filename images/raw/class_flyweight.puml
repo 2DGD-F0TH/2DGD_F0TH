@@ -1,0 +1,29 @@
+@startuml
+class Common{
+    - mesh: Mesh
+    - texture: Texture
+}
+
+class FlyWeight1{
+    - position: Vector
+    - scaling_factor: float
+}
+
+class FlyWeight2{
+    - position: Vector
+    - scaling_factor: float
+}
+
+note "This class contains the intrinsic state:\n in this case we have the shared mesh and texture" as N1
+
+note "These classes contain the extrinsic state instead:\n in this case the position and scaling factor\n plus a pointer to the Common class" as N2
+
+
+FlyWeight1 --> Common: <<use>>
+FlyWeight2 --> Common: <<use>>
+
+N1 .. Common
+N2 .. FlyWeight1
+N2 .. FlyWeight2
+
+@enduml
