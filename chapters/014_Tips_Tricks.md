@@ -109,6 +109,8 @@ Normally when a character is mid-air, the jump button does nothing, in code:
 
 Jump Buffering consists in allowing the player to "buffer" a jump slightly before the character lands, making the controls a bit less stiff and the gameplay more fluid.
 
+![Example of how jump buffering would work](./images/specific_genre/jump_buffering.png){width=60%}
+
 Jump buffering usually is put into practice using a timer, in a fashion similar to the following:
 
 \code{specific_genre/jump_buffering_buffer}{Jump buffering example}
@@ -116,9 +118,14 @@ Jump buffering usually is put into practice using a timer, in a fashion similar 
 
 ### Coyote Time
 
-\placeholder
+Coyote time is a technique used to allow a player to jump a few frames after they fall off a platform, allowing for a more fluid gameplay.
 
-<!-- TODO: This technique allows the player to jump after they walked off a platform for a few fractions of a second, making the game seem a bit more fair -->
+![Example of how coyote time would work](./images/specific_genre/coyote_time.png){width=60%}
+
+The trick is starting a countdown as soon as the player leaves a platform without jumping, then if the player presses the jump button while that time is still going, they will perform the jump action, like they still were on a platform.
+
+\code{specific_genre/coyote_time}{Coyote time code example}
+
 
 Top-view RPG-Like Games
 -----------------------

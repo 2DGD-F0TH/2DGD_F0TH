@@ -1,0 +1,26 @@
+class Player:
+    coyote_time_started = False
+    coyote_time = 0
+    onground = False
+    has_jumped = False
+    // ...
+    function update(dt):
+        // ...
+        if onground:
+            // Do stuff when player is on ground
+            // ...
+        else:
+            if not has_jumped:
+                // Player is not on ground and has not jumped, the player's falling
+                if not coyote_time_started:
+                    coyote_time_started = True
+                    coyote_time = 5
+                else:
+                    coyote_time = coyote_time - dt
+
+    function jump():
+        // This function takes care of jumping
+        // ...
+        if coyote_time > 0:
+            // Do Jump
+        // ...
