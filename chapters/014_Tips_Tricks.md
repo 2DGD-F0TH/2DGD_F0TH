@@ -93,12 +93,6 @@ A useful precaution to avoid the [bullet through paper](#bulletthroughpaper) pro
 
 <!-- TODO: How to walk on stairs -->
 
-### Timed Jumps
-
-\placeholder
-
-<!-- TODO: Patterns and snippets of code to allow players to jump higher the more the jump button is pressed, mario style -->
-
 ### Jump Buffering
 
 A nice trick used mostly in 2D platformers to allow for smoother gameplay is "jump buffering".
@@ -126,6 +120,15 @@ The trick is starting a countdown as soon as the player leaves a platform withou
 
 \code{specific_genre/coyote_time}{Coyote time code example}
 
+### Timed Jumps
+
+A way to extend the mobility and challenge of a 2D platformer game is allowing players to jump higher the more the jump button is pressed: this allows the character to perform low and high jumps without much effort, making timing the jump button press a variable that adds to the challenge of a game.
+
+![Example of how timed jumps would work](./images/specific_genre/timed_jumps.png){width=60%}
+
+To work well, timed jumps need to be implemented by tracking the jump button's `onPress` and `onRelease` events. When the jump button has just been pressed, the character's `Y` velocity will be set, as soon as the button is released, such velocity will be capped, shortening the jump height.
+
+\code{specific_genre/timed_jumps}{Example code of how timed jumps work}
 
 Top-view RPG-Like Games
 -----------------------
