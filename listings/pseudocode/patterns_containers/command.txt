@@ -1,0 +1,18 @@
+abstract class Command{
+    // This is the abstract class that will be used as interface
+    public:
+        function execute();
+}
+
+class JumpCommand inherits from Command{
+    // This will implement the execute method
+    public:
+        function execute(){
+            jump();
+        }
+
+    private:
+        function jump(){
+            // DO STUFF
+        }
+}

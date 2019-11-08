@@ -63,10 +63,19 @@ The command pattern allows us to abstract a function (or any executable line of 
 
 This pattern can be useful to code GUIs, making actions in our games that can be undone, macros, replays and much more.
 
-\placeholder
+![UML diagram for the Command Pattern](./images/patterns_containers/command.png){width=30%}
 
-<!-- TODO: Talk about the command pattern and how to transform a function into an object -->
-<!-- TODO: Add pattern reference table -->
+\code{patterns_containers/command}{Example code for the Command Pattern}
+
+------------------    ------------------------------------------------------------------------------
+**Pattern Name**      Command
+
+**When to Use it**    In all situations where you want to avoid coupling an invoker with a single request or when you want to configure an invoker to perform a request at runtime.
+
+**Advantages **       Allows for encapsulation, less coupling, more flexibility and customization at runtime.
+
+**Disadvantages**     Late binding and objects may introduce some overhead.
+------------------------------------------------------------------------------------------------
 
 ### Flyweight
 
@@ -140,7 +149,6 @@ In this case, the *strategy pattern* (also knowns as the "policy pattern"), allo
 ![The UML diagram of the strategy pattern](./images/patterns_containers/strategy.png){width=60%}
 
 \code{patterns_containers/strategy}{Code for a strategy pattern}
-
 
 ------------------    ------------------------------------------------------------------------------
 **Pattern Name**      Strategy

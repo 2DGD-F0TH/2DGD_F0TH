@@ -1,0 +1,17 @@
+@startuml
+
+class Invoker
+
+abstract class Command{
+    + execute()
+}
+
+class Command1{
+    + execute()
+}
+
+Invoker --> Command: command
+
+Command1 --|> Command
+
+@enduml
