@@ -1,11 +1,24 @@
 2D Game Development: From Zero To Hero
 ======================================
 
-**Status:** ![Pipeline Status](https://img.shields.io/gitlab/pipeline/penaz/2DGD_F0TH?style=for-the-badge)  ![Project Activity](https://img.shields.io/badge/Activity-Active-brightgreen?style=for-the-badge)
+**Status:** ![Travis Pipeline Status](https://img.shields.io/travis/Penaz91/2DGD_F0TH?label=Travis%20Build&style=for-the-badge) ![Gitlab Pipeline Status](https://img.shields.io/gitlab/pipeline/Penaz/2DGD_F0TH?label=Gitlab%20Build&style=for-the-badge)  ![Project Activity](https://img.shields.io/badge/Activity-Active-brightgreen?style=for-the-badge)
 
 This is a small project that aims to gather some knowledge about game development and make it available to everyone.
 
 As well as being a source of knowledge this project aims to be a learning experience for everyone involved too, by gathering contributions from the community, teaching others how to make a game, teaching algorithms but also learning tips and tricks from people who are more experienced.
+
+Getting the book
+-----------------
+
+This repository is configured to automatically build a PDF file at each push on the `master` branch, both on GitLab (Via its own integrated CI/CD System) and GitHub (via Travis-CI).
+
+### GitLab
+
+You can get a copy of the book by clicking on the "Download" button (usually on the right of the "Find File" button), then click on "build_pdf" under "Previous Artifacts": an "artifacts.zip" will be downloaded, containing the latest version of the book.
+
+### GitHub
+
+You can get a copy of the book by clicking on the "Releases" button (usually between the "branches" and "contributors" buttons) and then select the latest tagged release.
 
 
 Building the book
@@ -27,7 +40,7 @@ To Build the book you need to clone this repository and use the `make` command f
 Branches
 --------
 
-The `master` branch is automatically compiled into PDF format by the Gitlab CI/CD system and is usually pretty much final (its contents will be expanded but probably not modified), while the `develop` branch is more up-to-date but its content is subject to change.
+The `master` branch is usually pretty much final (its contents will be expanded but probably not modified), while the `develop` branch is more up-to-date but its content is subject to change.
 
 License
 --------
