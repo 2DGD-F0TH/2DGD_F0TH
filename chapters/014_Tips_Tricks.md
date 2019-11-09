@@ -14,6 +14,16 @@ Some prefer giving the last health point a value that is higher than the other h
 
 These small devices allow you to give players more of those "near death" experiences that can give players that confidence boost to keep them playing through a hard stage, while at the same time, reducing the chance that they will rage-quit.
 
+### Telegraphing
+
+Players hate the feeling of injustice that pops out when a boss pulls out a surprise attack, that's why in many games where precise defense movement is required bosses give out signals on the nature of their attack.
+
+This "telegraphing" technique, allows for that "impending danger" feel, while still giving the player the opportunity to take action to counteract such attack.
+
+Telegraphing is a nice way to suggest the player how to avoid screen-filling attacks (which would give the highest amount of "impending danger").
+
+![Example of a telegraphed screen-filling attack in a shooter](./images/specific_genre/telegraphing.png){width=60%}
+
 ### Scrolling Backgrounds and Parallax Scrolling
 
 #### Infinitely Scrolling Backgrounds
