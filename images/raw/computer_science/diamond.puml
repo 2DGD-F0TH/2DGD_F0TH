@@ -1,0 +1,19 @@
+@startuml
+class A{
+    + doStuff()
+}
+
+class B{
+    + doStuff()
+}
+
+class C{
+    + doStuff()
+}
+
+
+B --|> A
+C --|> A
+D --|> B
+D --|> C
+@enduml

@@ -488,13 +488,21 @@ From inheritance, OOP presents a concept called **Polymorphism** (From "Poly" - 
 
 In our "Person-Student" example, you could use a pointer to either a Person or a Student for the sake of getting their first name.
 
-\placeholder
+In some languages it is possible for an object to inherit from multiple other objects, this is called "Multiple Inheritance"
 
 ### The Diamond Problem
 
-<!-- TODO: Talk about the diamond problem created via inheritance -->
+Usually when you call a method that is not present in the object itself, the program will look through the object's parents for the method to execute. This usually works well when there is no ambiguity, but what if it happens?
 
-\placeholder
+When multiple inheritance is involved, there is a serious possibility of a situation similar to the followin
+
+![Example of a diamond problem](./images/computer_science/diamond.png){width=20%}
+
+In this example, class A implements a method `dostuff()` that is overrode by both classes B and C (which inherit from A): now class D inherits from both B and C but does not override `dostuff()`, which one will be chosen?
+
+This is the reason many languages do not implement multiple inheritance between classes (like Java, which allows multiple inheritance only between interfaces), other implement the so-called "virtual inheritance" (C++) and others again use an ordered list to solve the problem (Python).
+
+This is not something you usually need to worry about, but you may want to be careful when you structure your classes to avoid "diamond problems", so to avoid headaches.
 
 ### Composition
 
@@ -515,6 +523,14 @@ Introducing unnecessary coupling in our software will come back to bite us in th
 This means that it's in our best interest to reduce code coupling as much as possible, following the good principles of "nutshell programming" and following the SOLID principles, shown next.
 
 \placeholder
+
+### The DRY Principle
+
+DRY is a mnemonic acronym that stands for "Don't Repeat Yourself" and condenses in itself the principle of reducing repetition inside a software, replacing it with *abstractions* and by *normalizing data*.
+
+This allows for each piece of code (and knowledge, since the DRY principle applies to documentation too) to be unambiguous, centralizing its responsibilities and avoiding repetition.
+
+Violations of the DRY principle are called "WET" (write everything twice) solutions, which base themselves on repetition and give higher chances of mistakes and inconsistency.
 
 ### SOLID Principles
 
