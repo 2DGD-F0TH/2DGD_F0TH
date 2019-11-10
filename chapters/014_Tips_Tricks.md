@@ -22,7 +22,7 @@ This "telegraphing" technique, allows for that "impending danger" feel, while st
 
 Telegraphing is a nice way to suggest the player how to avoid screen-filling attacks (which would give the highest amount of "impending danger").
 
-![Example of a telegraphed screen-filling attack in a shooter](./images/specific_genre/telegraphing.png){width=60%}
+![Example of a telegraphed screen-filling attack in a shooter](./images/tips_tricks/telegraphing.png){width=60%}
 
 ### Scrolling Backgrounds and Parallax Scrolling
 
@@ -36,7 +36,7 @@ Loop points are points where the image repeats itself, thus allowing us to creat
 
 The image below shows a background and its loop points.
 
-![Demonstration of an image with loop points](./images/specific_genre/Loop_Points.png){width=40%}
+![Demonstration of an image with loop points](./images/tips_tricks/Loop_Points.png){width=40%}
 
 To make an image appear like it's scrolling infinitely we need to move it back and forth between loop points when the screen passes over them.
 
@@ -83,7 +83,7 @@ This is usually done before the player movement is used to update the character'
 
 A useful precaution to avoid the [bullet through paper](#bulletthroughpaper) problem when you are working with long falls: put a limit at the fall velocity (kind of like air friction limits an object's fall velocity) of your objects. By applying a hard limit to the velocity, your gravity will be realistic but won't break your simulation.
 
-\code{specific_genre/gravity}{Code for applying gravity to an object}
+\code{tips_tricks/gravity}{Code for applying gravity to an object}
 
 ### Ladders
 
@@ -109,36 +109,36 @@ A nice trick used mostly in 2D platformers to allow for smoother gameplay is "ju
 
 Normally when a character is mid-air, the jump button does nothing, in code:
 
-\code{specific_genre/jump_buffering_nobuffer}{Code for jumping without buffering}
+\code{tips_tricks/jump_buffering_nobuffer}{Code for jumping without buffering}
 
 Jump Buffering consists in allowing the player to "buffer" a jump slightly before the character lands, making the controls a bit less stiff and the gameplay more fluid.
 
-![Example of how jump buffering would work](./images/specific_genre/jump_buffering.png){width=60%}
+![Example of how jump buffering would work](./images/tips_tricks/jump_buffering.png){width=60%}
 
 Jump buffering usually is put into practice using a timer, in a fashion similar to the following:
 
-\code{specific_genre/jump_buffering_buffer}{Jump buffering example}
+\code{tips_tricks/jump_buffering_buffer}{Jump buffering example}
 
 
 ### Coyote Time
 
 Coyote time is a technique used to allow a player to jump a few frames after they fall off a platform, allowing for a more fluid gameplay.
 
-![Example of how coyote time would work](./images/specific_genre/coyote_time.png){width=60%}
+![Example of how coyote time would work](./images/tips_tricks/coyote_time.png){width=60%}
 
 The trick is starting a countdown as soon as the player leaves a platform without jumping, then if the player presses the jump button while that time is still going, they will perform the jump action, like they still were on a platform.
 
-\code{specific_genre/coyote_time}{Coyote time code example}
+\code{tips_tricks/coyote_time}{Coyote time code example}
 
 ### Timed Jumps
 
 A way to extend the mobility and challenge of a 2D platformer game is allowing players to jump higher the more the jump button is pressed: this allows the character to perform low and high jumps without much effort, making timing the jump button press a variable that adds to the challenge of a game.
 
-![Example of how timed jumps would work](./images/specific_genre/timed_jumps.png){width=60%}
+![Example of how timed jumps would work](./images/tips_tricks/timed_jumps.png){width=60%}
 
 To work well, timed jumps need to be implemented by tracking the jump button's `onPress` and `onRelease` events. When the jump button has just been pressed, the character's `Y` velocity will be set, as soon as the button is released, such velocity will be capped, shortening the jump height.
 
-\code{specific_genre/timed_jumps}{Example code of how timed jumps work}
+\code{tips_tricks/timed_jumps}{Example code of how timed jumps work}
 
 Top-view RPG-Like Games
 -----------------------
@@ -167,7 +167,7 @@ When it comes to a match-x game, a good data structure for the play field is a m
 
 In most programming languages, a matrix is saved as an "array of arrays", where you have each element of an array representing a row, and each element of a row is a tile.
 
-![Example of a matrix, saved as "array of arrays"](./images/specific_genre/array_arrays.pdf){width=60%}
+![Example of a matrix, saved as "array of arrays"](./images/tips_tricks/array_arrays.pdf){width=60%}
 
 This is a really nice way to interpret a grid, but at the same time it can open the door to some pitfalls if you're not careful.
 
@@ -191,7 +191,7 @@ Similarly we can do the same algorithm for vertical matches, by running through 
 
 Here is a pseudo-code example:
 
-\code{specific_genre/match3_findhorizontalmatches}{Finding horizontal matches in a match-3 game}
+\code{tips_tricks/match3_findhorizontalmatches}{Finding horizontal matches in a match-3 game}
 
 Let's talk a second about the last rows in the algorithm: they are specifically tailored to address a corner case that happens when there is a match that ends on the right border of the screen.
 
@@ -199,7 +199,7 @@ If such code was not there, the match number would grow by one, then the for loo
 
 Similarly, we can make an algorithm that allows for vertical matches to be memorized for later removal:
 
-\code{specific_genre/match3_findverticalmatches}{Finding vertical matches in a match-3 game}
+\code{tips_tricks/match3_findverticalmatches}{Finding vertical matches in a match-3 game}
 
 Both algorithms run in $O(n)$, where "n" is the number of tiles on the screen.
 
@@ -211,7 +211,7 @@ We could, but that would open the door to a pitfall that could be tough to manag
 
 Let's see the image to understand better:
 
-![What happens when deleting a match immediately](./images/specific_genre/immediate_deletion.pdf){width=60%}
+![What happens when deleting a match immediately](./images/tips_tricks/immediate_deletion.pdf){width=60%}
 
 As visible from the first image, there is a T-shaped match involving cells 0,1,2 of row 0, cell 1 of row 1 and cell 1 of row 2.
 
