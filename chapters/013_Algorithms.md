@@ -46,21 +46,25 @@ $$ h(x) = | start.x - goal.x | + | start.y - goal.y | $$
 
 Graphically:
 
-![Example of manhattan distance](./images/algorithms/manhattan_distance.png){width=30%}
+![Example of Manhattan distance](./images/algorithms/manhattan_distance.png){width=60%}
 
-Notice how all the alternative paths have the same Manhattan distance.
+On the left we can see how we calculate the Manhattan distance, on the right you can notice how all the "possibly shortest" alternative paths have the same Manhattan distance.
+
+Since all "possibly shortest" paths between two points have the same Manhattan distance, this guarantees us that the algorithm will never overestimate, which is required for this heuristic to be considered "admissible".
 
 \code{algorithms/manhattan_distance}{Example code calculating the Manhattan distance on a 2D grid}
 
 This works well with 2D grid-based worlds.
 
-<!-- TODO: Add example image and code on manhattan distance -->
-
-\placeholder
-
 #### Euclidean Distance heuristic
 
-\placeholder
+Euclidean Distance works well when diagonal movement in a 2D grid is allowed, Euclidean distance is calculated with the standard distance formula:
+
+$$ h(x) = \sqrt{(start.x - end.x) ^2 + (start.y - end.y)^2}$$
+
+![Example of Euclidean Distance](./images/algorithms/euclidean_distance.png){width=30%}
+
+\code{algorithms/euclidean_distance}{Example code calculating the Euclidean distance on a 2D grid}
 
 ### Algorithms
 
