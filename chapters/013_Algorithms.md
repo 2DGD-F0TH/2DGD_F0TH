@@ -6,20 +6,50 @@ Useful Algorithms
 Path Finding
 -------------
 
-### The Best Greedy First Algorithm
+### Representing our world
+
+\placeholder
+
+#### Path nodes
+
+\placeholder
+
+#### Navigation meshes
+
+\placeholder
+
+### Heuristics
+
+In path finding there can be "heuristics" that are accounted for when you have to take a decision: in path finding an heuristic $h(x)$ is an estimated cost to travel from the current node to the goal node.
+
+An heuristic is admissible if it *never overestimates* the cost: if it did, it wouldn't guarantee that the algorithm would find the best path to the goal node.
+
+In this book we will present the most common heuristics used in game development.
+
+#### Manhattan Distance heuristic
+
+\placeholder
+
+#### Euclidean Distance heuristic
+
+\placeholder
+
+### Algorithms
+
+#### The Best Greedy First Algorithm
 
 \placeholder
 
 <!-- TODO: Uses an heuristic to understand which node is the "best" locally, but doesn't necessarily make the best decision globally -->
 
-### The Dijkstra Algorithm
+#### The Dijkstra Algorithm
 
 \placeholder
 
 <!-- TODO: Explain the dijkstra algorithm on nodes of a graph, can detect the closest goal among many -->
 
 
-### The A* Algorithm
+#### The A* Algorithm
 
 \placeholder
 
