@@ -64,7 +64,7 @@ As stated earlier, a third optional background can be added to deepen the parall
 
 The backgrounds should move all in the same direction, depending on the direction our character is moving: if our character is moving right, our moving backgrounds should move left.
 
-### Sprite Stenciling
+### Sprite Stenciling/Masking
 
 \placeholder
 
