@@ -8,13 +8,25 @@ Path Finding
 
 ### Representing our world
 
+<!-- TODO: Introduction on how to represent the world for a pathfinding AI -->
+
+\placeholder
+
+#### 2D Grids
+
+<!-- TODO: Talk about representing the world with 2D grids (Matrix) -->
+
 \placeholder
 
 #### Path nodes
 
+<!-- TODO: Talk about how to represent the world via nodes of a graph, adjacency lists and adjacency matrices -->
+
 \placeholder
 
 #### Navigation meshes
+
+<!-- TODO: Talk about navigation meshes -->
 
 \placeholder
 
@@ -22,11 +34,27 @@ Path Finding
 
 In path finding there can be "heuristics" that are accounted for when you have to take a decision: in path finding an heuristic $h(x)$ is an estimated cost to travel from the current node to the goal node.
 
-An heuristic is admissible if it *never overestimates* the cost: if it did, it wouldn't guarantee that the algorithm would find the best path to the goal node.
+An heuristic is admissible if it *never overestimates* such cost: if it did, it wouldn't guarantee that the algorithm would find the best path to the goal node.
 
 In this book we will present the most common heuristics used in game development.
 
 #### Manhattan Distance heuristic
+
+The Manhattan Distance heuristic doesn't allow diagonal movement (allowing it would allow the heuristic to overestimate the cost), and for a 2D grid is formulated as follows:
+
+$$ h(x) = | start.x - goal.x | + | start.y - goal.y | $$
+
+Graphically:
+
+![Example of manhattan distance](./images/algorithms/manhattan_distance.png){width=30%}
+
+Notice how all the alternative paths have the same Manhattan distance.
+
+\code{algorithms/manhattan_distance}{Example code calculating the Manhattan distance on a 2D grid}
+
+This works well with 2D grid-based worlds.
+
+<!-- TODO: Add example image and code on manhattan distance -->
 
 \placeholder
 

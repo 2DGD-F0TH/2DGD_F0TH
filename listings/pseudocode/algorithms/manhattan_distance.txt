@@ -1,0 +1,7 @@
+struct Tile{
+    integer x;
+    integer y;
+}
+
+function manhattan_distance(Tile start, Tile goal):
+    return abs(start.x - goal.x) + abs(start.y - goal.y)
