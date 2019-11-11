@@ -16,4 +16,11 @@ Saying "it would be cool to do xxxx: let's implement it!" can spiral out of cont
 
 Try to stick to the basics first, and then eventually expand when your game is already released, if it's worth it: First make it work, only then make it work well.
 
-\placeholder
+On project duration
+--------------------
+
+When it comes to project management, it's always tough to gauge the project duration, so it can prove useful to remember the following phrase:
+
+> "If you think a project would last a month, you should add a month of time for unforeseen events. After that, you should add another month for events that you really cannot foresee."
+
+This means that projects will last at least 3 times the time you foresee.

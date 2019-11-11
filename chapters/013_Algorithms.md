@@ -68,7 +68,7 @@ $$ h(x) = \sqrt{(start.x - end.x) ^2 + (start.y - end.y)^2}$$
 
 ### Algorithms
 
-#### The Best Greedy First Algorithm
+#### The Greedy Best First Algorithm
 
 \placeholder
 
