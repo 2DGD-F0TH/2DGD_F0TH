@@ -6,27 +6,37 @@ Useful Algorithms
 Path Finding
 -------------
 
+Path Finding is that part of AI algorithms that takes care of getting from point A to point B, using the shortest way possible and avoiding obstacles.
+
 ### Representing our world
 
-<!-- TODO: Introduction on how to represent the world for a pathfinding AI -->
-
-\placeholder
+Before undertaking the concept of path finding algorithms, we need to decide in which way we should represent our world to the AI we want to code. There are different ways to do it and here we will discuss some of the most used ones.
 
 #### 2D Grids
 
-<!-- TODO: Talk about representing the world with 2D grids (Matrix) -->
+The simplest way to represent a world to an AI is probably using 2D grids: we can represent the world using a 2-dimensional matrix, where every cell is a free space, an obstacle, a start or goal cell.
+
+This representation works well with top-down tile-based 2D games (with tile-based or free movement).
 
 \placeholder
 
 #### Path nodes
 
-<!-- TODO: Talk about how to represent the world via nodes of a graph, adjacency lists and adjacency matrices -->
+A more flexible way to represent our world is using "Path nodes", where each "path node" is represented by a node in a graph.
+
+Graphs can be represented in code in two common ways (there are surely other ways to do so): using *adjacency lists* or using *adjacency matrices*.
+
+This type of graph-based abstraction is the most used when teaching path finding algorithms like `A*` or `Dijkstra`.
 
 \placeholder
 
 #### Navigation meshes
 
-<!-- TODO: Talk about navigation meshes -->
+Navigation meshes are used to solve a problem that can arise when we try to represent our world using path nodes: we can't represent "safe areas" (where the AI-driven entity can cross) without using possibly thousands of path nodes.
+
+Navigation meshes are constituted by a collection of convex polygons (the meshes) that define the "safe areas", each mesh has no obstructions inside of itself, so the AI-driven entity can safely cross the entire mesh freely.
+
+This abstraction allows to use `A*` and `Dijkstra` algorithms, but instead of trying to navigate a graph, you look for a path between meshes (which are saved in a graph structure).
 
 \placeholder
 
@@ -50,7 +60,7 @@ Graphically:
 
 On the left we can see how we calculate the Manhattan distance, on the right you can notice how all the "possibly shortest" alternative paths have the same Manhattan distance.
 
-Since all "possibly shortest" paths between two points have the same Manhattan distance, this guarantees us that the algorithm will never overestimate, which is required for this heuristic to be considered "admissible".
+Since all "possibly shortest" paths between two points have the same Manhattan distance, this guarantees us that the algorithm will never overestimate (all the other paths will be longer, so the Manhattan distance will underestimate the cost), which is required for this heuristic to be considered "admissible".
 
 \code{algorithms/manhattan_distance}{Example code calculating the Manhattan distance on a 2D grid}
 
