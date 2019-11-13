@@ -18,6 +18,12 @@ E
 EULA
 : Short of "End User License Agreement", is essentially a contract that estabilishes the purchaser's right to use the software, usually with some limitations on how the copy can be used.
 
+G
+--
+
+Greedy Algorithms
+: Class of algorithms that try to solve a problem by making the locally optimal choice **at each stage**, approximating the global solution, without any global planning.
+
 H
 --
 

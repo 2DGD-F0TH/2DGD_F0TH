@@ -78,7 +78,16 @@ $$ h(x) = \sqrt{(start.x - end.x) ^2 + (start.y - end.y)^2}$$
 
 ### Algorithms
 
+Before getting to the algorithms, we need to consider two supporting data structures that we will use:
+
+- **Open Set:** a sorted data structure that contains the nodes that currently need to be considered. It should be an heap or any kind of structure that can be quickly be sorted as we will have to often refer to the node/cell/mesh with the lowest heuristic.
+- **Closed Set:** a data structure that will contain all the nodes/meshes/cells that have already been considered by the algorithm. This structure should be easily searchable (like a binary search tree), since we will often need to see if a certain node/cell/mesh is part of this set.
+
 #### The Greedy Best First Algorithm
+
+This is a *greedy algorithm*~[g]~ that searches the "local best" (what is best in a certain moment, without planning future decisions) that makes use of heuristics.
+
+For each of the neighbouring cells/meshes/nodes that have not been explored yet, the algorithm will take the one that has the lowest heuristic cost. Since this algorithm doesn't make any planning, this can lead to results that are not optimal, usually translating in entities hugging walls to reach their goal, as well as taking longer paths.
 
 \placeholder
 
