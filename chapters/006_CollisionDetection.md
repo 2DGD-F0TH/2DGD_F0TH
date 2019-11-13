@@ -317,6 +317,14 @@ A **HurtBox** is instead a shape that is used to identify where a certain entity
 
 ### Collision Reaction Methods
 
+It has happened: a collision occurred and now the two objects are overlapping.
+
+How do we react to this event in a convincing (not necessarily "realistic") and efficient manner? There are a lot of methods to react to collisions and below we will show some of the most used, along with some interesting ones.
+
+We will use the following images as reference for each collision reaction:
+
+![Images as a reference for collision reaction](./images/collision_detection/reaction_reference.png){width=60%}
+
 #### The Direction + Velocity Method
 
 \placeholder
