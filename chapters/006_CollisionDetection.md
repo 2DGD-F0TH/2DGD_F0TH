@@ -327,11 +327,24 @@ We will use the following images as reference for each collision reaction:
 
 #### The Direction + Velocity Method
 
-\placeholder
-
 This is the simplest method, computationally speaking: as soon as the objects gets inside of a wall, you push it back according to the direction its velocity has or just the direction of the character itself.
 
+\placeholder
+\code{collisiondetection/direction_velocity}{Code for the direction + velocity collision reaction}
+
+This method can be used only with completely solid platforms. If you want to make platforms that you can cross one-way, since you may get teleported around when your velocity changes direction.
+
+![How velocity changing direction can teleport you](./images/collision_detection/velocity_teleport.png){width=80%}
+
+In the previous example we try to jump on a platform by going through it, but our jump quite doesn't make it. Since velocity has changed direction, we end up being teleported over the platform, which is considered a glitch.
+
 <!-- TODO: A-la mario 1, you get inside a block, and react according to where the character is going-->
+
+#### Shallow-based reaction Method
+
+\placeholder
+
+<!-- TODO: Similar to direction + velocity, but reacts only on the most shallow direction -->
 
 #### The "Snapshot" Method
 
@@ -340,6 +353,8 @@ This method is a bit more involved, but allows for a finer control over how you 
 The secret to this method is taking a snapshot of the object's position before its update phase and do a series of comparisons with the position after the update.
 
 \placeholder
+
+This method solves the problem given by platforms that can be crossed one-way.
 
 <!-- TODO: Snapshot before and after updating, react accordingly, allows for more advanced stuff -->
 
