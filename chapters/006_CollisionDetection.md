@@ -329,7 +329,8 @@ We will use the following images as reference for each collision reaction:
 
 This is the simplest method, computationally speaking: as soon as the objects gets inside of a wall, you push it back according to the direction its velocity has or just the direction of the character itself.
 
-\placeholder
+This works when you treat the `x` and `y` axis separately, updating one, checking the collisions that come up from it, update the other axis and check for new collisions.
+
 \code{collisiondetection/direction_velocity}{Code for the direction + velocity collision reaction}
 
 This method can be used only with completely solid platforms. If you want to make platforms that you can cross one-way, since you may get teleported around when your velocity changes direction.
@@ -337,6 +338,10 @@ This method can be used only with completely solid platforms. If you want to mak
 ![How velocity changing direction can teleport you](./images/collision_detection/velocity_teleport.png){width=80%}
 
 In the previous example we try to jump on a platform by going through it, but our jump quite doesn't make it. Since velocity has changed direction, we end up being teleported over the platform, which is considered a glitch.
+
+\placeholder
+
+![How the direction + velocity method reacts to collisions](./images/collision_detection/direction_velocity_reference.png){width=80%}
 
 <!-- TODO: A-la mario 1, you get inside a block, and react according to where the character is going-->
 
