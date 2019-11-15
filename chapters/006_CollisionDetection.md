@@ -321,29 +321,42 @@ It has happened: a collision occurred and now the two objects are overlapping.
 
 How do we react to this event in a convincing (not necessarily "realistic") and efficient manner? There are a lot of methods to react to collisions and below we will show some of the most used, along with some interesting ones.
 
-We will use the following images as reference for each collision reaction:
+We will use the following image as reference for each collision reaction:
 
-![Images as a reference for collision reaction](./images/collision_detection/reaction_reference.png){width=60%}
+![Images used as a reference for collision reaction](./images/collision_detection/reaction_reference.png){width=40%}
+
+We will study each case separately, and each case will be a piece of this reference image.
 
 #### The Direction + Velocity Method
 
 This is the simplest method, computationally speaking: as soon as the objects gets inside of a wall, you push it back according to the direction its velocity has or just the direction of the character itself.
 
+##### How it works
+
 This works when you treat the `x` and `y` axis separately, updating one, checking the collisions that come up from it, update the other axis and check for new collisions.
 
 \code{collisiondetection/direction_velocity}{Code for the direction + velocity collision reaction}
 
-This method can be used only with completely solid platforms. If you want to make platforms that you can cross one-way, since you may get teleported around when your velocity changes direction.
+##### Analysis
+
+Let's see how this method reacts in each situation.
+
+When we are trying to fall on the ground, this method works as follows:
+
+![How the direction + velocity method reacts to collisions on a horizontal plane](./images/collision_detection/direction_velocity_reference.png){width=80%}
+
+1. We divide the movement vector in its `x` and `y` components.
+2. We move along the `x` axis and check for collisions, in this case there are none (the ghost represents our previous position.
+3. We move along the `y` axis, after checking for collisions we find that we are colliding on the ground (the ghost represents our next position).
+4. We react to the collision by moving the sprite on top of the ground.
+
+##### Quirks and issues
+
+This method can be used only with completely solid platforms. If you want to make use of platforms that you can cross one-way, since you may get teleported around when your velocity changes direction.
 
 ![How velocity changing direction can teleport you](./images/collision_detection/velocity_teleport.png){width=80%}
 
 In the previous example we try to jump on a platform by going through it, but our jump quite doesn't make it. Since velocity has changed direction, we end up being teleported over the platform, which is considered a glitch.
-
-\placeholder
-
-![How the direction + velocity method reacts to collisions](./images/collision_detection/direction_velocity_reference.png){width=80%}
-
-<!-- TODO: A-la mario 1, you get inside a block, and react according to where the character is going-->
 
 #### Shallow-based reaction Method
 
