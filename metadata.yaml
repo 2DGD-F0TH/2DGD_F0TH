@@ -29,6 +29,9 @@ geometry:
     - "rmargin=2.5cm"
     - "tmargin=2.5cm"
     - "lmargin=2.5cm"
-# Programming Language, leave "" for pseudocode
+# Programming Language to use for the listings
+# Languages available:
+# "" : pseudocode
+# "python": Python 3+
 proglang: ""
 ---
