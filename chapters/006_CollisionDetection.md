@@ -176,6 +176,12 @@ The final algorithm should look something like this:
 
 \code{collisiondetection/line_circle}{Line to circle collision detection}
 
+### Point/Rectangle Collision
+
+\placeholder
+
+<!-- TODO: Create some code -->
+
 ### Circle/Rectangle Collision
 
 First of all we need to identify which side of the rectangle we should test against, so if the centre of the circle is to the right of the rectangle, we will test against the right edge of the rectangle, if it's above we'll test against the top edge and so on...
@@ -258,9 +264,11 @@ This collision detection algorithm can be useful for line-based puzzle games, li
 
 ### Line/Rectangle Collision
 
-\placeholder
+Given the previous explanation about the Line/Line collision detection, it's quite easy to build a Line/Rectangle algorithm; distinguishing the cases where we want to account for a segment being completely inside of a rectangle or not.
 
-<!-- TODO: Just a Line/Line collision done 4 times: one for each side of the rectangle, unless the line is completely inside the rect -->
+\code{collisiondetection/line_rectangle}{Implementation of the line/rectangle collision detection}
+
+This can prove useful to test for "line of sight" inside an AI algorithm.
 
 ### Polygon/Polygon Collision
 
