@@ -178,9 +178,9 @@ The final algorithm should look something like this:
 
 ### Point/Rectangle Collision
 
-\placeholder
+If we want to see if a point collides with a rectangle is really easy, we just need to check if the point's coordinates are inside the rectangle.
 
-<!-- TODO: Create some code -->
+\code{collisiondetection/point_rectangle}{Point/Rectangle collision detection}
 
 ### Circle/Rectangle Collision
 

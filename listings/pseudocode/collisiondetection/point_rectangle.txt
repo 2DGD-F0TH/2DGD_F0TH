@@ -1,0 +1,3 @@
+function pointRectCollision(float x1, float y1, float rectx, float recty, float rectwidth, float rectheight):
+    // We check if the point is inside the rectangle
+    return x1 >= rectx AND x1 <= rectx + rectwidth AND y1 >= recty AND y1 <= recty + rectheight
