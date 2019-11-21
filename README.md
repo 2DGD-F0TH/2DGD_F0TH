@@ -21,6 +21,15 @@ You can get a copy of the book by clicking on the "Download" button (usually on 
 You can get a copy of the book by clicking on the "Releases" button (usually between the "branches" and "contributors" buttons) and then select the latest tagged release.
 
 
+Contributing
+-------------
+
+Are you a game developer? A computer science student? Maybe you are an artist that wants to contribute by giving insight into pixel art or music creation?
+
+Welcome aboard! You can contribute to this project by **forking** it and adding your own knowledge to it, after that you can create a pull request. Please check the [contributing](CONTRIBUTING.md) document.
+
+Are you an user that would like to see something added to the book? Feel free to open an issue!
+
 Building the book
 -------------------
 
