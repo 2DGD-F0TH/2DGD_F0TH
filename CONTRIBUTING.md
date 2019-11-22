@@ -38,6 +38,8 @@ The pictures used should be simple to understand and not covered by copyright (p
 
 The most important pictures *should* have a caption to describe them, but not necessarily, that's up to you.
 
+Images that are subject to change and corrections (like UML diagrams) should include a raw format inside the `raw_resources/images/` folder.
+
 ### Markdown Vs. LaTeX
 
 The book should be written as much as possible in [Pandoc Markdown](https://pandoc.org/MANUAL.html#pandocs-markdown), because everyone should be able to contribute to this book easily.
