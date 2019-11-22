@@ -139,6 +139,7 @@ $if(listings)$
 \renewcommand*{\lstlistlistingname}{List of Code Listings}
 \usepackage{color}
 \usepackage{xcolor}
+\input{template/pseudocode_lang}
 $if(proglang)$
 \newcommand{\code}[2]{\lstinputlisting[language=$proglang$,caption={#2}]{./listings/$proglang$/#1.txt}}
 $else$
@@ -163,7 +164,7 @@ $endif$
     tabsize=4,                  % Size of tabs
     extendedchars=true,
     breaklines=true,            % Lines will be wrapped
-    keywordstyle=\color{red},
+    %keywordstyle=\color{red},
     frame=b,
     % keywordstyle=[1]\textbf,
     % keywordstyle=[2]\textbf,
