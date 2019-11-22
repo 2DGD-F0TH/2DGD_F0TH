@@ -5,14 +5,12 @@ class LazySingleton {
     private LazySingleton() {}
 
     public static Singleton getInstance() {
+        // Multi-threading: manage race conditions
+        // ----- Critical region start -----
         if (instance == null) {
-            // Multi-threading: manage race conditions
-            // ----- Critical region start -----
-            if (instance == null) {
                 instance = new Singleton();
-            }
-            // ----- Critical region end -----
         }
+        // ----- Critical region end -----
 
         return instance;
     }
