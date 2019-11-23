@@ -83,11 +83,22 @@ Before getting to the algorithms, we need to consider two supporting data struct
 - **Open Set:** a sorted data structure that contains the nodes that currently need to be considered. It should be an heap or any kind of structure that can be quickly be sorted as we will have to often refer to the node/cell/mesh with the lowest heuristic.
 - **Closed Set:** a data structure that will contain all the nodes/meshes/cells that have already been considered by the algorithm. This structure should be easily searchable (like a binary search tree), since we will often need to see if a certain node/cell/mesh is part of this set.
 
+We will reference this image when we check what path the algorithm will take:
+
+![Pathfinding Algorithms Reference Image](./images/algorithms/pathfinding_reference.png){width=30%}
+
+The shaded rows represent the indexes we'll refer to when operating the algorithm.
+
+In each algorithm there will be the path taken by its implementation, so we invite you to execute the algorithm's instructions by hand, taking account of the heuristics pre-calculated and shown in the images below.
+
+![Pathfinding Algorithms Heuristics Reference Image](./images/algorithms/pathfinding_heuristics.png){width=60%}
+
 #### The Greedy Best First Algorithm
 
 This is a *greedy algorithm*~[g]~ that searches the "local best" (what is best in a certain moment, without planning future decisions) that makes use of heuristics.
 
 For each of the neighbouring cells/meshes/nodes that have not been explored yet, the algorithm will take the one that has the lowest heuristic cost. Since this algorithm doesn't make any planning, this can lead to results that are not optimal, usually translating in entities hugging walls to reach their goal, as well as taking longer paths.
+
 
 \placeholder
 
