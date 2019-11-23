@@ -1,0 +1,4 @@
+struct Node{
+    Node parent;  // This will be used to build the path
+    float h;  // The h(x) value for the node
+}

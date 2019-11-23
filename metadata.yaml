@@ -34,5 +34,5 @@ geometry:
 # "" : pseudocode (No highlighting)
 # "pseudocode" : pseudocode (With basic code highlighting)
 # "python": Python 3+
-proglang: ""
+proglang: "pseudocode"
 ---

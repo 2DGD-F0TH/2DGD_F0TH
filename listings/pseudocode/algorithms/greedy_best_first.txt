@@ -1,0 +1,38 @@
+// We bootstrap the variables
+currentNode = start
+add currentNode to closedSet  // This will avoid re-analizing this node
+do{
+    for each Node n adjacent to currentNode{
+        if closedSet contains n{
+            // We already analyzed this node, continue to next n
+            skip the node n
+        }else{
+            n.parent = currentNode
+            if openSet does not contain n{
+                compute n.h  // Computes the value of n's h(x)
+                add n to openSet
+            }
+        }
+    }
+    if openSet is empty{
+        // We exhausted all the possibilities
+        break do loop
+    }
+    // Select a new "currentNode"
+    currentNode = Node with lowest h inside the openSet
+    remove currentNode from openSet
+    add currentNode to closedSet
+}until (currentNode == end)
+
+if currentNode == end{
+    /* We reached the end and solved the path, we need to do a stack
+       reversal to find the path */
+    Stack finalPath
+    Node n = end
+    while n is not null{
+        add n to finalPath
+        n = n.parent  // We use "parent" to run the found path backwards
+    } loop
+}else{
+    // We cannot find a path between "start" and "end"
+}

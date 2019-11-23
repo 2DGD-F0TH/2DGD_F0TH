@@ -93,12 +93,25 @@ In each algorithm there will be the path taken by its implementation, so we invi
 
 ![Pathfinding Algorithms Heuristics Reference Image](./images/algorithms/pathfinding_heuristics.png){width=60%}
 
-#### The Greedy Best First Algorithm
+#### The Greedy "Best First" Algorithm
 
 This is a *greedy algorithm*~[g]~ that searches the "local best" (what is best in a certain moment, without planning future decisions) that makes use of heuristics.
 
 For each of the neighbouring cells/meshes/nodes that have not been explored yet, the algorithm will take the one that has the lowest heuristic cost. Since this algorithm doesn't make any planning, this can lead to results that are not optimal, usually translating in entities hugging walls to reach their goal, as well as taking longer paths.
 
+In this algorithm we will use a "Node" structure composed as follows:
+
+\code{algorithms/greedy_node_structure}{The node structure used in the greedy "Best First" algorithm}
+
+Let's look at the algorithm itself:
+
+\code{algorithms/greedy_best_first}{The greedy "Best First" algorithm}
+
+An interesting idea to optimize this algorithm and avoid the final "stack reversal" would be to find the path starting from the end node, towards the starting node.
+
+In the image below we can see the path taken by the algorithm, and how it is not the most optimal path.
+
+![The path taken by the greedy "Best First" algorithm](./images/algorithms/greedy_best_first_path.png){width=30%}
 
 \placeholder
 
