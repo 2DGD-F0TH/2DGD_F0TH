@@ -42,7 +42,8 @@ To build the book you need the following software:
 Before building the book, you might want to set your programming language in the `metadata.yaml` file. The programming languages currently available are:
 
 - Pseudocode (which is the empty "" option)
-- Python (proglang set to "python")
+- Pseudocode with basic Syntax Hightlighting (proglang set to "pseudocode")
+- Python 3 (proglang set to "python")
 
 To Build the book you need to clone this repository and use the `make` command from the main directory.
 
