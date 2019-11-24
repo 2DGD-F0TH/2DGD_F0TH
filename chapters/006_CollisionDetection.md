@@ -182,6 +182,12 @@ If we want to see if a point collides with a rectangle is really easy, we just n
 
 \code{collisiondetection/point_rectangle}{Point/Rectangle collision detection}
 
+### Point/Triangle Collision
+
+\placeholder
+
+<!-- TODO: Area-based point vs triangle collision detection -->
+
 ### Circle/Rectangle Collision
 
 First of all we need to identify which side of the rectangle we should test against, so if the centre of the circle is to the right of the rectangle, we will test against the right edge of the rectangle, if it's above we'll test against the top edge and so on...
@@ -211,7 +217,7 @@ y_a = y_1 + u_a \cdot (x_2 - x_1)
 \end{cases}
 $$
 
-This makes us understand that any point of line A can be represented by its starting point $P_1$, plus a certain fraction (represented by $u_a$) of the segment length $P_2 - P_1$.
+This makes us understand that any point of line A can be represented by its starting point $P_1$, plus a certain fraction (represented by $u_a$) of the vector represented by $P_2 - P_1$.
 
 This also means that $0 \leq u_a \leq 1$, else the point won't be on the segment.
 
@@ -269,6 +275,20 @@ Given the previous explanation about the Line/Line collision detection, it's qui
 \code{collisiondetection/line_rectangle}{Implementation of the line/rectangle collision detection}
 
 This can prove useful to test for "line of sight" inside an AI algorithm.
+
+### Point/Polygon Collision
+
+\placeholder
+
+### Circle/Polygon Collision
+
+\placeholder
+
+### Rectangle/Polygon Collision
+
+\placeholder
+
+### Line/Polygon Collision
 
 ### Polygon/Polygon Collision
 
