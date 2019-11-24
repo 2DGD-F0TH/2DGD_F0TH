@@ -1,6 +1,6 @@
 \null\clearpage
 
-Useful Algorithms
+Useful +lgorithms
 ========================================
 
 Path Finding
@@ -119,6 +119,8 @@ In the image below we can see the path taken by the algorithm, and how it is not
 
 #### The Dijkstra Algorithm
 
+The idea behind the Dijkstra algorithm is having a "cost" component that expresses the cost that has to be incurred when traveling from the start node to the current node. This will allow our previous algorithm to evolve and take the shortest path possible.
+
 \placeholder
 
 <!-- TODO: Explain the dijkstra algorithm on nodes of a graph, can detect the closest goal among many -->
@@ -126,9 +128,17 @@ In the image below we can see the path taken by the algorithm, and how it is not
 
 #### The A* Algorithm
 
+The A* Algorithm joins the "path-cost" idea with the heuristic to have a more efficient path-finding algorithm.
+
 \placeholder
 
 <!-- TODO: Variation of Dijkstra that uses heuristics for faster processing, does the best globally but doesn't support more than one goal -->
+
+##### Dijkstra Algorithm as a special case of the A* Algorithm
+
+The Dijkstra Algorithm can be implemented with the same code as the A* Algorithm, just by keeping the heuristic cost $h(x) = 0$.
+
+The absence of the heuristics (which depends on the goal node) leads the Dijkstra Algorithm to visit more nodes, but it can be useful in case there are many valid goal nodes and we don't know which one is the closest.
 
 World Generation
 ----------------
