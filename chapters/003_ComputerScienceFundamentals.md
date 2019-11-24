@@ -494,7 +494,7 @@ In some languages it is possible for an object to inherit from multiple other ob
 
 Usually when you call a method that is not present in the object itself, the program will look through the object's parents for the method to execute. This usually works well when there is no ambiguity, but what if it happens?
 
-When multiple inheritance is involved, there is a serious possibility of a situation similar to the followin
+When multiple inheritance is involved, there is a serious possibility of a situation similar to the following
 
 ![Example of a diamond problem](./images/computer_science/diamond.png){width=20%}
 
