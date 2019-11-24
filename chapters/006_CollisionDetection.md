@@ -184,9 +184,17 @@ If we want to see if a point collides with a rectangle is really easy, we just n
 
 ### Point/Triangle Collision
 
-\placeholder
+A possible way to define if a point is inside a triangle, we can use a bit of geometry.
 
-<!-- TODO: Area-based point vs triangle collision detection -->
+We can use *Heron's formula* to calculate the area of the original triangle, and compare it with the sum of the areas created by the 3 triangles made from 2 points of the original triangle and the point we are testing.
+
+![Point/Triangle Collision Detection: division into sub-triangles](./images/collision_detection/point_triangle.png){width=30%}
+
+If the sum of the 3 areas (represented in different colors in the figure) equals to the original calculated area, then we know that the point is inside the triangle.
+
+Let's see the code:
+
+\code{collisiondetection/point_triangle}{Point/Triangle Collision Detection}
 
 ### Circle/Rectangle Collision
 
