@@ -113,10 +113,6 @@ In the image below we can see the path taken by the algorithm, and how it is not
 
 ![The path taken by the greedy "Best First" algorithm](./images/algorithms/greedy_best_first_path.png){width=30%}
 
-\placeholder
-
-<!-- TODO: Uses an heuristic to understand which node is the "best" locally, but doesn't necessarily make the best decision globally -->
-
 #### The Dijkstra Algorithm
 
 The idea behind the Dijkstra algorithm is having a "cost" component that expresses the cost that has to be incurred when traveling from the start node to the current node. This will allow our previous algorithm to evolve and take the shortest path possible.
@@ -135,20 +131,23 @@ As with the greedy "best-first" algorithm we can optimize the "stack reversal" s
 
 Below we can see the path taken by the algorithm:
 
-![The path taken by the Dijkstra Algorithm](./images/algorithms/dijstra_path.png){width=30%}
-
-\placeholder
-
-<!-- TODO: Explain the dijkstra algorithm on nodes of a graph, can detect the closest goal among many -->
-
+![The path taken by the Dijkstra Algorithm](./images/algorithms/dijkstra_path.png){width=30%}
 
 #### The A* Algorithm
 
 The A* Algorithm joins the "path-cost" idea with the heuristic to have a more efficient path-finding algorithm.
 
-\placeholder
+The algorithm is really similar to Dijkstra, but it orders the open set by a new formula $f$, that is calculated as follows:
 
-<!-- TODO: Variation of Dijkstra that uses heuristics for faster processing, does the best globally but doesn't support more than one goal -->
+$$ f(x) = g(x) + h(x)$$
+
+Where $g(x)$ is our path cost and $h(x)$ is the heuristic we selected.
+
+Let's see the code:
+
+\code{algorithms/a_star}{The A* Algorithm}
+
+The path taken by the A* Algorithm is exactly the same as the one taken by the Dijkstra Algorithm, but the heuristic helps the A* Algorithm in visiting less nodes than its counterpart.
 
 ##### Dijkstra Algorithm as a special case of the A* Algorithm
 
