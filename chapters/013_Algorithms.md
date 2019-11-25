@@ -1,6 +1,6 @@
 \null\clearpage
 
-Useful +lgorithms
+Useful Algorithms
 ========================================
 
 Path Finding
@@ -120,6 +120,22 @@ In the image below we can see the path taken by the algorithm, and how it is not
 #### The Dijkstra Algorithm
 
 The idea behind the Dijkstra algorithm is having a "cost" component that expresses the cost that has to be incurred when traveling from the start node to the current node. This will allow our previous algorithm to evolve and take the shortest path possible.
+
+To be able to keep track of such "path-cost" component, we will use a different "Node" structure from the one used in the greedy "best-first" algorithm:
+
+\code{algorithms/dijkstra_node_structure}{The node structure used in the Dijkstra Algorithm}
+
+The idea behind the whole algorithm is that "if we find a quicker way to get from the start node to the current node, we should take it".
+
+Let's take a look at the algorithm:
+
+\code{algorithms/dijkstra}{The Dijkstra Algorithm}
+
+As with the greedy "best-first" algorithm we can optimize the "stack reversal" stage by starting from the end node.
+
+Below we can see the path taken by the algorithm:
+
+![The path taken by the Dijkstra Algorithm](./images/algorithms/dijstra_path.png){width=30%}
 
 \placeholder
 
