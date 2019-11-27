@@ -20,7 +20,7 @@ De Morgan's laws are fundamental in computer science as well as in any subject t
 De Morgan's laws can be written as:
 
 > not (A and B) = not A or not B
-
+>
 > not (A or B) = not A and not B
 
 In symbols:
