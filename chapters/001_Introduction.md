@@ -53,4 +53,12 @@ Listings, algorithms and anything that is code will be shown in monotype fonts, 
 
 \code{introduction/example}{Example code listing}
 
+### Block Quotes
+
+There will be times when it's needed to write down something from another source verbatim, for that we will use block quotes, which are styled as follows:
+
+> Hi, I'm a block quote! You will see me when something is... quoted!
+>
+> I am another row of the block quote! Have a nice day!
+
 <!-- TODO: Insert more conventions, assumptions... -->
