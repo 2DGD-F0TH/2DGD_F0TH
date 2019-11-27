@@ -12,10 +12,25 @@
 \usepackage[english]{babel}
 \usepackage{textcomp}
 \usepackage{fixltx2e}
+\usepackage{framed}
 \usepackage[toc,page]{appendix}
 \newcommand{\tabitem}{~~\llap{\textbullet}~~}
 \newcommand{\ttabitem}{~~~~\llap{$$\circ$$}~~}
 \newcommand{\placeholder}{\texttt{[This section is a work in progress and it will be completed as soon as possible]}}
+% Gray Bar on left of blockquotes
+\renewenvironment{leftbar}[1][\hsize]
+{%
+    \def\FrameCommand
+    {%
+        {\color{gray}\vrule width 3pt}%
+        \hspace{0pt}%must no space.
+        \fboxsep=\FrameSep%
+    }%
+    \MakeFramed{\hsize#1\advance\hsize-\width\FrameRestore}%
+}
+{\endMakeFramed}
+\renewenvironment{quote}{\leftbar\list{}{\rightmargin\leftmargin}\item\relax}{\endlist\endleftbar}
+% -------------
 $if(beamerarticle)$
 \usepackage{beamerarticle} % needs to be loaded first
 $endif$
