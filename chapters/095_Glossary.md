@@ -36,6 +36,12 @@ I
 IDE
 : Short for "Integrated Development Environment", it is a program that integrates a text editor with syntax highlighting, a compiler, a code checker, a project explorer and other features (like a tag explorer, for instance).
 
+K
+--
+
+Kanboard
+: Short for "Kanban Board", are boards used to manage work. The board is usually divided into swimlanes and "cards" that represent the work to do are moved from left to right, to represent the progress of the work itself.
+
 M
 --
 
@@ -62,3 +68,9 @@ U
 
 UI
 : Short of *User Interface*, defines the elements shown to and interacted by the user in a software or, in this case, a videogame menu.
+
+W
+--
+
+Wiki
+: A wiki usually refers to a knowledge base website where users collaboratively modify content and structure by using their own web browsers.
