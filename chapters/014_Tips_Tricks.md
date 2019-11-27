@@ -14,6 +14,12 @@ Some prefer giving the last health point a value that is higher than the other h
 
 These small devices allow you to give players more of those "near death" experiences that can give players that confidence boost to keep them playing through a hard stage, while at the same time, reducing the chance that they will rage-quit.
 
+### Avoiding a decision can be a decision itself
+
+\placeholder
+
+<!-- TODO: Like in firewatch, where not responding to a dialogue prompt is a noted decision -->
+
 ### Telegraphing
 
 Players hate the feeling of injustice that pops out when a boss pulls out a surprise attack, that's why in many games where precise defense movement is required bosses give out signals on the nature of their attack.
@@ -23,6 +29,8 @@ This "telegraphing" technique, allows for that "impending danger" feel, while st
 Telegraphing is a nice way to suggest the player how to avoid screen-filling attacks (which would give the highest amount of "impending danger").
 
 ![Example of a telegraphed screen-filling attack in a shooter](./images/tips_tricks/telegraphing.png){width=60%}
+
+Another example of telegraphing was used in the Bioshock series: the first shots of an enemy against you always miss, that is used to avoid "out of the blue" situation, which can be seen as a form of "telegraphing" both the presence and position of enemies.
 
 ### Scrolling Backgrounds and Parallax Scrolling
 
