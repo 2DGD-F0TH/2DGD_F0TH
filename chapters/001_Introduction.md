@@ -62,3 +62,8 @@ There will be times when it's needed to write down something from another source
 > I am another row of the block quote! Have a nice day!
 
 <!-- TODO: Insert more conventions, assumptions... -->
+
+Structure of this Book
+----------------------
+
+\placeholder
