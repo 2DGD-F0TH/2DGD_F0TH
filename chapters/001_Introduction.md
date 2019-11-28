@@ -66,4 +66,28 @@ There will be times when it's needed to write down something from another source
 Structure of this Book
 ----------------------
 
-\placeholder
+This book is structured in many chapters, here you will find a small description of each and every one of them.
+
+- **Introduction:** Here we present the structure of the book and the reasons why it came to exist. You are reading it now, hold tight, you're almost there!
+- **The Maths Behind Game Development:** Here we will learn the basic maths that are behind any game, like vectors, matrices and screen coordinates.
+- **Some Computer Science Fundamentals:** Here we will learn (or revise) some known computer science fundamentals (and some less-known too!) and rules that will help us managing the development of our game.
+- **Project Management Tips:** Project management is hard! Here we will take a look at some common pitfalls and tips that will help us deliver our own project and deliver it in time.
+- **Writing a Game Design Document:** In this section we will take a look at one of the first documents that comes to exist when we want to make a game, and how to write one.
+- **The Game Loop:** Here we will learn the basics of the "game loop", the very base of any videogame.
+- **Collision Detection and Reaction:** In this section we will talk about one of the most complex and computationally expensive operations in a videogame: collision detection.
+- **Procedural Content Generation:** In this chapters we will see the difference between procedural and random content generation and how procedural generation can apply to more things than we think.
+- **Level Design:** In this chapter we will talk about level design and how to walk your player through the learning and reinforcement of game mechanics.
+- **Creating your resources:** Small or solo game developers may need to create their own resources, in this section we will take a look at how to create our own graphics, sounds and music.
+- **Balancing Your Game:** A very ethereal vision on game balance, in this chapter we will take a look inside the player's mind and look at how something that may seem "a nice challenge" to us can translate into a "terrible balance issue" to our players.
+- **Marketing Your Game:** Here we will take a look at mistakes the industry has done when marketing and maintaining their own products, from the point of view of a small indie developer. We will also check some of the more conflictual topics like lootboxes, microtransactions and season passes.
+- **Useful Patterns and Containers:** A head-first dive into the software engineering side of game development, in this section we will check many software design patterns and containers used to make your game more maintainable and better performing.
+- **Useful Algorithms:** In this section we will see some algorithms that are commonly used in game, including path finding, world generation and more.
+- **Tips and Tricks:** Here we will dive into the game development's darkest and dirtiest secrets, how games fool us into strong emotions but also how some of the most used mechanics are implemented.
+- **Game Jams:** A small section dedicated on Game Jams and how to participate to one without losing your mind in the process, and still deliver a prototype.
+- **Glossary:** Any world that has a ~[g]~ symbol will find a definition here.
+- **Engines and Frameworks:** A collection of frameworks and engines you can choose from to begin your game development.
+- **Tools:** Some software and toolkits you can use to create your own resources, maps and overall make your development process easier and more manageable.
+- **Premade Assets and resources:** In this appendix we will find links to many websites and resource for graphics, sounds, music or learning.
+- **Contributors:** Last but not least, the names of the people who contributed in making this book.
+
+Have a nice stay and let's go!

@@ -1,6 +1,6 @@
 \null\clearpage
 
-Tips, Tricks and Algorithms
+Game Development Tips and Tricks
 ==========================================
 
 General Purpose
