@@ -201,6 +201,10 @@ Table: Summary table for the Chain of Responsibility Pattern
 Resource Manager
 -----------------
 
+A useful container is the "resource manager", which can be used to store and manage textures, fonts, sounds and music easily and efficiently.
+
+A resource manager is usually implemented via generic programming~[g]~, which helps writing DRY code, and uses search-efficient containers like hash tables, since we can take care of loading and deletion during loading screens.
+
 \placeholder
 
 <!-- TODO: An associative container that contains pairs (ENUM, ITEM) used to store and retrieve
