@@ -808,3 +808,47 @@ As with Use Case and Class diagrams, Activity Diagrams can make use of notes, in
 #### A note on activity diagrams
 
 The components of activity diagrams shown here are just a small part of the used components, but they should be enough to get you started designing and reading most of the activity diagrams that exist.
+
+Advanced Containers
+-------------------
+
+This section is dedicated to explaining some basic containers that are used in computer science, allowing us to make an informed choice when we want to implement some even more advanced containers in the future.
+
+We will include big-O performance counters for the basic functions of: adding/removing and item at the beginning, adding/removing an item at the end, adding/removing an item in an arbitrary position and indexing at a certain position.
+
+### Dynamic Arrays
+
+<!-- TODO -->
+\placeholder
+
+| Operation                  | Cost           |
+| :---------:                | :-----:        |
+| Indexing                   | O(1)           |
+| Insert/Delete At Beginning | O(n)           |
+| Insert/Delete At End       | O(1) amortized |
+| Insert/Delete at position  | O(n)           |
+
+### Linked Lists
+
+<!-- TODO -->
+\placeholder
+
+### Doubly-Linked Lists
+
+<!-- TODO -->
+\placeholder
+
+### Hash Tables
+
+<!-- TODO: Sometimes called "maps" or "hash maps" -->
+\placeholder
+
+### Binary Search Trees
+
+<!-- TODO -->
+\placeholder
+
+### Heaps
+
+<!-- TODO -->
+\placeholder
