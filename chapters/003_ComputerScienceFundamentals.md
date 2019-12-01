@@ -828,32 +828,58 @@ We will include big-O performance counters for the basic functions of: adding/re
 <!-- TODO -->
 \placeholder
 
-| Operation                  | Cost           |
-| :---------:                | :-----:        |
-| Indexing                   | O(1)           |
-| Insert/Delete At Beginning | O(n)           |
-| Insert/Delete At End       | O(1) amortized |
-| Insert/Delete at position  | O(n)           |
+| Operation                  | Average Cost           |
+| :---------:                | :-----:                |
+| Indexing                   | O(1)                   |
+| Insert/Delete At Beginning | O(n)                   |
+| Insert/Delete At End       | O(1) amortized         |
+| Insert/Delete at position  | O(n)                   |
 
 ### Linked Lists
 
 <!-- TODO -->
 \placeholder
 
+| Operation                  | Average Cost                         |
+| :---------:                | :-----:                              |
+| Indexing                   | O(n)                                 |
+| Insert/Delete At Beginning | O(1)                                 |
+| Insert/Delete At End       | O(1) for double-ended, o(n) otherwise|
+| Insert/Delete at position  | time to search + O(1)                |
+
 ### Doubly-Linked Lists
 
 <!-- TODO -->
 \placeholder
+
+| Operation                  | Average Cost                         |
+| :---------:                | :-----:                              |
+| Indexing                   | O(n)                                 |
+| Insert/Delete At Beginning | O(1)                                 |
+| Insert/Delete At End       | O(1) for double-ended, o(n) otherwise|
+| Insert/Delete at position  | time to search + O(1)                |
 
 ### Hash Tables
 
 <!-- TODO: Sometimes called "maps" or "hash maps" -->
 \placeholder
 
+| Operation  | Average Cost   |
+| :---------:| :-----:        |
+| Searching  | O(1)           |
+| Insert     | O(1)           |
+| Delete     | O(1)           |
+
 ### Binary Search Trees
 
 <!-- TODO -->
 \placeholder
+
+| Operation  | Average Cost        |
+| :---------:| :-----:             |
+| Searching  | O(log(n))           |
+| Insert     | O(log(n))           |
+| Delete     | O(log(n))           |
 
 ### Heaps
 
