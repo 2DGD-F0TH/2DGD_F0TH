@@ -24,7 +24,7 @@ Vectors usually represent a force applied to a body, its velocity or acceleratio
 
 ![Image of a vector](./images/maths/vector.pdf){width=30%}
 
-The pain of learning about vectors is paid off by their capacity of being added and subtracted among themselves, as well as being multiplied by a number (called a "scalar").
+The pain of learning about vectors is paid off by their capacity of being added and subtracted among themselves, as well as being multiplied by a number (called a "scalar") and between themselves.
 
 ### Adding and Subtracting Vectors
 
