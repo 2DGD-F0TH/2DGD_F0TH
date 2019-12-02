@@ -825,7 +825,35 @@ We will include big-O performance counters for the basic functions of: adding/re
 
 ### Dynamic Arrays
 
-<!-- TODO -->
+In many languages, arrays are sized statically, with a size decided at compile time. This severely limits the array's usefulness.
+
+Dynamic Arrays are a wrapper around arrays, allowing it to extend its size when needed. This usually entails some additional operations when inserting or deleting an item.
+
+![Dynamic Arrays Reference Image](./images/computer_science/dynamic_arrays.png){width=40%}
+
+#### Performance Analysis
+
+Indexing an item is immediate, since arrays allow to natively index themselves.
+
+Inserting an item at the beginning is a heavy task, since it requires either moving all the present items or rebuilding the internal native array. Such operations require copying or moving each element, giving us a time complexity averaging on `O(n)`.
+
+![Adding an element at the beginning of a Dynamic Array](./images/computer_science/dynamic_arrays_insert_head.png){width=60%}
+
+Inserting an item at the end, if we keep a pointer to the last item inserted, is an operation that usually happens immediately (time complexity `O(1)`), but when the array is full, we need to instantiate a new native array (usually double the size of the current one) and copy all elements inside the new array (operation that has time complexity of `O(n)`). Since the number of `O(1)` operations outweighs by a long shot the number of `O(n)` operations, it's possible to demonstrate that in the long run appending an item at the end of a dynamic array has a time complexity averaging around `O(1)`.
+
+![Adding an element at the end of a Dynamic Array](./images/computer_science/dynamic_arrays_insert_tail.png){width=60%}
+
+Inserting an item in an arbitrary position, much like inserting an item at the beginning requires moving some items further into the array, potentially all of them (when the arbitrary position is the beginning of the array), thus giving us a time complexity of `O(n)`. Such operation could trigger an array resize, which has no real influence on the estimate.
+
+![Adding an element at an arbitrary position of a Dynamic Array](./images/computer_science/dynamic_arrays_insert_arbitrary.png){width=60%}
+
+Some implementations of the Dynamic Arrays try to save space when the number of items goes lower than $\frac{1}{4}$ of the array capacity during a deletion, the internal array is rebuilt with half the size. Such operation has a time complexity of `O(n)`.
+
+Some other implementations use a $\frac{1}{4}$/$\frac{3}{4}$ rule, halving the array capacity when the item deletion brings the number of items lower than $\frac{1}{4}$ of the array and doubling it when an insertion makes the number of elements higher than $\frac{3}{4}$ of the array capacity.
+
+**Note:** Not all programming languages have native support for arrays, for instance Python uses lists.
+
+<!-- TODO: Code? -->
 \placeholder
 
 | Operation                  | Average Cost           |
@@ -837,7 +865,31 @@ We will include big-O performance counters for the basic functions of: adding/re
 
 ### Linked Lists
 
-<!-- TODO -->
+Linked Lists are a data structure composed by "nodes", each node contains data and a reference to the next node in the linked list. Differently from arrays, nodes may not be contiguous in memory, which makes indexing problematic.
+
+![Linked List Reference Image](./images/computer_science/linked_list_reference.png){width=60%}
+
+Some implementations feature a pointer to the last element of the list, to make appending items at the end easier and quicker.
+
+![Double-Ended Linked List Reference Image](./images/computer_science/de_linked_list_reference.png){width=60%}
+
+#### Performance Analysis
+
+Since we only have a handler on the first node, indexing requires us to scan all the elements until we reach the one that was asked for. This operation has a potential time complexity of `O(n)`.
+
+Inserting an item at the beginning is immediate, we just need to create a new node, make it point at the current head of the list and then update our "handle" to point at the newly created node. The number of operations is independent of how many data we already have, so the time complexity is `O(1)`.
+
+![Inserting a new node at the beginning of a linked list](./images/computer_science/linked_list_insert_head.png){width=60%}
+
+Appending an item at the end has a time complexity that varies depending on the chosen implementation: if the list has a reference to the final node, we just need to create a new node, update the final node's reference (usually called "next") to point at the new node and then update the reference to the final node to point at the newly created node (time complexity `O(1)`). If our queue doesn't have such reference, we will need to scan the whole list to find the final node (time complexity `O(n)`).
+
+![Inserting a new node at the end of a linked list](./images/computer_science/linked_list_insert_tail.png){width=60%}
+
+Inserting at an arbitrary position requires us to scan the list until we find the position that we want, after that we just need to split and rebuild the references correctly, which is a fast operation.
+
+![Inserting a new node at an arbitrary position in a linked list](./images/computer_science/linked_list_insert_arbitrary.png){width=60%}
+
+<!-- TODO: Code? -->
 \placeholder
 
 | Operation                  | Average Cost                         |
