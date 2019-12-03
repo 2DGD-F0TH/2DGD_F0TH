@@ -1,7 +1,11 @@
 2D Game Development: From Zero To Hero
 ======================================
 
-**Status:** ![Travis Pipeline Status](https://img.shields.io/travis/Penaz91/2DGD_F0TH?label=Travis%20Build&style=for-the-badge) ![Gitlab Pipeline Status](https://img.shields.io/gitlab/pipeline/Penaz/2DGD_F0TH?label=Gitlab%20Build&style=for-the-badge)  ![Project Activity](https://img.shields.io/badge/Activity-Active-brightgreen?style=for-the-badge)
+Project status:
+
+|**Build** | ![Travis Pipeline Status](https://img.shields.io/travis/Penaz91/2DGD_F0TH?label=Travis%20Build&style=for-the-badge) | ![Gitlab Pipeline Status](https://img.shields.io/gitlab/pipeline/Penaz/2DGD_F0TH?label=Gitlab%20Build&style=for-the-badge)|
+|:---------:|:--------------------:|:------------------------------:|
+|**Commits** | ![GitHub last commit (master)](https://img.shields.io/github/last-commit/penaz91/2DGD_F0TH/master?label=Last%20Commit%20%28master%29&style=for-the-badge) | ![GitHub last commit (develop)](https://img.shields.io/github/last-commit/penaz91/2DGD_F0TH/develop?label=Last%20Commit%20%28develop%29&style=for-the-badge) |
 
 This is a small project that aims to gather some knowledge about game development and make it available to everyone.
 
