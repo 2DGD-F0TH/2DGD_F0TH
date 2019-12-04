@@ -847,7 +847,7 @@ Inserting an item at the end, if we keep a pointer to the last item inserted, is
 
 Inserting an item in an arbitrary position, much like inserting an item at the beginning requires moving some items further into the array, potentially all of them (when the arbitrary position is the beginning of the array), thus giving us a time complexity of `O(n)`. Such operation could trigger an array resize, which has no real influence on the estimate.
 
-![Adding an element at an arbitrary position of a Dynamic Array](./images/computer_science/dynamic_arrays_insert_arbitrary.png){width=60%}
+![Adding an element at an arbitrary position of a Dynamic Array](./images/computer_science/dynamic_arrays_insert_arbitrary.png){width=90%}
 
 Some implementations of the Dynamic Arrays try to save space when the number of items goes lower than $\frac{1}{4}$ of the array capacity during a deletion, the internal array is rebuilt with half the size. Such operation has a time complexity of `O(n)`.
 
