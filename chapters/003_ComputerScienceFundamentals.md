@@ -819,9 +819,11 @@ Sometimes it may be necessary (mostly in the case of containers) to have the sam
 Advanced Containers
 -------------------
 
-This section is dedicated to explaining some basic containers that are used in computer science, allowing us to make an informed choice when we want to implement some even more advanced containers in the future.
+This section is dedicated to give some basic explanation of some advanced containers that are used in computer science, allowing us to make an informed choice when we want to implement some even more advanced containers in the future.
 
 We will include big-O performance counters for the basic functions of: adding/removing and item at the beginning, adding/removing an item at the end, adding/removing an item in an arbitrary position and indexing at a certain position.
+
+This section is in no way exhaustive, but should be enough to make an informed decision on what containers to use for our components, according to necessities.
 
 ### Dynamic Arrays
 
@@ -837,11 +839,11 @@ Indexing an item is immediate, since arrays allow to natively index themselves.
 
 Inserting an item at the beginning is a heavy task, since it requires either moving all the present items or rebuilding the internal native array. Such operations require copying or moving each element, giving us a time complexity averaging on `O(n)`.
 
-![Adding an element at the beginning of a Dynamic Array](./images/computer_science/dynamic_arrays_insert_head.png){width=60%}
+![Adding an element at the beginning of a Dynamic Array](./images/computer_science/dynamic_arrays_insert_head.png){width=90%}
 
 Inserting an item at the end, if we keep a pointer to the last item inserted, is an operation that usually happens immediately (time complexity `O(1)`), but when the array is full, we need to instantiate a new native array (usually double the size of the current one) and copy all elements inside the new array (operation that has time complexity of `O(n)`). Since the number of `O(1)` operations outweighs by a long shot the number of `O(n)` operations, it's possible to demonstrate that in the long run appending an item at the end of a dynamic array has a time complexity averaging around `O(1)`.
 
-![Adding an element at the end of a Dynamic Array](./images/computer_science/dynamic_arrays_insert_tail.png){width=60%}
+![Adding an element at the end of a Dynamic Array](./images/computer_science/dynamic_arrays_insert_tail.png){width=75%}
 
 Inserting an item in an arbitrary position, much like inserting an item at the beginning requires moving some items further into the array, potentially all of them (when the arbitrary position is the beginning of the array), thus giving us a time complexity of `O(n)`. Such operation could trigger an array resize, which has no real influence on the estimate.
 
@@ -853,8 +855,8 @@ Some other implementations use a $\frac{1}{4}$/$\frac{3}{4}$ rule, halving the a
 
 **Note:** Not all programming languages have native support for arrays, for instance Python uses lists.
 
-<!-- TODO: Code? -->
 \placeholder
+<!-- TODO: Code? -->
 
 | Operation                  | Average Cost           |
 | :---------:                | :-----:                |
@@ -862,6 +864,20 @@ Some other implementations use a $\frac{1}{4}$/$\frac{3}{4}$ rule, halving the a
 | Insert/Delete At Beginning | O(n)                   |
 | Insert/Delete At End       | O(1) amortized         |
 | Insert/Delete at position  | O(n)                   |
+
+Table: Performance table for Dynamic Arrays
+
+-------------------------   ----------------------------------------------------------------------------
+**Container Name**          Dynamic Array
+
+**When To Use it**          All situations that require direct indexing of a container, but insertions and removals are not extremely common, and usually take the form of "push back" (insertion at the end)
+
+**Advantages**              Direct Indexing, Fast iteration through all the elements, given by the fact that arrays are stored compact in memory, fast appending.
+
+**Disadvantages**           Slow insertions in arbitrary positions and at the head of the array.
+---------------------------------------------------------------------------------------------------------
+
+Table: Summary Table for Dynamic Arrays
 
 ### Linked Lists
 
@@ -899,6 +915,20 @@ Inserting at an arbitrary position requires us to scan the list until we find th
 | Insert/Delete At End       | O(1) for double-ended, o(n) otherwise|
 | Insert/Delete at position  | time to search + O(1)                |
 
+Table: Performance table for Linked Lists
+
+-------------------------   ----------------------------------------------------------------------------
+**Container Name**          Linked List
+
+**When To Use it**          All situations that require quick insertions/removals, either on the head or the tail (stacks or queues).
+
+**Advantages**              Very fast insertions/removals, quite fast iteration through all the elements.
+
+**Disadvantages**           Slow indexing at an arbitrary position. Sorting can be complex.
+---------------------------------------------------------------------------------------------------------
+
+Table: Summary Table for Linked Lists
+
 ### Doubly-Linked Lists
 
 <!-- TODO -->
@@ -911,6 +941,20 @@ Inserting at an arbitrary position requires us to scan the list until we find th
 | Insert/Delete At End       | O(1) for double-ended, o(n) otherwise|
 | Insert/Delete at position  | time to search + O(1)                |
 
+Table: Performance table for Doubly-Linked Lists
+
+-------------------------   ----------------------------------------------------------------------------
+**Container Name**          Doubly-Linked List
+
+**When To Use it**          All situations that require quick insertions/removals, either on the head or the tail (stacks or queues) or iterating through an entire list, forwards or backwards.
+
+**Advantages**              Very fast insertions/removals, quite fast iteration through all the elements. Possibility of easily iterating the list in reverse order.
+
+**Disadvantages**           Slow indexing at an arbitrary position. Sorting can be complex.
+---------------------------------------------------------------------------------------------------------
+
+Table: Summary Table for Linked Lists
+
 ### Hash Tables
 
 <!-- TODO: Sometimes called "maps" or "hash maps" -->
@@ -921,6 +965,20 @@ Inserting at an arbitrary position requires us to scan the list until we find th
 | Searching  | O(1)           |
 | Insert     | O(1)           |
 | Delete     | O(1)           |
+
+Table: Performance table for Hash Tables
+
+-------------------------   ----------------------------------------------------------------------------
+**Container Name**          Hash Table
+
+**When To Use it**          All situations that require accessing an element by a well-defined key quickly. Building unordered data sets.
+
+**Advantages**              Fast insertions/removals, direct indexing (in absence of hash collisions) by key.
+
+**Disadvantages**           In case of a bad hashing function, it reverts to the performance of a linked list, cannot be ordered.
+---------------------------------------------------------------------------------------------------------
+
+Table: Summary Table for Hash Tables
 
 ### Binary Search Trees
 
@@ -933,7 +991,26 @@ Inserting at an arbitrary position requires us to scan the list until we find th
 | Insert     | O(log(n))           |
 | Delete     | O(log(n))           |
 
+Table: Performance table for Binary Search Trees
+
+-------------------------   ----------------------------------------------------------------------------
+**Container Name**          Binary Search Tree
+
+**When To Use it**          Situations that require good overall performance and requires fast search times.
+
+**Advantages**              Good insertion and removal times, searching on this structure is fast.
+
+**Disadvantages**           Given the nature of the data structure, there is no direct indexing, nor ordering.
+---------------------------------------------------------------------------------------------------------
+
+Table: Summary Table for Binary Search Trees
+
 ### Heaps
+
+<!-- TODO -->
+\placeholder
+
+### Red-Black Trees
 
 <!-- TODO -->
 \placeholder
