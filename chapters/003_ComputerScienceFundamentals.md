@@ -895,15 +895,15 @@ Since we only have a handler on the first node, indexing requires us to scan all
 
 Inserting an item at the beginning is immediate, we just need to create a new node, make it point at the current head of the list and then update our "handle" to point at the newly created node. The number of operations is independent of how many data we already have, so the time complexity is `O(1)`.
 
-![Inserting a new node at the beginning of a linked list](./images/computer_science/linked_list_insert_head.png){width=60%}
+![Inserting a new node at the beginning of a linked list](./images/computer_science/linked_list_insert_head.png){width=90%}
 
 Appending an item at the end has a time complexity that varies depending on the chosen implementation: if the list has a reference to the final node, we just need to create a new node, update the final node's reference (usually called "next") to point at the new node and then update the reference to the final node to point at the newly created node (time complexity `O(1)`). If our queue doesn't have such reference, we will need to scan the whole list to find the final node (time complexity `O(n)`).
 
-![Inserting a new node at the end of a linked list](./images/computer_science/linked_list_insert_tail.png){width=60%}
+![Inserting a new node at the end of a (double-ended) linked list](./images/computer_science/de_linked_list_insert_tail.png){width=90%}
 
 Inserting at an arbitrary position requires us to scan the list until we find the position that we want, after that we just need to split and rebuild the references correctly, which is a fast operation.
 
-![Inserting a new node at an arbitrary position in a linked list](./images/computer_science/linked_list_insert_arbitrary.png){width=60%}
+![Inserting a new node at an arbitrary position in a (double-ended) linked list](./images/computer_science/de_linked_list_insert_arbitrary.png){width=90%}
 
 <!-- TODO: Code? -->
 \placeholder
