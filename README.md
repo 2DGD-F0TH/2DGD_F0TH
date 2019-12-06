@@ -1,7 +1,7 @@
 2D Game Development: From Zero To Hero
 ======================================
 
-Project +tatus:
+Project Status:
 
 |**Build** | ![Travis Pipeline Status](https://img.shields.io/travis/Penaz91/2DGD_F0TH?label=Travis%20Build&style=for-the-badge) | ![Gitlab Pipeline Status](https://img.shields.io/gitlab/pipeline/Penaz/2DGD_F0TH?label=Gitlab%20Build&style=for-the-badge)|
 |:---------:|:--------------------:|:------------------------------:|
