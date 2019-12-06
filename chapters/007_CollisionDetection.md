@@ -3,6 +3,8 @@
 Collision Detection and Reaction
 =================================
 
+<!-- TODO: Epigraph missing -->
+
 When it comes to collision management, there are two main phases:
 
 - **Collision Detection:** you find out which game objects collided with each other;

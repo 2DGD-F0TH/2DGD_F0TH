@@ -3,6 +3,8 @@
 Creating your resources
 =======================
 
+<!-- TODO: Epigraph missing -->
+
 Graphics {#GraphicsResources}
 ---------
 
