@@ -24,3 +24,5 @@ When it comes to project management, it's always tough to gauge the project dura
 > "If you think a project would last a month, you should add a month of time for unforeseen events. After that, you should add another month for events that you really cannot foresee."
 
 This means that projects will last at least 3 times the time you foresee.
+
+<!-- TODO: Add some basics on lifecycle. Iterations, incremental, agile, etc... -->
