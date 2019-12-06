@@ -1,7 +1,7 @@
 2D Game Development: From Zero To Hero
 ======================================
 
-Project status:
+Project +tatus:
 
 |**Build** | ![Travis Pipeline Status](https://img.shields.io/travis/Penaz91/2DGD_F0TH?label=Travis%20Build&style=for-the-badge) | ![Gitlab Pipeline Status](https://img.shields.io/gitlab/pipeline/Penaz/2DGD_F0TH?label=Gitlab%20Build&style=for-the-badge)|
 |:---------:|:--------------------:|:------------------------------:|
@@ -18,9 +18,13 @@ This repository is configured to automatically build a PDF file at each push on 
 
 ### GitLab
 
+[Link to the GitLab Repository](https://gitlab.com/Penaz/2dgd_f0th/)
+
 You can get a copy of the book by clicking on the "Download" button (usually on the right of the "Find File" button), then click on "build_pdf" under "Previous Artifacts": an "artifacts.zip" will be downloaded, containing the latest version of the book.
 
 ### GitHub
+
+[Link to the GitHub Repository](https://github.com/Penaz91/2DGD_F0TH)
 
 You can get a copy of the book by clicking on the "Releases" button (usually between the "branches" and "contributors" buttons) and then select the latest tagged release.
 
@@ -46,7 +50,7 @@ To build the book you need the following software:
 Before building the book, you might want to set your programming language in the `metadata.yaml` file. The programming languages currently available are:
 
 - Pseudocode (which is the empty "" option)
-- Pseudocode with basic Syntax Hightlighting (proglang set to "pseudocode")
+- Pseudocode with basic Syntax Highlighting (proglang set to "pseudocode")
 - Python 3 (proglang set to "python")
 
 To Build the book you need to clone this repository and use the `make` command from the main directory.
