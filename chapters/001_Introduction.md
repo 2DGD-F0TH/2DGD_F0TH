@@ -1,6 +1,8 @@
 Introduction
 =============
 
+\epigraph{A journey of a thousand miles begins with a single step}{\textit{Laozi - Tao Te Ching}}
+
 Welcome to the book! This book aims to be an organized collection of the community's knowledge on game development techniques, algorithms and experience with the objective of being as comprehensive as possible.
 
 Why another game development book?

@@ -3,6 +3,8 @@
 Useful Algorithms
 ========================================
 
+\epigraph{Fancy algorithms are slow when n is small, and n is usually small.}{\textit{Rob Pike}}
+
 Path Finding
 -------------
 

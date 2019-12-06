@@ -3,6 +3,7 @@
 Marketing your game
 ====================
 
+\epigraph{Here's my whole marketing idea: treat people the way you want to be treated.}{\textit{Garth Brooks}}
 
 The importance of being pro-consumer
 ------------------------------------

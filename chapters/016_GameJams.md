@@ -3,6 +3,8 @@
 Game Jams
 ==========
 
+\epigraph{You miss 100\% of the shots you don’t take.}{\textit{Wayne Gretzky}}
+
 Game jams are a great opportunity to test your game making skills in a tight situation, where time is at a premium and you need to "hack your way" through a fully-fledged prototype of a videogame.
 
 In this section there will be some suggestions on how to survive a game jam.
