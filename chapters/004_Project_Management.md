@@ -29,22 +29,27 @@ This means that projects will last at least 3 times the time you foresee.
 Software Life Cycle
 -------------------
 
-### Iteration versus increment
+### Iteration versus Increment
 
 <!-- TODO: Talk about the difference between "iterating" and "incrementing" -->
 \placeholder
 
-### Waterfall Life Cycle
+### Waterfall Model
 
 <!-- TODO: Explain the simplest life cycle - waterfall, one stage after the other -->
 \placeholder
 
-### Incremental Life Cycle
+### Incremental Model
 
 <!-- TODO: Talk about the incremental life cycle -->
 \placeholder
 
-### Evolutionary Life Cycle
+### Spiral Model
+
+<!-- TODO -->
+\placeholder
+
+### Evolutionary Model
 
 <!-- TODO: Talk about the evolutionary life cycle: development, delivery, feedback, incorporation of feedback and back to development -->
 \placeholder
