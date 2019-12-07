@@ -987,6 +987,8 @@ Table: Summary Table for Hash Tables
 <!-- TODO -->
 \placeholder
 
+![Binary Search Tree Reference](./images/computer_science/BST.png){width=60%}
+
 | Operation  | Average Cost        |
 | :---------:| :-----:             |
 | Searching  | O(log(n))           |
