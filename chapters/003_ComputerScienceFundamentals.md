@@ -1011,6 +1011,8 @@ Table: Summary Table for Binary Search Trees
 
 ### Heaps
 
+![Heap Reference Image (Min-Heap)](./images/computer_science/heap_reference.png){width=60%}
+
 <!-- TODO -->
 \placeholder
 
