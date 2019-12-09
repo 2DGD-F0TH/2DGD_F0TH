@@ -959,6 +959,8 @@ Table: Summary Table for Linked Lists
 
 ### Hash Tables
 
+![Hash Table Reference Image (Hash Table with Buckets)](./images/computer_science/hashtable_reference.png){width=40%}
+
 <!-- TODO: Sometimes called "maps" or "hash maps" -->
 \placeholder
 
