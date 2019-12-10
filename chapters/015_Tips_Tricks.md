@@ -18,9 +18,11 @@ These small devices allow you to give players more of those "near death" experie
 
 ### Avoiding a decision can be a decision itself
 
-\placeholder
+An interesting way to make the characters from a game seem more real, is registering the "lack of response" or "lack of action" in the game's AI or dialogue tree.
 
-<!-- TODO: Like in firewatch, where not responding to a dialogue prompt is a noted decision -->
+This means that "ignoring" has consequences, and inaction is in and itself an action of "doing nothing" which should be accounted for, just like ignoring someone in real life can have serious consequence or where someone may prefer to do nothing instead of taking one of many bad decisions.
+
+This trick is used in the game "Firewatch", where not responding to a dialogue prompt is a noted decision.
 
 ### Telegraphing
 
@@ -115,7 +117,7 @@ A useful precaution to avoid the [bullet through paper](#bulletthroughpaper) pro
 
 ### Jump Buffering
 
-A nice trick used mostly in 2D platformers to allow for smoother gameplay is "jump buffering".
+A nice trick used mostly in 2D platformers to allow for smoother gameplay is "jump buffering", also known as "input buffering".
 
 Normally when a character is mid-air, the jump button does nothing, in code:
 
@@ -132,7 +134,7 @@ Jump buffering usually is put into practice using a timer, in a fashion similar 
 
 ### Coyote Time
 
-Coyote time is a technique used to allow a player to jump a few frames after they fall off a platform, allowing for a more fluid gameplay.
+Coyote time (also known as "edge tolerance") is a technique used to allow a player to jump a few frames after they fall off a platform, allowing for a more fluid gameplay.
 
 ![Example of how coyote time would work](./images/tips_tricks/coyote_time.png){width=60%}
 
