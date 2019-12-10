@@ -27,6 +27,9 @@ Greedy Algorithms
 H
 --
 
+Hash Function
+: A hash function is a special function that is used to map data of arbitrary size to fixed-size values. This function has some features like being able to spread values in an uniform way (minimizing the different values that have the same hash, called "hash collisions"), is fast and deterministic (given the same input will generate the same hash).
+
 HUD
 : Short of "Heads Up Display", in games it usually shows your health, ammunition, minimap and other information.
 

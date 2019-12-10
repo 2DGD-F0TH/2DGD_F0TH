@@ -959,10 +959,19 @@ Table: Summary Table for Linked Lists
 
 ### Hash Tables
 
+Hash Tables are a good way to store **unordered data** that can be referred by a "key". These structures have different names, like "maps", "dictionaries" or "hash maps".
+
+The idea behind a hash map is having a key subject to a *hash function*~[g]~ that will decide where the item will be positioned in the internal structure.
+
 ![Hash Table Reference Image (Hash Table with Buckets)](./images/computer_science/hashtable_reference.png){width=40%}
 
-<!-- TODO: Sometimes called "maps" or "hash maps" -->
-\placeholder
+The simplest way to implement a hash table is using an "array with buckets": an array where each cell has a reference to a linked list.
+
+On average, finding an item requires passing the key through the hash function, such hash function will tell us where the item is in our internal structure immediately. Thus giving a time complexity of $O(1)$.
+
+Inserting has more or less the same performance, the key gets worked through the hash function, deciding which linked list will be used to store the item.
+
+Deletion works in the same fashion, passing the key through the hash function and then deleting the value; giving a time complexity of $O(1)$
 
 | Operation  | Average Cost   |
 | :---------:| :-----:        |
@@ -984,12 +993,23 @@ Table: Performance table for Hash Tables
 
 Table: Summary Table for Hash Tables
 
-### Binary Search Trees
+### Binary Search Trees (BST)
 
-<!-- TODO -->
-\placeholder
+Binary search trees, sometimes called "ordered trees" are a container that have an "order relation" between their own elements.
 
 ![Binary Search Tree Reference](./images/computer_science/BST.png){width=60%}
+
+The order relation allows us to have a tree that is able to distinguish between "bigger" and "smaller" values, thus making search really fast at the price of a tiny slowdown in insertion and deletion.
+
+Searching in a BST is easy, starting from the root, we check if the current node is the searched value; if it isn't we compare the current node's value with the searched value.
+
+If the searched value is greater, we search on the right child. If it is smaller, we continue our search on the left child.
+
+Recursively executing this algorithm will lead us to find the node, if present. Such algorithm has a $O(log(n))$ time complexity.
+
+In a similar fashion, insertion will recursively check subtrees until the right spot of the value is found. The insertion operation has the same time complexity as searching: $O(log(n))$.
+
+Deletion is a bit more conceptually complex, since it's necessary to maintain the ordering of the nodes. Such operation has a time complexity of $O(log(n))$.
 
 | Operation  | Average Cost        |
 | :---------:| :-----:             |
