@@ -5,8 +5,8 @@ Marketing your game
 
 \epigraph{Here's my whole marketing idea: treat people the way you want to be treated.}{\textit{Garth Brooks}}
 
-The importance of being pro-consumer
-------------------------------------
+The importance of being consumer-friendly
+-----------------------------------------
 
 We live in a "Money-Driven" world. This is a fact, not an opinion. So, leaving morality out of the discussion, you can argue that the general game publisher mentality of "getting all the money" is not that wrong.
 But you don't have to be an idealist to realize that we should see the world for what it could be, and not for what it is at the moment. We should apply this mentality to every aspect of our world, game industry included.
@@ -14,7 +14,7 @@ But you don't have to be an idealist to realize that we should see the world for
 We are NOT here to enlighten you about how game industry has to change, but every game developer should realize that the true success of a game is **not** based on sales, it is based on customer satisfaction. So, even if this cursed "publisher mentality" could be applied to small indie developers (spoiler: it is not), we have to fight it back, and restore the "customer satisfaction above all" philosophy.
 So, fun fact: the only thing we (small indie developers) can do is *doing the right thing*.
 
-Focus your effort on customer satisfaction, you have to be pro-consumer!
+Focus your effort on customer satisfaction, you have to be consumer-friendly!
 
 My first advice is: instead of implementing a thousand features, make one single thing a thousand times better (Bruce Lee style). If you promise the client a ton of features to do you can generate hype (we will discuss it later), but if you are an indie developer (and most of times even if you're not) making one thing extremely enjoyable is way better.
 
@@ -225,7 +225,7 @@ Like "flipping a house" (minus the work), a group of assets can be put together 
 
 These products are usually sold to adventurous or unknowing consumers for a quick buck or people who hope to make some money out of "out-of-game economies" (like Steam Cards or Tradeable Items), while the quality of the final product is lacking at best or terrible at worst.
 
-This circles back to "being pro-consumer": you're not selling to a single person, but to a lot of people with different backgrounds and expertise, and one of those **will** find out if your game is an "asset flip".
+This circles back to "being consumer-friendly": you're not selling to a single person, but to a lot of people with different backgrounds and expertise, and one of those **will** find out if your game is an "asset flip".
 
 Flipping assets is the equivalent of betraying your customers, as well as living entirely on the work of who made said assets.
 
