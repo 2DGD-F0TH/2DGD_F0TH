@@ -933,15 +933,22 @@ Table: Summary Table for Linked Lists
 
 ### Doubly-Linked Lists
 
-<!-- TODO -->
+A doubly-linked list is a variation of a linked list where each node not only has a reference to its successor, but also a reference to its predecessor. This allows for easy processing of the list in reverse, without having to create algorithms that entail a huge overhead.
+
+All the operations of insertion, indexing and deletion are performed in a similar fashion to the classic singly-linked list we saw earlier, just with an additional pointer to account for.
+
+![Doubly Linked List Reference Image](./images/computer_science/doubly_linked_list_reference.png){width=60%}
+
+<!-- TODO: Code? -->
+
 \placeholder
 
-| Operation                  | Average Cost                         |
-| :---------:                | :-----:                              |
-| Indexing                   | O(n)                                 |
-| Insert/Delete At Beginning | O(1)                                 |
-| Insert/Delete At End       | O(1) for double-ended, o(n) otherwise|
-| Insert/Delete at position  | time to search + O(1)                |
+| Operation                  | Average Cost          |
+| :---------:                | :-----:               |
+| Indexing                   | O(n)                  |
+| Insert/Delete At Beginning | O(1)                  |
+| Insert/Delete At End       | O(1)                  |
+| Insert/Delete at position  | time to search + O(1) |
 
 Table: Performance table for Doubly-Linked Lists
 
