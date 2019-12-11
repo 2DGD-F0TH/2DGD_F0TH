@@ -41,17 +41,29 @@ Before getting to the models, we need to discuss the difference between two term
 
 ### Waterfall Model
 
+The Waterfall model, also known as "sequential model" is the simplest one to understand, easily repeatable (in different projects) and is composed by phases that are **strictly sequential**, which means:
+
+- There is no parallelism;
+- There is no overlap between phases;
+- When a phase is completed, you cannot go back to it.
+
 ![Diagram of the waterfall life cycle model](./images/project_management/waterfall_model.png){width=60%}
 
-<!-- TODO: Explain the simplest life cycle - waterfall, one stage after the other -->
-\placeholder
+This makes the Waterfall life cycle model *extremely rigid*, everything needs to be carefully analyzed and documented (sometimes people define this model "document-driven") and the coding is done only in its final phases.
+
+In order to have a good result, this model requires quantifying some metrics (time spent, costs, ...) and such quantification heavily relies on the experience of the project manager and the administrators.
 
 ### Incremental Model
 
+When a project of a certain size is involved, it's a bad idea to perform the so-called "big-bang integration" (integrating all the components together). Such approach would make troubleshooting a nightmare, so it's advisable to *incrementally integrate* the components.
+
+The Incremental Model allows to have a "high-level analysis and planning", after that the team decides which features should be implemented first. This way the most important features are ready as soon as possible and have more time to become stable and integrate with the rest of the software.
+
 ![Diagram of the incremental life cycle model](./images/project_management/incremental_model.png){width=60%}
 
-<!-- TODO: Talk about the incremental life cycle -->
-\placeholder
+This model can make use of strictly sequential phases (detail planning -> release -> detail planning -> release ...) or introduce some parallelism (for instance planning and developing frontend and backend at the same time).
+
+As seen from the diagram, the high-level analysis and planning are not repeated, instead the detail planning and release cycle for a well-defined number of iterations, and on each iteration we will have a working release or prototype.
 
 ### Spiral Model
 
@@ -69,8 +81,28 @@ Before getting to the models, we need to discuss the difference between two term
 
 ### Agile Software Development
 
-<!-- TODO: Talk about agile -->
-\placeholder
+Agile Software Development was born as a reaction to the excessive rigidity of the models we've seen so far. The basic principles of Agile Software Development are presented at the <http://agilemanifesto.org> website, but we will discuss them below.
+
+- Rigid rules are not good;
+- A working software is more important than a comprehensive documentation;
+- Seek collaboration with the stakeholder instead of trying to negotiate with them;
+- Responding to change is better than following a plan
+- Interactions and individuals are more important than processes and tools.
+
+Obviously not everything that shines is actually gold, there are many detractors of the Agile model, bringing on the table some criticism that should be noted:
+
+- The agile way of working entails a really high degree of discipline from the team: the line between "flexibility" and "complete lack of rules" is a thin one;
+- Software without documentation is a liability more than an asset: commenting code is not enough - you need to know (and let others know) the reason behind a certain choice;
+- Without a plan, you can't estimate risks and measure how the project is coming along;
+- Responding to change can be good, but you need to be aware of costs and benefits such change and your response entail.
+
+#### User Stories
+
+Agile models are based on "User Stories", which are documents that describe the problem at hand.
+
+Such documents are written by talking with the stakeholder/customer, listening to them, actively participating in the discussion with them, proposing solutions and improvements actively.
+
+A User Story also defines how we want to check that the software we are producing actually satisfies our customer.
 
 #### Scrum
 
