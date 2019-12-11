@@ -32,6 +32,12 @@ Graphs can be represented in code in two common ways (there are surely other way
 
 This type of graph-based abstraction is the most used when teaching path finding algorithms like `A*` or `Dijkstra`.
 
+##### Adjacency Lists
+
+\placeholder
+
+##### Adjacency Matrices
+
 \placeholder
 
 #### Navigation meshes
