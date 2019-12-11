@@ -67,14 +67,17 @@ As seen from the diagram, the high-level analysis and planning are not repeated,
 
 ### Evolutionary Model
 
-![Diagram of the evolutionary life cycle model](./images/project_management/evolutionary_model.png){width=60%}
+It's not always possible to perfectly know the outline of a problem in advance, that's why the evolutionary model was invented. Since needs tend to change with time, it's a good idea to maintain life cycles on different versions of your software at the same time.
 
-<!-- TODO: Talk about the evolutionary life cycle: development, delivery, feedback, incorporation of feedback and back to development -->
-\placeholder
+![High-level diagram of the evolutionary life cycle model](./images/project_management/evolutionary_model_2.png){width=60%}
+
+Adding a way to implement the feedback you get from your customers and stakeholders completes the micro-managed part of the life cycle model, each time feedback and updates are implemented, a new version is released.
+
+![Diagram of the evolutionary life cycle model](./images/project_management/evolutionary_model.png){width=60%}
 
 ### Agile Software Development
 
-Agile Software Development was born as a reaction to the excessive rigidity of the models we've seen so far. The basic principles of Agile Software Development are presented at the <http://agilemanifesto.org> website, but we will discuss them below.
+Agile Software Development was born as a reaction to the excessive rigidity of the models we've seen so far. The basic principles of Agile Software Development are presented at the <http://agilemanifesto.org> website, but we will shortly discuss them below.
 
 - Rigid rules are not good;
 - A working software is more important than a comprehensive documentation;
@@ -99,15 +102,47 @@ A User Story also defines how we want to check that the software we are producin
 
 #### Scrum
 
-<!-- TODO: Talk about the scum approach -->
-\placeholder
+The term "scrum" is taken from the sport of American Football, where you have an action that is seemingly product of chaos but that instead hides a strategy, rules and organization.
+
+Let's see some Scrum terminology:
+
+- **Product Backlog:** This is essentially a "todo list" that keeps requirements and features our product must have;
+- **Sprint:** Iteration, where we choose what to do to create a so-called "useful increment" to our product. Each Sprint lasts around 2 to 4 weeks and at the end of each sprint you obtain a version of your software that can be potentially sold to the consumer;
+- **Sprint Backlog:** Essentially another "todo list" that keeps the set of user stories that will be used for the next sprint.
+
+As seen from the terminology, the Scrum method is based on well-defined iterations (Sprints) and each sprint is composed by the following phases:
+
+- **Sprint Planning:** You gather the product backlog and eventually the previous sprint backlogs and decide what to implement in the upcoming sprint;
+- **Daily Scrum:** A daily stand-up meeting that lasts around 15 minutes where a check on the daily progress is done;
+- **Sprint Review:** After the sprint is completed, we have the verification and validation of the products of the sprint (both software and documents);
+- **Sprint Retrospective:** A quality control on the sprint itself is done, allowing for continuous improvement over the way of working.
+
+##### Criticisms to the Scrum approach
+
+The Scrum approach can quickly become chaotic if User Stories and Backlogs are not well kept and clear. Also, no matter how short it can be, the Daily Scrum is still an invasive practice that interrupts the workflow and requires everyone to be present and ready.
 
 #### Kanban
 
-<!-- TODO: Talk about the kanban approach -->
-\placeholder
+Kanban is an Agile Development approach taken by the scheduling system used for lean and just-in-time manufacturing implemented at Toyota.
+
+The base of Kanban is the "Kanban Board" (sometimes shortened as "Kanboard"), where plates (also called "cards" or "tickets") are moved through swimlanes that can represent:
+
+- The status of the card (To Do, Doing, Testing, Done)
+- The Kind of Work (Frontend, Backend, Database, ...)
+- The team that is taking care of the work
+
+The board helps with organization and gives a high-level view of the work status.
+
+![Example of a Kanban Board](./images/project_management/kanboard.png){width=50%}
 
 #### ScrumBan
 
-<!-- TODO: Talk about scrumban, a mix of scrum and kanban, usually used as a migration stage between the two -->
-\placeholder
+ScrumBan is a hybrid approach between Scrum and Kanban, mixing the Daily Scrum and Sprint Approach with the Kanban Board.
+
+This approach is usually used during migration from a Scrum-Based approach to a purely Kanban-based approach.
+
+### Where to go from here
+
+Obviously the models presented are not set in stone, but are "best practices" that have been proven to help with project management, and not even all of them.
+
+Nothing stops you from taking elements of a model and implement them into another model. For example you could use an Evolutionary Model with a Kanban board used to manage the single increment.
