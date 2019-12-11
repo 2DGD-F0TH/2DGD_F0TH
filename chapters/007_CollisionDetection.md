@@ -300,6 +300,8 @@ This can prove useful to test for "line of sight" inside an AI algorithm.
 
 ### Line/Polygon Collision
 
+\placeholder
+
 ### Polygon/Polygon Collision
 
 \placeholder
