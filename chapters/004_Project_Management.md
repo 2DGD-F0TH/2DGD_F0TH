@@ -65,13 +65,6 @@ This model can make use of strictly sequential phases (detail planning -> releas
 
 As seen from the diagram, the high-level analysis and planning are not repeated, instead the detail planning and release cycle for a well-defined number of iterations, and on each iteration we will have a working release or prototype.
 
-### Spiral Model
-
-![Diagram of the spiral life cycle model](./images/project_management/spiral_model.png){width=60%}
-
-<!-- TODO -->
-\placeholder
-
 ### Evolutionary Model
 
 ![Diagram of the evolutionary life cycle model](./images/project_management/evolutionary_model.png){width=60%}
