@@ -1,3 +1,11 @@
+---
+name: Feature Request Template
+about: This issue template is used to ask for new parts to be added to the book
+title: ''
+labels: ''
+assignees: ''
+---
+
 Feature Request
 ----------------
 
