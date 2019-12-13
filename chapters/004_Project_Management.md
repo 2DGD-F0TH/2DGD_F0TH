@@ -133,7 +133,7 @@ The base of Kanban is the "Kanban Board" (sometimes shortened as "Kanboard"), wh
 
 The board helps with organization and gives a high-level view of the work status.
 
-![Example of a Kanban Board](./images/project_management/kanboard.png){width=50%}
+![Example of a Kanban Board](./images/project_management/kanboard.png){width=70%}
 
 #### ScrumBan
 
