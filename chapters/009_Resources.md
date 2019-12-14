@@ -3,7 +3,7 @@
 Creating your resources
 =======================
 
-<!-- TODO: Epigraph missing -->
+\epigraph{Art is not what you see, but what you make others see.}{\textit{Edgar Degas}}
 
 Graphics {#GraphicsResources}
 ---------
