@@ -146,3 +146,9 @@ This approach is usually used during migration from a Scrum-Based approach to a 
 Obviously the models presented are not set in stone, but are "best practices" that have been proven to help with project management, and not even all of them.
 
 Nothing stops you from taking elements of a model and implement them into another model. For example you could use an Evolutionary Model with a Kanban board used to manage the single increment.
+
+Version Control
+----------------
+
+<!--TODO: Talk about Git and other version control systems and their importance in software development -->
+\placeholder
