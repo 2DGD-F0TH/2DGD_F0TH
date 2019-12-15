@@ -3,7 +3,7 @@
 Procedural Content Generation
 =============================
 
-<!-- TODO: Epigraph missing -->
+\epigraph{Science is what we understand well enough to explain to a computer. Art is everything else we do.}{\textit{Donald Knuth}}
 
 What is procedural generation (and what it isn't)
 -------------------------------------------------
