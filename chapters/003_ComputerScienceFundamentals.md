@@ -1049,3 +1049,13 @@ Table: Summary Table for Binary Search Trees
 
 <!-- TODO -->
 \placeholder
+
+### Stacks
+
+<!-- TODO -->
+\placeholder
+
+### Queues
+
+<!-- TODO -->
+\placeholder
