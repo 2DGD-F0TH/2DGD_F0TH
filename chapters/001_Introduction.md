@@ -1,3 +1,5 @@
+\null\clearpage
+
 Introduction
 =============
 
@@ -70,6 +72,7 @@ Structure of this Book
 
 This book is structured in many chapters, here you will find a small description of each and every one of them.
 
+- **Foreword:** You didn't skip it, right?
 - **Introduction:** Here we present the structure of the book and the reasons why it came to exist. You are reading it now, hold tight, you're almost there!
 - **The Maths Behind Game Development:** Here we will learn the basic maths that are behind any game, like vectors, matrices and screen coordinates.
 - **Some Computer Science Fundamentals:** Here we will learn (or revise) some known computer science fundamentals (and some less-known too!) and rules that will help us managing the development of our game.
