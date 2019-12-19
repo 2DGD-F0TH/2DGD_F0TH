@@ -1059,3 +1059,8 @@ Table: Summary Table for Binary Search Trees
 
 <!-- TODO -->
 \placeholder
+
+### Circular Queues
+
+<!--TODO -->
+\placeholder
