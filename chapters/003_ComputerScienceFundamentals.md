@@ -922,7 +922,7 @@ Table: Performance table for Linked Lists
 -------------------------   ----------------------------------------------------------------------------
 **Container Name**          Linked List
 
-**When To Use it**          All situations that require quick insertions/removals, either on the head or the tail (stacks or queues).
+**When To Use it**          All situations that require quick insertions/removals, either on the head or the tail (used as stacks or queues).
 
 **Advantages**              Very fast insertions/removals, quite fast iteration through all the elements.
 
@@ -1052,10 +1052,21 @@ Table: Summary Table for Binary Search Trees
 
 ### Stacks
 
-<!-- TODO -->
+Stacks are a particular data structure, they have a limited way of working: you can only put or remove items on top of the stack, plus being able to "peek" on top of the stack.
+
+![How a stack works](./images/computer_science/stack.png){width=50%}
+
+Stacks are good LIFO (Last in - First Out) data structures, and can be implemented with both a linked list or a cleverly-indexed array.
+
 \placeholder
 
 ### Queues
+
+Queues are the exact opposite of stacks, they are a FIFO (First in - First Out) data structure: you can put items on the back of the queue, while you can remove from the head of the queue.
+
+![How a queue works](./images/computer_science/queue.png){width=50%}
+
+As with stacks, queues leverage limitations in their way of working for greater control over the structure itself.
 
 <!-- TODO -->
 \placeholder
