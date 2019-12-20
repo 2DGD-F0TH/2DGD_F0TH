@@ -1054,24 +1054,38 @@ Table: Summary Table for Binary Search Trees
 
 Stacks are a particular data structure, they have a limited way of working: you can only put or remove items on top of the stack, plus being able to "peek" on top of the stack.
 
-![How a stack works](./images/computer_science/stack.png){width=50%}
+![How a stack works](./images/computer_science/stack.png){width=30%}
 
-Stacks are good LIFO (Last in - First Out) data structures, and can be implemented with both a linked list or a cleverly-indexed array.
+Stacks are LIFO (Last in - First Out) data structures, and can be implemented with both a linked list or a cleverly-indexed array.
+
+Depending on the single implementation, the operation used to "pop" an item from the stack will also return the element, ready to be used in an upcoming computation.
+
+![Array and linked list implementations of a stack](./images/computer_science/stack_implementation.png){width=40%}
 
 \placeholder
 
 ### Queues
 
-Queues are the exact opposite of stacks, they are a FIFO (First in - First Out) data structure: you can put items on the back of the queue, while you can remove from the head of the queue.
+Queues are the exact opposite of stacks, they are FIFO (First in - First Out) data structures: you can put items on the back of the queue, while you can remove from the head of the queue.
 
 ![How a queue works](./images/computer_science/queue.png){width=50%}
 
-As with stacks, queues leverage limitations in their way of working for greater control over the structure itself.
+Depending on the single implementation, the operation used to "dequeue" an item from the queue will also return the element just removed, ready to be used in an upcoming computation.
 
-<!-- TODO -->
+As with stacks, queues leverage limitations in their way of working for greater control over the structure itself. Usually queues are implemented via linked lists, but can also be implemented via arrays, using multiple indexes and index-wrapping when iterating.
+
+![Array and linked list implementation of a queue](./images/computer_science/queue_implementation.png){width=40%}
+
 \placeholder
 
 ### Circular Queues
 
-<!--TODO -->
+Circular Queues are a particular kind of queues that are infinitely iterable, every time an iterator goes after the last element in the queue, it will wrap around to the beginning.
+
+![How a circular queue works](./images/computer_science/circular_queue.png){width=50%}
+
+Circular Queues can be implemented via linked lists or cleverly indexed arrays, with all the advantages and disadvantages that such structures entail.
+
+![Array and linked list implementation of a circular queue](./images/computer_science/circular_queue_implementation.png){width=90%}
+
 \placeholder
