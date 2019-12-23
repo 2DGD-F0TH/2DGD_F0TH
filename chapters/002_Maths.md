@@ -190,7 +190,7 @@ $$A_{2,3}^T  = \begin{bmatrix}
 
 ### Multiplication between matrices
 
-Given 2 matrices with sizes $m \times n$ and $n \times p$:
+Given 2 matrices with sizes $m \times n$ and $n \times p$ (mind how the number of rows of the first matrix is the same of the number of columns of the second matrix):
 
 $$ A_{3, 2} = \begin{bmatrix}
     2 & 3\\
@@ -288,9 +288,124 @@ $$ \begin{bmatrix}
     ? & ? & ?
 \end{bmatrix}$$
 
+Same goes for the last value, when we are done with the first row, we keep going similarly with the second row:
+
+$$ \begin{bmatrix}
+    2 & 3\\
+    \textcolor{red}{1} & \textcolor{red}{2}\\
+    4 & 0
+\end{bmatrix} \times \begin{bmatrix}
+    \textcolor{red}{2} & 3 & 4\\
+    \textcolor{red}{0} & 1 & 0
+\end{bmatrix} = \begin{bmatrix}
+    4 & 9 & 8\\
+    \textcolor{red}{?} & ? & ?\\
+    ? & ? & ?
+\end{bmatrix}$$
+
+Which leads to the following calculation:
+
+$$ 1 \cdot 2 + 2 \cdot 0 = 2$$
+
+Which we will insert in the result matrix:
+
+$$ \begin{bmatrix}
+    2 & 3\\
+    1 & 2\\
+    4 & 0
+\end{bmatrix} \times \begin{bmatrix}
+    2 & 3 & 4\\
+    0 & 1 & 0
+\end{bmatrix} = \begin{bmatrix}
+    4 & 9 & 8\\
+    2 & ? & ?\\
+    ? & ? & ?
+\end{bmatrix}$$
+
+You can try completing this calculation yourself, the final result is as follows:
+
+$$ \begin{bmatrix}
+    2 & 3\\
+    1 & 2\\
+    4 & 0
+\end{bmatrix} \times \begin{bmatrix}
+    2 & 3 & 4\\
+    0 & 1 & 0
+\end{bmatrix} = \begin{bmatrix}
+    4 & 9 & 8\\
+    2 & 5 & 4\\
+    8 & 12 & 16
+\end{bmatrix}$$
+
+Multiplication between matrices is **non commutative**, which means that the result of $A \times B$ is not equal to the result of $B \times A$, actually one of the results may not even be possible to calculate.
+
+### Other uses for matrices
+
+Matrices can be used to quickly represent equation systems, with equation that depend on each other. For instance:
+
+$$ \begin{bmatrix}
+    2 && 3 && 6\\
+    1 && 4 && 9
+   \end{bmatrix} \begin{bmatrix}
+   x\\
+   y\\
+   z
+   \end{bmatrix} = \begin{bmatrix}
+   4\\
+   5
+\end{bmatrix}$$
+
+Can be used to represent the following system of equations:
+
+$$
+\begin{cases}
+    2x + 3y + 6z = 4\\
+    1x + 4y + 9z = 5
+\end{cases}
+$$
+
+Or, as we'll see, matrices can be used to represent transformations in the world of game development.
+
+Trigonometry
+------------
+
 \placeholder
 
-<!-- TODO: Finish -->
+### Radians vs Degrees
+
+\placeholder
+
+### Sine, Cosine and Tangent
+
+\placeholder
+
+### Pythagorean Trigonometric Identity
+
+\placeholder
+
+<!-- TODO: sin2 + cos2 = 1 -->
+
+### Reflections
+
+\placeholder
+
+### Trigonometric Addition
+
+\placeholder
+
+### Trigonometric Subtraction
+
+\placeholder
+
+### Double-Angle and Half-Angle Formulae
+
+\placeholder
+
+### Inverse Formulas
+
+\placeholder
+
+<!-- TODO: Trigonometry basics -->
 
 Coordinate Systems on computers
 ---------------------------------
@@ -306,3 +421,10 @@ When it comes to 2D graphics on computers and game development, the coordinate p
 ![Image of a screen coordinate plane](images/maths/screen_coord.pdf){width=30%}
 
 The origin is placed on the top left of the screen (at coordinates `(0,0)`) and the `y` axis is going from top to bottom. It's a little weird at the beginning, but it's not hard to get used to it.
+
+Transformation Matrices
+-----------------------
+
+\placeholder
+
+<!-- TODO: Talk about how to transform (scale or rotate) points with matrices -->
