@@ -1040,7 +1040,34 @@ Table: Summary Table for Binary Search Trees
 
 ### Heaps
 
+Heaps are a tree-based data structure where we struggle to keep a so-called "heap property". The heap property defines the type of heap that we are using:
+
+- **Max-Heap:** For each node `N` and its parent node `P`, we'll always have that the value of `P` is always greater or equal than the value of `N`;
+- **Min-Heap:** For each node `N` and its parent node `P`, we'll always have that the value of `P` is always less or equal than the value of `N`;
+
 ![Heap Reference Image (Min-Heap)](./images/computer_science/heap_reference.png){width=60%}
+
+Heaps are one of the maximally efficient implementation of priority queues, since the highest (or lowest) priority item is stored in the root and can be found in constant time.
+
+| Operation      | Average Cost        |
+| :---------:    | :-----:             |
+| Find Minimum   | $O(1)$ to $O(log(n))$, depending on the implementation |
+| Remove Minimum | $O(log(n))$         |
+| Insert         | $\Theta(1)$ to $O(log(n))$ depending on the implementaion |
+
+Table: Performance table for Heaps
+
+-------------------------   ----------------------------------------------------------------------------
+**Container Name**          Heap
+
+**When To Use it**          All situations where you require to find and/or extract the minimum or maximum value in a container quickly; like priority queues.
+
+**Advantages**              Good general time complexity, maximum performance when used as priority queues.
+
+**Disadvantages**           No inherent ordering, there are better solutions for general use.
+---------------------------------------------------------------------------------------------------------
+
+Table: Summary Table for Heaps
 
 <!-- TODO -->
 \placeholder
