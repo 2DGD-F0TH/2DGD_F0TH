@@ -369,11 +369,29 @@ Or, as we'll see, matrices can be used to represent transformations in the world
 Trigonometry
 ------------
 
-\placeholder
+When you want to develop a game, you will probably find yourself needing to rotate items relative to a certain point or relative to each other. To do so, you need to know a bit of trigonometry, so here we go!
 
 ### Radians vs Degrees
 
-\placeholder
+In everyday life, angles are measured in degrees, from 0 to 360 degrees. In some situations in math, it is more comfortable to measure angles using radians, from 0 to $2 \pi$.
+
+You can covert back and forth between radians and degrees with the following formulas:
+
+$$angle\ in\ degrees = angle\ in\ radians \cdot \frac{180}{\pi}$$
+
+$$angle\ in\ radians = angle\ in\ degrees \cdot \frac{\pi}{180}$$
+
+This book will always refer to angles in radians, so here are some useful conversions, ready for use:
+
+| Degrees   | Radians         |
+| :-------: | :-------:       |
+| 0°        | 0               |
+| 30°       | $\frac{\pi}{6}$ |
+| 45°       | $\frac{\pi}{4}$ |
+| 60°       | $\frac{\pi}{3}$ |
+| 90°       | $\frac{\pi}{2}$ |
+| 180°      | $\pi$           |
+| 360°      | $2 \pi$         |
 
 ### Sine, Cosine and Tangent
 
@@ -381,13 +399,33 @@ Trigonometry
 
 ### Pythagorean Trigonometric Identity
 
-\placeholder
+One of the most important identities in Trigonometry is the "Pythagorean Trigonometric Identity", which is expressed as follows, valid for each angle $\theta$:
 
-<!-- TODO: sin2 + cos2 = 1 -->
+$$ sin^2(\theta) + cos^2(\theta) = 1$$
+
+Using this identity, you can express functions in different ways:
+
+$$ cos^2(\theta) = 1 - sin^2(\theta) $$
+
+$$ sin^2(\theta) = 1 - cos^2(\theta) $$
+
+Also remember that $sin^2(\theta) = (sin(\theta))^2$ and $cos^2(\theta) = (cos(\theta))^2$.
+
+\placeholder
 
 ### Reflections
 
+Sometimes we may need to reflect an angle to express it in an easier way, the following formulas may come of use:
+
+<!-- TODO: finish -->
+
 \placeholder
+
+### Shifts
+
+\placeholder
+
+<!-- TODO: Do the shift formulas -->
 
 ### Trigonometric Addition
 
