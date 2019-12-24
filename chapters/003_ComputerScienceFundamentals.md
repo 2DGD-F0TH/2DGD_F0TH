@@ -1082,10 +1082,10 @@ As with stacks, queues leverage limitations in their way of working for greater 
 
 Circular Queues are a particular kind of queues that are infinitely iterable, every time an iterator goes after the last element in the queue, it will wrap around to the beginning.
 
-![How a circular queue works](./images/computer_science/circular_queue.png){width=50%}
+![How a circular queue works](./images/computer_science/circular_queue.png){width=70%}
 
 Circular Queues can be implemented via linked lists or cleverly indexed arrays, with all the advantages and disadvantages that such structures entail.
 
-![Array and linked list implementation of a circular queue](./images/computer_science/circular_queue_implementation.png){width=90%}
+![Array and linked list implementation of a circular queue](./images/computer_science/circular_queue_implementation.png){width=50%}
 
 \placeholder
