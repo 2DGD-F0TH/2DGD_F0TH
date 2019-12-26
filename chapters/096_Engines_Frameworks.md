@@ -16,8 +16,8 @@ SFML (Simple Fast Multimedia Library) is a library dedicated to creation of mult
 
 **Relevant Bindings:**
 
-| C++ | C | C# | Go | Java | Python | Ruby | Lua | Rust | Proprietary Language |
-|:---:|:-:|:----:|:--:|:----:|:------:|:----:|:---:|:----:|:------------------:|
+| C++ | C | C# | Go | Java | Python | Ruby | Lua | Rust | JavaScript | Proprietary Language |
+|:---:|:-:|:----:|:--:|:----:|:------:|:----:|:---:|:----:|:----:|:------------------:|
 |  \checkmark  | \checkmark |  \checkmark   | \checkmark  | \checkmark    | \checkmark      | \checkmark    |     | \checkmark    |  |
 
 **Platform Compatibility:**
@@ -41,8 +41,8 @@ SDL (Simple DirectMedia Layer) is one of the most famous libraries around to mak
 
 **Relevant Bindings:**
 
-| C++ | C | C# | Go | Java | Python | Ruby | Lua | Rust | Proprietary Language |
-|:---:|:-:|:----:|:--:|:----:|:------:|:----:|:---:|:----:|:------------------:|
+| C++ | C | C# | Go | Java | Python | Ruby | Lua | Rust | JavaScript | Proprietary Language |
+|:---:|:-:|:----:|:--:|:----:|:------:|:----:|:---:|:----:|:----:|:------------------:|
 | \checkmark | \checkmark | \checkmark | \checkmark | | \checkmark | | \checkmark | \checkmark |  |
 
 **Platform Compatibility:**
@@ -66,9 +66,9 @@ Löve is a lua-based framework for creating games, features an extensive documen
 
 **Relevant Bindings:**
 
-| C++ | C | C# | Go | Java | Python | Ruby | Lua | Rust | Proprietary Language |
-|:---:|:-:|:----:|:--:|:----:|:------:|:----:|:---:|:----:|:------------------:|
-|     |   |      |    |      |        |      | \checkmark |  |  |
+| C++ | C | C# | Go | Java | Python | Ruby | Lua | Rust | JavaScript | Proprietary Language |
+|:---:|:-:|:----:|:--:|:----:|:------:|:----:|:---:|:----:|:----:|:------------------:|
+|     |   |      |    |      |        |      | \checkmark |  |  | |
 
 **Platform Compatibility:**
 
@@ -89,8 +89,8 @@ Unity is probably among the most famous 3D engines used to create videogames, as
 
 **Relevant Bindings:**
 
-| C++ | C | C# | Go | Java | Python | Ruby | Lua | Rust | Proprietary Language |
-|:---:|:-:|:----:|:--:|:----:|:------:|:----:|:---:|:----:|:------------------:|
+| C++ | C | C# | Go | Java | Python | Ruby | Lua | Rust | JavaScript | Proprietary Language |
+|:---:|:-:|:----:|:--:|:----:|:------:|:----:|:---:|:----:|:----:|:------------------:|
 |     |   |  \checkmark    |    |      |        |      |  |  |  |
 
 **Platform Compatibility:**
@@ -113,9 +113,9 @@ IRRlicht is a 3D engine (as in does only 3D rendering) made in C++ that aims to 
 
 **Relevant Bindings:**
 
-| C++ | C | C# | Go | Java | Python | Ruby | Lua | Rust | Proprietary Language |
-|:---:|:-:|:----:|:--:|:----:|:------:|:----:|:---:|:----:|:------------------:|
-| \checkmark |   | \checkmark  |    |  \checkmark | \checkmark  | \checkmark |  |  |  |
+| C++ | C | C# | Go | Java | Python | Ruby | Lua | Rust | JavaScript | Proprietary Language |
+|:---:|:-:|:----:|:--:|:----:|:------:|:----:|:---:|:----:|:----:|:------------------:|
+| \checkmark |   | \checkmark  |    |  \checkmark | \checkmark  | \checkmark |  |  |  |  |
 
 **Platform Compatibility:**
 
@@ -137,9 +137,9 @@ Ogre3D is an open source 3D graphics engine (it's used to render 3D graphics onl
 
 **Relevant Bindings:**
 
-| C++ | C | C# | Go | Java | Python | Ruby | Lua | Rust | Proprietary Language |
-|:---:|:-:|:----:|:--:|:----:|:------:|:----:|:---:|:----:|:------------------:|
-| \checkmark |   | \checkmark  |    |  \checkmark | \checkmark  | \checkmark |  |  |  |
+| C++ | C | C# | Go | Java | Python | Ruby | Lua | Rust | JavaScript | Proprietary Language |
+|:---:|:-:|:----:|:--:|:----:|:------:|:----:|:---:|:----:|:----:|:------------------:|
+| \checkmark |   | \checkmark  |    |  \checkmark | \checkmark  | \checkmark |  |  |  | |
 
 **Platform Compatibility:**
 
@@ -160,9 +160,9 @@ Panda3D is a complete and open source 3D game engine.
 
 **Relevant Bindings:**
 
-| C++ | C | C# | Go | Java | Python | Ruby | Lua | Rust | Proprietary Language |
-|:---:|:-:|:----:|:--:|:----:|:------:|:----:|:---:|:----:|:------------------:|
-| \checkmark |   | |    |  | \checkmark  | |  |  |
+| C++ | C | C# | Go | Java | Python | Ruby | Lua | Rust | JavaScript | Proprietary Language |
+|:---:|:-:|:----:|:--:|:----:|:------:|:----:|:---:|:----:|:----:|:------------------:|
+| \checkmark |   | |    |  | \checkmark  | |  |  | |
 
 **Platform Compatibility:**
 
@@ -183,9 +183,9 @@ Godot is a fully-fledged engine that makes use of a node-based approach and supp
 
 **Relevant Bindings:**
 
-| C++ | C | C# | Go | Java | Python | Ruby | Lua | Rust | Proprietary Language |
-|:---:|:-:|:----:|:--:|:----:|:------:|:----:|:---:|:----:|:------------------:|
-| \checkmark |   | \checkmark | |  | | |  |  | \checkmark |
+| C++ | C | C# | Go | Java | Python | Ruby | Lua | Rust | JavaScript | Proprietary Language |
+|:---:|:-:|:----:|:--:|:----:|:------:|:----:|:---:|:----:|:----:|:------------------:|
+| \checkmark |   | \checkmark | |  | | |  | |  | \checkmark |
 
 **Platform Compatibility:**
 
@@ -208,9 +208,9 @@ It makes use of its own scripting language, and some visual toolkits as well.
 
 **Relevant Bindings:**
 
-| C++ | C | C# | Go | Java | Python | Ruby | Lua | Rust | Proprietary Language |
-|:---:|:-:|:----:|:--:|:----:|:------:|:----:|:---:|:----:|:------------------:|
-|     |   |    | |  | | |  |  | \checkmark |
+| C++ | C | C# | Go | Java | Python | Ruby | Lua | Rust | JavaScript | Proprietary Language |
+|:---:|:-:|:----:|:--:|:----:|:------:|:----:|:---:|:----:|:----:|:------------------:|
+|     |   |    | |  | | |  | |  | \checkmark |
 
 **Platform Compatibility:**
 
@@ -219,3 +219,49 @@ It makes use of its own scripting language, and some visual toolkits as well.
 |   \checkmark     | \checkmark     |  \checkmark     | \checkmark  | \checkmark | \checkmark |
 
 Game Maker Studio is commercial software, regulated by its own EULA, but it was added here for sake of completeness.
+
+MonoGame
+----------
+
+**Website:** <http://www.monogame.net/>
+
+**Price:** Free
+
+MonoGame is an open-source porting of XNA 4, it allows for people used to Microsoft's XNA framework to port their games to other platforms, as well as creating new games from scratch. Many games make use of this framework, one above all: Stardew Valley.
+
+**Relevant Bindings:**
+
+| C++ | C | C# | Go | Java | Python | Ruby | Lua | Rust | JavaScript | Proprietary Language |
+|:---:|:-:|:----:|:--:|:----:|:------:|:----:|:---:|:----:|:----:|:------------------:|
+|     |   | \checkmark   | |  | | |  |  |  | |
+
+**Platform Compatibility:**
+
+| Windows | Linux | Mac OS | iOS | Android | Web-based |
+|:-------:|:-----:|:------:|:---:|:-------:|:---------:|
+|   \checkmark     | \checkmark     |  \checkmark     | \checkmark  | \checkmark | |
+
+MonoGame is distributed under a mixed license: Microsoft Public License + MIT License. You may want to check the license yourself on the project's GitHub page.
+
+GDevelop
+--------
+
+**Website:** <https://gdevelop-app.com/>
+
+**Price:** Free
+
+GDevelop is an open-source toolkit to make games, mostly based on visual programming, GDevelop supports the use of JavaScript to code parts of the game, as well as JSON and support for HTTP Requests. GDevelop also supports exporting to Android and Facebook Instant Games, as well as exporting to iOS and web-based platforms.
+
+**Relevant Bindings:**
+
+| C++ | C | C# | Go | Java | Python | Ruby | Lua | Rust | JavaScript | Proprietary Language |
+|:---:|:-:|:----:|:--:|:----:|:------:|:----:|:---:|:----:|:----:|:------------------:|
+|     |   |  | |  | | |  |  | \checkmark | |
+
+**Platform Compatibility:**
+
+| Windows | Linux | Mac OS | iOS | Android | Web-based |
+|:-------:|:-----:|:------:|:---:|:-------:|:---------:|
+|   \checkmark     | \checkmark     |  \checkmark     | \checkmark  | \checkmark | \checkmark |
+
+GDevelop is distributed under the MIT license (although the name and logo are copyright), although the main license file refers to other license files inside each folder. So you may want to check the GitHub repository for more information.
