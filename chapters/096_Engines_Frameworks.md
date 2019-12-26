@@ -43,13 +43,7 @@ SDL (Simple DirectMedia Layer) is one of the most famous libraries around to mak
 
 | C++ | C | C# | Go | Java | Python | Ruby | Lua | Rust | Proprietary Language |
 |:---:|:-:|:----:|:--:|:----:|:------:|:----:|:---:|:----:|:------------------:|
-| \checkmark | \checkmark | ^1^ | ^2^ | | ^3^ | | ^4^ | ^5^ |  |
-
-- ^1^ : Via SDL2-CS
-- ^2^ : Via go-sdl2
-- ^3^ : Via Pygame, Py-SDL2 or pysdl2-cffi
-- ^4^ : Via Lua-SDL2
-- ^5^ : Via Rust-SDL2
+| \checkmark | \checkmark | \checkmark | \checkmark | | \checkmark | | \checkmark | \checkmark |  |
 
 **Platform Compatibility:**
 
@@ -57,7 +51,7 @@ SDL (Simple DirectMedia Layer) is one of the most famous libraries around to mak
 |:-------:|:-----:|:------:|:---:|:-------:|:---------:|
 |   \checkmark     | \checkmark     |  \checkmark     |  \checkmark  |  \checkmark      |  |
 
-SDL is distributed under the ZLib license, which allows for both commercial and personal use, both in proprietary and open-source situations.
+SDL is distributed under the ZLib license, which allows for both commercial and personal use, both in proprietary and open-source situations. Many of the languages listed as "usable" are compatible via extensions.
 
 The versions of SDL up to version 1.2 are instead distributed under the GNU LGPL license, which is more complex and may need to be analyzed by legal experts.
 
