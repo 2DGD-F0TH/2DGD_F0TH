@@ -363,6 +363,21 @@ In this example, the algorithm completes in 49 steps, but you can imagine how a 
 
 ### Building Quad Trees
 
+A nice idea would be being able to limit the number of tests we perform, since the brute force method can get really expensive really quickly.
+
+When building quad-trees, we are essentially dividing the screen in "quadrants" (and if necessary, such quadrants will be divided into sub-quadrants), detect which objects are in such quadrants and test collisions between objects that are inside of the same quadrant.
+
+![Graphical example of a quad tree, overlaid on the reference image](./images/collision_detection/collision_quad_example.pdf){width=40%}
+
+With the original brute force method, we will make at most 49 tests for 7 items (although it can be optimized), while with quad trees we will perform:
+
+- 2 tests on quadrant A (1 against 2, and 2 against 1);
+- No tests on quadrant B (an object alone cannot collide against other objects);
+- 2 tests on quadrant C (4 against 5, and 5 against 4);
+- 6 tests on quadrant D (5-6, 5-7, 6-7, 6-5, 7-6, 7-5)
+
+For a total of 10 tests, which can be further optimized (by 50%) by avoiding testing objects that have already been tested.
+
 \placeholder
 
 <!-- TODO: Easier on the CPU but harder to implement, every frame you build a quad tree
