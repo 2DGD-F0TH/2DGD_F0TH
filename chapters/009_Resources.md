@@ -147,9 +147,17 @@ Nothing is ever set in stone, and no rules should keep you from playing a bit ou
 
 ### Palette Swapping
 
-\placeholder
+Palette swapping is a technique mostly used in older videogames, where an already-existing graphic (like a player character's sprite) is reused with a different palette (combination of colors).
 
-<!--TODO: Talk about how to extend the game's graphics using palette swapping -->
+This palette swap makes the new graphic quite recognizably distinct from the original graphic. This technique was normally used to tell apart first and second player.
+
+A prime example of this is the videogame that (re)started it all: Super Mario Bros. Mario and Luigi are exactly the same graphic, but Luigi uses a different palette.
+
+Some other videogames use palette swapping to indicate their status (like using a green or purple-based palette to indicate the "poisoned" status), or indicate a difference in their statistics (like a red-based palette to indicate an enhanced attack statistic), in other occasions different palettes are used to distinguish stronger versions of the same enemy.
+
+Other franchises, like Pokémon, use palette swaps to introduce "special versions" of some entity (in the case of Pokémon, a shiny pokemon).
+
+Palette Swapping can be used in more creative ways, though. Going back to Super Mario Bros. you can see that the clouds and the bushes in the levels are exactly the same graphic, just with a different palette. Same goes for the underground bricks and the overworld bricks: they just have a different color.
 
 ### Pixel Art
 
