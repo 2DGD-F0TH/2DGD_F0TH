@@ -14,8 +14,8 @@ Collisions don't only happen between game objects (two fighters hitting each oth
 
 In this section we'll talk about some ways you can detect and react to collisions.
 
-Did it really collide?
------------------------
+Collision Detection: Did it really collide?
+--------------------------------------------
 
 First of all, we need to see how we can make sure that two objects really collide with each other.
 
@@ -464,7 +464,7 @@ This method can be used only with completely solid platforms. If you want to mak
 
 In the previous example we try to jump on a platform by going through it, but our jump quite doesn't make it. Since velocity has changed direction, we end up being teleported over the platform, which is considered a glitch.
 
-#### Shallow-based reaction Method
+#### Shallow-axis based reaction method
 
 \placeholder
 
