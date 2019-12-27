@@ -318,6 +318,8 @@ A logic "AND" operation is performed, pixel-by-pixel, on the bitmasks; with the 
 
 \code{collisiondetection/pixel_perfect}{Example of a possibile implementation of pixel perfect collision detection}
 
+This algorithm has a time complexity of $O(n \cdot m)$ where $n$ is the total number of pixels of the first bitmask, while $m$ is the total number of pixels in the second bitmask.
+
 ### Multi-pass collision detection
 
 It's possible to have a more precise collision detection at a lower cost by combining different collision detection algorithms.
