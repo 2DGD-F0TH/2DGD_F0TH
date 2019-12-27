@@ -50,6 +50,7 @@ Before applying the singleton pattern, ask yourself the following questions:
 **Advantages **       Allows the class to control its own instantiation, allows for easier access to the sole instance of a class.
 
 **Disadvantages**     Introduces some restrictions that may be unnecessary, introduces a global state into the application.
+
 ------------------------------------------------------------------------------------------------
 
 Table: Summary table for the Singleton Pattern
@@ -77,6 +78,7 @@ This pattern can be useful to code GUIs, making actions in our games that can be
 **Advantages **       Allows for encapsulation, less coupling, more flexibility and customization at runtime.
 
 **Disadvantages**     Late binding and objects may introduce some overhead.
+
 ------------------------------------------------------------------------------------------------
 
 ### Flyweight
@@ -101,6 +103,7 @@ Below is an example code for the flyweight pattern.
 **Advantages **       Saves memory when a large number of similar objects is involved, avoids some of the overhead given by the creation of many objects.
 
 **Disadvantages**     The intrinsic state must be "context independent", so it cannot change (or all the flyweights that refer to that state will change too). Flyweight instantiation requires particular attention in multithreaded environments, due to the shared memory.
+
 ------------------------------------------------------------------------------------------------
 
 Table: Summary table for the Flyweight Pattern
@@ -138,6 +141,7 @@ If needed, you can pass information between the subject and the observers just b
 **Advantages **       Decoupling, added flexibility, more performant than if statements for conditions that happen rarely.
 
 **Disadvantages**     Can be a bit hard to set up, makes the architecture more complex, if un-registration is not done well there could be serious memory leaks (even in garbage-collected languages).
+
 ------------------------------------------------------------------------------------------------
 
 Table: Summary table for the Observer Pattern
@@ -160,6 +164,7 @@ In this case, the *strategy pattern* (also knowns as the "policy pattern"), allo
 **Advantages **       Decoupling, added flexibility.
 
 **Disadvantages**     Can cause proliferation of similarly-looking concrete strategies, late binding on functions and the object oriented nature of the pattern could create some overhead.
+
 ------------------------------------------------------------------------------------------------
 
 Table: Summary table for the Strategy Pattern
@@ -184,6 +189,7 @@ As with a chain of responsibility in a company relays a task to "higher ups" if 
 **Advantages **       Decoupling, added flexibility.
 
 **Disadvantages**     Some overhead is added by the objects and late binding, could lead to proliferation of similar-looking handlers/receivers.
+
 ------------------------------------------------------------------------------------------------
 
 Table: Summary table for the Chain of Responsibility Pattern
