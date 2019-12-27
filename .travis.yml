@@ -21,4 +21,3 @@ deploy:
   on:
     repo: Penaz91/2DGD_F0TH
     branch: master
-    tags: true
