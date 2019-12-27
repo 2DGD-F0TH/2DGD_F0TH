@@ -18,6 +18,24 @@ There are many ideas that can be used to generate a maze, some are based on a pr
 
 The Depth-First Search (DFS) algorithm is known in the world of tree and graph structure as a traversal algorithm. We can use a randomized DFS algorithm as a simple maze-generation algorithm.
 
+The idea behind the algorithm is, starting from a defined "cell", to explore the grid randomly by choosing an available direction, digging a path.
+
+![How the randomized DFS algorithm works (1)](./images/algorithms/RDFS_1.png){width=30%}
+
+When the algorithm detects that there is no available direction that means that the "head" of our digger is hitting against already explored cells or the map borders.
+
+![How the randomized DFS algorithm works (2)](./images/algorithms/RDFS_2.png){width=30%}
+
+In such case, we "backtrack" until we find a cell with at least one available direction and continue our exploration.
+
+![How the randomized DFS algorithm works (3)](./images/algorithms/RDFS_3.png){width=30%}
+
+This "digging and backtracking" keeps going until there are no other cells that have not been visited.
+
+![How the randomized DFS algorithm works (4)](./images/algorithms/RDFS_4.png){width=30%}
+
+In some versions of the algorithm we need to also keep track of cells that will be used as "walls", so the actual implementation varies.
+
 <!--TODO: Recursive DFS version -->
 
 \placeholder
