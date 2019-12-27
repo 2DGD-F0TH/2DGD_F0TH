@@ -16,15 +16,15 @@ SFML (Simple Fast Multimedia Library) is a library dedicated to creation of mult
 
 **Relevant Bindings:**
 
-| C++ | C | C# | Go | Java | Python | Ruby | Lua | Rust | JavaScript | Proprietary Language |
-|:---:|:-:|:----:|:--:|:----:|:------:|:----:|:---:|:----:|:----:|:------------------:|
-|  \checkmark  | \checkmark |  \checkmark   | \checkmark  | \checkmark    | \checkmark      | \checkmark    |     | \checkmark    |  |
+| C++        | C          | C#         | Go         | Java       | Python     | Ruby       | Lua        | Rust       | JavaScript | Proprietary Language |
+|:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:                   |
+| \checkmark | \checkmark | \checkmark | \checkmark | \checkmark | \checkmark | \checkmark |            | \checkmark |            |                      |
 
 **Platform Compatibility:**
 
-| Windows | Linux | Mac OS | iOS | Android | Web-Based |
-|:-------:|:-----:|:------:|:---:|:-------:|:---------:|
-|   \checkmark     | \checkmark     |  \checkmark     |  *  |  *      |  |
+| Windows    | Linux      | Mac OS     | iOS        | Android    | Web-Based  |
+|:-------:   |:-----:     |:------:    |:---:       |:-------:   |:---------: |
+| \checkmark | \checkmark | \checkmark | *          | *          |            |
 
 \*: Currently in development
 
@@ -41,15 +41,15 @@ SDL (Simple DirectMedia Layer) is one of the most famous libraries around to mak
 
 **Relevant Bindings:**
 
-| C++ | C | C# | Go | Java | Python | Ruby | Lua | Rust | JavaScript | Proprietary Language |
-|:---:|:-:|:----:|:--:|:----:|:------:|:----:|:---:|:----:|:----:|:------------------:|
-| \checkmark | \checkmark | \checkmark | \checkmark | | \checkmark | | \checkmark | \checkmark |  |
+| C++        | C          | C#         | Go         | Java       | Python     | Ruby       | Lua        | Rust       | JavaScript | Proprietary Language |
+|:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:                   |
+| \checkmark | \checkmark | \checkmark | \checkmark |            | \checkmark |            | \checkmark | \checkmark |            |                      |
 
 **Platform Compatibility:**
 
-| Windows | Linux | Mac OS | iOS | Android | Web-Based |
-|:-------:|:-----:|:------:|:---:|:-------:|:---------:|
-|   \checkmark     | \checkmark     |  \checkmark     |  \checkmark  |  \checkmark      |  |
+| Windows    | Linux      | Mac OS     | iOS        | Android    | Web-Based  |
+|:-------:   |:-----:     |:------:    |:---:       |:-------:   |:---------: |
+| \checkmark | \checkmark | \checkmark | \checkmark | \checkmark |            |
 
 SDL is distributed under the ZLib license, which allows for both commercial and personal use, both in proprietary and open-source situations. Many of the languages listed as "usable" are compatible via extensions.
 
@@ -66,15 +66,15 @@ Löve is a lua-based framework for creating games, features an extensive documen
 
 **Relevant Bindings:**
 
-| C++ | C | C# | Go | Java | Python | Ruby | Lua | Rust | JavaScript | Proprietary Language |
-|:---:|:-:|:----:|:--:|:----:|:------:|:----:|:---:|:----:|:----:|:------------------:|
-|     |   |      |    |      |        |      | \checkmark |  |  | |
+| C++        | C          | C#         | Go         | Java       | Python     | Ruby       | Lua        | Rust       | JavaScript | Proprietary Language |
+|:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:                   |
+|            |            |            |            |            |            |            | \checkmark |            |            |                      |
 
 **Platform Compatibility:**
 
-| Windows | Linux | Mac OS | iOS | Android | Web-Based |
-|:-------:|:-----:|:------:|:---:|:-------:|:---------:|
-|   \checkmark     | \checkmark     |  \checkmark     |  \checkmark  |  \checkmark      |  |
+| Windows    | Linux      | Mac OS     | iOS        | Android    | Web-Based  |
+|:-------:   |:-----:     |:------:    |:---:       |:-------:   |:---------: |
+| \checkmark | \checkmark | \checkmark | \checkmark | \checkmark |            |
 
 Löve is distributed under the ZLib/png license, which allows for both commercial and personal use, both in proprietary and open-source situations.
 
@@ -89,15 +89,15 @@ Unity is probably among the most famous 3D engines used to create videogames, as
 
 **Relevant Bindings:**
 
-| C++ | C | C# | Go | Java | Python | Ruby | Lua | Rust | JavaScript | Proprietary Language |
-|:---:|:-:|:----:|:--:|:----:|:------:|:----:|:---:|:----:|:----:|:------------------:|
-|     |   |  \checkmark    |    |      |        |      |  |  |  |
+| C++        | C          | C#         | Go         | Java       | Python     | Ruby       | Lua        | Rust       | JavaScript | Proprietary Language |
+|:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:                   |
+|            |            | \checkmark |            |            |            |            |            |            |            |                      |
 
 **Platform Compatibility:**
 
-| Windows | Linux | Mac OS | iOS | Android | Web-Based |
-|:-------:|:-----:|:------:|:---:|:-------:|:---------:|
-|   \checkmark     | \checkmark     |  \checkmark     |  \checkmark  |  \checkmark      | \checkmark |
+| Windows    | Linux      | Mac OS     | iOS        | Android    | Web-Based  |
+|:-------:   |:-----:     |:------:    |:---:       |:-------:   |:---------: |
+| \checkmark | \checkmark | \checkmark | \checkmark | \checkmark | \checkmark |
 
 Unity is a proprietary engine, distributed under a proprietary license, with a Free edition available.
 
@@ -113,15 +113,15 @@ IRRlicht is a 3D engine (as in does only 3D rendering) made in C++ that aims to 
 
 **Relevant Bindings:**
 
-| C++ | C | C# | Go | Java | Python | Ruby | Lua | Rust | JavaScript | Proprietary Language |
-|:---:|:-:|:----:|:--:|:----:|:------:|:----:|:---:|:----:|:----:|:------------------:|
-| \checkmark |   | \checkmark  |    |  \checkmark | \checkmark  | \checkmark |  |  |  |  |
+| C++        | C          | C#         | Go         | Java       | Python     | Ruby       | Lua        | Rust       | JavaScript | Proprietary Language |
+|:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:                   |
+| \checkmark |            | \checkmark |            | \checkmark | \checkmark | \checkmark |            |            |            |                      |
 
 **Platform Compatibility:**
 
-| Windows | Linux | Mac OS | iOS | Android | Web-Based |
-|:-------:|:-----:|:------:|:---:|:-------:|:---------:|
-|   \checkmark     | \checkmark     |  \checkmark     |  |  |  |
+| Windows    | Linux      | Mac OS     | iOS        | Android    | Web-Based  |
+|:-------:   |:-----:     |:------:    |:---:       |:-------:   |:---------: |
+| \checkmark | \checkmark | \checkmark |            |            |            |
 
 IRRlicht distributed under the ZLib/png license, which allows for both commercial and personal use, both in proprietary and open-source situations.
 
@@ -137,15 +137,15 @@ Ogre3D is an open source 3D graphics engine (it's used to render 3D graphics onl
 
 **Relevant Bindings:**
 
-| C++ | C | C# | Go | Java | Python | Ruby | Lua | Rust | JavaScript | Proprietary Language |
-|:---:|:-:|:----:|:--:|:----:|:------:|:----:|:---:|:----:|:----:|:------------------:|
-| \checkmark |   | \checkmark  |    |  \checkmark | \checkmark  | \checkmark |  |  |  | |
+| C++        | C          | C#         | Go         | Java       | Python     | Ruby       | Lua        | Rust       | JavaScript | Proprietary Language |
+|:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:                   |
+| \checkmark |            | \checkmark |            | \checkmark | \checkmark | \checkmark |            |            |            |                      |
 
 **Platform Compatibility:**
 
-| Windows | Linux | Mac OS | iOS | Android | Web-Based |
-|:-------:|:-----:|:------:|:---:|:-------:|:---------:|
-|   \checkmark     | \checkmark     |  \checkmark     |  |  | |
+| Windows    | Linux      | Mac OS     | iOS        | Android    | Web-Based  |
+|:-------:   |:-----:     |:------:    |:---:       |:-------:   |:---------: |
+| \checkmark | \checkmark | \checkmark |            |            |            |
 
 Ogre3D comes in 2 versions: version 1.x is distributed under the GNU LGPL license, while the more recent 2.x version is distributed under the more premissive MIT license.
 
@@ -160,15 +160,15 @@ Panda3D is a complete and open source 3D game engine.
 
 **Relevant Bindings:**
 
-| C++ | C | C# | Go | Java | Python | Ruby | Lua | Rust | JavaScript | Proprietary Language |
-|:---:|:-:|:----:|:--:|:----:|:------:|:----:|:---:|:----:|:----:|:------------------:|
-| \checkmark |   | |    |  | \checkmark  | |  |  | |
+| C++        | C          | C#         | Go         | Java       | Python     | Ruby       | Lua        | Rust       | JavaScript | Proprietary Language |
+|:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:                   |
+| \checkmark |            |            |            |            | \checkmark |            |            |            |            |                      |
 
 **Platform Compatibility:**
 
-| Windows | Linux | Mac OS | iOS | Android | Web-Based |
-|:-------:|:-----:|:------:|:---:|:-------:|:---------:|
-|   \checkmark     | \checkmark     |  \checkmark     |  |  | |
+| Windows    | Linux      | Mac OS     | iOS        | Android    | Web-Based  |
+|:-------:   |:-----:     |:------:    |:---:       |:-------:   |:---------: |
+| \checkmark | \checkmark | \checkmark |            |            |            |
 
 Panda3D itself is distributed under the modified BSD license, which is very permissive, but it brings together many third-party libraries that are released under different licenses. It is suggested to check the license section of the manual for more information.
 
@@ -183,15 +183,15 @@ Godot is a fully-fledged engine that makes use of a node-based approach and supp
 
 **Relevant Bindings:**
 
-| C++ | C | C# | Go | Java | Python | Ruby | Lua | Rust | JavaScript | Proprietary Language |
-|:---:|:-:|:----:|:--:|:----:|:------:|:----:|:---:|:----:|:----:|:------------------:|
-| \checkmark |   | \checkmark | |  | | |  | |  | \checkmark |
+| C++        | C          | C#         | Go         | Java       | Python     | Ruby       | Lua        | Rust       | JavaScript | Proprietary Language |
+|:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:                   |
+| \checkmark |            | \checkmark |            |            |            |            |            |            |            | \checkmark           |
 
 **Platform Compatibility:**
 
-| Windows | Linux | Mac OS | iOS | Android | Web-based |
-|:-------:|:-----:|:------:|:---:|:-------:|:---------:|
-|   \checkmark     | \checkmark     |  \checkmark     | \checkmark  | \checkmark | \checkmark |
+| Windows    | Linux      | Mac OS     | iOS        | Android    | Web-Based  |
+|:-------:   |:-----:     |:------:    |:---:       |:-------:   |:---------: |
+| \checkmark | \checkmark | \checkmark | \checkmark | \checkmark | \checkmark |
 
 Godot is currently distributed under the MIT license, you should check the Legal section of the Godot Documentation for all the additional licenses that you may need to know about.
 
@@ -208,15 +208,15 @@ It makes use of its own scripting language, and some visual toolkits as well.
 
 **Relevant Bindings:**
 
-| C++ | C | C# | Go | Java | Python | Ruby | Lua | Rust | JavaScript | Proprietary Language |
-|:---:|:-:|:----:|:--:|:----:|:------:|:----:|:---:|:----:|:----:|:------------------:|
-|     |   |    | |  | | |  | |  | \checkmark |
+| C++        | C          | C#         | Go         | Java       | Python     | Ruby       | Lua        | Rust       | JavaScript | Proprietary Language |
+|:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:                   |
+|            |            |            |            |            |            |            |            |            |            | \checkmark           |
 
 **Platform Compatibility:**
 
-| Windows | Linux | Mac OS | iOS | Android | Web-based |
-|:-------:|:-----:|:------:|:---:|:-------:|:---------:|
-|   \checkmark     | \checkmark     |  \checkmark     | \checkmark  | \checkmark | \checkmark |
+| Windows    | Linux      | Mac OS     | iOS        | Android    | Web-Based  |
+|:-------:   |:-----:     |:------:    |:---:       |:-------:   |:---------: |
+| \checkmark | \checkmark | \checkmark | \checkmark | \checkmark | \checkmark |
 
 Game Maker Studio is commercial software, regulated by its own EULA, but it was added here for sake of completeness.
 
@@ -231,15 +231,15 @@ MonoGame is an open-source porting of XNA 4, it allows for people used to Micros
 
 **Relevant Bindings:**
 
-| C++ | C | C# | Go | Java | Python | Ruby | Lua | Rust | JavaScript | Proprietary Language |
-|:---:|:-:|:----:|:--:|:----:|:------:|:----:|:---:|:----:|:----:|:------------------:|
-|     |   | \checkmark   | |  | | |  |  |  | |
+| C++        | C          | C#         | Go         | Java       | Python     | Ruby       | Lua        | Rust       | JavaScript | Proprietary Language |
+|:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:                   |
+|            |            | \checkmark |            |            |            |            |            |            |            |                      |
 
 **Platform Compatibility:**
 
-| Windows | Linux | Mac OS | iOS | Android | Web-based |
-|:-------:|:-----:|:------:|:---:|:-------:|:---------:|
-|   \checkmark     | \checkmark     |  \checkmark     | \checkmark  | \checkmark | |
+| Windows    | Linux      | Mac OS     | iOS        | Android    | Web-Based  |
+|:-------:   |:-----:     |:------:    |:---:       |:-------:   |:---------: |
+| \checkmark | \checkmark | \checkmark | \checkmark | \checkmark |            |
 
 MonoGame is distributed under a mixed license: Microsoft Public License + MIT License. You may want to check the license yourself on the project's GitHub page.
 
@@ -254,14 +254,14 @@ GDevelop is an open-source toolkit to make games, mostly based on visual program
 
 **Relevant Bindings:**
 
-| C++ | C | C# | Go | Java | Python | Ruby | Lua | Rust | JavaScript | Proprietary Language |
-|:---:|:-:|:----:|:--:|:----:|:------:|:----:|:---:|:----:|:----:|:------------------:|
-|     |   |  | |  | | |  |  | \checkmark | |
+| C++        | C          | C#         | Go         | Java       | Python     | Ruby       | Lua        | Rust       | JavaScript | Proprietary Language |
+|:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:                   |
+|            |            |            |            |            |            |            |            |            | \checkmark |                      |
 
 **Platform Compatibility:**
 
-| Windows | Linux | Mac OS | iOS | Android | Web-based |
-|:-------:|:-----:|:------:|:---:|:-------:|:---------:|
-|   \checkmark     | \checkmark     |  \checkmark     | \checkmark  | \checkmark | \checkmark |
+| Windows    | Linux      | Mac OS     | iOS        | Android    | Web-Based  |
+|:-------:   |:-----:     |:------:    |:---:       |:-------:   |:---------: |
+| \checkmark | \checkmark | \checkmark | \checkmark | \checkmark | \checkmark |
 
 GDevelop is distributed under the MIT license (although the name and logo are copyright), although the main license file refers to other license files inside each folder. So you may want to check the GitHub repository for more information.
