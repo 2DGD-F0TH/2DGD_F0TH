@@ -97,6 +97,22 @@ A useful precaution to avoid the [bullet through paper](#bulletthroughpaper) pro
 
 \code{tips_tricks/gravity}{Code for applying gravity to an object}
 
+### Avoiding "Floaty Jumps"
+
+The previous trick shows a physics-accurate jumping: if we plot the height against time, we would get something that represents the curve of jump like the following:
+
+![Plotting a physics-accurate jump](./images/tips_tricks/physics_accurate_jump_plot.png){width=50%}
+
+Although this can give the sensation that the character we're controlling is "floaty", which is not fun. In this case it's a better idea to enhance gravity when falling, to give the character some more "weight", which would be represented, more or less, by the following curve:
+
+![Plotting a jump with enhanced gravity](./images/tips_tricks/enhanced_gravity_jump_plot.png){width=50%}
+
+This can be obtained with few simple lines of code, not very different from the gravity example of earlier:
+
+\code{tips_tricks/enhanced_gravity_jump}{Code for jump with enhanced gravity while falling}
+
+In this example we are assuming that the framework used uses the screen coordinate system, and jumping brings the player from bottom towards the top of the screen. If you want different behaviour (like gravity inversion in puzzle games), something a tiny bit more involved may be in order.
+
 ### Ladders
 
 \placeholder
