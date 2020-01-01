@@ -76,6 +76,12 @@ As stated earlier, a third optional background can be added to deepen the parall
 
 The backgrounds should move all in the same direction, depending on the direction our character is moving: if our character is moving right, our moving backgrounds should move left.
 
+### Optimizing Drawing
+
+This heavily depends on the type of framework and engine you are using, but a good rule of thumb is using the lowest amount of calls to the draw routines as possible: drawing something entails a great amount of context switching and algorithms, so you should do it only when necessary.
+
+If your engine/framework supports it, you should use sprite atlases/batches, as well as other interesting structures like Vertex Arrays (used in SFML).
+
 ### Sprite Stenciling/Masking
 
 \placeholder
