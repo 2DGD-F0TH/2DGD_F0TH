@@ -8,7 +8,7 @@ Creating your resources
 Graphics {#GraphicsResources}
 ---------
 
-### Sprite sheets
+### Sprite sheets {#SpriteSheets}
 
 Every time we create a sprite, we need some amount of memory to store its information, and to match the hardware constraints most of the time a sprite's image must be padded with unused pixels.
 

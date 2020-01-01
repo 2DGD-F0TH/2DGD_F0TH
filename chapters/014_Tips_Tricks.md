@@ -82,6 +82,8 @@ This heavily depends on the type of framework and engine you are using, but a go
 
 If your engine/framework supports it, you should use sprite atlases/batches, as well as other interesting structures like Vertex Arrays (used in SFML).
 
+Another way to optimize your drawing routine is avoiding to change textures often: changing textures can result in a lot of context changes, so you should use only one texture (in the form of a [Sprite Sheet](#SpriteSheets)) and draw only a part of it, changing the coordinates of the rectangle that gets drawn. This way you'll save the PC a lot of work.
+
 ### Sprite Stenciling/Masking
 
 \placeholder
