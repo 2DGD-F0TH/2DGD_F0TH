@@ -238,3 +238,35 @@ footsteps:
 ```
 
 Making a configuration file instead of hard-coding the elements allows for easy extensibility and modding, which everyone loves (See [Designing entities as data](#entitiesasdata)).
+
+Fonts
+-------
+
+### Font Types
+
+\placeholder
+
+<!-- TODO: Talk about serif, sans-serif, monospaced fonts -->
+
+### Using textures to make text
+
+\placeholder
+
+<!-- TODO: Good and fast, but issues with scaling and resizing -->
+
+### Using Fonts to make text
+
+\placeholder
+
+<!-- TODO: Good and resizes well, but can be slower cause the text needs to be rendered -->
+
+Shaders
+--------
+
+### What are shaders
+
+\placeholder
+
+### The GLSL programming language
+
+\placeholder
