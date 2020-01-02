@@ -1,0 +1,22 @@
+@startuml
+
+class Client
+
+abstract class Component{
+    + update()
+}
+
+class ConcreteComponent1{
+    + update()
+}
+
+class ConcreteComponent2{
+    + update()
+}
+
+Client --> Component
+Component <|-- ConcreteComponent1
+Component <|-- ConcreteComponent2
+ConcreteComponent2 o-- Component
+
+@enduml

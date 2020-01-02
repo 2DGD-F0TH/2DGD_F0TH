@@ -194,17 +194,36 @@ As with a chain of responsibility in a company relays a task to "higher ups" if 
 
 Table: Summary table for the Chain of Responsibility Pattern
 
-### Abstract Factory
+### Component/Composite Pattern
 
-\placeholder
+When building any game entity, we find that the complexity of the game entity itself literally explodes: a monolithic class can include loads of different operations that should stay separate, such as:
 
-### Builder
+- Input Handling
+- Graphics and Animation
+- Sound
+- Physics
+- ...
 
-\placeholder
+At this point our software engineering senses are tingling, something is dangerous here.
 
-### Component
+A better alternative in bigger projects is splitting the monolithic class and create different components and allow for their reuse later. Enter the Component pattern.
 
-\placeholder
+![Diagram of the Component Design Pattern](./images/patterns_containers/class_component.png){width=40%}
+
+The client is connected to a list of Components that have the same interface (in the previous case, the `update()` method), so each Game Entity can become a "container of components" that define its behaviour.
+
+For instance, instead of having all the functionalities listed above, our game entity could have the following components:
+
+- Input Component
+- Graphics Component
+- Sound Component
+- Physics Component
+
+Which can be reused, extended and allow for further flexibility and follows more closely the DRY principle.
+
+Here we can take a look at a sample implementation of the Component Design Pattern:
+
+\code{patterns_containers/component}{Example Implementation Of the Component Pattern}
 
 Resource Manager
 -----------------
