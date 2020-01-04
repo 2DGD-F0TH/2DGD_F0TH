@@ -411,39 +411,71 @@ $$ sin^2(\theta) = 1 - cos^2(\theta) $$
 
 Also remember that $sin^2(\theta) = (sin(\theta))^2$ and $cos^2(\theta) = (cos(\theta))^2$.
 
-\placeholder
-
 ### Reflections
 
 Sometimes we may need to reflect an angle to express it in an easier way, and their trigonometric formulas will be affected, so the following formulas may come of use:
 
-<!-- TODO: finish -->
+| Reflection Formulas                                  |
+| :-------------------:                                |
+| $sin(-\theta) = - sin(\theta)$                       |
+| $cos(-\theta) = cos(\theta)$                         |
+| $sin(\frac{\pi}{2} - \theta) = cos(\theta)$          |
+| $cos(\frac{\pi}{2} - \theta) = sin(\theta)$          |
+| $sin(\pi - \theta) = sin(\theta)$                    |
+| $cos(\pi - \theta) = - cos(\theta)$                  |
+| $sin(2\pi - \theta) = - sin(\theta) = sin(- \theta)$ |
+| $cos(2\pi - \theta) = cos(\theta) = cos(- \theta)$   |
 
-\placeholder
+Table: Some reflection formulas for trigonometry
 
 ### Shifts
 
-\placeholder
+Trigonometric functions are periodic, so you may have an easier time calculating them when their arguments are shifted by a certain amount. Here we can see some of the shift formulas:
 
-<!-- TODO: Do the shift formulas -->
+| Shift Formulas                                    |
+| :------------:                                    |
+| $sin(\theta \pm \frac{\pi}{2}) = \pm cos(\theta)$ |
+| $cos(\theta \pm \frac{\pi}{2}) = \mp sin(\theta)$ |
+| $sin(\theta + \pi) = - sin(\theta)$               |
+| $cos(\theta + \pi) = - cos(\theta)$               |
+| $sin(\theta + k \cdot 2\pi) = sin(\theta)$        |
+| $cos(\theta + k \cdot 2\pi) = cos(\theta)$        |
 
-### Trigonometric Addition
+Table: Some Shift Formulas for Trigonometry
 
-\placeholder
+### Trigonometric Addition and subtraction
 
-### Trigonometric Subtraction
+Sometimes you may need to express a trigonometric formula with a complex argument by splitting such argument into different trigonometric formulas. If such argument is a sum or subtraction of angles, you can use the following formulas:
 
-\placeholder
+| Addition/Difference Identities                                            |
+| :----------------------------:                                            |
+| $sin(\alpha \pm \beta) = sin(\alpha)cos(\beta) \pm cos(\alpha)sin(\beta)$ |
+| $cos(\alpha \pm \beta) = cos(\alpha)cos(\beta) \mp sin(\alpha)sin(\beta)$ |
 
-### Double-Angle and Half-Angle Formulae
+Table: Some addition and difference identities in trigonometry
 
-\placeholder
+### Double-Angle Formulae
+
+Other times (mostly on paper) you may have an argument that is a multiple of a known angle, in that case you can use double-angle formulae to calculate them.
+
+| Double-Angle Formulae                          |
+| :-------------------:                          |
+| $sin(2\theta) = 2sin(\theta)cos(\theta)$       |
+| $cos(2\theta) = cos^2(\theta) - sin^2(\theta)$ |
+
+Table: Some double-angle formulae used in trigonometry
 
 ### Inverse Formulas
 
-\placeholder
+As with practically all math formulas, there are inverse formulas for sine and cosine, called $arcsin$ and $arccos$, which allow to find an angle, given its sine and cosine.
 
-<!-- TODO: Trigonometry basics -->
+In this book we won't specify more, besides what could be the most useful: the 2-argument arctangent.
+
+This formula allows you to find the angle of a vector, relative to the coordinate system, given the `x` and `y` coordinates of its "tip", such angle $\theta$ is defined as:
+
+$$ \theta = arctan(\frac{y}{x}) $$
+
+![Graphical plotting of the angle of a vector](./images/maths/arctan2.png){width=40%}
 
 Coordinate Systems on computers
 ---------------------------------
