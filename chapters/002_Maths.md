@@ -393,9 +393,19 @@ This book will always refer to angles in radians, so here are some useful conver
 | 180°      | $\pi$           |
 | 360°      | $2 \pi$         |
 
+Table: Conversion between degrees and Radians
+
 ### Sine, Cosine and Tangent
 
-\placeholder
+The most important trigonometric functions are sine and cosine. They are usually defined in reference to a "unit circle" (a circle with radius 1).
+
+Given the unit circle, let a line through the origin with an angle $\theta$ with the positive side of the x-axis intersect such unit circle. The x coordinate of the intersection point is defined by the measure $cos(\theta)$, while the y coordinate is defined by the measure $sin(\theta)$.
+
+![Unit Circle definition of sine and cosine](./images/maths/sincos.png){width=40%}
+
+For the purposes of this book, we will just avoid the complete definition of the tangent function, and just leave it as a formula of sine and cosine:
+
+$$tan(\theta) = \frac{sin(\theta)}{cos(\theta)} $$
 
 ### Pythagorean Trigonometric Identity
 
