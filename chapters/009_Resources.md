@@ -165,6 +165,26 @@ Palette Swapping can be used in more creative ways, though. Going back to Super 
 
 <!-- TODO: talk about pixel art, etc...-->
 
+### Tips and Tricks
+
+This section contains various tips and tricks used by artists to create certain effects inside video games, demonstrating how sometimes something really simple can have a great effect on the game experience.
+
+#### Creating "Inside rooms" tilesets
+
+In many cases, when dealing with tile-based games, we need to create a tileset that is good to represent "inside" environments, like a basement, a cave or the inside of a building. A simple way to reach that goal is creating a set of black and transparent tiles that can be overlaid on another tileset, like the following:
+
+![Example of black and transparent tileset used in "inside rooms"](./images/resources/inside_tileset.png){width=30%}
+
+Such tiles can then be overlaid onto something like the following:
+
+![Example of incomplete "inside room"](./images/resources/inside_example_1.png){width=40%}
+
+And we obtain the following result:
+
+![Example of "inside room" with the black/transparent overlay](./images/resources/inside_example_2.png){width=40%}
+
+\placeholder
+
 Sounds And Music
 ----------------
 
@@ -206,7 +226,7 @@ Another sound effect we can use is filtering, which are divided in 3 main sectio
 - **High Pass Filter:** Opposite of the previous filter, this filter allows high frequencies to pass through unaltered while the frequencies lower than a defined threshold will be cut;
 - **Band Pass Filter:** A combination of the two previous filters, this filter let's through all the frequencies between two defined threshold values. This allows for more interesting effects like a music sounding through an old radio.
 
-An interesting example is when an explosion happens near the player, in that case the "stun" effect is given by using a low pass filter on an explosion sound (which makes it sound really low and muffles), eventually a slowdown is applied and a secondary sound effect of a very high pitch sound is added (something similar to what you hear when your ears are ringing).
+An interesting example is when an explosion happens near the player, in that case the "stun" effect is given by using a low pass filter on an explosion sound (which makes it sound really low and muffled), eventually a slowdown is applied and a secondary sound effect of a very high pitch sound is added (something similar to what you hear when your ears are ringing).
 
 #### Doppler Effect
 
