@@ -16,7 +16,7 @@ Looking for contributors!
 
 Hi! Penaz here.
 
-After over 180 pages of content, I am reaching the point where I poured the majority of my knowledge inside this e-book, and simplifying and explaining takes away a lot of time. With the little time I have, research can only get me so far.
+After over 190 pages of content, I am reaching the point where I poured the majority of my knowledge inside this e-book, and simplifying and explaining takes away a lot of time. With the little time I have, research can only get me so far.
 
 I'd love to translate the currently available listings in (decently written) C++ and (separately) Lua, as well as add new algorithms, containers, tips and tricks and design patterns. Though my work leaves me very little free time to study and re-work things in a more understandable way.
 
