@@ -60,6 +60,8 @@ This type of camera can has some serious drawbacks when sudden and very quick ch
 
 Horizontal-tracking cameras keep the player in the center of the screen horizontally, while jumps don't influence the camera position. This is ideal for games that span horizontally, since we won't have the camera moving when jumping and temporarily hiding enemies we may fall on.
 
+![Example of an horizontally-tracking camera](./images/camera/horitrack.png){width=50%}
+
 This is the camera used in the classic Super Mario Bros. for the Nintendo Entertainment System.
 
 \placeholder
@@ -68,6 +70,8 @@ This is the camera used in the classic Super Mario Bros. for the Nintendo Entert
 
 Sometimes our levels don't span only horizontally, so we need to track the player in both axes, keeping it in the center of the screen at all times. This is good for platformers that don't require extremely precise manouvering, since precise manouvering could result in way too much movement from the camera.
 
+![Example of a full-tracking camera](./images/camera/fulltrack.png){width=50%}
+
 \placeholder
 
 <!-- TODO: Talk about position tracking cameras, both horizontal-only and 2-axis, can be jarring -->
@@ -75,6 +79,8 @@ Sometimes our levels don't span only horizontally, so we need to track the playe
 ### Camera Trap
 
 The "Camera Trap" system was invented to eliminate, or at least mitigate, the issues given by the position tracking camera. The playable character is encased in a "trap" that, when "escaped" makes the camera catch up in an effort to put the player back in such "trap".
+
+![Example of camera trap-based system](./images/camera/cameratrap.png){width=50%}
 
 This allows the camera to be less twitchy, giving a more natural sensation. Furthermore you can size the camera trap according to the type of game you are coding: slow-paced games can have a larger camera trap, allowing for the camera to rest more on the same screen, while faster paced games can have a smaller camera trap for faster reaction times.
 
@@ -88,6 +94,8 @@ slower ones -->
 ### Look-Ahead Camera
 
 This is a more complex camera that is implemented when the playable character moves towards a certain direction very quickly. The Look-Ahead camera is used to show more space in front of the player, giving more time to react to upcoming obstacles or enemies.
+
+![Example of look-ahead camera](./images/camera/lookahead.png){width=50%}
 
 This camera needs a good implementation when it comes to changing direction: having a sudden change of direction in the player character should have a slow panning response from the camera towards the new direction, or the game will feel nauseating.
 
@@ -110,4 +118,4 @@ Off-map areas may be shown as black in many cases, but in other cases (when the 
 
 In this case, it will be necessary to "clamp" the camera position, this way it will still follow the player, but won't show off-map areas.
 
-This usually just involved a check on the viewport boundaries against the map boundaries, followed by a reset of the coordinates to the map boundaries.
+This usually just involves a check on the viewport boundaries against the map boundaries, followed by a reset of the coordinates to the map boundaries.
