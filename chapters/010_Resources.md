@@ -31,7 +31,7 @@ Libraries like OpenGL support "sprite atlases" (or sprite batches), allowing for
 \placeholder
 
 
-### Virtual Resolution
+### Virtual Resolution {#VirtualRes}
 
 There are times where having the crispest graphics around is not a good idea, for instance in Pixel-Art games.
 

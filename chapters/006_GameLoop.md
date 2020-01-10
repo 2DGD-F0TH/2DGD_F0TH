@@ -139,3 +139,32 @@ A very used fix for this phenomenon is **double buffering**, where two color buf
 When comes the time to draw the color buffer on screen, an operation called "flipping" is performed, where the second color buffer is shown on screen, so that the game loop can draw on the first color buffer.
 
 To smooth the game, a technique called "triple buffering" can be used, which adds a third color buffer is used to make the animation smoother at the cost of a higher input lag.
+
+Drawing to screen
+------------------
+
+When drawing to screen, the greatest majority of games make use of what is called the "painter's algorithm", which looks something like the following:
+
+> 1. Clear the screen
+>
+> 2. Draw The Farthest Background
+>
+> 3. Draw The Second Farthest Background
+>
+> 4. Draw The Tile Map
+>
+> 5. Draw The enemies and obstacles
+>
+> 6. Draw The Player
+>
+> 7. Display everything on screen
+
+As a painter, we draw the background items before the foreground ones, layering each one on top of the other. Sometimes games make use of priority queues to decide which items to draw first, other times game developers (usually under the time constraints of a game jam) just hard-code the draw order.
+
+### Clearing the screen
+
+Special note to clearing the screen: this is an operation that sometimes may look useless but, like changing the canvas for a painter, clearing the screen (or actually the "buffer" we're drawing on) avoids a good deal of graphical glitches.
+
+![How not clearing the screen can create glitches](./images/gameloop/glitchy_noclear.png){width=50%}
+
+In the previous image, we can see how a black screen with only a FPS counter can end up drawing all kinds of gliches when the screen buffer is not cleared: we can clearly see the FPS counter, but the rest of the screen should be empty, instead the GPU is trying to represent residual data from its memory, causing the glitches.
