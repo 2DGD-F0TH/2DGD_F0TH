@@ -1072,11 +1072,6 @@ Table: Summary Table for Heaps
 <!-- TODO -->
 \placeholder
 
-### Red-Black Trees
-
-<!-- TODO -->
-\placeholder
-
 ### Stacks
 
 Stacks are a particular data structure, they have a limited way of working: you can only put or remove items on top of the stack, plus being able to "peek" on top of the stack.
