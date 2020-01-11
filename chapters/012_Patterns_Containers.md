@@ -240,6 +240,10 @@ objects for the game -->
 Animator
 ---------
 
+This can be a really useful component to encapsulate everything that concerns animation into a simple and reusable package.
+
+The animation component will just be updated (like the other components) and it will automatically update the frame of animation according to an internal timer, usually by updating the coordinates of the rectangle that defines which piece of a sprite sheet is drawn.
+
 \placeholder
 
 <!-- TODO: A class that yelds frames, with an internal counter and all the necessary facilitations for
