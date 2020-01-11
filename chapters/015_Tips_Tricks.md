@@ -84,6 +84,16 @@ If your engine/framework supports it, you should use sprite atlases/batches, as 
 
 Another way to optimize your drawing routine is avoiding to change textures often: changing textures can result in a lot of context changes, so you should use only one texture (in the form of a [Sprite Sheet](#SpriteSheets)) and draw only a part of it, changing the coordinates of the rectangle that gets drawn. This way you'll save the PC a lot of work.
 
+### Avoid interactions between different input systems
+
+This is a small improvements that can be done on menu systems: if the player is using a keyboard to navigate the menu, the mouse should not interact with the menu.
+
+In many frameworks when a fullscreen game window "captures" the mouse cursor, this is put on the center of the screen, which could be where a menu item is positioned.
+
+Now imagine you are "flowing through" the menu, trying to load a saved file and the cursor is detected pointing at the "delete savefile" option; you are briskly walking through the menu and what you think is the "do you want to load this file?" dialog is actually asking "do you want to **delete** this savefile?". You click "yes" and your savefile is gone!
+
+This is an extreme edge case, but it could happen. Even if it is a minor annoyance like starting a new savefile when instead you want to load an existing one, it diminishes the quality of your experience.
+
 ### Sprite Stenciling/Masking
 
 \placeholder
