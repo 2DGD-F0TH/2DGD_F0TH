@@ -483,6 +483,10 @@ In the previous example we try to jump on a platform by going through it, but ou
 
 #### Shallow-axis based reaction method
 
+This method works in a similar fashion to the direction and velocity method, but prioritizes reactions on the axis that shows the shallowest overlap.
+
+This requires measuring how much the objects overlap on each axis, which can be a little more involved, but not really expensive.
+
 \placeholder
 
 <!-- TODO: Similar to direction + velocity, but reacts only on the most shallow direction -->
