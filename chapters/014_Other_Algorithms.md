@@ -14,7 +14,7 @@ Maze generation is the base of a great majority of dungeon generation systems, y
 
 There are many ideas that can be used to generate a maze, some are based on a prepared map that gets refined into a maze, some other are based on walls instead of tiles, here we will see some of the many algorithms that exist.
 
-#### Depth-First Search
+#### Randomized Depth-First Search
 
 The Depth-First Search (DFS) algorithm is known in the world of tree and graph structure as a traversal algorithm. We can use a randomized DFS algorithm as a simple maze-generation algorithm.
 
@@ -66,9 +66,40 @@ The issue with this algorithm is that it requires the full maze to be kept in me
 
 This algorithm is based on a randomized version of the minimum-spanning tree algorithm known as Kruskal's algorithm.
 
-\placeholder
+The algorithm needs the following data structures to work:
 
-This algorithm, being based on a minimum-spanning tree algorithm, is biased towards creating a big number of short dead ends.
+- One structure that contains all the "walls" of our maze, this can be a list
+- One structure that allows for easy joining of disjoint sets, this will contain the cells
+
+Initially all the cells are separated by walls, and each cell is its own set.
+
+![How the Randomized Kruskal's Algorithm Works (1/6)](./images/algorithms/Kruskal1.png){width=30%}
+
+Now we select a random wall from our list, if the cells separated by such wall are part of different sets, we delete the wall and join the cells into a single set.
+
+![How the Randomized Kruskal's Algorithm Works (2/6)](./images/algorithms/Kruskal2.png){width=30%}
+
+The "different sets" check allows us to avoid having loops in our maze (and also deleting all the walls, in some cases). Next we select another wall, check if the cells divided by the wall are from different sets and join them.
+
+![How the Randomized Kruskal's Algorithm Works (3/6)](./images/algorithms/Kruskal3.png){width=30%}
+
+This doesn't look much like a maze yet, but by uniting the cells we can start seeing some short paths forming in our maze.
+
+![How the Randomized Kruskal's Algorithm Works (4/6)](./images/algorithms/Kruskal4.png){width=30%}
+
+The black cells are starting to develop a path, as stated earlier. As the sets get bigger, there will be less walls we can "break down" to join our sets.
+
+![How the Randomized Kruskal's Algorithm Works (5/6)](./images/algorithms/Kruskal5.png){width=30%}
+
+When there is only one set left, our maze is complete.
+
+![How the Randomized Kruskal's Algorithm Works (6/6)](./images/algorithms/Kruskal6.png){width=30%}
+
+This algorithm, being based on a minimum-spanning tree algorithm, this algorithm is biased towards creating a big number of short dead ends.
+
+Now let's see an example implementation of the Randomized Kruskal's Algorithm:
+
+\placeholder
 
 Noise Generation
 -----------------
