@@ -3,7 +3,7 @@
 Game Development Tips and Tricks
 ==========================================
 
-\epigraph{Fools say that they learn by experience. I prefer to profit by others experience.}{\textit{Otto von Bismarck}}
+\epigraph{Fools say that they learn by experience. I prefer to profit by others' experience.}{\textit{Otto von Bismarck}}
 
 General Purpose
 ---------------
