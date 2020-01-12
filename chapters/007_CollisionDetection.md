@@ -501,7 +501,7 @@ This method is a bit more involved, but allows for a finer control over how you 
 
 The secret to this method is taking a snapshot of the object's position before its update phase and do a series of comparisons with the position after the update.
 
-\placeholder
+\code{collisiondetection/snapshot_reaction}{Example of the "snapshot" collision reaction method}
 
 This method solves the problem given by platforms that can be crossed one-way.
 
