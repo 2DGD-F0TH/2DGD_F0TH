@@ -487,6 +487,10 @@ This method works in a similar fashion to the direction and velocity method, but
 
 This requires measuring how much the objects overlap on each axis, which can be a little more involved, but not really expensive.
 
+![Example of shallow-axis based reaction](./images/collision_detection/shallow_axis.png){width=90%}
+
+In the previous picture, we can see how the algorithm chooses to solve the collision on the $y$ axis first and only on the x axis after; but since solving the $y$ axis solves the collision, no reaction is performed on the $x$ axis.
+
 \placeholder
 
 <!-- TODO: Similar to direction + velocity, but reacts only on the most shallow direction -->
