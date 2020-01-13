@@ -265,3 +265,26 @@ GDevelop is an open-source toolkit to make games, mostly based on visual program
 | \checkmark | \checkmark | \checkmark | \checkmark | \checkmark | \checkmark |
 
 GDevelop is distributed under the MIT license (although the name and logo are copyright), although the main license file refers to other license files inside each folder. So you may want to check the GitHub repository for more information.
+
+GLFW
+-----
+
+**Website:** <https://www.glfw.org/>
+
+**Price:** Free
+
+GLFW is an Open-Source library for OpenGL, OpenGL ES and Vulkan, that allows to create windows, context and surfaces, as well as receiving input and events. It is written in C.
+
+**Relevant Bindings:**
+
+| C++        | C          | C#         | Go         | Java       | Python     | Ruby       | Lua        | Rust       | JavaScript | Proprietary Language |
+|:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:                   |
+| \checkmark | \checkmark | \checkmark | \checkmark | \checkmark | \checkmark | \checkmark | \checkmark | \checkmark |            |                      |
+
+**Platform Compatibility:**
+
+| Windows    | Linux      | Mac OS     | iOS        | Android    | Web-Based  |
+|:-------:   |:-----:     |:------:    |:---:       |:-------:   |:---------: |
+| \checkmark | \checkmark | \checkmark |            |            |            |
+
+GLFW is distributed under the ZLib/png license, which allows for both commercial and personal use, both in proprietary and open-source situations.
