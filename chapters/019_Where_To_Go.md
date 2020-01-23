@@ -3,6 +3,8 @@
 Where To Go From Here
 =====================
 
+\epigraph{Be grateful for all the obstacles in your life. They have strengthened you as you continue with your journey.}{\textit{Anonymous}}
+
 It has been a very long trip, hopefully this book has satisfied great part of your curiosity about 2D Game Development and Design, but the adventure is far from over. There are infinite resources on- and off-line to further your experience in game development and design.
 
 This book has been mainly about getting you to touch the nitty-gritty of game development, giving you the tools to be able to create your game without overly relying on your toolkit (be it Unity, UDK or any other fully-fledged game engine), or even be able to modify, at a low level, the behaviour of the tools given to you to reach your objective.
