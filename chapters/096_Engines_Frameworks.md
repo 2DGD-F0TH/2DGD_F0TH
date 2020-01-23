@@ -16,9 +16,15 @@ SFML (Simple Fast Multimedia Library) is a library dedicated to creation of mult
 
 **Relevant Bindings:**
 
-| C++        | C          | C#         | Go         | Java       | Python     | Ruby       | Lua        | Rust       | JavaScript | Proprietary Language |
-|:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:                   |
-| \checkmark | \checkmark | \checkmark | \checkmark | \checkmark | \checkmark | \checkmark |            | \checkmark |            |                      |
+| C++        | C          | C#         | Go         | Java       | Python     | Ruby       | Lua        | Rust       | JavaScript |
+|:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |
+| \checkmark | \checkmark | \checkmark | \checkmark | \checkmark | \checkmark | \checkmark |            | \checkmark |            |
+
+**Other Bindings:**
+
+| Proprietary Language | Visual Programming |
+| :-:                  | :-:                |
+|                      |                    |
 
 **Platform Compatibility:**
 
@@ -41,9 +47,15 @@ SDL (Simple DirectMedia Layer) is one of the most famous libraries around to mak
 
 **Relevant Bindings:**
 
-| C++        | C          | C#         | Go         | Java       | Python     | Ruby       | Lua        | Rust       | JavaScript | Proprietary Language |
-|:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:                   |
-| \checkmark | \checkmark | \checkmark | \checkmark |            | \checkmark |            | \checkmark | \checkmark |            |                      |
+| C++        | C          | C#         | Go         | Java       | Python     | Ruby       | Lua        | Rust       | JavaScript |
+|:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |
+| \checkmark | \checkmark | \checkmark | \checkmark |            | \checkmark |            | \checkmark | \checkmark |            |
+
+**Other Bindings:**
+
+| Proprietary Language | Visual Programming |
+| :-:                  | :-:                |
+|                      |                    |
 
 **Platform Compatibility:**
 
@@ -66,9 +78,15 @@ Löve is a lua-based framework for creating games, features an extensive documen
 
 **Relevant Bindings:**
 
-| C++        | C          | C#         | Go         | Java       | Python     | Ruby       | Lua        | Rust       | JavaScript | Proprietary Language |
-|:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:                   |
-|            |            |            |            |            |            |            | \checkmark |            |            |                      |
+| C++        | C          | C#         | Go         | Java       | Python     | Ruby       | Lua        | Rust       | JavaScript |
+|:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |
+|            |            |            |            |            |            |            | \checkmark |            |            |
+
+**Other Bindings:**
+
+| Proprietary Language | Visual Programming |
+| :-:                  | :-:                |
+|                      |                    |
 
 **Platform Compatibility:**
 
@@ -89,9 +107,15 @@ Unity is probably among the most famous 3D engines used to create videogames, as
 
 **Relevant Bindings:**
 
-| C++        | C          | C#         | Go         | Java       | Python     | Ruby       | Lua        | Rust       | JavaScript | Proprietary Language |
-|:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:                   |
-|            |            | \checkmark |            |            |            |            |            |            |            |                      |
+| C++        | C          | C#         | Go         | Java       | Python     | Ruby       | Lua        | Rust       | JavaScript |
+|:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |
+|            |            | \checkmark |            |            |            |            |            |            |            |
+
+**Other Bindings:**
+
+| Proprietary Language | Visual Programming |
+| :-:                  | :-:                |
+|                      |                    |
 
 **Platform Compatibility:**
 
@@ -113,9 +137,15 @@ IRRlicht is a 3D engine (as in does only 3D rendering) made in C++ that aims to 
 
 **Relevant Bindings:**
 
-| C++        | C          | C#         | Go         | Java       | Python     | Ruby       | Lua        | Rust       | JavaScript | Proprietary Language |
-|:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:                   |
-| \checkmark |            | \checkmark |            | \checkmark | \checkmark | \checkmark |            |            |            |                      |
+| C++        | C          | C#         | Go         | Java       | Python     | Ruby       | Lua        | Rust       | JavaScript |
+|:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |
+| \checkmark |            | \checkmark |            | \checkmark | \checkmark | \checkmark |            |            |            |
+
+**Other Bindings:**
+
+| Proprietary Language | Visual Programming |
+| :-:                  | :-:                |
+|                      |                    |
 
 **Platform Compatibility:**
 
@@ -137,9 +167,15 @@ Ogre3D is an open source 3D graphics engine (it's used to render 3D graphics onl
 
 **Relevant Bindings:**
 
-| C++        | C          | C#         | Go         | Java       | Python     | Ruby       | Lua        | Rust       | JavaScript | Proprietary Language |
-|:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:                   |
-| \checkmark |            | \checkmark |            | \checkmark | \checkmark | \checkmark |            |            |            |                      |
+| C++        | C          | C#         | Go         | Java       | Python     | Ruby       | Lua        | Rust       | JavaScript |
+|:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |
+| \checkmark |            | \checkmark |            | \checkmark | \checkmark | \checkmark |            |            |            |
+
+**Other Bindings:**
+
+| Proprietary Language | Visual Programming |
+| :-:                  | :-:                |
+|                      |                    |
 
 **Platform Compatibility:**
 
@@ -160,9 +196,15 @@ Panda3D is a complete and open source 3D game engine.
 
 **Relevant Bindings:**
 
-| C++        | C          | C#         | Go         | Java       | Python     | Ruby       | Lua        | Rust       | JavaScript | Proprietary Language |
-|:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:                   |
-| \checkmark |            |            |            |            | \checkmark |            |            |            |            |                      |
+| C++        | C          | C#         | Go         | Java       | Python     | Ruby       | Lua        | Rust       | JavaScript |
+|:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |
+| \checkmark |            |            |            |            | \checkmark |            |            |            |            |
+
+**Other Bindings:**
+
+| Proprietary Language | Visual Programming |
+| :-:                  | :-:                |
+|                      |                    |
 
 **Platform Compatibility:**
 
@@ -183,9 +225,15 @@ Godot is a fully-fledged engine that makes use of a node-based approach and supp
 
 **Relevant Bindings:**
 
-| C++        | C          | C#         | Go         | Java       | Python     | Ruby       | Lua        | Rust       | JavaScript | Proprietary Language |
-|:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:                   |
-| \checkmark |            | \checkmark |            |            |            |            |            |            |            | \checkmark           |
+| C++        | C          | C#         | Go         | Java       | Python     | Ruby       | Lua        | Rust       | JavaScript |
+|:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |
+| \checkmark |            | \checkmark |            |            |            |            |            |            |            |
+
+**Other Bindings:**
+
+| Proprietary Language | Visual Programming |
+| :-:                  | :-:                |
+| \checkmark           | \checkmark         |
 
 **Platform Compatibility:**
 
@@ -208,9 +256,15 @@ It makes use of its own scripting language, and some visual toolkits as well.
 
 **Relevant Bindings:**
 
-| C++        | C          | C#         | Go         | Java       | Python     | Ruby       | Lua        | Rust       | JavaScript | Proprietary Language |
-|:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:                   |
-|            |            |            |            |            |            |            |            |            |            | \checkmark           |
+| C++        | C          | C#         | Go         | Java       | Python     | Ruby       | Lua        | Rust       | JavaScript |
+|:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |
+|            |            |            |            |            |            |            |            |            |            |
+
+**Other Bindings:**
+
+| Proprietary Language | Visual Programming |
+| :-:                  | :-:                |
+| \checkmark           | \checkmark         |
 
 **Platform Compatibility:**
 
@@ -231,9 +285,15 @@ MonoGame is an open-source porting of XNA 4, it allows for people used to Micros
 
 **Relevant Bindings:**
 
-| C++        | C          | C#         | Go         | Java       | Python     | Ruby       | Lua        | Rust       | JavaScript | Proprietary Language |
-|:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:                   |
-|            |            | \checkmark |            |            |            |            |            |            |            |                      |
+| C++        | C          | C#         | Go         | Java       | Python     | Ruby       | Lua        | Rust       | JavaScript |
+|:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |
+|            |            | \checkmark |            |            |            |            |            |            |            |
+
+**Other Bindings:**
+
+| Proprietary Language | Visual Programming |
+| :-:                  | :-:                |
+|                      |                    |
 
 **Platform Compatibility:**
 
@@ -254,9 +314,15 @@ GDevelop is an open-source toolkit to make games, mostly based on visual program
 
 **Relevant Bindings:**
 
-| C++        | C          | C#         | Go         | Java       | Python     | Ruby       | Lua        | Rust       | JavaScript | Proprietary Language |
-|:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:                   |
-|            |            |            |            |            |            |            |            |            | \checkmark |                      |
+| C++        | C          | C#         | Go         | Java       | Python     | Ruby       | Lua        | Rust       | JavaScript |
+|:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |
+|            |            |            |            |            |            |            |            |            | \checkmark |
+
+**Other Bindings:**
+
+| Proprietary Language | Visual Programming |
+| :-:                  | :-:                |
+|                      | \checkmark         |
 
 **Platform Compatibility:**
 
@@ -277,9 +343,15 @@ GLFW is an Open-Source library for OpenGL, OpenGL ES and Vulkan, that allows to 
 
 **Relevant Bindings:**
 
-| C++        | C          | C#         | Go         | Java       | Python     | Ruby       | Lua        | Rust       | JavaScript | Proprietary Language |
-|:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:                   |
-| \checkmark | \checkmark | \checkmark | \checkmark | \checkmark | \checkmark | \checkmark | \checkmark | \checkmark |            |                      |
+| C++        | C          | C#         | Go         | Java       | Python     | Ruby       | Lua        | Rust       | JavaScript |
+|:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |
+| \checkmark | \checkmark | \checkmark | \checkmark | \checkmark | \checkmark | \checkmark | \checkmark | \checkmark |            |
+
+**Other Bindings:**
+
+| Proprietary Language | Visual Programming |
+| :-:                  | :-:                |
+|                      |                    |
 
 **Platform Compatibility:**
 
