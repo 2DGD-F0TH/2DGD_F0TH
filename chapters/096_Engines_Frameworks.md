@@ -3,7 +3,18 @@
 Engines, Libraries And Frameworks
 =================================
 
-Here follows a list of game engines, libraries and frameworks, complete with their known language bindings, operating system compatibility and a short description.
+Here follows a list of game engines, libraries and frameworks, so you can make an informed choice about your platform, or just try one!
+
+For each proposed engine or framework, along with a short description, you will find the following sections:
+
+- **Website:** This contains a link to the official website of the engine/framework/library;
+- **Price:** Here you will see if the product is free to use or if you need to pay a price for it, and anything in between;
+- **Relevant Bindings:** In this table you will find if the product supports one of the many famous programming languages available;
+- **Other Bindings:** Differently from the previous table, this table has only two columns:
+    - **Proprietary Language:** This engine/framework makes use of its own scripting language, usually easier to learn than general-purpose languages. You may need to learn it;
+    - **Visual Programming:** This product makes use of a "Visual Scripting" (codeless) paradygm, where you can program your own game without writing code, usually by using directed graphs and nodes.
+- **Platform compatibility:** This will tell you if the product is good for your objective, by telling you which platforms you can deploy on, like Linux, Windows or even on the web via HTML5;
+- **License:** This will tell you how to behave when it comes to the legal stuff, since some engines do not allow commercial use in their free versions.
 
 SFML
 -----
