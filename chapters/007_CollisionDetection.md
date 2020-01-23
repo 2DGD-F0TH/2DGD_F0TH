@@ -3,7 +3,7 @@
 Collision Detection and Reaction
 =================================
 
-<!-- TODO: Epigraph missing -->
+\epigraph{Every detection of what is false directs us towards what is true: every trial exhausts some tempting form of error.}{\textit{William Whewell}}
 
 When it comes to collision management, there are two main phases:
 
@@ -337,7 +337,9 @@ When the simpler algorithm detects the possibility of a collision, a more precis
 Finding out who hit what
 ------------------------
 
-First of all, we need to find which game objects collided, and this can be easily one of the most expensive parts of our game, if not handled correctly.
+Now we need to find which game objects collided, and this can be easily one of the most expensive parts of our game, if not handled correctly.
+
+This section will show how knowing which items will surely **not** collide can help us optimize our algorithms.
 
 We need to remember that each object (as good practices suggest) know only about themselves, they don't have "eyes" like us, that can see when another object is approaching them and thinking "I'm gonna collide". The only thing we can do it having "someone else" take care of checking for collisions.
 
