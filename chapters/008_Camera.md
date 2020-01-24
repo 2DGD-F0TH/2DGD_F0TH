@@ -80,6 +80,8 @@ Sometimes our levels don't span only horizontally, so we need to track the playe
 
 The "Camera Trap" system was invented to eliminate, or at least mitigate, the issues given by the position tracking camera. The playable character is encased in a "trap" that, when "escaped" makes the camera catch up in an effort to put the player back in such "trap".
 
+The trap is represented by an invisible rectangle which can be visualized on screen in case you need to debug your camera.
+
 ![Example of camera trap-based system](./images/camera/cameratrap.png){width=50%}
 
 This allows the camera to be less twitchy, giving a more natural sensation. Furthermore you can size the camera trap according to the type of game you are coding: slow-paced games can have a larger camera trap, allowing for the camera to rest more on the same screen, while faster paced games can have a smaller camera trap for faster reaction times.
