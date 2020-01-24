@@ -21,7 +21,7 @@ But most of all, never give up and try to keep it fun.
 
 There will be times where you feel like giving up, because something doesn't work exactly as you want it to, or because you feel you're not ready to put out some code. When you don't feel ready, just try making something simple, something that will teach you how to manipulate data structures and that gives you a result in just a couple days of work. Just having a rectangle moving on the screen, reacting to your key presses can be that small confidence boost that can get you farther and farther into this world.
 
-And when all else fails, take a pen, some paper and your favourite [Rubber Duck](https://en.wikipedia.org/wiki/Rubber_duck_debugging) and **think**.
+And when all else fails, take a pen, some paper and your favourite [Rubber Duck](https://en.wikipedia.org/wiki/Rubber_duck_debugging) (make sure it is impact-proof) and **think**.
 
 Coding is hard, but at the same time, it can give you lots of satisfaction.
 
