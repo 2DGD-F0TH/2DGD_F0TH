@@ -28,6 +28,14 @@ This instead is a possible algorithm for a random weapon, for simplicity we assu
 
 As you can see, the algorithms are very similar to each other, but the second one has an element of randomness added to it.
 
+So, as a memorandum:
+
+Procedural generation is **consistent**, even though something is generated in real time, given the same input the same output will be returned.
+
+Random generation is usually **not consistent**, although it is possible to control the random generator (via its seed) to obtain deterministic results, given the same input.
+
+Seeding a random number generator correctly can allow you to generate a huge universe without storing it into memory, for instance; although the edits to such universe will have to be saved in some other way.
+
 Advantages and disadvantages
 ------------------------------
 
