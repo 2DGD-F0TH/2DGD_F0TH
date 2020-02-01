@@ -63,13 +63,21 @@ Putting a very powerful enemy in front of some treasure (for instance currency u
 
 Your magic beam won't deal enough damage to the enemy to kill it before such enemy takes your life, but a stalactite on their head will do the trick, and the reward for such lateral thinking will be a heap of coins (or gems, or whatever currency you invented).
 
-![Example of how to induce lateral thinking with a powerful enemy and environmental damage](./images/level_design/lateral_1.png){width=50%}
+![Example of how to induce lateral thinking with environmental damage [^chests] [^icetiles] [^undeadfossil]](./images/level_design/lateral_1.png){width=40%}
 
-Giving tips to the player by breaking the fourth wall can be another idea, a rock conveniently shaped like an arrow could point towards a secret room that has a fake wall.
+Giving tips to the player by breaking the fourth wall can be another idea, a rock or a patch of dead grass conveniently shaped like an arrow could point towards a secret room that has a fake wall.
 
-![Example of how to induce lateral thinking by "breaking the fourth wall"](./images/level_design/lateral_2.png){width=50%}
+![Example of how to induce lateral thinking by "breaking the fourth wall" [^jawbreaker]](./images/level_design/lateral_2.png){width=40%}
 
 This last tip should be done very subtly, so not to ruin the immersion. Unless your game takes advantage from these kind of things (for instance games based on comedy).
+
+[^chests]: 32x32 Chests attribution: Bonsaiheldin ([http://nora.la](http://nora.la)), hosted at [opengameart](https://opengameart.org/content/treasure-chests-32x32)
+
+[^icetiles]: Simple SVG ice platformer tiles, listed as "Public Domain (CC0)" at [OpenGameArt.org](https://opengameart.org/content/simple-svg-ice-platformer-tiles-16x16-16x96-96x16)
+
+[^undeadfossil]: Fossil (Undead) RPG Enemy Sprites attribution: Stephen Challener (Redshrike), hosted by [OpenGameArt.org](https://opengameart.org/content/fossil-undead-rpg-enemy-sprites)
+
+[^jawbreaker]: Jawbreaker tileset, listed as public domain at [https://adamatomic.itch.io/jawbreaker](https://adamatomic.itch.io/jawbreaker)
 
 Remind the player about the mechanics they learned
 --------------------------------------------------
