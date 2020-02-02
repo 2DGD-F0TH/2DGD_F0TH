@@ -102,9 +102,15 @@ This last tip should be done very subtly, so not to ruin the immersion. Unless y
 
 \placeholder
 
+### Reward the player for not immediately following the given direction
+
+<!-- TODO: See Dark Souls's Sen's Fortress, you should go up, but you can get unique items if you go downstairs first, -->
+
+\placeholder
+
 ### Reward the player for exploring
 
-<!-- TODO: See Dark Souls's Sen's Fortress, you should go up, but you can get unique items if you go downstairs first, also all the secrets, also the possibility to kill a giant that is thought to be just environmental damage -->
+<!-- TODO: See Dark Souls's secrets, also the possibility to kill a giant that is thought to be just environmental damage -->
 
 \placeholder
 
