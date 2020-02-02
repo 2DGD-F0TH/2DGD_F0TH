@@ -7,8 +7,10 @@ Level Design
 
 In this section we will talk about level design tips, tricks and common pitfalls to avoid. We will talk about tutorials, entertaining the player and ways to reward them better.
 
-Do not pad tutorials
----------------------
+Tutorials
+-----------
+
+### Do not pad tutorials
 
 Tutorials are meant to introduce the player to the game's mechanics, but a bad tutorial can ruin the experience. Tutorials should be comprehensive but also compact, padding tutorials should absolutely not be a thing.
 
@@ -24,15 +26,13 @@ Instead use:
 
 And eventually present the more complex mechanics in an "obstacle course" fashion.
 
-Integrate tutorials in the lore
--------------------------------
+### Integrate tutorials in the lore
 
 Tutorials are better when well-integrated in the lore, for instance if your game features a high-tech suit maybe you should make a "training course" inside the structure where such suit was invented.
 
 By integrating the tutorial into the game world, it will feel less of a tutorial for the player, but more like training for the game's protagonist.
 
-Let the player explore the controls
------------------------------------
+### Let the player explore the controls
 
 Sometimes it's better to allow the player to explore the controls, by giving them a safe area to try: this area is usually a tutorial or a specific training area.
 
@@ -54,8 +54,25 @@ Try something like:
 >
 > Check the move list in the pause menu
 
-Reward the player for their "lateral thinking"
------------------------------------------------
+Consolidating and refreshing the game mechanics
+------------------------------
+
+### Remind the player about the mechanics they learned
+
+There's a latin saying that goes "repetita juvant", which means "repeating does good".
+
+A good idea is to sprinkle around different levels concepts that have been learned previously, so to remind and consolidate them. This is more effective when done shortly after learning a new mechanic.
+
+### Introduce new ways to use old mechanics
+
+After a while, old mechanics tend to become stale, to rejuvinate them we can apply such mechanics to new problems. Changing their use slightly can make an old experience new again.
+
+For instance, knowing that shooting our magic beam against something on the ceiling will make it drop (usually killing an enemy), we can make the player use such envinronmental interactivity to drop a suspended weight to open a door, or shoot a bell to "force" a change of guard so to sneak stealthily.
+
+Rewarding the player
+---------------------
+
+### Reward the player for their "lateral thinking"
 
 A good idea could be rewarding the player for not throwing themselves "head first" into the fight, but instead thinking out of the box and avoid the fight altogether, or just win it differently.
 
@@ -77,21 +94,24 @@ This last tip should be done very subtly, so not to ruin the immersion. Unless y
 
 [^undeadfossil]: Fossil (Undead) RPG Enemy Sprites attribution: Stephen Challener (Redshrike), hosted by [OpenGameArt.org](https://opengameart.org/content/fossil-undead-rpg-enemy-sprites)
 
-[^jawbreaker]: Jawbreaker tileset, listed as public domain at [https://adamatomic.itch.io/jawbreaker](https://adamatomic.itch.io/jawbreaker)
+<!--[^jawbreaker]: Jawbreaker tileset, listed as public domain at [https://adamatomic.itch.io/jawbreaker](https://adamatomic.itch.io/jawbreaker)-->
 
-Remind the player about the mechanics they learned
---------------------------------------------------
+### Reward the player for their tenacity
 
-There's a latin saying that goes "repetita juvant", which means "repeating does good".
+<!-- TODO: See Dark Souls Boss in the tutorial, if you have the patience to beat the boss with the broken sword (LOTS of hits), you get their weapon, which can be useful in future -->
 
-A good idea is to sprinkle around different levels concepts that have been learned previously, so to remind and consolidate them. This is more effective when done shortly after learning a new mechanic.
+\placeholder
 
-Introduce new ways to use old mechanics
----------------------------------------
+### Reward the player for exploring
 
-After a while, old mechanics tend to become stale, to rejuvinate them we can apply such mechanics to new problems. Changing their use slightly can make an old experience new again.
+<!-- TODO: See Dark Souls's Sen's Fortress, you should go up, but you can get unique items if you go downstairs first, also all the secrets, also the possibility to kill a giant that is thought to be just environmental damage -->
 
-For instance, knowing that shooting our magic beam against something on the ceiling will make it drop (usually killing an enemy), we can make the player use such envinronmental interactivity to drop a suspended weight to open a door, or shoot a bell to "force" a change of guard so to sneak stealthily.
+\placeholder
+
+### Reward the player for not trusting you entirely
+
+<!-- TODO: Again, dark souls with the double-secret wall with a chest to fool the player into thinking they found the secret, while the real secret is different -->
+
+\placeholder
 
 <!-- TODO: Talk about other level design tips -->
-\placeholder
