@@ -102,19 +102,31 @@ This last tip should be done very subtly, so not to ruin the immersion. Unless y
 
 \placeholder
 
-### Reward the player for not immediately following the given direction
-
-<!-- TODO: See Dark Souls's Sen's Fortress, you should go up, but you can get unique items if you go downstairs first, -->
-
-\placeholder
-
 ### Reward the player for exploring
 
 <!-- TODO: See Dark Souls's secrets, also the possibility to kill a giant that is thought to be just environmental damage -->
 
 \placeholder
 
+### Reward the player for not immediately following the given direction
+
+This is an extension of the previous point, the player should be rewarded for their exploratory efforts, even more when those efforts mean not immediately following the direction given by the designer.
+
+"Thinking differently" should be rewarded with challenge and rewards up to said challenge.
+
+<!-- TODO: See Dark Souls's Sen's Fortress, you should go up, but you can get unique items if you go downstairs first, -->
+
+\placeholder
+
 ### Reward the player for not trusting you entirely
+
+Sometimes it can be fun, for both the game designer and the player, to play a bit of a trick to the player themselves.
+
+Some famous games, like DOOM and Dark Souls, use secrets-in-secrets to trick players into thinking they found something valuable, while hiding something way more important. Let's see the example below.
+
+![Example of secret-in-secret](./images/level_design/secret_in_secret.png){width=50%}
+
+We can see how we hid a secret inside of another secret and used a piece of valuable (but not *too valuable*) treasure to make the player think they found the secret, while the real secret is hiding behind another fake wall.
 
 <!-- TODO: Again, dark souls with the double-secret wall with a chest to fool the player into thinking they found the secret, while the real secret is different -->
 
