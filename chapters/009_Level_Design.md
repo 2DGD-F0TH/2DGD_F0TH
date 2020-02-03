@@ -98,25 +98,23 @@ This last tip should be done very subtly, so not to ruin the immersion. Unless y
 
 ### Reward the player for their tenacity
 
-<!-- TODO: See Dark Souls Boss in the tutorial, if you have the patience to beat the boss with the broken sword (LOTS of hits), you get their weapon, which can be useful in future -->
+After suggesting to reward players for not butting head-first into fights, now I'm going to suggest the exact opposite (in a way): reward your players for their tenacity.
 
-\placeholder
+Beating a tough boss with a certain (weak) weapon, or just the plain tenacity and skill that is needed to undertake a hard task, such feats should be rewarded: for instance with a powerful weapon that can be used after some level-ups.
 
 ### Reward the player for exploring
 
-<!-- TODO: See Dark Souls's secrets, also the possibility to kill a giant that is thought to be just environmental damage -->
+Exploration can lead the player to discover secrets, which can range from simple gear, to pieces of unexplored environment, or even pieces of the game's lore.
 
-\placeholder
+World exploration should not be limited to simple secrets, a nice idea could be finding a path towards something that is usually considered "environmental damage" (like a catapult in the background) so that the player can deactivate it.
+
+Thinking out of the box can lead to some really interesting results when it comes to this tip.
 
 ### Reward the player for not immediately following the given direction
 
 This is an extension of the previous point, the player should be rewarded for their exploratory efforts, even more when those efforts mean not immediately following the direction given by the designer.
 
-"Thinking differently" should be rewarded with challenge and rewards up to said challenge.
-
-<!-- TODO: See Dark Souls's Sen's Fortress, you should go up, but you can get unique items if you go downstairs first, -->
-
-\placeholder
+"Thinking differently" should be rewarded with challenge and rewards up to said challenge. If the mission tells a player to climb up a tower, the more curious players could be led to hit the tower's underground dungeon before going on with the mission. A nice challenge in such dungeon with a fittin reward could expand on the game experience.
 
 ### Reward the player for not trusting you entirely
 
