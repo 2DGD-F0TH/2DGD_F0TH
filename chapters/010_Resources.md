@@ -163,6 +163,15 @@ Palette Swapping can be used in more creative ways, though. Going back to Super 
 
 \placeholder
 
+#### What pixel art is and what it is not
+
+\placeholder
+
+#### Sub-pixel animation
+
+\placeholder
+
+
 <!-- TODO: talk about pixel art, etc...-->
 
 ### Tips and Tricks
