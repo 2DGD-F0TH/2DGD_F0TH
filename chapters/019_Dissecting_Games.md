@@ -111,15 +111,15 @@ In this game, keycards have to be bought for quite the price, and disappear on u
 
 #### Starting level for characters
 
-This may be minor, but your characters start at level 0.
+This may be minor, but your characters start at level 0. Simply confusing and weird from a player standpoint.
 
-I have nothing to say about it. Simply confusing and weird.
+As a programmer I find it quite amusing, though.
 
 #### Slow overworld movement
 
-The movement in the overworld is really slow, at around 1 tile every 2 seconds. This is really confusing, since the NES/Famicom is capable of higher performance.
+The movement in the overworld is really slow, at around 1 tile every 2 seconds. This is really confusing, since the NES/Famicom is definitely capable of higher performance.
 
-It is not lag or performance issues, it is a conscious decision to make the characters walk so slowly.
+This is not due to lag or performance issues, it is a conscious decision to make the characters walk so slowly.
 
 #### Exiting a dungeon or a town
 
@@ -133,9 +133,9 @@ In the battle UI, the health of your team members is shown on top of their pictu
 
 Given the size of the font and the size of the pictures, only 4 digits fit. Given the game's health scaling, there is a serious chance that you get your health points to 5 digits.
 
-The solution adopted was to drop the last digit of the health counter: so if you see "15" your health is actually between "150" and "159".
+The solution adopted was to drop the last digit of the health counter in all cases: so if you see "15" your health is actually between "150" and "159".
 
-Also for some reason, if your health is lower than 10 points, your health shows as 10.
+Also for some reason, if your health is lower than 10 points, your health shows as 0.
 
 ### Inconveniencing the player
 
@@ -150,49 +150,75 @@ In the great majority of turn-based RPGs, the options are shown in the following
 
 This is done in order, from most used (fight) to least used (escape).
 
-In "Hoshi wo miru hito", the menu order presents the ESP option as the first option, selected by default. This compounds with another problem exposed below.
+In "Hoshi wo miru hito", the menu order presents the ESP option as the first option, selected by default, so most of the time you will have to move your cursor to the "fight" option and select it. This compounds with another problem exposed below.
 
 #### Every menu is a committal
 
 There is no "back" option in any menu, this means that every menu is a committal and you can't back off from any decision, even accidental ones.
 
-That means that if you accidentally select the ESP option and you don't have enough energy/mana to execute any attack, you will end up losing a turn.
+That means that if you accidentally select the ESP option in battle and you don't have enough energy/mana to execute any attack, you will end up losing a turn.
+
+If you select the wrong ingredient to make a potion, you most probably will have to waste that ingredient.
 
 #### Password saves
-<!--
-Password saves + passwords get you back at the lower multiple of level 4 and money at a multiple of 255
--->
-\placeholder
 
-#### Each player has their own money stash
+In the NES/Famicom era, games that made use of battery-backed RAM modules to save game progress were rare. This means that the most used save method were "passwords": a jumble of letters (and eventually numbers and symbols) that needed to be written down precisely, or you wouldn't be able to restore your progress.
 
-\placeholder
+This game's passwords are **massive** and use a mix of katakana japanese characters and English alphabet, (while the rest of the game uses hiragana characters), which can be confusing.
+
+Also passwords don't really save your progress "as is": your levels are saved in multiples of 4 (so if you're level 6, you will restore your progress but be level 4) and money is saved in multiples of 255 (if you have 3000 gold, you will restore your progress but have $255 \cdot 11=2805$ gold)
+
+#### Each character has their own money stash
+
+In most RPGs that feature a party, there is a shared pool of money that is used for all expenses, this may not be "realistic" but it's a good enough approximation that has a major upside: it is practical.
+
+This game instead inconveniences the player further by giving each party member their own separated money stash. This is realistic and sometimes used in more modern RPGs, but it is not practical: every time you need to purchase potions used by the whole party (remember: there is no item management) you will have to switch characters or you'll find yourself running out of money.
 
 ### Bugs and glitches
 
 #### Moonwalking and save warping
 
-\placeholder
+This game doesn't interpret inputs as well as it should, so if you press the up and down buttons at the same time, you will find yourself "moonwalking".
+
+Besides the perceived coolness of such move, moonwalking will allow you to go through obstacles, and eventually corrupt the graphics of the tilemap (like loading the right side of the map on the left side of the screen).
+
+This is due to the game checking one direction for wall collisions, but moving the character in the opposite direction.
+
+Pressing up and down at the same time on a controller is not possible, due to the fact that the NES/Famicom D-Pad does not have separated buttons, but if you connect any accessory that allows you to connect up to 4 controllers, the game won't be able to distinguish between the inputs from Controller 1 and the ones Controller 3.
+
+A side effect of moonwalking, used in speedrunning is "Save Warping", you are able to manipulate the tilemap and your position via moonwalking, then save and *voilà* you will be warped to another point of the map.
 
 #### The final maze
 
-\placeholder
+The final maze is divided in multiple floors, and is the greatest proof of how rushed this game was.
 
-<!-- In the last maze, first floor, no walls or encounter tiles have been programmed, in the other floors, no walls were programmed -->
+In the first floor of this maze, which is supposed to be really hard, no encounter tiles have been programmed: this means you won't have to fight anything on this floor. Also no "wall collision" was programmed either, so you can go through the maze walls with the same ease you walk on the floor.
+
+In the other maze floors, encounter tiles were programmed, but still no wall collision was implemented, and since you can't encounter anything on walls, you can just minimize your encounter chance by taking a stroll inside the maze's walls.
 
 #### The endings
 
-<!--
-The endings (join, leave or fight: but the latter makes you lose automatically)
--->
-\placeholder
+This game, very ambitiously I shall say, features multiple endings. Towards the end you have to take a very hard decision:
 
+- Join your enemy and leave humanity and live peacefully
+- Leave the disputed territory and let the enemy live in peace
+- Fight to gain control over the disputed territory
+
+This can result in four different endings, which is really ambitious for a NES/Famicom game. If only the final boss fight was implemented...
+
+If you choose to fight, you will automatically lose the battle and the game will end with a "bad ending".
 
 ### Conclusions
 
-<!-- Product of a rushed release to go against Dragon Quest, seems to be made by only one programmer, now has a cult following -->
+"Hoshi wo miru hito" is a product of its situation, rumors state that this game was programmed by only one person, and rushed beyond belief so it could compete with *Dragon Quest* in some way. For the sake of fairness, I will assume that this game was made by a team.
 
-\placeholder
+The game has interesting ideas for its time: a cyberpunk theme, Extra-sensory powers, the character sprites "grow up" as they gain levels, the enemy sprites are artistically well-done, ... but the execution is littered with problems, obstacles to the player, bad design decisions and bugs.
+
+It seems that the developers were not familiar with the NES/Famicom architecture, game designers weren't really familiar with game design concecpts and play testers were completely nonexistant.
+
+Even though this game has earned the status of "legendary bad game" (not a literal translation of "Densetsu no Kusoge"), "Hoshi wo miru hito" has gained a cult following that is really devoted, to the point that a hacker took upon themselves the daunting task of patching the game and redraw the graphics, as well as rebalancing the weapons and fix the walking speed.
+
+There is even a "remake" called "STARGAZER" for windows.
 
 A good game: Dark Souls
 ------------------------
