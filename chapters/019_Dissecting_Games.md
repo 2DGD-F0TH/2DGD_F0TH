@@ -26,20 +26,22 @@ At the beginning of the game, you deal only 1 point of damage per attack, way le
 
 One of the characters, called "Misa", is the only character that is able to walk on damage tiles without getting hurt. There is no explanation on the reason behind it.
 
+This means that you have to die multiple times before finding out that only one of the four characters in your party is able to cross certain floor tiles, that may be no different than the other tiles.
+
 #### Can't run away from battles, but enemies can
 
 In this RPG you lack the option to run away from battles.
 
 Enemies instead have a chance to run away from battle when their health points drop below 25% of their original health. Talk about fairness.
 
-The "escape" option is hidden behind the "teleport" spell that you acquire after leveling up, although such spell is really weird in its way of working.
+The "escape" option is instead hidden behind the "teleport" spell that you acquire after leveling up, in addition such spell is really weird in its way of working.
 
-After selecting the "teleport spell", you select a team mate to target such spell to, the spell can either succeed or fail:
+After selecting the "teleport" spell, you select a team mate to target such spell to, the spell can either succeed or fail:
 
-- If the spell succeeds, the selected team mate escapes the battle, while the others continue fighting;
+- If the spell succeeds, the selected team member escapes the battle, while the others continue fighting for the turns that follow;
 - If the spell fails, the whole team gets ejected (read "escape") from the battle.
 
-This means that the teleport spell is more beneficial when it fails than when it succeeds.
+This means that the teleport spell is more beneficial (4 times faster) when it fails than when it succeeds.
 
 #### Statistics
 
@@ -49,7 +51,7 @@ For instance the "defense" statistic scales so poorly that you barely notice its
 
 In other games the "speed" statistic is tied to the order of attack (from the quickest to slowest character), but in this game the order is always "player's team" first, and "enemy team" after.
 
-In conclusion, in "Hoshi wo miru hito", defense is effectively useless and speed is not even implemented.
+In conclusion, in "Hoshi wo miru hito", defense is effectively useless while speed is not even implemented.
 
 ### Bad design choices
 
@@ -59,51 +61,57 @@ In the NES era, it was common thing to have the story written in the manual. To 
 
 In this game, you just get dropped in the middle of nowhere, with no direction whatsoever. And you don't have the "Legend Of Zelda" style of exploration, since any enemy can make minced meat of you.
 
+As a comparison, Dragon Quest, a game from the same period, had at least a hearing with the king to still introduce you into the story.
+
 #### The starting town is invisible
 
 The previous point is not really true, you actually start near a town, but such town is invisible.
 
 The game makes a really lousy attempt to justify the fact that the town is invisible, but such explanation falls absolutely flat.
 
-#### Jump Ability
+This just adds to the confusion of the story, as well as the lack of direction given to the player which can result in frustration and abandoning the game.
 
-At level 1, you acquire a "jump ability", that allows you to jump certain tiles, like rivers. The issue is that such tiles are not distinguishable in any way from all the other tiles.
+#### The Jump Ability
 
-So you will find yourself mashing your main character against various tiles, trying to find which ones you can skip with your jump ability, and probably die in the process by finding an unrecognizable damage tile.
+At level 1, you acquire a "jump ability", that allows you to jump over certain tiles, like rivers. The issue is that such tiles are not distinguishable in any way from all the other tiles.
+
+So you will find yourself mashing your main character's body against various tiles, trying to find which ones you can skip with your jump ability, and probably die in the process by finding an unrecognizable damage tile.
 
 #### Items are invisible
 
 All items in the game are invisible, including all plot-crucial and revive items. The only thing telling you that you found an item, is a "beep" sound when you collect them.
 
+This further piles up with the lack of direction the player faces in this game since the beginning. While it's understandable that the limited size (and therefore duration) of NES/Famicom games kind of forced the developers' hands into making harder games (to make them last longer), but introducing confusing of flat-out unfair mechanics is just bad design.
+
 #### Item management
 
-Usually when you buy a new weapon inside an RPG, you get to un-equip the old weapon and substitute it with the new one, then eventually sell the old one to recover some currency.
+Usually when you buy a new weapon inside an RPG, you get to un-equip the old weapon and substitute it with the new one, then eventually sell the old one to recover some currency. This gives the game's challenge new dimensions: item management and a simple economy sistem.
 
-Well, this game lacks any kind of item management: every time you buy a new weapon, the old one will be automatically discarded.
+Well, this game instead lacks any kind of item management: every time you buy a new weapon, the old one will be automatically discarded. You cannot sell old weapons, and the auto-discard removes the possibility of trying a new weapon and in case go back to the old one.
 
 And you cannot un-equip items and weapons.
 
 #### Buying Weapons makes you weaker
 
-When unarmed, at level 1, the fight option lets you deal a damage equal to a random number between 0 and 4 (bounds included), which is a real low amount of attack power.
+When unarmed, from level 1 onwards, the fight option lets you deal a damage equal to a random number between 0 and 4 (bounds included), which is a real low amount of attack power.
 
-When armed, the enemies defense values are taken into account instead, which means that most of the time, the boosted attack power doesn't overcome the enemies defense enough to make weapons an advantage.
+When armed, the enemies defense values are taken into account instead, which means that most of the time, the boosted attack power given by the weapon doesn't overcome the enemies defense enough to make using weapons an advantage.
 
 In few words: buying weapons makes you weaker.
 
-And you cannot un-equip weapons, so your savefile is probably ruined.
+And, as stated before, you cannot un-equip weapons, so your game session is probably ruined.
 
 #### Enemy Abilities
 
-Many enemies have an ability which is essentially a permanent, non curable in battle, paralysis + poison combo that will make your battle really hard. That means that you will lose all the turns of the character that has been hit with such status effect.
+Many enemies have an ability which is essentially a permanent, non curable in battle, paralysis + poison combo that will make your battle really hard and frustrating. That means that you will lose all the turns of the character that has been hit with such status effect.
 
-And in case all your party members are hit with that status effect, you don't game over immediately, instead you will keep losing turns while the enemies slowly chip away at your health until you eventually game over.
+And in case all your party members are hit with such status effect, you don't game over immediately, instead you will keep losing turns while the enemies slowly chip away at your party's health until you eventually game over.
 
 Such effect lasts outside of battle too, so every step you take the affected party members will lose health until you see a healer.
 
 #### You can soft lock yourself
 
-Keycards are usually a permanent item that can be reused after getting it.
+In the vast majority of games, keycards are usually a permanent item that can be reused after finding it. In other games instead doors opened with keycards stay open for the rest of the game.
 
 In this game, keycards have to be bought for quite the price, and disappear on use, and there is a serious chance that you softlock yourself somewhere if you don't buy enough.
 
@@ -133,7 +141,7 @@ In the battle UI, the health of your team members is shown on top of their pictu
 
 Given the size of the font and the size of the pictures, only 4 digits fit. Given the game's health scaling, there is a serious chance that you get your health points to 5 digits.
 
-The solution adopted was to drop the last digit of the health counter in all cases: so if you see "15" your health is actually between "150" and "159".
+The solution adopted was to drop the last digit of the health counter in all cases (even if your maximum health has less than 5 digits): so if you see "15" your health is actually between "150" and "159".
 
 Also for some reason, if your health is lower than 10 points, your health shows as 0.
 
@@ -162,7 +170,7 @@ If you select the wrong ingredient to make a potion, you most probably will have
 
 #### Password saves
 
-In the NES/Famicom era, games that made use of battery-backed RAM modules to save game progress were rare. This means that the most used save method were "passwords": a jumble of letters (and eventually numbers and symbols) that needed to be written down precisely, or you wouldn't be able to restore your progress.
+In the NES/Famicom era, games that made use of battery-backed RAM modules to save game progress were rare. This means that the most used save method was using "passwords": a jumble of letters (and eventually numbers and symbols) that needed to be written down precisely, or you wouldn't be able to restore your progress.
 
 This game's passwords are **massive** and use a mix of katakana japanese characters and English alphabet, (while the rest of the game uses hiragana characters), which can be confusing.
 
@@ -224,3 +232,5 @@ A good game: Dark Souls
 ------------------------
 
 \placeholder
+
+<!-- TODO: Analyze -->
