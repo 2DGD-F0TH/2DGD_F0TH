@@ -18,11 +18,22 @@ Here below, we can see, divided by section, some resources you can check out to 
 Collections of different topics
 --------------------------------
 
+<!-- TODO: Find better organization? Maybe By Topic and then by "price"? -->
+
 ### Free
+
+#### Books
 
 - **Apress-Open Ebooks:** <https://www.apress.com/it/apress-open/apressopen-titles>
 - **Daily "Free Learning" offer from PacktPub:** <https://www.packtpub.com/free-learning>
 - **"OpenBook" offers from O'Reilly:** <https://www.oreilly.com/openbook/>
+
+#### Videos
+
+- **freeCodeCamp.org's Channel:** <https://www.youtube.com/channel/UC8butISFwT-Wl7EV0hUK0BQ>
+
+#### Misc
+
 - **"Awesome lists":** <https://github.com/sindresorhus/awesome>
 
 Game Design
@@ -43,8 +54,6 @@ Game Development
 
 ### Free
 
-\placeholder
+#### Videos
 
-### Paid
-
-\placeholder
+- **OneLoneCoder's Channel:** <https://www.youtube.com/channel/UC-yuWVUplUJZvieEligKBkA>
