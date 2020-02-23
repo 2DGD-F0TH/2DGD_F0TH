@@ -15,6 +15,17 @@ This book assumes you already have some minimal knowledge of maths, including bu
 
 In this chapter we'll take a quick look (or if you already know them, a refresher) on the basic maths needed to make a 2D game.
 
+The modulo operator
+--------------------
+
+Very basic, but sometimes overlooked, function in mathematics is the "modulo" function (or "modulo operator"). Modulo is a function that takes 2 arguments, let's call them "a" and "b", and returns the remainder of the division represented by $a / b$.
+
+So we have examples like $mod(3,2)=1$ or $mod(4,5)=4$ and $mod(8,4)=0$.
+
+In most programming languages the modulo function is hidden behind the operator "%", which means that the function $mod(3,2)$ is represented with $3 \% 2$.
+
+The modulo operator is very useful when we need to loop an ever-growing value between two values (as will be shown in [infinitely scrolling backgrounds](#infiniback)).
+
 Vectors
 --------
 

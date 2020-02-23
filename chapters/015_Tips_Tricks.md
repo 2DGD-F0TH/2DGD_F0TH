@@ -56,7 +56,7 @@ I-Frames can be easily implemented via timers, in a way similar to the following
 
 ### Scrolling Backgrounds and Parallax Scrolling
 
-#### Infinitely Scrolling Backgrounds
+#### Infinitely Scrolling Backgrounds {#infiniback}
 
 When doing any kind of game that features a scrolling background, you should construct your art accordingly, allowing for enough variety to make the game interesting while avoiding creating huge artwork that weighs on the game's performance.
 
