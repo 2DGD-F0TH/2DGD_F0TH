@@ -2,6 +2,19 @@
 ---
 # Title of the book
 title: "2D Game Development: From Zero To Hero"
+# Keywords for PDF Metadata
+keywords:
+    - gamedev
+    - development
+    - algorithms
+    - 2d
+    - game-development
+    - programming-languages
+    - teaching
+    - game-programming
+    - games
+    - game-design
+    - programming
 # Inspiring Quote
 initquote: "Perseverance is the backbone of success."
 # Quote Author
