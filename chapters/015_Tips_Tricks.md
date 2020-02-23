@@ -72,7 +72,7 @@ To make an image appear like it's scrolling infinitely we need to move it back a
 
 For ease of explanation let's consider a screen scrolls towards the right, when we have reached a loop point, we reset the image position back to the position it was at the beginning and, since the image has been crafted to loop, the player won't notice that the background has been reset.
 
-\placeholder
+\code{tips_tricks/infiniscroll}{Example of an infinitely scrolling background implementation}
 
 #### Parallax Scrolling
 
