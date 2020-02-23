@@ -50,6 +50,10 @@ Checking if we're still colliding with an enemy after receiving damage is not a 
 
 Giving a brief period (usually between 0.5 and 2 seconds) of invincibility after being hit, allows the player to understand the situation, reorganize their strategy and take on the challenge at hand. After the invincibility period, the player will take damage again, patching the exploit we identified earlier.
 
+I-Frames can be easily implemented via timers, in a way similar to the following:
+
+\code{tips_tricks/iframes}{Example of I-Frames Implementation}
+
 ### Scrolling Backgrounds and Parallax Scrolling
 
 #### Infinitely Scrolling Backgrounds
