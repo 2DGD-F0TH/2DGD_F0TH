@@ -29,6 +29,14 @@ geometry:
     - "rmargin=2.5cm"
     - "tmargin=2.5cm"
     - "lmargin=2.5cm"
+# Colors For Links?
+colorlinks: True
+# Colors for internal links (to sections)
+linkcolor: "red"
+# Colors for external urls (websites, email)
+urlcolor: "blue"
+# Colors for citations
+citecolor: "green"
 # Programming Language to use for the listings
 # Languages available:
 # "" : pseudocode (No highlighting)
