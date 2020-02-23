@@ -11,3 +11,4 @@ In this appendix we'll take a look at a small list of websites that contain reso
 | <https://freesound.org/>                                  |            | \checkmark | \checkmark |            |
 | <https://opengameart.org/>                                | \checkmark | \checkmark | \checkmark |            |
 | <http://www.publicdomainfiles.com/>                       | \checkmark |            |            | \checkmark |
+| <http://ccmixter.org/>                                    |            | \checkmark |            |            |
