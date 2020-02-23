@@ -13,47 +13,57 @@ There are still countless questions remaining, which we can condense in one big 
 
 > "Where do I go from here?"
 
-Here below, we can see, divided by section, some resources you can check out to become a better game developer and designer.
+Here below, we can see, divided by category, some resources you can check out to become a better game developer and designer.
+
+But first, here's a small legend to distinguish paid products from free products.
+
+- **Free Product:** \freeprod
+- **Accepts donations or Partially Free:** \donprod
+- **Paid Product:** \paidprod
 
 Collections of different topics
 --------------------------------
 
-<!-- TODO: Find better organization? Maybe By Topic and then by "price"? -->
+### Books
 
-### Free
+- **Apress-Open Ebooks:** <https://www.apress.com/it/apress-open/apressopen-titles> \freeprod
+- **"OpenBook" offers from O'Reilly:** <https://www.oreilly.com/openbook/> \freeprod
 
-#### Books
+### Videos
 
-- **Apress-Open Ebooks:** <https://www.apress.com/it/apress-open/apressopen-titles>
-- **Daily "Free Learning" offer from PacktPub:** <https://www.packtpub.com/free-learning>
-- **"OpenBook" offers from O'Reilly:** <https://www.oreilly.com/openbook/>
+- **freeCodeCamp.org's YT:** <https://www.youtube.com/channel/UC8butISFwT-Wl7EV0hUK0BQ> \freeprod
 
-#### Videos
+### Multiple formats
 
-- **freeCodeCamp.org's Channel:** <https://www.youtube.com/channel/UC8butISFwT-Wl7EV0hUK0BQ>
+- **Daily "Free Learning" offer from PacktPub:** <https://www.packtpub.com/free-learning> \freeprod
+- **"Awesome lists":** <https://github.com/sindresorhus/awesome> \freeprod
 
-#### Misc
-
-- **"Awesome lists":** <https://github.com/sindresorhus/awesome>
-
-Game Design
+Pixel Art
 -----------
 
-### Free
+### Multiple Formats
 
-- **Pedro Medeiros's Patreon Page:** <https://www.patreon.com/saint11/>
-- **EpicSound's Sound Effects Tutorials:** <https://www.epicsound.com/sfx/>
+- **Pedro Medeiros's Patreon Page:** <https://www.patreon.com/saint11/> \donprod
 
-### Paid
 
-- **A theory of fun for game design** *(Raph Koster)*
-- **The Art of Game Design: A Book of Lenses** *(Jesse Schell)*
+Sound Design
+-------------
+
+### Multiple Formats
+
+- **EpicSound's Sound Effects Tutorials:** <https://www.epicsound.com/sfx/> \freeprod
+
+Game Design
+------------
+
+### Books
+
+- **A theory of fun for game design** *(Raph Koster)* \paidprod
+- **The Art of Game Design: A Book of Lenses** *(Jesse Schell)* \paidprod
 
 Game Development
 ----------------
 
-### Free
-
 #### Videos
 
-- **OneLoneCoder's Channel:** <https://www.youtube.com/channel/UC-yuWVUplUJZvieEligKBkA>
+- **OneLoneCoder's YT:** <https://www.youtube.com/channel/UC-yuWVUplUJZvieEligKBkA> \freeprod
