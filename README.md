@@ -24,11 +24,22 @@ If you are a programmer, game designer, game developer, artist, writer or game d
 
 I'm more than happy to take a look at pull requests, it would be a honor.
 
-Also remember to put yourself in the CONTRIBUTORS section!
+Also remember to put yourself in the CONTRIBUTORS section, just below!
 
 If instead there is something unclear about the book, or something you would like to see added, drop by the ISSUES section and leave a ticket there, I will try to fix it, or at least add a placeholder for the future.
 
 Thank you for reading.
+
+Contributing
+-------------
+
+Are you a game developer? A computer science student? Maybe you are an artist that wants to contribute by giving insight into pixel art or music creation?
+
+Welcome aboard! You can contribute to this project by **forking** it and adding your own knowledge to it, after that you can create a pull request. Please check the [Contributing](CONTRIBUTING.md) document.
+
+Are you an user that would like to see something added to the book? Feel free to open an issue!
+
+All contributions will be handled with maximum respect and in accordance to our [Code of Conduct](CODE_OF_CONDUCT.md).
 
 Getting the book
 -----------------
@@ -47,16 +58,6 @@ You can get a copy of the book by clicking on the "Download" button (usually on 
 
 You can get a copy of the book by clicking on the "Releases" button (usually between the "branches" and "contributors" buttons) and then select the latest tagged release.
 
-
-Contributing
--------------
-
-Are you a game developer? A computer science student? Maybe you are an artist that wants to contribute by giving insight into pixel art or music creation?
-
-Welcome aboard! You can contribute to this project by **forking** it and adding your own knowledge to it, after that you can create a pull request. Please check the [contributing](CONTRIBUTING.md) document.
-
-Are you an user that would like to see something added to the book? Feel free to open an issue!
-
 Building the book
 -------------------
 
@@ -68,7 +69,7 @@ To build the book you need the following software:
 
 Before building the book, you might want to set your programming language in the `metadata.yaml` file. The programming languages currently available are:
 
-- Pseudocode (which is the empty "" option)
+- Non-Highlighted Pseudocode (which is the empty "" option)
 - Pseudocode with basic Syntax Highlighting (proglang set to "pseudocode")
 - Python 3 (proglang set to "python")
 
