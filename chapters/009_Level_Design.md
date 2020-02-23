@@ -126,8 +126,6 @@ Some famous games, like DOOM and Dark Souls, use secrets-in-secrets to trick pla
 
 We can see how we hid a secret inside of another secret and used a piece of valuable (but not *too valuable*) treasure to make the player think they found the secret, while the real secret is hiding behind another fake wall.
 
-<!-- TODO: Again, dark souls with the double-secret wall with a chest to fool the player into thinking they found the secret, while the real secret is different -->
-
 \placeholder
 
 <!-- TODO: Talk about other level design tips -->
