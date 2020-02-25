@@ -3,6 +3,8 @@
 Introduction to Game Design
 ============================
 
+\epigraph{Why should you make games? Do it to give players joy from your unique perspective and to have fun expressing yourself. You win and the players win.}{\textit{Duane Alan Hahn}}
+
 In this section we will talk about platforms, input systems and game genres, in a quick fashion. This chapter will introduce you to the language and terms used in game design, this way the following chapters will be easier to comprehend.
 
 We will talk about the differences and challenges deriving from each decision and the basic way game genres work.
@@ -89,50 +91,61 @@ In this group we see gyroscopes, accelerometers (like the Nintendo Wii/Switch Jo
 Game Genres
 -----------
 
+Let's analyze some game genres to understand them better and introduce some technical language that may be useful in [writing a Game Design Document](#GDD).
+
+These genres are quite broad, so a videogame is usually a mix of these "classes" (like a strategy+simulation game).
+
 ### Shooters
 
-<!-- TODO: FPS, TPS, Top-down Shooters, anything with a projectile weapon, really -->
+Shooters are games that involve... shooting. They can include any kind of projectile (bullets, magic from a fairy, arrows from a hunter) and can be crossed with any other genre (creating sub-genres in a way), like 2D platformers.
 
-\placeholder
+Some of the most known shooter genres are:
+
+- **FPS** (first person shooters), 3D games where the game is shown from the point of view of the protagonist. This involves only seeing a HUD and the weapon, instead of the whole character;
+- **TPS** (third person shooters), 3D games where the game is shown from a behind-the-character perspective. Some show the whole protagonist, while others adopt an over-the-shoulder perspective;
+- **Top Down Shooters**, usually 2D games where you may be piloting a vehicle (space ship, plane, etc...) and shoot down waves of enemies, in this category we fit arena shooters (like Crimsonland) and space shooters (like Galaga);
+- **Side scroller shooters**, usually 2D games and platformers, where you control the protagonist and shoot enemies on a 2D plane, in this category we find games like Metal Slug.
 
 ### Strategy
 
-<!-- TODO: RTS, TBS, anything in the style of Civilization or Age of Empires -->
+Strategy games involve long-term planning and resource control, they are slower games, but can be really intense when played in competition with other players.
 
-\placeholder
+Some of the most popular strategy genres are:
+
+- **RTS** (real time strategy), where units are controlled in real time;
+- **Turn-based strategy**, where units and resources are managed in turns;
 
 ### Platformer
 
-<!-- TODO: Any mario game, practically -->
-
-\placeholder
+Platformer games involve difficult jumps and precise movement, they can both be 2D and 3D games. A prime example of platformer games is the Mario series: Mario 1,2,3 for 2D games and Mario 64 for 3D.
 
 ### RPG
 
-<!-- TODO: Role Playing Game, like LoZ or Final Fantasy, can be turn-based or action/adventure -->
+RPGs or "Role Playing Games" are games where you assume the role of a character in a fictional setting. In RPGs the world is well-defined and usually have some level or class system and quite advanced item management.
 
-\placeholder
+RPGs can be either action/adventure, with real-time actions, turn-based or hybrid, where the movement is done in real time but battles happen in turns. Some prime examples of RPG games are the Legend of Zelda series, as well as the Final Fantasy series.
 
 ### MMO
 
-<!-- TODO: Any game with a massively multiplayer component -->
-
-\placeholder
+MMO (Massively Multiplayer Online) is a term used for games that have a heavy multiplayer component via the internet. The most known MMO genre is MMORPGs (Massively Multiplayer Online Role-Playing Games).
 
 ### Simulation
 
-<!-- TODO: Farming, economy/business, social simulations like the sims, sim city or sim farm... -->
+Simulation games cover a huge variety of games that are create to "simulate reality", in more or less precise ways. Among simulation games we can find:
 
-\placeholder
+- **Racing Games:** sometimes more simulative others more arcade-like, racing games simulate the experience of driving a vehicle, more or less realistic (from modern cars to futuristic nitro-fueled bikes);
+- **Social Simulation:** simulating the interaction between characters, a pioneer on the genre is surely "The Sims";
+- **Farming simulation:** simulating the quietude and work in the fields;
+- **Business simulation:** like "game dev tycoon" or "rollercoaster tycoon";
+
+But there are also other kinds of simulations, like Sim City, where you manage an entire city.
 
 ### Rhythm Games
 
-<!--TODO: Based on how precisely you can follow the music beat, can be as simple as DDR or as complex as Crypt of the Necrodancer/Cadence of Hyrule -->
+Rhythm games are based on the concept of following a music beat as precisely as possible, this can be also used as a "mechanic" in other types of games.
 
-\placeholder
+Some examples of Rhythm games are "Dance-Dance Revolution" (also known as DDR), as well as more innovative games like "Crypt of the Necrodancer" (a mix between rhythm game and dungeon crawler).
 
 ### Visual novels
 
-<!--TODO: Choose-your-own-path graphical adventures that have "telling a story" as their main objective -->
-
-\placeholder
+Visual novels are graphical adventures whose primary objective is "telling a story", they can be linear or have a "choose your own path" component. They usually feature multiple endings and hand-crafted still images as artwork.
