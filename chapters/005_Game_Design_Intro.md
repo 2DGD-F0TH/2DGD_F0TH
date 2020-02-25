@@ -54,35 +54,37 @@ A drawback of the "web approach" is the limited performance that web browsers, W
 Input Devices
 -------------
 
+A game needs a way to be interacted with: this "way" is given by input devices. In this section we will take a brief look at the input devices available in a game.
+
 ### Mouse and Keyboard
 
-<!-- TODO: The usual combo for PC, good for FPS, Visual novels and anything that is "made for pc" -->
-
-\placeholder
+One of the most common input devices, most of the currently available frameworks and engine have support for input via mouse and keyboard. These input methods are great for visual novels, point and click adventures, FPS/TPS games and anything that is considered to be "made for PCs".
 
 ### Gamepad
 
-<!-- TODO: A classic, goes well for the majority of games, besides point-and-click -->
+One of the classics of input devices, works well with the majority of games: FPS/TPS games may need some aim assist mechanic in your game. Point and click adventures feel clunky with this input method.
 
-\placeholder
+As with Mouse and Keyboard, most of the currently available engines and frameworks support gamepads.
 
 ### Touch Screen
 
-<!-- TODO: Bad to simulate gamepads, good for point-and-click games, since it emulates mouse quite well, but is less precise -->
+With the coming of smartphones, touch screen is a new input device that we have to account for. Touch screens emulate computer mice well enough, although they lack precision.
 
-\placeholder
+The nature of being a mix between an input device and a screen brings a lot of new ways to experience a game if well done. Many times touch screens are used to simulate game pads: the lack of the tactile feedback given by buttons makes this simulation clunky and uncomfortable.
+
+Some of the most recent framework and engines support touch screens, although there's an additional layer of complexity given by the specific operating system of the smartphone you're building for.
 
 ### Dedicated Hardware
 
-<!-- TODO: Wheels, joysticks, guitar hero guitar, etc... -->
+Some games require dedicated hardware to work at their best, if at all. Guitars (guitar hero), wheels for racing games, joysticks for flying simulators, arcade sticks for arcade ports...
 
-\placeholder
+Dedicated hardware requires precise programming, and is usually an advanced topic. On PCs many "dedicated input devices" are recognized as "game pads" and use an "axis" and "buttons" abstraction that makes coding easier.
 
 ### Other Input Devices
 
-\placeholder
+A special mention is deserved for all the input devices that are "general purpose" (as in not "dedicated") but are still in a group outside what we saw so far.
 
-<!-- TODO: gyro, accelerometers, etc... -->
+In this group we see gyroscopes, accelerometers (like the Nintendo Wii/Switch JoyCons), sensors, IR as well as other exhotic hardware that can still be exploited in a videogame.
 
 Game Genres
 -----------
