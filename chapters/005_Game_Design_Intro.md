@@ -3,42 +3,53 @@
 Introduction to Game Design
 ============================
 
-<!--TODO: This section is dedicated to an introduction to platforms and their different challenges, as well as game genres -->
-\placeholder
+In this section we will talk about platforms, input systems and game genres, in a quick fashion. This chapter will introduce you to the language and terms used in game design, this way the following chapters will be easier to comprehend.
 
+We will talk about the differences and challenges deriving from each decision and the basic way game genres work.
 
 Platforms
 ----------
 
-\placeholder
+There are several different platforms a game can be developed for, and each one has its own advantages and drawbacks. Here we will discuss the most notable ones.
 
 ### Arcade
 
-\placeholder
-<!-- TODO: Arcade cabinets, still quite used, main objective is making you have fun and put quarters -->
+Arcade cabinets have been around for decades, and have still a huge part in the heart of gaming aficionados with classic series going on like "Metal Slug". The main objective of these machines is to make you have fun, while forcing you to put quarters in to continue your game.
+
+These cabinets' software is known to be very challenging, having some nice graphics and sound. Arcade games are usually presented in the form of an "arcade board", which is the equivalent of a fully-fledged console, with its own processing chips and read-only memory.
+
+In the case of arcades, the hardware is usually tailored to support the software; with some exceptions added later (like the Capcom Play System, also known as CPS), where the hardware is more stable between arcades, while the software changes.
 
 ### Console
 
-\placeholder
-<!-- TODO: Not as flexible as PCs but are gaming-dedicated hardware and have the advantage of being "stable" -->
+Consoles are a huge (if not the biggest) part in the video game industry. Their Hardware is dedicated solely to gaming (and some very marginal "multimedia functionalities") and it evolves in "generations": this means that each "generation" has a stable hardware programmers can study and exploit.
+
+This hardware stability is a double-edged sword: the hardware can be really hard to master at the beginning, resulting in some poor-performing games at the beginning of the generation, but when mastered the results are incredible. This feeds into a cycle that looks like the following:
+
+1. New Generation is introduced
+2. Initial confusion, with poor performance and graphics
+3. Hardware is mastered and games have great performance/graphics
+4. The games become "too big" for the current generation and a new generation must be introduced.
 
 ### Personal Computer
 
-<!-- TODO: Flexible, but you need to choose an API or framework, which can vary performance and beauty -->
+Personal Computers are another huge part of the video game industry. They are extremely flexible (being general-purpose machines) but have a huge drawback: their hardware is not the same from one unit to the other. This means that the programmer needs to use "abstraction layers" to be able to communicate with all the different hardware.
 
-\placeholder
+This can have performance costs, as well as forcing the programmer to add options to lower graphic settings, resolution and more.
+
+All of this just to be able to run on as many computers as possible. The upside is that when the computer is really powerful, you can get great performance and amazing quality, but that's a rare occasion.
 
 ### Mobile
 
-<!-- TODO: Portable, everyone has one but also can be challenging cause of how uncomfortable the touchscreen can be -->
+One of the most recent platforms game developers work on is right in your pocket: your smartphone.
 
-\placeholder
+Today's smartphones have enough power to run fully-fledged videogames, on the go. Sadly the touch screen can prove to be really uncomfortable to use, unless the game is specially tailored for it.
 
 ### Web
 
-<!-- TODO: Good place for massively multiplayer games (like Agar.io) but limited performance, needs to download the game before running, platform-independent -->
+Another platform that has seen a massive rise in recent times is the Web: with WebGL and WebAssembly, fully-fledged games (including 3D games) can run on our browser, allowing for massively-multiplayer experiences (like Agar.io) without the hassle of manual installation or making sure the game is compatible with your platform.
 
-\placeholder
+A drawback of the "web approach" is the limited performance that web browsers, WebGL and WebAssembly can give, as well as the need to download the game before being able to play (and sometimes you may need to re-download the game if you cleared your browser's cache).
 
 Input Devices
 -------------
