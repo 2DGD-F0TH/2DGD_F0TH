@@ -86,10 +86,72 @@ This algorithm, being based on a minimum-spanning tree algorithm, this algorithm
 
 Now let's see an example implementation of the Randomized Kruskal's Algorithm:
 
+<!-- TODO: Code -->
+
+\placeholder
+
+### Recursive Division Algorithm
+
+This algorithm is a bit similar to the recursive backtracker, but instead of focusing on passages, this algorithm focuses on walls: the idea is recursively divide the space available with a horizontal or vertical wall which has a "hole" placed randomly.
+
+This algorithm can give better results when the choice between "vertical" and "horizontal" walls is biased by the size of the sub-areas given by the last division.
+
+<!-- TODO: Detailed explanation -->
+
+\placeholder
+
+Although it's one of the most efficient algorithms out there (considering that it can easily be converted to a multi-threaded version), given its nature, this algorithm is naturally biased towards building long walls, which give the maze a very "rectangle-like" feeling.
+
+Let's see an example implementation of this algorithm:
+
+<!-- TODO: Code -->
+
+\placeholder
+
+### Binary Tree Algorithm
+
+This is another very efficient "passage carver" algorithm: for each cell we carve a passage that either leads upwards or leftwards (but never both).
+
+<!-- TODO: Detailed explanation -->
+
+\placeholder
+
+Given its deep roots into the computer science "Binary Tree" structure (where the root is the upper-left corner), this algorithm shows only half of the cell types available in mazes: there are no crossroads and all dead ends will either have a passage upwards or leftwards (but again, never both at the same time).
+
+Let's see an example implementation of the "binary tree algorithm":
+
+<!-- TODO: Code -->
+
+\placeholder
+
+### Eller's Algorithm
+
+Eller's algorithm is the most memory-efficient maze-generation algorithm known so far: you generate the maze row-by-row, without needing to memorize the whole maze in memory while creating it.
+
+<!-- TODO: Detailed explanation -->
+
+\placeholder
+
+Let's see a possible implementation of this strange, but interesting algorithm:
+
+<!-- TODO: Code -->
+
 \placeholder
 
 Noise Generation
 -----------------
+
+"Noise" can be a very important part of game development: we can create textures with it, or even use it to generate worlds. In this section we will take a look at how to create "noise" efficiently and with the desired result: from completely randomized to more "natural looking" noise we can use to create maps.
+
+### Randomized Noise (Static)
+
+The simplest kind of noise we can generate is also known as "static", for each unit of our elaboration (it can be a pixel, for instance), we generate a random number between two bounds.
+
+We can create some "TV-like" static with a few lines of code, like the following:
+
+<!-- TODO: Code -->
+
+\placeholder
 
 ### Perlin Noise
 
