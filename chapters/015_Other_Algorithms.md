@@ -92,15 +92,41 @@ Now let's see an example implementation of the Randomized Kruskal's Algorithm:
 
 ### Recursive Division Algorithm
 
-This algorithm is a bit similar to the recursive backtracker, but instead of focusing on passages, this algorithm focuses on walls: the idea is recursively divide the space available with a horizontal or vertical wall which has a "hole" placed randomly.
+This algorithm is a bit similar to the recursive backtracker, but instead of focusing on passages, this algorithm focuses on walls: the idea is recursively dividing the space available with a horizontal or vertical wall which has a "hole" placed randomly.
 
-This algorithm can give better results when the choice between "vertical" and "horizontal" walls is biased by the size of the sub-areas given by the last division.
+This algorithm can give better results when the choice between "vertical" and "horizontal" walls is biased by the sizes of the sub-areas given by the last division.
 
-<!-- TODO: Detailed explanation -->
+Let's see how the algorithm works.
 
-\placeholder
+Starting from an empty maze, with no walls, we decide the direction (horizontal or vertical) of our first wall and add it, in a random position, making sure that there's an opening in such wall.
+
+![How the Recursive Division Algorithm Works (1/6)](./images/algorithms/recursive_division_1.png){width=30%}
+
+We select one of the two sub-areas we find, recursively and we add another wall in a random position and with a random direction.
+
+![How the Recursive Division Algorithm Works (2/6)](./images/algorithms/recursive_division_2.png){width=30%}
+
+We select one of the two sub-sub-area, and add another wall, with a random position and direction.
+
+![How the Recursive Division Algorithm Works (3/6)](./images/algorithms/recursive_division_3.png){width=30%}
+
+We keep on diving each sub-area recursively, adding walls, until the sub-area had one of its 2 dimensions (horizontal or vertial) equal to 1 cell.
+
+![How the Recursive Division Algorithm Works (4/6)](./images/algorithms/recursive_division_4.png){width=30%}
+
+When that happens, we backtrack to one of the previous sub-sections and continue.
+
+![How the Recursive Division Algorithm Works (5/6)](./images/algorithms/recursive_division_5.png){width=30%}
+
+This keeps going until the maze is complete.
+
+![How the Recursive Division Algorithm Works (6/6)](./images/algorithms/recursive_division_6.png){width=30%}
 
 Although it's one of the most efficient algorithms out there (considering that it can easily be converted to a multi-threaded version), given its nature, this algorithm is naturally biased towards building long walls, which give the maze a very "rectangle-like" feeling.
+
+This bias is more noticeable with bigger mazes, like the following one.
+
+![The bias of Recursive Division Algorithm](./images/algorithms/recursive_division_maze.png){width=60%}
 
 Let's see an example implementation of this algorithm:
 
