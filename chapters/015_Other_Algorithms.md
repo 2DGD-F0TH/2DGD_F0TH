@@ -199,11 +199,13 @@ Noise Generation
 
 The simplest kind of noise we can generate is also known as "static", for each unit of our elaboration (it can be a pixel, for instance), we generate a random number between two bounds.
 
+Here is an example of random noise:
+
+![Example of Random Noise](./images/algorithms/random_noise.png)
+
 We can create some "TV-like" static with a few lines of code, like the following:
 
-<!-- TODO: Code -->
-
-\placeholder
+\code{algorithms/randomized_noise}{Example implementation of randomized noise}
 
 ### Perlin Noise
 
