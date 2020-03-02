@@ -42,6 +42,15 @@ Blender is an open-source surface modeling program, used in the movie industry a
 
 <https://www.blender.org/>
 
+Shaders
+-------
+
+### SHADERed
+
+SHADERed is a fully-featured IDE for coding GLSL and HLSL shaders, it supports debugging as well as live preview of the shader you're coding. It's cross-platform and open source.
+
+<https://shadered.org/>
+
 Sounds and Music
 ------------------
 
