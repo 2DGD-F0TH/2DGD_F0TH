@@ -32,6 +32,7 @@ Collections of different topics
 ### Videos
 
 - **freeCodeCamp.org's YT:** <https://www.youtube.com/channel/UC8butISFwT-Wl7EV0hUK0BQ> \freeprod
+- **3DBuzz:** <https://www.3dbuzz.com> \freeprod
 
 ### Multiple formats
 
