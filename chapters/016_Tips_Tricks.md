@@ -293,3 +293,28 @@ After creating the tiles and tweening them in place, it will be necessary to che
 \placeholder
 
 <!-- TODO: Make the tiles fall by instantly setting the tile IDs in the matrix but tween the graphics -->
+
+Cutscenes
+---------
+
+\placeholder
+
+<!-- TODO -->
+
+### Video Files vs. Scripted Cutscenes
+
+\placeholder
+
+<!-- TODO -->
+
+### Videos
+
+\placeholder
+
+<!-- TODO -->
+
+### Scripted Cutscenes
+
+\placeholder
+
+<!-- TODO -->
