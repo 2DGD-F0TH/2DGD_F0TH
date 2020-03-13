@@ -123,6 +123,64 @@ Given an input of `20` elements, an algorithm that executes in O(2^n^) will exec
 A primer on calculating the order of your algorithms
 -----------------------------------------------------
 
+### Some basics
+
+When you estimate an algorithm, you usually want to calculate how it functions "in the worst case", which usually means that all loops get to their end (of the list or the counter) and everything takes the longest time possible.
+
+Let's start with an example:
+
+\code{computer_science/bigo/bigo1}{A simple O(1) algorithm}
+
+This is a simple assignment operation, we are considering this instantaneous. So its complexity is $O(1)$.
+
+Now let's see another algorithm:
+
+\code{computer_science/bigo/bigo2}{A simple o(n) algorithm}
+
+In this case we are iterating through a list, we can see that as the list grows, the number of times we print an element on our screen grows too. So if the list is $n$ items long, we will have $n$ calls to the output statement. This is an $O(n)$ complexity algorithm.
+
+Now let's take something we already saw and analyze it: the bubble sort algorithm:
+
+\code{computer_science/bubblesort}{The bubble sort algorithm, an O(n²) algorithm}
+
+This will require a small effort on our part: we can see that there are 2 nested loops in this code. What's our worst case? The answer is "The items are in the reverse order".
+
+When the items are in the reverse order, we will need to loop through the whole list to get the biggest item at the end of the list, then another time to get the second-biggest item on the second-to-last place on the list... and so on.
+
+So every time we bring an item to its place, we iterate through all the list once. This happens for each item.
+
+So, in a list of length "n", we bring the biggest item to its place "n times" and each "time" requires scanning "n" elements: the result is $n \cdot n = n^2$.
+
+The algorithm has time complexity of $O(n^2)$.
+
+### What happens when we have more than one big-O?
+
+There are times when we have code that looks like the following:
+
+\code{computer_science/bigo/bigo3}{A more complex algorithm to estimate}
+
+As we can see the first part is the bubble sort algorithm, followed by iterating through the (now ordered) list, to print its values.
+
+We can calculate the total estimate as $O(n^2) + O(n)$ and that would be absolutely correct, but as the list grows, the growth rate of $O(n)$ is very minor if compared to $O(n^2)$, as can be seen from the following figure:
+
+![O(n) growth rate, compared to O(n²)](./images/computer_science/o_n_vs_o_n2.pdf){width=60%}
+
+### What do we do with recursive algorithms?
+
+When recursive algorithms are involved, things get a lot more complex, and they involve building recursion trees and sometimes you'll have to use the so-called "master theorem for divide-and-conquer recurrences".
+
+Such methods are outside the scope of this book as of now.
+
+### How do big-O estimates compare to each other?
+
+Here we can see how big-O estimates compare to each other, graphically and how important it is to write not-inefficient algorithms.
+
+![Big-O Estimates, plotted](./images/computer_science/big_o_plot.pdf){width=60%}
+
+There is a very specific reason why the $O(2^n)$ estimate is missing from the previous plot: we wouldn't be able to see anything worthwile if it was included, as seen from the following plot:
+
+![How O(2^n^) overpowers lower complexities](./images/computer_science/big_o_plot2.pdf){width=60%}
+
 \placeholder
 
 <!-- TODO: Teach people how to estimate their algorithms -->
