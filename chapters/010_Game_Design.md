@@ -7,7 +7,7 @@ Game Design
 
 Game design is a huge topic, in this section we will just dip our toes into the argument, with some tips and tricks that can make the difference.
 
-In this section we will talk about level design tips, tricks and common pitfalls to avoid. We will talk about tutorials, entertaining the player and ways to reward them better.
+In this section we will also talk about level design tips, tricks and common pitfalls to avoid. We will talk about tutorials, entertaining the player and ways to reward them better.
 
 Tutorials
 -----------
@@ -82,11 +82,11 @@ Putting a very powerful enemy in front of some treasure (for instance currency u
 
 Your magic beam won't deal enough damage to the enemy to kill it before such enemy takes your life, but a stalactite on their head will do the trick, and the reward for such lateral thinking will be a heap of coins (or gems, or whatever currency you invented).
 
-![Example of how to induce lateral thinking with environmental damage [^chests] [^icetiles] [^undeadfossil]](./images/level_design/lateral_1.png){width=40%}
+![Example of how to induce lateral thinking with environmental damage [^chests] [^icetiles] [^undeadfossil]](./images/game_design/lateral_1.png){width=40%}
 
 Giving tips to the player by breaking the fourth wall can be another idea, a rock or a patch of dead grass conveniently shaped like an arrow could point towards a secret room that has a fake wall.
 
-![Example of how to induce lateral thinking by "breaking the fourth wall" [^jawbreaker]](./images/level_design/lateral_2.png){width=40%}
+![Example of how to induce lateral thinking by "breaking the fourth wall" [^jawbreaker]](./images/game_design/lateral_2.png){width=40%}
 
 This last tip should be done very subtly, so not to ruin the immersion. Unless your game takes advantage from these kind of things (for instance games based on comedy).
 
@@ -124,7 +124,7 @@ Sometimes it can be fun, for both the game designer and the player, to play a bi
 
 Some famous games, like DOOM and Dark Souls, use secrets-in-secrets to trick players into thinking they found something valuable, while hiding something way more important. Let's see the example below.
 
-![Example of secret-in-secret](./images/level_design/secret_in_secret.png){width=50%}
+![Example of secret-in-secret](./images/game_design/secret_in_secret.png){width=50%}
 
 We can see how we hid a secret inside of another secret and used a piece of valuable (but not *too valuable*) treasure to make the player think they found the secret, while the real secret is hiding behind another fake wall.
 
@@ -159,6 +159,6 @@ This "telegraphing" technique, allows for that "impending danger" feel, while st
 
 Telegraphing is a nice way to suggest the player how to avoid screen-filling attacks (which would give the highest amount of "impending danger").
 
-![Example of a telegraphed screen-filling attack in a shooter](./images/tips_tricks/telegraphing.png){width=60%}
+![Example of a telegraphed screen-filling attack in a shooter](./images/game_design/telegraphing.png){width=60%}
 
 Another example of telegraphing was used in the Bioshock series: the first shots of an enemy against you always miss, that is used to avoid "out of the blue" situation, which can be seen as a form of "telegraphing" both the presence and position of enemies.

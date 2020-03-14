@@ -26,7 +26,7 @@ Giving a brief period (usually between 0.5 and 2 seconds) of invincibility after
 
 I-Frames can be easily implemented via timers, in a way similar to the following:
 
-\code{tips_tricks/iframes}{Example of I-Frames Implementation}
+\code{developing_mechanics/iframes}{Example of I-Frames Implementation}
 
 ### Scrolling Backgrounds and Parallax Scrolling
 
@@ -40,13 +40,13 @@ Loop points are points where the image repeats itself, thus allowing us to creat
 
 The image below shows a background and its loop points.
 
-![Demonstration of an image with loop points](./images/tips_tricks/Loop_Points.png){width=40%}
+![Demonstration of an image with loop points](./images/developing_mechanics/Loop_Points.png){width=40%}
 
 To make an image appear like it's scrolling infinitely we need to move it back and forth between loop points when the screen passes over them.
 
 For ease of explanation let's consider a screen scrolls towards the right, when we have reached a loop point, we reset the image position back to the position it was at the beginning and, since the image has been crafted to loop, the player won't notice that the background has been reset.
 
-\code{tips_tricks/infiniscroll}{Example of an infinitely scrolling background implementation}
+\code{developing_mechanics/infiniscroll}{Example of an infinitely scrolling background implementation}
 
 #### Parallax Scrolling
 
@@ -103,21 +103,21 @@ This is usually done before the player movement is used to update the character'
 
 A useful precaution to avoid the [bullet through paper](#bulletthroughpaper) problem when you are working with long falls: put a limit at the fall velocity (kind of like air friction limits an object's fall velocity) of your objects. By applying a hard limit to the velocity, your gravity will be realistic but won't break your simulation.
 
-\code{tips_tricks/gravity}{Code for applying gravity to an object}
+\code{developing_mechanics/gravity}{Code for applying gravity to an object}
 
 ### Avoiding "Floaty Jumps"
 
 The previous trick shows a physics-accurate jumping: if we plot the height against time, we would get something that represents the curve of jump like the following:
 
-![Plotting a physics-accurate jump](./images/tips_tricks/physics_accurate_jump_plot.png){width=50%}
+![Plotting a physics-accurate jump](./images/developing_mechanics/physics_accurate_jump_plot.png){width=50%}
 
 Although this can give the sensation that the character we're controlling is "floaty", which is not fun. In this case it's a better idea to enhance gravity when falling, to give the character some more "weight", which would be represented, more or less, by the following curve:
 
-![Plotting a jump with enhanced gravity](./images/tips_tricks/enhanced_gravity_jump_plot.png){width=50%}
+![Plotting a jump with enhanced gravity](./images/developing_mechanics/enhanced_gravity_jump_plot.png){width=50%}
 
 This can be obtained with few simple lines of code, not very different from the gravity example of earlier:
 
-\code{tips_tricks/enhanced_gravity_jump}{Code for jump with enhanced gravity while falling}
+\code{developing_mechanics/enhanced_gravity_jump}{Code for jump with enhanced gravity while falling}
 
 In this example we are assuming that the framework used uses the screen coordinate system, and jumping brings the player from bottom towards the top of the screen. If you want different behaviour (like gravity inversion in puzzle games), something a tiny bit more involved may be in order.
 
@@ -145,35 +145,35 @@ A nice trick used mostly in 2D platformers to allow for smoother gameplay is "ju
 
 Normally when a character is mid-air, the jump button does nothing, in code:
 
-\code{tips_tricks/jump_buffering_nobuffer}{Code for jumping without buffering}
+\code{developing_mechanics/jump_buffering_nobuffer}{Code for jumping without buffering}
 
 Jump Buffering consists in allowing the player to "buffer" a jump slightly before the character lands, making the controls a bit less stiff and the gameplay more fluid.
 
-![Example of how jump buffering would work](./images/tips_tricks/jump_buffering.png){width=60%}
+![Example of how jump buffering would work](./images/developing_mechanics/jump_buffering.png){width=60%}
 
 Jump buffering usually is put into practice using a timer, in a fashion similar to the following:
 
-\code{tips_tricks/jump_buffering_buffer}{Jump buffering example}
+\code{developing_mechanics/jump_buffering_buffer}{Jump buffering example}
 
 ### Coyote Time
 
 Coyote time (also known as "edge tolerance") is a technique used to allow a player to jump a few frames after they fall off a platform, allowing for a more fluid gameplay.
 
-![Example of how coyote time would work](./images/tips_tricks/coyote_time.png){width=60%}
+![Example of how coyote time would work](./images/developing_mechanics/coyote_time.png){width=60%}
 
 The trick is starting a countdown as soon as the player leaves a platform without jumping, then if the player presses the jump button while that time is still going, they will perform the jump action, like they still were on a platform.
 
-\code{tips_tricks/coyote_time}{Coyote time code example}
+\code{developing_mechanics/coyote_time}{Coyote time code example}
 
 ### Timed Jumps
 
 A way to extend the mobility and challenge of a 2D platformer game is allowing players to jump higher the more the jump button is pressed: this allows the character to perform low and high jumps without much effort, making timing the jump button press a variable that adds to the challenge of a game.
 
-![Example of how timed jumps would work](./images/tips_tricks/timed_jumps.png){width=60%}
+![Example of how timed jumps would work](./images/developing_mechanics/timed_jumps.png){width=60%}
 
 To work well, timed jumps need to be implemented by tracking the jump button's `onPress` and `onRelease` events. When the jump button has just been pressed, the character's `Y` velocity will be set, as soon as the button is released, such velocity will be capped, shortening the jump height.
 
-\code{tips_tricks/timed_jumps}{Example code of how timed jumps work}
+\code{developing_mechanics/timed_jumps}{Example code of how timed jumps work}
 
 Top-view RPG-Like Games
 -----------------------
@@ -202,7 +202,7 @@ When it comes to a match-x game, a good data structure for the play field is a m
 
 In most programming languages, a matrix is saved as an "array of arrays", where you have each element of an array representing a row, and each element of a row is a tile.
 
-![Example of a matrix, saved as "array of arrays"](./images/tips_tricks/array_arrays.pdf){width=60%}
+![Example of a matrix, saved as "array of arrays"](./images/developing_mechanics/array_arrays.pdf){width=60%}
 
 This is a really nice way to interpret a grid, but at the same time it can open the door to some pitfalls if you're not careful.
 
@@ -226,7 +226,7 @@ Similarly we can do the same algorithm for vertical matches, by running through 
 
 Here is a pseudo-code example:
 
-\code{tips_tricks/match3_findhorizontalmatches}{Finding horizontal matches in a match-3 game}
+\code{developing_mechanics/match3_findhorizontalmatches}{Finding horizontal matches in a match-3 game}
 
 Let's talk a second about the last rows in the algorithm: they are specifically tailored to address a corner case that happens when there is a match that ends on the right border of the screen.
 
@@ -234,7 +234,7 @@ If such code was not there, the match number would grow by one, then the for loo
 
 Similarly, we can make an algorithm that allows for vertical matches to be memorized for later removal:
 
-\code{tips_tricks/match3_findverticalmatches}{Finding vertical matches in a match-3 game}
+\code{developing_mechanics/match3_findverticalmatches}{Finding vertical matches in a match-3 game}
 
 Both algorithms run in $O(n)$, where "n" is the number of tiles on the screen.
 
@@ -246,7 +246,7 @@ We could, but that would open the door to a pitfall that could be tough to manag
 
 Let's see the image to understand better:
 
-![What happens when deleting a match immediately](./images/tips_tricks/immediate_deletion.pdf){width=60%}
+![What happens when deleting a match immediately](./images/developing_mechanics/immediate_deletion.pdf){width=60%}
 
 As visible from the first image, there is a T-shaped match involving cells 0,1,2 of row 0, cell 1 of row 1 and cell 1 of row 2.
 
