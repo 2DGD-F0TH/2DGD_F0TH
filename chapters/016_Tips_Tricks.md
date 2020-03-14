@@ -118,6 +118,12 @@ This is an extreme edge case, but it could happen. Even if it is a minor annoyan
 
 <!-- TODO: A shape that cuts out a sprite, pixel by pixel, allowing for certain effects like "going through a door" -->
 
+### Loading screens
+
+\placeholder
+
+<!-- TODO: Introduction on how to make multi-threaded loading screens -->
+
 2D Platformers
 ---------------
 

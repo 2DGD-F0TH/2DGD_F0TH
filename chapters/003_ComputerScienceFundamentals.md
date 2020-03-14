@@ -1169,3 +1169,39 @@ Circular Queues can be implemented via linked lists or cleverly indexed arrays, 
 ![Array and linked list implementation of a circular queue](./images/computer_science/circular_queue_implementation.png){width=50%}
 
 \placeholder
+
+Introduction to MultiTasking
+------------------------------
+
+\placeholder
+
+<!-- TODO: What is Multitasking, pre-emption etc... -->
+
+### Co-Routines
+
+\placeholder
+
+<!-- TODO: A lean introduction to the concept of co-routines -->
+
+Introduction to MultiThreading
+------------------------------
+
+\placeholder
+
+### What is MultiThreading
+
+\placeholder
+
+<!-- TODO: Talk about multithreading from a bird's eye perspective -->
+
+### Thread Safety
+
+\placeholder
+
+<!-- TODO: Talk about "Thread Safety", "Critical Regions" and "Race Conditions" -->
+
+### Implementation
+
+\placeholder
+
+<!-- TODO: How to implement multi-threading via mutex, immutable objects and atomic operations -->
