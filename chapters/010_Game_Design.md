@@ -1,9 +1,11 @@
 \null\clearpage
 
-Level Design
+Game Design
 =============
 
 \epigraph{There are three responses to a piece of design - yes, no, and WOW! Wow is the one to aim for.}{\textit{Milton Glaser}}
+
+Game design is a huge topic, in this section we will just dip our toes into the argument, with some tips and tricks that can make the difference.
 
 In this section we will talk about level design tips, tricks and common pitfalls to avoid. We will talk about tutorials, entertaining the player and ways to reward them better.
 
@@ -55,7 +57,7 @@ Try something like:
 > Check the move list in the pause menu
 
 Consolidating and refreshing the game mechanics
-------------------------------
+------------------------------------------------
 
 ### Remind the player about the mechanics they learned
 
@@ -129,3 +131,34 @@ We can see how we hid a secret inside of another secret and used a piece of valu
 \placeholder
 
 <!-- TODO: Talk about other level design tips -->
+
+Tips and Tricks
+----------------
+
+### Make that last Health Point count
+
+Players love that rush of adrenaline they get when they escape a difficult situation with just one health point. That "just barely survived" situation can be "helped" by the game itself: some programmers decide to program the last HP in a special way.
+
+Some prefer giving the last health point a value that is higher than the other health points (kind of like a "hidden health reserve"), others instead prefer giving a brief period of invincibility when that last "1HP" threshold is hit.
+
+These small devices allow you to give players more of those "near death" experiences that can give players that confidence boost to keep them playing through a hard stage, while at the same time, reducing the chance that they will rage-quit.
+
+### Avoiding a decision can be a decision itself
+
+An interesting way to make the characters from a game seem more real, is registering the "lack of response" or "lack of action" in the game's AI or dialogue tree.
+
+This means that "ignoring" has consequences, and inaction is in and itself an action of "doing nothing" which should be accounted for, just like ignoring someone in real life can have serious consequence or where someone may prefer to do nothing instead of taking one of many bad decisions.
+
+This trick is used in the game "Firewatch", where not responding to a dialogue prompt is a noted decision.
+
+### Telegraphing
+
+Players hate the feeling of injustice that pops out when a boss pulls out a surprise attack, that's why in many games where precise defense movement is required bosses give out signals on the nature of their attack.
+
+This "telegraphing" technique, allows for that "impending danger" feel, while still giving the player the opportunity to take action to counteract such attack.
+
+Telegraphing is a nice way to suggest the player how to avoid screen-filling attacks (which would give the highest amount of "impending danger").
+
+![Example of a telegraphed screen-filling attack in a shooter](./images/tips_tricks/telegraphing.png){width=60%}
+
+Another example of telegraphing was used in the Bioshock series: the first shots of an enemy against you always miss, that is used to avoid "out of the blue" situation, which can be seen as a form of "telegraphing" both the presence and position of enemies.

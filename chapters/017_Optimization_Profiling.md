@@ -30,6 +30,14 @@ This can happen also when passing parameters to a function (in this case you say
 
 Using things like "references", "constant references" and "pointers" can be really precious in making your game leaner memory-wise, as well as saving you all the CPU cycles wasted in memory copying.
 
+### Optimizing Drawing
+
+This heavily depends on the type of framework and engine you are using, but a good rule of thumb is using the lowest amount of calls to the draw routines as possible: drawing something entails a great amount of context switching and algorithms, so you should do it only when necessary.
+
+If your engine/framework supports it, you should use sprite atlases/batches, as well as other interesting structures like Vertex Arrays (used in SFML).
+
+Another way to optimize your drawing routine is avoiding to change textures often: changing textures can result in a lot of context changes, so you should use only one texture (in the form of a [Sprite Sheet](#SpriteSheets)) and draw only a part of it, changing the coordinates of the rectangle that gets drawn. This way you'll save the PC a lot of work.
+
 \placeholder
 
 <!-- TODO -->

@@ -1,40 +1,14 @@
 \null\clearpage
 
-Game Development Tips and Tricks
-==========================================
+Developing Game Mechanics
+==========================
 
 \epigraph{Fools say that they learn by experience. I prefer to profit by others' experience.}{\textit{Otto von Bismarck}}
 
+In this section we will take a look at how to develop some known game mechanics, with pieces of code to aid you.
+
 General Purpose
 ---------------
-
-### Make that last Health Point count
-
-Players love that rush of adrenaline they get when they escape a difficult situation with just one health point. That "just barely survived" situation can be "helped" by the game itself: some programmers decide to program the last HP in a special way.
-
-Some prefer giving the last health point a value that is higher than the other health points (kind of like a "hidden health reserve"), others instead prefer giving a brief period of invincibility when that last "1HP" threshold is hit.
-
-These small devices allow you to give players more of those "near death" experiences that can give players that confidence boost to keep them playing through a hard stage, while at the same time, reducing the chance that they will rage-quit.
-
-### Avoiding a decision can be a decision itself
-
-An interesting way to make the characters from a game seem more real, is registering the "lack of response" or "lack of action" in the game's AI or dialogue tree.
-
-This means that "ignoring" has consequences, and inaction is in and itself an action of "doing nothing" which should be accounted for, just like ignoring someone in real life can have serious consequence or where someone may prefer to do nothing instead of taking one of many bad decisions.
-
-This trick is used in the game "Firewatch", where not responding to a dialogue prompt is a noted decision.
-
-### Telegraphing
-
-Players hate the feeling of injustice that pops out when a boss pulls out a surprise attack, that's why in many games where precise defense movement is required bosses give out signals on the nature of their attack.
-
-This "telegraphing" technique, allows for that "impending danger" feel, while still giving the player the opportunity to take action to counteract such attack.
-
-Telegraphing is a nice way to suggest the player how to avoid screen-filling attacks (which would give the highest amount of "impending danger").
-
-![Example of a telegraphed screen-filling attack in a shooter](./images/tips_tricks/telegraphing.png){width=60%}
-
-Another example of telegraphing was used in the Bioshock series: the first shots of an enemy against you always miss, that is used to avoid "out of the blue" situation, which can be seen as a form of "telegraphing" both the presence and position of enemies.
 
 ### I-Frames
 
@@ -93,14 +67,6 @@ As stated earlier, a third optional background can be added to deepen the parall
 - **Between the first moving background and the fixed background**: in this case, the optional background will have to move **slower** than the first moving background.
 
 The backgrounds should move all in the same direction, depending on the direction our character is moving: if our character is moving right, our moving backgrounds should move left.
-
-### Optimizing Drawing
-
-This heavily depends on the type of framework and engine you are using, but a good rule of thumb is using the lowest amount of calls to the draw routines as possible: drawing something entails a great amount of context switching and algorithms, so you should do it only when necessary.
-
-If your engine/framework supports it, you should use sprite atlases/batches, as well as other interesting structures like Vertex Arrays (used in SFML).
-
-Another way to optimize your drawing routine is avoiding to change textures often: changing textures can result in a lot of context changes, so you should use only one texture (in the form of a [Sprite Sheet](#SpriteSheets)) and draw only a part of it, changing the coordinates of the rectangle that gets drawn. This way you'll save the PC a lot of work.
 
 ### Avoid interactions between different input systems
 
