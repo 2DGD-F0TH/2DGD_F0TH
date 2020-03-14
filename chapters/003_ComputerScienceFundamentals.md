@@ -1173,9 +1173,9 @@ Circular Queues can be implemented via linked lists or cleverly indexed arrays, 
 Introduction to MultiTasking
 ------------------------------
 
-\placeholder
+When it comes to humans, we are used to have everything at our disposal immediately, but when it comes to computers, each processing unit (CPU) is usually able to perform only one task at a time.
 
-<!-- TODO: What is Multitasking, pre-emption etc... -->
+To allow for multi-tasking (doing many activities at once), the CPU switches between tasks at high speeds, giving us the illusion that many things are happening at once. There are many methods to ensure multi-tasking without *process starvation*~[g]~, the most used is **pre-emption** where there are forced context switches between processes, to avoid one hogging the CPU.
 
 ### Co-Routines
 

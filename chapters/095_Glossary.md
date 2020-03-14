@@ -51,6 +51,13 @@ M
 Malware
 : Short for "malicious software", it's a "catchall term" for viruses, trojan horses and any kind of software that is programmed to behave maliciously. Such software can steal information (passwords, key presses, habits, etc...) or flat out try to make your computer unusable (deleting system files, encrypting your documents and asking for a ransom, etc...)
 
+
+P
+--
+
+Process Starvation
+: See *starvation*
+
 R
 --
 
@@ -65,6 +72,9 @@ S
 
 Stack Overflow
 : A stack overflow is a situation where too much data is pushed into a data structure called a "stack". One of the most common cases of "stack overflow" happens during recursion: when a function is called all the current work variables are saved and pushed into a stack data structure in memory, along with a "return address" that will allow us to come back to this point of the program. When a recursion is too deep (the recursive function calls itself too many times), the call stack gets filled up and it's not able to continue the execution, leading to an aborted operation.
+
+Starvation
+: Also known as "process starvation", it's a phenomenon where a certain process (or group of processes) has a lower priority than others, and is not able to access resources (like the CPU) because it's always "overtaken" by higher priority tasks. This leads to the process itself never being executed. When this happens, a process is labeled as "in starvation".
 
 Static Typing
 : Languages characterized by *static typing* are the ones where the type of a certain variable (integer, string, class, ...) is known at compile time.
