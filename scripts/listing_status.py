@@ -29,9 +29,10 @@ def main() -> None:
                 for item in pseudocode_files
                 if item not in file_list
             }
-            print("Missing Listings: {}".format(language))
-            for f in files:
-                print(f)
+            if files:
+                print("Missing Listings: {}".format(language))
+                for f in files:
+                    print(f)
 
 
 if __name__ == "__main__":
