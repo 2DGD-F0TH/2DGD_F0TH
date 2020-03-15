@@ -135,7 +135,9 @@ We can see how we hid a secret inside of another secret and used a piece of valu
 Tips and Tricks
 ----------------
 
-### Make that last Health Point count
+### General Purpose
+
+#### Make that last Health Point count
 
 Players love that rush of adrenaline they get when they escape a difficult situation with just one health point. That "just barely survived" situation can be "helped" by the game itself: some programmers decide to program the last HP in a special way.
 
@@ -143,7 +145,7 @@ Some prefer giving the last health point a value that is higher than the other h
 
 These small devices allow you to give players more of those "near death" experiences that can give players that confidence boost to keep them playing through a hard stage, while at the same time, reducing the chance that they will rage-quit.
 
-### Avoiding a decision can be a decision itself
+#### Avoiding a decision can be a decision itself
 
 An interesting way to make the characters from a game seem more real, is registering the "lack of response" or "lack of action" in the game's AI or dialogue tree.
 
@@ -151,7 +153,7 @@ This means that "ignoring" has consequences, and inaction is in and itself an ac
 
 This trick is used in the game "Firewatch", where not responding to a dialogue prompt is a noted decision.
 
-### Telegraphing
+#### Telegraphing
 
 Players hate the feeling of injustice that pops out when a boss pulls out a surprise attack, that's why in many games where precise defense movement is required bosses give out signals on the nature of their attack.
 
@@ -162,3 +164,13 @@ Telegraphing is a nice way to suggest the player how to avoid screen-filling att
 ![Example of a telegraphed screen-filling attack in a shooter](./images/game_design/telegraphing.png){width=60%}
 
 Another example of telegraphing was used in the Bioshock series: the first shots of an enemy against you always miss, that is used to avoid "out of the blue" situation, which can be seen as a form of "telegraphing" both the presence and position of enemies.
+
+### Shooters
+
+#### Make the bullets stand out
+
+One of the most annoying things that can happen when you're running-and-gunning your way through a level is being hit by a not-so-visible bullet.
+
+Your own bullets, as well as (and most importantly!) the enemies' should stand out from the background and the other sprites, so that the player can see and avoid them.
+
+Some people may want to ask why your own bullets should stand out too, the answer is: so you can easily aim for your targets.
