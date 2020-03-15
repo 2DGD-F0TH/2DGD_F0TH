@@ -165,13 +165,15 @@ We can calculate the total estimate as $O(n^2) + O(n)$ and that would be absolut
 
 ![O(n) growth rate, compared to O(n²)](./images/computer_science/o_n_vs_o_n2.pdf){width=60%}
 
+So we can drop the $O(n)$ and consider the entire algorithm as an $O(n^2)$ algorithm in its entirety: this means that when dealing with complexity estimates, you always keep the terms that have the largest "growth rate" (check the [Big-O estiamtes comparison](#big_o_comp) section for more details).
+
 ### What do we do with recursive algorithms?
 
 When recursive algorithms are involved, things get a lot more complex, and they involve building recursion trees and sometimes you'll have to use the so-called "master theorem for divide-and-conquer recurrences".
 
 Such methods are outside the scope of this book as of now.
 
-### How do big-O estimates compare to each other?
+### How do big-O estimates compare to each other? {#big_o_comp}
 
 Here we can see how big-O estimates compare to each other, graphically and how important it is to write not-inefficient algorithms.
 
