@@ -8,9 +8,41 @@ Profiling and Optimization
 Profiling your game
 -------------------
 
+### Does your application really need profiling?
+
+In this section we will have a small check list that will let us know if our videogame really needs to be profiled. Sometimes the FPS counter is trying to tell us a different story than the one we have in our heads.
+
+#### Does your FPS counter roam around a certain "special" value?
+
+There are cases where the FPS counter shows a low counter, but it stays around a certain value. This means that the FPS value is artificially limited somewhere, either by VSync or something else.
+
+Some special values you may see are:
+
+- 25 FPS: PAL refresh rate
+- 29.970 FPS: NTSC Refresh Rate
+- 30 FPS: Used in some games
+- 50 FPS: Used in some games
+- 60 FPS: Used in most of games
+- 75 FPS or 80 FPS: Used in some LCD Monitors
+- 144 FPS: Used in more modern, high-refresh rate monitors
+
+#### Is the animation of your game stuttering but the FPS counter is fine?
+
+If your animation stutters or its speed varies according to the load of your platform but your FPS counter is still stuck at the maximum allowed framerate, you may have forgotten to tie the animation to the delta-time in your game loop. Check the [timing your game loop](#timingloops) section for more information.
+
 \placeholder
 
-<!-- TODO -->
+### First investigations
+
+First of all, we need to understand what is the bottleneck of your game: check your task manager and see how your game is performing.
+
+Is your game using 100% of the CPU (if you're on Linux, you may see percentages over 100%, that just means your game is using more than one CPU core)? That may mean that the game is doing a lot of CPU work and you may need to make the game perform less work for each frame. In this case profiling tools are precious to find the spots where the CPU spends most of its time: Valgrind or GProf are great profiling tools.
+
+If instead your game is not using all of the CPU computing power, you may have a problem on the GPU: your game may be calling the drawing routines too often. The less a game has to communicate with the hardware, the higher the performance. In that case using Sprite Atlases and other "batching techniques" that allow to draw many objects with only one call will help your game perform better.
+
+\placeholder
+
+<!-- TODO: Continue -->
 
 Optimizing your game
 --------------------

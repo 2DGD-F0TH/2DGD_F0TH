@@ -37,7 +37,7 @@ On the opposite side, we have so-called "real-time input", where at a certain po
 
 A well-implemented and well-configured event-based system should feel no different from real-time input, with the advantage of having better performance and having less code coupling.
 
-Timing your loop
+Timing your loop {#timingloops}
 ----------------
 
 When it comes to anything that remotely relates to physics (that includes videogames), we need to set the relation to time in our loop. There are many ways to set our delta time (or time steps), we'll see some of the most common.
