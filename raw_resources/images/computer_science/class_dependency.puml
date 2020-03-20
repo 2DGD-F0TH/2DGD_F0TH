@@ -1,0 +1,12 @@
+@startuml
+
+class CarFactory{
+}
+
+
+class Car{
+}
+
+CarFactory ..> Car
+
+@enduml

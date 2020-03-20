@@ -789,7 +789,7 @@ There are many categories of dependency, like `<<create>` or `<<call>>` that exp
 
 An example could be between a "Car Factory" and a class "Car": the "CarFactory" class depends on the "Car" class, and such dependency is an instantiation dependency.
 
-![Example of dependency in UML class diagrams](./images/computer_science/class_dependency.png){width=15%}
+![Example of dependency in UML class diagrams](./images/computer_science/class_dependency.pdf){width=15%}
 
 #### Notes
 
