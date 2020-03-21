@@ -1215,6 +1215,8 @@ The update function will keep running until all the resources are loaded, the ga
 
 Threads are concurrent execution are powerful tools in our "programmer's toolbox", but as with all powers, it has its own drawbacks.
 
+#### Race conditions
+
 Imagine a simple situation like the following: we have two threads and one shared variable.
 
 ![Two threads and a shared variable](./images/computer_science/MultiThreading1.pdf){width=60%}
@@ -1245,11 +1247,32 @@ Something is not right, the result should be "3", but it's "2" instead.
 
 We just experienced what is called a **"race condition"**: there is no real order in accessing the shared variable, so things get messy and the result is not deterministic. We don't have any guarantee that the result will be right all the time (or wrong all the time either).
 
-\placeholder
+#### Critical Regions
 
-<!-- TODO: Talk about "Thread Safety", "Critical Regions" and "Race Conditions" -->
+Critical Regions (sometimes called "Critical Sections") are those pieces of code where a shared resource is used, and as such it can lead to erroneous or unexpected behaviours. Such sections must be protected from concurrent access, which means only one process or thread can access them at one given time.
 
-### Implementation
+### Ensuring determinism
+
+Let's take a look at how to implement multithreading in a safe way, allowing our game to perform better without non-deterministic behaviours. There are other implementation approaches (like thread-local storage and re-entrancy) but we will take a look at the most common here.
+
+#### Immutable Objects
+
+The easiest way to implement thread-safety is to make the shared data immutable. This way the data can only be read (and not changed) and we completely remove the risk of having it changed by another thread. This is an approach used in many languages (like Python and Java) when it comes to strings. In those languages strings are immutable, and "mutable operations" only return a *new string* instead of modifying the existent one.
+
+#### Mutex
+
+Mutex (Short for **mut**ual **ex**clusion) means that the access to the shared data is serialized in a way that only one thread can read or write to such data at any given time. Mutual exclusion can be achieved via algorithms (be careful of *out of order execution*~[g]~), via hardware or using "software mutex devices" like:
+
+- Locks (known also as *mutexes*)
+- Semaphores
+- Monitors
+- Readers-Writer locks
+- Recursive Locks
+- ...
+
+Usually these multithreaded functionalities are part of the programming language used, or available via libraries.
+
+#### Atomic Operations
 
 \placeholder
 

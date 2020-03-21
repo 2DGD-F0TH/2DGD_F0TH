@@ -12,6 +12,12 @@ A
 API
 : Short for "Application Programming Interface", it's a set of definitions, tools and clearly defined methods of communication between various software components.
 
+D
+--
+
+Dynamic Execution
+: See *out of order execution*
+
 E
 --
 
@@ -51,6 +57,11 @@ M
 Malware
 : Short for "malicious software", it's a "catchall term" for viruses, trojan horses and any kind of software that is programmed to behave maliciously. Such software can steal information (passwords, key presses, habits, etc...) or flat out try to make your computer unusable (deleting system files, encrypting your documents and asking for a ransom, etc...)
 
+O
+--
+
+Out of order execution
+: Paradygm used in high performance CPUs to reduce the wasted instruction cycles. The instructions are performed in an order given by the availability of the input data and execution units instead than the original order defined by the programmer.
 
 P
 --
