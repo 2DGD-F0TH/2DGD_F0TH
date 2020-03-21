@@ -157,7 +157,7 @@ $if(listings)$
 \renewcommand*{\lstlistlistingname}{List of Code Listings}
 \usepackage{color}
 \usepackage{xcolor}
-\input{template/pseudocode_lang}
+\input{template/additional_languages/pseudocode}
 $if(proglang)$
 \newcommand{\code}[2]{\lstinputlisting[language=$proglang$,caption={#2}]{./listings/$proglang$/#1.txt}}
 $else$

@@ -31,6 +31,10 @@ The only thing left to do is translating all the pseudo-code listings into your 
 
 After that you can try and make a copy of the book, by editing the `proglang` argument in the `metadata.yaml` file. Remember to add the new language in the `README.md` file.
 
+#### What if my programming language is not in the list?
+
+No worries, you can still add your own. Check the [FAQ Document](FAQ_GUIDES.md).
+
 ### Pictures
 
 The pictures used should be simple to understand and not covered by copyright (screenshots of real games should be avoided if possible, as copyright and the "fair use" doctrine are quite complicated), where possible images should be saved in the following formats:
