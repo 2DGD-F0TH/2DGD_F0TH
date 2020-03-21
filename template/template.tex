@@ -1,11 +1,10 @@
-%\documentclass[$if(fontsize)$$fontsize$,$endif$$if(lang)$$babel-lang$,$endif$$if(papersize)$$papersize$paper,$endif$$for(classoption)$$classoption$$sep$,$endfor$]{$documentclass$}
 \documentclass{article}
+% --------------- Initial Package imports ---------------
 \usepackage{float}
 \usepackage{gensymb}
 \usepackage{epigraph}
 \usepackage{makecell}
 \usepackage{multirow}
-\setlength\epigraphwidth{.8\textwidth}
 \usepackage{datetime}
 \usepackage{enumitem}
 \usepackage{tabularx}
@@ -14,13 +13,16 @@
 \usepackage{fixltx2e}
 \usepackage{framed}
 \usepackage[toc,page]{appendix}
+% --------------- Commands ---------------
 \newcommand{\tabitem}{~~\llap{\textbullet}~~}
 \newcommand{\ttabitem}{~~~~\llap{$$\circ$$}~~}
 \newcommand{\paidprod}{{\color{red}\textbf{[P]}}}
 \newcommand{\freeprod}{{\color{green!80!black}\textbf{[F]}}}
 \newcommand{\donprod}{{\color{orange}\textbf{[D]}}}
 \newcommand{\placeholder}{\texttt{[This section is a work in progress and it will be completed as soon as possible]}}
-% Gray Bar on left of blockquotes
+% --------------- Lengths ---------------
+\setlength\epigraphwidth{.8\textwidth}
+% --------------- Gray Bar on left of blockquotes ---------------
 \renewenvironment{leftbar}[1][\hsize]
 {%
     \def\FrameCommand
@@ -33,7 +35,7 @@
 }
 {\endMakeFramed}
 \renewenvironment{quote}{\leftbar\list{}{\rightmargin\leftmargin}\item\small\relax}{\endlist\endleftbar}
-% -------------
+% ------------- Default Pandoc Configuration ---------------
 $if(beamerarticle)$
 \usepackage{beamerarticle} % needs to be loaded first
 $endif$
@@ -151,19 +153,25 @@ $for(bibliography)$
 \addbibresource{$bibliography$}
 $endfor$
 $endif$
+% --------------- Listings configuration ---------------
 $if(listings)$
 \newcommand{\passthrough}[1]{\lstset{mathescape=false}#1\lstset{mathescape=true}}
 \usepackage{listings}
 \renewcommand*{\lstlistlistingname}{List of Code Listings}
 \usepackage{color}
 \usepackage{xcolor}
+% ------- Additional Language Definitions -------
 \input{template/additional_languages/pseudocode}
+% -----------------------------------------------
+% ------- \code command definition -------
 $if(proglang)$
 \newcommand{\code}[2]{\lstinputlisting[language=$proglang$,caption={#2}]{./listings/$proglang$/#1.txt}}
 $else$
 \newcommand{\code}[2]{\lstinputlisting[caption={#2}]{./listings/pseudocode/#1.txt}}
 $endif$
+% ----------------------------------------
 
+% ------- Language highlighting config -------
 \definecolor{mygreen}{rgb}{0,0.6,0}
 \definecolor{mygray}{rgb}{0.5,0.5,0.5}
 \definecolor{mymauve}{rgb}{0.58,0,0.82}
@@ -198,6 +206,7 @@ $endif$
     % backgroundcolor=\color{lightgray},
     showstringspaces=false
 }
+%--------------------------------------------
 \usepackage{caption}
 \DeclareCaptionFont{white}{\color{white}}
 \DeclareCaptionFormat{listing}{\colorbox[cmyk]{0.43, 0.35, 0.35,0.01}{\parbox{\textwidth}{\hspace{15pt}#1#2#3}}}
