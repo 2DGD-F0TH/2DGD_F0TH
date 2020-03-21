@@ -1188,15 +1188,62 @@ To allow for multi-tasking (doing many activities at once), the CPU switches bet
 Introduction to MultiThreading {#multithreading}
 ------------------------------
 
-\placeholder
+When it comes to games and software, we usually think of it as a single line of execution, branching to (not really) infinite possibilities; but when it comes to games, we may need to dip our toes into the world of multi-threaded applications.
 
 ### What is MultiThreading
 
-\placeholder
+MultiThreading means that multiple threads exist in the context of a single process, each thread has an independent line of execution but all the threads share the process resources.
 
-<!-- TODO: Talk about multithreading from a bird's eye perspective -->
+In a game, we have the "Game Process", which can contain different threads, like:
+
+- World Update Thread
+- Rendering Thread
+- Loading Thread
+- ...
+
+MultiThreading is also useful when we want to perform concurrent execution of activities.
+
+### Why MultiThreading?
+
+Many people think of MultiThreading as "parallel execution" of tasks that leads to faster performance. That is not always the case. Sometimes MultiThreading is used to simplify data sharing between flows of execution, other times threads guarantee lower latency, other times again we may *need* threads to get things working at all.
+
+For instance let's take a loading screen: in a single-threaded application, we are endlessly looping in the input-update-draw cycle, but what if the "update" part of the cycle is used to load resources from a slow storage media like a Hard Disk or even worse, a disk drive?
+
+The update function will keep running until all the resources are loaded, the game loop is stuck and no drawing will be executed until the loading has finished. The game is essentially hung, frozen and your operating system may even ask you to terminate it. In this case we need the main game loop to keep going, while something else takes care of loading the resources.
 
 ### Thread Safety
+
+Threads are concurrent execution are powerful tools in our "programmer's toolbox", but as with all powers, it has its own drawbacks.
+
+Imagine a simple situation like the following: we have two threads and one shared variable.
+
+![Two threads and a shared variable](./images/computer_science/MultiThreading1.pdf){width=60%}
+
+Both threads are very simple in their execution: they read the value of our variable, add 1 and then write the result in the same variable.
+
+This seems simple enough for us humans, but there is a situation that can be really harmful: let's see, in the following example each thread will be executed only once. So the final result, given the example, should be "3".
+
+First of all, let's say Thread 1 starts its execution and reads the variable value.
+
+![Thread 1 reads the variable](./images/computer_science/MultiThreading2.pdf){width=60%}
+
+Now, while Thread 1 is calculating the result, Thread 2 (which is totally unrelated to Thread 1) starts its execution and reads the variable.
+
+![While Thread 1 is working, Thread 2 reads the variable](./images/computer_science/MultiThreading3.pdf){width=60%}
+
+Now Thread 1 is finishing its calculation and writes the result into the variable.
+
+![Thread 1 writes the variable](./images/computer_science/MultiThreading4.pdf){width=60%}
+
+After That, Thread 2 finishes its calculation too, and writes the result into the variable too.
+
+![Thread 2 writes the variable](./images/computer_science/MultiThreading5.pdf){width=60%}
+
+Something is not right, the result should be "3", but it's "2" instead.
+
+![Both Threads Terminated](./images/computer_science/MultiThreading6.pdf){width=60%}
+
+We just experienced what is called a **"race condition"**: there is no real order in accessing the shared variable, so things get messy and the result is not deterministic. We don't have any guarantee that the result will be right all the time (or wrong all the time either).
 
 \placeholder
 
