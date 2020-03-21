@@ -29,9 +29,11 @@ If you want to add a new programming language, navigate to the `listings` folder
 
 The only thing left to do is translating all the pseudo-code listings into your favourite programming language.
 
+After that you can try and make a copy of the book, by editing the `proglang` argument in the `metadata.yaml` file. Remember to add the new language in the `README.md` file.
+
 ### Pictures
 
-The pictures used should be simple to understand and not covered by copyright (screenshots of real games should be avoided if possible), where possible images should be saved in the following formats:
+The pictures used should be simple to understand and not covered by copyright (screenshots of real games should be avoided if possible, as copyright and the "fair use" doctrine are quite complicated), where possible images should be saved in the following formats:
 
 - **Diagrams:** Vector PDF format - Some people may find useful to zoom into an image to better understand it and they usually have a low size;
 - **Picture Examples:** PNG Format, they have a good quality/compression tradeoff.
@@ -45,3 +47,7 @@ Images that are subject to change and corrections (like UML diagrams) should inc
 The book should be written as much as possible in [Pandoc Markdown](https://pandoc.org/MANUAL.html#pandocs-markdown), because everyone should be able to contribute to this book easily.
 
 If the situation calls for it (for instance you *absolutely need* a certain table styling) you can use pure LaTeX inline, inside the markdown document.
+
+### Problems? Questions?
+
+The most common questions will be usually answered in the `FAQ_GUIDES.md` document, for the rest, feel free to open an issue on either GitHub or GitLab.
