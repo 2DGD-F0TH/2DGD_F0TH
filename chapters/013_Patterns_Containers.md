@@ -232,6 +232,14 @@ A useful container is the "resource manager", which can be used to store and man
 
 A resource manager is usually implemented via generic programming, which helps writing DRY code, and uses search-efficient containers like hash tables, since we can take care of loading and deletion during loading screens.
 
+First of all, we need to know how we want to identify our resource; there are many possibilities:
+
+- **An Enum:** this is usually implemented at a language-level as an "integer with a name", it's light but every time we add a new resource to our game, we will need to update the enum too;
+- **The file path:** this is an approach used to make things "more transparent", but every time a resource changes place, we will need to update the code that refers to such resource too;
+- **A mnemonic name:** this allows us to use a special string to get a certain resource (for instance "skeleton_spritesheet"), and every time our resource folder changes, we will just need to update our loading routines (similarly to the Enum solution).
+
+Secondarily, we need to make sure that the container is **thread-safe** (see more about multithreading in the [multithreading section](#multithreading)), since we will probably need to implement a threaded loading screen (see how to do it [here](#loadingscreen)) to avoid our game locking up during resource loading.
+
 \placeholder
 
 <!-- TODO: An associative container that contains pairs (ENUM, ITEM) used to store and retrieve

@@ -84,7 +84,14 @@ This is an extreme edge case, but it could happen. Even if it is a minor annoyan
 
 <!-- TODO: A shape that cuts out a sprite, pixel by pixel, allowing for certain effects like "going through a door" -->
 
-### Loading screens
+### Loading screens {#loadingscreen}
+
+If you load your resources in the same thread that executes the main game loop, your game will lock up while loading, which may trigger windows to ask you if you want to terminate the task. In this case it is better to dip our toes into [multithreading](#multithreading) and create a proper loading screen.
+
+The loading screen will be composed of two main components:
+
+- **The graphical loading screen:** that will show the progress of the resource loading to the user, as well as tips and animations;
+- **The actual resource loading thread:** that will take care to load the resources to the right containers, as well as communicating the global loading status to the loading screen in the main game loop.
 
 \placeholder
 

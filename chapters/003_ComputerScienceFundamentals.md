@@ -1185,7 +1185,7 @@ To allow for multi-tasking (doing many activities at once), the CPU switches bet
 
 <!-- TODO: A lean introduction to the concept of co-routines -->
 
-Introduction to MultiThreading
+Introduction to MultiThreading {#multithreading}
 ------------------------------
 
 \placeholder
