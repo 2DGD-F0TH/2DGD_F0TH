@@ -39,8 +39,7 @@ This is the simplest camera we can implement: each level has the size of the scr
 
 \placeholder
 
-<!-- TODO: Simplest: each room is screen-sized, exit a room and the room
-gets switched, usually with a fade-to-black -->
+<!-- TODO: Simplest: each room is screen-sized, exit a room and the room gets switched, usually with a fade-to-black -->
 
 ### Grid Camera
 
@@ -108,6 +107,14 @@ So this camera is not ideal for games that require precision platforming, since 
 <!-- TODO: Camera that gives more space in front of the character, allowing for better
 reaction times, must be coded well on transitions (between opposite sides) or it can be
 extremely confusing or nauseating -->
+
+### Hybrid Approaches
+
+There are hybrid approaches to cameras too, mixing and matching different types of camera can give your game an additional touch of uniqueness. For instance in "Legend of Zelda: A link to the past", the camera is a mix between a "camera trap" and a "grid camera", where each zone is part of a grid, and inside each "grid cell" we have a tracking system based on the "camera trap".
+
+This allows the game to have a more dynamic feel, but also saves memory, since the SNES had to load only one "zone" at a time, instead of the whole map.
+
+Feel free to experiment and invent!
 
 Clamping your camera position
 -----------------------------
