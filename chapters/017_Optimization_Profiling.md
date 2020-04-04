@@ -22,7 +22,7 @@ Some special values you may see are:
 - 29.970 FPS: NTSC Refresh Rate
 - 30 FPS: Used in some games
 - 50 FPS: Used in some games
-- 60 FPS: Used in most of games
+- 60 FPS: Used in most games
 - 75 FPS or 80 FPS: Used in some LCD Monitors
 - 144 FPS: Used in more modern, high-refresh rate monitors
 
@@ -36,7 +36,13 @@ If your animation stutters or its speed varies according to the load of your pla
 
 First of all, we need to understand what is the bottleneck of your game: check your task manager and see how your game is performing.
 
-Is your game using 100% of the CPU (if you're on Linux, you may see percentages over 100%, that just means your game is using more than one CPU core)? That may mean that the game is doing a lot of CPU work and you may need to make the game perform less work for each frame. In this case profiling tools are precious to find the spots where the CPU spends most of its time: Valgrind or GProf are great profiling tools.
+#### Is your game using 100% of the CPU?
+
+Is your game using 100% of the CPU (if you're on Linux, you may see percentages over 100%, that just means your game is using more than one CPU core)?
+
+First of all, you should check if you're using the frame limiting approaches offered by your framework or game engine: if they're not active, your game will run "as fast as possible", which means it will occupy all the CPU time it can. This can result in high FPS count (in the thousands) but high energy consumption and slowdowns in other tasks.
+
+If you have taken all the frame limiting approaches as stated above, that may mean that the game is doing a lot of CPU work and you may need to make the game perform less work for each frame. In this case profiling tools are precious to find the spots where the CPU spends most of its time: Valgrind or GProf are great profiling tools.
 
 If instead your game is not using all of the CPU computing power, you may have a problem on the GPU: your game may be calling the drawing routines too often. The less a game has to communicate with the hardware, the higher the performance. In that case using Sprite Atlases and other "batching techniques" that allow to draw many objects with only one call will help your game perform better.
 
@@ -54,7 +60,7 @@ After accurate profiling, you need to intervene and try to get more out of your 
 Depending on the programming language you're using, and the amount of internal optimization its compiler/interpreter has, you may have the possibility to choose between two main ways of working, when it comes to functions:
 
 - Returning a value from a function;
-- Passing a reference to the function and use that reference in your function (for instance in C++).
+- Passing a reference to variables into the function and use that reference in your function (for instance in C++).
 
 "Value Copying" can be a real resource hog when your functions work with heavy data. Every time you return a value, instead of working on a reference, you are creating a new copy of the data you're working on, that will be later assigned.
 
@@ -66,9 +72,9 @@ Using things like "references", "constant references" and "pointers" can be real
 
 This heavily depends on the type of framework and engine you are using, but a good rule of thumb is using the lowest amount of calls to the draw routines as possible: drawing something entails a great amount of context switching and algorithms, so you should do it only when necessary.
 
-If your engine/framework supports it, you should use sprite atlases/batches, as well as other interesting structures like Vertex Arrays (used in SFML).
+If your engine/framework supports it, you should use sprite atlases/batches, as well as other interesting structures like Vertex Arrays (used in SFML), which can draw many elements on the screen with only one draw call.
 
-Another way to optimize your drawing routine is avoiding to change textures often: changing textures can result in a lot of context changes, so you should use only one texture (in the form of a [Sprite Sheet](#SpriteSheets)) and draw only a part of it, changing the coordinates of the rectangle that gets drawn. This way you'll save the PC a lot of work.
+Another way to optimize your drawing routine is avoiding to change textures often: changing textures can result in a lot of context changes (like copying the new texture from the RAM to the GPU memory), so you should use only one oversized texture (in the form of a [Sprite Sheet](#SpriteSheets)) and draw only a part of it, changing the coordinates of the rectangle that gets drawn. This way you'll save the PC a lot of work.
 
 \placeholder
 
