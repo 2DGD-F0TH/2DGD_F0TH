@@ -7,6 +7,46 @@ Project Management Basics and tips
 
 Project management is a very broad topic but I feel that some basics and tips should be covered in this book, as knowing some project management can save you a lot of headaches and can make the difference between success and a colossal failure.
 
+The figures of game design and development
+------------------------------------------
+
+Before delving into the topic at hand, we need to familiarize ourselves with the main figures that are involved in the process of game design and development, since you'll probably (if you are the only developer of your game) have to take upon all their tasks.
+
+### Producer/Project Manager
+
+<!-- TODO -->
+\placeholder
+
+### Game Designer
+
+<!-- TODO -->
+\placeholder
+
+### Writer
+
+<!-- TODO -->
+\placeholder
+
+### Developer
+
+<!-- TODO -->
+\placeholder
+
+### Visual Artist
+
+<!-- TODO -->
+\placeholder
+
+### Sound Artist
+
+<!-- TODO -->
+\placeholder
+
+### Tester
+
+<!-- TODO -->
+\placeholder
+
 Some generic tips
 ---------------------
 
@@ -48,8 +88,86 @@ Your time and resource management must be top-notch to be able to "bring more wi
 
 Also don't get caught in the some kind of "sequel disease" where you end up making a sequel just to "milk the intellectual property": you will end up ruining the whole series.
 
+Common Errors and Pitfalls
+---------------------------
+
+When you are making a new game, it's easy to feel lost and "out of your comfort zone", and that's okay! It's also easy to fall into traps and pitfalls that can ruin your experience, here we take a look at the most common ones.
+
+### Losing motivation
+
+Sometimes it can happen to lose motivation, usually due to having "too much ambition": make sure you can develop the kind of game you want to make, and also leave multiplayer out of the question. It will just suck up development time, and it isn't that much of an important feature anyway (and it can still be implemented later, see *Stardew Valley*).
+
+Like in music, many people prefer "mediocrity" to "something great", so don't force yourself to innovate: do things well enough and if the innovative idea comes, welcome it.
+
+If you get tired, take a break, you're your own boss, and no one is behind you zapping you with a cattle prod: just focus on making a good overall product and things will go well.
+
+### The "Side Project" pitfall
+
+It happens: you have a ton of ideas for games of all kinds, and probably you'll start thinking:
+
+> what is bad about a small "side project", to change things up a bit
+
+You will end up having lots of "started projects" and nothing finished, your energy will deplete, things will become confusing and you won't know what game you're working on anymore.
+
+Instead, make a small concept for the new mechanic and try to implement it in your current game, you may find a new mix that hasn't been tried before, making your game that much more unique.
+
+### Making a game "in isolation"
+
+While making a game you will need to gather some public for it, as well as create some hype around it: making a game on your own without involving the public is a mistake that deprives you of a huge source of suggestions and (constructive) criticism.
+
+Make your game public, on platforms like `itch.io` or `IndieDB`, get feedback and encouragement. Create trailers towards the end of development, put them on `YouTube` or `Vimeo` and if you want to go all out, get in touch with the press (locally first) and create hype around your product.
+
+### Mishandling Criticism
+
+Among all the other things going on, we also need to handle feedback from our "potential players", and this requires quite the mental effort, since we can't make it "automatic".
+
+Not all criticism can be classified as "trolling", and forging our game without listening to any feedback will only mean that such game won't be liked by as many people as we would like, maybe for a very simple problem that could have been solved if only we listened to the public.
+
+At the same time, not all criticism is "useful" either, not classifying criticism as "trolling" does not mean that trolling doesn't exist, some people will take pride in ruining other people's mood by being annoying and uselessly critic, or even finding issues that don't exist.
+
+The question you should ask yourself is simple:
+
+> Is this criticism I'm receiving constructive? Can it make my game better?
+
+If the answer is no, then you may want to ignore such criticism, but if it is constructive, maybe you want to keep it in consideration.
+
+### Not letting others test your game
+
+This is a common mistake when you are focused on making the game: using your own skill as a "universal measure" for the world's skill level. You may be an unknown master at 2D platformers, and as such what can be "mildly difficult" for you may be "utterly impossible" for the average player. Or the opposite.
+
+Try to keep the challenge constant through the levels, applying the usual slight upwards curve in difficulty that most games have, and let others test your game.
+
+A beta version with feedback capabilities (or just a beta version and a form or email address can do the trick too) is pure gold when it comes to understanding what your players think about the game's challenge level.
+
+Remember: when a level is (perceived as unfairly) too hard, players will stop playing the game.
+
+### Being perfectionist
+
+If you are called "perfectionist" by your friends, that should be a red flag in your game development process since the beginning.
+
+Finding yourself honing the game over and over, allocating countless hours (that always feel as "not enough") into making the game "better", will end up just sabotaging the development process itself.
+
+When you have:
+
+- Good Visuals and Good Audio
+- Working Gameplay
+- A challenge that lasts the test of time
+- The testing phase completed
+
+You have a complete product. **Release it**. Updating it is very easy these days, and maybe that will give you the mental energy to undertake a new game. Maybe a sequel even?
+
+### Using the wrong engine
+
+The game engine is one of the most important decisions you can take at the beginning of your game development journey. Realizing that you used the wrong engine after months of development can be a huge setback, as well as a "black hole" for your motivation.
+
+Don't trust market hype over an engine, and don't trust the vendor's promises either.
+
+Does the game engine have the features you will need **already**? No? Then your money should stay where it is, and you should look somewhere else.
+
+If such engine's producer is promising the feature you want in future, don't trust it, that version may come, or it may never come at all. If you bought the engine and such feature won't ever be there, your money won't come back.
+
 Software Life Cycle Models
-----------------------------
+---------------------------
 
 When talking about project management (in itself or in the broader field of Software Engineering) it is really useful to talk about some guideline models that can be used to manage your project.
 
