@@ -14,38 +14,71 @@ Before delving into the topic at hand, we need to familiarize ourselves with the
 
 ### Producer/Project Manager
 
-<!-- TODO -->
-\placeholder
+The producer is a figure that has experience in many fields and has an overall view of the project. They essentially keep the project together.
+
+Their duties are:
+
+- Team Building (and its maintenance too);
+- Distributing duties and responsibilities;
+- Relations with the media.
 
 ### Game Designer
 
-<!-- TODO -->
-\placeholder
+The game designer takes care of the game concept, usually working with really specific software, usually provided by the programmers in the team (like specific level editors).
+
+They design balanced game mechanics, manage the learning curve and take care of level design too.
 
 ### Writer
 
-<!-- TODO -->
-\placeholder
+Writers are the ones who can help you give your game its own story, but also help with things that are outside the mere game itself.
+
+Some of their jobs include:
+
+- Writing tutorial prompts;
+- Writing narration;
+- Writing dialogue;
+- Writing pieces for the marketing of your game (sometimes known as "Copywriting").
 
 ### Developer
 
-<!-- TODO -->
-\placeholder
+Logic and mathematics are the strong suit of programmers, the people who take care of making the game tick, they can also have many specializations like:
+
+- Problem Solver
+- Game mechanics programmer;
+- Controls programmer;
+- AI developer;
+- Visuals Programmer;
+- Networking programmer;
+- Physics programmer;
+- ...
 
 ### Visual Artist
 
-<!-- TODO -->
-\placeholder
+In 2D games visual art is as important as in 3D games and good graphics can really boost the game's quality greatly, as bad graphics can break a game easily.
+
+Among visual artists we can find:
+
+Both in 2D and 3D games:
+
+- 2D Artists;
+- Animators;
+- Conceptual Artists.
+
+In 3D games:
+
+- 3D Modelers;
+- Texture Artists;
+- Environmental Artists.
 
 ### Sound Artist
 
-<!-- TODO -->
-\placeholder
+As with graphics, sound and music can make or break a game. Sound artists may also be musicians, and their task is to create audio that can be used in a video game, like sound effects, atmospheres or background music.
 
 ### Tester
 
-<!-- TODO -->
-\placeholder
+Probably the most important job in a game development team, testing needs people with high attention to detail, as well as the ability to handle stress well.
+
+Testers are able to find, describe and help you reproduce bugs and misbehaviours of your game.
 
 Some generic tips
 ---------------------
