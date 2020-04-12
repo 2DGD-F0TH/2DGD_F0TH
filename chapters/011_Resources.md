@@ -8,6 +8,47 @@ Creating your resources
 Graphics {#GraphicsResources}
 ---------
 
+### Some computer graphics basics
+
+\placeholder
+<!-- TODO -->
+
+#### Color Depth
+
+\placeholder
+<!-- TODO -->
+
+
+#### Lossless Formats
+
+\placeholder
+<!-- TODO -->
+
+
+#### Lossy Formats
+
+\placeholder
+<!-- TODO -->
+
+
+#### Transparency
+
+\placeholder
+<!-- TODO -->
+
+
+##### Alpha Transparency
+
+\placeholder
+<!-- TODO -->
+
+
+##### Indexed Transparency
+
+\placeholder
+<!-- TODO -->
+
+
 ### General Tips
 
 In this section we will take a look at some basic art tips that will give you some indication on how to create your own art for your very own game. This will be pointers to keep you going.
@@ -236,6 +277,36 @@ Sounds And Music
 <!-- TODO: Talk about the importance of good sound quality, introduce people to chip tunes and tools to create music and sounds , talk about the importance of having areas where you have to apply a certain effect or it will happen on the whole level -->
 
 
+### Some audio basics
+
+\placeholder
+<!-- TODO -->
+
+#### Sample Rate
+
+\placeholder
+<!-- TODO -->
+
+#### Bit Depth
+
+\placeholder
+<!-- TODO -->
+
+#### Lossless Formats
+
+\placeholder
+<!-- TODO -->
+
+#### Lossy Formats
+
+\placeholder
+<!-- TODO -->
+
+#### Clipping
+
+\placeholder
+<!-- TODO -->
+
 ### Digital Sound Processing (DSP)
 
 
@@ -301,6 +372,16 @@ footsteps:
 ```
 
 Making a configuration file instead of hard-coding the elements allows for easy extensibility and modding, which everyone loves (See [Designing entities as data](#entitiesasdata)).
+
+### Some audio processing tips
+
+\placeholder
+<!-- TODO -->
+
+#### Prefer cutting over boosting
+
+\placeholder
+<!-- TODO: If you want to enhance lower frequencies, it's better to cut the higher ones than boost the lows, since boosting creates artifacts -->
 
 Fonts
 -------
