@@ -21,21 +21,31 @@ Graphics {#GraphicsResources}
 
 #### Lossless Formats
 
-\placeholder
-<!-- TODO -->
+There are a few ways to store information on a computer, either you store them raw, or you use some tricks to make such information occupy less space in your drive.
 
+When it comes to storing information, lossless formats are usually uncompressed or make use of clever tricks to compress your images without losing information in the process.
+
+In computer graphics, lossless formats include:
+
+- JPEG 2000 (in its lossless form);
+- Portable Network Graphics (PNG);
+- Free Lossless Image Format (FLIF);
+- PDF (in its lossless form);
+- TARGA Files (Truevision TGA, with TGA file format);
+- TIFF (in its lossless form).
 
 #### Lossy Formats
 
-\placeholder
-<!-- TODO -->
+When it comes to compressing information, the best way to store the least amount of information possible is to actually *not store them*. Lossy file formats get rid of some information present in the picture, in a more or less evident way (depending on the compression ratio) to lower the file size.
 
+In computer graphics, lossy file formats include:
+
+- JPEG (in its most common "lossy" form).
 
 #### Transparency
 
 \placeholder
 <!-- TODO -->
-
 
 ##### Alpha Transparency
 
@@ -294,13 +304,20 @@ Sounds And Music
 
 #### Lossless Formats
 
-\placeholder
-<!-- TODO -->
+As with graphics, there are audio formats that allow you to store uncompressed information, as well as compressed (but without losses) sounds. The most common lossless audio formats include:
+
+- WAV;
+- AIFF;
+- FLAC.
 
 #### Lossy Formats
 
-\placeholder
-<!-- TODO -->
+As with graphics, there are also "lossy formats" that allow us to store information in even less space by getting rid of information that is well outside our hearing spectrum, for instance. Some of the most known are:
+
+- Mpeg Layer 3 (MP3);
+- OGG Vorbis;
+- Windows Media Audio (WMA);
+- Advanced Audio Codec (AAC).
 
 #### Clipping
 
