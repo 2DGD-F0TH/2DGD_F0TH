@@ -18,6 +18,10 @@ Graphics {#GraphicsResources}
 \placeholder
 <!-- TODO -->
 
+#### True Color vs. Indexed Color
+
+\placeholder
+<!-- TODO -->
 
 #### Lossless Formats
 
@@ -44,20 +48,23 @@ In computer graphics, lossy file formats include:
 
 #### Transparency
 
-\placeholder
-<!-- TODO -->
+Usually you need to have transparency in your artwork, for instance for your sprites. There are different ways to get transparency in your artwork, depending on the image format you're using and the support offered by the engine/framework you're using.
 
 ##### Alpha Transparency
 
-\placeholder
-<!-- TODO -->
+This is the most common type of transparency available today: along with the usual Red-Green-Blue (RGB) channels, the image has an additional "Alpha" channel. Sometimes images with "Alpha Transparency" are also referred as "RGBA" images.
 
+This allows to set the transparency precisely and allows for "partial transparency" too, which means that we are able to create shadows and semi-transparent surfaces.
+
+The PNG format is one of the many image formats that supports alpha transparency.
 
 ##### Indexed Transparency
 
-\placeholder
-<!-- TODO -->
+Normally used in GIF images, "Indexed Transparency" is the product of some limitation imposed in the format itself: you can only choose from a limited palette of colours to paint your picture.
 
+If you want to have transparency in your picture, you will need to sacrifice a color and tell the format that such color is the "transparency color". In many images a very bright, evident color (like magenta) is used. Such color will not be painted, thus giving the transparency effect.
+
+This also mean that we cannot make semi-transparent surfaces, since only that specific color will be fully transparent, and that's it.
 
 ### General Tips
 
