@@ -336,3 +336,39 @@ The most used Version Control system used in coding is Git, it's decentralized a
 Other used version control systems are Mercurial and SVN (subversion).
 
 Another useful feature of many version control systems are remote sources, which allow you to upload and synchronize your repositories with a remote location (like GitHub, GitLab or BitBucket for instance) and have it safe on the cloud, where safety by redundancy is most surely ensured.
+
+Metrics and dashboards
+----------------------
+
+During development you need to keep an eye on the quality of your project, that's when you need a **project dashboard**: but before that, you need to decide what your **quality metrics** are, that means the measurements that define if your project is "up to par" with what you expect or not.
+
+### Cyclomatic Complexity
+
+\placeholder
+<!-- TODO: -->
+
+### SLOC
+
+\placeholder
+<!-- TODO: -->
+
+### Code Coverage
+
+\placeholder
+<!-- TODO: -->
+
+### Code Smells
+
+\placeholder
+<!-- TODO: -->
+
+### Coding Style breaches
+
+\placeholder
+<!-- TODO: -->
+
+Continuous Integration and Delivery
+-----------------------------------
+
+\placeholder
+<!-- TODO: -->
