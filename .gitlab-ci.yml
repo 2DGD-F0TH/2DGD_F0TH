@@ -7,6 +7,6 @@ build_pdf:
         - make
     artifacts:
         paths:
-            - Book.pdf
+            - Book_pseudocode_colored.pdf
     only:
         - master
