@@ -4,7 +4,7 @@ build_pdf:
         - apt-get update -y
         - apt-get install -y pandoc
     script:
-        - make
+        - make pseudocode_color
     artifacts:
         paths:
             - Book_pseudocode_colored.pdf
