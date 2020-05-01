@@ -13,6 +13,7 @@
 \usepackage{fixltx2e}
 \usepackage{framed}
 \usepackage[toc,page]{appendix}
+\usepackage[absolute,overlay]{textpos}
 % --------------- Commands ---------------
 \newcommand{\tabitem}{~~\llap{\textbullet}~~}
 \newcommand{\ttabitem}{~~~~\llap{$$\circ$$}~~}
@@ -335,6 +336,13 @@ contents = {%
 \pagestyle{empty}
 \begin{titlepage}
     \BgThispage
+    $if(proglang)$
+    \begin{textblock*}{5cm}(14.5cm,16.5cm) % {block width} {coords}
+        \begin{center}
+            \textcolor{black}{\Large\textbf{\textsc{$proglang$ edition}}}
+        \end{center}
+    \end{textblock*}
+    $endif$
     \null
     \newpage
     %\begin{center}
@@ -351,15 +359,19 @@ contents = {%
     %\clearpage
 \end{titlepage}
 
-% Copyright page
+% Copyright page / Front Matter
 \clearpage
 \null
-\vfill
-\begin{minipage}[b]{\textwidth}
-\begin{center}
-    2D Game Development: From Zero To Hero is licensed under the CC-BY-NC 4.0 license
-\end{center}
-\end{minipage}
+2D Game Development: From Zero To Hero ($if(proglang)$$proglang$ edition, $endif$version $version$) is licensed under the CC-BY-NC 4.0 license.\\
+
+\vspace{24pt}
+
+This book can be found in the following official repositories:
+
+\begin{itemize}
+    \item \url{https://github.com/Penaz91/2DGD_F0TH/}
+    \item \url{https://gitlab.com/Penaz/2dgd_f0th}
+\end{itemize}
 \clearpage
 
 \pagenumbering{Roman}
@@ -375,7 +387,8 @@ $endif$
 \begin{itemize}[label={}]
     $for(dedication)$
         \item $dedication$
-    $endfor$
+    $endfor$\\
+    \textit{Daniele Penazzo}
 \end{itemize}
 \end{minipage}
 \vfill

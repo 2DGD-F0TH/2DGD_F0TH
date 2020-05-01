@@ -8,6 +8,69 @@ Creating your resources
 Graphics {#GraphicsResources}
 ---------
 
+### Some computer graphics basics
+
+\placeholder
+<!-- TODO -->
+
+#### Color Depth
+
+\placeholder
+<!-- TODO -->
+
+#### True Color vs. Indexed Color
+
+There are two main ways to represent color in digital images.
+
+The first is "True Color", which allows 256 values (from 0 to 255 included) for each color channel (red, green and blue), for a total of over 16 Million colors.
+
+Each single color is identified by its value, which can be a waste of space and memory when the image has few well-defined colors.
+
+The second way to store images is with "indexed color": in this case a "palette" of colors is created and each pixel color refers to an index to such palette. This allows for smaller images, at the expense of the number of available colors. If you want to add a new color to the picture, first you need to add it to your palette if there is space.
+
+#### Lossless Formats
+
+There are a few ways to store information on a computer, either you store them raw, or you use some tricks to make such information occupy less space in your drive.
+
+When it comes to storing information, lossless formats are usually uncompressed or make use of clever tricks to compress your images without losing information in the process.
+
+In computer graphics, lossless formats include:
+
+- JPEG 2000 (in its lossless form);
+- Portable Network Graphics (PNG);
+- Free Lossless Image Format (FLIF);
+- PDF (in its lossless form);
+- TARGA Files (Truevision TGA, with TGA file format);
+- TIFF (in its lossless form).
+
+#### Lossy Formats
+
+When it comes to compressing information, the best way to store the least amount of information possible is to actually *not store them*. Lossy file formats get rid of some information present in the picture, in a more or less evident way (depending on the compression ratio) to lower the file size.
+
+In computer graphics, lossy file formats include:
+
+- JPEG (in its most common "lossy" form).
+
+#### Transparency
+
+Usually you need to have transparency in your artwork, for instance for your sprites. There are different ways to get transparency in your artwork, depending on the image format you're using and the support offered by the engine/framework you're using.
+
+##### Alpha Transparency
+
+This is the most common type of transparency available today: along with the usual Red-Green-Blue (RGB) channels, the image has an additional "Alpha" channel. Sometimes images with "Alpha Transparency" are also referred as "RGBA" images.
+
+This allows to set the transparency precisely and allows for "partial transparency" too, which means that we are able to create shadows and semi-transparent surfaces.
+
+The PNG format is one of the many image formats that supports alpha transparency.
+
+##### Indexed Transparency
+
+Normally used in GIF images, "Indexed Transparency" is the product of some limitation imposed in the format itself: you can only choose from a limited palette of colours to paint your picture.
+
+If you want to have transparency in your picture, you will need to sacrifice a color and tell the format that such color is the "transparency color". In many images a very bright, evident color (like magenta) is used. Such color will not be painted, thus giving the transparency effect.
+
+This also mean that we cannot make semi-transparent surfaces, since only that specific color will be fully transparent, and that's it.
+
 ### General Tips
 
 In this section we will take a look at some basic art tips that will give you some indication on how to create your own art for your very own game. This will be pointers to keep you going.
@@ -205,7 +268,6 @@ Palette Swapping can be used in more creative ways, though. Going back to Super 
 
 \placeholder
 
-
 <!-- TODO: talk about pixel art, etc...-->
 
 ### Tips and Tricks
@@ -235,6 +297,69 @@ Sounds And Music
 
 <!-- TODO: Talk about the importance of good sound quality, introduce people to chip tunes and tools to create music and sounds , talk about the importance of having areas where you have to apply a certain effect or it will happen on the whole level -->
 
+
+### Some audio basics
+
+\placeholder
+<!-- TODO -->
+
+#### Sample Rate
+
+Differently from Analog Audio, which is continuous (as in has an infinite amount of detail), Digital Audio is a stream of numbers (ones and zeros) that is "discrete" in nature. That means that we blast these numbers thousands of times a second to be able to build a decent sounding sound.
+
+The number of times we record such numbers from our digital microphone (as well as the number of times we blast such numbers back from our speakers) is called **sample rate** and it is measured in *Hz*.
+
+![Graphical Representation of Sample Rate (44.1KHz)](./images/resources/Sample_Rate_44100.png){width=60%}
+
+In normal CD-Audio, we have a sample rate of 44100 Hz, which means that we recorded a sample 44100 times in a single second.
+
+When making our game's audio, we should always stay around such value, since going lower would make the audio sound worse, since we lower the amount of information the audio itself has.
+
+![Graphical Representation of Sample Rate (8KHz)](./images/resources/Sample_Rate_8000.png){width=60%}
+
+Also we should avoid using weird sample rates, 44.1KHz (or 44100 Hz if you prefer) is a "magic value" that guarantees the most compatibility.
+
+#### Bit Depth
+
+Along with sample rate, there is another value in audio that expresses its quality: the bit depth.
+
+The bit depth defines how many "volume values" we can have in a single sample, which shapes the quality of the sound in a different way than sample rate.
+
+If our audio has a 1-bit sample rate, each sample will have only 2 values:
+
+- **0:** Mute
+- **1:** Blast at full volume
+
+Which reduces the quality of the audio.
+
+Usually audio has a 16 Bit depth, but more modern systems make use of 24 Bits or even 32 Bits.
+
+#### Lossless Formats
+
+As with graphics, there are audio formats that allow you to store uncompressed information, as well as compressed (but without losses) sounds. The most common lossless audio formats include:
+
+- WAV;
+- AIFF;
+- FLAC.
+
+#### Lossy Formats
+
+As with graphics, there are also "lossy formats" that allow us to store information in even less space by getting rid of information that is well outside our hearing spectrum, for instance. Some of the most known are:
+
+- Mpeg Layer 3 (MP3);
+- OGG Vorbis;
+- Windows Media Audio (WMA);
+- Advanced Audio Codec (AAC).
+
+#### Clipping
+
+Clipping is a phenomenon when you're trying to output (or record) a wave that exceeds the capacity of your equipment. As a result, the wave is "clipped" (cut) and there is a very audible distortion.
+
+You surely heard clipping in audio before, usually when people scream on a low-quality microphone and the audio gets distorted.
+
+The best way to repair clipping is to re-record the audio completely, although some tools can help in case you absolutely cannot re-record the audio.
+
+Also you should be wary of clipping, because there may be cases where it damages your audio equipment.
 
 ### Digital Sound Processing (DSP)
 
@@ -301,6 +426,16 @@ footsteps:
 ```
 
 Making a configuration file instead of hard-coding the elements allows for easy extensibility and modding, which everyone loves (See [Designing entities as data](#entitiesasdata)).
+
+### Some audio processing tips
+
+\placeholder
+<!-- TODO -->
+
+#### Prefer cutting over boosting
+
+\placeholder
+<!-- TODO: If you want to enhance lower frequencies, it's better to cut the higher ones than boost the lows, since boosting creates artifacts -->
 
 Fonts
 -------

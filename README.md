@@ -16,7 +16,7 @@ Looking for contributors!
 
 Hi! Penaz here.
 
-After over 240 pages of content, I am reaching the point where I poured the majority of my knowledge inside this e-book, and simplifying and explaining takes away a lot of time. With the little time I have, research can only get me so far.
+After over 250 pages of content, I am reaching the point where I poured the majority of my knowledge inside this e-book, and simplifying and explaining takes away a lot of time. With the little time I have, research can only get me so far.
 
 I'd love to translate the currently available listings in (decently written) C++ and (separately) Lua, as well as add new algorithms, containers, tips and tricks and design patterns. Though my work leaves me very little free time to study and re-work things in a more understandable way.
 
@@ -67,13 +67,11 @@ To build the book you need the following software:
 - TexLive or equivalent
 - GNU Make or equivalent
 
-Before building the book, you might want to set your programming language in the `metadata.yaml` file. The programming languages currently available are:
+Before building the book, you might want to decide your favourite programming language, and use the corresponding command:
 
-- Non-Highlighted Pseudocode (which is the empty "" option)
-- Pseudocode with basic Syntax Highlighting (proglang set to "pseudocode")
-- Python 3 (proglang set to "python")
-
-To Build the book you need to clone this repository and use the `make` command from the main directory.
+- Non-Highlighted Pseudocode: `make pseudocode`
+- Pseudocode with basic Syntax Highlighting: `make pseudocode_color`
+- Python 3: `make python`
 
 Branches
 --------

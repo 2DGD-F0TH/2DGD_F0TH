@@ -29,7 +29,7 @@ If you want to add a new programming language, navigate to the `listings` folder
 
 The only thing left to do is translating all the pseudo-code listings into your favourite programming language.
 
-After that you can try and make a copy of the book, by editing the `proglang` argument in the `metadata.yaml` file. Remember to add the new language in the `README.md` file.
+After that you can try and make a copy of the book, by editing the `Makefile`. Remember to add the new language in the `README.md` file.
 
 #### What if my programming language is not in the list?
 
