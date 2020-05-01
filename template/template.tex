@@ -13,6 +13,7 @@
 \usepackage{fixltx2e}
 \usepackage{framed}
 \usepackage[toc,page]{appendix}
+\usepackage[absolute,overlay]{textpos}
 % --------------- Commands ---------------
 \newcommand{\tabitem}{~~\llap{\textbullet}~~}
 \newcommand{\ttabitem}{~~~~\llap{$$\circ$$}~~}
@@ -335,6 +336,13 @@ contents = {%
 \pagestyle{empty}
 \begin{titlepage}
     \BgThispage
+    $if(proglang)$
+    \begin{textblock*}{5cm}(14.5cm,16.5cm) % {block width} {coords}
+        \begin{center}
+            \textcolor{black}{\Large\textbf{\textsc{$proglang$ edition}}}
+        \end{center}
+    \end{textblock*}
+    $endif$
     \null
     \newpage
     %\begin{center}
