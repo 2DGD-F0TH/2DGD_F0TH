@@ -50,10 +50,4 @@ linkcolor: "red"
 urlcolor: "blue"
 # Colors for citations
 citecolor: "green"
-# Programming Language to use for the listings
-# Languages available:
-# "" : pseudocode (No highlighting)
-# "pseudocode" : pseudocode (With basic code highlighting)
-# "python": Python 3+
-proglang: "pseudocode"
 ---
