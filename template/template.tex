@@ -359,13 +359,13 @@ contents = {%
     %\clearpage
 \end{titlepage}
 
-% Copyright page
+% Copyright page / Front Matter
 \clearpage
 \null
 \vfill
 \begin{minipage}[b]{\textwidth}
 \begin{center}
-    2D Game Development: From Zero To Hero is licensed under the CC-BY-NC 4.0 license
+    2D Game Development: From Zero To Hero ($if(proglang)$$proglang$ edition, $endif$version $version$) is licensed under the CC-BY-NC 4.0 license
 \end{center}
 \end{minipage}
 \clearpage
@@ -383,7 +383,8 @@ $endif$
 \begin{itemize}[label={}]
     $for(dedication)$
         \item $dedication$
-    $endfor$
+    $endfor$\\
+    \textit{Daniele Penazzo}
 \end{itemize}
 \end{minipage}
 \vfill
