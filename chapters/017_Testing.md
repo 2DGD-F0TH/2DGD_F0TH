@@ -73,6 +73,8 @@ function test_sum():
 
 As we can see, the test makes use of the "assert" statement, which in many languages raises an error when the "assert" is false. This means that if, for some reason, the `sum_two_numbers` function was edited to return "2+2=5", an exception would be raised when the test is run.
 
+Care should be taken when making automated tests: they should be as simple as possible, to avoid the presence of bugs in the tests themselves, also, like all code in the world, it's subject to its own maintenance: you should thoroughly comment your tests, and if the tested component changes, the connected test should change too, or it may fail.
+
 ### Manual Testing
 
 Sometimes also called "play testing", this is usually divided in time periods, where more and more people participate:
@@ -86,20 +88,40 @@ We will talk specifically about each one of these test types in detail in the fo
 Unit Testing
 ------------
 
-\placeholder
-<!-- TODO -->
+Unit Testing takes care of testing the smallest component possible inside your system: that usually means a single function. Such "units" must be separated from all their dependencies (via [mocking](#mocking)) to avoid bugs in their dependencies to interfere with our testing efforts.
+
+Many programming languages have their own unit testing frameworks, among the most used:
+
+- **Python:** Unittest (in the standard library);
+- **Javascript:** unit.js;
+- **C++:** Boost Testing Library;
+- **Java:** JUnit;
+- **Lua:** luaunit.
+
+Remember: during unit testing, you need to make sure that the unit that you're testing has its dependencies mocked, or the results of your test will depend on the performance and correctness of said dependencies.
 
 Integration Testing
 -------------------
 
-\placeholder
-<!-- TODO -->
+Integration testing is a step further from "unit testing", here you take different "units", put them together and check how they behave as a group.
+
+There are many approaches to integration testing, the most used are:
+
+- **Big bang integration:** The majority of the units are put together to form a somewhat complete system (or at least a major part of it), after that the integration testing starts. This can lead up to an "explosion of complexity" if the results are not accurately recorded.
+- **Bottom-up:** Test the "lowest level" components first, this should help testing the "higher level" ones. After that you test the components that are "one level above" the previous ones. Keep going until the component at the top of the hierarchy is tested.
+- **Top-down:** Opposite of the previous approach, you test the integrated modules first, then you branch into the lower-level modules, until reaching the bottom of the hierarchy.
+- **Sandwich Testing:** a combination of Bottom-Up and Top-Down.
 
 Regression Testing
 ------------------
 
-\placeholder
-<!-- TODO -->
+Regression testing is a bit of an outlier in our "specific to general" testing structure, but that's because their objective is different.
+
+Regression testing (sometimes also called *non regression testing*, you'll see why) is used to avoid our software from regressing into previous bugs.
+
+This means that every time you find a serious bug in your software, you should fix it and make a test that will check for you if said bug is resurfacing.
+
+With time, bugs and regression tests will accumulate, which usually means that automation is involved (like continuous intergration and delivery).
 
 Playtesting
 -----------
