@@ -194,11 +194,51 @@ Top-view RPG-Like Games
 Rhythm Games
 ------------
 
+### The world of lag
+
+\placeholder
+<!-- TODO: talk about lag in general in rhythm games-->
+
+#### Video Lag
+
+\placeholder
+<!-- TODO: talk about video lag in rhythm games-->
+
+#### Audio Lag
+
+\placeholder
+<!-- TODO: talk about audio lag in rhythm games -->
+
+#### Input Lag
+
+\placeholder
+<!-- TODO: talk about the "always present" input lag -->
+
+#### Lag Tests
+
+\placeholder
+<!-- TODO: Talk on how to use lag tests to account for video and audio lag, and eventually use some gamification to make them more fun to do -->
+
 ### Synchronizing with the Music
 
 \placeholder
 
 <!-- TODO: Basic Beat detection or how to somehow sync music and gameplay -->
+
+#### Time domain vs. Frequency Domain
+
+\placeholder
+<!-- TODO: talk about the difference between "time domain" and "frequency domain" to introduce later to FFT -->
+
+#### The Fast Fourier Transform
+
+\placeholder
+<!-- TODO: FFT, to turn time domain into frequency domain -->
+
+#### Beat Detection
+
+\placeholder
+<!-- TODO -->
 
 Match-x Games
 --------------
