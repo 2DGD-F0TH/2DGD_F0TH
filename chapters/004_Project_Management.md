@@ -418,16 +418,14 @@ A high number of local variables instead may point to a complexity issue: your a
 
 ### Number of parameters
 
-\placeholder
-<!-- TODO: -->
+This metric is specific for functions, when a function has a lot of parameters, it's harder to call and harder to understand. Functions should have no more than 5 parameters in most cases, more and it will be complex.
+
+Some automated tools in your IDE may be able to warn you in case methods and functions have too many parameters.
 
 ### Other metrics
 
-\placeholder
-<!-- TODO: Talk about aggregated metrics like "maintainability index", "mtbf", -->
+The metrics listed above are not the only ones available to you, some IDEs have aggregated metrics (like the "maintainability index" in Visual Studio), while there may be other metrics you want to measure, some follow:
 
-Continuous Integration and Delivery
------------------------------------
-
-\placeholder
-<!-- TODO: -->
+- **Lead Time:** Time elapsed between the start and end of a process (may be a ticket, or a task);
+- **MTBF:** (Mean Time Before Failure) represents the mean time before the software crashes;
+- **Crash Rate:** The number of times a software crashes, over the number of times it's used.
