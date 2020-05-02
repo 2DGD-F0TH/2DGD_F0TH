@@ -121,25 +121,29 @@ Regression testing (sometimes also called *non regression testing*, you'll see w
 
 This means that every time you find a serious bug in your software, you should fix it and make a test that will check for you if said bug is resurfacing.
 
-With time, bugs and regression tests will accumulate, which usually means that automation is involved (like continuous intergration and delivery).
+With time, bugs and regression tests will accumulate, which usually means that automation is involved (like continuous intergration and delivery) to execute them at each push or at regular intervals.
 
 Playtesting
 -----------
 
-\placeholder
-<!-- TODO -->
+Automated testing won't be able to help with how a game "feels" to the player, for that you need to a thorough play testing strategy. Here we will talk a bit of different strategies that can be mixed and matched to get the best out of it.
 
 ### In-House Testing
 
-\placeholder
-<!-- TODO -->
+The first sessions of play testing should be done in-house, with a dedicated play testing team that has great reporting capabilities, and the product should already include tools that allow for quick reporting of bugs and issues that arise, as well as a good logging system set to its `DEBUG` level for maximum detail.
+
+Close collaboration with the testing team is vital for a good game to be released, instead of seeing them as "the ones that give you more work", try looking at them as "the ones that will ensure your game gets a lot of praise".
 
 ### Closed Beta Testing
 
-\placeholder
-<!-- TODO -->
+Happening after the in-house testing, usually done with multiplayer games, the "Closed Beta" phase is done with a selected group of players that try the game and report each and every issue with it, as well as bugs.
+
+The product should have an easy way to directly report bugs and issues form inside the game itself, with the possibility of attaching a detailed log with the "ticket".
 
 ### Open Beta Testing
 
-\placeholder
-<!-- TODO -->
+Differently from the "Closed Beta" phase, and usually coming after that, the "Open Beta" phase doesn't have a hard limit on the number of players that can take part to the beta testing.
+
+The product should have the same characteristics that are used in the "closed beta" phase, plus possibly a higher degree stability.
+
+Open Beta is usually done to test the robustness of the network system at higher loads, and having a possibly large (maybe larger than expected) player base can be a real test for the infrastructure.
