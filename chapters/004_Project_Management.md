@@ -401,13 +401,20 @@ Counting (automatically) the number of coding style breaches can help you estima
 
 ### Depth of Inheritance
 
-\placeholder
-<!-- TODO: -->
+Some people say that inheritance is evil and should be avoided, some other say it's good. As with all things, *in medio stat virtus* (virtue stands in the middle), sometimes inheritance is better left where it is, other times its usage is necessary for things to make sense.
+
+The *depth of inheritance* metric tells us how deep the inheritance hierarchy is, thus this metric will tell the us the strength of one of the possible dependency types. The deeper the inheritance, the more dependencies we have, which means that we have more classes that, if edited, will change the behaviour of the "children classes".
+
+It's better having a short inheritance depth, although it's not necessarily wrong having a longer chain of dependencies it might mean we have a structural problem, where some classes are "too generic" and at the top of the hierarchy we have some kind of "universal object".
 
 ### Number of methods / fields / variables
 
-\placeholder
-<!-- TODO: -->
+Let's talk numbers: having too many methods or fields in a class can be an indicator of a so-called "god object": an object that has too many responsibilities under its wing (does too many things), this is a breach of the *single responsibility principle* and should be avoided.
+
+We can fix this by splitting the class into smaller classes, each with its own single responsibility.
+
+A high number of local variables instead may point to a complexity issue: your algorithm may be more complex than needed, or needs to be split into different functions.
+
 
 ### Number of parameters
 
