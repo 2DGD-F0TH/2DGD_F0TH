@@ -56,7 +56,7 @@ Optimizing your game
 
 After accurate profiling, you need to intervene and try to get more out of your code. In this section we'll talk about some guidelines and tips on how to optimize your game.
 
-### Working on references vs. returning values
+### Working with references vs. returning values
 
 Depending on the programming language you're using, and the amount of internal optimization its compiler/interpreter has, you may have the possibility to choose between two main ways of working, when it comes to functions:
 

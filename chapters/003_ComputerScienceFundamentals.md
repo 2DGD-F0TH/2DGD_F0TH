@@ -1188,6 +1188,8 @@ To allow for multi-tasking (doing many activities at once), the CPU switches bet
 Introduction to MultiThreading {#multithreading}
 ------------------------------
 
+<!-- TODO: How to implement multi-threading via mutex, immutable objects and atomic operations -->
+
 When it comes to games and software, we usually think of it as a single line of execution, branching to (not really) infinite possibilities; but when it comes to games, we may need to dip our toes into the world of multi-threaded applications.
 
 ### What is MultiThreading
@@ -1275,5 +1277,4 @@ Usually these multithreaded functionalities are part of the programming language
 #### Atomic Operations
 
 \placeholder
-
-<!-- TODO: How to implement multi-threading via mutex, immutable objects and atomic operations -->
+<!--TODO: Talk about atomic operations -->
