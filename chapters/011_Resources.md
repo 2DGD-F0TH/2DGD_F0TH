@@ -226,17 +226,29 @@ Contrasting (complementary) color pairs were used in impressionism for their "ey
 
 Some complementary color pairs are:
 
-- **Red and Cyan**: Choose red, then green+blue gives cyan
-- **Green and Magenta**: Choose green, then red+blue gives magenta
-- **Blue and Yellow**: Choose blue, then red+green gives yellow
+- **Red and Cyan**: Choose red, then green+blue gives cyan;
+- **Green and Magenta**: Choose green, then red+blue gives magenta;
+- **Blue and Yellow**: Choose blue, then red+green gives yellow.
 
-*Remember that we're talking about the RGB model of colors produced by **light**, not the traditional color wheel*
+*Remember that we're talking about the RGB model of colors produced by **light** (color addition), not the traditional color wheel*
+
+While, talking about colors made by paint (color subtraction) we have tre following color pairs:
+
+- **Magenta and Green:** Choose magenta, then yellow+cyan gives green;
+- **Yellow and Purple:** Choose yellow, then magenta+cyan gives purple;
+- **Cyan and Orange:** Choose cyan, then magenta+yellow gives you orange.
 
 These colors tend to attract a lot of attention in the points of intersection of their hues, distracting the player from the main gameplay.
 
 Our rule number four should then be:
 
 > Keep backgrounds low-contrast to avoid distracting players
+
+Also the opposite rule may apply:
+
+> Keep the main gameplay elements contrasting, so to attract the attention towards them
+
+An orange-robed character will be easier to follow on a blue-ish background, for instance.
 
 #### Find exceptions
 
@@ -434,8 +446,9 @@ Making a configuration file instead of hard-coding the elements allows for easy 
 
 #### Prefer cutting over boosting
 
-\placeholder
-<!-- TODO: If you want to enhance lower frequencies, it's better to cut the higher ones than boost the lows, since boosting creates artifacts -->
+Sometimes we may find our audio samples lacking that "punch" they would need, the first idea we may have would be to use a "bass boost" filter to make the low frequencies more prominent. Most of the time, this is not a good idea, since boost filters can create artifacts.
+
+It's better to cut the higher frequencies instead, and eventually boost the entire volume of the sample during mixing. This way the nature of the sample doesn't get tainted by boosting, and we obtain the result we wanted.
 
 Fonts
 -------
