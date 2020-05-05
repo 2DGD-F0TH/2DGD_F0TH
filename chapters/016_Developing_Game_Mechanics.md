@@ -196,25 +196,48 @@ Rhythm Games
 
 ### The world of lag
 
-\placeholder
-<!-- TODO: talk about lag in general in rhythm games-->
+Welcome to the world of rhythm games, as with all new experiences we shall start with... the final boss: Lag.
 
-#### Video Lag
-
-\placeholder
-<!-- TODO: talk about video lag in rhythm games-->
-
-#### Audio Lag
-
-\placeholder
-<!-- TODO: talk about audio lag in rhythm games -->
+Lag will be one of the most problematic things you will have to account for: things are not as easy as you may imagine when it comes to implementing a rhythm game. Let's see how to account for it, and eventually how to limit its effect on the player experience.
 
 #### Input Lag
 
-\placeholder
-<!-- TODO: talk about the "always present" input lag -->
+First of all: the ever-present "input lag": there is a certain time window between the moment the use presses a button and the moment the game receives such input. In the middle we find electrons running at breakneck speed through our keyboard circuitry, through the cable, to the motherboard, then the CPU, input abstraction layers in our OS, and finally the input system in our game.
+
+And we didn't reach the game update stage yet.
+
+Also we are not even accounting for the reaction time (about one second) from when the player sees something on screen and when they react.
+
+Input lag is something that we cannot avoid, but there are countermeasures, as we will see below.
+
+#### Video Lag
+
+As with the input lag, there is also a not-neglegible video lag. The game has to prepare the image, send it to the video card, the card has to render it, apply effects and then send it to the screen, where the liquid crystals (or whatever technology we will have in the future) will have the re-align to create the colored pixels on screen.
+
+#### Audio Lag
+
+When the audio doesn't exactly match with the video, we talk about "audio lag", this has to be accounted for if you want to have a good rhythm game. In that case, there is a need to compensate for the audio lag, by starting each sound effect (or music) earlier or later by a well-defined amount of milliseconds.
 
 #### Lag Tests
+
+When it comes to lag, it is really difficult to estimate how the computer will react to our game, so we need a metric that will tell us what corrections we need to apply.
+
+Such corrections are estimated comparing video and audio to the input: this way we will keep everything syncronized to the player input, making the game feel tighter.
+
+First kind of test is done "video vs. input", the player has to push a button when something on the screen happens (like pushing rhythmically with a dot changing color), this way we can account for the video lag, compared to the input. This means we will obtain a $(video+input)$ lag measurement.
+
+The second test done is the "audio vs. input" one, the player has to push a button when a sound cue happens on their speakers/headphones (like pushing rhythmically with a beep), this way we can account for the audio lag, compared to the input. This way we will obtain a $(audio+input)$ lag measurement.
+
+By simple math we can account for the "video vs. audio" lag, like follows:
+
+$$ (video + input) - (audio + input)$$
+
+$$ video + input - audio - input$$
+
+$$ video + \bcancel{input} - audio - \bcancel{input}$$
+
+$$ video - audio $$
+
 
 \placeholder
 <!-- TODO: Talk on how to use lag tests to account for video and audio lag, and eventually use some gamification to make them more fun to do -->
