@@ -250,8 +250,17 @@ $$ video - audio $$
 
 #### Time domain vs. Frequency Domain
 
-\placeholder
-<!-- TODO: talk about the difference between "time domain" and "frequency domain" to introduce later to FFT -->
+When we listen to music, we are essentially streaming a bunch of numbers as the time goes forward, so we can plot the amplitude of our waveform against time, as follows:
+
+![Plotting amplitude against time](./images/developing_mechanics/time_domain.png){width=60%}
+
+In this case, when the time is the "independent variable" that we use to base our work, it's said we're working in *time domain*.
+
+When we are working with games, we don't really care about what will happen (music-wise) 5 minutes from now, instead we care about other things that are happening now. In that case, it may be interesting to work in *frequency domain*, which can look something like this:
+
+![Plotting frequency domain](./images/developing_mechanics/frequency_domain.png){width=60%}
+
+We can switch back and forth between the two domains with "transforms", the most used is the Fourier Transform, and one of the most used algorithms to do it on computer is "FFT" (Fast Fourier Transform).
 
 #### The Fast Fourier Transform
 
