@@ -90,6 +90,14 @@ MilkyTracker is an editor for tracker files, Amiga-style that takes a lot of ins
 
 <https://milkytracker.titandemo.org/>
 
+### Bosca Ceoil
+
+Created by Terry Cavanagh (creator of VVVVVV, Super Hexagon and Dicey Dungeons), this tool is geared towards beginners, containing chords and scales as well as pre-made instruments. This allows to get something good going on straight away.
+
+This tool is open source, made in Adobe AIR, available for Windows, Linux and Mac
+
+<https://terrycavanagh.itch.io/bosca-ceoil>
+
 Maps
 -----
 
