@@ -1,6 +1,22 @@
 F.A.Q. and Guides
 =================
 
+Are there any differences with the standard Pandoc Markdown and the language used in this book?
+-----------------------------------------------------------------------------------------------
+
+There are a few, but mostly the language is standard Pandoc markdown, with a few added commands.
+
+`\code{path}` is used to insert a code fence, the make script, latex and pandoc will take care of swapping out the code listings depending on the edition you are building.
+
+`\paidprod` is used to identify a "Paid Product" in the resources list.
+
+`\freeprod` is used to identify a "Free Product" in the resources list.
+
+`\donprod` is used to identify a "Product that accepts donations" or a "Partially free product" in the resources list.
+
+`\placeholder` is use to print a "placeholder" in a section of the book.
+
+
 I can't export my diagrams to Vector PDF, what do I do?
 --------------------------------------------------------
 
