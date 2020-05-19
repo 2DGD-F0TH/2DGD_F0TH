@@ -3,6 +3,8 @@
 Cameras
 =========
 
+\epigraph{Nothing's beautiful from every point of view}{\textit{Horace}}
+
 The great majority of games don't limit the size of their own maps to the screen size only, but instead they mave maps way bigger than the screen.
 
 To be able to manage and display such maps to the screen, we need to talk about cameras (sometimes called "viewports"): they will allow us to show only a portion of our world to the user, making our game much more expansive and involving.

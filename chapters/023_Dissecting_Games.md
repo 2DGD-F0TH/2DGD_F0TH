@@ -3,6 +3,8 @@
 Dissecting games: two study cases
 =================================
 
+\epigraph{I'm a writer, so I like dissecting things.}{\textit{Hal Sparks}}
+
 In this section we will talk about two games, one bad and one good, and study their decisions closely, how a bad game inconveniences the player or how a good one reduces the space between the player's thought and the action on the screen.
 
 This is not intended as a section to diss on a bad game or sing the praises of a good one, it is meant to be a study on how bad decisions pile up into what is universally recognized as a "bad game", while there are so many good decisions that need to be taken to make a "good game".
