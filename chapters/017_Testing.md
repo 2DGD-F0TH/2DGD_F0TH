@@ -3,6 +3,8 @@
 Testing your game {#testing}
 =================
 
+\epigraph{The bitterness of poor quality remains long after the sweetness of meeting the schedule has been forgotten.}{\textit{Anonymous}}
+
 When you want to assure the quality of your product, you need to test it. Testing will be probably be the bane of your existence as a developer, but it will also help you finding bugs and ensure that they don't come back.
 
 Remember that you should be the one catching bugs, or your players will do that for you (and it won't be pretty).
