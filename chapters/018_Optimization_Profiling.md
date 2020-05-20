@@ -80,3 +80,10 @@ Another way to optimize your drawing routine is avoiding to change textures ofte
 \placeholder
 
 <!-- TODO -->
+
+Dirty Bit
+---------
+
+\placeholder
+
+<!-- TODO: Technique used to avoid useless operations when an object is not updated (for instance if the player doesn't press any button) -->
