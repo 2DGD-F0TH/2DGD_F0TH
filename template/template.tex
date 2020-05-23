@@ -167,9 +167,9 @@ $if(listings)$
 % -----------------------------------------------
 % ------- \code command definition -------
 $if(proglang)$
-\newcommand{\code}[2]{\lstinputlisting[language=$proglang$,caption={#2}]{./listings/$proglang$/#1.txt}}
+\newcommand{\code}[2]{\IfFileExists{./listings/$proglang$/#1.txt}{\lstinputlisting[language=$proglang$,caption={#2}]{./listings/$proglang$/#1.txt}}{\texttt{[MISSING CODE LISTING]}}}
 $else$
-\newcommand{\code}[2]{\lstinputlisting[caption={#2}]{./listings/pseudocode/#1.txt}}
+\newcommand{\code}[2]{\IfFileExists{./listings/$proglang$/#1.txt}{\lstinputlisting[caption={#2}]{./listings/pseudocode/#1.txt}}{\texttt{[MISSING CODE LISTING]}}}
 $endif$
 % ----------------------------------------
 
