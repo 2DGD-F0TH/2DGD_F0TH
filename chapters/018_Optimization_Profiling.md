@@ -81,9 +81,41 @@ Another way to optimize your drawing routine is avoiding to change textures ofte
 
 <!-- TODO -->
 
-Dirty Bit
----------
+### Reduce the calls to the Engine Routines
 
-\placeholder
+Some engines have routines that introduce sanity checks, logic optimizations and more, and calling such routines more than necessary can burden your game's performance, even worse when you're calling them per-frame.
 
-<!-- TODO: Technique used to avoid useless operations when an object is not updated (for instance if the player doesn't press any button) -->
+If you want to move a character diagonally both up and right, don't do this:
+
+\code{optimization/double_move_call}{Double Engine Movement Call}
+
+As all the sanity checks in the `Move` function will be executed twice per frame (since we're in the "Update" function). Instead you should get the resulting movement vector first, and then use the `Move` function only once:
+
+\code{optimization/single_move_call}{Single Engine Movement Call}
+
+This way instead we're doing sanity checks and related operations only once, moving the character in its final position without wasting resources.
+
+Tips and tricks
+---------------
+
+### Dirty Bit
+
+Not all entities in your game need to have their state updated all the time. Continuously updating all entities' internal state can be really costly in terms of game performance.
+
+A quick way to make your game lighter on resources (and thus more performing) can be putting a boolean check at the beginning of the update function, checking if the object really needs to have its internal state updated.
+
+A possible example could be the following:
+
+\code{optimization/dirty_bit}{Example on how to optimize entities with a dirty bit}
+
+If your code is well-done, you won't have issues like animations freezing, because those will be separated from the "update routine", since the animator will chug along its frames when requested by the `draw` function.
+
+### Far-Away entities (Dirty Rectangles)
+
+Another way to optimize your game performance is not updating entities way off screen: this is also a technique used in the game Minecraft, where entities are frozen when you are far away from them, to save on resources.
+
+A possible idea would be having an "updatable rectangle" (sometimes called "Dirty Rectangle"), bigger than the screen, and only the entities inside such rectangle will be updated.
+
+This could create some issues when it comes to games that have their challenge deriving from entities updating in sync with each other, thus if we implement this "updatable rectangle" one or more entities would fall "out of sync", possibly making beating the level impossible.
+
+In that case we may just put out an exception (where certain entities are updated no matter what) or divide our level into smaller "rooms" that are instead entirely updated all the time.
