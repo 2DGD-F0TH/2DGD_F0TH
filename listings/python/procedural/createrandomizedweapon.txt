@@ -2,6 +2,7 @@ from random import choice as random_choice
 from random import randint
 from os import listdir
 
+
 def createRandomizedWeapon():
     # Start by getting the directory contets for each component
     bodies = listdir("weaponBodies/shotguns")
