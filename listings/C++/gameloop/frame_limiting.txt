@@ -1,0 +1,10 @@
+float targetTime = 1.0/60.0;
+bool game_is_running = true;
+
+while(game_is_running){
+    float dt = measure_time_from_last_frame();
+    process_user_input();
+    update_world(dt);
+    draw();
+    wait(targetTime - time_spent_this_frame());
+}
