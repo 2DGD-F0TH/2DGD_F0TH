@@ -119,3 +119,18 @@ A possible idea would be having an "updatable rectangle" (sometimes called "Dirt
 This could create some issues when it comes to games that have their challenge deriving from entities updating in sync with each other, thus if we implement this "updatable rectangle" one or more entities would fall "out of sync", possibly making beating the level impossible.
 
 In that case we may just put out an exception (where certain entities are updated no matter what) or divide our level into smaller "rooms" that are instead entirely updated all the time.
+
+### Tweening is better than animating
+
+Animators and animation frames are performance-hungry and should absolutely not be used in all those situations where you can instead use inbetweening techniques.
+
+This means that frame-by-frame animations should not be used when taking care of moving UI parts: if you want to slide a piece of UI (take for instance a drop-down terminal from a "computer hacking" game) from the top, you can just tween its position and save a lot of memory.
+
+Tweening doesn't apply only to position, you can tween any property of a game object, for instance:
+
+- The position of a UI item;
+- The width of a health bar;
+- The rotation of an on-screen map or compass;
+- The colour of the sky while doing a day-to-night transition.
+
+So a quick way you can optimize your game, is removing all the unnecessary animations and replace them with tweening, your game will surely benefit from that.
