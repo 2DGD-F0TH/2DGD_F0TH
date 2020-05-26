@@ -1,0 +1,25 @@
+struct Point{
+    int x;
+    int y;
+};
+
+struct Line{
+    Point A;
+    Point B;
+};
+
+struct Circle{
+    Point center;
+    int radius;
+};
+
+// ...
+
+bool line_circle_collision(Circle circle, Line line){
+    collides_A = circle_point_collision(circle, line.A);
+    collides_B = circle_point_collision(circle, line.B);
+    if (collides_A OR collides_B){
+        return true
+    }
+    // ...
+}

@@ -1,0 +1,31 @@
+#include <cmath>
+struct Point{
+    int x;
+    int y;
+};
+
+struct Line{
+    Point A;
+    Point B;
+};
+
+float distance(Point A, Point B){
+    // Calculates the distance between two points
+    return sqrt(pow((A.x + B.x),2) + pow((A.y + B.y),2));
+}
+
+bool line_point_collision(Point pt, Line ln){
+    // First, let's calculate the length of the line
+    float length = distance(ln.A, ln.B);
+    // Now let's calculate the distance between the point pt
+    // and the point "A" of the line
+    float pt_a = distance(ln.A, pt);
+    // Same Goes for the distance between pt and "B"
+    float pt_b = distance(ln.B, pt);
+    // Now for the detection
+    if (pt_a + pt_b == length){
+        return true;
+    }else{
+        return false;
+    }
+}

@@ -1,0 +1,18 @@
+#include <vector>
+//...
+bool is_collision(Item A, Item B){
+    // Defines how two items collide (being circles, this could be a difference of radii)
+}
+
+std::vector<Item> items = {...}
+std::vector<std::pair<Item, Item>> colliding_items;
+
+for (auto A: items){
+    for (auto B: items){
+        if (A!=B){
+            if is_collision(A, B){
+                colliding_items.push_back(new std::pair<Item, Item>(A, B));
+            }
+        }
+    }
+}

@@ -1,0 +1,13 @@
+struct Circle{
+    Point center;
+    int radius;
+};
+
+float distance(Point A, Point B){
+    // Calculates the distance between two points
+    return sqrt(pow((A.x + B.x),2) + pow((A.y + B.y),2));
+}
+
+bool circle_point_collision(Circle A, Point B){
+    return distance(A.center, B) <= A.radius;
+}

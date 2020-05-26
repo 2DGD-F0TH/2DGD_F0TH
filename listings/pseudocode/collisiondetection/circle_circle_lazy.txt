@@ -8,4 +8,4 @@ function distance(Point A, Point B):
     return square_root((A.x + B.x)^2 + (A.y + B.y)^2)
 
 function circle_circle_collision(Circle A, Circle B):
-    return distance(A.center, B.center) <= A.radius + B.radius:
+    return distance(A.center, B.center) <= A.radius + B.radius

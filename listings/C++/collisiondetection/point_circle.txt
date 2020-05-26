@@ -1,0 +1,19 @@
+
+struct Circle{
+    // Let's define a circle class/structure
+    Point center;
+    int radius;
+};
+
+float distance(Point A, Point B){
+    // Calculates the distance between two points
+    return sqrt(pow((A.x + B.x),2) + pow((A.y + B.y),2));
+}
+
+bool circle_point_collision(Circle A, Point B){
+    if (distance(A.center, B) <= A.radius){
+        return true;
+    }else{
+        return false;
+    }
+}
