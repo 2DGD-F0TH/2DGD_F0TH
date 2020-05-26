@@ -7,7 +7,7 @@ struct Circle{
 
 float distance(Point A, Point B){
     // Calculates the distance between two points
-    return sqrt(pow((A.x + B.x),2) + pow((A.y + B.y),2));
+    return std::sqrt(std::pow((A.x + B.x),2) + std::pow((A.y + B.y),2));
 }
 
 bool circle_circle_collision(Circle A, Circle B){

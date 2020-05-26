@@ -16,7 +16,7 @@ struct Circle{
 
 float distance(Point A, Point B){
     // Calculates the distance between two points
-    return sqrt(pow((A.x + B.x),2) + pow((A.y + B.y),2));
+    return std::sqrt(std::pow((A.x + B.x),2) + std::pow((A.y + B.y),2));
 }
 
 bool line_point_collision(Line l, Point p){
@@ -31,7 +31,7 @@ function line_circle_collision(Circle circle, Line line):
     // We check the ends first
     collides_A = circle_point_collision(circle, line.A);
     collides_B = circle_point_collision(circle, line.B);
-    if (collides_A OR collides_B){
+    if (collides_A || collides_B){
         return true;
     }
     // We pre-calculate "u", we'll use some variables for readability
