@@ -1,0 +1,37 @@
+function findVerticalMatches(){
+    matchLength = 0;
+    minMatchLength = 3;
+    int colsize = (sizeof matrix[0] / sizeof matrix[0][0]);
+    for (int column = 0; column < colsize; ++column){
+        Tile* lastMatchingTile = nullptr;
+        int rowsize = (sizeof matrix / sizeof matrix[0]);
+        for (int row = 0; row < rowsize; ++row){
+            Tile currentTile = matrix[row][column]->tile;
+            if (currentTile == lastMatchingTile){
+                matchLength = matchLength + 1;
+            }else{
+                if (matchLength >= minMatchLength){
+                    // We need to memorize all the tiles involved in the match
+                    for (int k = row-matchLength; k < row; ++k){
+                        Tile* tile = matrix[k][column];
+                        memorize(tile)
+                    }
+                }else{
+                    // No matches, reset the counter and set the current tile as last matching
+                    matchLength = 1;
+                    lastMatchingTile = currentTile;
+                }
+            }
+            // We need to account for the bottom border corner case
+            if (row == colsize){
+                if (matchLength >= minMatchLength){
+                    // We need to memorize all the tiles involved in the match
+                    for (int k = row-matchlength; k < row; ++k){
+                        Tile* tile = matrix[k][column];
+                        memorize(tile)
+                    }
+                }
+            }
+        }
+    }
+}
