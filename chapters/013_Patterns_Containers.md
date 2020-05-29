@@ -392,17 +392,16 @@ Obviously these functions have an issue: they don't clamp the value between 0 an
 
 \code{patterns_containers/clamping}{Clamping values}
 
-You can tween any property of any entity or object in your game, for instance:
+In that case, calling the clamping function with values `0` and `1` would solve the issue.
+
+A think that many people tend to forget, but that is really important is that you can tween any property of any entity or object in your game, for instance:
 
 - The position of a UI item;
 - The width of a health bar;
 - The rotation of an on-screen map or compass;
 - The colour of the sky while doing a day-to-night transition.
 
-
-\placeholder
-
-<!-- TODO: Also known as "tweening", allows to "smear" a value over time, usually used to generate key frames in an animation to make it seem like it moves smoothly over time, while in reality you just set the beginning and end positions, along with the time the movement should take -->
+In short: any numeric value that can transition "smoothly" between two values in a certain amount of time can be tweened.
 
 Chaining
 --------
