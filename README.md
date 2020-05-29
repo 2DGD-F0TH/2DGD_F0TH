@@ -72,6 +72,7 @@ Before building the book, you might want to decide your favourite programming la
 - Non-Highlighted Pseudocode: `make pseudocode`
 - Pseudocode with basic Syntax Highlighting: `make pseudocode_color`
 - Python 3: `make python`
+- C++: `make cpp`
 
 Branches
 --------
