@@ -1,0 +1,2 @@
+float linearTween(const float& time, const float& begin, const float& change, const float& duration):
+    return change * (time / duration) + begin;

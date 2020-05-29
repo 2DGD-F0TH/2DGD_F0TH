@@ -1,0 +1,4 @@
+#include <cmath>
+
+float easeOut(const float& time, const float& duration, const float& power):
+    return 1 - std::pow((1 - (time / duration)), power)

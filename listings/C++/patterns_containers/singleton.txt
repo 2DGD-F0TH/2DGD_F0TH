@@ -1,0 +1,13 @@
+class Singleton {
+
+    private:
+        static Singleton* INSTANCE = new Singleton();
+
+        // This makes the constructor impossible to use outside of the class
+        private Singleton() {}
+
+    public:
+        static Singleton getInstance() {
+            return *INSTANCE;
+        }
+}
