@@ -1,0 +1,46 @@
+#include <vector>
+#include <algorithm>
+
+std::vector<Node*> openSet* = new std::vector<Node*>();
+std::vector<Node*> closedSet* = new std::vector<Node*>();
+Node* currentNode = start;
+closedSet->push_back(currentNode);
+do{
+    for (Node* n in currentNode->getAdjacentList()){
+        // ClosedSet Contains N
+        if (std::find(closedSet->begin(), closedSet->end(), currentNode) != closedSet->end()){
+            // We already analyzed this node, skip it
+            continue;
+        }else{
+            if (std::find(openSet->begin(), openSet->end(), currentNode) != openSet->end()){
+                // Check if this path is better
+                float new_g = getPathCost(n, start);
+                if (new_g < n->g){
+                    // We found a better path from start to currentNode
+                    n->parent = currentNode;
+                    n->g = new_g;
+                    n->f = n->g + n->h;
+                }
+            }else{
+                n->parent = currentNode;
+                n->g = getPathCost(n, start);
+                n->h = getHeuristicCost(n, end);
+                n->f = n->g + n->h;
+                openSet->push_back(currentNode);
+            }
+        }
+    }
+    if (openSet->empty()){
+        // We exhausted all possibilities
+        break;
+    }
+
+    // Order openSet by f
+    std::sort(openSet->begin(), openSet->end(), [](Node* i, Node* j){return (i->f < i->f);})
+    // Since openset is ordered by f, the first element is the one with the lowest total cost
+    currentNode = openset->front();
+    openset->erase(openset->front());
+    closedSet->push_back(currentNode);
+} while(currentNode != end);
+
+// Reconstruct the path like in the greedy "best-first" algorithm
