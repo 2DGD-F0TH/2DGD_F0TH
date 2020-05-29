@@ -67,6 +67,10 @@ There will be times when it's needed to write down something from another source
 
 <!-- TODO: Insert more conventions, assumptions... -->
 
+### Engine Used
+
+This book does not use any engine. All algorithms will be presented pretending there is some "generic engine" behind the scenes that handles sprites, vectors and the like. The objective of this book is teaching algorithms, tips and tricks and game design in the most engine-agnostic (and language-agnostic, if you're looking at the "pseudocode edition") way possible.
+
 Structure of this Book
 ----------------------
 
