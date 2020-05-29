@@ -386,7 +386,19 @@ For an "ease-out", where the animation starts fast and slows down towards the en
 
 With some calculations, and if statements on the time passed, you can combine the two and get an "ease-in-out" function.
 
+\code{patterns_containers/easeInOut}{Ease-in-out}
+
 Obviously these functions have an issue: they don't clamp the value between 0 and 1, that will have to be done in the movement function or by adding a check, or using some math, for instance using `min(calculated_value, 1)`.
+
+\code{patterns_containers/clamping}{Clamping values}
+
+You can tween any property of any entity or object in your game, for instance:
+
+- The position of a UI item;
+- The width of a health bar;
+- The rotation of an on-screen map or compass;
+- The colour of the sky while doing a day-to-night transition.
+
 
 \placeholder
 

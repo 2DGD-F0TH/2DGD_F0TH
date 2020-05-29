@@ -126,11 +126,6 @@ Animators and animation frames are performance-hungry and should absolutely not 
 
 This means that frame-by-frame animations should not be used when taking care of moving UI parts: if you want to slide a piece of UI (take for instance a drop-down terminal from a "computer hacking" game) from the top, you can just tween its position and save a lot of memory.
 
-Tweening doesn't apply only to position, you can tween any property of a game object, for instance:
-
-- The position of a UI item;
-- The width of a health bar;
-- The rotation of an on-screen map or compass;
-- The colour of the sky while doing a day-to-night transition.
+Remember that Tweening doesn't apply only to positions, you can tween any property of a game object.
 
 So a quick way you can optimize your game, is removing all the unnecessary animations and replace them with tweening, your game will surely benefit from that.
