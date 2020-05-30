@@ -16,6 +16,8 @@ Any game and its menus can be abstracted into 3 main operations that are perform
 2) Update the world (or menu) status
 3) Display (Draw) the updated world (or again, menu) to the screen
 
+![UML Diagram of the input-update-draw abstraction](./images/gameloop/gameloop.pdf){width=50%}
+
 So a pseudocode implementation of such loop would be something like the following:
 
 \code{gameloop/gameloop}{Game Loop example}
@@ -158,6 +160,10 @@ When drawing to screen, the greatest majority of games make use of what is calle
 > 6. Draw The Player
 >
 > 7. Display everything on screen
+
+If we divide each "layer" we can see how the painter's algorithm works:
+
+![A small example of the "painter's algorithm"](./images/gameloop/painter_algorithm.png){width=40%}
 
 As a painter, we draw the background items before the foreground ones, layering each one on top of the other. Sometimes games make use of priority queues to decide which items to draw first, other times game developers (usually under the time constraints of a game jam) just hard-code the draw order.
 
