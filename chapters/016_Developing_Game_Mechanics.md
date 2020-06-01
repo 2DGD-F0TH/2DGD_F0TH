@@ -212,9 +212,13 @@ Input lag is something that we cannot avoid, but there are countermeasures, as w
 
 #### Video Lag
 
+![Reference image for video lag](./images/developing_mechanics/video_lag.pdf){width=50%}
+
 As with the input lag, there is also a not-neglegible video lag. The game has to prepare the image, send it to the video card, the card has to render it, apply effects and then send it to the screen, where the liquid crystals (or whatever technology we will have in the future) will have the re-align to create the colored pixels on screen.
 
 #### Audio Lag
+
+![Reference image for audio lag](./images/developing_mechanics/audio_lag.pdf){width=50%}
 
 When the audio doesn't exactly match with the video, we talk about "audio lag", this has to be accounted for if you want to have a good rhythm game. In that case, there is a need to compensate for the audio lag, by starting each sound effect (or music) earlier or later by a well-defined amount of milliseconds.
 
