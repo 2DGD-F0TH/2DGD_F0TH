@@ -41,6 +41,22 @@ Since numbers in computers can be **really** precise, a collision between two po
 
 Now a circle comes into the mix, a circle has two major characteristics: a **center** and a **radius**.
 
+![Reference image for Point-Circle Collision detection](./images/collision_detection/point_circle.pdf){width=40%}
+
+We can see that the distance between the center of a circle and our point can be expressed with a formula:
+
+$$d = r + x$$
+
+Where `r` is the circle radius and `x` is the difference of the distance between the center of the circle and the point (which can be negative):
+
+$$x = d - r$$
+
+The point is inside the circle when $x \leq 0$, which means:
+
+$$x \leq 0 \Leftrightarrow d - r \leq 0 \Leftrightarrow d \leq r$$
+
+We can express this in a few words:
+
 > A point is considered inside of a circle when the distance between the point and the center of the circle is *less than or equal* to the radius.
 
 So we need a function that calculates the distance between two points, and then use it to define if a point is inside a circle.
@@ -57,7 +73,23 @@ Although slightly more heavy, computation-wise, this algorithm still runs in O(1
 
 ### Collision Between Two Circles
 
-Let's add another circle into the mix now, we can declare:
+Let's add another circle into the mix now, and think in more or less the same way as before:
+
+![Reference image for Circle-Circle collision detection](./images/collision_detection/circle_circle.pdf){width=50%}
+
+We can see the distance between the center of the circles as expressed with the following formula:
+
+$$ d = r_1 + x + r_2 $$
+
+Where $r_1$ and $r_2$ are the radii, and $x$ is defined as follows:
+
+$$ x = d - (r_1 + r_2) $$
+
+As before, our $x$ can be negative, which means that the circles are colliding if $x \leq 0$, which means:
+
+$$ x \leq 0 \Leftrightarrow d - (r_1 + r_2) \leq 0 \Leftrightarrow d \leq r_1 + r_2$$
+
+We can express the concept in words again:
 
 > Two circles are colliding when the distance between their centers is less or equal the sum of their radii
 
