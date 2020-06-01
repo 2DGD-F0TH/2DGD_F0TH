@@ -60,6 +60,10 @@ Creating a parallax effect is quite easy: first we need at least two background 
 - A **moving background** that will move slower compared to the sprite layer, thus giving the parallax effect;
 - A **fixed background** that will represent our horizon and the farthest objects.
 
+For the sake of clarity, we will re-use an image presented earlier to explain the "painter's algorithm":
+
+![How we can split our game into layers](./images/gameloop/painter_algorithm.png){width=50%}
+
 As stated earlier, a third optional background can be added to deepen the parallax scrolling effect, such background can take any of these positions:
 
 - **Above** the sprite layer: in this case this "foreground layer" will need to move **faster** than the sprite layer and it should include very unobtrusive graphics, to avoid hiding important gameplay elements (like enemies);
@@ -92,6 +96,10 @@ The loading screen will be composed of two main components:
 
 - **The graphical loading screen:** that will show the progress of the resource loading to the user, as well as tips and animations;
 - **The actual resource loading thread:** that will take care to load the resources to the right containers, as well as communicating the global loading status to the loading screen in the main game loop.
+
+We can represent the two "loops" in the following UML diagram:
+
+![Rough UML diagram of a multithreaded loading screen](./images/developing_mechanics/loading_multithread.pdf){width=50%}
 
 \placeholder
 

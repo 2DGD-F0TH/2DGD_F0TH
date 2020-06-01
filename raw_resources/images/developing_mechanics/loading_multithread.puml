@@ -1,0 +1,29 @@
+@startuml
+partition main_thread {
+    :Start loading<
+    repeat
+        if (Loading state == "Done") then (yes)
+            :Return to Gameplay;
+        else (no)
+            :Read Percentage<
+            if (Percentage == 100?) then (yes)
+                :Set state as 'loading complete';
+            else (no)
+                :Set state as 'loading';
+            :Update Screen;
+            :Draw Screen;
+            endif
+        endif
+    repeat while (Game open?) is (yes)
+    stop;
+}
+
+partition loading_thread {
+    start
+    repeat
+        :Load resource;
+        :Update Loading Status>
+    repeat while (More resources?) is (yes)
+    stop
+}
+@enduml

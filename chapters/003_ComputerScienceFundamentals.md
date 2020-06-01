@@ -871,6 +871,12 @@ As with Use Case and Class diagrams, Activity Diagrams can make use of notes, in
 
 The components of activity diagrams shown here are just a small part of the used components, but they should be enough to get you started designing and reading most of the activity diagrams that exist.
 
+### Sequence Diagrams
+
+\placeholder
+
+<!-- TODO: Explain Sequence Diagrams -->
+
 Generic Programming
 --------------------
 
