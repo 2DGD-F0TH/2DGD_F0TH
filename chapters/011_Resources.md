@@ -71,6 +71,25 @@ If you want to have transparency in your picture, you will need to sacrifice a c
 
 This also mean that we cannot make semi-transparent surfaces, since only that specific color will be fully transparent, and that's it.
 
+### Texture Filtering
+
+Sometimes your images will need to be scaled or filtered to avoid annoying artifacts, in this small chapter we will see some filters and how they look.
+
+#### Nearest Neighbor Filtering
+
+\placeholder
+<!-- TODO -->
+
+#### Bilinear Filtering
+
+\placeholder
+<!-- TODO -->
+
+#### Trilinear Filtering
+
+\placeholder
+<!-- TODO -->
+
 ### General Tips
 
 In this section we will take a look at some basic art tips that will give you some indication on how to create your own art for your very own game. This will be pointers to keep you going.
@@ -153,6 +172,8 @@ The items get scaled accordingly and there is no real need to do heavy calculati
 - **No filtering** - Useful for keeping the "pixeliness" of your graphics, for instance in pixel-art-based games. It's fast.;
 - **Linear, Bilinear, Trilinear Filtering** - Gives a more soft look, slower;
 - **Anisotropic Filtering** - Used in modern 3D games, highest quality but also among the slowest, it is usually used when rendering sloped surfaces (from the player's point of view).
+
+For more details, check the [filtering](#filtering) section.
 
 ### Using limited color palettes
 
