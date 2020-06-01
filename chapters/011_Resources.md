@@ -560,6 +560,11 @@ Modern engines, like Unity and Unreal Engine also include GUI node-based editors
 
 <!-- TODO: Teach some basic GLSL -->
 
+#### The data types
+
+\placeholder
+<!-- TODO -->
+
 ### Some GLSL Shaders examples
 
 \placeholder
