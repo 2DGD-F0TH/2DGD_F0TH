@@ -90,14 +90,6 @@ Giving tips to the player by breaking the fourth wall can be another idea, a roc
 
 This last tip should be done very subtly, so not to ruin the immersion. Unless your game takes advantage from these kind of things (for instance games based on comedy).
 
-[^chests]: 32x32 Chests attribution: Bonsaiheldin ([http://nora.la](http://nora.la)), hosted at [opengameart](https://opengameart.org/content/treasure-chests-32x32)
-
-[^icetiles]: Simple SVG ice platformer tiles, listed as "Public Domain (CC0)" at [OpenGameArt.org](https://opengameart.org/content/simple-svg-ice-platformer-tiles-16x16-16x96-96x16)
-
-[^undeadfossil]: Fossil (Undead) RPG Enemy Sprites attribution: Stephen Challener (Redshrike), hosted by [OpenGameArt.org](https://opengameart.org/content/fossil-undead-rpg-enemy-sprites)
-
-<!--[^jawbreaker]: Jawbreaker tileset, listed as public domain at [https://adamatomic.itch.io/jawbreaker](https://adamatomic.itch.io/jawbreaker)-->
-
 ### Reward the player for their tenacity
 
 After suggesting to reward players for not butting head-first into fights, now I'm going to suggest the exact opposite (in a way): reward your players for their tenacity.
@@ -127,6 +119,11 @@ Some famous games, like DOOM and Dark Souls, use secrets-in-secrets to trick pla
 ![Example of secret-in-secret](./images/game_design/secret_in_secret.png){width=50%}
 
 We can see how we hid a secret inside of another secret and used a piece of valuable (but not *too valuable*) treasure to make the player think they found the secret, while the real secret is hiding behind another fake wall.
+
+
+### Reward Backtracking (but don't make it mandatory)
+
+<!-- TODO -->
 
 \placeholder
 
@@ -174,3 +171,9 @@ One of the most annoying things that can happen when you're running-and-gunning 
 Your own bullets, as well as (and most importantly!) the enemies' should stand out from the background and the other sprites, so that the player can see and avoid them.
 
 Some people may want to ask why your own bullets should stand out too, the answer is: so you can easily aim for your targets.
+
+[^chests]: 32x32 Chests attribution: Bonsaiheldin ([http://nora.la](http://nora.la)), hosted at [opengameart](https://opengameart.org/content/treasure-chests-32x32)
+
+[^icetiles]: Simple SVG ice platformer tiles, listed as "Public Domain (CC0)" at [OpenGameArt.org](https://opengameart.org/content/simple-svg-ice-platformer-tiles-16x16-16x96-96x16)
+
+[^undeadfossil]: Fossil (Undead) RPG Enemy Sprites attribution: Stephen Challener (Redshrike), hosted by [OpenGameArt.org](https://opengameart.org/content/fossil-undead-rpg-enemy-sprites)

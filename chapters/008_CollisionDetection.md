@@ -346,7 +346,11 @@ Pixel perfect collision is the most precise type of collision detection, but it'
 
 The usual way to perform collision detection is using **bitmasks** which are 1-bit per pixel representation of the sprites (white is usually considered a "1" while black is considered a "0").
 
-A logic "AND" operation is performed, pixel-by-pixel, on the bitmasks; with the sprite position taken in consideration, as soon as the first AND returns a "True" a collision occurred.
+![Two Bitmasks that will be used to explain pixel-perfect collision](./images/collision_detection/bitmasks.png){width=50%}
+
+A logic "AND" operation is performed, pixel-by-pixel, on the bitmasks; with the sprite position taken in consideration, as soon as the first AND operation returns a "True" a collision occurred.
+
+![Two Bitmasks colliding, the 'AND' operations returning true are highlighted in white](./images/collision_detection/bitmasks2.png){width=50%}
 
 \code{collisiondetection/pixel_perfect}{Example of a possibile implementation of pixel perfect collision detection}
 
