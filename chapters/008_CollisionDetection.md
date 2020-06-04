@@ -407,14 +407,29 @@ When building quad-trees, we are essentially dividing the screen in "quadrants" 
 
 ![Graphical example of a quad tree, overlaid on the reference image](./images/collision_detection/collision_quad_example.pdf){width=40%}
 
+And here below we can see how a quad tree would look, in its structure:
+
+![A quad tree](./images/collision_detection/quad_tree.pdf){width=50%}
+
+The rules to follow in a quad tree are simple, both in filling and retrieval. When we are filling a quad tree:
+
+- Each node starts by being inserted in the root;
+- If the root is "full" (exceeds a set quantity of nodes), it "splits" into 4 sub-trees;
+- If a node would fit in two quadrants (like #5), it gets put inside the parent of both quadrants.
+
+When we are retrieving the nodes we will know that an object inside a certain node can collide only with the objects in the same nodes or in the subtree rooted at such node.
+
 With the original brute force method, we will make at most 49 tests for 7 items (although it can be optimized), while with quad trees we will perform:
 
-- 2 tests on quadrant A (1 against 2, and 2 against 1);
-- No tests on quadrant B (an object alone cannot collide against other objects);
-- 2 tests on quadrant C (4 against 5, and 5 against 4);
-- 6 tests on quadrant D (5-6, 5-7, 6-7, 6-5, 7-6, 7-5)
+- 6 Tests against node 5 (5-1, 5-2, 5-3, 5-4, 5-6, 5-7);
+- 1 Test against node 1 (1-2);
+- 1 Test against node 2 (2-1);
+- No tests against node 3, because it's on its own and there are no subtrees;
+- No tests against node 4, for the same reason;
+- 1 Test against node 6 (6-7);
+- 1 Test against node 7 (7-6).
 
-For a total of 10 tests, which can be further optimized (by 50%) by avoiding testing objects that have already been tested.
+For a total of 10 tests, which can be further optimized by avoiding testing pairs of objects that have already been tested.
 
 \placeholder
 
