@@ -284,6 +284,24 @@ We can switch back and forth between the two domains with "transforms", the most
 \placeholder
 <!-- TODO -->
 
+"Bullet Hell" Style Games
+-------------------------
+
+### Bullets
+
+<!-- TODO -->
+\placeholder
+
+### The Ship Hitbox
+
+<!-- TODO: Talk about how the player ship hitbox is usually much smaller than the sprite -->
+\placeholder
+
+### Screen-clearing bombs
+
+<!-- TODO -->
+\placeholder
+
 Match-x Games
 --------------
 
