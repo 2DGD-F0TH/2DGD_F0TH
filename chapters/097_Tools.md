@@ -24,6 +24,12 @@ Aseprite is an open-source and commercial tool for creating pixel-art graphics. 
 
 <https://www.aseprite.org/>
 
+### Pixelorama
+
+Pixelorama is a really interesting beast, since it is made using the Godot game engine and GDScript, it features tools, animation timeline, tool options, pattern filling, and many many more interesting features.
+
+<https://orama-interactive.itch.io/pixelorama>
+
 ### Piskel
 
 Piskel is an open-source web-based tool for creating pixel-art graphics and animations. On the website there is a downloadable version too, but usually the web-based one is a bit more performing.
