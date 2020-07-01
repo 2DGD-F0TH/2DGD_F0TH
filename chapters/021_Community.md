@@ -63,3 +63,10 @@ What could such "speedrun mode" contain? More features than you may think about:
 - **Automatic chronometer stop:** the chronometer can automatically stop at the end of the game, and the game itself can identify when a section is finished, giving a consistent way of evaluating speedruns.
 
 Some game developers went to the extent of not fixing some glitches for the sake of speedrunning.
+
+Randomizing
+-----------
+
+\placeholder
+
+<!-- TODO: A randomizer mode could help on replayability, since it's used by hackers on games like LoZ or Castlevania -->
