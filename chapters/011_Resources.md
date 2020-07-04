@@ -471,6 +471,51 @@ Sometimes we may find our audio samples lacking that "punch" they would need, th
 
 It's better to cut the higher frequencies instead, and eventually boost the entire volume of the sample during mixing. This way the nature of the sample doesn't get tainted by boosting, and we obtain the result we wanted.
 
+### DAW Basics
+
+\placeholder
+<!-- TODO -->
+
+#### What is a DAW Software?
+
+\placeholder
+<!-- TODO -->
+
+#### The Piano Roll
+
+\placeholder
+<!-- TODO -->
+
+### Music Tracker Basics
+
+\placeholder
+<!-- TODO -->
+
+#### What is a Music Tracker Software?
+
+\placeholder
+<!-- TODO -->
+
+#### Samples
+
+\placeholder
+<!-- TODO -->
+
+#### Instruments
+
+\placeholder
+<!-- TODO -->
+
+#### Channels
+
+\placeholder
+<!-- TODO -->
+
+#### Patterns
+
+\placeholder
+<!-- TODO -->
+
 Fonts
 -------
 
