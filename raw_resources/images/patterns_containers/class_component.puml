@@ -18,5 +18,6 @@ Client --> Component
 Component <|-- ConcreteComponent1
 Component <|-- ConcreteComponent2
 ConcreteComponent2 o-- Component
+ConcreteComponent1 o-- Component
 
 @enduml
