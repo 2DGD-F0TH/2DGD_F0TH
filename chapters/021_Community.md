@@ -67,6 +67,6 @@ Some game developers went to the extent of not fixing some glitches for the sake
 Randomizing
 -----------
 
-\placeholder
+In recent years, a certain kind of hacks for old games (mostly built around the Legend Of Zelda and Metroid series) that mix up the gameplay by mixing up the item locations, with a certain logic to avoid unbeatable games.
 
-<!-- TODO: A randomizer mode could help on replayability, since it's used by hackers on games like LoZ or Castlevania -->
+If your game has a somewhat linear story and no "roguelike" elements, you may be able to extend it replay value by adding a "randomized mode". This new mode would have some logic implemented to avoid "soft locking" a savefile and mixes up the items and powerups, usually making the game a bit more challenging.
