@@ -104,6 +104,14 @@ This tool is open source, made in Adobe AIR, available for Windows, Linux and Ma
 
 <https://terrycavanagh.itch.io/bosca-ceoil>
 
+### FamiStudio
+
+FamiStudio is a DAW (Digital Audio Workstation) software that allows you to edit and create tracker files for the Nintendo Famicom/NES. Its interface is very intuitive and resembles a lot of DAW software you can find.
+
+The software is available for Windows, MacOS and Linux.
+
+<https://famistudio.org/>
+
 Maps
 -----
 
