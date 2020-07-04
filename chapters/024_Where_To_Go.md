@@ -65,6 +65,6 @@ Game Design
 Game Development
 ----------------
 
-#### Videos
+### Videos
 
 - **OneLoneCoder's YT:** <https://www.youtube.com/channel/UC-yuWVUplUJZvieEligKBkA> \freeprod
