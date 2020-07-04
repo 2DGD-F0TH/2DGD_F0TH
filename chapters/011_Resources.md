@@ -483,8 +483,21 @@ It's better to cut the higher frequencies instead, and eventually boost the enti
 
 #### The Piano Roll
 
-\placeholder
-<!-- TODO -->
+Have you ever seen one of those pianos that seem to have an integrated music box? That is a so-called "piano roll" and is used to store music and play it back on the piano.
+
+Most Software DAW have a similar abstraction, called "piano roll" too.
+
+![Example of a piano roll in LMMS](./images/resources/piano_roll_1.png){width=60%}
+
+In the previous image, we can see four notes, each defined by its vertical position (respectively a C5, C6, A5, F#5) and length (respectively a single whole/semibreve and three half/minim notes). In the previous example each vertical green bar represents $\frac{1}{4}$ and each light green bar represents a beat. This should help you imagining how to compose something.
+
+Different systems have different piano roll variations. For instance:
+
+![Example of a piano roll in FamiStudio](./images/resources/piano_roll_2.png){width=60%}
+
+This Software DAW has a different shape for the notes, meaning a certain kind of effect is applied to them. All the basic principles still apply, though.
+
+The piano roll abstraction allows you to edit your music easily, by grabbing notes and moving them, or making them longer by dragging their edges.
 
 ### Music Tracker Basics
 
