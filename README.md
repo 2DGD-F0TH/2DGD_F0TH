@@ -46,6 +46,12 @@ Getting the book
 
 This repository is configured to automatically build a PDF file at each push on the `master` branch, both on GitLab (Via its own integrated CI/CD System) and GitHub (via Travis-CI).
 
+### Official Itch.io Page
+
+[Link to the Itch.io page](https://therealpenaz91.itch.io/2dgd-f0th)
+
+This Ebook now has an official Itch.io page, you can surf there to get the latest release of each edition: the downloads are more stable and not influenced by Travis-CI's tantrums. Just scroll towards the bottom of the page and choose your preferred edition!
+
 ### GitLab
 
 [Link to the GitLab Repository](https://gitlab.com/Penaz/2dgd_f0th/)
