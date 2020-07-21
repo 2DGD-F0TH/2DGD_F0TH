@@ -293,21 +293,49 @@ Palette Swapping can be used in more creative ways, though. Going back to Super 
 
 \placeholder
 
+<!-- TODO: talk about pixel art, etc...-->
+
 #### What pixel art is and what it is not
 
 \placeholder
+<!-- TODO -->
 
 #### Sub-pixel animation
 
 \placeholder
-
-<!-- TODO: talk about pixel art, etc...-->
+<!-- TODO: Style of animation where the "outlines" don't move, but the color change in the internal pixels can give illusion of sub-pixel movement -->
 
 ### Tips and Tricks
 
 This section contains various tips and tricks used by artists to create certain effects inside video games, demonstrating how sometimes something really simple can have a great effect on the game experience.
 
-#### Creating "Inside rooms" tilesets
+#### Tiles
+
+##### Getting started
+
+When you are starting to make a new tileset, it's a good idea to begin with a base sized 5x5 tiles or more (so if your single tile is 32x32 pixels, the image will be at least 160x160 pixels): this can give you variations on the tileset that won't make the "tiling" (repetitions) so easy to catch when the map is made.
+
+![Example of tile "alternatives"](./images/resources/tile_alternatives.png){width=60%}
+
+If you think something does not fit in a tileset, try to think what the surrounding area would look like: darker grass could be overgrown, a darker spot in the water could signify deeper water, shadows and light help too.
+
+When it comes to "corner tiles", using the same tile, rotated in 90 degree steps is a great basis to build upon, after that you can edit the tiles accordingly.
+
+This "rotation trick" can be used for most of the tiles you create, let's take for instance the following diagram, representing some tiles:
+
+![Tile "Rotation Trick" (1/3)](./images/resources/tile_rotation_diagram_1.pdf){width=60%}
+
+We can take the tiles and rotate them, to get something like the following:
+
+![Tile "Rotation Trick" (2/3)](./images/resources/tile_rotation_diagram_2.pdf){width=60%}
+
+If we continue with copying, rotating and pasting, we can obtain a great basis for our tileset:
+
+![Tile "Rotation Trick" (3/3)](./images/resources/tile_rotation_diagram_3.pdf){width=60%}
+
+After that we can edit and make it so tiles are seamless, while putting the minimum amount of necessary effort to create something convincing.
+
+##### Creating "Inside rooms" tilesets
 
 In many cases, when dealing with tile-based games, we need to create a tileset that is good to represent "inside" environments, like a basement, a cave or the inside of a building. A simple way to reach that goal is creating a set of black and transparent tiles that can be overlaid on another tileset, like the following:
 
