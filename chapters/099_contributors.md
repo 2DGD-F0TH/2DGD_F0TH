@@ -7,3 +7,4 @@ This e-book is the collective work of many game developers, critics and enthusia
 
 - Daniele Penazzo (Penaz)
 - Luca Violato (Rei)
+- Sjofin (Fin)
