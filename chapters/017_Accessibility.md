@@ -55,35 +55,37 @@ One of such specialty fonts is "OpenDyslexic" (available at <https://www.opendys
 "Slow Mode"
 -----------
 
-<!--TODO: An "easier" mode for gamers with any kind of impairing that affects reaction times-->
-\placeholder
+Having an option that allows to slow down the game is an authentic boon for anyone who wants to enjoy a videogame but has some issues when it comes to reaction time or muscle control, but this makes the game more enjoyable for audiences who may not appreciate a high level of challenge but still want to play your game.
 
 Colorblind mode
 ---------------
 
-<!--TODO-->
-\placeholder
+When it comes to color, everyone sees colors differently but others may not be able to distinguish between certain colors at all: that's where a colorblind mode comes into play.
+
+Having the game palette adapt so it's easier to distinguish colors for colorblind users is definitely one of those accessibility options that may require a bit more work but could make some players really happy too.
 
 No Flashing Lights
 ------------------
 
-<!--TODO: People with mild photosensitivity may benefit from this option-->
-\placeholder
+When it comes to photosensitivity, (very dangerous) seizures are not the only outcome possible: some people may get really strong headaches from seeing intense visual effects and flashing lights.
+
+Having an option to disable or tone down flashing lights and intense (sometimes even overbearing) visual effects can make a game a lot more enjoyable to someone who has some kind of sensitivity to light.
 
 Assisted Gameplay
 -----------------
 
-<!--TODO: "Aim Assist", for instance-->
-\placeholder
+Having an "aim assist" option that allows for the crosshair to "snap to an enemy" when it is "close enough" it's great for people who have problems with coordination, but it's also great for players who prefer to play with a controller instead of a mouse.
+
+Any kind of "assisted gameplay" can help both people with and without disabilities.
 
 Controller Support
 ------------------
 
-<!--TODO: Didn't expect this? Enabling support for different type of controllers is an accessibility option-->
-\placeholder
+Supporting only one certain type of "control device" is not great for accessibility; some people may prefer or need a controller of some sort, be it a gamepad or something more sophisticated, having support for "alternative inputs" is always a great idea.
 
 Some special cases
 ------------------
 
-<!--TODO: Moss: a VR game that has a character (Quill) which communicates using ASL -->
+A special mention goes to the VR game "Moss", where a character (named Quill) communicates both emotionally and gives clues on the puzzles using the American Sign Language (ASL).
+
 \placeholder
