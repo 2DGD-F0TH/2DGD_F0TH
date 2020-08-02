@@ -241,7 +241,7 @@ Let's take note of rule number 3 then:
 
 > Try to avoid movement in the background
 
-#### Use contrast to your advantage
+#### Use contrast to your advantage {#contrast_to_your_advantage}
 
 Contrasting (complementary) color pairs were used in impressionism for their "eye-catching" character, they are created starting from the 3 primary colors (in screens: Red, Green, Blue), choosing one and combining the other two in a "secondary color".
 

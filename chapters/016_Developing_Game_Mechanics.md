@@ -287,19 +287,33 @@ We can switch back and forth between the two domains with "transforms", the most
 "Bullet Hell" Style Games
 -------------------------
 
+The common definition of a "bullet hell" game is usually the one of a scrolling (usually space-themed) shooter with a very high level of difficulty and lots of enemy bullets on screen (hence the name).
+
 ### Bullets
 
-<!-- TODO -->
-\placeholder
+When it comes to this kind of game, it is vital that the enemy bullets are **well visible**, this usually means that their color is brighter and has a lot of contrast with the background and the sprites on screen.
+
+![Example of how to better "highlight" bullets](./images/developing_mechanics/bh_highlight_bullets.png){width=50%}
+
+Having "evident" enemy bullets makes the situation easier to assess, even when the situation becomes really chaotic.
+
+To highlight bullets, you can use "complementary colors", as shown in the [use contrast to your advantage](#contrast_to_your_advantage) section.
 
 ### The Ship Hitbox
 
-<!-- TODO: Talk about how the player ship hitbox is usually much smaller than the sprite -->
-\placeholder
+In the bullet hell genre usually the player ship's (or character of some kind) hitbox is usually much smaller than the visible sprite, this makes the game a little bit "easier than it seems", but at the same time it doesn't mean that the game is easy either.
+
+![An example of a Bullet Hell ship hitbox](./images/developing_mechanics/bh_ship_hitbox.png){width=50%}
 
 ### Screen-clearing bombs
 
-<!-- TODO -->
+Another mechanic used in bullet hell games are "screen-clearing bombs": these are used to rid the screen of the gigantic number of bullets on it, to give the player some breathing room.
+
+In some games bombs may be also used to destroy small enemies and damage bigger ones. The screen clearing move can happen in many ways: the most common is just making the bullets disappear, but other games prefer turning the "destroyed bullets" into small collectibles that can give the player points.
+
+### Some examples
+
+<!-- TODO: Talk about Touhou and its "grazing" mechanic, as well as Ikaruga and its "polarity" mechanic -->
 \placeholder
 
 Match-x Games
