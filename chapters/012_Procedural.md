@@ -81,6 +81,8 @@ Consequence of having less quality control, worlds and items might feel like the
 
 If you use procedural and randomized generation, you have the chance of generating incredibly large worlds with a huge variety of items with less resources and algorithms; that's where our human nature of "recognizing patterns" crashes the party: repeating patters are really easy to spot and can remove us from the game's atmosphere and introduce us to one of our worst enemies: boredom.
 
+This can become even worse if we try to "find the middle ground" and build our levels using hand-made "chunks", joined together. If we want to avoid our player getting bored by repeating "pieces of level" we will need to build a lot of chunks that fit together to make something interesting and new almost every time.
+
 #### You may generate something unusable
 
 In extreme cases, there is a possibility that we end up generating an unplayable world, or useless items: terrain too high to climb, walls blocking a critically-necessary area, dungeon rooms with no exits, etc...
