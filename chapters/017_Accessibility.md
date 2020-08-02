@@ -30,6 +30,13 @@ Some games further expand their demographic by using speech in a certain languag
 
 Another use of subtitles is to describe world sounds for hearing-impaired users.
 
+Mappable Buttons
+----------------
+
+This is another one of those "customization options" that falls into the "accessibility features" too. Giving the player the possibility of changing their button mapping is essential to guarantee that a larger number of players is able to enjoy the game you created.
+
+Modern engines usually include input handlers that already support mappable buttons, you just need to "transpose" such functionality in your own game by creating the right menus.
+
 Button Toggling
 ---------------
 
