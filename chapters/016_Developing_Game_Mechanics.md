@@ -305,6 +305,8 @@ In the bullet hell genre usually the player ship's (or character of some kind) h
 
 ![An example of a Bullet Hell ship hitbox](./images/developing_mechanics/bh_ship_hitbox.png){width=50%}
 
+In this image, the ship's hitbox is limited to the cockpit, some games prefer some area that could be considered the "ship engine" while others just have a "core" of some sort.
+
 ### Screen-clearing bombs
 
 Another mechanic used in bullet hell games are "screen-clearing bombs": these are used to rid the screen of the gigantic number of bullets on it, to give the player some breathing room.
@@ -313,8 +315,11 @@ In some games bombs may be also used to destroy small enemies and damage bigger 
 
 ### Some examples
 
-<!-- TODO: Talk about Touhou and its "grazing" mechanic, as well as Ikaruga and its "polarity" mechanic -->
-\placeholder
+There are games that make the most of the "bullet hell" mechanics to give player more challenge, or risk/reward choice.
+
+One game is "Touhou", which has a "grazing" mechanic: if a bullet slightly grazes (but does not hit) your hitbox, you will see some sparks and get a bonus in points.
+
+Another title that makes the most of giving the player a "risk vs reward" choice is Ikaruga, with it's "polarity" mechanic. Your ship has two sides: black and white, each side is able to absorb (and so is also immune) to the bullets of the same color, but also does more damage to the enemies of the opposite color.
 
 Match-x Games
 --------------
