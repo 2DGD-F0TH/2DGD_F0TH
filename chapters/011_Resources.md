@@ -376,8 +376,11 @@ And we obtain the following result:
 
 When you're making some kind of sprite or icon, you should always get the basic shape of the object down first, then you can give the object more depth and detail with colors. This will help you understanding the space occupied by your object.
 
-<!-- FIXME: Missing image -->
 ![How color can completely change an object](./images/resources/color_change_object.png){width=60%}
+
+It's a puppy! It's a jester! It's a... hastily drawn flower vase?
+
+This is the power of color, you can change the entire nature of an object by changing how it's colored, but having the basic shape of the object down first will help you a long way.
 
 Sounds And Music
 ----------------
@@ -699,6 +702,8 @@ If you are using Direct3D, you should instead use the "High Level Shader Languag
 If instead you want to use Vulkan, you will need to use the **SPIR-V** (Standard Portable Intermediate Representation) format, but the good news is that (at the time of writing) you can convert your GLSL code into SPIR-V and use it with Vulkan.
 
 Modern engines, like Unity and Unreal Engine also include GUI node-based editors that help you create new shaders by using directed graphs, without using any code.
+
+![Godot's "Visual Shader" Editor](./images/resources/godot_visual_shader.png){width=60%}
 
 ### The GLSL Programming Language
 
