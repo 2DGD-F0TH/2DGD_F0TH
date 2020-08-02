@@ -697,6 +697,18 @@ There are numerous programming languages, depending on the platform and librarie
 
 If you are using OpenGL, you should use the official OpenGL Shading Language, called **GLSL**.
 
+```{.frag caption="Simple GLSL Fragment shader"}
+#ifdef GL_ES
+precision lowp float;
+#endif
+
+uniform float u_time;
+
+void main() {
+	gl_FragColor = vec4(1.0,0.0,0.0,1.0);
+}
+```
+
 If you are using Direct3D, you should instead use the "High Level Shader Language", also called **HLSL**.
 
 If instead you want to use Vulkan, you will need to use the **SPIR-V** (Standard Portable Intermediate Representation) format, but the good news is that (at the time of writing) you can convert your GLSL code into SPIR-V and use it with Vulkan.
