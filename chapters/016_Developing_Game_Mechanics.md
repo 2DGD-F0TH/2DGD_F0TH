@@ -295,7 +295,7 @@ When it comes to this kind of game, it is vital that the enemy bullets are **wel
 
 ![Example of how to better "highlight" bullets](./images/developing_mechanics/bh_highlight_bullets.png){width=50%}
 
-Having "evident" enemy bullets makes the situation easier to assess, even when the situation becomes really chaotic.
+Having "evident" enemy bullets makes the situation easier to assess, even when the situation becomes really chaotic. If you zoom out (or get your reading support farther from your eyes) you can see that the "non-highlighted" bullets (on the left side) tend to "blend in", while the "highlighted" (on the right side) version stay visible.
 
 To highlight bullets, you can use "complementary colors", as shown in the [use contrast to your advantage](#contrast_to_your_advantage) section.
 
