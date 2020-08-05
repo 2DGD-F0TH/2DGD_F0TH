@@ -1,0 +1,45 @@
+const string DIRECTIONS = ["NORTH", "EAST", "SOUTH", "WEST"];
+
+class AIEntity:
+    // 1=North, 2=East, ...
+    forward_direction_index = 1
+    current_cell = (1,0)
+    // ...
+    function get_adjacent_cell(Cell cell, string direction):
+        // Returns the adjacent cell in said direction
+        cell_copy = cell.copy()
+        if direction == "NORTH":
+            cell_copy.y -= 1;
+        if direction == "SOUTH":
+            cell_copy.y += 1;
+        if direction == "WEST":
+            cell_copy.x -= 1;
+        if direction == "EAST":
+            cell_copy.x += 1;
+        return cell_copy
+
+    function is_valid(Cell cell):
+        /* Returns true if the cell is valid, aka
+         * does not have a wall and does not go backwards */
+        if cell.is_wall():
+            // The cell is a wall
+            return False
+        if cell == get_adjacent_cell[(forward_direction_index + 2) % 4]:
+            // We're going backwards
+            return False
+
+    function update(float dt):
+        // ...
+        // Choose a random direction
+        string chosen_direction = random_choice(DIRECTIONS);
+        int i = 0;
+        Cell next_cell = get_adjacent_cell(current_cell, chosen_direction)
+        while (not next_cell.is_valid() and i!=4):
+            chosen_direction = DIRECTIONS[DIRECTIONS.indexOf(chosen_direction) + 1]
+            next_cell = get_adjacent_cell(current_cell, chosen_direction)
+        if i==4:
+            // We exhausted the possibilities, go backwards
+            chosen_direction = DIRECTIONS[(forward_direction_index + 2) % 4]
+            next_cell = get_adjacent_cell(current_cell, chosen_direction)
+        // Move
+        move_to(next_cell)
