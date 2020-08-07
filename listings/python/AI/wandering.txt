@@ -1,0 +1,59 @@
+from random import choice as random_choice
+DIRECTIONS = ["NORTH", "EAST", "SOUTH", "WEST"]
+
+
+class AIEntity:
+    # 0=North, 1=East, ...
+    forward_direction_index = 0
+    current_cell = (1, 0)
+    # ...
+
+    def get_adjacent_cell(self, cell, direction):
+        # Returns the adjacent cell in said direction
+        if direction == "NORTH":
+            cell.y -= 1
+        if direction == "SOUTH":
+            cell.y += 1
+        if direction == "WEST":
+            cell.x -= 1
+        if direction == "EAST":
+            cell.x += 1
+        return cell
+
+    def is_valid(self, cell):
+        """
+        Returns true if the cell is valid, aka
+        does not have a wall and does not go backwards
+        """
+        if cell.is_wall():
+            # The cell is a wall
+            return False
+        if cell == self.get_adjacent_cell[
+                (self.forward_direction_index + 2) % 4
+        ]:
+            # We're going backwards
+            return False
+        # In all other cases, it's valid
+        return True
+
+    def update(self, dt):
+        # ...
+        # Choose a random direction
+        chosen_direction = random_choice(DIRECTIONS)
+        i = 0
+        next_cell = self.get_adjacent_cell(self.current_cell, chosen_direction)
+        while (not self.is_valid(next_cell) and i != 4):
+            chosen_direction = DIRECTIONS[
+                (DIRECTIONS.indexOf(chosen_direction) + 1) % 4
+            ]
+            next_cell = self.get_adjacent_cell(self.current_cell,
+                                               chosen_direction)
+        if i == 4:
+            # We exhausted the possibilities, go backwards
+            chosen_direction = DIRECTIONS[
+                (self.forward_direction_index + 2) % 4
+            ]
+            next_cell = self.get_adjacent_cell(self.current_cell,
+                                               chosen_direction)
+        # Move
+        self.move_to(next_cell)
