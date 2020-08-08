@@ -313,6 +313,12 @@ Another mechanic used in bullet hell games are "screen-clearing bombs": these ar
 
 In some games bombs may be also used to destroy small enemies and damage bigger ones. The screen clearing move can happen in many ways: the most common is just making the bullets disappear, but other games prefer turning the "destroyed bullets" into small collectibles that can give the player points.
 
+### Clearing bullets on pattern changes
+
+Some bullet hell games feature multi-phase bosses, where the boss changes attack strategy, and thus their bullet pattern and speed, at certain points of the fight (usually when reaching a certain amount of health left). This may create some issues to the player, since the new bullets may cover all "escape routes" willingly left by the previous bullets, thus making it impossible to not die.
+
+A simple and effective strategy is clearing the screen of the enemy bullets automatically when the boss changes phase (sometimes transforming the bullets into collectibles for score), this will allow for a quick breather to the player, as well as a somewhat smooth transition to the new phase.
+
 ### Some examples
 
 There are games that make the most of the "bullet hell" mechanics to give player more challenge, or risk/reward choice.
