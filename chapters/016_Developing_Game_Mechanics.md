@@ -291,7 +291,7 @@ The common definition of a "bullet hell" game is usually the one of a scrolling 
 
 ### Bullets
 
-When it comes to this kind of game, it is vital that the enemy bullets are **well visible**, this usually means that their color is brighter and has a lot of contrast with the background and the sprites on screen.
+When it comes to this kind of game, it is vital that the enemy bullets are **well visible** (as stated in the [shooters section](#gd_shooters) in the "game design" chapter), this usually means that their color is brighter and has a lot of contrast with the background and the sprites on screen.
 
 ![Example of how to better "highlight" bullets](./images/developing_mechanics/bh_highlight_bullets.png){width=50%}
 
