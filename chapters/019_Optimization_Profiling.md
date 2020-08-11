@@ -98,6 +98,11 @@ This way instead we're doing sanity checks and related operations only once, mov
 Tips and tricks
 ---------------
 
+### Be mindful of your "updates"
+
+\placeholder
+<!-- TODO: Putting stuff in the "update" part of the game loop that shouldn't be there will bog down the game (including input, it's better to use an event-based system) -->
+
 ### Dirty Bit
 
 Not all entities in your game need to have their state updated all the time. Continuously updating all entities' internal state can be really costly in terms of game performance.
@@ -129,3 +134,96 @@ This means that frame-by-frame animations should not be used when taking care of
 Remember that Tweening doesn't apply only to positions, you can tween any property of a game object.
 
 So a quick way you can optimize your game, is removing all the unnecessary animations and replace them with tweening, your game will surely benefit from that.
+
+Non-Optimizations
+-----------------
+
+In this small section we take a look at some alleged "optimizations" that actually do nothing (or close to nothing) for our game's performance.
+
+### "Switches are faster than IFs"
+
+Some people allege that using "switch" statements instead of "if" statements is bound to optimize the game. This an overstatement, and we can prove it with a simple test.
+
+Let's create two C++ listings, like follows:
+
+\noindent\begin{minipage}{.45\textwidth}
+\begin{lstlisting}[caption=IFs vs Switch: IF statements, language=C++]
+#include <iostream>
+using namespace std;
+int main(){
+  for (int i = 0; i < 10000000; i++){
+    int x = rand() % 5;
+    if (x==1){
+      cout << "One" << endl;
+    }else if (x==2){
+      cout << "Two" << endl;
+    }else if(x==3){
+      cout << "Three" << endl;
+    }else if(x==4){
+      cout << "Four" << endl;
+    }else if(x==5){
+      cout << "Five" << endl;
+    }
+  }
+  return 0;
+}
+\end{lstlisting}
+\end{minipage}\hfill
+\begin{minipage}{.45\textwidth}
+\begin{lstlisting}[caption=IFs vs Switch: Switch statements, language=C++]
+#include <iostream>
+using namespace std;
+int main(){
+  for (int i = 0; i < 10000000; i++){
+    int x = rand() % 5;
+    switch(x){
+      case 1:
+        cout << "One" << endl;
+        break;
+      case 2:
+        cout << "Two" << endl;
+        break;
+      case 3:
+        cout << "Three" << endl;
+        break;
+      case 4:
+        cout << "Four" << endl;
+        break;
+      case 5:
+        cout << "Five" << endl;
+        break;
+    }
+  }
+  return 0;
+}
+\end{lstlisting}
+\end{minipage}
+
+These pieces of code will be compiled without any optimization, using G++, using the following command:
+
+```{.sh}
+g++ -Wall -Wextra -Werror -O0 filename.cpp -o filename.bin
+```
+
+Where "filename" is replaced by the source name, then each file will be executed using the "time" linux command, like follows:
+
+```{.sh}
+time ./filename.bin
+```
+
+Below we can see the results for both the codes:
+\begin{figure}
+\centering
+\begin{minipage}{.45\textwidth}
+    \centering
+    \includegraphics[width=0.9\linewidth]{./images/profiling_optimization/if_time.png}
+    \caption{Time taken by the IF code}%
+\end{minipage}
+\begin{minipage}{.45\textwidth}
+    \centering
+    \includegraphics[width=0.9\linewidth]{./images/profiling_optimization/switch_time.png}
+    \caption{Time taken by the Switch code}%
+\end{minipage}
+\end{figure}
+
+We can see a difference of just around 0.25 seconds, over 10 Million iterations. If you changed an equivalent IF statement for a Switch statement, you would earn a quarter of a second every 46 hours of gameplay at 60fps.
