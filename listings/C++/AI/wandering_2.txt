@@ -52,22 +52,31 @@ class AIEntity{
         return true;
     }
 
+    std::vector<std::String> get_available_directions(Cell cell){
+        /* Returns a list of available directions */
+        std::vector<std::String> result = {};
+        for (auto direction: DIRECTIONS){
+            if (is_valid(get_adjacent_cell(cell, direction))){
+                result.push_back(direction);
+            }
+        }
+        return result;
+    }
+
     void update(float dt){
         // ...
-        // Choose a random direction
-        std::String chosen_direction = get_random<std::String>(DIRECTIONS);
-        int i = 0;
-        Cell next_cell = get_adjacent_cell(current_cell, chosen_direction);
-        while (!(is_valid(next_cell)) && i != 4){
-            chosen_direction = DIRECTIONS[(DIRECTIONS.indexOf(chosen_direction) + 1) % 4];
-            next_cell = get_adjacent_cell(current_cell, chosen_direction);
-        }
-        if (i == 4){
-            // We exhausted the possibilities, go backwards
+        // Get a list of the available directions
+        std::vector<std::String> available_directions = get_available_directions(current_cell)
+        std::string chosen_direction = "NORTH"  // Just a default
+        if (available_directions.is_empty()){
+            // No directions are available, let's go back
             chosen_direction = DIRECTIONS[(forward_direction_index + 2) % 4];
-            next_cell = get_adjacent_cell(current_cell, chosen_direction);
+        }else{
+            // Choose a random direction among the available ones
+            chosen_direction = random_choice(available_directions);
         }
         // Move
+        Cell next_cell = get_adjacent_cell(current_cell, chosen_direction);
         move_to(next_cell);
     }
 }
