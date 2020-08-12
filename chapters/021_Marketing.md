@@ -5,6 +5,19 @@ Marketing your game
 
 \epigraph{Here's my whole marketing idea: treat people the way you want to be treated.}{\textit{Garth Brooks}}
 
+An Important Note: Keep your feet on the ground
+-----------------------------------------------
+
+Let's be honest: the "indie success stories" you see everywhere are going to give you a false sense of hope, that "there is space for everyone in the industry".
+
+I'm going to break it to you: if you're in for the money, you already lost.
+
+The reality is that many game developers are horribly underpaid and many projects failed and many others are going to fail.
+
+If you're in for the sake of creativity, to make something you want to make, seeing your project perform "under par" will hurts less, if at all. Your first project won't be a best-seller, but doing something you enjoy will make it better.
+
+This book is meant to teach the basics of game development as a way to channel your creativity, and to help you understand the pitfalls and mistakes that can keep you from showing your best product, in the best possible way.
+
 The importance of being consumer-friendly
 -----------------------------------------
 
