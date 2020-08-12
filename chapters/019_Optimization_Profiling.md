@@ -262,3 +262,8 @@ Below we can see the results for both the codes:
 We can see a difference of just around 0.25 seconds, over 10 Million iterations. If you changed an equivalent IF statement for a Switch statement, you would earn a quarter of a second every 46 hours of gameplay at 60fps.
 
 The right choice is the simply choose the structure that lets you have the most readable code: the more your code is readable, the easier it is to understand; the easier to understand, the lower the probability that there is a bug in there (or a performance hog of some sort).
+
+### Blindly Applying Optimizations
+
+\placeholder
+<!-- TODO: All optimizations must be done in the context of the application: using resource pooling in a memory-limited environment can be bad -->
