@@ -95,6 +95,17 @@ As all the sanity checks in the `Move` function will be executed twice per frame
 
 This way instead we're doing sanity checks and related operations only once, moving the character in its final position without wasting resources.
 
+### Entity Cleanup and Memory leaks
+
+\placeholder
+
+<!--TODO: Properly disposing of unused entities is important to avoid memory leaks -->
+
+### Resource Pools
+
+\placeholder
+<!-- TODO: resource pools of reusable items are great -->
+
 Tips and tricks
 ---------------
 
@@ -227,3 +238,5 @@ Below we can see the results for both the codes:
 \end{figure}
 
 We can see a difference of just around 0.25 seconds, over 10 Million iterations. If you changed an equivalent IF statement for a Switch statement, you would earn a quarter of a second every 46 hours of gameplay at 60fps.
+
+The right choice is the simply choose the structure that lets you have the most readable code: the more your code is readable, the easier it is to understand; the easier to understand, the lower the probability that there is a bug in there (or a performance hog of some sort).
