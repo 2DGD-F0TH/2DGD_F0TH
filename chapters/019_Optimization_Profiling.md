@@ -49,6 +49,23 @@ If instead your game is not using all of the CPU computing power, you may have a
 
 \placeholder
 
+
+#### Is your game eating up more and more RAM as it's running?
+
+Your game starts well enough, but after just a few minutes it starts slowing down and becomes choppy. Your may have a memory problem at hand.
+
+If your game supports windowed mode, keep your task manager (or "top"/"htop" if you're on Linux) open and look at your game's process: does the memory used by your game increase as you're playing it?
+
+If so, you may be having a so-called "memory leak": somewhere during its running cycle, your game forgets to clean up something, which stays resident in memory until your game closes. The result, after creating and deleting a lot of entities and leaving a lot of *garbage* behind is that the total memory used increases.
+
+If you suspect a memory leak, you may want to take a look at these sections:
+
+- [Entity Cleanup and Memory Leaks](#cleanup_leaks)
+- [Using memory analyzers to detect leaks](#mem_analyzers)
+- [Resource Pools](#res_pools)
+
+\placeholder
+
 <!-- TODO: Continue -->
 
 Optimizing your game
@@ -95,13 +112,18 @@ As all the sanity checks in the `Move` function will be executed twice per frame
 
 This way instead we're doing sanity checks and related operations only once, moving the character in its final position without wasting resources.
 
-### Entity Cleanup and Memory leaks
+### Entity Cleanup and Memory leaks {#cleanup_leaks}
 
 \placeholder
 
 <!--TODO: Properly disposing of unused entities is important to avoid memory leaks -->
 
-### Resource Pools
+### Using analyzers to detect Memory Leaks {#mem_analyzers}
+
+\placeholder
+<!-- TODO: Talk about tools like LLVM/Clang scan_build and Valgrind -->
+
+### Resource Pools {#res_pools}
 
 \placeholder
 <!-- TODO: resource pools of reusable items are great -->
