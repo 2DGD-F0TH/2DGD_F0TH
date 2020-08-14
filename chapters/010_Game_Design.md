@@ -127,6 +127,20 @@ We can see how we hid a secret inside of another secret and used a piece of valu
 
 \placeholder
 
+### The "lives" system
+
+Extra ships, 1-ups, extends, continues: these are all instances of what we can call the "lives system". This system gives a more "arcade feel" to your game and adds an important challenge factor to it.
+
+Without something that threatens a game over, beating the game is no longer a challenge, but it's a matter of time. When overcoming a challenge is inevitable, it is not a challenge anymore, and the player will end up losing interest.
+
+This is what the "lives system" is for: it's a "sword of Damocles", hanging over the player's head, continuously threatening a "game over" and pushing the player to do their best in order to get as far into the game as possible.
+
+"Continues" are just "a lives system for your lives", they're in a very limited number (or have a price, like putting another quarter into the arcade cabinet) and allow you to "continue the game" with a new set of "lives" without losing your progress.
+
+As with all things in videogames, it doesn't need to bring real challenge, but just the "illusion" of it.
+
+Furthermore, lives and continues are a great tool to reward your player for their efforts: giving them an extra life every 20.000 points, granting a continue for a no-hit boss battle, putting a bunch of 1-ups in a hard-to-reach place are all great ways to challenge and reward your player and give your game more depth.
+
 <!-- TODO: Talk about other level design tips -->
 
 Some game genres and their characteristics
