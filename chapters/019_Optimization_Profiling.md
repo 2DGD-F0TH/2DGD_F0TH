@@ -180,56 +180,10 @@ Some people allege that using "switch" statements instead of "if" statements is 
 Let's create two C++ listings, like follows:
 
 \noindent\begin{minipage}{.45\textwidth}
-\begin{lstlisting}[caption=IFs vs Switch: IF statements, language=C++]
-#include <iostream>
-using namespace std;
-int main(){
-  for (int i = 0; i < 10000000; i++){
-    int x = rand() % 5;
-    if (x==1){
-      cout << "One" << endl;
-    }else if (x==2){
-      cout << "Two" << endl;
-    }else if(x==3){
-      cout << "Three" << endl;
-    }else if(x==4){
-      cout << "Four" << endl;
-    }else if(x==5){
-      cout << "Five" << endl;
-    }
-  }
-  return 0;
-}
-\end{lstlisting}
+\lstinputlisting[language=C++,caption=IFs vs Switch: IF Statements]{./static_listings/if_vs_switch_if.cpp}
 \end{minipage}\hfill
 \begin{minipage}{.45\textwidth}
-\begin{lstlisting}[caption=IFs vs Switch: Switch statements, language=C++]
-#include <iostream>
-using namespace std;
-int main(){
-  for (int i = 0; i < 10000000; i++){
-    int x = rand() % 5;
-    switch(x){
-      case 1:
-        cout << "One" << endl;
-        break;
-      case 2:
-        cout << "Two" << endl;
-        break;
-      case 3:
-        cout << "Three" << endl;
-        break;
-      case 4:
-        cout << "Four" << endl;
-        break;
-      case 5:
-        cout << "Five" << endl;
-        break;
-    }
-  }
-  return 0;
-}
-\end{lstlisting}
+\lstinputlisting[language=C++,caption=IFs vs Switch: Switch Statements]{./static_listings/if_vs_switch_switch.cpp}
 \end{minipage}
 
 These pieces of code will be compiled without any optimization, using G++, using the following command:
@@ -245,6 +199,7 @@ time ./filename.bin
 ```
 
 Below we can see the results for both the codes:
+
 \begin{figure}
 \centering
 \begin{minipage}{.45\textwidth}
