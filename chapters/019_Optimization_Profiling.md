@@ -220,5 +220,10 @@ The right choice is the simply choose the structure that lets you have the most 
 
 ### Blindly Applying Optimizations
 
-\placeholder
-<!-- TODO: All optimizations must be done in the context of the application: using resource pooling in a memory-limited environment can be bad -->
+There rarely is something more wrong you can do when optimizing than blindly applying optimizations without considering your application context.
+
+Using resource pooling in an environment with limited memory (but plenty of CPU power) can prove a disaster: it's better to instantiate and destroy objects in such case.
+
+Sometimes animators can be faster than LERPing/Tweening, mostly when you have to tween objects with multiple children: tweening would create a lot of CPU-bound calculations for the new position and size that will make the whole thing bog down and get choppy.
+
+The only thing you can do is think first and try later: this book can give you some suggestions, but nothing should be taken at face value. Remember the context your game is working in and **do not treat all platforms like they're the same**: WebGL is different than Console which is different than Mobile.
