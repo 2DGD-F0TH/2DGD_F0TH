@@ -16,11 +16,11 @@ Looking for contributors!
 
 Hi! Penaz here.
 
-After over 250 pages of content, I am reaching the point where I poured the majority of my knowledge inside this e-book, and simplifying and explaining takes away a lot of time. With the little time I have, research can only get me so far.
+After over 300 pages of content, I am reaching the point where I poured the majority of my knowledge inside this e-book, and simplifying and explaining takes away a lot of time. With the little time I have, research can only get me so far.
 
-I'd love to translate the currently available listings in (decently written) C++ and (separately) Lua, as well as add new algorithms, containers, tips and tricks and design patterns. Though my work leaves me very little free time to study and re-work things in a more understandable way.
+I'd love to translate the currently available listings many other languages, such as lua, as well as add new algorithms, containers, tips and tricks and design patterns. Though my work leaves me very little free time to study and re-work things in a more understandable way.
 
-If you are a programmer, game designer, game developer, artist, writer or game dev aficionado that wants to contribute to a completely free and open resource for new game developers that want to start seriously; feel free to fork the repository and pour your knowledge in this magic soup that is this book!
+If you are a programmer, game designer, game developer, artist, writer or "game dev aficionado" that wants to contribute to a completely free and open resource for new game developers that want to start seriously; feel free to fork the repository and pour your knowledge in this magic soup that is this book!
 
 I'm more than happy to take a look at pull requests, it would be a honor.
 
