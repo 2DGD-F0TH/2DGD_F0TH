@@ -392,14 +392,17 @@ Sounds And Music
 
 ### Some audio basics
 
-\placeholder
-<!-- TODO -->
+Before creating sounds and music, we need to clarify some terminology, as well as learn some basics before diving into FM synthesis like wave forms. After that we can learn about trackers and Software DAWs.
+
+In this section we will learn about sample rate, bit depth, lossy/lossless formats and clipping, among other things.
 
 #### Sample Rate
 
 Differently from Analog Audio, which is continuous (as in has an infinite amount of detail), Digital Audio is a stream of numbers (ones and zeros) that is "discrete" in nature. That means that we blast these numbers thousands of times a second to be able to build a decent sounding sound.
 
 The number of times we record such numbers from our digital microphone (as well as the number of times we blast such numbers back from our speakers) is called **sample rate** and it is measured in *Hz*.
+
+The more the samples per second, the more detail we can squeeze into our audio files, but at the same time the bigger the file will become too.
 
 ![Graphical Representation of Sample Rate (44.1KHz)](./images/resources/Sample_Rate_44100.png){width=60%}
 
@@ -503,12 +506,11 @@ The NES had one channel completely dedicated to noise waveforms.
 
 ### Digital Sound Processing (DSP)
 
-
 Let's think about a simple situation: we want to play a "walk" sound effect: every time our character's foot hits the ground, we play a "step" sound effect.
 
 If we play the same sound over and over, it will become boring really quickly, breaking the immersion. An idea could be saving different sounds for a footstep and then every time the player takes a step, a random footstep sound will be played.
 
-This solves the problem, at a cost: we need to use more memory to keep track of such sounds, multiply that for tens of sound effects and the game can easily run out of memory.
+This solves the problem, at a cost: we need to use more memory to keep track of such sounds, multiply that for tens of sound effects and the game may run out of memory on low-end systems (or we can "run out" of patience in creating tens of variants of sound effects).
 
 An alternative solution could be using DSP: editing the sound sample in real time to add more variety and depth while saving memory, the trade-off would be CPU time, but it's an acceptable deal.
 
@@ -580,13 +582,11 @@ It's better to cut the higher frequencies instead, and eventually boost the enti
 
 ### DAW Basics
 
-\placeholder
-<!-- TODO -->
-
 #### What is a DAW Software?
 
-\placeholder
-<!-- TODO -->
+Digital Audio Workstation Software (DAW Software) are pieces of software that have extensive recording, playback and editing features, allowing you to create your own songs, given some instrument samples (or pre-recorded tracks).
+
+They also feature mixing facilities, waveform display and track controls, some even feature (the software equivalent of) effect racks, such as equalizers, to further the possibilities of creating your work in the best way possible.
 
 #### The Piano Roll
 
@@ -608,12 +608,9 @@ The piano roll abstraction allows you to edit your music easily, by grabbing not
 
 ### Music Tracker Basics
 
-\placeholder
-<!-- TODO -->
-
 #### What is a Music Tracker Software?
 
-Music Trackers are essentially a type of music sequencer. The great majority of music trackers have the majority of their screen occupied by the tracker version of a music sheet.
+Born with the 4-voice sampling system in the Commodore Amiga, Music Trackers are essentially a type of music sequencer. The great majority of music trackers have the majority of their screen occupied by the tracker version of a music sheet.
 
 ![A screen from MilkyTracker](./images/resources/tracker_overview.png){width=60%}
 
@@ -664,6 +661,8 @@ A "channel" (also called a "voice"), is a space where one sample is played back 
 <!-- TODO -->
 
 #### Patterns
+
+A pattern is essentially a piece of a song: a group of tracks with their own instruments, settings and notes written in them. The "pattern" abstraction allows you to easily repeat pieces of a song by just referring to the pattern.
 
 \placeholder
 <!-- TODO -->
