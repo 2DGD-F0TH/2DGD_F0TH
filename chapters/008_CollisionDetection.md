@@ -586,3 +586,11 @@ Such solutions should therefore be enabled (or implemented) only for fast-moving
 Sometimes it can happen that the position is reset incorrectly due to machine precision or wrong rounding, this can lead to the character that looks spazzy or just going through the floor at random times. The solution to these issues is making sure that the position and state are set correctly so that there are no useless state changes between frames.
 
 Sometimes the "spazziness" of the character derives from the fact that collision reaction sets the character one pixel over the floor, triggering the "falling" state, the next frame the state would be changed to "idle" and then in the frame "n+2" the cycle would restart with collision reaction putting the character one pixel over the floor.
+
+Ray Casting
+-----------
+
+Sometimes it can necessary to use unusual techniques to detect collisions: ray casting is one of them. If well used (and with some "illusion magic"), ray casting can be a nice way to solve the "bullet through paper" problem.
+
+<!-- TODO: Talk about ray casting, and how it can be used to fix the tunneling problem by casting the ray and an animation, without actually shooting a bullet -->
+\placeholder

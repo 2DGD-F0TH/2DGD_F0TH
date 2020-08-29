@@ -8,6 +8,12 @@ Other Useful Algorithms
 World Generation
 ----------------
 
+### Midpoint Displacement Algorithm
+
+\placeholder
+
+<!-- TODO: Add a simple midpoint displacement algorithm to generate 2D terrains -->
+
 ### Maze Generation
 
 Maze generation is the base of a great majority of dungeon generation systems, you can create a maze, carve out a few rooms, put an entrance and an exit and you have a nice quick dungeon!
