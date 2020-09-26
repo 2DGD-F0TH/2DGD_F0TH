@@ -10,9 +10,38 @@ World Generation
 
 ### Midpoint Displacement Algorithm
 
+As the name implies, this algorithm entails recursively taking the midpoint between two extremes and "displace" it.
+
+Let's see how it works first. We have a completely flat terrain:
+
+![How the Midpoint Displacement Algorithm Works (1/4)](images/algorithms/MDA_1.pdf){width=50%}
+
+Then we take the midpoint between the two extremes and move it (up or down) by a random amount (between two sensible extremes):
+
+![How the Midpoint Displacement Algorithm Works (2/4)](images/algorithms/MDA_2.pdf){width=50%}
+
+In this case we moved it up by a certain measure, now we take the two midpoints on the left and right sides of the previous midpoint, and displace them too:
+
+![How the Midpoint Displacement Algorithm Works (3/4)](images/algorithms/MDA_3.pdf){width=50%}
+
+Then we take the midpoints between the segments we created, and displace them again:
+
+![How the Midpoint Displacement Algorithm Works (4/4)](images/algorithms/MDA_4.pdf){width=50%}
+
+Each displacement is usually done by a lower amount of the previous ones, so that the first displacements give a "general shape" of the terrain, while the ones further down the line are going to give "detail" to our terrain.
+
+The algorithm terminates when we reached a pre-defined number of subdivisions, sometimes called "octaves". In the previous example, we have 4 octaves.
+
+Let's take a look at a possible implementation of the midpoint displacement algorithm:
+
 \placeholder
 
-<!-- TODO: Add a simple midpoint displacement algorithm to generate 2D terrains -->
+<!-- TODO: CODE -->
+
+### Diamond-Square Algorithm
+
+<!-- TODO: Evolution of the Midpoint displacement, usable for 2D height maps -->
+\placeholder
 
 ### Maze Generation
 
