@@ -1,0 +1,33 @@
+int MIN = 0
+int MAX = 100
+int OCTAVES = 5
+
+// This will contain the "heights" of our terrain
+float terrain[] = new float[32]
+
+// We start by deciding the start and end "heights" of our terrain
+terrain[0] = random_float(MIN, MAX)
+terrain[31] = random_float(MIN, MAX)
+
+
+
+function midpoint_displacement(begin, end, octave):
+    // Get the midpoint
+    midpoint = floor((end - begin) / 2)
+    // Get the midpoint value
+    value = (abs(terrain[end] - terrain[begin])) / 2
+    // Get the possible displacement
+    displacement = MAX / octave
+    // Displace by a random amount
+    value += random_float(-displacement, displacement)
+    // Interpolate the values between begin and end
+    for i in range(begin+1, end - 1):
+        value[i] = interpolate(begin, end, i / end)
+    // Apply the value
+    terrain[midpoint] = value
+    // Recursion on the subtree
+    if octave < OCTAVES:
+        // Recur left
+        midpoint_displacement(begin, midpoint, octave + 1)
+        // Recur right
+        midpoint_displacement(midpoint, end, octave + 1)
