@@ -1,0 +1,44 @@
+#include <cmath>
+
+int MIN = 0
+int MAX = 100
+int OCTAVES = 5
+
+// This will contain the "heights" of our terrain
+float terrain[] = new float[32]
+
+// We start by deciding the start and end "heights" of our terrain
+terrain[0] = rand() % MAX + MIN
+terrain[31] = rand() % MAX + MIN
+// We interpolate all the missing values
+interpolate(terrain, 0, 31)
+
+
+
+function midpoint_displacement(begin, end, octave) {
+    // Get the midpoint
+    int midpoint = std::floor((end - begin) / 2)
+    // Get the midpoint value
+    float value = (std::abs(terrain[end] - terrain[begin])) / 2
+    // Get the possible displacement
+    float displacement = MAX / octave
+    // Displace by a random amount
+    value = value + (rand() % (2 * displacement) - displacement)
+    // Apply the value
+    terrain[midpoint] = value
+    // Interpolate the values between begin and midpoint
+    for (i = begin + 1; i < midpoint; ++i) {
+        value[i] = interpolate(terrain, begin, midpoint)
+    }
+    // Interpolate the values between midpoint and the end
+    for (i = midpoint + 1; i < end; ++i) {
+        value[i] = interpolate(terrain, midpoint, end)
+    }
+    // Recursion on the subtree
+    if (octave < OCTAVES) {
+        // Recur left
+        midpoint_displacement(begin, midpoint, octave + 1)
+        // Recur right
+        midpoint_displacement(midpoint, end, octave + 1)
+    }
+}
