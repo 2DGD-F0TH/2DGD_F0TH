@@ -1,38 +1,50 @@
 #!/usr/bin/env python
+"""
+A small script to show the status of listings translations
+"""
 from os.path import join as pjoin
+from os.path import dirname
 from os import walk, listdir
+
+DIRECTORY = pjoin(dirname(__file__), "../dynamic_listings")
 
 
 def main() -> None:
     """
     Simple script to visually check the status of listings porting
     """
-    languages: list = listdir("../listings")
+    languages: list = listdir(DIRECTORY)
+    files: set = set()
     for language in languages:
-        files: set = {item
-                      for _, _, fn in walk(pjoin("../listings", language))
-                      for item in fn}
+        files = {
+            item
+            for _, _, fn in walk(pjoin(DIRECTORY, language))
+            for item in fn
+        }
         print("[{}]".format(language).rjust(15, " "),
               "[{}]".format("*" * len(files)))
 
-    pseudocode_files:set = {item
-        for _, _, fn in walk("../listings/pseudocode/")
+    pseudocode_files: set = {
+        item
+        for _, _, fn in walk(pjoin(DIRECTORY, "pseudocode"))
         for item in fn
     }
     for language in languages:
         if language != "pseudocode":
-            file_list: set = {item
-                for _, _, fn in walk(pjoin("../listings", language))
+            file_list: set = {
+                item
+                for _, _, fn in walk(pjoin(DIRECTORY, language))
                 for item in fn
             }
-            files: set ={item
+            files = {
+                item
                 for item in pseudocode_files
                 if item not in file_list
             }
             if files:
                 print("Missing Listings: {}".format(language))
-                for f in files:
-                    print(f)
+                for fil in files:
+                    print(fil)
 
 
 if __name__ == "__main__":
