@@ -1,0 +1,40 @@
+from random import uniform as random_float
+from math import floor
+
+MIN = 0
+MAX = 100
+OCTAVES = 5
+
+# This will contain the "heights" of our terrain
+terrain = [0] * 32
+
+# We start by deciding the start and end "heights" of our terrain
+terrain[0] = random_float(MIN, MAX)
+terrain[31] = random_float(MIN, MAX)
+# We interpolate all the missing values
+interpolate(terrain, 0, 31)
+
+
+def midpoint_displacement(begin, end, octave):
+    # Get the midpoint
+    midpoint = floor((end - begin) / 2)
+    # Get the midpoint value
+    value = (abs(terrain[end] - terrain[begin])) / 2
+    # Get the possible displacement
+    displacement = MAX / octave
+    # Displace by a random amount
+    value += random_float(-displacement, displacement)
+    # Apply the value
+    terrain[midpoint] = value
+    # Interpolate the values between begin and midpoint
+    for i in range(begin + 1, midpoint - 1):
+        value[i] = interpolate(terrain, begin, midpoint)
+    # Interpolate the values between midpoint and the end
+    for i in range(begin + 1, midpoint - 1):
+        value[i] = interpolate(terrain, midpoint, end)
+    # Recursion on the subtree
+    if octave < OCTAVES:
+        # Recur left
+        midpoint_displacement(begin, midpoint, octave + 1)
+        # Recur right
+        midpoint_displacement(midpoint, end, octave + 1)
