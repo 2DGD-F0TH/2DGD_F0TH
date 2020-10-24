@@ -234,6 +234,14 @@ Telegraphing is a nice way to suggest the player how to avoid screen-filling att
 
 Another example of telegraphing was used in the Bioshock series: the first shots of an enemy against you always miss, that is used to avoid "out of the blue" situation, which can be seen as a form of "telegraphing" both the presence and position of enemies.
 
+#### Minigames
+
+Many times underrated, minigames are a really vital part of a great game experience.
+
+Minigames can be a fun diversion from the main game, extending the engagement time, as well as a priceless resource for bigger open-ended games: you can use common "low-level" materials to feed into the minigame to get better materials, weapons or prizes.
+
+This is a win/win situation, you throw away unused materials to get useful tools, materials or cosmetics, also playing into the mechanism that maybe some people will get things wrong and need the "low-level" materials again, further lengthening the engagement of your game.
+
 ### Shooters {#gd_shooters}
 
 #### Make the bullets stand out
