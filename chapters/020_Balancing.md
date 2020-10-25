@@ -44,6 +44,8 @@ Cheating is the act of fraudulently altering the game's mechanics in advantage o
 
 It is something that many game developers and designers have to battle against, so here are some suggestions and tips to limit cheating in your game.
 
+This section will just give a primer on the types of cheating we can find, since knowledge of something is the best weapon against it; so questions like "how to cheat" (or "how to hack") are outside the scope of this book.
+
 ### Information-based cheating
 
 Information-based cheats are all those cheats that rely additional information to the cheater, such information can give a sizeable advantage. A possible example is a cheat that removes the so-called "Fog of War" in a real-time strategy (RTS) game: having possibility of seeing all the enemy units allows the cheater to put up some countermeasures against the units that are being created.
