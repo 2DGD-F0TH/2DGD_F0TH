@@ -103,4 +103,40 @@ Procedural (and random) generation can be used practically anywhere inside of a 
 - **Textures:** It's possible to colorize textures, giving environments different flavours, as well adding a layer of randomness to a procedurally generated texture can greatly enhance a game's possibilities;
 - **Animations:** An example of procedurally generated animations are the so-called "ragdoll physics", where you calculate the forces impacting a certain body (and it's "virtual skeleton"). A simpler way could be making the program choose randomly between a set of pre-defined "jumping animations" to spice up the game;
 - **Sounds:** You can use sound manipulation libraries to change the pitch of a sound, to give a bit of randomness to it, as well as using "sound spatialization" by changing the volume of a sound to make it come from a certain place, compared to the player's position;
-- **Story:** In case you want to put some missions behind a level-gate, you can use procedurally generated missions to allow the players to grind for experience and resources, so they are ready for the upcoming story checkpoints.
+- **Story:** In case you want to put some missions behind a level-gate, you can use procedurally generated missions to allow the players to grind for experience and resources, so they are ready for the upcoming story checkpoints;
+- **Difficulty Management:** Procedural generation can be involved into difficulty management by handing the enemy parameters and spawning to suit our needs.
+
+Procedural Generation and Difficulty Management
+-----------------------------------------------
+
+As stated above, we can use elements of procedural generation to aid us in managing the difficulty of our game, tweaking the challenge we are offering to our players.
+
+### Static difficulty
+
+Sometimes called "Algorithmic Difficulty", is the kind of difficulty management seen in many games: elements and enemies are placed in a way that gives the player an ascending difficulty curve, with different parameters.
+
+Such parameters build the abstract concept of "difficulty level" (beginner, normal, advanced, master, ...): each difficulty level contains a set of parameters that change how the game feels.
+
+In practice usually you assign a "difficulty level" to an area and make the game handle the enemy spawn accordingly; sometimes such "area level" is used to make the game spawn randomized items with a certain power level, given a certain amount of displacement of its statistics.
+
+### Adaptive Difficulty
+
+Not really considered "procedural generation", adaptive difficulty makes use of different algorithms (taken on a lease from AI programming) to tweak the game difficulty in reaction to how the player plays.
+
+If the player progresses quickly, the game will become harder, instead if the player tends to lose lives, the game will become easier and less random.
+
+The objective of adaptive difficulty is to create an "optimal experience" for everyone, by determining if the current game is "too easy" or "too hard" for the player.
+
+### Static vs. Adaptive Difficulty
+
+Each approach has its own advantages and shortcomings, which can make one or the other better suited for your game.
+
+Static difficulty is easy to create and leaves choice to the players between varying levels of difficulty; maybe someone wants a more "relaxing experience" instead of being continuously challenged.
+
+The biggest shortcoming is that each level of difficulty is an estimate of its difficulty, so an "easy mode" may be way too easy, while the "normal" mode may be too hard for someone. It's hard to find the balance.
+
+Also there's all the work dedicated to program the parameters for each level of difficulty.
+
+Adaptive difficulty is harder to code and sometimes can lead to great results, but it also completely invalidates the concept of "grinding" in an RPG game, for instance. If you try to become stronger by undertaking easier quests, you will find that the quests keep getting harder the stronger you get.
+
+Adaptive difficulty doesn't allow the player to "grind their way out" of a difficult part of the game.
