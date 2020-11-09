@@ -592,5 +592,32 @@ Ray Casting
 
 Sometimes it can necessary to use unusual techniques to detect collisions: ray casting is one of them. If well used (and with some "illusion magic"), ray casting can be a nice way to solve the "bullet through paper" problem.
 
+### What is Ray Casting?
+
+Mostly used in 3D, ray casting is a technique where you cast an imaginary ray (usually of light) until it hits something, but its uses can go beyond that.
+
+Let's take for example shooting a simple bullet: this can give some issues when the "bullet" is small and fast, as explained earlier in [The bullet through paper problem](#bulletthroughpaper).
+
+First of all, let's put up some (arbitrary) constraints that will help us making the computation easier and better performing without giving away our tricks too easily.
+
+Our bullet will shoot from the barrel of our gun (duh!), but we also define a point where the bullet will despawn: this will limit our ray length and make our algorithm perform better. We can still give an excuse such as "bullets are affected by gravity" (which actually is true), and maybe use it as a difficulty management technique (stopping people from sniping the enemy can make the game harder and force the player to play the game the way we, the developers, want).
+
+![How Ray Casting Works: Gun (1/2)](./images/collision_detection/ray_casting_1.pdf){width=50%}
+
+Attached to our gun, is an invisible line (our ray), that will follow every movement of the gun itself
+
+![How Ray Casting Works: Gun (2/2)](./images/collision_detection/ray_casting_2.pdf){width=50%}
+
+When we want to shoot the gun, instead of using the previously stated "time-stepping techniques", we perform a line-to-rectangle (or line-to-circle, or whatever we find best) collision detection, at the same time we play a really fast animation of the bullet shooting along the casted ray. If the cast ray hits an enemy, they'll die (or get destroyed).
+
+<!-- TODO: Maybe include this in a very decorative "tip box"? For now I'll use a block surrounded by 2 fences-->
+
+* * * * * * * * * *
+**TIP**
+
+If you find that the bullet animation won't align well with the enemy dying, the animation may not be fast enough. Some games even give up showing the bullet at all, and instead show a white line for a split second, that fades away. The effect works really well!
+
+* * * * * * * * * *
+
 <!-- TODO: Talk about ray casting, and how it can be used to fix the tunneling problem by casting the ray and an animation, without actually shooting a bullet -->
 \placeholder
