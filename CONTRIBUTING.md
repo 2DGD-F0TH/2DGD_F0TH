@@ -52,6 +52,18 @@ The book should be written as much as possible in [Pandoc Markdown](https://pand
 
 If the situation calls for it (for instance you *absolutely need* a certain table styling) you can use pure LaTeX inline, inside the markdown document.
 
+### Special Environments and commands
+
+To simplify the writing of the book as much as possible, I have included some commands and LaTeX environments:
+
+- `\code{path}{caption}`: Allows to insert a dynamic code listing, that will source dynamically from the `dynamic_listings` folder, according to the language selected;
+- `\placeholder`: A simple placeholder, prints the "This section is still a work in progress" message;
+- `\begin{tip}...\end{tip}`: This environment allows to create a "tip box", showing a highlighted box to write your tips in;
+- `\begin{pitfall}...\end{pitfall}`: This environment allows to create a "pitfall box", showing a highlighted box to write any traps and pitfalls of a proposed solution.
+- `\paidprod`: shows a red `[P]`, used to show a paid product;
+- `\freeprod`: shows a green `[F]`, used to show a free product;
+- `\donprod`: shows an orange `[D]`, used to show partially free products or products that accept donations;
+
 ### Problems? Questions?
 
 The most common questions will be usually answered in the `FAQ_GUIDES.md` document, for the rest, feel free to open an issue on either GitHub or GitLab.
