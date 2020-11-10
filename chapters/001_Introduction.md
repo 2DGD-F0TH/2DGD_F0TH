@@ -67,6 +67,18 @@ There will be times when it's needed to write down something from another source
 
 <!-- TODO: Insert more conventions, assumptions... -->
 
+### Boxes
+
+In your journey through this book, you may find some boxes, let's see which ones you may come across.
+
+\begin{tip}
+This is a tip box, here you will find tips that are loosely related to the chapter at hand. These small tips will help you make a better game, or wiggle your way through something difficult.
+\end{tip}
+
+\begin{pitfall}
+This is a pitfall box, it will warn you of traps behind the corner, as well as possible shortcomings of a certain solution.
+\end{pitfall}
+
 ### Engine Used
 
 This book does not use any engine. All algorithms will be presented pretending there is some "generic engine" behind the scenes that handles sprites, vectors and the like. The objective of this book is teaching algorithms, tips and tricks and game design in the most engine-agnostic (and language-agnostic, if you're looking at the "pseudocode edition") way possible.

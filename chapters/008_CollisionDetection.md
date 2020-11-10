@@ -612,12 +612,9 @@ When we want to shoot the gun, instead of using the previously stated "time-step
 
 <!-- TODO: Maybe include this in a very decorative "tip box"? For now I'll use a block surrounded by 2 fences-->
 
-* * * * * * * * * *
-**TIP**
-
+\begin{tip}
 If you find that the bullet animation won't align well with the enemy dying, the animation may not be fast enough. Some games even give up showing the bullet at all, and instead show a white line for a split second, that fades away. The effect works really well!
-
-* * * * * * * * * *
+\end{tip}
 
 <!-- TODO: Talk about ray casting, and how it can be used to fix the tunneling problem by casting the ray and an animation, without actually shooting a bullet -->
 \placeholder

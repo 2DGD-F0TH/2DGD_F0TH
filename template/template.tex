@@ -15,6 +15,7 @@
 \usepackage{framed}
 \usepackage[toc,page]{appendix}
 \usepackage[absolute,overlay]{textpos}
+\usepackage{tcolorbox}
 % --------------- Commands ---------------
 \newcommand{\tabitem}{~~\llap{\textbullet}~~}
 \newcommand{\ttabitem}{~~~~\llap{$$\circ$$}~~}
@@ -22,6 +23,28 @@
 \newcommand{\freeprod}{{\color{green!80!black}\textbf{[F]}}}
 \newcommand{\donprod}{{\color{orange}\textbf{[D]}}}
 \newcommand{\placeholder}{\texttt{[This section is a work in progress and it will be completed as soon as possible]}}
+\newenvironment{tip}{
+  \begin{tcolorbox}
+    \begin{minipage}{.15\textwidth}
+      \centering
+      \includegraphics[width=0.9\linewidth]{./images/tip.pdf}
+    \end{minipage}
+    \begin{minipage}{.80\textwidth}
+}{
+  \end{minipage}
+  \end{tcolorbox}
+}
+\newenvironment{pitfall}{
+  \begin{tcolorbox}
+    \begin{minipage}{.15\textwidth}
+      \centering
+      \includegraphics[width=0.9\linewidth]{./images/pitfall.pdf}
+    \end{minipage}
+    \begin{minipage}{.80\textwidth}
+}{
+  \end{minipage}
+  \end{tcolorbox}
+}
 % --------------- Lengths ---------------
 \setlength\epigraphwidth{.8\textwidth}
 % --------------- Gray Bar on left of blockquotes ---------------

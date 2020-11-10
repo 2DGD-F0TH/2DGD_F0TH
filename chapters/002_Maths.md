@@ -26,6 +26,10 @@ In most programming languages the modulo function is hidden behind the operator 
 
 The modulo operator is very useful when we need to loop an ever-growing value between two values (as will be shown in [infinitely scrolling backgrounds](#infiniback)).
 
+\begin{pitfall}
+Be careful when using the modulo operator with negative arguments: it may lead to unexpected results, which may depend on the programming language you are using.
+\end{pitfall}
+
 Vectors
 --------
 
@@ -386,7 +390,7 @@ When you want to develop a game, you will probably find yourself needing to rota
 
 In everyday life, angles are measured in degrees, from 0 to 360 degrees. In some situations in math, it is more comfortable to measure angles using radians, from 0 to $2 \pi$.
 
-You can covert back and forth between radians and degrees with the following formulas:
+You can convert back and forth between radians and degrees with the following formulas:
 
 $$angle\ in\ degrees = angle\ in\ radians \cdot \frac{180}{\pi}$$
 
@@ -642,7 +646,9 @@ T_R = \begin{bmatrix}
 \end{bmatrix}
 $$
 
-These formulas assume that the x-axis points right and the y-axis points up, if the y-axis points down in your implementation, you need to swap the matrices.
+\begin{pitfall}
+These formulas \textbf{assume that the x-axis points right and the y-axis points up}, if the y-axis points down in your implementation, you need to swap the matrices.
+\end{pitfall}
 
 #### Rotating referred to an arbitrary point
 

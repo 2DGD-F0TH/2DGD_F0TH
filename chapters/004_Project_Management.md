@@ -403,7 +403,9 @@ The maximum complexity suggested is 10, although sometimes it's good to relax su
 
 Your IDE, if advanced enough, should already be able to warn you of a high cyclomatic complexity.
 
-Be mindful that cyclomatic complexity may have issues of "over-estimation" or "under-estimation", depending on a case-by-case basis.
+\begin{pitfall}
+Be mindful that cyclomatic complexity may have issues of "over-estimation" or "under-estimation", depending on a case-by-case basis. McCabe's cyclomatic complexity is far from a "silver bullet" that will suit all your needs, but as all other metrics, it can give a pointer over where refactoring may be necessary.
+\end{pitfall}
 
 ### Code Coverage
 
@@ -444,7 +446,7 @@ Some people say that inheritance is evil and should be avoided, some other say i
 
 The *depth of inheritance* metric tells us how deep the inheritance hierarchy is, thus this metric will tell the us the strength of one of the possible dependency types. The deeper the inheritance, the more dependencies we have, which means that we have more classes that, if edited, will change the behaviour of the "children classes".
 
-It's better having a short inheritance depth, although it's not necessarily wrong having a longer chain of dependencies it might mean we have a structural problem, where some classes are "too generic" and at the top of the hierarchy we have some kind of "universal object".
+It's better having a short inheritance depth, (although it's not necessarily wrong) having a longer chain of dependencies might mean we have a structural problem, where some classes are "too generic" and at the top of the hierarchy we have some kind of "universal object".
 
 ### Number of methods / fields / variables
 

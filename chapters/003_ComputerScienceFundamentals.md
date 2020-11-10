@@ -51,6 +51,10 @@ There are 3 types of Asymptotic notation you should know: $\Omega$, $\Theta$ and
 
 We will now talk about the most common Big-O notations, from "most efficient" to "least efficient".
 
+\begin{pitfall}
+Be mindful of one specific thing: these notations simply tie how the algorithm performs in relation to how a certain variable grows (usually a dataset). If you know for certain that a dataset stays relatively small, a less efficient algorithm may not make a huge difference.
+\end{pitfall}
+
 ### O(1)
 
 An algorithm that executes in **O(1)** is said to execute "in constant time", which means that no matter how much data is input in the algorithm, said algorithm will execute in the same time.

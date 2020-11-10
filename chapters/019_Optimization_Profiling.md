@@ -25,6 +25,7 @@ Some special values you may see are:
 - 60 FPS: Used in most games
 - 75 FPS or 80 FPS: Used in some LCD Monitors
 - 144 FPS: Used in more modern, high-refresh rate monitors
+- 240 FPS: Used in the most recent high-end games and monitors
 
 #### Is the animation of your game stuttering but the FPS counter is fine?
 
