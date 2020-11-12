@@ -511,7 +511,7 @@ Object Oriented Programming
 
 ### Introduction
 
-One of the biggest programming paradigms in use is surely the "Object Oriented Programming" (from now on: "OOP") paradigm. The fundamental unit of a program, in this paradigm is the *Object*. This paradigm allows to structure your code in a more modular and re-usable way, as well as implementing abstractions, allowing for more solid code and making it possible for other code to make use of your own code without needing to know any details besides it *Interface*.
+One of the biggest programming paradigms in use is surely the "Object Oriented Programming" (from now on: "OOP") paradigm. The fundamental unit of a program, in this paradigm is the *Object*. This paradigm allows to structure your code in a more modular and re-usable way, as well as implementing abstractions, allowing for more solid code and making it possible for other code to make use of your own code without needing to know any details besides its *Interface*.
 
 ### Objects
 
@@ -555,6 +555,18 @@ From inheritance, OOP presents a concept called **Polymorphism** (From "Poly" - 
 In our "Person-Student" example, you could use a pointer to either a Person or a Student for the sake of getting their first name.
 
 In some languages it is possible for an object to inherit from multiple other objects, this is called "Multiple Inheritance"
+
+### Mixins
+
+Mixins are classes that contain certain methods that are made to be used by other classes. We can see mixins as some kind of interface with methods already implemented.
+
+Mixins encourage the reuse of code (since the common functionalities get separated into their own classes), allowing for some interesting mechanisms and enforcing the Dependency Inversion principle.
+
+Many times, Mixins are described as "included" rather than "inherited", due to their nature.
+
+\begin{trivia}
+The python web framework Django makes heavy use of mixins: you can create a standard "View" (representing a web page, for instance), and then add login protection (via LoginRequiredMixin) or permissions (via PermissionRequiredMixin). This is all done using Python's multiple inheritance.
+\end{trivia}
 
 ### The Diamond Problem
 
