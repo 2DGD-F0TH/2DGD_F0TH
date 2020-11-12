@@ -24,7 +24,7 @@
 \newcommand{\donprod}{{\color{orange}\textbf{[D]}}}
 \newcommand{\placeholder}{\texttt{[This section is a work in progress and it will be completed as soon as possible]}}
 \newenvironment{tip}{
-  \begin{tcolorbox}
+  \begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!white,title=Tip!]
     \begin{minipage}{.15\textwidth}
       \centering
       \includegraphics[width=0.9\linewidth]{./images/tip.pdf}
@@ -35,7 +35,7 @@
   \end{tcolorbox}
 }
 \newenvironment{pitfall}{
-  \begin{tcolorbox}
+  \begin{tcolorbox}[colback=red!5!white,colframe=red!75!black,title=Pitfall Warning!]
     \begin{minipage}{.15\textwidth}
       \centering
       \includegraphics[width=0.9\linewidth]{./images/pitfall.pdf}
