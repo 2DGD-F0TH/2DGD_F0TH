@@ -79,6 +79,10 @@ This is a tip box, here you will find tips that are loosely related to the chapt
 This is a pitfall box, it will warn you of traps behind the corner, as well as possible shortcomings of a certain solution.
 \end{pitfall}
 
+\begin{trivia}
+This is a trivia box, it will give out some small facts that can help you understand things better, or just give you a small break from all the learning.
+\end{trivia}
+
 ### Engine Used
 
 This book does not use any engine. All algorithms will be presented pretending there is some "generic engine" behind the scenes that handles sprites, vectors and the like. The objective of this book is teaching algorithms, tips and tricks and game design in the most engine-agnostic (and language-agnostic, if you're looking at the "pseudocode edition") way possible.
