@@ -1,0 +1,51 @@
+class AuthenticationMixin:
+    """
+    This class has the authentication functions that allow
+    to check for authentication
+    """
+    def is_authenticated(self, user):
+        """
+        Function used to check for authentication
+        """
+        pass
+
+    def connect(self, request):
+        """
+        This function wraps around the normal connection and performs an
+        authentication check first
+        """
+        if self.is_authenticated(request.user):
+            # We're authenticated, do whatever should be done
+            return super().connect(request)
+        # Not authenticated, do something else
+        return ForbiddenErrorResponse()
+
+
+class ServerEndpoint:
+    """
+    This class represents a generic endpoint
+    """
+    def do_stuff(self, request):
+        """
+        Some Utility function
+        """
+        pass
+
+    def connect(self, request):
+        """
+        A simple connection function for this endpoint
+        """
+        # Here we do whatever needs to be done to connect
+        self.do_stuff(request)
+
+
+class SomeEndpoint(AuthenticationMixin, ServerEndpoint):
+    """
+    In this class the connect() method will first check for
+    authentication, then eventually do stuff
+    """
+    def more_things(self):
+        """
+        Some other utility function
+        """
+        pass

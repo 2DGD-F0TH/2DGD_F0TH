@@ -565,8 +565,12 @@ Mixins encourage the reuse of code (since the common functionalities get separat
 Many times, Mixins are described as "included" rather than "inherited", due to their nature.
 
 \begin{trivia}
-The python web framework Django makes heavy use of mixins: you can create a standard "View" (representing a web page, for instance), and then add login protection (via LoginRequiredMixin) or permissions (via PermissionRequiredMixin). This is all done using Python's multiple inheritance.
+The python web framework Django makes heavy use of mixins in its class-based views: you can create a standard "View" (representing a web page, for instance), and then add login protection (via LoginRequiredMixin) or permissions (via PermissionRequiredMixin). This is all done using Python's multiple inheritance.
 \end{trivia}
+
+Let's make a small example of how mixins work, we have a class that allows connecting to a server and a mixin allowing to check for authentication.
+
+\code{computer_science/mixins}{Example of how mixins work (server authentication)}
 
 ### The Diamond Problem
 
