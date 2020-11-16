@@ -1,20 +1,26 @@
+PANDOC=pandoc
+CHAPTERS_CMD=ls chapters/*.md | sort -V
+PANDOC_DEFAULT_ARGS=--listings -N --template template/template.tex -s
+VERSION=-M version=`git describe --tags`
+
 all: pseudocode pseudocode_color python cpp
 
 pseudocode:
-	pandoc --listings -N `ls chapters/*.md | sort -V` metadata.yaml -M version=`git describe --tags` -M proglang="" --template template/template.tex -s -o Book_pseudocode.pdf
+	$(PANDOC) $(PANDOC_DEFAULT_ARGS) `$(CHAPTERS_CMD)` metadata.yaml $(VERSION) -M proglang="" -o Book_pseudocode.pdf
 
 pseudocode_color:
-	pandoc --listings -N `ls chapters/*.md | sort -V` metadata.yaml -M version=`git describe --tags` -M proglang=pseudocode --template template/template.tex -s -o Book_pseudocode_colored.pdf
+	$(PANDOC) $(PANDOC_DEFAULT_ARGS) `$(CHAPTERS_CMD)` metadata.yaml $(VERSION) -M proglang=pseudocode -o Book_pseudocode_colored.pdf
 
 python:
-	pandoc --listings -N `ls chapters/*.md | sort -V` metadata.yaml -M version=`git describe --tags` -M proglang=python --template template/template.tex -s -o Book_python.pdf
+	$(PANDOC) $(PANDOC_DEFAULT_ARGS) `$(CHAPTERS_CMD)` metadata.yaml $(VERSION) -M proglang=python -o Book_python.pdf
 
 cpp:
-	pandoc --listings -N `ls chapters/*.md | sort -V` metadata.yaml -M version=`git describe --tags` -M proglang=C++ --template template/template.tex -s -o Book_cpp.pdf
+	$(PANDOC) $(PANDOC_DEFAULT_ARGS) `$(CHAPTERS_CMD)` metadata.yaml $(VERSION) -M proglang=C++ -o Book_cpp.pdf
 
 latex:
-	pandoc --listings -N `ls chapters/*.md | sort -V` metadata.yaml -M version=`git describe --tags` -M proglang=pseudocode --template template/template.tex -s -o Book_LaTeX.latex
+	$(PANDOC) $(PANDOC_DEFAULT_ARGS) `$(CHAPTERS_CMD)` metadata.yaml $(VERSION) -M proglang="" -o Book_LaTeX.latex
 
+.PHONY: clean
 clean:
-	rm -f *.pdf *.aux *.toc *.lol *.lot *.log *.out
+	rm -f *.pdf *.aux *.toc *.lol *.lot *.log *.out *.latex
 	echo "Pulizia Completa"
