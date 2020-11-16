@@ -13,6 +13,5 @@ cpp:
 	pandoc --listings -N `ls chapters/*.md | sort -V` metadata.yaml -M version=`git describe --tags` -M proglang=C++ --template template/template.tex -s -o Book_cpp.pdf
 
 clean:
-	rm -f *.pdf
+	rm -f *.pdf *.aux *.toc *.lol *.lot *.log *.out
 	echo "Pulizia Completa"
-
