@@ -97,7 +97,7 @@ Another way to optimize your drawing routine is avoiding to change textures ofte
 
 \placeholder
 
-<!-- TODO -->
+<!-- TODO: Finish talking about optimizing drawing -->
 
 ### Reduce the calls to the Engine Routines
 

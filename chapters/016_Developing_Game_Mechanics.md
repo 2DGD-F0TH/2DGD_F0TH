@@ -282,7 +282,7 @@ We can switch back and forth between the two domains with "transforms", the most
 #### Beat Detection
 
 \placeholder
-<!-- TODO -->
+<!-- TODO: How to perform beat detection in games -->
 
 "Bullet Hell" Style Games
 -------------------------
@@ -413,10 +413,10 @@ The bad thing is that videos are a "static" format. They have their own resoluti
 
 \placeholder
 
-<!-- TODO -->
+<!-- TODO: provide example code on how to add video cutscenes -->
 
 ### Scripted Cutscenes
 
 \placeholder
 
-<!-- TODO -->
+<!-- TODO: Talk about how to implement a "scripted cutscene" system -->

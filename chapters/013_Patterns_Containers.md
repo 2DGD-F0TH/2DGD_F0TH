@@ -309,31 +309,31 @@ Particle Systems
 
 \placeholder
 
-<!-- TODO -->
+<!-- TODO: What is a particle, what does it do, etc... -->
 
 ### Generators
 
 \placeholder
 
-<!-- TODO -->
+<!-- TODO: What is a particle generator -->
 
 ### Emitters
 
 \placeholder
 
-<!-- TODO -->
+<!-- TODO: What is a particle emitter, how does it differ from a generator -->
 
 ### Updaters
 
 \placeholder
 
-<!-- TODO -->
+<!-- TODO: What is a particle updater, how it works, etc... -->
 
 ### Force Application
 
 \placeholder
 
-<!-- TODO -->
+<!-- TODO: Talk about applying forces to particles -->
 
 Timers
 ------

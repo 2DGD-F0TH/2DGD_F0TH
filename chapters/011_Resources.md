@@ -11,12 +11,12 @@ Graphics {#GraphicsResources}
 ### Some computer graphics basics
 
 \placeholder
-<!-- TODO -->
+<!-- TODO: Talk about some computer grahics basics -->
 
 #### Color Depth
 
 \placeholder
-<!-- TODO -->
+<!-- TODO: Primer on "color depth" -->
 
 #### True Color vs. Indexed Color
 
@@ -78,17 +78,17 @@ Sometimes your images will need to be scaled or filtered to avoid annoying artif
 #### Nearest Neighbor Filtering
 
 \placeholder
-<!-- TODO -->
+<!-- TODO: Nearest Neighbor Filtering -->
 
 #### Bilinear Filtering
 
 \placeholder
-<!-- TODO -->
+<!-- TODO: Bilinear Filtering -->
 
 #### Trilinear Filtering
 
 \placeholder
-<!-- TODO -->
+<!-- TODO: Trilinear Filtering -->
 
 ### General Tips
 
@@ -298,7 +298,7 @@ Palette Swapping can be used in more creative ways, though. Going back to Super 
 #### What pixel art is and what it is not
 
 \placeholder
-<!-- TODO -->
+<!-- TODO: Talk how pixel art is a mean, and it's more than just a "style" -->
 
 #### Tools
 
@@ -572,7 +572,7 @@ Making a configuration file instead of hard-coding the elements allows for easy 
 ### Some audio processing tips
 
 \placeholder
-<!-- TODO -->
+<!-- TODO: Give some tips to process audio files -->
 
 #### Prefer cutting over boosting
 
@@ -635,7 +635,7 @@ The next command does more or less the same thing, besides changing the vibrato 
 The `E40` command resets the vibrato waveform to the default "sine wave".
 
 \placeholder
-<!-- TODO -->
+<!-- TODO: Finish talking about music trackers -->
 
 #### Samples
 
@@ -644,28 +644,28 @@ Samples are the basis of a music tracker: they are essentially wave forms which 
 Usually samples come in the form of small digital sound files, most trackers allow the sample to be looped (wholly or in part) to simulate a "sustain" effect.
 
 \placeholder
-<!-- TODO -->
+<!-- TODO: Finish talking about sound samples -->
 
 #### Instruments
 
 An instrument is a set of a sound sample, with some effects applied by default (if you want). Essentially an instrument is a "container" for a sample and some parameters to allow the change of pitch and effects.
 
 \placeholder
-<!-- TODO -->
+<!-- TODO: Finish talking about tracker instrument -->
 
 #### Channels
 
 A "channel" (also called a "voice"), is a space where one sample is played back at a time. One channel is not "fixed" to a certain instrument and modern music trackers can mix an unlimited number of channels. Many times music makers limit themselves to a certain number of channels to achieve a "retro feeling" or to challenge themselves.
 
 \placeholder
-<!-- TODO -->
+<!-- TODO: Finish talking about channels in trackers -->
 
 #### Patterns
 
 A pattern is essentially a piece of a song: a group of tracks with their own instruments, settings and notes written in them. The "pattern" abstraction allows you to easily repeat pieces of a song by just referring to the pattern.
 
 \placeholder
-<!-- TODO -->
+<!-- TODO: Finish talking about patterns in trackers -->
 
 Fonts
 -------
@@ -773,7 +773,7 @@ Modern engines, like Unity and Unreal Engine also include GUI node-based editors
 #### The data types
 
 \placeholder
-<!-- TODO -->
+<!-- TODO: Talk about GLSL data types -->
 
 ### Some GLSL Shaders examples
 

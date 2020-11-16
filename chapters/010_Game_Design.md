@@ -123,7 +123,7 @@ We can see how we hid a secret inside of another secret and used a piece of valu
 
 ### Reward Backtracking (but don't make it mandatory)
 
-<!-- TODO -->
+<!-- TODO: Talk about how to reward players that backtrack (like opening a door that was locked shut before a boss) -->
 
 \placeholder
 

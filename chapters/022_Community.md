@@ -6,25 +6,25 @@ Engaging your community
 \epigraph{There is no power for change greater than a community discovering what it cares about.}{\textit{Margaret J. Wheatley}}
 
 \placeholder
-<!-- TODO -->
+<!-- TODO: Intro to the chapter -->
 
 Forums
 ------
 
 \placeholder
-<!-- TODO -->
+<!-- TODO: Talk about forums as a way to engage community -->
 
 Wikis
 -----
 
 \placeholder
-<!-- TODO -->
+<!-- TODO: Talk about wikis as a way to engage community -->
 
 Update Previews
 ---------------
 
 \placeholder
-<!-- TODO -->
+<!-- TODO: Talk about how to use update previews as a way to engage community -->
 
 Modding
 -------

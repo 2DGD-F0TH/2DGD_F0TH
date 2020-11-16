@@ -1155,7 +1155,7 @@ Table: Performance table for Heaps
 
 Table: Summary Table for Heaps
 
-<!-- TODO -->
+<!-- TODO: More data structures -->
 \placeholder
 
 ### Stacks
