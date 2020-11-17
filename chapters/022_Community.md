@@ -5,26 +5,41 @@ Engaging your community
 
 \epigraph{There is no power for change greater than a community discovering what it cares about.}{\textit{Margaret J. Wheatley}}
 
-\placeholder
-<!-- TODO: Intro to the chapter -->
+Coding a game is just part of the whole game development ecosystem, engaging your community and having a fruitful exchange of ideas and knowledge can be an amazing resource to keep your game inside players' minds.
 
 Forums
 ------
 
-\placeholder
-<!-- TODO: Talk about forums as a way to engage community -->
+Forums (also known as "boards") are websites where people (in our case players) engage in discussions on certain matters (fittingly called "topics").
+
+Forums can be places where our players can share their fan work, discuss about the game and give suggestions.
+
+Forums can be really useful a makeshift "service desk", where players can report bugs and any kind of weirdness your games may present to them.
 
 Wikis
 -----
 
-\placeholder
-<!-- TODO: Talk about wikis as a way to engage community -->
+Wikis are a collaborative knowledge source where people write different pages about a certain matter.
+
+In our case having a wiki about our game can contain various pages talking about:
+
+- Characters
+- Levels
+- Bosses
+- Enemies
+- Walkthroughs
+
+The great thing having many players collaborating on the same matter is that someone may be able find something someone else missed, helping to build a better understanding of the game.
+
+Searching for more information about a game can be a kind of game itself, building and strengthening a community.
 
 Update Previews
 ---------------
 
-\placeholder
-<!-- TODO: Talk about how to use update previews as a way to engage community -->
+Beta channels and update previews can be an incredible way to engage your most faithful fans as well as:
+
+- **Give you more testing ground:** having many players test your game can give you further testing than any small team and also let you test server load;
+- **Give you some market insight:** having some different point of view can give you some insight on whether your players will like the new features you're preparing or not.
 
 Modding
 -------
