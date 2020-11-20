@@ -89,5 +89,11 @@ If your game has a somewhat linear story and no "roguelike" elements, you may be
 
 ### New Game+
 
-\placeholder
-<!-- TODO: Talk about new game plus -->
+A good way to lengthen the life span of your game is adding a "New Game+" mode. Let's see what it is.
+
+New Game+ is a mode that gets unlocked when you finish a game on a certain savefile, this mode allows you to re-play the same story and game with some additions (hence the "plus"), those additions may be multiple, like:
+
+- **Keep your inventory/equipment:** this is especially handy in story-driven, multiple-path/multiple-ending games. This allows the player to gloss over the fighting and instead concentrate more on "taking a different path" in the story. Let's not understate the willingness of a player to play a "power fantasy" by mowing through enemies in a fighting-heavy game, though;
+- **Keep your statistics:** this is very useful, in a similar way to the "keep your equipment" bullet point, just more specific to RPG-style games;
+- **Unlock new items:** this makes the game a bit different by allowing to use brand new, previously locked, equipment in the new "run";
+- **Make the game more challenging:** this makes every new run a harder challenge to the player, by making enemies stronger, more resistant or just by adding more enemies in the various areas. A good idea is also making making enemies from mid and end-game appear earlier.
