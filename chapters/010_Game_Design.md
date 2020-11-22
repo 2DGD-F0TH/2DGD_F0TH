@@ -262,4 +262,6 @@ Grinding and Farming
 --------------------
 
 <!-- TODO: usually in RPGs, grinding = experience , farming = items, avoiding pitfalls like mandatory grinding that is used in bad games to "pad" -->
+
+<!-- Due to culture, Korean games tend to have more grinding, so we need to take into account our target audience, find the name of the game where exp requirements were halved in the american release -->
 \placeholder
