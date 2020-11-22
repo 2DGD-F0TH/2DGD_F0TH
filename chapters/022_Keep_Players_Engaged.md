@@ -69,7 +69,19 @@ Replayability
 
 A great way to gather some more tech-savvy fans of your game is opening your game's structure to editing, which means enabling people to "mod" your game.
 
-Mods are a great way to engage your community, either via new maps, upgraded textures or even total conversions!
+Mods are a great way to engage your community, and the are just so many types of mods that can be made:
+
+- **Data Packs:** These add new user-created content to the game, such as:
+    - New Maps/Levels;
+    - Upgraded Textures;
+    - Upgraded Models (if the game is 3D);
+    - Upgraded Sounds;
+- **Feature Mods:** These add new features to the game, such as:
+    - New game modes;
+    - HUD Modifications or upgrades (mini maps for instance);
+    - New options and settings;
+    - Additional/tweaked difficulty levels;
+- **Total Conversions:** These take the engine of a game (like the first DOOM) and make a completely new game out of it, an example is "Castlevania: Simon's Destiny".
 
 Refining and giving out your own map editor can be a really great way to make your game more "open to editing" and allow modders to enjoy working on it, after that, if your game structure allows it, you could document the engine and allow people to create their own masterpieces, maps and fan-made stories.
 
