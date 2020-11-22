@@ -257,3 +257,9 @@ Some people may want to ask why your own bullets should stand out too, the answe
 [^icetiles]: Simple SVG ice platformer tiles, listed as "Public Domain (CC0)" at [OpenGameArt.org](https://opengameart.org/content/simple-svg-ice-platformer-tiles-16x16-16x96-96x16)
 
 [^undeadfossil]: Fossil (Undead) RPG Enemy Sprites attribution: Stephen Challener (Redshrike), hosted by [OpenGameArt.org](https://opengameart.org/content/fossil-undead-rpg-enemy-sprites)
+
+Grinding and Farming
+--------------------
+
+<!-- TODO: usually in RPGs, grinding = experience , farming = items, avoiding pitfalls like mandatory grinding that is used in bad games to "pad" -->
+\placeholder
