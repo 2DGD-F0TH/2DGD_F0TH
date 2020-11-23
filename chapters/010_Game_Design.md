@@ -296,16 +296,44 @@ The most important aspect of "designing farming" is definitely reward the player
 
 <!-- TODO: usually in RPGs, grinding = experience , farming = items, avoiding pitfalls like mandatory grinding that is used in bad games to "pad" -->
 
-#### Leveling
+#### Leveling Curves
 
 When it comes to RPGs there are different ways to "design the leveling curve" in a game, depending on how you prefer designing your game.
 
 ##### "Exponential" curve
 
-\placeholder
-<!-- TODO: Used in most games, every level requires a lot more xp than the previous one -->
+One of the most known ways to shape your leveling curve is making each further "skill level" require more experience points than the previous one, for example:
+
+| Level | Experience Points |
+| :---: | :---------------: |
+| 1     | 5.000             |
+| 2     | 10.000            |
+| 3     | 20.000            |
+| 4     | 40.000            |
+| ...   | ...               |
+
+Table: An example of exponential level curve
+
+This type of leveling curve entails that each newer (harder) enemy gives out a higher amount of experience (not necessarily the quantity to make the experience feel "linear").
+
+The exponential nature of this level progression allows the "push" players towards harder enemies, since grinding lower-tier enemies becomes less and less efficient the more your level increases.
 
 ##### "Level-based" experience rewards
 
-\placeholder
-<!-- TODO: Used in Crosscode to cut on grinding and push the game forward, being high-level and beating low-level enemies will just grant 1xp -->
+As an addition or an alternative to the exponential curve, some games try to "push" the players more towards harder enemies by scaling (down) their experience points with your level.
+
+This method allows you to further shape the curve not only to try and prevent mindless grind of low-tier enemies, but also by rewarding challenging harder enemies.
+
+This method can be implemented in many ways, one of them could be assigning a level to the enemy itself and then scale the experience rewarded by the difference between the player level and the enemy level.
+
+| Player Level - Enemy Level | Experience Reward |
+| :------------------------: | :---------------: |
+| < -3 (very underleveled)   | 35.000            |
+| -2 (moderately underlevel) | 20.000            |
+| -1 (slightly underlevel)   | 10.000            |
+| 0 (ideal)                  | 5.000             |
+| +1 (slightly overlevel)    | 2.500             |
+| +2 (moderately overlevel)  | 800               |
+| > +3                       | 1                 |
+
+Table: An example of "level-based" experience rewards
