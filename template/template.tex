@@ -479,6 +479,12 @@ $endif$
 \clearpage
 }
 $endif$
+\clearpage
+\pagenumbering{arabic}
+$body$
+
+\clearpage
+\pagenumbering{Roman}
 $if(lot)$
 \listoftables
 $endif$
@@ -488,9 +494,6 @@ $endif$
 $if(lol)$
 \lstlistoflistings
 $endif$
-\clearpage
-\pagenumbering{arabic}
-$body$
 
 $if(natbib)$
 $if(bibliography)$
