@@ -258,10 +258,54 @@ Some people may want to ask why your own bullets should stand out too, the answe
 
 [^undeadfossil]: Fossil (Undead) RPG Enemy Sprites attribution: Stephen Challener (Redshrike), hosted by [OpenGameArt.org](https://opengameart.org/content/fossil-undead-rpg-enemy-sprites)
 
-Grinding and Farming
---------------------
+### RPGs
+
+#### Grinding and farming
+
+When it comes to games part of the RPG genre, two words must be in your dictionary: **grinding** and **farming**, both as a player and as a game developer.
+
+Sometimes used as synonyms and similar in execution, these terms are actually different and have different objectives. Let's see how.
+
+##### Grinding
+
+Much like "grinding an axe", grinding in RPGs entails cleaning areas from enemies repeatedly (either by re-playing missions or just doing random encounters) with the objective of earning "experience points", thus making yourself stronger.
+
+Grinding is somewhat a "self-leveling game design hinge", allowing you to have some leeway when designing the difficulty of your levels: if a player likes having an easier time, they will "grind themselves" to a higher level; if instead they prefer a challenge, they will power through the "easier parts" until they find the challenge they seek (due to being probably "underleveled").
+
+We can also use "designed grinding", (as well as "level gates", where you need to have a certain amount of experience to continue) to pace our game and eventually even lengthen the experience a bit.
+
+\begin{tip}
+When designing your levels and "designing your grind", you need to be mindful of your target audience.\\
+Some cultures are used to (and enjoy) a higher amount of grinding than others, so too low of an amount may feel unsatisfactory to them, while an amount too high may be frustrating.
+\end{tip}
+
+You should also be very careful on "forcing grinding" on your players: players like having choice and really dislike having anything forced on them, and this can change with your target audience.
+
+\placeholder
+<!-- TODO: Find that NES/SNES game from GDQ that got the exp requirements halved in the US release -->
+
+##### Farming
+
+Farming entails the same actions as grinding, but here we are using enemies as "farming animals", the objective is obtaining a certain amount of materials to obtain a weapon or item.
+
+The most important aspect of "designing farming" is definitely reward the player for their farming: if a "special item" requires a lot of materials (and thus a lot of farming), such item should be worth the effort, or the player will feel cheated out of their time, effort and materials.
+
+\placeholder
+
+<!-- TODO: Finish -->
 
 <!-- TODO: usually in RPGs, grinding = experience , farming = items, avoiding pitfalls like mandatory grinding that is used in bad games to "pad" -->
 
-<!-- Due to culture, Korean games tend to have more grinding, so we need to take into account our target audience, find the name of the game where exp requirements were halved in the american release -->
+#### Leveling
+
+When it comes to RPGs there are different ways to "design the leveling curve" in a game, depending on how you prefer designing your game.
+
+##### "Exponential" curve
+
 \placeholder
+<!-- TODO: Used in most games, every level requires a lot more xp than the previous one -->
+
+##### "Level-based" experience rewards
+
+\placeholder
+<!-- TODO: Used in Crosscode to cut on grinding and push the game forward, being high-level and beating low-level enemies will just grant 1xp -->
