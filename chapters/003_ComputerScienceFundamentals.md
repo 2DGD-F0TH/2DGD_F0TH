@@ -51,7 +51,7 @@ There are 3 types of Asymptotic notation you should know: $\Omega$, $\Theta$ and
 
 We will now talk about the most common Big-O notations, from "most efficient" to "least efficient".
 
-::::{.pitfall}
+:::: pitfall ::::
 Be mindful of one specific thing: these notations simply tie how the algorithm performs in relation to how a certain variable grows (usually a dataset). If you know for certain that a dataset stays relatively small, a less efficient algorithm may not make a huge difference.
 ::::
 
@@ -564,7 +564,7 @@ Mixins encourage the reuse of code (since the common functionalities get separat
 
 Many times, Mixins are described as "included" rather than "inherited", due to their nature.
 
-::::{.trivia}
+:::: trivia ::::
 The python web framework Django makes heavy use of mixins in its class-based views: you can create a standard "View" (representing a web page, for instance), and then add login protection (via LoginRequiredMixin) or permissions (via PermissionRequiredMixin). This is all done using Python's multiple inheritance.
 ::::
 

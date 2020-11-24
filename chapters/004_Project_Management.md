@@ -403,7 +403,7 @@ The maximum complexity suggested is 10, although sometimes it's good to relax su
 
 Your IDE, if advanced enough, should already be able to warn you of a high cyclomatic complexity.
 
-::::{.pitfall}
+:::: pitfall ::::
 Be mindful that cyclomatic complexity may have issues of "over-estimation" or "under-estimation", depending on a case-by-case basis. McCabe's cyclomatic complexity is far from a "silver bullet" that will suit all your needs, but as all other metrics, it can give a pointer over where refactoring may be necessary.
 ::::
 

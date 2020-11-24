@@ -71,7 +71,7 @@ Also there are some special classes you can use to make boxes:
 These boxes can be created using Pandoc's "fenced div" syntax, like follows:
 
 ```
-:::::{.trivia}
+::::: trivia :::::
 This is a trivia box
 :::::
 ```
