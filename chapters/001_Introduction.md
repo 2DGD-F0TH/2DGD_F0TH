@@ -71,17 +71,17 @@ There will be times when it's needed to write down something from another source
 
 In your journey through this book, you may find some boxes, let's see which ones you may come across.
 
-\begin{tip}
+::::{.tip}
 This is a tip box, here you will find tips that are loosely related to the chapter at hand. These small tips will help you make a better game, or wiggle your way through something difficult.
-\end{tip}
+::::
 
-\begin{pitfall}
+::::{.pitfall}
 This is a pitfall box, it will warn you of traps behind the corner, as well as possible shortcomings of a certain solution.
-\end{pitfall}
+::::
 
-\begin{trivia}
+::::{.trivia}
 This is a trivia box, it will give out some small facts that can help you understand things better, or just give you a small break from all the learning.
-\end{trivia}
+::::
 
 ### Engine Used
 

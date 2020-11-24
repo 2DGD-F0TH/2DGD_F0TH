@@ -26,9 +26,9 @@ In most programming languages the modulo function is hidden behind the operator 
 
 The modulo operator is very useful when we need to loop an ever-growing value between two values (as will be shown in [infinitely scrolling backgrounds](#infiniback)).
 
-\begin{pitfall}
+::::{.pitfall}
 Be careful when using the modulo operator with negative arguments: it may lead to unexpected results, which may depend on the programming language you are using.
-\end{pitfall}
+::::
 
 Vectors
 --------
@@ -646,9 +646,9 @@ T_R = \begin{bmatrix}
 \end{bmatrix}
 $$
 
-\begin{pitfall}
+::::{.pitfall}
 These formulas \textbf{assume that the x-axis points right and the y-axis points up}, if the y-axis points down in your implementation, you need to swap the matrices.
-\end{pitfall}
+::::
 
 #### Rotating referred to an arbitrary point
 

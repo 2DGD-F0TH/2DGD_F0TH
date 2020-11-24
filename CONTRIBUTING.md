@@ -58,12 +58,23 @@ To simplify the writing of the book as much as possible, I have included some co
 
 - `\code{path}{caption}`: Allows to insert a dynamic code listing, that will source dynamically from the `dynamic_listings` folder, according to the language selected;
 - `\placeholder`: A simple placeholder, prints the "This section is still a work in progress" message;
-- `\begin{tip}...\end{tip}`: This environment allows to create a "tip box", showing a highlighted box to write your tips in;
-- `\begin{pitfall}...\end{pitfall}`: This environment allows to create a "pitfall box", showing a highlighted box to write any traps and pitfalls of a proposed solution.
-- `\begin{trivia}...\end{trivia}`: This environment allows to create a "trivia box", giving some information and trivia about something, which may give better understanding.
 - `\paidprod`: shows a red `[P]`, used to show a paid product;
 - `\freeprod`: shows a green `[F]`, used to show a free product;
 - `\donprod`: shows an orange `[D]`, used to show partially free products or products that accept donations;
+
+Also there are some special classes you can use to make boxes:
+
+- `tip`: This class allows to create a "tip box", showing a highlighted box to write your tips in;
+- `pitfall`: This class allows to create a "pitfall box", showing a highlighted box to write any traps and pitfalls of a proposed solution.
+- `trivia`: This class allows to create a "trivia box", giving some information and trivia about something, which may give better understanding.
+
+These boxes can be created using Pandoc's "fenced div" syntax, like follows:
+
+```
+:::::{.trivia}
+This is a trivia box
+:::::
+```
 
 ### Problems? Questions?
 

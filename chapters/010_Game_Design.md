@@ -274,10 +274,10 @@ Grinding is somewhat a "self-leveling game design hinge", allowing you to have s
 
 We can also use "designed grinding", (as well as "level gates", where you need to have a certain amount of experience to continue) to pace our game and eventually even lengthen the experience a bit.
 
-\begin{tip}
+::::{.tip}
 When designing your levels and "designing your grind", you need to be mindful of your target audience.\\
 Some cultures are used to (and enjoy) a higher amount of grinding than others, so too low of an amount may feel unsatisfactory to them, while an amount too high may be frustrating.
-\end{tip}
+::::
 
 You should also be very careful on "forcing grinding" on your players: players like having choice and really dislike having anything forced on them, and this can change with your target audience.
 
