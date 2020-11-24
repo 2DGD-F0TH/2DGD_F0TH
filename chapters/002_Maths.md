@@ -647,7 +647,7 @@ T_R = \begin{bmatrix}
 $$
 
 ::::{.pitfall}
-These formulas \textbf{assume that the x-axis points right and the y-axis points up}, if the y-axis points down in your implementation, you need to swap the matrices.
+These formulas **assume that the x-axis points right and the y-axis points up**, if the y-axis points down in your implementation, you need to swap the matrices.
 ::::
 
 #### Rotating referred to an arbitrary point
