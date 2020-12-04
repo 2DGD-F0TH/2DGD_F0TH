@@ -1,0 +1,31 @@
+//
+// episodic_gameplay.dot
+//
+// Created on 04-12-2020 by penaz
+//
+digraph episodic_gameplay {
+    rankdir="LR";
+    a -> b;
+    subgraph cluster1{
+        compound=true;
+        b -> c;
+        b -> d;
+        c -> e;
+        d -> e;
+    }
+    subgraph cluster2{
+        e -> f;
+        f -> g;
+        g -> h;
+        f -> h;
+        c -> g;
+    }
+    subgraph cluster3{
+        d -> i;
+        i -> j;
+        j -> k;
+        j -> f;
+    }
+    k -> l;
+    h -> l;
+}

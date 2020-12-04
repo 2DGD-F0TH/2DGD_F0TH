@@ -1,0 +1,9 @@
+//
+// linear_gameplay.dot
+//
+// Created on 04-12-2020 by penaz
+//
+digraph linear_gameplay {
+    rankdir="LR";
+    a -> b -> c -> d -> e;
+}

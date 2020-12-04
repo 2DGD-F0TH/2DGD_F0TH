@@ -176,6 +176,56 @@ You should use a "press to continue prompt" when at least one of the following c
 - **Any area we load to may be unsafe:** We don't want our players to take a small break, walk around the room and come back to a dead character;
 - **There is text on the loading screen: ** Be it a tip, world building or story, the player may be reading it, and taking away the text will annoy them.
 
+### Avoiding a loading screen altogether
+
+\placeholder
+<!-- TODO: Dynamic loading: some games use closed rooms with nothing in them (double door) to unload the old map and load the new one dynamically without forcing a loading screen -->
+
+Designing the story and gameplay flow
+-------------------------------------
+
+\placeholder
+
+### Linear Gameplay
+
+![Example Scheme of linear gameplay](./images/game_design/linear_gameplay.pdf){width=60%}
+
+\placeholder
+<!-- TODO: Like a presentation, no branching, traditional storytelling techniques are easy to apply -->
+
+### Branching gameplay
+
+![Example Scheme of branching gameplay](./images/game_design/branching_gameplay.pdf){width=60%}
+
+\placeholder
+<!-- TODO: Costly, more interactive, multiple endings, can get out of hand -->
+
+### Parallel gameplay
+
+![Example Scheme of parallel gameplay](./images/game_design/parallel_gameplay.pdf){width=60%}
+
+\placeholder
+<!-- TODO: Very commonly used, has branches, but the player goes through many mandatory events, gives choice to the player but the story flow becomes linear again -->
+
+### Threaded gameplay
+
+![Example Scheme of threaded gameplay](./images/game_design/threaded_gameplay.pdf){width=60%}
+
+\placeholder
+<!-- TODO: Many beginnings, middles and ends, usually done by playing different characters whose stories intertwine, testing all possible paths can be costly -->
+
+:::: trivia ::::
+This was done in Resident Evil 6, where different characters (and teams) have different stories that overlap.
+::::::::::::::::
+
+
+### Episodic (Object-Oriented) gameplay
+
+![Example Scheme of episodic gameplay](./images/game_design/episodic_gameplay.pdf){width=60%}
+
+\placeholder
+<!-- TODO: Several mini-stories each with several entry and exit points - exposes a forced-replay issue: the player must play the game many times to be able to see all the possible paths -->
+
 Some game genres and their characteristics
 ------------------------------------------
 
@@ -247,13 +297,21 @@ Some prefer giving the last health point a value that is higher than the other h
 
 These small devices allow you to give players more of those "near death" experiences that can give players that confidence boost to keep them playing through a hard stage, while at the same time, reducing the chance that they will rage-quit.
 
+::::: trivia :::::
+This was implemented in both DOOM and Assassin's creed, where the last portion of health had more "hit points".
+
+In Bioshock when you take your last point of damage, you get about 1 or 2 seconds of invulnerability.
+::::::::::::::::::
+
 #### Avoiding a decision can be a decision itself
 
 An interesting way to make the characters from a game seem more real, is registering the "lack of response" or "lack of action" in the game's AI or dialogue tree.
 
 This means that "ignoring" has consequences, and inaction is in and itself an action of "doing nothing" which should be accounted for, just like ignoring someone in real life can have serious consequence or where someone may prefer to do nothing instead of taking one of many bad decisions.
 
+:::: trivia ::::
 This trick is used in the game "Firewatch", where not responding to a dialogue prompt is a noted decision.
+::::::::::::::::
 
 #### Telegraphing
 
@@ -265,7 +323,9 @@ Telegraphing is a nice way to suggest the player how to avoid screen-filling att
 
 ![Example of a telegraphed screen-filling attack in a shooter](./images/game_design/telegraphing.png){width=60%}
 
-Another example of telegraphing was used in the Bioshock series: the first shots of an enemy against you always miss, that is used to avoid "out of the blue" situation, which can be seen as a form of "telegraphing" both the presence and position of enemies.
+:::: trivia :::::
+A form of telegraphing was used in the Bioshock series: the first shots of an enemy against you always miss, that is used to avoid "out of the blue" situation, which somehow communicates both the presence and position of enemies.
+:::::::::::::::::
 
 #### Minigames
 

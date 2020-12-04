@@ -1,0 +1,22 @@
+//
+// branching_gameplay.dot
+//
+// Created on 04-12-2020 by penaz
+//
+digraph branching_gameplay {
+    rankdir="LR";
+    a -> b;
+    a -> c;
+    b -> d;
+    b -> e;
+    c -> f;
+    c -> g;
+    d -> h;
+    d -> i;
+    e -> j;
+    e -> k;
+    f -> l;
+    f -> m;
+    g -> n;
+    g -> o;
+}

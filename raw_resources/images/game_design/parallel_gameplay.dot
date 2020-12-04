@@ -1,0 +1,22 @@
+//
+// parallel_gameplay.dot
+//
+// Created on 04-12-2020 by penaz
+//
+digraph parallel_gameplay {
+    rankdir="LR";
+    a -> b;
+    b -> c;
+    b -> d;
+    c -> e;
+    d -> e;
+    e -> f;
+    e -> g;
+    f -> h;
+    f -> i;
+    g -> j;
+    h -> k;
+    i -> k;
+    j -> k;
+    k -> l;
+}

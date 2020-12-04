@@ -1,0 +1,19 @@
+//
+// threaded_gameplay.dot
+//
+// Created on 04-12-2020 by penaz
+//
+digraph threaded_gameplay {
+    rankdir="LR";
+    a -> b;
+    c -> d;
+    e -> f;
+    b -> g;
+    d -> g;
+    f -> h;
+    g -> i;
+    h -> i;
+    d -> j;
+    j -> h;
+    h -> k;
+}
