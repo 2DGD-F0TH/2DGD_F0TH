@@ -71,7 +71,7 @@ If you want to have transparency in your picture, you will need to sacrifice a c
 
 This also mean that we cannot make semi-transparent surfaces, since only that specific color will be fully transparent, and that's it.
 
-### Texture Filtering
+### Texture Filtering {#texture_filtering}
 
 Sometimes your images will need to be scaled or filtered to avoid annoying artifacts, in this small chapter we will see some filters and how they look.
 
@@ -173,7 +173,7 @@ The items get scaled accordingly and there is no real need to do heavy calculati
 - **Linear, Bilinear, Trilinear Filtering** - Gives a more soft look, slower;
 - **Anisotropic Filtering** - Used in modern 3D games, highest quality but also among the slowest, it is usually used when rendering sloped surfaces (from the player's point of view).
 
-For more details, check the [filtering](#filtering) section.
+For more details, check the [filtering](#texture_filtering) section.
 
 ### Using limited color palettes
 
