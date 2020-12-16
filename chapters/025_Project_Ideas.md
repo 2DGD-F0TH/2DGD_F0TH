@@ -67,8 +67,24 @@ In case 2, the AI should check if there is a way to block both "potential wins" 
 Breakout
 --------
 
+![Example picture of a breakout-style game](./images/project_ideas/breakout.png){width=50%}
+
+Breakout is a well-known brick-breaker style of game, where the player drives a paddle trying to keep a ball from getting to the bottom of the screen, while breaking all the blocks on the screen.
+
+### Basic Level
+
 \placeholder
-<!-- TODO: A simple breakout-style game -->
+<!-- TODO: One level, win/lose conditions, collision detection and reaction, player movement -->
+
+### Advanced Level
+
+\placeholder
+<!-- TODO: Life system, explosive blocks, multiple-hit blocks, blocks that randomly drop score items (not powerups) -->
+
+### Master Level
+
+\placeholder
+<!-- TODO: Powerups: bigger/smaller paddle, shooty paddle, "super ball", speed up/down, sticky paddle, multiball -->
 
 Space Invaders
 --------------
