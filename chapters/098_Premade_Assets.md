@@ -25,9 +25,9 @@ Website: <https://openclipart.org/>
 
 Openclipart is a website that contains lots of freely available cliparts , in vector format, that can be a good starting point for your own art: buttons, characters, symbols, ...
 
-The website is currently (as of April 12th, 2020) undergoing a phase of transition, after switching backend and what seems to have been an attack by cyber-criminals.
+The website is currently (as of December 18th, 2020) undergoing a phase of transition, after switching backend and what seems to have been an attack by cyber-criminals.
 
-It now features quite a confusing interface and lacks a search function, but it's a precious source of art if you know what you're looking for.
+It now features quite a confusing interface but now features a search function, but it's a precious source of art if you know what you're looking for.
 
 Opengameart.org
 ---------------
