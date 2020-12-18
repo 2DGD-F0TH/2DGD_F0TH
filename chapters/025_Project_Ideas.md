@@ -33,7 +33,7 @@ Skills required:
 - Drawing to a screen;
 - Event handling;
 - Mouse Events;
-- Winning Conditions.
+- Winning/Losing Conditions.
 
 ### Advanced Level
 
@@ -57,11 +57,11 @@ Improve your computer-controlled player by making it actually seek for a way to 
 The AI does not need to be perfect, just mildly challenging.
 
 ::::: tip :::::
-To some people, points 1 and 2 may be problematic, in case that two among rows, columns or diagonals satisfy one of those conditions.
+To some people, points 1 and 2 may be problematic, in the case that two among rows, columns or diagonals satisfy one of those conditions.
 
-If both satisfy condition 1, there is actually no problem, the AI would win anyway.
+If both satisfy condition 1, there is actually no problem, the AI would win anyway: the AI can choose randomly.
 
-In case 2, the AI should check if there is a way to block both "potential wins" in one move, but it is perfectly acceptable to consider the case a loss for the AI and just choose randomly.
+In case 2, the AI should check if there is a way to block both "potential wins" in one move, but it is a perfectly acceptable solution to consider the case a loss for the AI and just choose randomly.
 :::::::::::::::
 
 Breakout
@@ -73,18 +73,58 @@ Breakout is a well-known brick-breaker style of game, where the player drives a 
 
 ### Basic Level
 
-\placeholder
-<!-- TODO: One level, win/lose conditions, collision detection and reaction, player movement -->
+The basic level is just making the basic game: make a single level that works. If the player loses their ball, they lose, if they manage to clear the screen they win.
+
+The paddle should be moved with mouse or keyboard (you can choose to implement either or both) with sufficient speed to avoid useless deaths but slow enough to be usable. The ball should bounce like it bounces on a wall: keeping the angle with the wall without changing it.
+
+Skills Required:
+
+- Drawing to a screen;
+- Vectors;
+- Moving elements of the game;
+- Event handling;
+- Winning/Lose Conditions;
+- Mouse/Keyboard Controls;
+- Collision detection and reaction;
+- Object management (creation and deletion);
+- Score keeping.
 
 ### Advanced Level
 
-\placeholder
-<!-- TODO: Life system, explosive blocks, multiple-hit blocks, blocks that randomly drop score items (not powerups) -->
+In the advanced level you should implement a basic life system: each time the ball crosses the lower side of the screen, you lose a life; when all lives are lost, you lose the game.
+
+To make the game a bit more interesting, it could be an idea to implement different block types:
+
+- **Explosive Blocks:** When destroyed, these blocks explode, destroying the surrounding blocks;
+- **Multiple-hit Blocks:** They simply require more than one hit to destroy;
+- **Score Blocks:** When destroyed, these blocks drop score items that slowly descend toward the bottom of the screen. If you catch these items with the paddle, you get extra points.
+
+Furthermore, the ball should progressively get faster with gameplay, you can either do it every few bounces or just every bounce with the paddle. The choice is yours.
+
+Further Skills Required:
+
+- Managing Object's states;
+- Subclassing;
+- Managing Game State.
 
 ### Master Level
 
-\placeholder
-<!-- TODO: Powerups: bigger/smaller paddle, shooty paddle, "super ball", speed up/down, sticky paddle, multiball -->
+With the "master level" we are going to complete this game by adding powerups: they work in a similar way to the advanced level's score blocks with a descending item that grants a certain status to either the ball or the paddle.
+
+You can make it a random chance for each block destruction or make a dedicated block. Here are some suggestions for some powerups:
+
+- Larger/Smaller paddle;
+- Paddle that shoots to destroy blocks;
+- Faster/Slower ball;
+- Ball that goes through blocks, destroying them;
+- "Sticky Paddle" that allows to stop and then release the ball;
+- Multiball.
+
+Furthermore, you can implement a sort of "biased bouncing" for the paddle: the further left or right on the paddle the ball touches, the more it will take a horizontal bias towards that direction.
+
+This way the center of the paddle is "neutral", keeping the normal bouncing mechanics, while the leftmost and rightmost sides allow the player to direct the ball the way they want.
+
+![Biased Bouncing for breakout](./images/project_ideas/breakout_bias.png){width=50%}
 
 Space Invaders
 --------------
@@ -109,3 +149,9 @@ Random Dot Gobbler
 
 \placeholder
 <!-- TODO: A procedurally generated pacman-style game, with generated mazes, ghost AI can be advanced or master -->
+
+Random Dungeon Crawler
+----------------------
+
+\placeholder
+<!-- TODO: Procedurally generated dungeon crawler, with treasure, exit with a key -->
