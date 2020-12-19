@@ -64,6 +64,74 @@ If both satisfy condition 1, there is actually no problem, the AI would win anyw
 In case 2, the AI should check if there is a way to block both "potential wins" in one move, but it is a perfectly acceptable solution to consider the case a loss for the AI and just choose randomly.
 :::::::::::::::
 
+Space Invaders
+--------------
+
+Manufactured by Taito in 1978, the arcade Space Invaders is probably one of the most known games around for its historical value.
+
+![Example of a "Space Invaders"-style game](./images/project_ideas/space_invaders.png){width=50%}
+
+Your objective is to prevent a horde of aliens from landing, by shooting them with your monochrome laser cannon. The concept is deceptively simple, but the implementation can be really complex if you look more thoroughly. The more aliens are killed, the more the remaining ones descend faster, there is a bonus ship that pops out at random intervals, the aliens shoot back at you, there are destructible "shields" to give you some defense from the alien bullets, the win and lose mechanics...
+
+::::: trivia :::::
+The aliens getting faster wasn't initially intended in Space Invaders, the position of the aliens gets updated every frame, but the hardware couldn't process all the entities fast enough. The more aliens got killed, the less entities had to be processed per frame, making the aliens move faster.
+
+Instead of coming up with a solution, this "bug" was kept as a challenging "feature"
+::::::::::::::::::
+
+### Basic Level
+
+In the basic level, we will just create a static, unarmed horde of aliens menacing our base (although being static it won't be much of a threat), we can shoot out projectiles at them and they disappear when they're hit, adding some points to our score.
+
+Since our unwanted alien guests are not much of a threat, we won't need to put up any shields to defend against bullets. When all the aliens are dead, we win the game.
+
+Skills Required:
+
+- Drawing on screen;
+- Collision Detection;
+- Keyboard Input;
+- Bullets;
+- Score management;
+- Winning conditions;
+- Managing entities.
+
+### Advanced Level
+
+For the advanced level, we will make our alien foes more menacing by introducing movement and making the shoot at random intervals towards out laser cannon. The aliens do not need to accelerate as in the original game (but it's not really difficult to implement).
+
+When an alien touches the ground, we will lose the game. Thus making the game a bit more difficult to manage (as well as to play).
+
+We will also introduce a bonus ship that appears on top of the alien horde, floating from left to right, awarding a bonus when successfully hit.
+
+::::: tip :::::
+To make the bonus ship, you may be tempted to create an entirely new object, but at the same time a "bonus ship" IS-AN "alien ship", which would call for subclassing.
+
+If you separate behaviour from the objects well, with methods, you can use subclassing to "change the ship's behaviour" by overriding the `update()` method.
+:::::::::::::::
+
+Further Skills Required:
+
+- Timers (for the ship movement, and if you want, the bonus ship);
+- Random number generation (for the bonus ship and the alien bullets);
+- Subclassing;
+- Losing conditions.
+
+### Master level
+
+For the master level we will make the shields, which are complex to code in the way of the original game, so we will "cheat".
+
+Our shields will be "force fields" which can withstand 3 shots before getting disabled: such shots can come from the aliens or our ship. After 5 to 10 seconds, the shields will come back online and ready to stop bullet again.
+
+Like the original game, the shields can block both our and our enemy's bullets, making for a more challenging gameplay.
+
+For an even more challenging gameplay, we can (rarely) make a random ship detach from the horde to try and attack us directly: on such event, the ship will start shooting more often and move towards our laser cannon, before going back into position (a bit like galaxian).
+
+Further Skills Required:
+
+- Timers (this time for the shields);
+- Minimal AI (for the "ship attack");
+- Managing object states.
+
 Breakout
 --------
 
@@ -125,12 +193,6 @@ Furthermore, you can implement a sort of "biased bouncing" for the paddle: the f
 This way the center of the paddle is "neutral", keeping the normal bouncing mechanics, while the leftmost and rightmost sides allow the player to direct the ball the way they want.
 
 ![Biased Bouncing for breakout](./images/project_ideas/breakout_bias.png){width=50%}
-
-Space Invaders
---------------
-
-\placeholder
-<!-- TODO: A space invaders style game -->
 
 Shooter Arena
 -------------
