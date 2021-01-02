@@ -129,6 +129,16 @@ This way instead we're doing sanity checks and related operations only once, mov
 \placeholder
 <!-- TODO: resource pools of reusable items are great -->
 
+### Approximations
+
+\placeholder
+<!-- TODO: Sometimes approximating a value is enough, for instance the approximation used in Quake3's inverse square root, which is actually a one-iteration newton approximation with a great "first guess" given by a "magic number" -->
+
+### Lookup Tables
+
+\placeholder
+<!-- TODO: Mostly used in older games, replaces an expensive operation with a lookup on pre-calculated values inside a table, which is much faster -->
+
 Tips and tricks
 ---------------
 
