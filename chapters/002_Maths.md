@@ -502,6 +502,27 @@ $$ \theta = arctan(\frac{y}{x}) $$
 
 ![Graphical plotting of the angle of a vector](./images/maths/arctan2.png){width=40%}
 
+Numerical Analysis
+------------------
+
+Here we will give some pointers over some algorithms and methods that may be useful to better explain some topics treated in this book. Feel free to skip or quickly read this section if you don't want to dive into too much detail over this kind of math.
+
+### Newton-Raphson method {#newtonmethod}
+
+Also known as Newton's method, this is an iterative algorithm that is used to get progressively better approximations to the roots of a function.
+
+The algorithm starts with a "guess", called $x_0$, and produces the first approximation using the formula:
+
+$$ x_1 = x_0 - \frac{f(x_0)}{f'(x_0)}$$
+
+Each subsequent guess (and thus iteration) can be obtained similarly by using the formula:
+
+$$ x_{n+1} = n - \frac{f(n)}{f'(n)}$$
+
+And such guess will be more precise than the previous one (if we don't consider some situations where approaching the root can be problematic or not possible). The algorithm will stop when you reach an approximation that is "good enough".
+
+Obviously all limitations of standard functions apply, such as domain and trouble with divisions by zero.
+
 Coordinate Systems on computers
 ---------------------------------
 

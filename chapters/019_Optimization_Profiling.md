@@ -129,15 +129,25 @@ This way instead we're doing sanity checks and related operations only once, mov
 \placeholder
 <!-- TODO: resource pools of reusable items are great -->
 
-### Approximations
-
-\placeholder
-<!-- TODO: Sometimes approximating a value is enough, for instance the approximation used in Quake3's inverse square root, which is actually a one-iteration newton approximation with a great "first guess" given by a "magic number" -->
-
 ### Lookup Tables
 
-\placeholder
-<!-- TODO: Mostly used in older games, replaces an expensive operation with a lookup on pre-calculated values inside a table, which is much faster -->
+Inside older games, where CPU cycles were at a premium, a widely used trick to gain performance were "lookup tables".
+
+These tables would store the result values for certain expensive functions, given certain inputs, thus replacing the expensive operation with a lookup inside a certain data structure (which is usually really fast).
+
+This has a tradeoff: you're trading CPU time for Memory space, since the lookup tables are meant to stay into RAM.
+
+In modern games instances of lookup tables are as rare as hens' teeth, but it's an interesting historical view over some older forms of optimization.
+
+### Approximations
+
+Many times when developing games we don't need to have a value that is precise to the 10th digit, that's where approximation comes into hand.
+
+A prime example of approximation was used in Quake III Arena, via the algorithm known as "Fast Inverse Square Root". Back in 1999 calculating the inverse square root of a number was an expensive calculation for the CPU, so the developers decided to create an algorithm that would calculate an approximation quickly.
+
+This was done by playing around with the floating point low-level structure and using a "magic constant" (`0x5f3759df`) to create a good "first guess", after that a single iteration of the [Newton-Raphson Method](#newtonmethod) is applied to refine the guess.
+
+This proved to be faster than directly calculating a normalized vector (which use a square root and a division, expensive at the time) and also faster than using a lookup table. The algorithm proved to be slower (and less precise) than the dedicated SSE instruction in the newer x86 CPUs.
 
 Tips and tricks
 ---------------
