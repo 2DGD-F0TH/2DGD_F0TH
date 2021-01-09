@@ -69,7 +69,7 @@ Space Invaders
 
 Manufactured by Taito in 1978, the arcade Space Invaders is probably one of the most known games around for its historical value.
 
-![Example of a "Space Invaders"-style game](./images/project_ideas/space_invaders.png){width=50%}
+![Example of a "Space Invaders"-style game](./images/project_ideas/space_invaders.pdf){width=50%}
 
 Your objective is to prevent a horde of aliens from landing, by shooting them with your monochrome laser cannon. The concept is deceptively simple, but the implementation can be really complex if you look more thoroughly. The more aliens are killed, the more the remaining ones descend faster, there is a bonus ship that pops out at random intervals, the aliens shoot back at you, there are destructible "shields" to give you some defense from the alien bullets, the win and lose mechanics...
 
