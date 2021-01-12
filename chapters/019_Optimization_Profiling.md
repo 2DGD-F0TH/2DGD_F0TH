@@ -154,8 +154,21 @@ Tips and tricks
 
 ### Be mindful of your "updates"
 
-\placeholder
-<!-- TODO: Putting stuff in the "update" part of the game loop that shouldn't be there will bog down the game (including input, it's better to use an event-based system) -->
+It is a common mistake among new game developers of putting the whole game logic inside the engine's `update()` method: this will eventually bog down the game and create inconsistencies when the framerate varies.
+
+Input should be handled in your engine's event-based input system (very rarely you will need to check the keyboard status inside the `update()` method), also you should absolutely take advantage of your engine's facilities when it comes to managing how the game updates.
+
+For instance, Unity offers 3 update functions:
+
+- `FixedUpdate()`
+- `Update()`
+- `LateUpdate()`
+
+`FixedUpdate()` is executed with the Physics engine, so here is where you should apply forces, torques and any other physics-related function. Being run with the physics engine, this function may be called zero, one or more times per frame.
+
+`Update()` is your run of the mill update function, it is always executed once per frame, without fail. This is used for other kinds of updates, if you do physics operations here the results may be inconsistent (since it doesn't run in sync with the physics engine). You can still move objects that are not tied to physics.
+
+`LateUpdate()` is a utility function that is run once per frame, after the `Update()` function. This is useful for all kinds of operations that would require the `update()` calculations to be completed.
 
 ### Dirty Bit
 
