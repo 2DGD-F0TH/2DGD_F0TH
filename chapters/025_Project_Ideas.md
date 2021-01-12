@@ -197,8 +197,62 @@ This way the center of the paddle is "neutral", keeping the normal bouncing mech
 Shooter Arena
 -------------
 
-\placeholder
-<!-- TODO: A crimsonland-style arena where enemies spawn from outside and invade the arena, you have to defend yourself with your weapon -->
+![Possible Shooter Arena Game](./images/project_ideas/shooter_arena.png){width=50%}
+
+This is a simple mouse-controlled arena shooting game, much in the style of "Crimsonland" and "R.I.P.": the objective of the game is surviving for as long as possible.
+
+### Basic Level
+
+This level entails making the basic game: being a horde-based game, the AI can be really basic, following your movements and trying to touch you.
+
+A single type of monsters will spawn from outside the screen and slowly make its way towards you, while the playable character will shoot bullets towards the mouse cursor.
+
+If a bullet hits an enemy it will die and your score will be incremented, if an enemy hits you you will die.
+
+Skills required:
+
+- Drawing to a screen;
+- Vectors;
+- Basic AI;
+- Collision detection and reaction;
+- Projectiles;
+- Lose Conditions;
+- Mouse/Keyboard Controls;
+- Spawning entities;
+- Score Keeping.
+
+### Advanced level
+
+In the advanced level you should implement a life system for our playable character, so instead of dying our player will get hurt (thus reducing its health) and will have its life reduced. A health bar should be shown on screen.
+
+The same should be done for each enemy, so you will need to be able to manage the state of each object (enemy) separatedly. Extra points if you show a small healthbar on top of a hit enemy, showing its current health.
+
+You should also implement a way to easily code in new enemy types, this will require refactoring your code to support importing entities from data. Each enemy should at least have different speeds and health.
+
+On each death, the enemy should have a random chance of dropping e medkit that will heal you when touched, such item should stay on screen for a limited amount of time, then disappear if not used.
+
+Further Skills Required:
+
+- Drawing an HUD;
+- Managing an object's state;
+- Coding entities as data;
+- Random number generation;
+- Timers.
+
+### Master Level
+
+In the most difficult level, you should start coding powerups, like new weapon types, temporarily increased walking speed, higher damage projectiles, etc... Similarly to medkits, these powerups should disappear after a certain amount of time.
+
+An interesting weapon to implement would be a "railgun", with bullets that can go through enemies, this will be easier when you use ray casting (and some tricks for drawing), if you didn't use it already.
+
+You should also animate the characters, thus getting used to your favourite engine's animator nodes/classes: this will make the game feel more complete.
+
+On each death, the enemy should leave a blood (or if you prefer, goo) splatter that will disappear after a few seconds: this will make the game more messy and in its own way fun.
+
+Further Skills Required:
+
+- Animators;
+- Ray Casting.
 
 Simple Platformer
 -----------------
