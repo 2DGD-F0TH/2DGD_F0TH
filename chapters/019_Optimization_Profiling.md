@@ -24,6 +24,7 @@ Some special values you may see are:
 - 50 FPS: Used in some games
 - 60 FPS: Used in most games
 - 75 FPS or 80 FPS: Used in some LCD Monitors
+- 90 FPS: Used mostly in VR games
 - 144 FPS: Used in more modern, high-refresh rate monitors
 - 240 FPS: Used in the most recent high-end games and monitors
 
@@ -55,7 +56,7 @@ If instead your game is not using all of the CPU computing power, you may have a
 
 Your game starts well enough, but after just a few minutes it starts slowing down and becomes choppy. Your may have a memory problem at hand.
 
-If your game supports windowed mode, keep your task manager (or "top"/"htop" if you're on Linux) open and look at your game's process: does the memory used by your game increase as you're playing it?
+If your game supports windowed mode, keep your task manager (or "top"/"htop"/"bpytop" if you're on Linux) open and look at your game's process: does the memory used by your game increase as you're playing it?
 
 If so, you may be having a so-called "memory leak": somewhere during its running cycle, your game forgets to clean up something, which stays resident in memory until your game closes. The result, after creating and deleting a lot of entities and leaving a lot of *garbage* behind is that the total memory used increases.
 
@@ -120,6 +121,24 @@ This way instead we're doing sanity checks and related operations only once, mov
 <!--TODO: Properly disposing of unused entities is important to avoid memory leaks -->
 
 ### Using analyzers to detect Memory Leaks {#mem_analyzers}
+
+When developing a game, there are a lot of tools that allow you to inspect your game and find possible memory leaks. Some are "static scanners" while other (usually called "dynamic testing tools") require the game to be running.
+
+#### Static Scanners
+
+These tools analyze the code without running it, checking the style and common bugs that can be inserted by mistake. An example of these static tools are "linters" (or linting tools).
+
+Most of these tools are included in IDEs but some (like LLVM's scan-build) are standalone.
+
+![An example screen from LLVM's scan-build](./images/profiling_optimization/scan_build.png){width=40%}
+
+#### Dynamic testing tools
+
+Some tools require the game to be running, some general-purpose ones are used to find memory leaks (like Valgrind), while others have more specific purposes and are usually integrated into the engine.
+
+These more specific tools can track the FPS, memory as well as the calls done to each function, allowing you to track down what is bogging down your game.
+
+![A screenshot from Godot's profiler](./images/profiling_optimization/godot_profiler.png){width=50%}
 
 \placeholder
 <!-- TODO: Talk about tools like LLVM/Clang scan_build and Valgrind -->
