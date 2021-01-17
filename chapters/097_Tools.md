@@ -74,9 +74,11 @@ SFXR (and its other iterations) is a small software that can help you create 8-b
 
 ### Chiptone
 
-An alternative to SFXR, Chiptone is an online tool (made with Flash) that can be used to create chiptune-like sounds for your games.
+An alternative to SFXR, Chiptone is an online tool (made with HTML5, Haxe and OpenFL) that can be used to create chiptune-like sounds for your games.
 
-<https://sfbgames.com/chiptone/>
+It also features downloadable versions for Windows and Mac OS.
+
+<https://sfbgames.itch.io/chiptone/>
 
 ### Audacity
 
