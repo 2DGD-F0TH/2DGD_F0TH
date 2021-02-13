@@ -1,6 +1,6 @@
 local List = require 'pandoc.List'
-if FORMAT:match 'latex' then
-    function Div(elem)
+function boxes(elem)
+    if FORMAT:match 'latex' then
         -- Trivia box
         if elem.classes[1] == 'trivia' then
             table.insert(elem.content, 1, pandoc.RawBlock('latex', '\\begin{trivia}'))
@@ -17,5 +17,9 @@ if FORMAT:match 'latex' then
             table.insert(elem.content, pandoc.RawBlock('latex', '\\end{tip}'))
         end
         return elem.content
+    else
+        return elem
     end
 end
+
+return {boxes=boxes}

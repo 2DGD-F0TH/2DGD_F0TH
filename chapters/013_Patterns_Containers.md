@@ -240,7 +240,7 @@ First of all, we need to know how we want to identify our resource; there are ma
 
 Secondarily, we need to make sure that the container is **thread-safe** (see more about multithreading in the [multithreading section](#multithreading)), since we will probably need to implement a threaded loading screen (see how to do it [here](#loadingscreen)) to avoid our game locking up during resource loading.
 
-\placeholder
+{{placeholder}}
 
 <!-- TODO: An associative container that contains pairs (ENUM, ITEM) used to store and retrieve
 objects for the game -->
@@ -252,7 +252,7 @@ This can be a really useful component to encapsulate everything that concerns an
 
 The animation component will just be updated (like the other components) and it will automatically update the frame of animation according to an internal timer, usually by updating the coordinates of the rectangle that defines which piece of a sprite sheet is drawn.
 
-\placeholder
+{{placeholder}}
 
 <!-- TODO: A class that yelds frames, with an internal counter and all the necessary facilitations for
 animating a sprite -->
@@ -279,7 +279,7 @@ In this more convoluted diagram we can see how pressing a certain button or clic
 
 Each state can be created so it has its own member variables and methods: in a menu system it can prove useful to have each state have its own `update(dt)` and `draw()` functions to be called from the main game loop, to improve on the code readability and better usage of the nutshell programming principle.
 
-\placeholder
+{{placeholder}}
 
 <!-- TODO: A simple finite state machine that allows to change states, useful for menus and stuff -->
 
@@ -294,7 +294,7 @@ Unlike the stacks we are used to, the menu stack can also be accessed like a que
 
 In the menu stack we also have some functionalities that may not be included in a standard stack, like a "clear" function, which allows us to completely clean the stack: this can prove useful when we are accessing the main game, since we may not want to render the menu "below" the main game, wasting precious CPU cycles.
 
-\placeholder
+{{placeholder}}
 
 <!-- TODO: Make a structure with a menu stack with "UI Elements" that can refer to the stack itself (for the "back" action for instance), add diagram and code -->
 
@@ -303,42 +303,42 @@ Particle Systems
 
 <!-- TODO: Talk about particle systems, particles and particle emitters -->
 
-\placeholder
+{{placeholder}}
 
 ### Particles
 
-\placeholder
+{{placeholder}}
 
 <!-- TODO: What is a particle, what does it do, etc... -->
 
 ### Generators
 
-\placeholder
+{{placeholder}}
 
 <!-- TODO: What is a particle generator -->
 
 ### Emitters
 
-\placeholder
+{{placeholder}}
 
 <!-- TODO: What is a particle emitter, how does it differ from a generator -->
 
 ### Updaters
 
-\placeholder
+{{placeholder}}
 
 <!-- TODO: What is a particle updater, how it works, etc... -->
 
 ### Force Application
 
-\placeholder
+{{placeholder}}
 
 <!-- TODO: Talk about applying forces to particles -->
 
 Timers
 ------
 
-\placeholder
+{{placeholder}}
 
 <!-- TODO: A timer class that allows to execute a certain instruction every x seconds, abstracting the concept of frames -->
 
@@ -406,6 +406,6 @@ In short: any numeric value that can transition "smoothly" between two values in
 Chaining
 --------
 
-\placeholder
+{{placeholder}}
 
 <!-- TODO: An abstraction that allows to chain operations one after another, usually said operations are timed or related to tweening -->

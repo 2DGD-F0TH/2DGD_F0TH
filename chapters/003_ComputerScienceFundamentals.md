@@ -187,7 +187,7 @@ There is a very specific reason why the $O(2^n)$ estimate is missing from the pr
 
 ![How O(2^n^) overpowers lower complexities](./images/computer_science/big_o_plot2.pdf){width=60%}
 
-\placeholder
+{{placeholder}}
 
 <!-- TODO: Teach people how to estimate their algorithms -->
 
@@ -592,7 +592,7 @@ Composition allows to define objects by declaring which properties they have: a 
 
 This way we can create new objects by reusing basic components, making maintenance easier as well as saving lines of code, avoiding "the diamond problem" and reducing coupling.
 
-\placeholder
+{{placeholder}}
 
 ### Coupling
 
@@ -602,7 +602,7 @@ Introducing unnecessary coupling in our software will come back to bite us in th
 
 This means that it's in our best interest to reduce code coupling as much as possible, following the good principles of "nutshell programming" and following the SOLID principles, shown next.
 
-\placeholder
+{{placeholder}}
 
 ### The DRY Principle
 
@@ -624,7 +624,7 @@ SOLID is a mnemonic acronym that condenses five principles of good design, to ma
 
 ### "Composition over Inheritance" design
 
-\placeholder
+{{placeholder}}
 
 <!-- TODO: a lean introduction to the concept of objects and abstraction -->
 
@@ -871,7 +871,7 @@ The "Sent Signal" symbol is represented with a convex pentagon (which reminds an
 
 ![Example of signals in activity diagrams](./images/computer_science/activity_signals.pdf){width=30%}
 
-\placeholder
+{{placeholder}}
 
 #### Swimlanes
 
@@ -891,7 +891,7 @@ The components of activity diagrams shown here are just a small part of the used
 
 ### Sequence Diagrams
 
-\placeholder
+{{placeholder}}
 
 <!-- TODO: Explain Sequence Diagrams -->
 
@@ -941,7 +941,7 @@ Some other implementations use a $\frac{1}{4}$/$\frac{3}{4}$ rule, halving the a
 
 **Note:** Not all programming languages have native support for arrays, for instance Python uses lists.
 
-\placeholder
+{{placeholder}}
 <!-- TODO: Code? -->
 
 | Operation                  | Average Cost           |
@@ -992,7 +992,7 @@ Inserting at an arbitrary position requires us to scan the list until we find th
 ![Inserting a new node at an arbitrary position in a (double-ended) linked list](./images/computer_science/de_linked_list_insert_arbitrary.pdf){width=90%}
 
 <!-- TODO: Code? -->
-\placeholder
+{{placeholder}}
 
 | Operation                  | Average Cost                         |
 | :---------:                | :-----:                              |
@@ -1025,7 +1025,7 @@ All the operations of insertion, indexing and deletion are performed in a simila
 
 <!-- TODO: Code? -->
 
-\placeholder
+{{placeholder}}
 
 | Operation                  | Average Cost          |
 | :---------:                | :-----:               |
@@ -1154,7 +1154,7 @@ Table: Performance table for Heaps
 Table: Summary Table for Heaps
 
 <!-- TODO: Code? -->
-\placeholder
+{{placeholder}}
 
 ### Stacks
 
@@ -1168,7 +1168,7 @@ Depending on the single implementation, the operation used to "pop" an item from
 
 ![Array and linked list implementations of a stack](./images/computer_science/stack_implementation.pdf){width=40%}
 
-\placeholder
+{{placeholder}}
 
 ### Queues
 
@@ -1182,7 +1182,7 @@ As with stacks, queues leverage limitations in their way of working for greater 
 
 ![Array and linked list implementation of a queue](./images/computer_science/queue_implementation.pdf){width=40%}
 
-\placeholder
+{{placeholder}}
 
 ### Circular Queues
 
@@ -1194,7 +1194,7 @@ Circular Queues can be implemented via linked lists or cleverly indexed arrays, 
 
 ![Array and linked list implementation of a circular queue](./images/computer_science/circular_queue_implementation.pdf){width=50%}
 
-\placeholder
+{{placeholder}}
 
 Introduction to MultiTasking
 ------------------------------
@@ -1205,7 +1205,7 @@ To allow for multi-tasking (doing many activities at once), the CPU switches bet
 
 ### Co-Routines
 
-\placeholder
+{{placeholder}}
 
 <!-- TODO: A lean introduction to the concept of co-routines -->
 
@@ -1300,5 +1300,5 @@ Usually these multithreaded functionalities are part of the programming language
 
 #### Atomic Operations
 
-\placeholder
+{{placeholder}}
 <!--TODO: Talk about atomic operations -->

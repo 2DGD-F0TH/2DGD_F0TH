@@ -125,7 +125,7 @@ We can see how we hid a secret inside of another secret and used a piece of valu
 
 <!-- TODO: Talk about how to reward players that backtrack (like opening a door that was locked shut before a boss) -->
 
-\placeholder
+{{placeholder}}
 
 ### The "lives" system
 
@@ -178,7 +178,7 @@ You should use a "press to continue prompt" when at least one of the following c
 
 ### Avoiding a loading screen altogether
 
-\placeholder
+{{placeholder}}
 <!-- TODO: Dynamic loading: some games use closed rooms with nothing in them (double door) to unload the old map and load the new one dynamically without forcing a loading screen -->
 
 Designing the story and gameplay flow
@@ -433,7 +433,7 @@ Some cultures are used to (and enjoy) a higher amount of grinding than others, s
 
 You should also be very careful on "forcing grinding" on your players: players like having choice and really dislike having anything forced on them, and this can change with your target audience.
 
-\placeholder
+{{placeholder}}
 <!-- TODO: Find that NES/SNES game from GDQ that got the exp requirements halved in the US release -->
 
 ##### Farming
@@ -442,7 +442,7 @@ Farming entails the same actions as grinding, but here we are using enemies as "
 
 The most important aspect of "designing farming" is definitely reward the player for their farming: if a "special item" requires a lot of materials (and thus a lot of farming), such item should be worth the effort, or the player will feel cheated out of their time, effort and materials.
 
-\placeholder
+{{placeholder}}
 
 <!-- TODO: Finish -->
 

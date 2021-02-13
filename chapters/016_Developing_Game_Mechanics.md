@@ -84,7 +84,7 @@ This is an extreme edge case, but it could happen. Even if it is a minor annoyan
 
 ### Sprite Stenciling/Masking
 
-\placeholder
+{{placeholder}}
 
 <!-- TODO: A shape that cuts out a sprite, pixel by pixel, allowing for certain effects like "going through a door" -->
 
@@ -101,7 +101,7 @@ We can represent the two "loops" in the following UML diagram:
 
 ![Rough UML diagram of a multithreaded loading screen](./images/developing_mechanics/loading_multithread.pdf){width=50%}
 
-\placeholder
+{{placeholder}}
 
 <!-- TODO: Introduction on how to make multi-threaded loading screens -->
 
@@ -138,19 +138,19 @@ In this example we are assuming that the framework used uses the screen coordina
 
 ### Ladders
 
-\placeholder
+{{placeholder}}
 
 <!-- TODO: How to allow the player to use ladders -->
 
 ### Walking on slanted ground
 
-\placeholder
+{{placeholder}}
 
 <!-- TODO: How to walk on slanted ground -->
 
 ### Stairs
 
-\placeholder
+{{placeholder}}
 
 <!-- TODO: How to walk on stairs -->
 
@@ -195,7 +195,7 @@ Top-view RPG-Like Games
 
 ### Managing height
 
-\placeholder
+{{placeholder}}
 
 <!-- TODO: How to manage the different "heights" in the game -->
 
@@ -251,12 +251,12 @@ $$ video + \bcancel{input} - audio - \bcancel{input}$$
 $$ video - audio $$
 
 
-\placeholder
+{{placeholder}}
 <!-- TODO: Talk on how to use lag tests to account for video and audio lag, and eventually use some gamification to make them more fun to do -->
 
 ### Synchronizing with the Music
 
-\placeholder
+{{placeholder}}
 
 <!-- TODO: Basic Beat detection or how to somehow sync music and gameplay -->
 
@@ -276,12 +276,12 @@ We can switch back and forth between the two domains with "transforms", the most
 
 #### The Fast Fourier Transform
 
-\placeholder
+{{placeholder}}
 <!-- TODO: FFT, to turn time domain into frequency domain -->
 
 #### Beat Detection
 
-\placeholder
+{{placeholder}}
 <!-- TODO: How to perform beat detection in games -->
 
 "Bullet Hell" Style Games
@@ -396,7 +396,7 @@ After the graphics tweening, we need to create the new tiles that will go and fi
 
 After creating the tiles and tweening them in place, it will be necessary to check for more matches that have been created from the falling tiles (and eventually notify some kind of "combo system" to apply a "score multipier system" or even an achievement system using the [Observer Pattern](#ObserverPattern)).
 
-\placeholder
+{{placeholder}}
 
 <!-- TODO: Make the tiles fall by instantly setting the tile IDs in the matrix but tween the graphics -->
 
@@ -411,12 +411,12 @@ The easiest way to implement cutscenes in most engines and frameworks, is to use
 
 The bad thing is that videos are a "static" format. They have their own resolution, their own compression and characteristics, this means that when a video is presented at a higher resolution that is own native one, we're bound to have artifacts due to upscaling.
 
-\placeholder
+{{placeholder}}
 
 <!-- TODO: provide example code on how to add video cutscenes -->
 
 ### Scripted Cutscenes
 
-\placeholder
+{{placeholder}}
 
 <!-- TODO: Talk about how to implement a "scripted cutscene" system -->

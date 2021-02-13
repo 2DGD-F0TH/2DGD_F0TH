@@ -233,6 +233,6 @@ There is even a "remake" called "STARGAZER" for windows.
 A good game: Dark Souls
 ------------------------
 
-\placeholder
+{{placeholder}}
 
 <!-- TODO: Analyze -->

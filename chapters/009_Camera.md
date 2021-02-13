@@ -39,7 +39,7 @@ Most used camera types
 
 This is the simplest camera we can implement: each level has the size of the screen (or of the virtual resolution we decided, see [Virtual Resolution](#VirtualRes)), and every time we go out of the map, the screen fades to black and back to the new "room".
 
-\placeholder
+{{placeholder}}
 
 <!-- TODO: Simplest: each room is screen-sized, exit a room and the room gets switched, usually with a fade-to-black -->
 
@@ -47,7 +47,7 @@ This is the simplest camera we can implement: each level has the size of the scr
 
 This is an improvement on the static camera formula, each level (or room) has the size of the screen (or virtual resolution we chose), every time we go out of the map, the screen scrolls into the new section. This camera is used by the first Legend Of Zelda game for the Nintendo Entertainment System.
 
-\placeholder
+{{placeholder}}
 
 <!-- TODO: Variation on the static camera, where you scroll on exit (zelda 1 style) -->
 
@@ -65,7 +65,7 @@ Horizontal-tracking cameras keep the player in the center of the screen horizont
 
 This is the camera used in the classic Super Mario Bros. for the Nintendo Entertainment System.
 
-\placeholder
+{{placeholder}}
 
 #### Full-Tracking Camera
 
@@ -73,7 +73,7 @@ Sometimes our levels don't span only horizontally, so we need to track the playe
 
 ![Example of a full-tracking camera](./images/camera/fulltrack.png){width=50%}
 
-\placeholder
+{{placeholder}}
 
 <!-- TODO: Talk about position tracking cameras, both horizontal-only and 2-axis, can be jarring -->
 
@@ -87,7 +87,7 @@ The trap is represented by an invisible rectangle which can be visualized on scr
 
 This allows the camera to be less twitchy, giving a more natural sensation. Furthermore you can size the camera trap according to the type of game you are coding: slow-paced games can have a larger camera trap, allowing for the camera to rest more on the same screen, while faster paced games can have a smaller camera trap for faster reaction times.
 
-\placeholder
+{{placeholder}}
 
 <!-- TODO: Talk about camera traps, rectangular spaces where the character is "trapped inside",
 as soon as the player "escapes the trap" the camera scrolls to "trap them again", this allows
@@ -104,7 +104,7 @@ This camera needs a good implementation when it comes to changing direction: hav
 
 So this camera is not ideal for games that require precision platforming, since the continuous "corrections" required to hit a tight platform would move the camera around too much, giving the player nausea.
 
-\placeholder
+{{placeholder}}
 
 <!-- TODO: Camera that gives more space in front of the character, allowing for better
 reaction times, must be coded well on transitions (between opposite sides) or it can be

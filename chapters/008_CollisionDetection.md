@@ -320,23 +320,23 @@ This can prove useful to test for "line of sight" inside an AI algorithm.
 
 ### Point/Polygon Collision
 
-\placeholder
+{{placeholder}}
 
 ### Circle/Polygon Collision
 
-\placeholder
+{{placeholder}}
 
 ### Rectangle/Polygon Collision
 
-\placeholder
+{{placeholder}}
 
 ### Line/Polygon Collision
 
-\placeholder
+{{placeholder}}
 
 ### Polygon/Polygon Collision
 
-\placeholder
+{{placeholder}}
 
 <!-- TODO: add an algorithm to check for convex polygons colliding each other (hulls) -->
 
@@ -431,7 +431,7 @@ With the original brute force method, we will make at most 49 tests for 7 items 
 
 For a total of 10 tests, which can be further optimized by avoiding testing pairs of objects that have already been tested.
 
-\placeholder
+{{placeholder}}
 
 <!-- TODO: Easier on the CPU but harder to implement, every frame you build a quad tree
 and use that to check on collisions -->
@@ -544,7 +544,7 @@ This requires measuring how much the objects overlap on each axis, which can be 
 
 In the previous picture, we can see how the algorithm chooses to solve the collision on the $y$ axis first and only on the x axis after; but since solving the $y$ axis solves the collision, no reaction is performed on the $x$ axis.
 
-\placeholder
+{{placeholder}}
 
 <!-- TODO: Similar to direction + velocity, but reacts only on the most shallow direction -->
 
@@ -562,7 +562,7 @@ This method solves the problem given by platforms that can be crossed one-way.
 
 #### The "Tile + Offset" Method
 
-\placeholder
+{{placeholder}}
 
 <!-- TODO: Useful for games like pacman, check the direction where you are going using the offset, if the next cell is a wall, react -->
 
@@ -617,4 +617,4 @@ If you find that the bullet animation won't align well with the enemy dying, the
 ::::
 
 <!-- TODO: Talk about ray casting, and how it can be used to fix the tunneling problem by casting the ray and an animation, without actually shooting a bullet -->
-\placeholder
+{{placeholder}}

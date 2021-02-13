@@ -33,7 +33,7 @@ Some special values you may see are:
 If your animation stutters or its speed varies according to the load of your platform but your FPS counter is still stuck at the maximum allowed framerate, you may have forgotten to tie the animation to the delta-time in your game loop. Check the [timing your game loop](#timingloops) section for more information.
 
 <!-- TODO: Continue -->
-\placeholder
+{{placeholder}}
 
 ### First investigations
 
@@ -49,7 +49,7 @@ If you have taken all the frame limiting approaches as stated above, that may me
 
 If instead your game is not using all of the CPU computing power, you may have a problem on the GPU: your game may be calling the drawing routines too often. The less a game has to communicate with the hardware, the higher the performance. In that case using Sprite Atlases and other "batching techniques" that allow to draw many objects with only one call will help your game perform better.
 
-\placeholder
+{{placeholder}}
 
 
 #### Is your game eating up more and more RAM as it's running?
@@ -66,7 +66,7 @@ If you suspect a memory leak, you may want to take a look at these sections:
 - [Using memory analyzers to detect leaks](#mem_analyzers)
 - [Resource Pools](#res_pools)
 
-\placeholder
+{{placeholder}}
 
 <!-- TODO: Continue -->
 
@@ -96,7 +96,7 @@ If your engine/framework supports it, you should use sprite atlases/batches, as 
 
 Another way to optimize your drawing routine is avoiding to change textures often: changing textures can result in a lot of context changes (like copying the new texture from the RAM to the GPU memory), so you should use only one oversized texture (in the form of a [Sprite Sheet](#SpriteSheets)) and draw only a part of it, changing the coordinates of the rectangle that gets drawn. This way you'll save the PC a lot of work.
 
-\placeholder
+{{placeholder}}
 
 <!-- TODO: Finish talking about optimizing drawing -->
 
@@ -116,7 +116,7 @@ This way instead we're doing sanity checks and related operations only once, mov
 
 ### Entity Cleanup and Memory leaks {#cleanup_leaks}
 
-\placeholder
+{{placeholder}}
 
 <!--TODO: Properly disposing of unused entities is important to avoid memory leaks -->
 
@@ -140,12 +140,12 @@ These more specific tools can track the FPS, memory as well as the calls done to
 
 ![A screenshot from Godot's profiler](./images/profiling_optimization/godot_profiler.png){width=50%}
 
-\placeholder
+{{placeholder}}
 <!-- TODO: Talk about tools like LLVM/Clang scan_build and Valgrind -->
 
 ### Resource Pools {#res_pools}
 
-\placeholder
+{{placeholder}}
 <!-- TODO: resource pools of reusable items are great -->
 
 ### Lookup Tables

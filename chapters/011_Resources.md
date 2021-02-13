@@ -10,12 +10,12 @@ Graphics {#GraphicsResources}
 
 ### Some computer graphics basics
 
-\placeholder
+{{placeholder}}
 <!-- TODO: Talk about some computer grahics basics -->
 
 #### Color Depth
 
-\placeholder
+{{placeholder}}
 <!-- TODO: Primer on "color depth" -->
 
 #### True Color vs. Indexed Color
@@ -77,17 +77,17 @@ Sometimes your images will need to be scaled or filtered to avoid annoying artif
 
 #### Nearest Neighbor Filtering
 
-\placeholder
+{{placeholder}}
 <!-- TODO: Nearest Neighbor Filtering -->
 
 #### Bilinear Filtering
 
-\placeholder
+{{placeholder}}
 <!-- TODO: Bilinear Filtering -->
 
 #### Trilinear Filtering
 
-\placeholder
+{{placeholder}}
 <!-- TODO: Trilinear Filtering -->
 
 ### General Tips
@@ -144,7 +144,7 @@ This way, instead of having a lot of references to sprites to draw, each one was
 
 Libraries like OpenGL support "sprite atlases" (or sprite batches), allowing for the graphics card to take care of drawing (after preparing the batch) while the CPU can use more of its cycles to take care of input, movement and collisions.
 
-\placeholder
+{{placeholder}}
 
 
 ### Virtual Resolution {#VirtualRes}
@@ -177,7 +177,7 @@ For more details, check the [filtering](#texture_filtering) section.
 
 ### Using limited color palettes
 
-\placeholder
+{{placeholder}}
 
 <!-- TODO: Talk about how to make your art consistent using palettes, talk about DawnBringer's palette -->
 
@@ -291,13 +291,13 @@ Palette Swapping can be used in more creative ways, though. Going back to Super 
 
 ### Pixel Art
 
-\placeholder
+{{placeholder}}
 
 <!-- TODO: talk about pixel art, etc...-->
 
 #### What pixel art is and what it is not
 
-\placeholder
+{{placeholder}}
 <!-- TODO: Talk how pixel art is a mean, and it's more than just a "style" -->
 
 #### Tools
@@ -321,7 +321,7 @@ You can always "flatten the image" (merge all the layers into one) later.
 
 #### Sub-pixel animation
 
-\placeholder
+{{placeholder}}
 <!-- TODO: Style of animation where the "outlines" don't move, but the color change in the internal pixels can give illusion of sub-pixel movement -->
 
 ### Tips and Tricks
@@ -368,7 +368,7 @@ And we obtain the following result:
 
 ![Example of "inside room" with the black/transparent overlay](./images/resources/inside_example_2.png){width=40%}
 
-\placeholder
+{{placeholder}}
 
 #### Sprites and icons
 
@@ -385,7 +385,7 @@ This is the power of color, you can change the entire nature of an object by cha
 Sounds And Music
 ----------------
 
-\placeholder
+{{placeholder}}
 
 <!-- TODO: Talk about the importance of good sound quality, introduce people to chip tunes and tools to create music and sounds , talk about the importance of having areas where you have to apply a certain effect or it will happen on the whole level -->
 
@@ -571,7 +571,7 @@ Making a configuration file instead of hard-coding the elements allows for easy 
 
 ### Some audio processing tips
 
-\placeholder
+{{placeholder}}
 <!-- TODO: Give some tips to process audio files -->
 
 #### Prefer cutting over boosting
@@ -634,7 +634,7 @@ The next command does more or less the same thing, besides changing the vibrato 
 
 The `E40` command resets the vibrato waveform to the default "sine wave".
 
-\placeholder
+{{placeholder}}
 <!-- TODO: Finish talking about music trackers -->
 
 #### Samples
@@ -643,28 +643,28 @@ Samples are the basis of a music tracker: they are essentially wave forms which 
 
 Usually samples come in the form of small digital sound files, most trackers allow the sample to be looped (wholly or in part) to simulate a "sustain" effect.
 
-\placeholder
+{{placeholder}}
 <!-- TODO: Finish talking about sound samples -->
 
 #### Instruments
 
 An instrument is a set of a sound sample, with some effects applied by default (if you want). Essentially an instrument is a "container" for a sample and some parameters to allow the change of pitch and effects.
 
-\placeholder
+{{placeholder}}
 <!-- TODO: Finish talking about tracker instrument -->
 
 #### Channels
 
 A "channel" (also called a "voice"), is a space where one sample is played back at a time. One channel is not "fixed" to a certain instrument and modern music trackers can mix an unlimited number of channels. Many times music makers limit themselves to a certain number of channels to achieve a "retro feeling" or to challenge themselves.
 
-\placeholder
+{{placeholder}}
 <!-- TODO: Finish talking about channels in trackers -->
 
 #### Patterns
 
 A pattern is essentially a piece of a song: a group of tracks with their own instruments, settings and notes written in them. The "pattern" abstraction allows you to easily repeat pieces of a song by just referring to the pattern.
 
-\placeholder
+{{placeholder}}
 <!-- TODO: Finish talking about patterns in trackers -->
 
 Fonts
@@ -710,13 +710,13 @@ Monospaced fonts are used for computer texts, coding and ascii-art. Examples of 
 
 ### Using textures to make text
 
-\placeholder
+{{placeholder}}
 
 <!-- TODO: Good and fast, but issues with scaling and resizing -->
 
 ### Using Fonts to make text
 
-\placeholder
+{{placeholder}}
 
 <!-- TODO: Good and resizes well, but can be slower cause the text needs to be rendered -->
 
@@ -766,17 +766,17 @@ Modern engines, like Unity and Unreal Engine also include GUI node-based editors
 
 ### The GLSL Programming Language
 
-\placeholder
+{{placeholder}}
 
 <!-- TODO: Teach some basic GLSL -->
 
 #### The data types
 
-\placeholder
+{{placeholder}}
 <!-- TODO: Talk about GLSL data types -->
 
 ### Some GLSL Shaders examples
 
-\placeholder
+{{placeholder}}
 
 <!-- TODO: Add some simple 2D fragment shaders examples -->

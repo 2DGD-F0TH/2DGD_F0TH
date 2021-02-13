@@ -68,7 +68,7 @@ As the last step, for this 5x5 grid, we perform another "square step", finding 1
 ![How the diamond-square algorithm works (5/5)](images/algorithms/diamond_square_5.png){width=50%}
 
 <!-- TODO: Evolution of the Midpoint displacement, usable for 2D height maps -->
-\placeholder
+{{placeholder}}
 
 ### Maze Generation
 
@@ -102,12 +102,12 @@ In some versions of the algorithm we need to also keep track of cells that will 
 
 <!--TODO: System-Stack Recursive backtracker version -->
 
-\placeholder
+{{placeholder}}
 
 This algorithm can involve a big deal of recursion, which can lead to a *stack overflow*~[g]~ in your program, stopping the algorithm from working and your game in its entirety. It is possible to work around this issue by using an explicit stack, instead of using the call stack.
 
 <!--TODO: Explicit stack recursive backtracker version -->
-\placeholder
+{{placeholder}}
 
 This algorithm, being taken from a Depth-First search algorithm, is biased towards creating very long corridors.
 
@@ -150,7 +150,7 @@ Now let's see an example implementation of the Randomized Kruskal's Algorithm:
 
 <!-- TODO: Code -->
 
-\placeholder
+{{placeholder}}
 
 ### Recursive Division Algorithm
 
@@ -194,7 +194,7 @@ Let's see an example implementation of this algorithm:
 
 <!-- TODO: Code -->
 
-\placeholder
+{{placeholder}}
 
 ### Binary Tree Algorithm
 
@@ -230,7 +230,7 @@ Let's see an example implementation of the "binary tree algorithm":
 
 <!-- TODO: Code -->
 
-\placeholder
+{{placeholder}}
 
 ### Eller's Algorithm
 
@@ -270,7 +270,7 @@ Let's see a possible implementation of this strange, but interesting algorithm:
 
 <!-- TODO: Code -->
 
-\placeholder
+{{placeholder}}
 
 Noise Generation
 -----------------
@@ -291,6 +291,6 @@ We can create some "TV-like" static with a few lines of code, like the following
 
 ### Perlin Noise
 
-\placeholder
+{{placeholder}}
 
 <!-- TODO: Noise generation algorithm, runs in O(2^n) for n dimensions -->

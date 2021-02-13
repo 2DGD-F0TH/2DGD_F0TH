@@ -1,6 +1,6 @@
 PANDOC=pandoc
-CHAPTERS_CMD=`ls chapters/*.md | sort -V` metadata.yaml
-PANDOC_DEFAULT_ARGS=--lua-filter ./filters/* --listings -N --template template/template.tex -s
+CHAPTERS_CMD=`find chapters/*.md | sort -V` metadata.yaml
+PANDOC_DEFAULT_ARGS=--lua-filter ./filters/filter_helper.lua --listings -N --template template/template.tex -s
 VERSION=-M version=`git describe --tags`
 
 all: pseudocode pseudocode_color python cpp
