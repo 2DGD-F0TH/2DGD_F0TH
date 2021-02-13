@@ -1,24 +1,29 @@
 PANDOC=pandoc
+PANDOC_STANDALONE=pandoc -s
 CHAPTERS_CMD=`find chapters/*.md | sort -V` metadata.yaml
-PANDOC_DEFAULT_ARGS=--lua-filter ./filters/filter_helper.lua --listings -N --template template/template.tex -s
+PANDOC_DEFAULT_ARGS=--lua-filter ./filters/filter_helper.lua --listings -N
+PDF_TEMPLATE=--template template/template.tex
 VERSION=-M version=`git describe --tags`
 
 all: pseudocode pseudocode_color python cpp
 
 pseudocode:
-	$(PANDOC) $(PANDOC_DEFAULT_ARGS) $(CHAPTERS_CMD) $(VERSION) -M proglang="" -o Book_pseudocode.pdf
+	$(PANDOC_STANDALONE) $(PANDOC_DEFAULT_ARGS) $(CHAPTERS_CMD) $(VERSION) $(PDF_TEMPLATE) -M proglang="" -o Book_pseudocode.pdf
 
 pseudocode_color:
-	$(PANDOC) $(PANDOC_DEFAULT_ARGS) $(CHAPTERS_CMD) $(VERSION) -M proglang=pseudocode -o Book_pseudocode_colored.pdf
+	$(PANDOC_STANDALONE) $(PANDOC_DEFAULT_ARGS) $(CHAPTERS_CMD) $(VERSION) $(PDF_TEMPLATE) -M proglang=pseudocode -o Book_pseudocode_colored.pdf
 
 python:
-	$(PANDOC) $(PANDOC_DEFAULT_ARGS) $(CHAPTERS_CMD) $(VERSION) -M proglang=python -o Book_python.pdf
+	$(PANDOC_STANDALONE) $(PANDOC_DEFAULT_ARGS) $(CHAPTERS_CMD) $(VERSION) $(PDF_TEMPLATE) -M proglang=python -o Book_python.pdf
 
 cpp:
-	$(PANDOC) $(PANDOC_DEFAULT_ARGS) $(CHAPTERS_CMD) $(VERSION) -M proglang=C++ -o Book_cpp.pdf
+	$(PANDOC_STANDALONE) $(PANDOC_DEFAULT_ARGS) $(CHAPTERS_CMD) $(VERSION) $(PDF_TEMPLATE) -M proglang=C++ -o Book_cpp.pdf
 
 latex:
-	$(PANDOC) $(PANDOC_DEFAULT_ARGS) $(CHAPTERS_CMD) $(VERSION) -M proglang="" -o Book_LaTeX.latex
+	$(PANDOC_STANDALONE) $(PANDOC_DEFAULT_ARGS) $(CHAPTERS_CMD) $(VERSION) $(PDF_TEMPLATE) -M proglang="" -o Book_LaTeX.latex
+
+epub:
+	$(PANDOC) $(PANDOC_DEFAULT_ARGS) $(CHAPTERS_CMD) $(VERSION) -M proglang="" -t json | gladtex -P -p "\usepackage{cancel}\usepackage{gensymb}" - | $(PANDOC_STANDALONE) -f json -o Book_Epub.epub
 
 .PHONY: clean
 clean:
