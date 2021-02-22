@@ -1,4 +1,4 @@
-\null\clearpage
+{{pagebreak}}
 
 Useful Patterns, Containers and Classes
 ========================================

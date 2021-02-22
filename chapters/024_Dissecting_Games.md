@@ -1,4 +1,4 @@
-\null\clearpage
+{{pagebreak}}
 
 Dissecting games: two study cases
 =================================

@@ -1,6 +1,9 @@
 local boxes = require "filters/boxes"
 local placeholder = require "filters/placeholder"
-return {{
-        Div = boxes.boxes,
-        Str = placeholder.placeholder
-}}
+local pagebreak = require "filters/pagebreak"
+
+return {
+        {Div = boxes.boxes},
+        {Str = placeholder.placeholder},
+        {Str = pagebreak.pagebreak}
+}

@@ -57,10 +57,14 @@ If the situation calls for it (for instance you *absolutely need* a certain tabl
 To simplify the writing of the book as much as possible, I have included some commands and LaTeX environments:
 
 - `\code{path}{caption}`: Allows to insert a dynamic code listing, that will source dynamically from the `dynamic_listings` folder, according to the language selected;
-- `\placeholder`: A simple placeholder, prints the "This section is still a work in progress" message;
 - `\paidprod`: shows a red `[P]`, used to show a paid product;
 - `\freeprod`: shows a green `[F]`, used to show a free product;
 - `\donprod`: shows an orange `[D]`, used to show partially free products or products that accept donations;
+
+There are also some "keywords" that will be pre-processed by Pandoc's Lua Filters:
+
+- `{{placeholder}}`: A simple placeholder, prints the "This section is still a work in progress" message;
+- `{{pagebreak}}`: A forced pagebreak, used between chapters.
 
 Also there are some special classes you can use to make boxes:
 

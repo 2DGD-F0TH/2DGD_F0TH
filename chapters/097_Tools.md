@@ -1,4 +1,4 @@
-\null\clearpage
+{{pagebreak}}
 
 Some other useful tools
 ========================

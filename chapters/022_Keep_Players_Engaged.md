@@ -1,4 +1,4 @@
-\null\clearpage
+{{pagebreak}}
 
 Keeping your players engaged
 ============================
