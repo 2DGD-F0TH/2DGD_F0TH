@@ -143,6 +143,7 @@ $if(colorlinks)$
 \PassOptionsToPackage{usenames,dvipsnames}{color} % color is loaded by hyperref
 $endif$
 \hypersetup{
+  linktoc=all,
 $if(title)$
             pdftitle={$title$},
 $endif$
@@ -161,6 +162,7 @@ $else$
             pdfborder={0 0 0},
 $endif$
             breaklinks=true}
+\setcounter{tocdepth}{$toc-depth$}
 \urlstyle{same}  % don't use monospace font for urls
 $if(verbatim-in-note)$
 \VerbatimFootnotes % allows verbatim text in footnotes
@@ -470,7 +472,6 @@ $if(toc)$
 $if(colorlinks)$
 \hypersetup{linkcolor=$if(toccolor)$$toccolor$$else$black$endif$}
 $endif$
-\setcounter{tocdepth}{$toc-depth$}
 \clearpage
 \pagestyle{empty}
 \null\clearpage

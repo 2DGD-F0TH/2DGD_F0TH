@@ -12,8 +12,8 @@ For each website we will have, along with a short description:
 
 The licenses vary from website to website and even from single resource to another, so you should pay close attention to what you use and how you use it.
 
-Openclipart.org
-----------------
+Openclipart.org {-}
+-------------------
 
 Website: <https://openclipart.org/>
 
@@ -29,8 +29,8 @@ The website is currently (as of December 18th, 2020) undergoing a phase of trans
 
 It now features quite a confusing interface but now features a search function, but it's a precious source of art if you know what you're looking for.
 
-Opengameart.org
----------------
+Opengameart.org {-}
+------------------
 
 **Website:** <https://opengameart.org/>
 
@@ -44,8 +44,8 @@ Opengameart is a website specifically dedicated to game development, with all ki
 
 The interface is quite essential and sometimes the website can be slow, but this is a great source for anything you need to make your own videogame.
 
-Freesound
-----------
+Freesound {-}
+-------------
 
 **Website:** <https://freesound.org/>
 
@@ -57,8 +57,8 @@ Freesound
 
 The Freesound project is a collaborative database of sounds licensed under the "Creative Commons" license, it also features a very interesting blog that will teach you about sounds and soundscapes.
 
-PublicDomainFiles
-------------------
+PublicDomainFiles {-}
+---------------------
 
 Website: <http://www.publicdomainfiles.com/>
 
@@ -70,8 +70,8 @@ Website: <http://www.publicdomainfiles.com/>
 
 Similarly to OpenClipart, PublicDomainFiles contains a ton of graphics that can be a really good starting point for all your projects. It has a nice search function with filters and a good interface, even though it does not look as modern as other dedicated websites.
 
-CCMixter
---------
+CCMixter {-}
+-----------
 
 Website: <http://ccmixter.org/> and <http://dig.ccmixter.org>
 
@@ -86,8 +86,8 @@ CCMixer is a gold mine when it comes to music you can use in your games: its int
 
 Definitely a website to check when you want to add some beat to your game.
 
-SoundBible.com
---------------
+SoundBible.com {-}
+-----------------
 
 Website: <http://soundbible.com>
 
@@ -99,8 +99,8 @@ Website: <http://soundbible.com>
 
 SoundBible.com is another great website wehere you can look for sound effects for your games: the interface is quick and all sound effects are listed along with their license, which is definitely a plus.
 
-Incompetech
-------------
+Incompetech {-}
+---------------
 
 Website: <https://incompetech.com/>
 

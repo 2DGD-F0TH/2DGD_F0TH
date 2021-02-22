@@ -76,6 +76,17 @@ This is a trivia box
 :::::
 ```
 
+### Unnumbered sections
+
+You may notice that (usually in the appendices), there are titles looking like the following:
+
+```
+This is a title {-}
+-------------------
+```
+
+That `{-}` defines an "unnumbered section", which is mostly an aesthetic choice that I used to make some appendices (like the Glossary) clearer.
+
 ### Problems? Questions?
 
 The most common questions will be usually answered in the `FAQ_GUIDES.md` document, for the rest, feel free to open an issue on either GitHub or GitLab.
