@@ -16,6 +16,11 @@
 \usepackage[toc,page]{appendix}
 \usepackage[absolute,overlay]{textpos}
 \usepackage{tcolorbox}
+\usepackage{tocloft}
+% --------------- Fix for short TOC space ---------------
+\addtolength{\cftsecnumwidth}{5pt}
+\addtolength{\cftsubsecnumwidth}{10pt}
+\addtolength{\cftsubsubsecnumwidth}{10pt}
 % --------------- Commands ---------------
 \newcommand{\tabitem}{~~\llap{\textbullet}~~}
 \newcommand{\ttabitem}{~~~~\llap{$$\circ$$}~~}

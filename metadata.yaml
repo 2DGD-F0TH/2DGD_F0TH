@@ -50,4 +50,7 @@ linkcolor: "red"
 urlcolor: "blue"
 # Colors for citations
 citecolor: "green"
+# Font Family
+fontfamily: "dejavu"
+mainfont: "DejaVuSans"
 ---

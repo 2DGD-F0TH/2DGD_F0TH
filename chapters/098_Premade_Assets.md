@@ -21,7 +21,7 @@ Website: <https://openclipart.org/>
 
 | Graphics   | Music | Sound Effects |
 | :------:   | :---: | :-----------: |
-| \checkmark |       |               |
+| ✓ |       |               |
 
 Openclipart is a website that contains lots of freely available cliparts , in vector format, that can be a good starting point for your own art: buttons, characters, symbols, ...
 
@@ -38,7 +38,7 @@ Opengameart.org {-}
 
 | Graphics   | Music      | Sound Effects |
 | :------:   | :--------: | :-----------: |
-| \checkmark | \checkmark | \checkmark    |
+| ✓ | ✓ | ✓    |
 
 Opengameart is a website specifically dedicated to game development, with all kinds of resources to use in your game, either as placeholders or good-quality assets that are meant to stay in your product.
 
@@ -53,7 +53,7 @@ Freesound {-}
 
 | Graphics   | Music      | Sound Effects |
 | :------:   | :--------: | :-----------: |
-|            | \checkmark | \checkmark    |
+|            | ✓ | ✓    |
 
 The Freesound project is a collaborative database of sounds licensed under the "Creative Commons" license, it also features a very interesting blog that will teach you about sounds and soundscapes.
 
@@ -66,7 +66,7 @@ Website: <http://www.publicdomainfiles.com/>
 
 | Graphics   | Music | Sound Effects |
 | :------:   | :---: | :-----------: |
-| \checkmark |       |               |
+| ✓ |       |               |
 
 Similarly to OpenClipart, PublicDomainFiles contains a ton of graphics that can be a really good starting point for all your projects. It has a nice search function with filters and a good interface, even though it does not look as modern as other dedicated websites.
 
@@ -79,7 +79,7 @@ Website: <http://ccmixter.org/> and <http://dig.ccmixter.org>
 
 | Graphics   | Music      | Sound Effects |
 | :------:   | :--------: | :-----------: |
-|            | \checkmark |               |
+|            | ✓ |               |
 
 
 CCMixer is a gold mine when it comes to music you can use in your games: its interface is simple and easy to understand, features a tag-based search and the quality is great.
@@ -95,7 +95,7 @@ Website: <http://soundbible.com>
 
 | Graphics   | Music      | Sound Effects |
 | :------:   | :--------: | :-----------: |
-|            |            | \checkmark    |
+|            |            | ✓    |
 
 SoundBible.com is another great website wehere you can look for sound effects for your games: the interface is quick and all sound effects are listed along with their license, which is definitely a plus.
 
@@ -108,6 +108,6 @@ Website: <https://incompetech.com/>
 
 | Graphics   | Music      | Sound Effects |
 | :------:   | :--------: | :-----------: |
-|            | \checkmark |               |
+|            | ✓ |               |
 
 One of the most known websites in the field, and sometimes a bit overused, Incompetech contains lots of music for your game, but you need to check the license yourself. It surely gives a great set of placeholders for your project, while waiting for a more fitting soundtrack.
