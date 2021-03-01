@@ -61,7 +61,8 @@ An algorithm that executes in **O(1)** is said to execute "in constant time", wh
 
 An example of a simple O(1) algorithm is an algorithm that, given a list of elements (with at least one element), returns `True` if the first element is `null`.
 
-\code{computer_science/o1}{Example of an O(1) algorithm}
+```{src='computer_science/o1' caption='Example of an O(1) algorithm'}
+```
 
 To be precise, this algorithm will perform both in O(1) and $\Omega(1)$, so it will perform in $\Theta(1)$.
 
@@ -71,7 +72,8 @@ An algorithm that executes in O(log(n)) is said to execute in "logarithmic time"
 
 An example of a O(log(n)) algorithm is the so-called "binary search" on a ordered list of items.
 
-\code{computer_science/binary_search}{Example of an O(log(n)) algorithm (Binary Search)}
+```{src='computer_science/binary_search' caption='Example of an O(log(n)) algorithm (Binary Search)'}
+```
 
 The best case is the time when you get the element to find to be the "middle element" of the list, in that case the algorithm will execute in linear time: $\Theta(1)$ - You need **at least one lookup** ($\Omega(1)$) and **at most one lookup** ($O(1)$).
 
@@ -83,7 +85,8 @@ An algorithm that executes in O(n) is said to execute in "linear time", which me
 
 An example of a simple O(n) algorithm is the one that prints a list, element by element.
 
-\code{computer_science/printlist}{Example of an O(n) algorithm (printing of a list)}
+```{src='computer_science/printlist' caption='Example of an O(n) algorithm (printing of a list)'}
+```
 
 It's evident that this algorithm will call the `print` function `n` times, where `n` is the size of the list. This translates in a $\Theta(n)$ complexity, which is both $O(n)$ and $\Omega(n)$.
 
@@ -113,7 +116,8 @@ Given an input of **n** elements, these algorithms execute **n^2^** cycles, whic
 
 A simple example of a quadratic algorithm is "bubble sort". A pseudo-code implementation is written here.
 
-\code{computer_science/bubblesort}{Example of an O(n²) algorithm (bubble sort)}
+```{src='computer_science/bubblesort' caption='Example of an O(n²) algorithm (bubble sort)'}
+```
 
 Anything with complexity higher than O(n^2^) is usually considered unusable.
 
@@ -133,19 +137,22 @@ When you estimate an algorithm, you usually want to calculate how it functions "
 
 Let's start with an example:
 
-\code{computer_science/bigo/bigo1}{A simple O(1) algorithm}
+```{src='computer_science/bigo/bigo1' caption='A simple O(1) algorithm'}
+```
 
 This is a simple assignment operation, we are considering this instantaneous. So its complexity is $O(1)$.
 
 Now let's see another algorithm:
 
-\code{computer_science/bigo/bigo2}{A simple o(n) algorithm}
+```{src='computer_science/bigo/bigo2' caption='A simple o(n) algorithm'}
+```
 
 In this case we are iterating through a list, we can see that as the list grows, the number of times we print an element on our screen grows too. So if the list is $n$ items long, we will have $n$ calls to the output statement. This is an $O(n)$ complexity algorithm.
 
 Now let's take something we already saw and analyze it: the bubble sort algorithm:
 
-\code{computer_science/bubblesort}{The bubble sort algorithm, an O(n²) algorithm}
+```{src='computer_science/bubblesort' caption='The bubble sort algorithm, an O(n²) algorithm'}
+```
 
 This will require a small effort on our part: we can see that there are 2 nested loops in this code. What's our worst case? The answer is "The items are in the reverse order".
 
@@ -161,7 +168,8 @@ The algorithm has time complexity of $O(n^2)$.
 
 There are times when we have code that looks like the following:
 
-\code{computer_science/bigo/bigo3}{A more complex algorithm to estimate}
+```{src='computer_science/bigo/bigo3' caption='A more complex algorithm to estimate'}
+```
 
 As we can see the first part is the bubble sort algorithm, followed by iterating through the (now ordered) list, to print its values.
 

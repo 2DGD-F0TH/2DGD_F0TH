@@ -26,11 +26,13 @@ The UML diagram for a singleton is really simple.
 
 ![The UML diagram for a singleton pattern](./images/patterns_containers/singleton.pdf){width=20%}
 
-\code{patterns_containers/singleton}{Example of a singleton pattern}
+```{src='patterns_containers/singleton' caption='Example of a singleton pattern'}
+```
 
 The previous singleton instantiates immediately, which may not always be necessary, in that case a good idea could be implementing the so-called "lazy loading", where the instantiation happens the first time you ask the object for its own instance.
 
-\code{patterns_containers/singleton_lazyload}{Example of a singleton pattern with lazy loading}
+```{src='patterns_containers/singleton_lazyload' caption='Example of a singleton pattern with lazy loading'}
+```
 
 If multiple threads are involved in using a lazy-loading singleton, you may need to take care of preventing *race conditions*~[g]~ that could result in multiple instances of the singleton being created.
 
@@ -68,7 +70,8 @@ This pattern can be useful to code GUIs, making actions in our games that can be
 
 ![UML diagram for the Command Pattern](./images/patterns_containers/command.pdf){width=30%}
 
-\code{patterns_containers/command}{Example code for the Command Pattern}
+```{src='patterns_containers/command' caption='Example code for the Command Pattern'}
+```
 
 ------------------    ------------------------------------------------------------------------------
 **Pattern Name**      Command
@@ -93,7 +96,8 @@ Here comes the Flyweight pattern: we try to share as much of the so-called "intr
 
 Below is an example code for the flyweight pattern.
 
-\code{patterns_containers/flyweight}{Code for a flyweight pattern}
+```{src='patterns_containers/flyweight' caption='Code for a flyweight pattern'}
+```
 
 ------------------    ------------------------------------------------------------------------------
 **Pattern Name**      Flyweight
@@ -129,7 +133,8 @@ Here we can see the Observer abstract class (it can be an interface), a concrete
 
 Here we can see an implementation of the observer pattern:
 
-\code{patterns_containers/observer}{Code for an observer pattern}
+```{src='patterns_containers/observer' caption='Code for an observer pattern'}
+```
 
 If needed, you can pass information between the subject and the observers just by calling each `update()` method with the necessary arguments.
 
@@ -154,7 +159,8 @@ In this case, the *strategy pattern* (also knowns as the "policy pattern"), allo
 
 ![The UML diagram of the strategy pattern](./images/patterns_containers/strategy.pdf){width=60%}
 
-\code{patterns_containers/strategy}{Code for a strategy pattern}
+```{src='patterns_containers/strategy' caption='Code for a strategy pattern'}
+```
 
 ------------------    ------------------------------------------------------------------------------
 **Pattern Name**      Strategy
@@ -179,7 +185,8 @@ As can be seen from the diagram, the sender is not directly connected to the rec
 
 As with a chain of responsibility in a company relays a task to "higher ups" if the task cannot be handled, the chain of responsibility pattern involves each received reviewing the request and if possible, process it, if not possible, relay it to the next receiver in the chain.
 
-\code{patterns_containers/chain_of_responsibility}{Code for a chain of responsibility pattern}
+```{src='patterns_containers/chain_of_responsibility' caption='Code for a chain of responsibility pattern'}
+```
 
 ------------------    ------------------------------------------------------------------------------
 **Pattern Name**      Chain of Responsibility
@@ -223,7 +230,8 @@ Which can be reused, extended and allow for further flexibility and follows more
 
 Here we can take a look at a sample implementation of the Component Design Pattern:
 
-\code{patterns_containers/component}{Example Implementation Of the Component Pattern}
+```{src='patterns_containers/component' caption='Example Implementation Of the Component Pattern'}
+```
 
 Resource Manager
 -----------------
@@ -353,7 +361,8 @@ Here we will present some simple tweenings that can be programmed, and explain t
 
 Let's start with a *linear* tweening, usually the following function is used:
 
-\code{patterns_containers/tween_linear}{Linear Tweening}
+```{src='patterns_containers/tween_linear' caption='Linear Tweening'}
+```
 
 Let's explain the variables used:
 
@@ -372,25 +381,30 @@ $$ (change\ in\ property) \cdot (factor) + (beginning\ value)$$
 
 So we can use our function substituting `begin` with 0 and `change` with 1 to calculate `factor` and have a code similar to this one:
 
-\code{patterns_containers/way_to_easing}{Example of a simple easing function}
+```{src='patterns_containers/way_to_easing' caption='Example of a simple easing function'}
+```
 
 With linear tweening, the function degenerates to $\frac{time}{duration}$, but now we can replace our linear tween with the following function:
 
-\code{patterns_containers/easeIn}{Ease-in}
+```{src='patterns_containers/easeIn' caption='Ease-in'}
+```
 
 By changing the `power` parameter, we change the behaviour of the easing, making the movement slower at the beginning and pick up the pace more and more, until the destination is reached. This is called a "ease-in".
 
 For an "ease-out", where the animation starts fast and slows down towards the end, we use the following function instead:
 
-\code{patterns_containers/easeOut}{Ease-out}
+```{src='patterns_containers/easeOut' caption='Ease-out'}
+```
 
 With some calculations, and if statements on the time passed, you can combine the two and get an "ease-in-out" function.
 
-\code{patterns_containers/easeInOut}{Ease-in-out}
+```{src='patterns_containers/easeInOut' caption='Ease-in-out'}
+```
 
 Obviously these functions have an issue: they don't clamp the value between 0 and 1, that will have to be done in the movement function or by adding a check, or using some math, for instance using `min(calculated_value, 1)`.
 
-\code{patterns_containers/clamping}{Clamping values}
+```{src='patterns_containers/clamping' caption='Clamping values'}
+```
 
 In that case, calling the clamping function with values `0` and `1` would solve the issue.
 

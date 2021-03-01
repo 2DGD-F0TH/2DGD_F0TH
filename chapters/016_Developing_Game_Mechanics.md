@@ -26,7 +26,8 @@ Giving a brief period (usually between 0.5 and 2 seconds) of invincibility after
 
 I-Frames can be easily implemented via timers, in a way similar to the following:
 
-\code{developing_mechanics/iframes}{Example of I-Frames Implementation}
+```{src='developing_mechanics/iframes' caption='Example of I-Frames Implementation'}
+```
 
 ### Scrolling Backgrounds and Parallax Scrolling
 
@@ -46,7 +47,8 @@ To make an image appear like it's scrolling infinitely we need to move it back a
 
 For ease of explanation let's consider a screen scrolls towards the right, when we have reached a loop point, we reset the image position back to the position it was at the beginning and, since the image has been crafted to loop, the player won't notice that the background has been reset.
 
-\code{developing_mechanics/infiniscroll}{Example of an infinitely scrolling background implementation}
+```{src='developing_mechanics/infiniscroll' caption='Example of an infinitely scrolling background implementation'}
+```
 
 #### Parallax Scrolling
 
@@ -118,7 +120,8 @@ This is usually done before the player movement is used to update the character'
 
 A useful precaution to avoid the [bullet through paper](#bulletthroughpaper) problem when you are working with long falls: put a limit at the fall velocity (kind of like air friction limits an object's fall velocity) of your objects. By applying a hard limit to the velocity, your gravity will be realistic but won't break your simulation.
 
-\code{developing_mechanics/gravity}{Code for applying gravity to an object}
+```{src='developing_mechanics/gravity' caption='Code for applying gravity to an object'}
+```
 
 ### Avoiding "Floaty Jumps"
 
@@ -132,7 +135,8 @@ Although this can give the sensation that the character we're controlling is "fl
 
 This can be obtained with few simple lines of code, not very different from the gravity example of earlier:
 
-\code{developing_mechanics/enhanced_gravity_jump}{Code for jump with enhanced gravity while falling}
+```{src='developing_mechanics/enhanced_gravity_jump' caption='Code for jump with enhanced gravity while falling'}
+```
 
 In this example we are assuming that the framework used uses the screen coordinate system, and jumping brings the player from bottom towards the top of the screen. If you want different behaviour (like gravity inversion in puzzle games), something a tiny bit more involved may be in order.
 
@@ -160,7 +164,8 @@ A nice trick used mostly in 2D platformers to allow for smoother gameplay is "ju
 
 Normally when a character is mid-air, the jump button does nothing, in code:
 
-\code{developing_mechanics/jump_buffering_nobuffer}{Code for jumping without buffering}
+```{src='developing_mechanics/jump_buffering_nobuffer' caption='Code for jumping without buffering'}
+```
 
 Jump Buffering consists in allowing the player to "buffer" a jump slightly before the character lands, making the controls a bit less stiff and the gameplay more fluid.
 
@@ -168,7 +173,8 @@ Jump Buffering consists in allowing the player to "buffer" a jump slightly befor
 
 Jump buffering usually is put into practice using a timer, in a fashion similar to the following:
 
-\code{developing_mechanics/jump_buffering_buffer}{Jump buffering example}
+```{src='developing_mechanics/jump_buffering_buffer' caption='Jump buffering example'}
+```
 
 ### Coyote Time
 
@@ -178,7 +184,8 @@ Coyote time (also known as "edge tolerance") is a technique used to allow a play
 
 The trick is starting a countdown as soon as the player leaves a platform without jumping, then if the player presses the jump button while that time is still going, they will perform the jump action, like they still were on a platform.
 
-\code{developing_mechanics/coyote_time}{Coyote time code example}
+```{src='developing_mechanics/coyote_time' caption='Coyote time code example'}
+```
 
 ### Timed Jumps
 
@@ -188,7 +195,8 @@ A way to extend the mobility and challenge of a 2D platformer game is allowing p
 
 To work well, timed jumps need to be implemented by tracking the jump button's `onPress` and `onRelease` events. When the jump button has just been pressed, the character's `Y` velocity will be set, as soon as the button is released, such velocity will be capped, shortening the jump height.
 
-\code{developing_mechanics/timed_jumps}{Example code of how timed jumps work}
+```{src='developing_mechanics/timed_jumps' caption='Example code of how timed jumps work'}
+```
 
 Top-view RPG-Like Games
 -----------------------
@@ -360,7 +368,8 @@ Similarly we can do the same algorithm for vertical matches, by running through 
 
 Here is a pseudo-code example:
 
-\code{developing_mechanics/match3_findhorizontalmatches}{Finding horizontal matches in a match-3 game}
+```{src='developing_mechanics/match3_findhorizontalmatches' caption='Finding horizontal matches in a match-3 game'}
+```
 
 Let's talk a second about the last rows in the algorithm: they are specifically tailored to address a corner case that happens when there is a match that ends on the right border of the screen.
 
@@ -368,7 +377,8 @@ If such code was not there, the match number would grow by one, then the for loo
 
 Similarly, we can make an algorithm that allows for vertical matches to be memorized for later removal:
 
-\code{developing_mechanics/match3_findverticalmatches}{Finding vertical matches in a match-3 game}
+```{src='developing_mechanics/match3_findverticalmatches' caption='Finding vertical matches in a match-3 game'}
+```
 
 Both algorithms run in $O(n)$, where "n" is the number of tiles on the screen.
 

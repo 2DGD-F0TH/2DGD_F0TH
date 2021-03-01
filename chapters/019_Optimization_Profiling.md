@@ -106,11 +106,13 @@ Some engines have routines that introduce sanity checks, logic optimizations and
 
 If you want to move a character diagonally both up and right, don't do this:
 
-\code{optimization/double_move_call}{Double Engine Movement Call}
+```{src='optimization/double_move_call' caption='Double Engine Movement Call'}
+```
 
 As all the sanity checks in the `Move` function will be executed twice per frame (since we're in the "Update" function). Instead you should get the resulting movement vector first, and then use the `Move` function only once:
 
-\code{optimization/single_move_call}{Single Engine Movement Call}
+```{src='optimization/single_move_call' caption='Single Engine Movement Call'}
+```
 
 This way instead we're doing sanity checks and related operations only once, moving the character in its final position without wasting resources.
 
@@ -197,7 +199,8 @@ A quick way to make your game lighter on resources (and thus more performing) ca
 
 A possible example could be the following:
 
-\code{optimization/dirty_bit}{Example on how to optimize entities with a dirty bit}
+```{src='optimization/dirty_bit' caption='Example on how to optimize entities with a dirty bit'}
+```
 
 If your code is well-done, you won't have issues like animations freezing, because those will be separated from the "update routine", since the animator will chug along its frames when requested by the `draw` function.
 

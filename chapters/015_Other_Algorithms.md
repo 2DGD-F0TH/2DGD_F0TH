@@ -34,7 +34,8 @@ The algorithm terminates when we reached a pre-defined number of subdivisions, s
 
 Let's take a look at a possible implementation of the midpoint displacement algorithm:
 
-\code{algorithms/midpoint_displacement}{Example implementation of the midpoint displacement algorithm}
+```{src='algorithms/midpoint_displacement' caption='Example implementation of the midpoint displacement algorithm'}
+```
 
 ### Diamond-Square Algorithm
 
@@ -287,7 +288,8 @@ Here is an example of random noise:
 
 We can create some "TV-like" static with a few lines of code, like the following:
 
-\code{algorithms/randomized_noise}{Example implementation of randomized noise}
+```{src='algorithms/randomized_noise' caption='Example implementation of randomized noise'}
+```
 
 ### Perlin Noise
 
