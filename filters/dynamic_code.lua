@@ -23,6 +23,8 @@ function dynamic_codeblock(blk)
         -- Set language
         blk.attributes.language = language
         code = pandoc.CodeBlock(content, blk.attr)
+        code.classes = {language}
+        -- TODO: Include caption in epub output
         return code
     end
 end

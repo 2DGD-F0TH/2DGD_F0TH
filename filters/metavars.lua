@@ -12,8 +12,9 @@ function get_vars (meta)
 end
 
 function find_var (var)
-  if vars[var] ~= nil then
-    return vars[var]
+  local tofind = "{{%" .. var .. "%}}"
+  if vars[tofind] ~= nil then
+    return vars[tofind]
   else
     return nil
   end

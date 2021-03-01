@@ -278,3 +278,6 @@ TSWLatexianTemp*
 ### Dia Diagram SwapFiles
 
 *.dia~
+
+### GladTex Images
+gladtex_imgs/*

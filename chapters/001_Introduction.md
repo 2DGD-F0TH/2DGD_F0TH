@@ -55,8 +55,6 @@ The logical negation of a variable will be represented with a straight line on t
 
 Listings, algorithms and anything that is code will be shown in monotype fonts, using syntax highlighting where possible, inside of a dedicated frame:
 
-<!--```{src='introduction/example' caption='Example code listing'}
-```-->
 ```{src="introduction/example" caption="Example code listing"}
 ```
 
