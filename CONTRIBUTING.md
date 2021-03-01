@@ -31,6 +31,8 @@ The only thing left to do is translating all the pseudo-code listings into your 
 
 After that you can try and make a copy of the book, by editing the `Makefile`. Remember to add the new language in the `README.md` file.
 
+You may also want to refer to the "Dynamic Code Blocks" section of this document.
+
 #### What if my programming language is not in the list?
 
 No worries, you can still add your own. Check the [FAQ Document](FAQ_GUIDES.md).
@@ -56,7 +58,6 @@ If the situation calls for it (for instance you *absolutely need* a certain tabl
 
 To simplify the writing of the book as much as possible, I have included some commands and LaTeX environments:
 
-- `\code{path}{caption}`: Allows to insert a dynamic code listing, that will source dynamically from the `dynamic_listings` folder, according to the language selected;
 - `\paidprod`: shows a red `[P]`, used to show a paid product;
 - `\freeprod`: shows a green `[F]`, used to show a free product;
 - `\donprod`: shows an orange `[D]`, used to show partially free products or products that accept donations;
@@ -79,6 +80,17 @@ These boxes can be created using Pandoc's "fenced div" syntax, like follows:
 This is a trivia box
 :::::
 ```
+
+### Dynamic Code Blocks
+
+This book is structured in a way that allows to create many "editions" by specifying a programming language, this means that code is not written directly inside the markdown documents, but instead it is separated in `.txt` files in the `dynamic_listings` folder.
+
+To create a new dynamic code listing just write the following:
+
+~~~
+```{src="path/without/language/name" caption="The caption"}
+```
+~~~
 
 ### Unnumbered sections
 
