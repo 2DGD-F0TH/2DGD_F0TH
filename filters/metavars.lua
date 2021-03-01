@@ -11,6 +11,14 @@ function get_vars (meta)
   end
 end
 
+function find_var (var)
+  if vars[var] ~= nil then
+    return vars[var]
+  else
+    return nil
+  end
+end
+
 function replace (el)
   if vars[el.text] then
     return pandoc.Span(vars[el.text])
@@ -19,4 +27,4 @@ function replace (el)
   end
 end
 
-return {get_vars=get_vars, replace=replace}
+return {get_vars=get_vars, replace=replace, find_var=find_var}
