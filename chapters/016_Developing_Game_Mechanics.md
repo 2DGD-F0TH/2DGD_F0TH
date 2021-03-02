@@ -101,7 +101,7 @@ The loading screen will be composed of two main components:
 
 We can represent the two "loops" in the following UML diagram:
 
-![Rough UML diagram of a multithreaded loading screen](./images/developing_mechanics/loading_multithread.pdf){width=50%}
+![Rough UML diagram of a multithreaded loading screen](./images/developing_mechanics/loading_multithread.svg){width=50%}
 
 {{placeholder}}
 
@@ -228,13 +228,13 @@ Input lag is something that we cannot avoid, but there are countermeasures, as w
 
 #### Video Lag
 
-![Reference image for video lag](./images/developing_mechanics/video_lag.pdf){width=50%}
+![Reference image for video lag](./images/developing_mechanics/video_lag.svg){width=50%}
 
 As with the input lag, there is also a not-neglegible video lag. The game has to prepare the image, send it to the video card, the card has to render it, apply effects and then send it to the screen, where the liquid crystals (or whatever technology we will have in the future) will have the re-align to create the colored pixels on screen.
 
 #### Audio Lag
 
-![Reference image for audio lag](./images/developing_mechanics/audio_lag.pdf){width=50%}
+![Reference image for audio lag](./images/developing_mechanics/audio_lag.svg){width=50%}
 
 When the audio doesn't exactly match with the video, we talk about "audio lag", this has to be accounted for if you want to have a good rhythm game. In that case, there is a need to compensate for the audio lag, by starting each sound effect (or music) earlier or later by a well-defined amount of milliseconds.
 
@@ -344,7 +344,7 @@ When it comes to a match-x game, a good data structure for the play field is a m
 
 In most programming languages, a matrix is saved as an "array of arrays", where you have each element of an array representing a row, and each element of a row is a tile.
 
-![Example of a matrix, saved as "array of arrays"](./images/developing_mechanics/array_arrays.pdf){width=60%}
+![Example of a matrix, saved as "array of arrays"](./images/developing_mechanics/array_arrays.svg){width=60%}
 
 This is a really nice way to interpret a grid, but at the same time it can open the door to some pitfalls if you're not careful.
 
@@ -390,7 +390,7 @@ We could, but that would open the door to a pitfall that could be tough to manag
 
 Let's see the image to understand better:
 
-![What happens when deleting a match immediately](./images/developing_mechanics/immediate_deletion.pdf){width=60%}
+![What happens when deleting a match immediately](./images/developing_mechanics/immediate_deletion.svg){width=60%}
 
 As visible from the first image, there is a T-shaped match involving cells 0,1,2 of row 0, cell 1 of row 1 and cell 1 of row 2.
 

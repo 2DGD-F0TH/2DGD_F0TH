@@ -157,15 +157,15 @@ This clashes with the continuous push towards higher resolutions, which can mess
 
 If the game is forced in windowed mode, you'll have a problem like the following:
 
-![Windowed Game Example - A 640x480 game in a 1920x1080 Window](./images/resources/virtual_res_fail_1.pdf){width=60%}
+![Windowed Game Example - A 640x480 game in a 1920x1080 Window](./images/resources/virtual_res_fail_1.svg){width=60%}
 
 The game window is way too small and hard to see, and can get even smaller if the HUD~[g]~ takes even more space out of the window. This can be mitigated by calculating the position of each element in comparison to the window size, this although can result in items too small (or too big if downscaling), like the following HUD example.
 
-![Fullscreen Game Example - Recalculating items positions according to the window size](./images/resources/virtual_res_fail_2.pdf){width=60%}
+![Fullscreen Game Example - Recalculating items positions according to the window size](./images/resources/virtual_res_fail_2.svg){width=60%}
 
 This is where **virtual resolution** comes into play, the frame is rendered in a virtual surface which operates at a "virtual resolution" and the whole frame is drawn and upscaled (or downscaled) to the screen, without having to recalculate anything in real time (thus making the game faster and lighter).
 
-![Fullscreen Game Example - Virtual Resolution](./images/resources/virtual_res.pdf){width=60%}
+![Fullscreen Game Example - Virtual Resolution](./images/resources/virtual_res.svg){width=60%}
 
 The items get scaled accordingly and there is no real need to do heavy calculations. Virtual Resolution allows for different kinds of upscaling, with or without filtering or interpolation, for instance:
 
@@ -342,15 +342,15 @@ When it comes to "corner tiles", using the same tile, rotated in 90 degree steps
 
 This "rotation trick" can be used for most of the tiles you create, let's take for instance the following diagram, representing some tiles:
 
-![Tile "Rotation Trick" (1/3)](./images/resources/tile_rotation_diagram_1.pdf){width=60%}
+![Tile "Rotation Trick" (1/3)](./images/resources/tile_rotation_diagram_1.svg){width=60%}
 
 We can take the tiles and rotate them, to get something like the following:
 
-![Tile "Rotation Trick" (2/3)](./images/resources/tile_rotation_diagram_2.pdf){width=60%}
+![Tile "Rotation Trick" (2/3)](./images/resources/tile_rotation_diagram_2.svg){width=60%}
 
 If we continue with copying, rotating and pasting, we can obtain a great basis for our tileset:
 
-![Tile "Rotation Trick" (3/3)](./images/resources/tile_rotation_diagram_3.pdf){width=60%}
+![Tile "Rotation Trick" (3/3)](./images/resources/tile_rotation_diagram_3.svg){width=60%}
 
 After that we can edit and make it so tiles are seamless, while putting the minimum amount of necessary effort to create something convincing.
 

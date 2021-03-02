@@ -43,7 +43,7 @@ Since numbers in computers can be **really** precise, a collision between two po
 
 Now a circle comes into the mix, a circle has two major characteristics: a **center** and a **radius**.
 
-![Reference image for Point-Circle Collision detection](./images/collision_detection/point_circle.pdf){width=40%}
+![Reference image for Point-Circle Collision detection](./images/collision_detection/point_circle.svg){width=40%}
 
 We can see that the distance between the center of a circle and our point can be expressed with a formula:
 
@@ -79,7 +79,7 @@ Although slightly more heavy, computation-wise, this algorithm still runs in O(1
 
 Let's add another circle into the mix now, and think in more or less the same way as before:
 
-![Reference image for Circle-Circle collision detection](./images/collision_detection/circle_circle.pdf){width=50%}
+![Reference image for Circle-Circle collision detection](./images/collision_detection/circle_circle.svg){width=50%}
 
 We can see the distance between the center of the circles as expressed with the following formula:
 
@@ -116,21 +116,21 @@ This is one of the most used types of collision detection used in games: it's a 
 
 Let's start with a bit of theory. We have two squares:
 
-![Example used in the AABB collision detection](./images/collision_detection/AABB1.pdf){width=30%}
+![Example used in the AABB collision detection](./images/collision_detection/AABB1.svg){width=30%}
 
 To know if we may have a collision, we need to check if one of the sides is "inside" (that means between the top and bottom sides) of another rectangle:
 
-![Top-Bottom Check](./images/collision_detection/AABB2.pdf){width=30%}
+![Top-Bottom Check](./images/collision_detection/AABB2.svg){width=30%}
 
 In this case we know that the "top side" of the second rectangle (highlighted in blue) has a `y` coordinate between the first rectangle's top and bottom sides' `y` coordinates (highlighted in red).
 
 Though this is a necessary condition, this is not sufficient, since we may have a situation where this condition is satisfied, but the rectangles don't collide:
 
-![Top-Bottom Check is not enough](./images/collision_detection/AABB3.pdf){width=30%}
+![Top-Bottom Check is not enough](./images/collision_detection/AABB3.svg){width=30%}
 
 So we need to check the other sides also, in a similar fashion:
 
-![An example of a left-right check](./images/collision_detection/AABB4.pdf){width=30%}
+![An example of a left-right check](./images/collision_detection/AABB4.svg){width=30%}
 
 This has to happen for all four sides of one of the rectangle.
 
@@ -164,7 +164,7 @@ Every triangle can be represented with 3 points, and there is a really useful th
 
 So, given a triangle ABC:
 
-![Example of the triangle inequality theorem](./images/collision_detection/triangle_ineq1.pdf){width=30%}
+![Example of the triangle inequality theorem](./images/collision_detection/triangle_ineq1.svg){width=30%}
 
 We get the following 3 inequalities:
 
@@ -174,7 +174,7 @@ $$ \overline{AB} + \overline{AC} \leq \overline{BC} $$
 
 What is more interesting to us is that when the one of the vertices of the triangle is **on** its opposite side, the triangle degenerates:
 
-![Example of a degenerate triangle](./images/collision_detection/triangle_ineq2.pdf){width=30%}
+![Example of a degenerate triangle](./images/collision_detection/triangle_ineq2.svg){width=30%}
 
 And the theorem degenerates too, to the following:
 
@@ -397,7 +397,7 @@ We need to remember that each object (as good practices suggest) know only about
 
 As an example, we'll take the following situation:
 
-![Example for collision detection](./images/collision_detection/collision_example.pdf){width=30%}
+![Example for collision detection](./images/collision_detection/collision_example.svg){width=30%}
 
 We can evidently see how circles 1 and 2 are colliding, but obviously our game won't just "know" without giving it a way to think about how two objects collide.
 
@@ -422,11 +422,11 @@ A nice idea would be being able to limit the number of tests we perform, since t
 
 When building quad-trees, we are essentially dividing the screen in "quadrants" (and if necessary, such quadrants will be divided into sub-quadrants), detect which objects are in such quadrants and test collisions between objects that are inside of the same quadrant.
 
-![Graphical example of a quad tree, overlaid on the reference image](./images/collision_detection/collision_quad_example.pdf){width=40%}
+![Graphical example of a quad tree, overlaid on the reference image](./images/collision_detection/collision_quad_example.svg){width=40%}
 
 And here below we can see how a quad tree would look, in its structure:
 
-![A quad tree](./images/collision_detection/quad_tree.pdf){width=50%}
+![A quad tree](./images/collision_detection/quad_tree.svg){width=50%}
 
 The rules to follow in a quad tree are simple, both in filling and retrieval. When we are filling a quad tree:
 
@@ -594,7 +594,7 @@ Common Issues with Collision Detection
 
 The "bullet through paper" is a common problem with collision detection, when an obstacle is really thin (our "paper"), and the object is really fast and small (the "bullet") it can happen that collision is not detected.
 
-![Example of the "Bullet through paper" problem](./images/collision_detection/Bullet_Through_Paper.pdf){width=40%}
+![Example of the "Bullet through paper" problem](./images/collision_detection/Bullet_Through_Paper.svg){width=40%}
 
 The object is going so fast that it manages to go through the entirety of the obstacle in a single frame.
 
@@ -623,11 +623,11 @@ First of all, let's put up some (arbitrary) constraints that will help us making
 
 Our bullet will shoot from the barrel of our gun (duh!), but we also define a point where the bullet will despawn: this will limit our ray length and make our algorithm perform better. We can still give an excuse such as "bullets are affected by gravity" (which actually is true), and maybe use it as a difficulty management technique (stopping people from sniping the enemy can make the game harder and force the player to play the game the way we, the developers, want).
 
-![How Ray Casting Works: Gun (1/2)](./images/collision_detection/ray_casting_1.pdf){width=50%}
+![How Ray Casting Works: Gun (1/2)](./images/collision_detection/ray_casting_1.svg){width=50%}
 
 Attached to our gun, is an invisible line (our ray), that will follow every movement of the gun itself
 
-![How Ray Casting Works: Gun (2/2)](./images/collision_detection/ray_casting_2.pdf){width=50%}
+![How Ray Casting Works: Gun (2/2)](./images/collision_detection/ray_casting_2.svg){width=50%}
 
 When we want to shoot the gun, instead of using the previously stated "time-stepping techniques", we perform a line-to-rectangle (or line-to-circle, or whatever we find best) collision detection, at the same time we play a really fast animation of the bullet shooting along the casted ray. If the cast ray hits an enemy, they'll die (or get destroyed).
 

@@ -14,19 +14,19 @@ As the name implies, this algorithm entails recursively taking the midpoint betw
 
 Let's see how it works first. We have a completely flat terrain:
 
-![How the Midpoint Displacement Algorithm Works (1/4)](images/algorithms/MDA_1.pdf){width=50%}
+![How the Midpoint Displacement Algorithm Works (1/4)](images/algorithms/MDA_1.svg){width=50%}
 
 Then we take the midpoint between the two extremes and move it (up or down) by a random amount (between two sensible extremes):
 
-![How the Midpoint Displacement Algorithm Works (2/4)](images/algorithms/MDA_2.pdf){width=50%}
+![How the Midpoint Displacement Algorithm Works (2/4)](images/algorithms/MDA_2.svg){width=50%}
 
 In this case we moved it up by a certain measure, now we take the two midpoints on the left and right sides of the previous midpoint, and displace them too:
 
-![How the Midpoint Displacement Algorithm Works (3/4)](images/algorithms/MDA_3.pdf){width=50%}
+![How the Midpoint Displacement Algorithm Works (3/4)](images/algorithms/MDA_3.svg){width=50%}
 
 Then we take the midpoints between the segments we created, and displace them again:
 
-![How the Midpoint Displacement Algorithm Works (4/4)](images/algorithms/MDA_4.pdf){width=50%}
+![How the Midpoint Displacement Algorithm Works (4/4)](images/algorithms/MDA_4.svg){width=50%}
 
 Each displacement is usually done by a lower amount of the previous ones, so that the first displacements give a "general shape" of the terrain, while the ones further down the line are going to give "detail" to our terrain.
 

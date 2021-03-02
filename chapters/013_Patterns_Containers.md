@@ -24,7 +24,7 @@ After that, we need a static method that allows to get the singleton's instance,
 
 The UML diagram for a singleton is really simple.
 
-![The UML diagram for a singleton pattern](./images/patterns_containers/singleton.pdf){width=20%}
+![The UML diagram for a singleton pattern](./images/patterns_containers/singleton.svg){width=20%}
 
 ```{src='patterns_containers/singleton' caption='Example of a singleton pattern'}
 ```
@@ -68,7 +68,7 @@ The command pattern allows us to abstract a function (or any executable line of 
 
 This pattern can be useful to code GUIs, making actions in our games that can be undone, macros, replays and much more.
 
-![UML diagram for the Command Pattern](./images/patterns_containers/command.pdf){width=30%}
+![UML diagram for the Command Pattern](./images/patterns_containers/command.svg){width=30%}
 
 ```{src='patterns_containers/command' caption='Example code for the Command Pattern'}
 ```
@@ -92,7 +92,7 @@ Imagine a lot of sprites of trees that have the same texture and size, but have 
 
 Here comes the Flyweight pattern: we try to share as much of the so-called "intrinsic state" of the objects between the object that contain the so-called "extrinsic state".
 
-![UML Diagram of the Flyweight pattern](./images/patterns_containers/flyweight.pdf){width=60%}
+![UML Diagram of the Flyweight pattern](./images/patterns_containers/flyweight.svg){width=60%}
 
 Below is an example code for the flyweight pattern.
 
@@ -127,7 +127,7 @@ The subject implements in its structure a list of observers that will be notifie
 
 Here we can see an UML diagram of the observer pattern:
 
-![The UML diagram of the observer pattern](./images/patterns_containers/observer.pdf){width=60%}
+![The UML diagram of the observer pattern](./images/patterns_containers/observer.svg){width=60%}
 
 Here we can see the Observer abstract class (it can be an interface), a concrete subject and two Concrete Observers that implement what required by the Observer.
 
@@ -157,7 +157,7 @@ In some situations it may be necessary to select a single algorithm to use, from
 
 In this case, the *strategy pattern* (also knowns as the "policy pattern"), allows the code to receive runtime instructions over what algorithm to execute. This allows for the algorithm to vary independently from the client that makes use of such algorithm.
 
-![The UML diagram of the strategy pattern](./images/patterns_containers/strategy.pdf){width=60%}
+![The UML diagram of the strategy pattern](./images/patterns_containers/strategy.svg){width=60%}
 
 ```{src='patterns_containers/strategy' caption='Code for a strategy pattern'}
 ```
@@ -179,7 +179,7 @@ Table: Summary table for the Strategy Pattern
 
 Sometimes we have the necessity of handling conditionals that are themselves connected to runtime conditions. This is where the *chain of responsibility pattern* comes into play, being essentially an object-oriented version of an `if ... else if ... else` statement.
 
-![UML Diagram of the Chain of Responsibility Pattern](./images/patterns_containers/chain_of_responsibility.pdf){width=60%}
+![UML Diagram of the Chain of Responsibility Pattern](./images/patterns_containers/chain_of_responsibility.svg){width=60%}
 
 As can be seen from the diagram, the sender is not directly connected to the receiver, but instead it's connected to a "Handler" interface, making them independent.
 
@@ -215,7 +215,7 @@ At this point our software engineering senses are tingling, something is dangero
 
 A better alternative in bigger projects is splitting the monolithic class and create different components and allow for their reuse later. Enter the Component pattern.
 
-![Diagram of the Component Design Pattern](./images/patterns_containers/class_component.pdf){width=40%}
+![Diagram of the Component Design Pattern](./images/patterns_containers/class_component.svg){width=40%}
 
 The client is connected to a list of Components that have the same interface (in the previous case, the `update()` method), so each Game Entity can become a "container of components" that define its behaviour.
 
@@ -272,7 +272,7 @@ A finite state machine is a model of computation that represents an abstract mac
 
 We can use a finite state machine to represent the status of a player character, like in the following diagram:
 
-![Diagram of a character's state machine](./images/patterns_containers/Character_SM.pdf){width=70%}
+![Diagram of a character's state machine](./images/patterns_containers/Character_SM.svg){width=70%}
 
 Each state machine is made out of two main elements:
 
@@ -281,7 +281,7 @@ Each state machine is made out of two main elements:
 
 State machines are really flexible and can be used to represent a menu system, for instance:
 
-![Diagram of a menu system's state machine](./images/patterns_containers/Menu_SM.pdf){width=70%}
+![Diagram of a menu system's state machine](./images/patterns_containers/Menu_SM.svg){width=70%}
 
 In this more convoluted diagram we can see how pressing a certain button or clicking a certain option can trigger a state change.
 

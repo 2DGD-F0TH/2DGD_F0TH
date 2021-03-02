@@ -190,7 +190,7 @@ When we are preparing the terrain for our game, it is vital to have an idea of h
 
 This is the simplest type of gameplay design: all story events come one after the other, without any possibility of deviating from the flow.
 
-![Example Scheme of linear gameplay](./images/game_design/linear_gameplay.pdf){width=60%}
+![Example Scheme of linear gameplay](./images/game_design/linear_gameplay.svg){width=60%}
 
 Very much like a presentation, there is no branching, but such linearity can present some advantages, like ease of testing and possibility of applying traditional storytelling tools which have been developed for thousands of years.
 
@@ -209,7 +209,7 @@ Table: Summary of linear gameplay
 
 Going towards more complex flow types, we can use branching to allow for more interactivity.
 
-![Example Scheme of branching gameplay](./images/game_design/branching_gameplay.pdf){width=60%}
+![Example Scheme of branching gameplay](./images/game_design/branching_gameplay.svg){width=60%}
 
 This type of gameplay flow allows for a lot of interactivity by crafting the game in a way that player decisions have a direct influence on the story flow.
 
@@ -229,7 +229,7 @@ The Branching gameplay flow has a huge disadvantage: it can be really hard to ma
 
 Here's where parallel gameplay comes into play.
 
-![Example Scheme of parallel gameplay](./images/game_design/parallel_gameplay.pdf){width=60%}
+![Example Scheme of parallel gameplay](./images/game_design/parallel_gameplay.svg){width=60%}
 
 In this flow style, there are branches running "parallel" to one another, but merge into "mandatory events" (which are usually story related). This way we have varied gameplay while keeping the story essentially linear.
 
@@ -245,7 +245,7 @@ In this flow style, there are branches running "parallel" to one another, but me
 
 A different kind of gameplay is the "threaded" version, where there are many "beginnings", "middles" and "endings", usually done by playing different characters.
 
-![Example Scheme of threaded gameplay](./images/game_design/threaded_gameplay.pdf){width=60%}
+![Example Scheme of threaded gameplay](./images/game_design/threaded_gameplay.svg){width=60%}
 
 This gives more replayability by giving many different and intertwining stories that allow to better understand a "bigger picture" of some sort. This gameplay flow can be costly, since it requires testing all the possible paths and crossings.
 
@@ -266,7 +266,7 @@ This was done in Resident Evil 6, where different characters (and teams) have di
 
 A more "object-oriented" approach to storytelling can be done by making small "episodes" (like mini-stories) with many entry and exit points.
 
-![Example Scheme of episodic gameplay](./images/game_design/episodic_gameplay.pdf){width=60%}
+![Example Scheme of episodic gameplay](./images/game_design/episodic_gameplay.svg){width=60%}
 
 We need to be mindful of loops (we don't want to replay an episode that was already completed) when laying out our episodes. This gameplay flow allows for great interactivity, but kind of "forces" replaying the game to see all the possible episodes.
 

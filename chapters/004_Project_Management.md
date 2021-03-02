@@ -259,7 +259,7 @@ The Waterfall model, also known as "sequential model" is the simplest one to und
 - There is no overlap between phases;
 - When a phase is completed, you cannot go back to it.
 
-![Diagram of the waterfall life cycle model](./images/project_management/waterfall_model.pdf){width=60%}
+![Diagram of the waterfall life cycle model](./images/project_management/waterfall_model.svg){width=60%}
 
 This makes the Waterfall life cycle model *extremely rigid*, everything needs to be carefully analyzed and documented (sometimes people define this model "document-driven") and the coding is done only in its final phases.
 
@@ -271,7 +271,7 @@ When a project of a certain size is involved, it's a bad idea to perform the so-
 
 The Incremental Model allows to have a "high-level analysis and planning", after that the team decides which features should be implemented first. This way the most important features are ready as soon as possible and have more time to become stable and integrate with the rest of the software.
 
-![Diagram of the incremental life cycle model](./images/project_management/incremental_model.pdf){width=60%}
+![Diagram of the incremental life cycle model](./images/project_management/incremental_model.svg){width=60%}
 
 This model can make use of strictly sequential phases (detail planning -> release -> detail planning -> release ...) or introduce some parallelism (for instance planning and developing frontend and backend at the same time).
 
@@ -281,11 +281,11 @@ As seen from the diagram, the high-level analysis and planning are not repeated,
 
 It's not always possible to perfectly know the outline of a problem in advance, that's why the evolutionary model was invented. Since needs tend to change with time, it's a good idea to maintain life cycles on different versions of your software at the same time.
 
-![High-level diagram of the evolutionary life cycle model](./images/project_management/evolutionary_model_2.pdf){width=60%}
+![High-level diagram of the evolutionary life cycle model](./images/project_management/evolutionary_model_2.svg){width=60%}
 
 Adding a way to implement the feedback you get from your customers and stakeholders completes the micro-managed part of the life cycle model, each time feedback and updates are implemented, a new version is released.
 
-![Diagram of the evolutionary life cycle model](./images/project_management/evolutionary_model.pdf){width=60%}
+![Diagram of the evolutionary life cycle model](./images/project_management/evolutionary_model.svg){width=60%}
 
 ### Agile Software Development
 
@@ -345,7 +345,7 @@ The base of Kanban is the "Kanban Board" (sometimes shortened as "Kanboard"), wh
 
 The board helps with organization and gives a high-level view of the work status.
 
-![Example of a Kanban Board](./images/project_management/kanboard.pdf){width=70%}
+![Example of a Kanban Board](./images/project_management/kanboard.svg){width=70%}
 
 #### ScrumBan
 

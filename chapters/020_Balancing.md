@@ -102,15 +102,15 @@ Here we will distinguish between the two main forms of multiplayer: Peer-to-peer
 
 Peer-to-peer multiplayer is the economically cheapest and easiest way to implement multiplayer, two or more computers (or consoles) are on "the same level" and communicate directly with each other, without a tertiary server in the middle.
 
-![Example of a P2P connection](./images/balancing/P2P.pdf){width=60%}
+![Example of a P2P connection](./images/balancing/P2P.svg){width=60%}
 
 The main difficulty in preventing cheating is that there is no "authoritative game state", the program cannot know if either player is cheating besides having an array of "possible actions", like in single player, but with the added difficulty of network lag.
 
-![Two cheaters meet in P2P](./images/balancing/cheat_P2P.pdf){width=60%}
+![Two cheaters meet in P2P](./images/balancing/cheat_P2P.svg){width=60%}
 
 Giving such "authoritative game state" to either of the players is not a good idea, because that way they would be able to cheat themselves and since they're the "game master", everything they do would be accepted.
 
-![What would happen if one of the Peers had the autoritative game state](./images/balancing/auth_P2P.pdf){width=60%}
+![What would happen if one of the Peers had the autoritative game state](./images/balancing/auth_P2P.svg){width=60%}
 
 This is also the reason why many games that make use of P2P connections have implementations of anti-cheat systems that are shoddy at best.
 
@@ -118,11 +118,11 @@ This is also the reason why many games that make use of P2P connections have imp
 
 Dedicated servers is usually the best way to prevent cheating, a tertiary server is added to the mix, and said server is either controlled by the game creators or uses a software specifically tailored to work as a "multiplayer server".
 
-![Example of a dedicated server](./images/balancing/dedicated.pdf){width=60%}
+![Example of a dedicated server](./images/balancing/dedicated.svg){width=60%}
 
 Such server contains the authoritative game state and decides what is right and what is wrong, or either what is possible and not possible.
 
-![Two cheaters vs. Dedicated server](./images/balancing/cheat_dedicated.pdf){width=60%}
+![Two cheaters vs. Dedicated server](./images/balancing/cheat_dedicated.svg){width=60%}
 
 Usually a dedicated server software has been specifically made to limit cheating, as well as offering better performance than the P2P counterpart (it doesn't have to run graphics, for instance).
 

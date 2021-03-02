@@ -39,7 +39,7 @@ In the case of 2D game development, a vector is just a pair of values `(x,y)`.
 
 Vectors usually represent a force applied to a body, its velocity or acceleration and are graphically represented with an arrow.
 
-![Image of a vector](./images/maths/vector.pdf){width=30%}
+![Image of a vector](./images/maths/vector.svg){width=30%}
 
 The pain of learning about vectors is paid off by their capacity of being added and subtracted among themselves, as well as being multiplied by a number (called a "scalar") and between themselves.
 
@@ -57,7 +57,7 @@ $s = u + v = (2+1, 4+5) = (3,9)$
 
 Graphically it can be represented by placing the tail of the arrow `v` on the head of the arrow `u`, or vice-versa:
 
-![Graphical representation of a sum of vectors](./images/maths/vector_sum.pdf){width=30%}
+![Graphical representation of a sum of vectors](./images/maths/vector_sum.svg){width=30%}
 
 ### Scaling Vectors {#scalingvectors}
 
@@ -67,7 +67,7 @@ $v = (2,4)$
 
 $3 \cdot v = (2 \cdot 3, 4 \cdot 3) = (6,12)$
 
-![Example of a vector multiplied by a value of 3](./images/maths/vector_mul_3.pdf){width=30%}
+![Example of a vector multiplied by a value of 3](./images/maths/vector_mul_3.svg){width=30%}
 
 Obviously this works with scalars with values between $0$ and $1$:
 
@@ -75,7 +75,7 @@ $v = (2,4)$
 
 $\frac{1}{2} \cdot v = (\frac{1}{2} \cdot 2, \frac{1}{2} \cdot 4) = (1,2)$
 
-![Example of a vector multiplied by a value of 0.5](./images/maths/vector_mul_half.pdf){width=30%}
+![Example of a vector multiplied by a value of 0.5](./images/maths/vector_mul_half.svg){width=30%}
 
 When you multiply the vector by a value less than $0$, the vector will rotate by $180\degree$.
 
@@ -83,7 +83,7 @@ $v = (2,4)$
 
 $-2 \cdot v = (-2 \cdot 2, -2 \cdot 4) = (-4, -8)$
 
-![Example of a vector multiplied by a value of -2](./images/maths/vector_mul_minus2.pdf){width=30%}
+![Example of a vector multiplied by a value of -2](./images/maths/vector_mul_minus2.svg){width=30%}
 
 ### Dot Product
 
@@ -530,11 +530,11 @@ When it comes to 2D graphics on computers, our world gets quite literally turned
 
 In our math courses we learned about the Coordinate Plane, with an origin and an `x` axis going from left to right and a `y` axis going from bottom to top, where said axis cross it's called the "Origin".
 
-![Image of a coordinate plane](images/maths/coord.pdf){width=30%}
+![Image of a coordinate plane](images/maths/coord.svg){width=30%}
 
 When it comes to 2D graphics on computers and game development, the coordinate plane looks like this:
 
-![Image of a screen coordinate plane](images/maths/screen_coord.pdf){width=30%}
+![Image of a screen coordinate plane](images/maths/screen_coord.svg){width=30%}
 
 The origin is placed on the top left of the screen (at coordinates `(0,0)`) and the `y` axis is going from top to bottom. It's a little weird at the beginning, but it's not hard to get used to it.
 

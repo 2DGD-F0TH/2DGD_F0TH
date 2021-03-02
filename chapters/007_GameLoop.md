@@ -16,7 +16,7 @@ Any game and its menus can be abstracted into 3 main operations that are perform
 2) Update the world (or menu) status
 3) Display (Draw) the updated world (or again, menu) to the screen
 
-![UML Diagram of the input-update-draw abstraction](./images/gameloop/gameloop.pdf){width=50%}
+![UML Diagram of the input-update-draw abstraction](./images/gameloop/gameloop.svg){width=50%}
 
 So a pseudocode implementation of such loop would be something like the following:
 
