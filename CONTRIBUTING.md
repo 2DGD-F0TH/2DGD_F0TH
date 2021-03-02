@@ -41,7 +41,7 @@ No worries, you can still add your own. Check the [FAQ Document](FAQ_GUIDES.md).
 
 The pictures used should be simple to understand and not covered by copyright (screenshots of real games should be avoided if possible, as copyright and the "fair use" doctrine are quite complicated), where possible images should be saved in the following formats:
 
-- **Diagrams:** Vector PDF format - Some people may find useful to zoom into an image to better understand it and they usually have a low size;
+- **Diagrams:** Vector SVG format - Some people may find useful to zoom into an image to better understand it and they usually have a low size;
 - **Picture Examples:** PNG Format, they have a good quality/compression tradeoff.
 
 The most important pictures *should* have a caption to describe them, but not necessarily, that's up to you.

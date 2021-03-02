@@ -73,6 +73,7 @@ To build the book you need the following software:
 - TexLive or equivalent
 - GNU Make or equivalent
 - GladTex (v3 or superior) - For EPub Output
+- Librsvg (For `rsvg-convert`) - For PDF Output
 
 Before building the book, you might want to decide your favourite programming language, and use the corresponding command:
 
