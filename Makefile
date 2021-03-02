@@ -3,7 +3,7 @@ PANDOC_STANDALONE=pandoc -s
 CHAPTERS_CMD=`find chapters/*.md | sort -V` metadata.yaml
 PANDOC_DEFAULT_ARGS=--lua-filter ./filters/filter_helper.lua --listings -N --pdf-engine=xelatex
 PDF_TEMPLATE=--template template/template.tex
-EPUB_TEMPLATE=--css template/epub.css --highlight-style pygments
+EPUB_TEMPLATE=--css template/epub.css --highlight-style pygments --template template/template.xhtml
 VERSION=-M version=`git describe --tags`
 GLADTEX_PKG=gladtex -d "gladtex_imgs" -P -p "\usepackage{cancel}\usepackage{gensymb}" -
 
@@ -25,7 +25,7 @@ latex:
 	$(PANDOC_STANDALONE) $(PANDOC_DEFAULT_ARGS) $(CHAPTERS_CMD) $(VERSION) $(PDF_TEMPLATE) -M proglang="" -o Book_LaTeX.latex
 
 epub:
-	$(PANDOC) $(PANDOC_DEFAULT_ARGS) $(CHAPTERS_CMD) $(VERSION) -M proglang="python" -t json | $(GLADTEX_PKG) | $(PANDOC_STANDALONE) -f json $(EPUB_TEMPLATE) -o Book_Epub.epub
+	$(PANDOC) $(PANDOC_DEFAULT_ARGS) template/front_matter.md $(CHAPTERS_CMD) $(VERSION) -M proglang="python" -t json | $(GLADTEX_PKG) | $(PANDOC_STANDALONE) -f json $(EPUB_TEMPLATE) -o Book_Epub.epub
 
 .PHONY: clean
 clean:

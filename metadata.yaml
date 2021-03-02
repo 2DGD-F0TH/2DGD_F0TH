@@ -53,4 +53,5 @@ citecolor: "green"
 # Font Family
 fontfamily: "dejavu"
 mainfont: "DejaVuSans"
+cover-image: "images/page_background.svg"
 ---
