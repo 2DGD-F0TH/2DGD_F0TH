@@ -29,16 +29,16 @@ If you want to view a copy of the license, visit <a href="http://creativecommons
 </g>
 </svg>
 
-<p>
+<div>
     The PDF releases of this book can be found at the following addresses:
     <ul>
         <li><a href="https://therealpenaz91.itch.io/2dgd-f0th">https://therealpenaz91.itch.io/2dgd-f0th</a> (Official Itch.io Page)</li>
         <li><a href="https://gitlab.com/Penaz/2dgd_f0th">https://gitlab.com/Penaz/2dgd_f0th</a> (Official GitLab Repository)/</li>
         <li><a href="https://github.com/Penaz91/2DGD_F0TH/">https://github.com/Penaz91/2DGD_F0TH/</a> (Official GitHub Mirror Repository)</li>
     </ul>
-</p>
+</div>
 
-<p>
+<div>
     This book's source code can be found in the following official repositories:
 
     <ul>
@@ -49,7 +49,7 @@ If you want to view a copy of the license, visit <a href="http://creativecommons
             <a href="https://github.com/Penaz91/2DGD_F0TH/">https://github.com/Penaz91/2DGD_F0TH/</a>
         </li>
     </ul>
-</p>
+</div>
 
 <p>This work shall be attributed to Daniele Penazzo and the "2D Game Development: From Zero To Hero" community, to see a full list of the contributors, please check the CONTRIBUTORS file in the repository, or head to the contributors section in this book.</p>
 </div>
