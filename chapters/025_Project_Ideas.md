@@ -256,19 +256,19 @@ Further Skills Required:
 
 <!--
 Simple Platformer
------------------
+=================
 
 {{placeholder}}
 TODO: A 2D platformer without scrolling (maybe scrolling can be advanced)
 
 Random Dot Gobbler
-------------------
+==================
 
 {{placeholder}}
 TODO: A procedurally generated pacman-style game, with generated mazes, ghost AI can be advanced or master
 
 Random Dungeon Crawler
-----------------------
+======================
 
 {{placeholder}}
 TODO: Procedurally generated dungeon crawler, with treasure, exit with a key
