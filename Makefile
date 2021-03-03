@@ -5,7 +5,7 @@ PANDOC_DEFAULT_ARGS=--lua-filter ./filters/filter_helper.lua --listings -N --pdf
 PDF_TEMPLATE=--template template/template.tex
 EPUB_TEMPLATE=--css template/epub.css --highlight-style pygments --template template/template.xhtml
 VERSION=-M version=`git describe --tags`
-GLADTEX_PKG=gladtex -d "gladtex_imgs" -P -p "\usepackage{cancel}\usepackage{gensymb}" -
+GLADTEX_PKG=gladtex -d "gladtex_imgs" --png -P -p "\usepackage{cancel}\usepackage{gensymb}" -
 
 all: pseudocode pseudocode_color python cpp
 
