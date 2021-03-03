@@ -25,7 +25,7 @@ latex:
 	$(PANDOC_STANDALONE) $(PANDOC_DEFAULT_ARGS) $(CHAPTERS_CMD) $(VERSION) $(PDF_TEMPLATE) -M proglang="" -o Book_LaTeX.latex
 
 epub:
-	$(PANDOC) $(PANDOC_DEFAULT_ARGS) template/front_matter.md $(CHAPTERS_CMD) $(VERSION) -M proglang="python" -t json | $(GLADTEX_PKG) | $(PANDOC_STANDALONE) -f json $(EPUB_TEMPLATE) -o Book_Epub.epub
+	$(PANDOC) $(PANDOC_DEFAULT_ARGS) template/front_matter.md $(CHAPTERS_CMD) $(VERSION) -M proglang="python" -t json | $(GLADTEX_PKG) | $(PANDOC_STANDALONE) -f json $(EPUB_TEMPLATE) -t epub -o Book_Epub.epub
 
 .PHONY: clean
 clean:
