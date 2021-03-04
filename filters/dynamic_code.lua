@@ -5,7 +5,7 @@ function dynamic_codeblock(blk)
     if blk.attributes.src then
         local content = ""
         local language = metavars.find_var("proglang")
-        if language == nil then
+        if language == nil or language == "" then
             language = "pseudocode"
         end
         local fullpath = "dynamic_listings/" .. language .. "/" .. blk.attributes.src .. ".txt"
