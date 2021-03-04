@@ -77,10 +77,11 @@ To build the book you need the following software:
 
 Before building the book, you might want to decide your favourite programming language, and use the corresponding command:
 
-- Non-Highlighted Pseudocode: `make pseudocode`
-- Pseudocode with basic Syntax Highlighting: `make pseudocode_color`
+- Pseudocode with basic Syntax Highlighting: `make pseudocode`
 - Python 3: `make python`
 - C++: `make cpp`
+
+*The old "Pseudocode without syntax highlighting" has been discontinued*
 
 Branches
 --------
