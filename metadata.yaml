@@ -1,7 +1,15 @@
 
 ---
+# Don't render the default titlepage
+titlepage: false
 # Title of the book
 title: "2D Game Development: From Zero To Hero"
+# Author
+author: "Daniele Penazzo"
+# Rights
+rights: "Creative Commons Attribution Non-Commercial 4.0"
+# Language
+language: en-US
 # Keywords for PDF Metadata
 keywords:
     - gamedev
