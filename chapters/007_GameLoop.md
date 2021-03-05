@@ -141,7 +141,7 @@ Screen tearing is a phenomenon that happens when the "generate output" stage of 
 
 This makes it so that a part of the drawn frame shows the result of an output stage, while another part shows a more updated version of the frame, given by a more recent game loop iteration.
 
-![An example of screen tearing](./images/gameloop/screentearing.png)
+![An example of screen tearing](./images/gameloop/screentearing.png){width=50%}
 
 A very used fix for this phenomenon is **double buffering**, where two color buffers are used. While the first is shown on screen, the game loop updates and draws on the second color buffer.
 

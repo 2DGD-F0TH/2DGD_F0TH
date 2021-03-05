@@ -284,7 +284,7 @@ The simplest kind of noise we can generate is also known as "static", for each u
 
 Here is an example of random noise:
 
-![Example of Random Noise](./images/algorithms/random_noise.png)
+![Example of Random Noise](./images/algorithms/random_noise.png){width=50%}
 
 We can create some "TV-like" static with a few lines of code, like the following:
 

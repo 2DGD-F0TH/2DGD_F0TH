@@ -189,19 +189,19 @@ The usage of dithering introduces patterns into the image when the pixels are vi
 
 Using two different levels of blue, we can use a dithering pattern to obtain a new tone of blue, like the following:
 
-![Dithering example](./images/resources/dithering.png)
+![Dithering example](./images/resources/dithering.png){width=50%}
 
 It's possible to study how your palette reacts to dithering using a dithering table, this will give you an idea of the colors available via dithering.
 
 You can see a simple example of a dithering table here:
 
-![Dithering Table Example](./images/resources/dithering_table.png)
+![Dithering Table Example](./images/resources/dithering_table.png){width=50%}
 
 You can see the palette colors on the top row and the left column, then you can see how dithering (in this case a simple checkerboard pattern) allows for different colors to pop out.
 
 There are different dithering patterns, that allow for different type of colors, intensity and patterns:
 
-![Some more dithering examples](./images/resources/dithering_patterns.png)
+![Some more dithering examples](./images/resources/dithering_patterns.png){width=50%}
 
 ### Layering and graphics
 
