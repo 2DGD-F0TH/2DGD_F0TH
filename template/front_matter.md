@@ -1,6 +1,6 @@
 <!-- FRONT MATTER -->
 <div style="page-break-after: always;">
-<p>Copyright © 2019-2020 Daniele Penazzo</p>
+<p>Copyright © 2019-2021 Daniele Penazzo</p>
 
 <p>2D Game Development: From Zero To Hero (python edition, version v0.6.5-17-g1201bc7) is distributed under the terms of the Creative Commons Attribution-NonCommercial International 4.0 license.</p>
 
