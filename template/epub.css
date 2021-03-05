@@ -4,6 +4,11 @@ body {
     text-align: justify;
     font-size: medium;
 }
+blockquote{
+    border-left: 4px solid #555;
+    margin-left: 1em;
+    padding-left: 2em;
+}
 code {
     font-family: monospace;
 }
@@ -110,6 +115,10 @@ td, th{
 
 table caption{
     font-size: 0.75em;
+}
+pre.sourceCode{
+    padding: 0.25em;
+    border: 1px solid black;
 }
 @media screen {
   /* Workaround for iBooks issue; see pandoc issue #6242 */
