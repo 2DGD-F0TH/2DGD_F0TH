@@ -130,7 +130,6 @@
           <path
              d="m 205.4,156.4 c 0,0 -9.8,49 19.6,58.8"
              fill="none"
-             vector-effect="non-scaling-stroke"
              stroke-width="19.6"
              stroke="#37474f"
              stroke-linejoin="round"
@@ -183,7 +182,6 @@
           <path
              d="m 205.4,156.4 c 0,0 -9.8,49 19.6,58.8"
              fill="none"
-             vector-effect="non-scaling-stroke"
              stroke-width="19.6"
              stroke="#37474f"
              stroke-linejoin="round"
@@ -236,7 +234,6 @@
           <path
              d="m 205.4,156.4 c 0,0 -9.8,49 19.6,58.8"
              fill="none"
-             vector-effect="non-scaling-stroke"
              stroke-width="19.6"
              stroke="#37474f"
              stroke-linejoin="round"
