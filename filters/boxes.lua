@@ -18,6 +18,15 @@ function boxes(elem)
         end
         return elem.content
     else
+        if elem.classes[1] == 'trivia' then
+            table.insert(elem.content, 1, pandoc.RawBlock('html', '<div class="box-title">Trivia Time!</div>'))
+        end
+        if elem.classes[1] == 'tip' then
+            table.insert(elem.content, 1, pandoc.RawBlock('html', '<div class="box-title">Tip!</div>'))
+        end
+        if elem.classes[1] == 'pitfall' then
+            table.insert(elem.content, 1, pandoc.RawBlock('html', '<div class="box-title">Pitfall Warning!</div>'))
+        end
         return elem
     end
 end

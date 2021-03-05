@@ -57,19 +57,37 @@ div.hanging-indent{
 }
 div.pitfall,div.tip,div.trivia{
     padding: 0.5em;
-    margin: 1em;
+    margin: 1em 0;
 }
 div.pitfall{
     background-color: #FFF2F2;
     border: 2px solid #BF0000;
 }
+div.pitfall div.box-title{
+    background-color: #FFF2F2;
+    border: 2px solid #BF0000;
+    font-weight: bold;
+}
 div.tip{
     background-color: #F2F2FF;
     border: 2px solid #3F3FFF;
 }
+div.tip div.box-title{
+    background-color: #F2F2FF;
+    border: 2px solid #3F3FFF;
+    font-weight: bold;
+}
 div.trivia{
     background-color: #F2FFF2;
     border: 2px solid #00DF00;
+}
+div.trivia div.box-title{
+    background-color: #F2FFF2;
+    border: 2px solid #00DF00;
+    font-weight: bold;
+}
+div.box-title{
+    padding: 0.25em;
 }
 figure{
     display: block;
