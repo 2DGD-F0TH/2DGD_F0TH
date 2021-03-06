@@ -26,5 +26,5 @@ epub:
 
 .PHONY: clean
 clean:
-	rm -f *.pdf *.aux *.toc *.lol *.lot *.log *.out *.latex outsourced_descriptions.html gladtex_imgs/* *.epub
+	rm -f *.pdf *.aux *.toc *.lol *.lot *.log *.out *.latex outsourced_descriptions.html gladtex_imgs/* *.epub *.mobi
 	echo "Pulizia Completa"
