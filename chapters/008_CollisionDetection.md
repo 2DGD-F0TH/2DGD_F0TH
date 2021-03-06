@@ -631,8 +631,6 @@ Attached to our gun, is an invisible line (our ray), that will follow every move
 
 When we want to shoot the gun, instead of using the previously stated "time-stepping techniques", we perform a line-to-rectangle (or line-to-circle, or whatever we find best) collision detection, at the same time we play a really fast animation of the bullet shooting along the casted ray. If the cast ray hits an enemy, they'll die (or get destroyed).
 
-<!-- TODO: Maybe include this in a very decorative "tip box"? For now I'll use a block surrounded by 2 fences-->
-
 :::: tip ::::
 If you find that the bullet animation won't align well with the enemy dying, the animation may not be fast enough. Some games even give up showing the bullet at all, and instead show a white line for a split second, that fades away. The effect works really well!
 ::::
