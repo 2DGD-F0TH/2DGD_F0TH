@@ -1,6 +1,4 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
-
 <svg
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
@@ -15,7 +13,7 @@
    viewBox="0 0 210 297"
    version="1.1"
    id="svg8"
-   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"
+   inkscape:version="1.0.2 (e86c870879, 2021-01-15)"
    sodipodi:docname="cover.svg">
   <defs
      id="defs2" />
@@ -28,7 +26,7 @@
      inkscape:pageshadow="2"
      inkscape:zoom="0.9899495"
      inkscape:cx="665.33106"
-     inkscape:cy="429.20395"
+     inkscape:cy="510.01615"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -36,7 +34,8 @@
      inkscape:window-height="1019"
      inkscape:window-x="1920"
      inkscape:window-y="0"
-     inkscape:window-maximized="1" />
+     inkscape:window-maximized="1"
+     inkscape:document-rotation="0" />
   <metadata
      id="metadata5">
     <rdf:RDF>
@@ -54,7 +53,7 @@
      inkscape:groupmode="layer"
      id="layer1">
     <path
-       style="fill:#550000;stroke:#550000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="fill:#550000;stroke:#550000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="M 210,157 0,205 v 92 h 210 z"
        id="path815"
        inkscape:connector-curvature="0"
@@ -72,7 +71,7 @@
        width="162.56001" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:14.38683224px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.89917701"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:14.3868px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.899177"
        x="9.3324833"
        y="223.99887"
        id="text828"><tspan
@@ -80,15 +79,15 @@
          id="tspan826"
          x="9.3324833"
          y="223.99887"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#ffffff;stroke-width:0.89917701">2D Game Development:</tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans Bold';fill:#ffffff;stroke-width:0.899177">2D Game Development:</tspan><tspan
          sodipodi:role="line"
          x="9.3324833"
-         y="241.98241"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#ffffff;stroke-width:0.89917701"
+         y="241.98238"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans Bold';fill:#ffffff;stroke-width:0.899177"
          id="tspan830">From Zero to Hero</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.16986847px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.44811678"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.16987px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.448117"
        x="10.435495"
        y="261.81332"
        id="text834"><tspan
@@ -96,15 +95,15 @@
          id="tspan832"
          x="10.435495"
          y="261.81332"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#ffffff;stroke-width:0.44811678">A compendium of the community</tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans Bold';fill:#ffffff;stroke-width:0.448117">A compendium of the community</tspan><tspan
          sodipodi:role="line"
          x="10.435495"
          y="270.77567"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#ffffff;stroke-width:0.44811678"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans Bold';fill:#ffffff;stroke-width:0.448117"
          id="tspan836">knowledge on game design and development</tspan></text>
     <path
-       style="fill:#ffcc00;stroke:#ffcc00;stroke-width:0.32287526px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 81.541455,186.24843 128.508175,0 -0.0738,-29.19689 z"
+       style="fill:#ffcc00;stroke:#ffcc00;stroke-width:0.322875px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 81.541455,186.24843 H 210.04963 l -0.0738,-29.19689 z"
        id="path825"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cccc" />
