@@ -307,6 +307,8 @@ Having "evident" enemy bullets makes the situation easier to assess, even when t
 
 To highlight bullets, you can use "complementary colors", as shown in the [use contrast to your advantage](#contrast_to_your_advantage) section.
 
+<!-- TODO: Add that bullets should be the last thing to be drawn (just before the player), so that they are drawn over explosions etc... the bullet visibility is that vital -->
+
 ### The Ship Hitbox
 
 In the bullet hell genre usually the player ship's (or character of some kind) hitbox is usually much smaller than the visible sprite, this makes the game a little bit "easier than it seems", but at the same time it doesn't mean that the game is easy either.
@@ -326,6 +328,12 @@ In some games bombs may be also used to destroy small enemies and damage bigger 
 Some bullet hell games feature multi-phase bosses, where the boss changes attack strategy, and thus their bullet pattern and speed, at certain points of the fight (usually when reaching a certain amount of health left). This may create some issues to the player, since the new bullets may cover all "escape routes" willingly left by the previous bullets, thus making it impossible to not die.
 
 A simple and effective strategy is clearing the screen of the enemy bullets automatically when the boss changes phase (sometimes transforming the bullets into collectibles for score), this will allow for a quick breather to the player, as well as a somewhat smooth transition to the new phase.
+
+### The Enemy AI
+
+{{placeholder}}
+
+<!-- TODO: Talk about how (like in Zenodyne) enemies shouldn't shoot you on their way out or doing a "cheap shot" by shooting at you from behind -->
 
 ### Some examples
 
