@@ -307,7 +307,12 @@ Having "evident" enemy bullets makes the situation easier to assess, even when t
 
 To highlight bullets, you can use "complementary colors", as shown in the [use contrast to your advantage](#contrast_to_your_advantage) section.
 
-<!-- TODO: Add that bullets should be the last thing to be drawn (just before the player), so that they are drawn over explosions etc... the bullet visibility is that vital -->
+::: tip :::
+Bullet visibility is so important that in many games bullets are the last thing to be drawn before the player: this means they're drawn over explosions and other enemies too.
+
+If you let players lose sight of bullets by drawing graphical effects over them, the game will feel unfair.
+:::::::::::
+
 
 ### The Ship Hitbox
 
@@ -316,6 +321,8 @@ In the bullet hell genre usually the player ship's (or character of some kind) h
 ![An example of a Bullet Hell ship hitbox](./images/developing_mechanics/bh_ship_hitbox.png){width=50%}
 
 In this image, the ship's hitbox is limited to the cockpit, some games prefer some area that could be considered the "ship engine" while others just have a "core" of some sort.
+
+Many games of the genre even make the hitbox a single pixel!
 
 ### Screen-clearing bombs
 
@@ -331,9 +338,21 @@ A simple and effective strategy is clearing the screen of the enemy bullets auto
 
 ### The Enemy AI
 
-{{placeholder}}
+Probably the hardest part to develop in a "bullet hell" style game is the enemy AI and how to make the enemy bullets form a pattern that is hard but not impossible to dodge.
 
-<!-- TODO: Talk about how (like in Zenodyne) enemies shouldn't shoot you on their way out or doing a "cheap shot" by shooting at you from behind -->
+Since the gameplay is very hard to balance, this genre seldom sees a "procedural game" (an exception that comes to my mind is "Task force Kampas", which features procedural levels, but handmade bosses).
+
+A way to make the game feel more fair is programming the AI so it doesn't shoot "on the way out" of the screen. Each enemy essentially has 3 phases in its AI:
+
+1. Enter the screen
+2. Fight (usually by shooting a single pattern or a continuous stream of the same pattern)
+3. Exit the screen (or die)
+
+When the enemy exits the screen, it should stop shooting and just orderly leave.
+
+::: tip :::
+If your game features enemy turrets, they should stop shooting when they are behind the player's ship: the player is already busy enough handling shots from the front. Shooting from behind makes the game unfair.
+:::::::::::
 
 ### Some examples
 
