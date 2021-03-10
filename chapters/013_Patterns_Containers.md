@@ -346,7 +346,22 @@ Particle Systems
 Timers
 ------
 
-{{placeholder}}
+Timers are an essential component in many game mechanics: [Coyote Time](#coyote_time) and [Jump Buffering](#jump_buffering) are two prime examples of timer-based mechanics.
+
+If we want to execute a function every few seconds we need timers.
+
+If we need to cap how many bullets we can shoot from a weapon, guess what? Timers.
+
+Making a timer is not as complicated as it may seem, we need:
+
+- A variable that keeps track of the time passed;
+- A variable that keeps track of how much time needs to pass before the function gets executed;
+- A pointer to said function;
+- A boolean to track whether the timer is active or not;
+- A boolean to decide whether the timer should be "one shot" or "continuous".
+
+```{src='patterns_containers/timer' caption='A simple timer class'}
+```
 
 <!-- TODO: A timer class that allows to execute a certain instruction every x seconds, abstracting the concept of frames -->
 

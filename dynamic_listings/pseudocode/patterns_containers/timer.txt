@@ -1,0 +1,42 @@
+class Timer{
+    /*
+     * This is a simple timer class that executes a function after
+     * a certain amount of time
+     */
+    float time;
+    float set_time;
+    function_ptr function_to_execute;
+    bool one_shot;
+    bool active;
+
+    constructor(float time, function_ptr function, bool one_shot = False, bool active=False){
+        // We prepare the timer and memorize the setting
+        this.time = time;
+        this.set_time = set_time;
+        // The function pointer should already be prepared with the arguments
+        this.function_to_execute = function;
+        // Is this timer one-shot then disable?
+        this.one_shot = one_shot;
+        // Does this timer need to be active when constructed?
+        this.active = active;
+    }
+
+    public function update(dt){
+        if (not this.active){
+            // We return directly if the timer is disabled
+            return;
+        }
+        // Like any other entity, we update it
+        this.time = this.time - dt;
+        // When the timer "ticks", we execute the function
+        if (this.time <= 0){
+            this.function_to_execute();
+            if (this.one_shot){
+                // If this time is a one-shot, we disable it
+                this.active = False;
+            }
+            // We reset the timer (we may need to re-activate it manually later)
+            this.time = this.set_time;
+        }
+    }
+}

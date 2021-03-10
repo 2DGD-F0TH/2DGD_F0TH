@@ -158,7 +158,7 @@ In this example we are assuming that the framework used uses the screen coordina
 
 <!-- TODO: How to walk on stairs -->
 
-### Jump Buffering
+### Jump Buffering {#jump_buffering}
 
 A nice trick used mostly in 2D platformers to allow for smoother gameplay is "jump buffering", also known as "input buffering".
 
@@ -176,7 +176,7 @@ Jump buffering usually is put into practice using a timer, in a fashion similar 
 ```{src='developing_mechanics/jump_buffering_buffer' caption='Jump buffering example'}
 ```
 
-### Coyote Time
+### Coyote Time {#coyote_time}
 
 Coyote time (also known as "edge tolerance") is a technique used to allow a player to jump a few frames after they fall off a platform, allowing for a more fluid gameplay.
 
