@@ -363,6 +363,53 @@ Making a timer is not as complicated as it may seem, we need:
 ```{src='patterns_containers/timer' caption='A simple timer class'}
 ```
 
+### Accounting for "leftover time"
+
+This timer is a nice and simple solution, but it has a small flaw: when the timer is set to execute continuously and the function is executed, it doesn't account for "leftover time". This may be easier to understand with an example.
+
+Let's imagine that we have a timer that shoots a bullet every quarter of a second (250ms), our game is running at a steady 30fps (which means each frame takes 33.33ms), our timer's internal counter will behave like this:
+
+- **Frame 1:** 250 - 33.33 = 216.67
+- **Frame 2:** 216.67 - 33.33 = 183.34
+- ...
+- **Frame 7:** 50.20 - 33.33 = 16.87
+- **Frame 8:** 16.87 - 33.33 = -16.46 (Trigger the function and reset the timer)
+- **Frame 9:** 250 - 33.33 = 216.67
+
+Our timer doesn't account for the over 16ms leftover that we had between frame 8 and frame 9, thus our timer will be imprecise. This may seem an easy fix at first glance, but it is not.
+
+#### A naive solution
+
+The first solution that would come to mind would be substituting the timer variable assignment with a sum, thus frames 7,8 and 9 would look like this:
+
+- **Frame 7:** 50.20 - 33.33 = 16.87
+- **Frame 8:** 16.87 - 33.33 = -16.46 (Trigger the function and reset the timer, by adding 250)
+- **Frame 9:** 233.54 - 33.33 = 200.21
+
+Here is the code:
+
+```{src='patterns_containers/timer_naive' caption='A naive approach to account for leftover time'}
+```
+
+But what happens if we have a sudden lag spike, longer than the timer itself?
+
+On **Frame 7** we have 50.20 - 500 = -449.8, due to a Lag spike: last frame took a lot longer to process, we have to execute our function and reset the timer, adding 250.
+
+On **Frame 8** we have -199.8 - 33.33 = -233.13 : The timer is trying to catch up to the lag spike, since the trigger condition is still happening, we execute the function again and add 250 to the timer.
+
+On **Frame 9** we have 16.87 - 33.33 = -16.46 We've almost caught up with the lag spike, but we need to execute the function a third time and add 250 to our timer.
+
+**Frame 10** behaves normally with 233.54 - 33.33 = 200.21.
+
+Due to the lag spike the function gets executed three times, which is technically correct to "catch up" with the number of times the timer *should have* triggered. But this may be an undesirable side effect.
+
+If our game is slowing down, executing more functions won't help, so a better approach would definitely be avoiding calling functions more than we strictly need.
+
+#### A different approach
+
+<!-- TODO: mul = ceil(leftover_time / - this.set_timer); this.time = time.time + mul * this.set_timer -->
+{{placeholder}}
+
 <!-- TODO: A timer class that allows to execute a certain instruction every x seconds, abstracting the concept of frames -->
 
 Inbetweening

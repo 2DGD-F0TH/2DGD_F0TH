@@ -1,0 +1,26 @@
+class Timer{
+    /*
+     * ...
+     * This is the same as the older version
+     * ...
+     */
+
+    public function update(dt){
+        if (not this.active){
+            // We return directly if the timer is disabled
+            return;
+        }
+        // Like any other entity, we update it
+        this.time = this.time - dt;
+        // When the timer "ticks", we execute the function
+        if (this.time <= 0){
+            this.function_to_execute();
+            if (this.one_shot){
+                // If this time is a one-shot, we disable it
+                this.active = False;
+            }
+            // We reset the timer differently, by adding the "set time"
+            this.time = time.time + this.set_time;
+        }
+    }
+}
