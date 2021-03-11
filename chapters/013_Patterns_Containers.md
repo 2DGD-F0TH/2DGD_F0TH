@@ -401,13 +401,27 @@ On **Frame 9** we have 16.87 - 33.33 = -16.46 We've almost caught up with the la
 
 **Frame 10** behaves normally with 233.54 - 33.33 = 200.21.
 
-Due to the lag spike the function gets executed three times, which is technically correct to "catch up" with the number of times the timer *should have* triggered. But this may be an undesirable side effect.
+Due to the lag spike the function gets executed three times, which is the technically correct way to "catch up" with the number of times the timer *should have* triggered. But this may be an undesirable side effect.
 
-If our game is slowing down, executing more functions won't help, so a better approach would definitely be avoiding calling functions more than we strictly need.
+If our game is already slowing down, executing even more functions won't help, so a better approach would definitely be avoiding calling functions more than we strictly need.
 
 #### A different approach
 
-<!-- TODO: mul = ceil(leftover_time / - this.set_timer); this.time = time.time + mul * this.set_timer -->
+To avoid this "catching up", there are many ways, I'm going to write two of them in this book. The first is quite simple: we add the set timer in a loop until we reach a value higher than zero.
+
+```{src='patterns_containers/timer_leftover_1' caption='A possible solution to account for leftover time'}
+```
+
+This approach has a very minor issue: we are using a loop, so the further we stray away from zero, the more times we will have to add. A second approach would be calculating a "multiplier" and directly apply that to the added value, thus avoiding a loop.
+
+```{src='patterns_containers/timer_leftover_2' caption='Another possible solution to account for leftover time'}
+```
+
+This second approach has an issue too: we will need to calculate the ceiling of a value, which may require a bit more CPU time (although most modern CPUs don't require more than a single cycle to do so).
+
+Both approaches are valid and for longer timers even the "naive" approach is valid and fast. The choice is up to your personal taste and sensibility.
+
+<!-- TODO: mul = ceil(leftover_time / - this.set_timer); this.time = time.time + mul * this.set_timer. Alternatively, add and loop until this.time > 0 -->
 {{placeholder}}
 
 <!-- TODO: A timer class that allows to execute a certain instruction every x seconds, abstracting the concept of frames -->

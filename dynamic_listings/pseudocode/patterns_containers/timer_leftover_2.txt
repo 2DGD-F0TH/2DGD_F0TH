@@ -19,8 +19,11 @@ class Timer{
                 // If this time is a one-shot, we disable it
                 this.active = False;
             }
-            // We reset the timer differently, by adding the "set time"
-            this.time = this.time + this.set_time;
+            // We reset the timer differently, by adding the "set time" with a multiplier
+            // this.time is guaranteed to be negative or zero, by dividing by a negative number
+            // we have a positive multiplier
+            int multiplier = ceil(this.time / -this.set_time);
+            this.time = this.time + (multiplier * this.set_time);
         }
     }
 }

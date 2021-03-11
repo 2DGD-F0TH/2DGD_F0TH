@@ -19,8 +19,10 @@ class Timer{
                 // If this time is a one-shot, we disable it
                 this.active = False;
             }
-            // We reset the timer differently, by adding the "set time"
-            this.time = this.time + this.set_time;
+            // We reset the timer differently, by adding the "set time" until we have a positive value
+            while (this.time <= 0){
+                this.time = this.time + this.set_time;
+            }
         }
     }
 }
