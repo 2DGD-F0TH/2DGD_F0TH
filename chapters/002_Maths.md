@@ -30,7 +30,7 @@ The modulo operator is very useful when we need to loop an ever-growing value be
 Be careful when using the modulo operator with negative arguments: it may lead to unexpected results, which may depend on the programming language you are using.
 ::::
 
-Vectors
+Vectors {#vectors}
 --------
 
 For our objective, we will simplify the complex matter that is vectors as much as possible.
@@ -118,6 +118,34 @@ We can get a 1-unit long vector by "normalizing" it, getting a vector that is us
 $$ \hat{a} = \frac{a}{||a||} $$
 
 Knowing that the length of a vector is a scalar (a number, not a vector), normal scalar multiplication rules apply. (See [Scaling Vectors](#scalingvectors))
+
+Geometry
+--------
+
+Among all the math we found so far (and the math we will explain later), we cannot avoid talking a bit about geometry: in this book we will talk about the minimal amount of geometry necessary to understand the underlying concepts of what's coming up.
+
+### Convex vs Concave polygons {#conc_conv}
+
+A polygon is considered convex essentially when **any line** (not tangent to an edge or corner) drawn through the shape crosses the shape itself only twice (at its ends).
+
+![Example of a convex shape](./images/maths/convex_shape.svg){width=35%}
+
+Any shape where you can find at least one line that crosses the shape more than twice is considered "non-convex" (commonly referred as "concave").
+
+![Example of a concave shape](./images/maths/concave_shape.svg){width=35%}
+
+::: pitfall :::
+Not all non-convex shapes are technically called "concave" (they should be called "non-convex"), but for the sake of simplicity we'll use the term "non-convex" and "concave" interchangeably in this book.
+:::::::::::::::
+
+{{placeholder}}
+
+<!-- TODO -->
+
+### Projections {#projections}
+
+{{placeholder}}
+<!-- TODO -->
 
 Matrices
 ---------

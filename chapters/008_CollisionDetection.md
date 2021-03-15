@@ -616,14 +616,37 @@ Sometimes the "spazziness" of the character derives from the fact that collision
 Separating Axis Theorem
 -----------------------
 
-{{placeholder}}
-<!-- TODO: Theorem that states that "two CONVEX polygons are not colliding as long as there is an 'axis' (a line) that passes between the polygons", very powerful, very fast but also tends to perform worse the more collisions are happening -->
+There is a more generic theorem that allows us to determine if two convex polygons are colliding: The *Separating Axis Theroem* or SAT. This theorem states:
 
-### Convex vs Concave polygons
+> If two convex objects are not penetrating, there exists an axis for which the projection of the objects will not overlap.
 
-{{placeholder}}
+This is connected to a simpler "human" explanation, which is:
 
-<!-- TODO -->
+> If two convex polygons are not colliding, then you can draw a straight line between them.
+
+![Example of how you can draw a line between two convex non-colliding polygons](./images/collision_detection/SAT1.svg){width=35%}
+
+Before delving further into the matter, let's see what we need to know:
+
+- [The difference between a Convex and a Concave Polygon](#conc_conv)
+- [What a Projection is](#projections)
+- [Some Vector Maths](#vectors)
+
+### Why only convex polygons?
+
+To explain this, we'll use the "human explanation": if one of the shapes is concave, there is a possibility that the polygons are not colliding, but we cannot draw a straight line between them.
+
+![Why the SAT doesn't work with concave polygons](./images/collision_detection/SAT2.svg){width=35%}
+
+Thus our algorithm would return a collision where there is none.
+
+::: tip :::
+
+This problem can be solved by "decomposing" the concave polygons in two or more convex polygons, but for the sake of semplicity we'll assume all polygons we are checking for collisions are convex.
+
+:::::::::::
+
+Now let's check the more "technical explanation".
 
 ### How it works
 
