@@ -158,6 +158,12 @@ In this example we are assuming that the framework used uses the screen coordina
 
 <!-- TODO: How to walk on stairs -->
 
+### Simulating Intertia
+
+{{placeholder}}
+
+<!-- TODO: How to simulate starting and finishing a run from and to a standstill, without being too jarring -->
+
 ### Jump Buffering {#jump_buffering}
 
 A nice trick used mostly in 2D platformers to allow for smoother gameplay is "jump buffering", also known as "input buffering".
@@ -308,7 +314,7 @@ Having "evident" enemy bullets makes the situation easier to assess, even when t
 To highlight bullets, you can use "complementary colors", as shown in the [use contrast to your advantage](#contrast_to_your_advantage) section.
 
 ::: tip :::
-Bullet visibility is so important that in many games bullets are the last thing to be drawn before the player: this means they're drawn over explosions and other enemies too.
+Bullet visibility is so important that in many games bullets are the last thing to be drawn before the player: this means they're drawn over explosions, other enemies and your own bullets too.
 
 If you let players lose sight of bullets by drawing graphical effects over them, the game will feel unfair.
 :::::::::::

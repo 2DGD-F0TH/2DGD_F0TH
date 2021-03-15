@@ -141,6 +141,12 @@ As with all things in videogames, it doesn't need to bring real challenge, but j
 
 Furthermore, lives and continues are a great tool to reward your player for their efforts: giving them an extra life every 20.000 points, granting a continue for a no-hit boss battle, putting a bunch of 1-ups in a hard-to-reach place are all great ways to challenge and reward your player and give your game more depth.
 
+#### 1-UPs
+
+{{placeholder}}
+
+<!-- Getting a 1-up is an important event, and it should be "celebrated" accordingly, usually with a jingle -->
+
 <!-- TODO: Talk about other level design tips -->
 
 Loading Screens

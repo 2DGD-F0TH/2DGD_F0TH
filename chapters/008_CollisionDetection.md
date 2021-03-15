@@ -7,6 +7,8 @@ Collision Detection and Reaction
 
 When it comes to collision management, there are two main phases:
 
+<!-- TODO: Revise this part adding "broad" and "narrow" phases in the "detection" phase -->
+
 - **Collision Detection:** you find out which game objects collided with each other;
 - **Collision Reaction:** you handle the physics behind the collision detected, making the game objects react to such collision.
 
@@ -16,6 +18,7 @@ In this section we'll talk about some ways you can detect and react to collision
 
 Collision Detection: Did it really collide?
 --------------------------------------------
+<!-- TODO: Check and see if this can be renamed "narrow" phase collision detection phase -->
 
 First of all, we need to see how we can make sure that two objects really collide with each other.
 
@@ -373,6 +376,7 @@ A logic "AND" operation is performed, pixel-by-pixel, on the bitmasks; with the 
 This algorithm has a time complexity of $O(n \cdot m)$ where $n$ is the total number of pixels of the first bitmask, while $m$ is the total number of pixels in the second bitmask.
 
 ### Multi-pass collision detection
+<!-- TODO: Check and see if this can be moved up before narrow and broad phase to explain why we do this optimization -->
 
 It's possible to have a more precise collision detection at a lower cost by combining different collision detection algorithms.
 
@@ -388,6 +392,7 @@ When the simpler algorithm detects the possibility of a collision, a more precis
 
 Finding out who hit what
 ------------------------
+<!-- TODO: Check and see if this can be renamed "broad" phase collision detection phase -->
 
 Now we need to find which game objects collided, and this can be easily one of the most expensive parts of our game, if not handled correctly.
 
@@ -607,6 +612,24 @@ Such solutions should therefore be enabled (or implemented) only for fast-moving
 Sometimes it can happen that the position is reset incorrectly due to machine precision or wrong rounding, this can lead to the character that looks spazzy or just going through the floor at random times. The solution to these issues is making sure that the position and state are set correctly so that there are no useless state changes between frames.
 
 Sometimes the "spazziness" of the character derives from the fact that collision reaction sets the character one pixel over the floor, triggering the "falling" state, the next frame the state would be changed to "idle" and then in the frame "n+2" the cycle would restart with collision reaction putting the character one pixel over the floor.
+
+Separating Axis Theorem
+-----------------------
+
+{{placeholder}}
+<!-- TODO: Theorem that states that "two CONVEX polygons are not colliding as long as there is an 'axis' (a line) that passes between the polygons", very powerful, very fast but also tends to perform worse the more collisions are happening -->
+
+### Convex vs Concave polygons
+
+{{placeholder}}
+
+<!-- TODO -->
+
+### How it works
+
+{{placeholder}}
+
+<!-- TODO -->
 
 Ray Casting
 -----------
