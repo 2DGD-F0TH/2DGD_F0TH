@@ -650,9 +650,63 @@ Now let's check the more "technical explanation".
 
 ### How it works
 
+Let's read the definition of the separating axis theorem again and break it down:
+
+> If two convex objects are not penetrating, there exists an axis for which the projection of the objects will not overlap.
+
+
+The first part defines the condition: in case two objects are not colliding, then what follows is true.
+
+For what we were concerned so far, axes were "aligned to the screen boundaries", but axes can actually have different orientations and we can project shapes onto them.
+
+The condition in our definition is represented as follows:
+
+![How the SAT algorithm works](./images/collision_detection/SAT3.svg){width=50%}
+
+As we can see, we have found an axis (which in this case is slanted) where the projection of the two shapes don't overlap. The presence of this axis where the projections don't overlap is guaranteed by the fact that the two polygons don't collide.
+
+::: trivia :::
+We can now easily see why the "human explanation" is (for our own purposes) equivalent to the "technical" one: we just need to take a single point inside the "gap" between the two projections and strike a line perpendicular to our axis.
+
+That's our "separating axis".
+::::::::::::::
+
+#### Finding the axes
+
+Now we only have a problem: we definitely can't spend an infinite amount of time trying all possible combinations in the hope of finding an axis where the projections don't overlap.
+
+The fact is: we don't need to try them all. Actually we need to try just a few, as many as the sides of the polygons involved.
+
+The axes we need to check are actually the axes parallel to the "normal of the polygon's edges". In layman's terms: the axes we need to check are parallel to lines which are perpendicular to the edges of our polygons.
+
+Let's take it step by step, first we find the "normals", which are just unit vectors perpendicular to the edges of our polygons.
+
+![Finding the axes for the SAT (1/2)](./images/collision_detection/SAT_Axes_1.svg){width=50%}
+
+Now we just have to strike axes parallel to those normals, and those are the axes we will need to check against.
+
+![Finding the axes for the SAT (2/2)](./images/collision_detection/SAT_Axes_2.svg){width=50%}
+
+In the previous pictures, I chose axes around the two polygons, for the sake of clarity.
+
+::: pitfall :::
+Do not think that the axes we found are 5: there actually are 10. This is due to the fact that the figures I chose (for the sake of cleanliness) are a rectangle and an hexagon, which have edges that are parallel in groups of two.
+:::::::::::::::
+
+#### Projecting the shapes into the axes
+
+{{placeholder}}
+<!-- TODO -->
+
+#### Exiting the algorithm
+
 {{placeholder}}
 
-<!-- TODO -->
+<!-- TODO: The algorithm exits either when a separating axis is found (aka a gap in the projections) or when all axes are checked -->
+
+::: trivia :::
+If you use Axis-Aligned rectangles as your "polygons", you will notice how the Separating Axis Theorem will degenerate into the AABB collision detection.
+::::::::::::::
 
 Ray Casting
 -----------
