@@ -324,6 +324,11 @@ You can always "flatten the image" (merge all the layers into one) later.
 {{placeholder}}
 <!-- TODO: Style of animation where the "outlines" don't move, but the color change in the internal pixels can give illusion of sub-pixel movement -->
 
+### Normal Mapping
+
+{{placeholder}}
+<!-- TODO: Normal Maps allow to fake "3d light" in a 2d envinronment -->
+
 ### Tips and Tricks
 
 This section contains various tips and tricks used by artists to create certain effects inside video games, demonstrating how sometimes something really simple can have a great effect on the game experience.
