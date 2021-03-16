@@ -342,6 +342,12 @@ Some bullet hell games feature multi-phase bosses, where the boss changes attack
 
 A simple and effective strategy is clearing the screen of the enemy bullets automatically when the boss changes phase (sometimes transforming the bullets into collectibles for score), this will allow for a quick breather to the player, as well as a somewhat smooth transition to the new phase.
 
+### Turn enemy bullets into collectibles at the end of a boss fight
+
+{{placeholder}}
+
+<!-- This rewards the player with more points the higher amount of bullets are on the screen (aka the harder the fight was) -->
+
 ### The Enemy AI
 
 Probably the hardest part to develop in a "bullet hell" style game is the enemy AI and how to make the enemy bullets form a pattern that is hard but not impossible to dodge.
