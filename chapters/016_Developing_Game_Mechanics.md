@@ -344,15 +344,40 @@ A simple and effective strategy is clearing the screen of the enemy bullets auto
 
 ### Turn enemy bullets into collectibles at the end of a boss fight
 
-{{placeholder}}
+An interesting form of bonus that is often present in bullet hell games is turning all the boss's bullets on screen into collectibles at the end of a boss fight.
 
-<!-- TODO: This rewards the player with more points the higher amount of bullets are on the screen (aka the harder the fight was) -->
+Since this genre of game gets progressively harder the more bullets are on screen, this small trick rewards players for being good at dodging, while players who used screen-clearing bombs will have a smaller bonus.
 
 ### The "Chain Meter"
 
-{{placeholder}}
+This is a mechanic used in many bullet hell games: the chain meter is a meter that gains value according to the number of enemies you kill in a certain amount of time and giving a score multiplier according to it.
 
-<!-- TODO: This is used in many bullet hell games, a meter that goes up the more enemies you kill and slowly goes down when you kill nothing, higher the level, higher the multiplier -->
+This meter will automatically discharge with time, making it hard to keep up a high score multiplier, adding challenge to the player and rewarding them for being good at destroying enemies in large numbers fast.
+
+Usually the meter has 5 levels, starting from level 1, when the meter is full, the meter "gains a level" and a score multiplier is applied accordingly. For instance we can have:
+
+- Level 1: 1x multiplier (normal score)
+- Level 2: 2x multiplier (double score for each killed enemy)
+- ...
+- Level 5: 5x multiplier
+
+::: tip :::
+You can code the "discharge" so it is faster at higher levels. This will bring even more challenge at keeping the level high.
+:::::::::::
+
+When the player dies, the counter gets completely emptied and thus the multiplier gets reset to 1x.
+
+::: tip :::
+Alternatively, you can halve the level of the meter on player's death.
+:::::::::::
+
+### Managing the player's death
+
+It is very common in the "bullet hell" genre to punish the player's death with a strong cut at the ship's power.
+
+This has a problem: a player dying may spiral into a fully-fledged game over because the ship is now extremely underpowered compared to the stage the player died in.
+
+A solution often used in this genre of games is having a dying player's ship have a random chance of releasing a random number of powerups and bomb pickups on death, thus allowing the now-weakened player to "regain some strength" and continue their game.
 
 ### The Enemy AI
 
