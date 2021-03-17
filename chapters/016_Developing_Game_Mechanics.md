@@ -346,7 +346,13 @@ A simple and effective strategy is clearing the screen of the enemy bullets auto
 
 {{placeholder}}
 
-<!-- This rewards the player with more points the higher amount of bullets are on the screen (aka the harder the fight was) -->
+<!-- TODO: This rewards the player with more points the higher amount of bullets are on the screen (aka the harder the fight was) -->
+
+### The "Chain Meter"
+
+{{placeholder}}
+
+<!-- TODO: This is used in many bullet hell games, a meter that goes up the more enemies you kill and slowly goes down when you kill nothing, higher the level, higher the multiplier -->
 
 ### The Enemy AI
 
