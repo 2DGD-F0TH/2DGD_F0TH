@@ -461,6 +461,12 @@ The best way to repair clipping is to re-record the audio completely, although s
 
 Also you should be wary of clipping, because there may be cases where it damages your audio equipment.
 
+### FM Synthesis
+
+{{placeholder}}
+
+<!-- TODO: Talk about what FM synthesis is -->
+
 ### Basic Wave Forms
 
 It is important to know how the main wave forms look and sound in order to understand how to create your own instruments, as well as having a further insight on how older 8-bit games sounded.
@@ -509,6 +515,12 @@ Noise can be used (with the right modulation and processing) to simulate percuss
 
 The NES had one channel completely dedicated to noise waveforms.
 
+### Envelope (ADSR)
+
+{{placeholder}}
+
+<!-- TODO: Talk about ADSR Envelope (Attack/Decay/Sustain/Release) -->
+
 ### Digital Sound Processing (DSP)
 
 Let's think about a simple situation: we want to play a "walk" sound effect: every time our character's foot hits the ground, we play a "step" sound effect.
@@ -550,6 +562,11 @@ To give more depth to your sound effects, you can use pitch shift to create the 
 The Doppler effect can be really useful when applied to car racing games again, when we overtake one of our opponents (or one of our opponents overtakes us) using the doppler effect can help the player feel more "immersed" in the experience.
 
 The doppler effect would actually apply to light too, but we would need to have something travelling at a really high speed or said object to be really far away (like a planet).
+
+### FM Synthesis vs Sample-based music
+
+{{placeholder}}
+<!-- TODO: Explain the difference between FM Synthesis and modern sample-based music -->
 
 ### "Swappable" sound effects
 
