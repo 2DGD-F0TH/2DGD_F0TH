@@ -373,7 +373,7 @@ scale=1,
 color=black,opacity=1,
 angle=0,
 contents = {%
-    \includegraphics[width=\paperwidth, height=\paperheight]{images/page_background.pdf}
+    \includegraphics[width=\paperwidth, height=\paperheight]{images/front_cover.png}
 }%
 }
 \begin{document}
@@ -382,10 +382,9 @@ contents = {%
 \begin{titlepage}
     \BgThispage
     $if(proglang)$
-    \begin{textblock*}{5cm}(14.5cm,16.5cm) % {block width} {coords}
-        \begin{center}
-            \textcolor{black}{\Large\textbf{\textsc{$proglang$ edition}}}
-        \end{center}
+    \def \proglang{$proglang$}
+    \begin{textblock*}{19cm}(0.5cm,0.6cm) % {block width} {coords}
+        \hfill\textcolor{white}{\LARGE\textbf{\textsc{\expandafter\MakeUppercase \proglang\ Edition}}}
     \end{textblock*}
     $endif$
     \null
@@ -523,7 +522,7 @@ $include-after$
 $endfor$
 
 \SetBgContents{
-  \includegraphics[width=\paperwidth, height=\paperheight]{images/back_cover.pdf}
+  \includegraphics[height=\paperheight, width=\paperwidth, keepaspectratio]{images/back_cover.png}
 }
 \pagestyle{empty}
 \begin{titlepage}
