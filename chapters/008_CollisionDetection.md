@@ -693,20 +693,27 @@ In the previous pictures, I chose axes around the two polygons, for the sake of 
 Do not think that the axes we found are 5: there actually are 10. This is due to the fact that the figures I chose (for the sake of cleanliness) are a rectangle and an hexagon, which have edges that are parallel in groups of two.
 :::::::::::::::
 
-#### Projecting the shapes into the axes
+#### Projecting the shapes into the axes and exiting the algorithm
 
-{{placeholder}}
-<!-- TODO -->
+Now, for each axis we found, we need to perform a projection of the two polygons onto such axis.
 
-#### Exiting the algorithm
+![Projecting the polygons onto the axes](./images/collision_detection/SAT_Projection.svg){width=50%}
 
-{{placeholder}}
+Now we consider each axis on its own and see if the projections overlap.
 
-<!-- TODO: The algorithm exits either when a separating axis is found (aka a gap in the projections) or when all axes are checked -->
+As soon as we find an axis where the two projections don't touch (overlap), we know that the two polygons are not colliding. Thus we exit the algorithm.
+
+If all the axes we scan have overlapping projections, we can say that the polygons we're analyzing are colliding.
+
+In the example, we can find two axes that have non-overlapping projections, thus the worst case is that the algorithm misses both of them 3 times in a row and exits at the fourth iteration.
 
 ::: trivia :::
-If you use Axis-Aligned rectangles as your "polygons", you will notice how the Separating Axis Theorem will degenerate into the AABB collision detection.
+If you use Axis-Aligned rectangles as your "polygons", you will notice how the Separating Axis Theorem will degenerate into something very similar to a simple AABB collision detection.
+
+The only difference is that we're checking a condition where the rectangle **don't** collide.
 ::::::::::::::
+
+Due to its nature, this algorithm has higher efficiency when there are few collisions, since it exits as soon as we find a separating axis (a gap in the projections).
 
 Ray Casting
 -----------
