@@ -454,6 +454,9 @@ For a total of 10 tests, which can be further optimized by avoiding testing pair
 <!-- TODO: Easier on the CPU but harder to implement, every frame you build a quad tree
 and use that to check on collisions -->
 
+Other Collision Detection Methods
+---------------------------------
+
 ### Calculating the position of tiles
 
 When you are using tiles to build a level, being able to use quad trees or brute force methods to limit the number of collision checks inside your game may be harder than other methods.
