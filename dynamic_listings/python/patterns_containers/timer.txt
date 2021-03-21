@@ -12,7 +12,7 @@ class Timer:
     def __init__(self, time, function, one_shot=False, active=False):
         # We prepare the timer and memorize the setting
         self.time = time
-        self.set_time = set_time
+        self.set_time = time
         # The function pointer should already be prepared with the arguments
         self.function_to_execute = function
         # Is this timer one-shot then disable?
