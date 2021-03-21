@@ -16,9 +16,21 @@ Collisions don't only happen between game objects (two fighters hitting each oth
 
 In this section we'll talk about some ways you can detect and react to collisions.
 
-Collision Detection: Did it really collide?
---------------------------------------------
-<!-- TODO: Check and see if this can be renamed "narrow" phase collision detection phase -->
+Why Collision Detection is done in multiple passes
+--------------------------------------------------
+
+Collision detection algorithms can be quite costly, even more when you are using a [brute force approach](#brute_force), but it's possible to have a more precise collision detection at a lower cost by combining different collision detection algorithms.
+
+The most common way to apply a multi-pass collision detection is by dividing the process in a "broad" and a "fine" pass.
+
+The broad pass can use a very simple algorithm to check for the possibility of a collision, the algorithms used are usually computationally cheap, such as building quad trees.
+
+When the simpler algorithm detects the possibility of a collision, a more precise algorithm is used to check if a collision really happened, usually such finer algorithms are computationally expensive and will benefit from the first "broad pass" filter, thus avoiding useless heavy calculations.
+
+In this chapter we'll see the easier narrow-pass detection first, followed by the more complex broad-pass algorithms, but remember that a good collision detection system does a "broad-pass" first, before delving into the "narrow-pass".
+
+Narrow-Pass Collision Detection: did it really collide?
+-------------------------------------------------------
 
 First of all, we need to see how we can make sure that two objects really collide with each other.
 
@@ -375,24 +387,8 @@ A logic "AND" operation is performed, pixel-by-pixel, on the bitmasks; with the 
 
 This algorithm has a time complexity of $O(n \cdot m)$ where $n$ is the total number of pixels of the first bitmask, while $m$ is the total number of pixels in the second bitmask.
 
-### Multi-pass collision detection
-<!-- TODO: Check and see if this can be moved up before narrow and broad phase to explain why we do this optimization -->
-
-It's possible to have a more precise collision detection at a lower cost by combining different collision detection algorithms.
-
-The most common way to apply a multi-pass collision detection is by dividing the process in a "broad" and a "fine" pass.
-
-The broad pass can use a very simple algorithm to check for the possibility of a collision, the algorithms used are usually computationally cheap, such as:
-
-- Circle/Circle Collision Detection
-- AABB Collision detection
-
-When the simpler algorithm detects the possibility of a collision, a more precise algorithm is used to check if a collision really happened, usually such finer algorithms are computationally expensive and will benefit from the first "broad pass" filter, thus avoiding useless heavy calculations.
-
-
-Finding out who hit what
-------------------------
-<!-- TODO: Check and see if this can be renamed "broad" phase collision detection phase -->
+Broad-phase collision detection: is a collision even possible?
+--------------------------------------------------------------
 
 Now we need to find which game objects collided, and this can be easily one of the most expensive parts of our game, if not handled correctly.
 
@@ -406,7 +402,7 @@ As an example, we'll take the following situation:
 
 We can evidently see how circles 1 and 2 are colliding, but obviously our game won't just "know" without giving it a way to think about how two objects collide.
 
-### The Brute Force Method
+### The Brute Force Method {#brute_force}
 
 The simplest method is the so-called "brute force" method: you don't know which items may collide? Just try them all.
 
@@ -460,7 +456,7 @@ and use that to check on collisions -->
 
 ### Calculating the position of tiles
 
-When you are using tiles to build a level, it can prove hard to be able to use quad trees or brute force methods to limit the number of collision checks inside your game.
+When you are using tiles to build a level, being able to use quad trees or brute force methods to limit the number of collision checks inside your game may be harder than other methods.
 
 Using a bit of math is probably the easiest and most efficient method to find out which collisions happened.
 
@@ -592,8 +588,10 @@ This method solves the problem given by platforms that can be crossed one-way.
 
 <!-- TODO: Useful for games like pacman, check the direction where you are going using the offset, if the next cell is a wall, react -->
 
-Common Issues with Collision Detection
-----------------------------------------
+Common Issues with time-stepping Collision Detection
+----------------------------------------------------
+
+The methods we saw so far when checking for collisions are called "time-stepping techniques" due to the fact that each loop we "take a snapshot" of the situation and analyze it, this opens the door to a series of issues that may be annoying and we may find in our game development endeavors.
 
 ### The "Bullet Through Paper" problem {#bulletthroughpaper}
 
@@ -616,7 +614,7 @@ Sometimes the "spazziness" of the character derives from the fact that collision
 Separating Axis Theorem
 -----------------------
 
-There is a more generic theorem that allows us to determine if two convex polygons are colliding: The *Separating Axis Theroem* or SAT. This theorem states:
+We have taken an in-depth look at a series of specialized algorithms, but there is a more generic theorem that allows us to determine if two convex polygons are colliding: The *Separating Axis Theroem* or SAT. This theorem states:
 
 > If two convex objects are not penetrating, there exists an axis for which the projection of the objects will not overlap.
 
@@ -641,9 +639,7 @@ To explain this, we'll use the "human explanation": if one of the shapes is conc
 Thus our algorithm would return a collision where there is none.
 
 ::: tip :::
-
 This problem can be solved by "decomposing" the concave polygons in two or more convex polygons, but for the sake of semplicity we'll assume all polygons we are checking for collisions are convex.
-
 :::::::::::
 
 Now let's check the more "technical explanation".
@@ -653,7 +649,6 @@ Now let's check the more "technical explanation".
 Let's read the definition of the separating axis theorem again and break it down:
 
 > If two convex objects are not penetrating, there exists an axis for which the projection of the objects will not overlap.
-
 
 The first part defines the condition: in case two objects are not colliding, then what follows is true.
 
@@ -671,7 +666,7 @@ We can now easily see why the "human explanation" is (for our own purposes) equi
 That's our "separating axis".
 ::::::::::::::
 
-#### Finding the axes
+#### Finding the axes to analyze
 
 Now we only have a problem: we definitely can't spend an infinite amount of time trying all possible combinations in the hope of finding an axis where the projections don't overlap.
 
