@@ -49,25 +49,20 @@ All contributions will be handled with maximum respect and in accordance to our 
 Getting the book
 -----------------
 
-This repository is configured to automatically build a PDF file at each push on the `master` branch, both on GitLab (Via its own integrated CI/CD System) and GitHub (via Travis-CI).
+###Ready-to-read version
 
-### Official Itch.io Page
+**As of March 21st, 2021 the ready-to-read versions of this book will be available only through Itch.io**
 
 [Link to the Itch.io page](https://therealpenaz91.itch.io/2dgd-f0th)
 
-This Ebook now has an official Itch.io page, you can surf there to get the latest release of each edition: the downloads are more stable and not influenced by Travis-CI's tantrums. Just scroll towards the bottom of the page and choose your preferred edition!
+I decided to use only Itch as it's more stable and not influenced by any kind of CI/CD issue or tantrum. I have to make the files and upload them there anyway, so I may as well use that page as my main point of download for the project.
 
-### GitLab
+###Source Code
 
-[Link to the GitLab Repository](https://gitlab.com/Penaz/2dgd_f0th/)
+The source code for this ebook is available through the following official repositories:
 
-You can get a copy of the book by clicking on the "Download" button (usually on the right of the "Find File" button), then click on "build_pdf" under "Previous Artifacts": an "artifacts.zip" will be downloaded, containing the latest version of the book.
-
-### GitHub
-
-[Link to the GitHub Repository](https://github.com/Penaz91/2DGD_F0TH)
-
-You can get a copy of the book by clicking on the "Releases" button (usually between the "branches" and "contributors" buttons) and then select the latest tagged release.
+- [Link to the GitLab Repository](https://gitlab.com/Penaz/2dgd_f0th/)
+- [Link to the GitHub Repository](https://github.com/Penaz91/2DGD_F0TH)
 
 Building the book
 -------------------
