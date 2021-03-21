@@ -3,9 +3,13 @@
 
 Project Status:
 
-|**Build** | ![Travis Pipeline Status](https://img.shields.io/travis/Penaz91/2DGD_F0TH?label=Travis%20Build&style=for-the-badge) | ![Gitlab Pipeline Status](https://img.shields.io/gitlab/pipeline/Penaz/2DGD_F0TH?label=Gitlab%20Build&style=for-the-badge)|
-|:---------:|:--------------------:|:------------------------------:|
-|**Commits** | ![GitHub last commit (master)](https://img.shields.io/github/last-commit/penaz91/2DGD_F0TH/master?label=Last%20Commit%20%28master%29&style=for-the-badge) | ![GitHub last commit (develop)](https://img.shields.io/github/last-commit/penaz91/2DGD_F0TH/develop?label=Last%20Commit%20%28develop%29&style=for-the-badge) |
+[Latest Version](https://img.shields.io/github/v/tag/penaz91/2DGD_F0TH?label=Latest%20Version&style=for-the-badge)
+[Forks](https://img.shields.io/github/forks/penaz91/2DGD_F0TH?style=for-the-badge)
+[Stars](https://img.shields.io/github/stars/penaz91/2DGD_F0TH?style=for-the-badge)
+
+**Commits:**
+![GitHub last commit (master)](https://img.shields.io/github/last-commit/penaz91/2DGD_F0TH/master?label=Last%20Commit%20%28master%29&style=for-the-badge)
+![GitHub last commit (develop)](https://img.shields.io/github/last-commit/penaz91/2DGD_F0TH/develop?label=Last%20Commit%20%28develop%29&style=for-the-badge)
 
 This is a small project that aims to gather some knowledge about game development and make it available to everyone.
 
