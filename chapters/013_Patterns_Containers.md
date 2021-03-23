@@ -99,6 +99,10 @@ Below is an example code for the flyweight pattern.
 ```{src='patterns_containers/flyweight' caption='Code for a flyweight pattern'}
 ```
 
+::: trivia :::
+This is just speculation, but SFML's graphics system may make use of the Flyweight pattern: you need to load the image into a "Texture" first (which does all the low-level lifting) and then you can instance an "Image" class which is more high-level. Many images can refer to the same texture (which may be a Sprite Sheet).
+::::::::::::::
+
 ------------------    ------------------------------------------------------------------------------
 **Pattern Name**      Flyweight
 
@@ -232,6 +236,36 @@ Here we can take a look at a sample implementation of the Component Design Patte
 
 ```{src='patterns_containers/component' caption='Example Implementation Of the Component Pattern'}
 ```
+
+### Dependency Injection
+
+{{placeholder}}
+<!-- TODO -->
+
+### Decorator
+
+{{placeholder}}
+<!-- TODO -->
+
+### Visitor
+
+{{placeholder}}
+<!-- TODO -->
+
+### Adapter
+
+{{placeholder}}
+<!-- TODO -->
+
+### Prototype
+
+{{placeholder}}
+<!-- TODO -->
+
+### Facade
+
+{{placeholder}}
+<!-- TODO: Careful, may be misused and become an anti-pattern -->
 
 Resource Manager
 -----------------
