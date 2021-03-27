@@ -205,9 +205,50 @@ If the answer is no, then you may want to ignore such criticism, but if it is co
 
 #### Misusing of the Digital Millenium Copyright Act
 
-{{placeholder}}
+This is what could be considered the apex of mishandling criticism: the usage of DMCA takedowns to quash criticism towards your game.
 
-<!-- TODO: Talk about how the DMCA is abused by developers who take "mishandling criticism" to the extreme -->
+::: pitfall :::
+What follows **is not legal advice**. I am not a lawyer.
+
+If you want to know more (as in quantity and quality of information), contact your favourite lawyer.
+:::::::::::::::
+
+Sadly, mostly in the YouTube ecosystem, DMCA takedowns are often used as a means to suppress criticism and make video-reviews disappear from the Internet. Useless to say that this is **potentially illegal** as well as **definitely despicable**.
+
+Takedowns according to the DMCA are a tool at your disposal to deal with copyright infringements by people who steal part (or the entirety of) your work, allowing (in the case of YouTube at the very least) to make the allegedly infringing material. This should be used carefully and just after at the very least contacting the alleged infringer privately, also because there is an exception to the copyright rule.
+
+##### The Fair Use Doctrine
+
+The so-called "Fair Use" is a limited exception to the copyright law that targets purposes of review, criticism, parody, commentary, and news reporting, for instance.
+
+The test for "Fair use" has four factors (according to 17 U.S.C. §107):
+
+1. **The Purpose and character of the use:** if someone can demonstrate that their use advances knowledge or the progress of arts through the addition of something new, it's probably fair use. This usually is defined by the question "is the work **transformative** enough?"
+2. **The nature of the copyrighted work:** For instance, facts and ideas are not protected by copyright, but only their particular expression or fixation is protected. Essentially you can't really sue someone for making a game very similar to yours (For instance making a 2D sidescrolling, run'n'gun plaformer).
+3. **The amount and substantiality of the portion used in relation to the work as a whole:** If someone uses a small part (compared to the whole) of the work, and if that part is not really substantial, then it's probably fair use.
+4. **The effect on the potential market for the copyrighted work:** this defines if the widespread presence of the "allegedly infringing use" can hinder on the copyright owner's ability to exploit (earn from) their original work.
+
+There can also be some additional factors that may be considered, but these four factors above are usually enough to decide over the presence (or absence) of fair use.
+
+##### The "Review Case"
+
+Let's take a simple example: a video-review on our brand new videogame, that takes some small pieces of gameplay (totalling about 5 minutes), on video and comments on the gameplay, sound and graphics. A very common scenario with (I hope) an unsurprising turnout.
+
+Let's take a look at the first point: the purpose is criticism, the review brings something new to the table (essentially **it is transformative**): someone's impression and comments about the commercial work.
+
+Second point: the game is an interactive medium, while the review is non-interactive by nature, the mean of transmission is different.
+
+Third point: considering the average duration of 8 to 10 hours of a videogame, 5 minutes of footage amounts for around $0.8\%$ to $1\%$ of the total experience, that's a laughable amount compared to the total experience.
+
+Fourth Point: this is the one many people may get wrong. A review can have a huge effect on the market of a copyrighted work (a bad score from a big reviewer can result in huge losses), but that's not really how the test works. The fourth test can usually be answered by the following questions:
+
+> What's the probability that someone would buy (or enjoy for free) the work from the alleged infringer, instead than from me (the copyright owner)?
+
+This is called "being a direct market substitute" for the original work. The other question is:
+
+> Is there a potential harm (other than market substitution) that can exist?
+
+This usually is related to licensing markets. And here lies the final nail on the coffin: there is no direct market substitution and courts recognize that certain kinds of market don't negate fair use, and reviews are among those kinds of market. In essence **Copyright is not a shield against adverse criticism**.
 
 ### Not letting others test your game
 
