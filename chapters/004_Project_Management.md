@@ -203,6 +203,12 @@ The question you should ask yourself is simple:
 
 If the answer is no, then you may want to ignore such criticism, but if it is constructive, maybe you want to keep it in consideration.
 
+#### Misusing of the Digital Millenium Copyright Act
+
+{{placeholder}}
+
+<!-- TODO: Talk about how the DMCA is abused by developers who take "mishandling criticism" to the extreme -->
+
 ### Not letting others test your game
 
 This is a common mistake when you are focused on making the game: using your own skill as a "universal measure" for the world's skill level. You may be an unknown master at 2D platformers, and as such what can be "mildly difficult" for you may be "utterly impossible" for the average player. Or the opposite.
