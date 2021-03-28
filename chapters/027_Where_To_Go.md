@@ -59,6 +59,7 @@ Game Design
 
 ### Books
 
+- **100 Game Design Tips and Tricks** *(Wlad Marhulets)* <https://archive.org/details/100-design-tips-and-tricks/> \freeprod
 - **A theory of fun for game design** *(Raph Koster)* \paidprod
 - **The Art of Game Design: A Book of Lenses** *(Jesse Schell)* \paidprod
 
