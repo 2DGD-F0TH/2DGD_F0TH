@@ -3,7 +3,9 @@
 Project Ideas
 =============
 
-\epigraph{In theory, theory and practice are the same. In practice, they are not.}{\textit{Albert Einstein}}
+:::::: {.epigraph author="Albert Einstein"}
+In theory, theory and practice are the same. In practice, they are not.
+::::::
 
 This section tries to give you some ideas for some small projects you can try to do by yourself.
 

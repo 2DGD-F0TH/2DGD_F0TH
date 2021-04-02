@@ -3,7 +3,9 @@
 Accessibility in videogames
 ===========================
 
-\epigraph{Accessible design is good design - it benefits people who don't have disabilities as well as people who do. Accessibility is all about removing barriers and providing the benefits of technology for everyone.}{\textit{Steve Ballmer}}
+:::::: {.epigraph author="Steve Ballmer"}
+Accessible design is good design - it benefits people who don't have disabilities as well as people who do. Accessibility is all about removing barriers and providing the benefits of technology for everyone.
+::::::
 
 What accessibility is and what it is not
 ----------------------------------------

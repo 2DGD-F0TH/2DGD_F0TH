@@ -3,7 +3,9 @@
 The Maths Behind Game Development
 =================================
 
-\epigraph{Do not worry about your difficulties in Mathematics. I can assure you mine are still greater.}{\textit{Albert Einstein}}
+:::::: {.epigraph author="Albert Einstein"}
+Do not worry about your difficulties in Mathematics. I can assure you mine are still greater.
+::::::
 
 This book assumes you already have some minimal knowledge of maths, including but not limited to:
 

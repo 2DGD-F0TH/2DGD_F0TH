@@ -3,7 +3,9 @@
 Creating your resources
 =======================
 
-\epigraph{Art is not what you see, but what you make others see.}{\textit{Edgar Degas}}
+:::::: {.epigraph author="Edgar Degas"}
+Art is not what you see, but what you make others see.
+::::::
 
 Graphics {#GraphicsResources}
 ---------

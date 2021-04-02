@@ -3,7 +3,9 @@
 Game Jams
 ==========
 
-\epigraph{You miss 100\% of the shots you don’t take.}{\textit{Wayne Gretzky}}
+:::::: {.epigraph author="Wayne Gretzky"}
+You miss a hundred percent of the shots you don’t take.
+::::::
 
 Game jams are a great opportunity to test your game making skills in a tight situation, where time is at a premium and you need to "hack your way" through a fully-fledged prototype of a videogame.
 

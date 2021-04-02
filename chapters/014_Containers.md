@@ -3,7 +3,9 @@
 Useful Containers and Classes
 =============================
 
-\epigraph{Eliminate effects between unrelated things. Design components that are self-contained, independent, and have a single, well-defined purpose.}{\textit{Anonymous}}
+:::::: {.epigraph author="Anonymous"}
+Eliminate effects between unrelated things. Design components that are self-contained, independent, and have a single, well-defined purpose.
+::::::
 
 In this chapter we will introduce some useful data containers and classes that could help you solve some issues or increase your game's maintainability and flexibility.
 

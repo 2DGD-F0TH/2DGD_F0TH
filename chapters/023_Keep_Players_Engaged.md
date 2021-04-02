@@ -3,7 +3,9 @@
 Keeping your players engaged
 ============================
 
-\epigraph{There is no power for change greater than a community discovering what it cares about.}{\textit{Margaret J. Wheatley}}
+:::::: {.epigraph author="Margaret J. Wheatley"}
+There is no power for change greater than a community discovering what it cares about.
+::::::
 
 Having a solid story and great game mechanics is only part of your objective: you want your players to talk about your game or play it for as long as possible, this can be done in two main ways: **communities** and **replayability**.
 

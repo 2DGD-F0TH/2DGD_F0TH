@@ -3,7 +3,9 @@
 Cameras
 =========
 
-\epigraph{Nothing's beautiful from every point of view}{\textit{Horace}}
+:::::: {.epigraph author="Horace"}
+Nothing's beautiful from every point of view
+::::::
 
 The great majority of games don't limit the size of their own maps to the screen size only, but instead they mave maps way bigger than the screen.
 

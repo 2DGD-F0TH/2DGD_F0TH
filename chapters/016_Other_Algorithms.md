@@ -3,7 +3,9 @@
 Other Useful Algorithms
 ========================================
 
-\epigraph{Fancy algorithms are slow when n is small, and n is usually small.}{\textit{Rob Pike}}
+:::::: {.epigraph author="Rob Pike"}
+Fancy algorithms are slow when n is small, and n is usually small.
+::::::
 
 World Generation
 ----------------

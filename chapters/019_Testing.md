@@ -3,7 +3,9 @@
 Testing your game {#testing}
 =================
 
-\epigraph{The bitterness of poor quality remains long after the sweetness of meeting the schedule has been forgotten.}{\textit{Anonymous}}
+:::::: {.epigraph author="Anonymous"}
+The bitterness of poor quality remains long after the sweetness of meeting the schedule has been forgotten.
+::::::
 
 When you want to assure the quality of your product, you need to test it. Testing will be probably be the bane of your existence as a developer, but it will also help you finding bugs and ensure that they don't come back.
 

@@ -3,7 +3,9 @@
 Where To Go From Here
 =====================
 
-\epigraph{Be grateful for all the obstacles in your life. They have strengthened you as you continue with your journey.}{\textit{Anonymous}}
+:::::: {.epigraph author="Anonymous"}
+Be grateful for all the obstacles in your life. They have strengthened you as you continue with your journey.
+::::::
 
 It has been a very long trip, hopefully this book has satisfied great part of your curiosity about 2D Game Development and Design, but the adventure is far from over. There are infinite resources on- and off-line to further your experience in game development and design.
 

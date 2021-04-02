@@ -3,7 +3,9 @@
 Dissecting games: two study cases
 =================================
 
-\epigraph{I'm a writer, so I like dissecting things.}{\textit{Hal Sparks}}
+:::::: {.epigraph author="Hal Sparks"}
+I'm a writer, so I like dissecting things.
+::::::
 
 In this section we will talk about two games, one bad and one good, and study their decisions closely, how a bad game inconveniences the player or how a good one reduces the space between the player's thought and the action on the screen.
 

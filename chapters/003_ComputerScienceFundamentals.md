@@ -3,7 +3,9 @@
 Some Computer Science Fundamentals
 ===================================
 
-\epigraph{The computing scientist's main challenge is not to get confused by the complexities of his own making.}{\textit{Edsger W. Dijkstra}}
+:::::: {.epigraph author="Edsger W. Dijkstra"}
+The computing scientist's main challenge is not to get confused by the complexities of his own making.
+::::::
 
 In order to understand some of the language that is coming up, it is necessary to learn a bit of the computer science language and fundamentals.
 

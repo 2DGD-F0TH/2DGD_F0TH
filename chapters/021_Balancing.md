@@ -3,7 +3,9 @@
 Balancing Your Game
 ===================
 
-\epigraph{The trick to balance is to not make sacrificing important things become the norm}{\textit{Simon Sinek}}
+:::::: {.epigraph author="Simon Sinek"}
+The trick to balance is to not make sacrificing important things become the norm
+::::::
 
 An imbalanced game is a frustrating game, and most of the time balancing a game is one of the toughest challenges a game developer/designer can find themselves to have to face.
 

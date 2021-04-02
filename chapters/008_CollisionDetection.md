@@ -3,7 +3,9 @@
 Collision Detection and Reaction
 =================================
 
-\epigraph{Every detection of what is false directs us towards what is true: every trial exhausts some tempting form of error.}{\textit{William Whewell}}
+:::::: {.epigraph author="William Whewell"}
+Every detection of what is false directs us towards what is true: every trial exhausts some tempting form of error.
+::::::
 
 When it comes to collision management, there are two main phases:
 

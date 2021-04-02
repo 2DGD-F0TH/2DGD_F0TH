@@ -3,7 +3,9 @@
 Design Patterns
 ================
 
-\epigraph{Patterns mean "I have run out of language."}{\textit{Rich Hickey}}
+:::::: {.epigraph author="Rich Hickey"}
+Patterns mean "I have run out of language."
+::::::
 
 Design Patterns are essentially "pre-made solutions for known problems" and can help decoupling elements of your game, increasing maintainability.
 

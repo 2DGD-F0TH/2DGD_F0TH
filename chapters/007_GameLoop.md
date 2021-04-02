@@ -3,7 +3,9 @@
 The Game Loop
 ==============
 
-\epigraph{All loops are infinite ones for faulty RAM modules.}{\textit{Anonymous}}
+:::::: {.epigraph author="Anonymous"}
+All loops are infinite ones for faulty RAM modules.
+::::::
 
 The Input-Update-Draw Abstraction
 -----------------------------------

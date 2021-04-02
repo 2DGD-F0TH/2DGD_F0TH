@@ -3,7 +3,9 @@
 Introduction to Game Design
 ============================
 
-\epigraph{Why should you make games? Do it to give players joy from your unique perspective and to have fun expressing yourself. You win and the players win.}{\textit{Duane Alan Hahn}}
+:::::: {.epigraph author="Duane Alan Hahn"}
+Why should you make games? Do it to give players joy from your unique perspective and to have fun expressing yourself. You win and the players win.
+::::::
 
 In this section we will talk about platforms, input systems and game genres, in a quick fashion. This chapter will introduce you to the language and terms used in game design, this way the following chapters will be easier to comprehend.
 
