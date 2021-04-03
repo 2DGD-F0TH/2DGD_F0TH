@@ -242,7 +242,16 @@ Here we can take a look at a sample implementation of the Component Design Patte
 ```{src='design_patterns/component' caption='Example Implementation Of the Component Pattern'}
 ```
 
-<!-- TODO: Code for the component pattern -->
+------------------    ------------------------------------------------------------------------------
+**Pattern Name**      Component/Composite
+
+**When to Use it**    When you need to deal with a part-whole hierarchy where each component needs to be treated equally.
+
+**Advantages**        Decoupling, added flexibility.
+
+**Disadvantages**     On bigger systems, the management may become really complex.
+
+------------------------------------------------------------------------------------------------
 
 Dependency Injection
 --------------------
@@ -253,8 +262,25 @@ Dependency Injection
 Decorator
 ---------
 
+There are some cases where we need to add or remove behaviours from a class at runtime, dynamically. The decorator pattern gives a flexible alternative to subclassing and addresses this need.
+
+![Diagram of the Decorator Pattern](./images/design_patterns/class_decorator.svg){width=40%}
+
+As you can see the decorator makes heavy use of abstract classes and interfaces, which most programming languages implement without any issue.
+
+------------------    ------------------------------------------------------------------------------
+**Pattern Name**      Decorator
+
+**When to Use it**    When you need to add or remove functionalities from a class dynamically.
+
+**Advantages**        Decoupling, added flexibility.
+
+**Disadvantages**     Usage of interfaces or abstract classes can seem a bit daunting at the beginning, it may cause an explosion in number of classes.
+
+------------------------------------------------------------------------------------------------
+
 {{placeholder}}
-<!-- TODO -->
+<!-- TODO: Code for the decorator pattern -->
 
 Visitor
 -------
@@ -303,3 +329,5 @@ This pattern should be used with extreme care and only when necessary, since add
 **Disadvantages**     May become overused, delegating adds a bit of overhead, sometimes it may be wrongly used where either an adapter or a decorator is needed.
 
 ------------------------------------------------------------------------------------------------
+
+<!-- TODO: Code for the facade pattern -->

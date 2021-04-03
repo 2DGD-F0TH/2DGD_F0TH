@@ -1,0 +1,23 @@
+@startuml
+abstract class Component{
+    +void doStuff()
+}
+
+class Concrete_Component{
+    +void doStuff()
+}
+
+abstract class Decorator{
+    -Component component
+    +void doStuff()
+}
+
+class Concrete_Decorator{
+    +void doStuff()
+}
+
+Decorator --|> Component
+Concrete_Component --|> Component
+Concrete_Decorator --|> Decorator
+Decorator o-- Component
+@enduml

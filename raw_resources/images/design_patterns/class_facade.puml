@@ -1,20 +1,20 @@
 @startuml
 class Facade{
-    void doComplexThing()
+    + void doComplexThing()
 }
 
 package Package1{
     class Class1{
-        void doFirstThing()
+        + void doFirstThing()
     }
     class Class2{
-        void doSecondThing()
+        + void doSecondThing()
     }
 }
 
 package Package2{
     class Class3{
-        void doLastThing()
+        + void doLastThing()
     }
 }
 
