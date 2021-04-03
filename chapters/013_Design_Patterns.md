@@ -22,14 +22,14 @@ After that, we need a static method that allows to get the singleton's instance,
 
 The UML diagram for a singleton is really simple.
 
-![The UML diagram for a singleton pattern](./images/patterns_containers/singleton.svg){width=20%}
+![The UML diagram for a singleton pattern](./images/design_patterns/singleton.svg){width=20%}
 
-```{src='patterns_containers/singleton' caption='Example of a singleton pattern'}
+```{src='design_patterns/singleton' caption='Example of a singleton pattern'}
 ```
 
 The previous singleton instantiates immediately, which may not always be necessary, in that case a good idea could be implementing the so-called "lazy loading", where the instantiation happens the first time you ask the object for its own instance.
 
-```{src='patterns_containers/singleton_lazyload' caption='Example of a singleton pattern with lazy loading'}
+```{src='design_patterns/singleton_lazyload' caption='Example of a singleton pattern with lazy loading'}
 ```
 
 If multiple threads are involved in using a lazy-loading singleton, you may need to take care of preventing *race conditions*~[g]~ that could result in multiple instances of the singleton being created.
@@ -66,9 +66,9 @@ The command pattern allows us to abstract a function (or any executable line of 
 
 This pattern can be useful to code GUIs, making actions in our games that can be undone, macros, replays and much more.
 
-![UML diagram for the Command Pattern](./images/patterns_containers/command.svg){width=30%}
+![UML diagram for the Command Pattern](./images/design_patterns/command.svg){width=30%}
 
-```{src='patterns_containers/command' caption='Example code for the Command Pattern'}
+```{src='design_patterns/command' caption='Example code for the Command Pattern'}
 ```
 
 ------------------    ------------------------------------------------------------------------------
@@ -93,11 +93,11 @@ Imagine a lot of sprites of trees that have the same texture and size, but have 
 
 Here comes the Flyweight pattern: we try to share as much of the so-called "intrinsic state" of the objects between the object that contain the so-called "extrinsic state".
 
-![UML Diagram of the Flyweight pattern](./images/patterns_containers/flyweight.svg){width=60%}
+![UML Diagram of the Flyweight pattern](./images/design_patterns/flyweight.svg){width=60%}
 
 Below is an example code for the flyweight pattern.
 
-```{src='patterns_containers/flyweight' caption='Code for a flyweight pattern'}
+```{src='design_patterns/flyweight' caption='Code for a flyweight pattern'}
 ```
 
 ::: trivia :::
@@ -133,13 +133,13 @@ The subject implements in its structure a list of observers that will be notifie
 
 Here we can see an UML diagram of the observer pattern:
 
-![The UML diagram of the observer pattern](./images/patterns_containers/observer.svg){width=60%}
+![The UML diagram of the observer pattern](./images/design_patterns/observer.svg){width=60%}
 
 Here we can see the Observer abstract class (it can be an interface), a concrete subject and two Concrete Observers that implement what required by the Observer.
 
 Here we can see an implementation of the observer pattern:
 
-```{src='patterns_containers/observer' caption='Code for an observer pattern'}
+```{src='design_patterns/observer' caption='Code for an observer pattern'}
 ```
 
 If needed, you can pass information between the subject and the observers just by calling each `update()` method with the necessary arguments.
@@ -164,9 +164,9 @@ In some situations it may be necessary to select a single algorithm to use, from
 
 In this case, the *strategy pattern* (also knowns as the "policy pattern"), allows the code to receive runtime instructions over what algorithm to execute. This allows for the algorithm to vary independently from the client that makes use of such algorithm.
 
-![The UML diagram of the strategy pattern](./images/patterns_containers/strategy.svg){width=60%}
+![The UML diagram of the strategy pattern](./images/design_patterns/strategy.svg){width=60%}
 
-```{src='patterns_containers/strategy' caption='Code for a strategy pattern'}
+```{src='design_patterns/strategy' caption='Code for a strategy pattern'}
 ```
 
 ------------------    ------------------------------------------------------------------------------
@@ -187,13 +187,13 @@ Chain of Responsibility
 
 Sometimes we have the necessity of handling conditionals that are themselves connected to runtime conditions. This is where the *chain of responsibility pattern* comes into play, being essentially an object-oriented version of an `if ... else if ... else` statement.
 
-![UML Diagram of the Chain of Responsibility Pattern](./images/patterns_containers/chain_of_responsibility.svg){width=60%}
+![UML Diagram of the Chain of Responsibility Pattern](./images/design_patterns/chain_of_responsibility.svg){width=60%}
 
 As can be seen from the diagram, the sender is not directly connected to the receiver, but instead it's connected to a "Handler" interface, making them independent.
 
 As with a chain of responsibility in a company relays a task to "higher ups" if the task cannot be handled, the chain of responsibility pattern involves each received reviewing the request and if possible, process it, if not possible, relay it to the next receiver in the chain.
 
-```{src='patterns_containers/chain_of_responsibility' caption='Code for a chain of responsibility pattern'}
+```{src='design_patterns/chain_of_responsibility' caption='Code for a chain of responsibility pattern'}
 ```
 
 ------------------    ------------------------------------------------------------------------------
@@ -224,7 +224,7 @@ At this point our software engineering senses are tingling, something is dangero
 
 A better alternative in bigger projects is splitting the monolithic class and create different components and allow for their reuse later. Enter the Component pattern.
 
-![Diagram of the Component Design Pattern](./images/patterns_containers/class_component.svg){width=40%}
+![Diagram of the Component Design Pattern](./images/design_patterns/class_component.svg){width=40%}
 
 The client is connected to a list of Components that have the same interface (in the previous case, the `update()` method), so each Game Entity can become a "container of components" that define its behaviour.
 
@@ -239,7 +239,7 @@ Which can be reused, extended and allow for further flexibility and follows more
 
 Here we can take a look at a sample implementation of the Component Design Pattern:
 
-```{src='patterns_containers/component' caption='Example Implementation Of the Component Pattern'}
+```{src='design_patterns/component' caption='Example Implementation Of the Component Pattern'}
 ```
 
 <!-- TODO: Code for the component pattern -->
@@ -289,7 +289,7 @@ Facade
 
 There are times where you have a very complex library, with a very complex interface, that is extremely complex to interact with. The Facade pattern hides such complexity behind a simple-to-use interface that works by delegation.
 
-![Diagram of the Facade Pattern](./images/patterns_containers/class_facade.svg){width=40%}
+![Diagram of the Facade Pattern](./images/design_patterns/class_facade.svg){width=40%}
 
 This pattern should be used with extreme care and only when necessary, since adding "levels of indirection" will make the code more complex and harder to maintain.
 

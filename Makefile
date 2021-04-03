@@ -7,7 +7,7 @@ EPUB_TEMPLATE=--css template/epub.css --highlight-style pygments --template temp
 VERSION=-M version=`git describe --tags`
 GLADTEX_PKG=gladtex -d "gladtex_imgs" --png -P -p "\usepackage{cancel}\usepackage{gensymb}" -
 
-all: pseudocode pseudocode_color python cpp
+all: pseudocode python cpp
 
 pseudocode:
 	$(PANDOC_STANDALONE) $(PANDOC_DEFAULT_ARGS) $(CHAPTERS_CMD) $(VERSION) $(PDF_TEMPLATE) -M proglang=pseudocode -o Book_pseudocode.pdf

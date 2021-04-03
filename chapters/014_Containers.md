@@ -48,7 +48,7 @@ A finite state machine is a model of computation that represents an abstract mac
 
 We can use a finite state machine to represent the status of a player character, like in the following diagram:
 
-![Diagram of a character's state machine](./images/patterns_containers/Character_SM.svg){width=70%}
+![Diagram of a character's state machine](./images/containers/Character_SM.svg){width=70%}
 
 Each state machine is made out of two main elements:
 
@@ -57,7 +57,7 @@ Each state machine is made out of two main elements:
 
 State machines are really flexible and can be used to represent a menu system, for instance:
 
-![Diagram of a menu system's state machine](./images/patterns_containers/Menu_SM.svg){width=70%}
+![Diagram of a menu system's state machine](./images/containers/Menu_SM.svg){width=70%}
 
 In this more convoluted diagram we can see how pressing a certain button or clicking a certain option can trigger a state change.
 
@@ -136,7 +136,7 @@ Making a timer is not as complicated as it may seem, we need:
 - A boolean to track whether the timer is active or not;
 - A boolean to decide whether the timer should be "one shot" or "continuous".
 
-```{src='patterns_containers/timer' caption='A simple timer class'}
+```{src='containers/timer' caption='A simple timer class'}
 ```
 
 ### Accounting for "leftover time"
@@ -164,7 +164,7 @@ The first solution that would come to mind would be substituting the timer varia
 
 Here is the code:
 
-```{src='patterns_containers/timer_naive' caption='A naive approach to account for leftover time'}
+```{src='containers/timer_naive' caption='A naive approach to account for leftover time'}
 ```
 
 But what happens if we have a sudden lag spike, longer than the timer itself?
@@ -185,12 +185,12 @@ If our game is already slowing down, executing even more functions won't help, s
 
 To avoid this "catching up", there are many ways, I'm going to write two of them in this book. The first is quite simple: we add the set timer in a loop until we reach a value higher than zero.
 
-```{src='patterns_containers/timer_leftover_1' caption='A possible solution to account for leftover time'}
+```{src='containers/timer_leftover_1' caption='A possible solution to account for leftover time'}
 ```
 
 This approach has a very minor issue: we are using a loop, so the further we stray away from zero, the more times we will have to add. A second approach would be calculating a "multiplier" and directly apply that to the added value, thus avoiding a loop.
 
-```{src='patterns_containers/timer_leftover_2' caption='Another possible solution to account for leftover time'}
+```{src='containers/timer_leftover_2' caption='Another possible solution to account for leftover time'}
 ```
 
 This second approach has an issue too: we will need to calculate the ceiling of a value, which may require a bit more CPU time (although most modern CPUs don't require more than a single cycle to do so).
@@ -213,7 +213,7 @@ Here we will present some simple tweenings that can be programmed, and explain t
 
 Let's start with a *linear* tweening, usually the following function is used:
 
-```{src='patterns_containers/tween_linear' caption='Linear Tweening'}
+```{src='containers/tween_linear' caption='Linear Tweening'}
 ```
 
 Let's explain the variables used:
@@ -233,29 +233,29 @@ $$ (change\ in\ property) \cdot (factor) + (beginning\ value)$$
 
 So we can use our function substituting `begin` with 0 and `change` with 1 to calculate `factor` and have a code similar to this one:
 
-```{src='patterns_containers/way_to_easing' caption='Example of a simple easing function'}
+```{src='containers/way_to_easing' caption='Example of a simple easing function'}
 ```
 
 With linear tweening, the function degenerates to $\frac{time}{duration}$, but now we can replace our linear tween with the following function:
 
-```{src='patterns_containers/easeIn' caption='Ease-in'}
+```{src='containers/easeIn' caption='Ease-in'}
 ```
 
 By changing the `power` parameter, we change the behaviour of the easing, making the movement slower at the beginning and pick up the pace more and more, until the destination is reached. This is called a "ease-in".
 
 For an "ease-out", where the animation starts fast and slows down towards the end, we use the following function instead:
 
-```{src='patterns_containers/easeOut' caption='Ease-out'}
+```{src='containers/easeOut' caption='Ease-out'}
 ```
 
 With some calculations, and if statements on the time passed, you can combine the two and get an "ease-in-out" function.
 
-```{src='patterns_containers/easeInOut' caption='Ease-in-out'}
+```{src='containers/easeInOut' caption='Ease-in-out'}
 ```
 
 Obviously these functions have an issue: they don't clamp the value between 0 and 1, that will have to be done in the movement function or by adding a check, or using some math, for instance using `min(calculated_value, 1)`.
 
-```{src='patterns_containers/clamping' caption='Clamping values'}
+```{src='containers/clamping' caption='Clamping values'}
 ```
 
 In that case, calling the clamping function with values `0` and `1` would solve the issue.
