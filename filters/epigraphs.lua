@@ -4,8 +4,10 @@ function epigraphs(elem)
         -- Trivia box
         if elem.classes[1] == 'epigraph' then
            local author = elem.attributes["author"]
+           local quote = pandoc.utils.stringify(elem.content)
+           quote = quote:gsub("%%", "\\%%")
            return {
-              pandoc.RawBlock("latex", "\\epigraph{" .. pandoc.utils.stringify(elem.content) .. "}{\\textit{" .. author .. "}}"),
+              pandoc.RawBlock("latex", "\\epigraph{" .. quote .. "}{\\textit{" .. author .. "}}"),
            }
         end
     else
