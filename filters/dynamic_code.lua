@@ -24,7 +24,6 @@ function dynamic_codeblock(blk)
         blk.attributes.language = language
         code = pandoc.CodeBlock(content, blk.attr)
         code.classes = {language}
-        -- TODO: Include caption in epub output
         if FORMAT ~= "latex" then
             if blk.attributes.caption then
                 local caption = pandoc.Div(pandoc.Para(pandoc.Str("Code: " .. blk.attributes.caption)))

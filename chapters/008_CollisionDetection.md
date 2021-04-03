@@ -9,8 +9,6 @@ Every detection of what is false directs us towards what is true: every trial ex
 
 When it comes to collision management, there are two main phases:
 
-<!-- TODO: Revise this part adding "broad" and "narrow" phases in the "detection" phase -->
-
 - **Collision Detection:** you find out which game objects collided with each other;
 - **Collision Reaction:** you handle the physics behind the collision detected, making the game objects react to such collision.
 
