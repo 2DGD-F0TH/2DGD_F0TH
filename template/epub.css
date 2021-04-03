@@ -126,6 +126,10 @@ td, th{
 table caption{
     font-size: 0.75em;
 }
+div.code-caption{
+    margin: auto;
+    text-align: center;
+}
 pre.sourceCode{
     padding: 0.25em;
     border: 1px solid black;
