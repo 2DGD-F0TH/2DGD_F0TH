@@ -1,0 +1,25 @@
+@startuml
+class Facade{
+    void doComplexThing()
+}
+
+package Package1{
+    class Class1{
+        void doFirstThing()
+    }
+    class Class2{
+        void doSecondThing()
+    }
+}
+
+package Package2{
+    class Class3{
+        void doLastThing()
+    }
+}
+
+Client ..> Facade
+Facade ..> Class1
+Facade ..> Class2
+Facade ..> Class3
+@enduml

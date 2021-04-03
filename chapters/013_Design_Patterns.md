@@ -47,7 +47,7 @@ Before applying the singleton pattern, ask yourself the following questions:
 
 **When to Use it**    In all situations that strictly require one instance of an object, accessible globally.
 
-**Advantages **       Allows the class to control its own instantiation, allows for easier access to the sole instance of a class.
+**Advantages**       Allows the class to control its own instantiation, allows for easier access to the sole instance of a class.
 
 **Disadvantages**     Introduces some restrictions that may be unnecessary, introduces a global state into the application.
 
@@ -76,7 +76,7 @@ This pattern can be useful to code GUIs, making actions in our games that can be
 
 **When to Use it**    In all situations where you want to avoid coupling an invoker with a single request or when you want to configure an invoker to perform a request at runtime.
 
-**Advantages **       Allows for encapsulation, less coupling, more flexibility and customization at runtime.
+**Advantages**       Allows for encapsulation, less coupling, more flexibility and customization at runtime.
 
 **Disadvantages**     Late binding and objects may introduce some overhead.
 
@@ -109,7 +109,7 @@ This is just speculation, but SFML's graphics system may make use of the Flyweig
 
 **When to Use it**    When you need to support a large number of similar objects efficiently, when you need to avoid creating a large number of objects.
 
-**Advantages **       Saves memory when a large number of similar objects is involved, avoids some of the overhead given by the creation of many objects.
+**Advantages**       Saves memory when a large number of similar objects is involved, avoids some of the overhead given by the creation of many objects.
 
 **Disadvantages**     The intrinsic state must be "context independent", so it cannot change (or all the flyweights that refer to that state will change too). Flyweight instantiation requires particular attention in multithreaded environments, due to the shared memory.
 
@@ -149,7 +149,7 @@ If needed, you can pass information between the subject and the observers just b
 
 **When to Use it**    Event Handling systems, making objects react to other objects' actions
 
-**Advantages **       Decoupling, added flexibility, more performant than if statements for conditions that happen rarely.
+**Advantages**       Decoupling, added flexibility, more performant than if statements for conditions that happen rarely.
 
 **Disadvantages**     Can be a bit hard to set up, makes the architecture more complex, if un-registration is not done well there could be serious memory leaks (even in garbage-collected languages).
 
@@ -174,7 +174,7 @@ In this case, the *strategy pattern* (also knowns as the "policy pattern"), allo
 
 **When to Use it**    Every time you need to decide which algorithm to execute at runtime.
 
-**Advantages **       Decoupling, added flexibility.
+**Advantages**       Decoupling, added flexibility.
 
 **Disadvantages**     Can cause proliferation of similarly-looking concrete strategies, late binding on functions and the object oriented nature of the pattern could create some overhead.
 
@@ -201,7 +201,7 @@ As with a chain of responsibility in a company relays a task to "higher ups" if 
 
 **When to Use it**    When you need to implement flexible if...else if...else statements that change on runtime. When you want to decouple a sender from a receiver.
 
-**Advantages **       Decoupling, added flexibility.
+**Advantages**       Decoupling, added flexibility.
 
 **Disadvantages**     Some overhead is added by the objects and late binding, could lead to proliferation of similar-looking handlers/receivers.
 
@@ -241,6 +241,8 @@ Here we can take a look at a sample implementation of the Component Design Patte
 
 ```{src='patterns_containers/component' caption='Example Implementation Of the Component Pattern'}
 ```
+
+<!-- TODO: Code for the component pattern -->
 
 Dependency Injection
 --------------------
@@ -285,5 +287,19 @@ Prototype
 Facade
 ------
 
-{{placeholder}}
-<!-- TODO: Careful, may be misused and become an anti-pattern -->
+There are times where you have a very complex library, with a very complex interface, that is extremely complex to interact with. The Facade pattern hides such complexity behind a simple-to-use interface that works by delegation.
+
+![Diagram of the Facade Pattern](./images/patterns_containers/class_facade.svg){width=40%}
+
+This pattern should be used with extreme care and only when necessary, since adding "levels of indirection" will make the code more complex and harder to maintain.
+
+------------------    ------------------------------------------------------------------------------
+**Pattern Name**      Facade
+
+**When to Use it**    When you need to present a simple interface for a complex system or you want to reduce the dependencies on a subsystem.
+
+**Advantages**        Decoupling, added readability.
+
+**Disadvantages**     May become overused, delegating adds a bit of overhead, sometimes it may be wrongly used where either an adapter or a decorator is needed.
+
+------------------------------------------------------------------------------------------------
