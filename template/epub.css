@@ -94,6 +94,16 @@ div.trivia div.box-title{
 div.box-title{
     padding: 0.25em;
 }
+div.epigraph{
+    margin-left: auto;
+    margin-right: 0;
+    text-align: right;
+    max-width: 80%;
+}
+div.epigraph-author{
+    border-top: 2px solid black;
+    padding-top: 0.25em;
+}
 figure{
     display: block;
     margin: auto;
