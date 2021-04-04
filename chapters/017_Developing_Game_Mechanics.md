@@ -160,7 +160,7 @@ In this example we are assuming that the framework used uses the screen coordina
 
 <!-- TODO: How to walk on stairs -->
 
-### Simulating Intertia
+### Simulating Inertia
 
 {{placeholder}}
 
