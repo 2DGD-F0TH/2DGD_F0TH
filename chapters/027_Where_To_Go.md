@@ -19,34 +19,35 @@ Here below, we can see, divided by category, some resources you can check out to
 
 But first, here's a small legend to distinguish paid products from free products.
 
-- **Free Product:** \freeprod
-- **Accepts donations or Partially Free:** \donprod
-- **Paid Product:** \paidprod
+
+- **Free Product:** {{freeprod}}
+- **Accepts donations or Partially Free:** {{donprod}}
+- **Paid Product:** {{paidprod}}
 
 Collections of different topics
 --------------------------------
 
 ### Books
 
-- **Apress-Open Ebooks:** <https://www.apress.com/it/apress-open/apressopen-titles> \freeprod
-- **"OpenBook" offers from O'Reilly:** <https://www.oreilly.com/openbook/> \freeprod
+- **Apress-Open Ebooks:** <https://www.apress.com/it/apress-open/apressopen-titles> {{freeprod}}
+- **"OpenBook" offers from O'Reilly:** <https://www.oreilly.com/openbook/> {{freeprod}}
 
 ### Videos
 
-- **freeCodeCamp.org's YT:** <https://www.youtube.com/channel/UC8butISFwT-Wl7EV0hUK0BQ> \freeprod
-- **3DBuzz (Archived on the Internet Archive):** <https://archive.org/details/3dbuzz-archive> \freeprod
+- **freeCodeCamp.org's YT:** <https://www.youtube.com/channel/UC8butISFwT-Wl7EV0hUK0BQ> {{freeprod}}
+- **3DBuzz (Archived on the Internet Archive):** <https://archive.org/details/3dbuzz-archive> {{freeprod}}
 
 ### Multiple formats
 
-- **Daily "Free Learning" offer from PacktPub:** <https://www.packtpub.com/free-learning> \freeprod
-- **"Awesome lists":** <https://github.com/sindresorhus/awesome> \freeprod
+- **Daily "Free Learning" offer from PacktPub:** <https://www.packtpub.com/free-learning> {{freeprod}}
+- **"Awesome lists":** <https://github.com/sindresorhus/awesome> {{freeprod}}
 
 Pixel Art
 -----------
 
 ### Multiple Formats
 
-- **Pedro Medeiros's Patreon Page:** <https://www.patreon.com/saint11/> \donprod
+- **Pedro Medeiros's Patreon Page:** <https://www.patreon.com/saint11/> {{donprod}}
 
 
 Sound Design
@@ -54,20 +55,20 @@ Sound Design
 
 ### Multiple Formats
 
-- **EpicSound's Sound Effects Tutorials:** <https://www.epicsound.com/sfx/> \freeprod
+- **EpicSound's Sound Effects Tutorials:** <https://www.epicsound.com/sfx/> {{freeprod}}
 
 Game Design
 ------------
 
 ### Books
 
-- **100 Game Design Tips and Tricks** *(Wlad Marhulets)* <https://archive.org/details/100-design-tips-and-tricks/> \freeprod
-- **A theory of fun for game design** *(Raph Koster)* \paidprod
-- **The Art of Game Design: A Book of Lenses** *(Jesse Schell)* \paidprod
+- **100 Game Design Tips and Tricks** *(Wlad Marhulets)* <https://archive.org/details/100-design-tips-and-tricks/> {{freeprod}}
+- **A theory of fun for game design** *(Raph Koster)* {{paidprod}}
+- **The Art of Game Design: A Book of Lenses** *(Jesse Schell)* {{paidprod}}
 
 Game Development
 ----------------
 
 ### Videos
 
-- **OneLoneCoder's YT:** <https://www.youtube.com/channel/UC-yuWVUplUJZvieEligKBkA> \freeprod
+- **OneLoneCoder's YT:** <https://www.youtube.com/channel/UC-yuWVUplUJZvieEligKBkA> {{freeprod}}
