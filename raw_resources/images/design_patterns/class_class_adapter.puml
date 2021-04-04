@@ -1,0 +1,27 @@
+@startuml
+class Client{
+    + adaptor: Adaptor
+    + doStuff()
+}
+
+interface Target{
+    + compatibleMethod()
+}
+
+class Adaptor{
+    + compatibleMethod()
+}
+
+note right of Adaptor
+    The adapter subclasses
+    the adaptee
+end note
+
+class Adaptee{
+    + incompatibleMethod()
+}
+
+Client --> Target
+Adaptor ..|> Target
+Adaptor --|> Adaptee
+@enduml

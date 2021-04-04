@@ -47,7 +47,7 @@ Before applying the singleton pattern, ask yourself the following questions:
 
 **When to Use it**    In all situations that strictly require one instance of an object, accessible globally.
 
-**Advantages**       Allows the class to control its own instantiation, allows for easier access to the sole instance of a class.
+**Advantages**        Allows the class to control its own instantiation, allows for easier access to the sole instance of a class.
 
 **Disadvantages**     Introduces some restrictions that may be unnecessary, introduces a global state into the application.
 
@@ -76,7 +76,7 @@ This pattern can be useful to code GUIs, making actions in our games that can be
 
 **When to Use it**    In all situations where you want to avoid coupling an invoker with a single request or when you want to configure an invoker to perform a request at runtime.
 
-**Advantages**       Allows for encapsulation, less coupling, more flexibility and customization at runtime.
+**Advantages**        Allows for encapsulation, less coupling, more flexibility and customization at runtime.
 
 **Disadvantages**     Late binding and objects may introduce some overhead.
 
@@ -109,7 +109,7 @@ This is just speculation, but SFML's graphics system may make use of the Flyweig
 
 **When to Use it**    When you need to support a large number of similar objects efficiently, when you need to avoid creating a large number of objects.
 
-**Advantages**       Saves memory when a large number of similar objects is involved, avoids some of the overhead given by the creation of many objects.
+**Advantages**        Saves memory when a large number of similar objects is involved, avoids some of the overhead given by the creation of many objects.
 
 **Disadvantages**     The intrinsic state must be "context independent", so it cannot change (or all the flyweights that refer to that state will change too). Flyweight instantiation requires particular attention in multithreaded environments, due to the shared memory.
 
@@ -149,7 +149,7 @@ If needed, you can pass information between the subject and the observers just b
 
 **When to Use it**    Event Handling systems, making objects react to other objects' actions
 
-**Advantages**       Decoupling, added flexibility, more performant than if statements for conditions that happen rarely.
+**Advantages**        Decoupling, added flexibility, more performant than if statements for conditions that happen rarely.
 
 **Disadvantages**     Can be a bit hard to set up, makes the architecture more complex, if un-registration is not done well there could be serious memory leaks (even in garbage-collected languages).
 
@@ -174,7 +174,7 @@ In this case, the *strategy pattern* (also knowns as the "policy pattern"), allo
 
 **When to Use it**    Every time you need to decide which algorithm to execute at runtime.
 
-**Advantages**       Decoupling, added flexibility.
+**Advantages**        Decoupling, added flexibility.
 
 **Disadvantages**     Can cause proliferation of similarly-looking concrete strategies, late binding on functions and the object oriented nature of the pattern could create some overhead.
 
@@ -201,7 +201,7 @@ As with a chain of responsibility in a company relays a task to "higher ups" if 
 
 **When to Use it**    When you need to implement flexible if...else if...else statements that change on runtime. When you want to decouple a sender from a receiver.
 
-**Advantages**       Decoupling, added flexibility.
+**Advantages**        Decoupling, added flexibility.
 
 **Disadvantages**     Some overhead is added by the objects and late binding, could lead to proliferation of similar-looking handlers/receivers.
 
@@ -295,18 +295,42 @@ Visitor
 Adapter
 -------
 
-{{placeholder}}
-<!-- TODO -->
+Let's face it, not everything is straight out compatible with everything else. It happens with power plugs, why wouldn't it happen in a world as varied as software development?
 
-### Class Adapter
+Sometimes we need an adapter, and that's exactly what this design pattern is: provide a layer of compatibility between two incompatible interfaces.
 
-{{placeholder}}
-<!-- TODO -->
+The adapter design pattern can be implemented in two ways, but first let's check the summary table.
+
+------------------    ------------------------------------------------------------------------------
+**Pattern Name**      Adapter
+
+**When to Use it**    When you need to provide a layer of compatibility between two incompatible interfaces or you need to provide an "alternative interface" to a class.
+
+**Advantages**        Decoupling, added flexibility, better compatibility, code reuse.
+
+**Disadvantages**     Needing many adapters may mean there is a deeper structural problem with your program.
+
+------------------------------------------------------------------------------------------------
+
+Table: Summary table for the Adapter design pattern
 
 ### Object Adapter
 
+The "object adapter" is the version where the adaptor delegates the task to the adaptee at runtime. To do so, it has an instance of the adaptee class as its class field.
+
+![Diagram of the Object Adapter Pattern](./images/design_patterns/class_object_adapter.svg){width=50%}
+
 {{placeholder}}
-<!-- TODO -->
+<!-- TODO: Code for object adapter -->
+
+### Class Adapter
+
+The "class adapter" version instead inherits the adaptee class at compile-time. Since the adaptor inherits from the adaptee class, the adaptee's methods can be called directly, without needing to refer to a class field.
+
+![Diagram of the Class Adapter Pattern](./images/design_patterns/class_class_adapter.svg){width=50%}
+
+{{placeholder}}
+<!-- TODO: Code for class adapter -->
 
 Prototype
 ---------
