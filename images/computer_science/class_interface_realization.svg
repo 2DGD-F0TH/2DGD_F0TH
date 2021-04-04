@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="316px" preserveAspectRatio="none" style="width:295px;height:316px;" version="1.1" viewBox="0 0 295 316" width="295px" zoomAndPan="magnify"><defs><filter height="300%" id="fsds6dck6bt4u" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[713bb781b1b579324fb36ad0db6385cf]
+class Interface--><rect codeLine="1" fill="#FEFECE" filter="url(#fsds6dck6bt4u)" height="60.8047" id="Interface" style="stroke:#A80036;stroke-width:1.5;" width="89" x="101.5" y="242"/><ellipse cx="116.5" cy="258" fill="#B4A7E5" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M112.4219,253.7656 L112.4219,251.6094 L119.8125,251.6094 L119.8125,253.7656 L117.3438,253.7656 L117.3438,261.8438 L119.8125,261.8438 L119.8125,264 L112.4219,264 L112.4219,261.8438 L114.8906,261.8438 L114.8906,253.7656 L112.4219,253.7656 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="57" x="130.5" y="262.1543">Interface</text><line style="stroke:#A80036;stroke-width:1.5;" x1="102.5" x2="189.5" y1="274" y2="274"/><line style="stroke:#A80036;stroke-width:1.5;" x1="102.5" x2="189.5" y1="282" y2="282"/><ellipse cx="112.5" cy="293" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="49" x="121.5" y="296.2104">doStuff()</text><!--MD5=[4884b7d89b2ac96f05fa61140638e851]
+class ConcreteClass--><rect codeLine="5" fill="#FEFECE" filter="url(#fsds6dck6bt4u)" height="60.8047" id="ConcreteClass" style="stroke:#A80036;stroke-width:1.5;" width="122" x="85" y="121"/><ellipse cx="100" cy="137" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M102.9688,142.6406 Q102.3906,142.9375 101.75,143.0781 Q101.1094,143.2344 100.4063,143.2344 Q97.9063,143.2344 96.5781,141.5938 Q95.2656,139.9375 95.2656,136.8125 Q95.2656,133.6875 96.5781,132.0313 Q97.9063,130.375 100.4063,130.375 Q101.1094,130.375 101.75,130.5313 Q102.4063,130.6875 102.9688,130.9844 L102.9688,133.7031 Q102.3438,133.125 101.75,132.8594 Q101.1563,132.5781 100.5313,132.5781 Q99.1875,132.5781 98.5,133.6563 Q97.8125,134.7188 97.8125,136.8125 Q97.8125,138.9063 98.5,139.9844 Q99.1875,141.0469 100.5313,141.0469 Q101.1563,141.0469 101.75,140.7813 Q102.3438,140.5 102.9688,139.9219 L102.9688,142.6406 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="90" x="114" y="141.1543">ConcreteClass</text><line style="stroke:#A80036;stroke-width:1.5;" x1="86" x2="206" y1="153" y2="153"/><line style="stroke:#A80036;stroke-width:1.5;" x1="86" x2="206" y1="161" y2="161"/><ellipse cx="96" cy="172" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="49" x="105" y="175.2104">doStuff()</text><path d="M6,6 L6,61.3984 A0,0 0 0 0 6,61.3984 L142,61.3984 L146,120.75 L150,61.3984 L286,61.3984 A0,0 0 0 0 286,61.3984 L286,16 L276,6 L6,6 A0,0 0 0 0 6,6 " fill="#FBFB77" filter="url(#fsds6dck6bt4u)" style="stroke:#A80036;stroke-width:1.0;"/><path d="M276,6 L276,16 L286,16 L276,6 " fill="#FBFB77" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="234" x="12" y="23.0669">The "doStuff()" method is obligatorily</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="225" x="12" y="38.1997">implemented, since the interface is</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="259" x="12" y="53.3325">"a contract" over what the class shall do.</text><!--MD5=[4d8f3a8e2a9a184706d8d51a99d5cb1e]
+link ConcreteClass to Interface--><path codeLine="9" d="M146,182.22 C146,194.15 146,208.23 146,221.63 " fill="none" id="ConcreteClass-to-Interface" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="none" points="153,221.74,146,241.74,139,221.74,153,221.74" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[afd2a6e9de60d30b1731b0005fbea8ad]
+@startuml
+interface Interface{
+    + doStuff()
+}
+
+class ConcreteClass{
+    + doStuff()
+}
+
+ConcreteClass ..|> Interface
+
+note top of ConcreteClass
+    The "doStuff()" method is obligatorily
+    implemented, since the interface is
+    "a contract" over what the class shall do.
+end note
+@enduml
+
+PlantUML version 1.2021.00(Sun Jan 10 11:25:05 CET 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

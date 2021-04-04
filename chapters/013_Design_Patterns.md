@@ -253,6 +253,8 @@ Here we can take a look at a sample implementation of the Component Design Patte
 
 ------------------------------------------------------------------------------------------------
 
+Table: Summary table for the Component/Composite design pattern
+
 Dependency Injection
 --------------------
 
@@ -278,6 +280,8 @@ As you can see the decorator makes heavy use of abstract classes and interfaces,
 **Disadvantages**     Usage of interfaces or abstract classes can seem a bit daunting at the beginning, it may cause an explosion in number of classes.
 
 ------------------------------------------------------------------------------------------------
+
+Table: Summary table for the Decorator design pattern
 
 {{placeholder}}
 <!-- TODO: Code for the decorator pattern -->
@@ -307,8 +311,27 @@ Adapter
 Prototype
 ---------
 
+Sometimes, in our game, we need to decide which objects to create at runtime, as well as instantiate dynamically loaded classes. In these cases the prototype pattern comes to the rescue: we define a "prototype" that allows to create classes by cloning itself.
+
+There is the UML diagram for the pattern:
+
+![Diagram of the Prototype Pattern](./images/design_patterns/class_prototype.svg){width=40%}
+
+------------------    ------------------------------------------------------------------------------
+**Pattern Name**      Prototype
+
+**When to Use it**    When you need to either decide the objects to create at runtime or instantiate dynamically loaded classes.
+
+**Advantages**        Decoupling, added flexibility.
+
+**Disadvantages**     May become overused, depending on the situation can be difficult to implement.
+
+------------------------------------------------------------------------------------------------
+
+Table: Summary table for the Prototype design pattern
+
 {{placeholder}}
-<!-- TODO -->
+<!-- TODO: add code for the prototype pattern -->
 
 Facade
 ------
@@ -329,5 +352,7 @@ This pattern should be used with extreme care and only when necessary, since add
 **Disadvantages**     May become overused, delegating adds a bit of overhead, sometimes it may be wrongly used where either an adapter or a decorator is needed.
 
 ------------------------------------------------------------------------------------------------
+
+Table: Summary table for the Facade design pattern
 
 <!-- TODO: Code for the facade pattern -->

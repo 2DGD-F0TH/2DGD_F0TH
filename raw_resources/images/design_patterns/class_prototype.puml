@@ -1,0 +1,25 @@
+@startuml
+interface Prototype{
+    + clone()
+}
+
+class ConcretePrototype{
+    + clone()
+}
+
+class Client{
+    + doStuff()
+}
+
+Client ..> Prototype : <<import>>
+ConcretePrototype ..|> Prototype
+
+note top of Client
+    calls "prototype.clone()"
+end note
+
+note top of ConcretePrototype
+    the clone() method returns
+    a copy of the class
+end note
+@enduml

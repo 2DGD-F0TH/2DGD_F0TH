@@ -1,0 +1,17 @@
+@startuml
+interface Interface{
+    + doStuff()
+}
+
+class ConcreteClass{
+    + doStuff()
+}
+
+ConcreteClass ..|> Interface
+
+note top of ConcreteClass
+    The "doStuff()" method is obligatorily
+    implemented, since the interface is
+    "a contract" over what the class shall do.
+end note
+@enduml

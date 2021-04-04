@@ -787,6 +787,16 @@ Inheritance is represented via a hollow closed arrow head that points towards th
 
 In this example we say that "Student IS-A Person" and inherits all Person's methods and fields.
 
+##### Interface realization
+
+Interface realization can be complex to understand at first, given its formal definition:
+
+> The interface realization relationship specifies that the realizing class must conform to the contract that the provided interface specifies.
+
+In short, it means that the class is implementing all the methods specified by the interface (thus "realizing" it, as in making it real).
+
+![Example of interface realization in UML class diagram](./images/computer_science/class_interface_realization.svg){width=30%}
+
 ##### Association
 
 Association represents a static relationship between two classes. This is usually represented with a solid line with an arrow. The arrow usually shows the reading order of the association, so if you see an "Author" class and a "Book" class, the "wrote" association will be pointing from the "Author" to the "Book" class.
