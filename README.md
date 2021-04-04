@@ -49,7 +49,7 @@ All contributions will be handled with maximum respect and in accordance to our 
 Getting the book
 -----------------
 
-###Ready-to-read version
+### Ready-to-read version
 
 **As of March 21st, 2021 the ready-to-read versions of this book will be available only through Itch.io**
 
@@ -57,7 +57,7 @@ Getting the book
 
 I decided to use only Itch as it's more stable and not influenced by any kind of CI/CD issue or tantrum. I have to make the files and upload them there anyway, so I may as well use that page as my main point of download for the project.
 
-###Source Code
+### Source Code
 
 The source code for this ebook is available through the following official repositories:
 
