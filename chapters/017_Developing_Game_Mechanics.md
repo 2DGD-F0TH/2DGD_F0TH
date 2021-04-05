@@ -344,6 +344,16 @@ Some bullet hell games feature multi-phase bosses, where the boss changes attack
 
 A simple and effective strategy is clearing the screen of the enemy bullets automatically when the boss changes phase (sometimes transforming the bullets into collectibles for score), this will allow for a quick breather to the player, as well as a somewhat smooth transition to the new phase.
 
+### Find other chances to clear some bullets
+
+Some games find creative ways to clean up a screen cluttered with bullets: for instance some bullets can turn into collectibles when a pickup is touched by the ship.
+
+::: trivia :::
+In ZenoDyne R powerups are real, "physical" objects, and as such they block incoming bullets, so they can be strategically used as a "shield", and then pick them up at the last second.
+::::::::::::::
+
+Some games like to clear the screen (without giving out collectibles) at the beginning of a boss fight, to give a "clean slate" to start the boss with.
+
 ### Turn enemy bullets into collectibles at the end of a boss fight
 
 An interesting form of bonus that is often present in bullet hell games is turning all the boss's bullets on screen into collectibles at the end of a boss fight.
@@ -398,6 +408,20 @@ When the enemy exits the screen, it should stop shooting and just orderly leave.
 ::: tip :::
 If your game features enemy turrets, they should stop shooting when they are behind the player's ship: the player is already busy enough handling shots from the front. Shooting from behind makes the game unfair.
 :::::::::::
+
+### Be fair to the player, but also to the computer
+
+The title may be a bit awkward: how can you "be fair to a computer"?
+
+Computers don't have feelings, but players do. And letting the players kill the enemy before the AI activates takes away all the challenge from the game itself: the enemies become cannon fodder when the player's weapons have enough "power" to instantly kill most of the enemy forces.
+
+So to apply this, you should probably make the enemies invincible until they're fully on screen: this way the player sees them and doesn't kill them beyond the top of the game area.
+
+### Inertia
+
+Control is everything in a game where a pixel can be the difference between life and death of your ship/character. This means that heavy inertia does not play well with the "bullet hell" genre.
+
+This also doesn't mean that you can't apply any, just be careful and don't go overboard. When a player dies because their ship went too far due to inertia, they will get mad at the game, and by transitive property, at the devs.
 
 ### Some examples
 
