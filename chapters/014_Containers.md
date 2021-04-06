@@ -26,8 +26,7 @@ Secondarily, we need to make sure that the container is **thread-safe** (see mor
 
 {{placeholder}}
 
-<!-- TODO: An associative container that contains pairs (ENUM, ITEM) used to store and retrieve
-objects for the game -->
+<!-- TODO: An associative container that contains pairs (ENUM, ITEM) used to store and retrieve objects for the game -->
 
 Animator
 ---------
@@ -38,8 +37,7 @@ The animation component will just be updated (like the other components) and it 
 
 {{placeholder}}
 
-<!-- TODO: A class that yelds frames, with an internal counter and all the necessary facilitations for
-animating a sprite -->
+<!-- TODO: A class that yelds frames, with an internal counter and all the necessary facilitations for animating a sprite -->
 
 Finite State Machine
 ---------------------
@@ -196,11 +194,6 @@ This approach has a very minor issue: we are using a loop, so the further we str
 This second approach has an issue too: we will need to calculate the ceiling of a value, which may require a bit more CPU time (although most modern CPUs don't require more than a single cycle to do so).
 
 Both approaches are valid and for longer timers even the "naive" approach is valid and fast. The choice is up to your personal taste and sensibility.
-
-<!-- TODO: mul = ceil(leftover_time / - this.set_timer); this.time = time.time + mul * this.set_timer. Alternatively, add and loop until this.time > 0 -->
-{{placeholder}}
-
-<!-- TODO: A timer class that allows to execute a certain instruction every x seconds, abstracting the concept of frames -->
 
 Inbetweening
 --------
