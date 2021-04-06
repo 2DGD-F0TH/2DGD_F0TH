@@ -114,6 +114,16 @@ The software is available for Windows, MacOS and Linux.
 
 <https://famistudio.org/>
 
+### Helio {-}
+
+The Helio project poses itself as "an attempt to rethink a music sequencer to create a tool that feels right". It strives for an extremely clean interface, throwing the idea of it being used as a tool to "grow as a composer".
+
+It is still in its early stages, but what's there seems really good.
+
+This software is available for Windows, Linux, MacOS, Android and iOS.
+
+<https://helio.fm/>
+
 Maps {-}
 --------
 
