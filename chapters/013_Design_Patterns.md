@@ -379,4 +379,6 @@ This pattern should be used with extreme care and only when necessary, since add
 
 Table: Summary table for the Facade design pattern
 
+{{placeholder}}
+
 <!-- TODO: Code for the facade pattern -->
