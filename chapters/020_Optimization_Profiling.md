@@ -237,12 +237,55 @@ Some people allege that using "switch" statements instead of "if" statements is 
 
 Let's create two C++ listings, like follows:
 
-\noindent\begin{minipage}{.45\textwidth}
-\lstinputlisting[language=C++,caption=IFs vs Switch: IF Statements]{./static_listings/if_vs_switch_if.cpp}
-\end{minipage}\hfill
-\begin{minipage}{.45\textwidth}
-\lstinputlisting[language=C++,caption=IFs vs Switch: Switch Statements]{./static_listings/if_vs_switch_switch.cpp}
-\end{minipage}
+```{caption="IFs vs Switch - IF Statements"}
+#include <iostream>
+using namespace std;
+int main(){
+  for (int i = 0; i < 10000000; i++){
+    int x = rand() % 5;
+    if (x==1){
+      cout << "One" << endl;
+    }else if (x==2){
+      cout << "Two" << endl;
+    }else if(x==3){
+      cout << "Three" << endl;
+    }else if(x==4){
+      cout << "Four" << endl;
+    }else if(x==5){
+      cout << "Five" << endl;
+    }
+  }
+  return 0;
+}
+```
+
+```{caption="IFs vs Switch - Switch Statements"}
+#include <iostream>
+using namespace std;
+int main(){
+  for (int i = 0; i < 10000000; i++){
+    int x = rand() % 5;
+    switch(x){
+      case 1:
+        cout << "One" << endl;
+        break;
+      case 2:
+        cout << "Two" << endl;
+        break;
+      case 3:
+        cout << "Three" << endl;
+        break;
+      case 4:
+        cout << "Four" << endl;
+        break;
+      case 5:
+        cout << "Five" << endl;
+        break;
+    }
+  }
+  return 0;
+}
+```
 
 These pieces of code will be compiled without any optimization, using G++, using the following command:
 
@@ -258,19 +301,9 @@ time ./filename.bin
 
 Below we can see the results for both the codes:
 
-\begin{figure}
-\centering
-\begin{minipage}{.45\textwidth}
-    \centering
-    \includegraphics[width=0.9\linewidth]{./images/profiling_optimization/if_time.png}
-    \caption{Time taken by the IF code}%
-\end{minipage}
-\begin{minipage}{.45\textwidth}
-    \centering
-    \includegraphics[width=0.9\linewidth]{./images/profiling_optimization/switch_time.png}
-    \caption{Time taken by the Switch code}%
-\end{minipage}
-\end{figure}
+![Time taken by the IF code](./images/profiling_optimization/if_time.png){width=60%}
+
+![Time taken by the Switch code](./images/profiling_optimization/switch_time.png){width=60%}
 
 We can see a difference of just around 0.25 seconds, over 10 Million iterations. If you changed an equivalent IF statement for a Switch statement, you would earn a quarter of a second every 46 hours of gameplay at 60fps.
 
