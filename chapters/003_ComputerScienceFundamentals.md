@@ -225,37 +225,13 @@ Said table can contain any number of variables (we'll see how to implement those
 
 Let's arrange it into a double-entry table, like this (Values of A are on top, values of B are on the left):
 
-\begin{table}[H]
-    \centering
-    \caption{Karnaugh Map for A XOR B}
-    \begin{tabular}{|c c|c c|}
-        \hline
-        & & \multicolumn{2}{c|}{A}\\
-        & & \textbf{0} & \textbf{1}\\
-        \hline
-        \multirow{2}{*}{B} & \textbf{0} & 0 & 1 \\
-        & \textbf{1} & 1 & 0\\
-        \hline
-    \end{tabular}
-\end{table}
+![Karnaugh Map for A XOR B](./images/computer_science/karnaugh/karnaugh_1.svg){width=20%}
 
 Now we have to identify the biggest squares or rectangles that contain 2^n^ elements equal to 1 so that we can cover all the "1" values we have (they can overlap). In this case we're unlucky as we have only two small rectangles that contain one element each:
 
-\begin{table}[H]
-    \centering
-    \caption{Karnaugh Map where the elements of the two "rectangles" have been marked green and red}
-    \begin{tabular}{|c c|c c|}
-        \hline
-        & & \multicolumn{2}{c|}{A}\\
-        & & \textbf{0} & \textbf{1}\\
-        \hline
-        \multirow{2}{*}{B} & \textbf{0} & 0 & \textcolor{red}{1} \\
-        & \textbf{1} & \textcolor{green}{1} & 0\\
-        \hline
-    \end{tabular}
-\end{table}
+![Karnaugh Map where the elements of the two "rectangles" have been marked green and red](./images/computer_science/karnaugh/karnaugh_2.svg){width=20%}
 
-In this case, we have the result we want with the following formula: $f = (A \land \bar{B}) \lor (\bar{A} \land B$)
+In this case, we have the result we want with the following formula: $f = (A \land \bar{B}) \lor (\bar{A} \land B)$
 
 Not an improvement at all, but that's because the example is a really simple one.
 
@@ -274,69 +250,23 @@ Karnaugh Maps show more usefulness when we have the so-called "don't care"s, sit
 
 Putting this truth table into a Karnaugh map we get something a bit more interesting:
 
-\begin{table}[H]
-    \centering
-    \caption{Karnaugh Map with a "don't care" value}
-    \begin{tabular}{|c c|c c|}
-        \hline
-        & & \multicolumn{2}{c|}{A}\\
-        & & \textbf{0} & \textbf{1}\\
-        \hline
-        \multirow{2}{*}{B} & \textbf{0} & 0 & 1 \\
-        & \textbf{1} & 1 & x\\
-        \hline
-    \end{tabular}
-\end{table}
+![Karnaugh Map with a "don't care" value](./images/computer_science/karnaugh/karnaugh_3.svg){width=20%}
 
 Now we have a value that behaves a bit like a "wild card", that means we can pretend it's either a 0 or 1, depending on the situation. In this example we'll pretend it's a 1, because it's the value that will give us the biggest "rectangles".
 
-\begin{table}[H]
-    \centering
-    \caption{Karnaugh Map where we pretend the "don't care" value is equal to 1}
-    \begin{tabular}{|c c|c c|}
-        \hline
-        & & \multicolumn{2}{c|}{A}\\
-        & & \textbf{0} & \textbf{1}\\
-        \hline
-        \multirow{2}{*}{B} & \textbf{0} & 0 & 1 \\
-        & \textbf{1} & 1 & 1\\
-        \hline
-    \end{tabular}
-\end{table}
+![Karnaugh Map where we pretend the "don't care" value is equal to 1](./images/computer_science/karnaugh/karnaugh_4.svg){width=20%}
 
 Now we can find two two-elements rectangles in this map.
 
 The first is the following one:
 
-\begin{table}[H]
-    \centering
-    \begin{tabular}{|c c|c c|}
-        \hline
-        & & \multicolumn{2}{c|}{A}\\
-        & & \textbf{0} & \textbf{1}\\
-        \hline
-        \multirow{2}{*}{B} & \textbf{0} & 0 & 1 \\
-        & \textbf{1} & \textcolor{red}{1} & \textcolor{red}{1}\\
-        \hline
-    \end{tabular}
-\end{table}
+![First Rectangle in the Karnaugh map](./images/computer_science/karnaugh/karnaugh_5.svg){width=20%}
 
 In this case, we can see that the result is 1 when $B=1$, no matter the value of A. We'll keep this in mind.
 
 The second rectangle is:
 
-\begin{table}[H]
-    \centering
-    \begin{tabular}{|c c|c c|}
-        \hline
-        & & \multicolumn{2}{c|}{A}\\
-        & & \textbf{0} & \textbf{1}\\
-        \hline
-        \multirow{2}{*}{B} & \textbf{0} & 0 & \textcolor{green}{1} \\
-        & \textbf{1} & 1 & \textcolor{green}{1}\\
-        \hline
-    \end{tabular}
-\end{table}
+![Second Rectangle in the Karnaugh map](./images/computer_science/karnaugh/karnaugh_6.svg){width=20%}
 
 In this case, we can see that the result is 1 when $A=1$, no matter the value of B.
 
@@ -369,56 +299,17 @@ Now we'll have to group up our variables and put them in a Karnaugh Map using Gr
 
 The resulting Karnaugh map is the following (AB on columns, CD on rows):
 
-\begin{table}[H]
-    \centering
-    \begin{tabular}{|c c|c c c c|}
-        \hline
-        & & \multicolumn{4}{c|}{AB}\\
-        & & \textbf{00} & \textbf{01} & \textbf{11} & \textbf{10}\\
-        \hline
-        \multirow{4}{*}{CD} & \textbf{00} & 0 & 0 & 1 & 1\\
-        & \textbf{01} & 0 & 0 & 1 & 1\\
-        & \textbf{11} & 0 & 0 & x & 1\\
-        & \textbf{10} & 0 & 1 & 1 & 1\\
-        \hline
-    \end{tabular}
-\end{table}
+![A more complex Karnaugh map](./images/computer_science/karnaugh/karnaugh_7.svg){width=30%}
 
 We can see two rectangles that contain 2^n^ items, one with 2 items, the other with 8, considering the only "don't care" value as 1.
 
-\begin{table}[H]
-    \centering
-    \begin{tabular}{|c c|c c c c|}
-        \hline
-        & & \multicolumn{4}{c|}{AB}\\
-        & & \textbf{00} & \textbf{01} & \textbf{11} & \textbf{10}\\
-        \hline
-        \multirow{4}{*}{CD} & \textbf{00} & 0 & 0 & \textcolor{red}{1} & \textcolor{red}{1}\\
-        & \textbf{01} & 0 & 0 & \textcolor{red}{1} & \textcolor{red}{1}\\
-        & \textbf{11} & 0 & 0 & \textcolor{red}{x} & \textcolor{red}{1}\\
-        & \textbf{10} & 0 & 1 & \textcolor{red}{1} & \textcolor{red}{1}\\
-        \hline
-    \end{tabular}
-\end{table}
+![First rectangle of the more complex Karnaugh map](./images/computer_science/karnaugh/karnaugh_8.svg){width=30%}
 
 In this first rectangle, we can see that the values of C and D don't matter towards the result, as well as the value of B. The only variable that gives the result on this rectangle is $A=1$. We'll keep that in mind
 
 Let's see the second rectangle:
 
-\begin{table}[H]
-    \centering
-    \begin{tabular}{|c c|c c c c|}
-        \hline
-        & & \multicolumn{4}{c|}{AB}\\
-        & & \textbf{00} & \textbf{01} & \textbf{11} & \textbf{10}\\
-        \hline
-        \multirow{4}{*}{CD} & \textbf{00} & 0 & 0 & 1 & 1\\
-        & \textbf{01} & 0 & 0 & 1 & 1\\
-        & \textbf{11} & 0 & 0 & x & 1\\
-        & \textbf{10} & 0 & \textcolor{green}{1} & \textcolor{green}{1} & 1\\
-        \hline
-    \end{tabular}
-\end{table}
+![Second rectangle of the more complex Karnaugh map](./images/computer_science/karnaugh/karnaugh_9.svg){width=30%}
 
 In this case A doesn't give any contribution to the result, but at the same time we need $B=1$, $C=1$ and $D=0$ to get the wanted result.
 
@@ -451,68 +342,15 @@ Let's remove the "don't care" value and have the following truth table:
 
 Let's put it into a Karnaugh Map:
 
-\begin{table}[H]
-    \centering
-    \begin{tabular}{|c c|c c c c|}
-        \hline
-        & & \multicolumn{4}{c|}{AB}\\
-        & & \textbf{00} & \textbf{01} & \textbf{11} & \textbf{10}\\
-        \hline
-        \multirow{4}{*}{CD} & \textbf{00} & 0 & 0 & 1 & 1\\
-        & \textbf{01} & 0 & 0 & 1 & 1\\
-        & \textbf{11} & 0 & 0 & 0 & 1\\
-        & \textbf{10} & 0 & 1 & 1 & 1\\
-        \hline
-    \end{tabular}
-\end{table}
+![Guided Exercise: Karnaugh Map (1/4)](./images/computer_science/karnaugh/karnaugh_10.svg){width=30%}
 
 Find the biggest rectangles:
 
-\begin{table}[H]
-    \centering
-    \begin{tabular}{|c c|c c c c|}
-        \hline
-        & & \multicolumn{4}{c|}{AB}\\
-        & & \textbf{00} & \textbf{01} & \textbf{11} & \textbf{10}\\
-        \hline
-        \multirow{4}{*}{CD} & \textbf{00} & 0 & 0 & 1 & \textcolor{red}{1}\\
-        & \textbf{01} & 0 & 0 & 1 & \textcolor{red}{1}\\
-        & \textbf{11} & 0 & 0 & 0 & \textcolor{red}{1}\\
-        & \textbf{10} & 0 & 1 & 1 & \textcolor{red}{1}\\
-        \hline
-    \end{tabular}
-\end{table}
+![Guided Exercise: Karnaugh Map (2/4)](./images/computer_science/karnaugh/karnaugh_11.svg){width=30%}
 
-\begin{table}[H]
-    \centering
-    \begin{tabular}{|c c|c c c c|}
-        \hline
-        & & \multicolumn{4}{c|}{AB}\\
-        & & \textbf{00} & \textbf{01} & \textbf{11} & \textbf{10}\\
-        \hline
-        \multirow{4}{*}{CD} & \textbf{00} & 0 & 0 & \textcolor{green}{1} & \textcolor{green}{1}\\
-        & \textbf{01} & 0 & 0 & \textcolor{green}{1} & \textcolor{green}{1}\\
-        & \textbf{11} & 0 & 0 & 0 & 1\\
-        & \textbf{10} & 0 & 1 & 1 & 1\\
-        \hline
-    \end{tabular}
-\end{table}
+![Guided Exercise: Karnaugh Map (3/4)](./images/computer_science/karnaugh/karnaugh_12.svg){width=30%}
 
-
-\begin{table}[H]
-    \centering
-    \begin{tabular}{|c c|c c c c|}
-        \hline
-        & & \multicolumn{4}{c|}{AB}\\
-        & & \textbf{00} & \textbf{01} & \textbf{11} & \textbf{10}\\
-        \hline
-        \multirow{4}{*}{CD} & \textbf{00} & 0 & 0 & 1 & 1\\
-        & \textbf{01} & 0 & 0 & 1 & 1\\
-        & \textbf{11} & 0 & 0 & 0 & 1\\
-        & \textbf{10} & 0 & \textcolor{purple}{1} & \textcolor{purple}{1} & 1\\
-        \hline
-    \end{tabular}
-\end{table}
+![Guided Exercise: Karnaugh Map (4/4)](./images/computer_science/karnaugh/karnaugh_13.svg){width=30%}
 
 Extract the result: $f = (A \land \bar{C}) \lor (A \land \bar{B}) \lor (B \land C \land \bar{D})$
 
