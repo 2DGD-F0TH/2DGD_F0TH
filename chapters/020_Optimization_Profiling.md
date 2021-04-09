@@ -237,7 +237,7 @@ Some people allege that using "switch" statements instead of "if" statements is 
 
 Let's create two C++ listings, like follows:
 
-```{caption="IFs vs Switch - IF Statements"}
+```{.cpp caption="IFs vs Switch - IF Statements"}
 #include <iostream>
 using namespace std;
 int main(){
@@ -259,7 +259,7 @@ int main(){
 }
 ```
 
-```{caption="IFs vs Switch - Switch Statements"}
+```{.cpp caption="IFs vs Switch - Switch Statements"}
 #include <iostream>
 using namespace std;
 int main(){
