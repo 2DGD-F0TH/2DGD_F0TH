@@ -25,7 +25,7 @@ These are not strict requirements, they won't make your pull request get rejecte
 
 This book is built in a way that allows everyone to have the book in their own favourite programming language, as long as the listings for such language are available. LaTeX will take care of the highlighting.
 
-If you want to add a new programming language, navigate to the `listings` folder, copy the `pseudocode` folder and name it with your language's name - [check this link](https://en.wikibooks.org/wiki/LaTeX/Source_Code_Listings#Supported_languages) for the languages supported by the plugin used.
+If you want to add a new programming language, navigate to the `listings` folder, copy the `pseudocode` folder (or any other code folder you want) and name it with your language's name - [check here for the languages supported by the plugin used](https://en.wikibooks.org/wiki/LaTeX/Source_Code_Listings#Supported_languages).
 
 The only thing left to do is translating all the pseudo-code listings into your favourite programming language.
 
@@ -52,18 +52,17 @@ Images that are subject to change and corrections (like UML diagrams) should inc
 
 The book should be written as much as possible in [Pandoc Markdown](https://pandoc.org/MANUAL.html#pandocs-markdown), because everyone should be able to contribute to this book easily.
 
-If the situation calls for it (for instance you *absolutely need* a certain table styling) you can use pure LaTeX inline, inside the markdown document.
+If the situation calls for it (for instance you *absolutely need* a certain table styling) an SVG image is preferred.
+
+Inline LaTeX is usable in Pandoc's Markdown but is completely ignored when creating an EPub document, thus the book will miss content.
 
 ### Special Environments and commands
 
-To simplify the writing of the book as much as possible, I have included some commands and LaTeX environments:
+To simplify the writing of the book as much as possible, I have included some keywords that will pre-processed by Pandoc's filter system:
 
-- `\paidprod`: shows a red `[P]`, used to show a paid product;
-- `\freeprod`: shows a green `[F]`, used to show a free product;
-- `\donprod`: shows an orange `[D]`, used to show partially free products or products that accept donations;
-
-There are also some "keywords" that will be pre-processed by Pandoc's Lua Filters:
-
+- `{{paidprod}}`: shows a red `[P]`, used to show a paid product;
+- `{{freeprod}}`: shows a green `[F]`, used to show a free product;
+- `{{donprod}}`: shows an orange `[D]`, used to show partially free products or products that accept donations;
 - `{{placeholder}}`: A simple placeholder, prints the "This section is still a work in progress" message;
 - `{{pagebreak}}`: A forced pagebreak, used between chapters.
 
