@@ -611,7 +611,18 @@ Public members are highlighted by a "+" symbol (or in our case, a green symbol) 
 
 Static members are shown with an \underline{underlined} name, while abstract members are shown in *italics*.
 
-#### Relationships between classes
+#### Interfaces
+
+Sometimes there is a need to convey the concept of "interface" inside a UML class diagram, that can easily be done in 2 ways:
+
+- By using the class construct, with the keyword (called "stereotype") `<<interface>>` written on top of it;
+- By using the "lollipop notation" (also called "interface realization").
+
+![Defining an interface in UML](./images/computer_science/interface.svg){width=15%}
+
+![Interface Realization in UML](./images/computer_science/interface_realization.svg){width=15%}
+
+#### Relationships between entities of the class diagram
 
 Expressing only single classes on their own doesn't give UML a lot of expressive power when it comes to planning your games. Here we'll take a quick look at the most used relationships between classes.
 
@@ -670,18 +681,6 @@ An example could be between a "Car Factory" and a class "Car": the "CarFactory" 
 #### Notes
 
 As with Use Case diagrams, class diagrams can make use of notes too, and the graphical language used to represent them is exactly the same one used in the Use Case Diagrams.
-
-#### Interfaces
-
-Sometimes there is a need to convey the concept of "interface" inside a UML class diagram, that can easily be done in 2 ways:
-
-- By using the class construct, with the keyword (called "stereotype") `<<interface>>` written on top of it;
-- By using the "lollipop notation" (called "interface realization").
-
-![Defining an interface in UML](./images/computer_science/interface.svg){width=15%}
-
-![Interface Realization in UML](./images/computer_science/interface_realization.svg){width=15%}
-
 
 ### Activity Diagrams
 

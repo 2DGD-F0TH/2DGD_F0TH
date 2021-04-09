@@ -4,6 +4,6 @@ interface SearchInterface <<interface>>
 
 class SearchProvider
 
-SearchInterface <|-- SearchProvider
+SearchInterface <|.. SearchProvider
 
 @enduml
