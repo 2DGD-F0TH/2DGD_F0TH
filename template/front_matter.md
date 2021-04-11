@@ -2,7 +2,7 @@
 <div style="page-break-after: always;">
 <p>Copyright © 2019-2021 Daniele Penazzo</p>
 
-<p>2D Game Development: From Zero To Hero (python edition, version v0.6.5-17-g1201bc7) is distributed under the terms of the Creative Commons Attribution-NonCommercial International 4.0 license.</p>
+2D Game Development: From Zero To Hero ( {{%proglang%}} edition, version {{%version%}} ) is distributed under the terms of the Creative Commons Attribution-NonCommercial International 4.0 license.
 
 <p>
 If you want to view a copy of the license, visit <a href="http://creativecommons.org/licenses/by-nc/4.0/">http://creativecommons.org/licenses/by-nc/4.0/</a> or check the LICENSE file in the book repository.

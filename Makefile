@@ -1,8 +1,8 @@
 PANDOC=pandoc
 PANDOC_STANDALONE=pandoc -s
 CHAPTERS_CMD=`find chapters/*.md | sort -V` metadata.yaml
-PANDOC_DEFAULT_ARGS=--lua-filter ./filters/filter_helper.lua --listings -N --pdf-engine=xelatex
-PDF_TEMPLATE=--template template/template.tex
+PANDOC_DEFAULT_ARGS=--lua-filter ./filters/filter_helper.lua --listings -N
+PDF_TEMPLATE=--pdf-engine=xelatex --template template/template.tex
 EPUB_TEMPLATE=--css template/epub.css --highlight-style pygments --template template/template.xhtml
 VERSION=-M version=`git describe --tags`
 GLADTEX_PKG=gladtex -d "gladtex_imgs" --png -P -p "\usepackage{cancel}\usepackage{gensymb}" -
