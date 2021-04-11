@@ -13,6 +13,9 @@ API
 D {-}
 -----
 
+Dangling Pointer
+: A dangling pointer is a memory pointer that references an area of memory that doesn't contain a valid object. A dangling pointer usually happens when an object is deleted from memory forcibly, but the pointers referencing said object are not invalidated (usually by setting such pointers to a null value).
+
 Dynamic Execution
 : See *out of order execution*
 
@@ -55,6 +58,9 @@ M {-}
 Malware
 : Short for "malicious software", it's a "catchall term" for viruses, trojan horses and any kind of software that is programmed to behave maliciously. Such software can steal information (passwords, key presses, habits, etc...) or flat out try to make your computer unusable (deleting system files, encrypting your documents and asking for a ransom, etc...)
 
+Memory Leak
+: A memory leak is usually the result of a programming error, where the memory is not correctly managed. This usually entails allocating and using memory without releasing it, thus the program will eat more and more memory as it keeps running.
+
 O {-}
 -----
 
@@ -93,6 +99,9 @@ U {-}
 
 UI
 : Short of *User Interface*, defines the elements shown to and interacted by the user in a software or, in this case, a videogame menu.
+
+Unreachable Memory
+: This is a phenomenon where some dynamically allocated memory has no more references pointing to it. This is a common cause of memory leaks in programming languages without automatic garbage collection (like C and C++).
 
 W {-}
 -----
