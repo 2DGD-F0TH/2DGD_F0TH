@@ -109,6 +109,32 @@ We can represent the two "loops" in the following UML diagram:
 
 <!-- TODO: Introduction on how to make multi-threaded loading screens -->
 
+### Simulating Inertia
+
+After learning how to move something on a screen, the next step is making the movement less "jarring" by introducing inertia. Before throwing solutions around, let's see what the problem is.
+
+When we press a button, without inertia, our character starts moving at full speed towards the direction we defined, and it will stop as soon as we let go of the button. We can represent such behaviour with the following chart:
+
+![Example chart of how movement without inertia looks](./images/developing_mechanics/inertia_0.svg){width=50%}
+
+This could be jarring on its own, but the situation gets more serious the higher the speed difference: one thing is having a character being able to run from a standstill and stop immediately, but it feels all the more jarring if a character can turn 180 degrees on its path without the slightest hint of inertia (we assume that positive speed means "going right", while negative speed means "going left"):
+
+![Example chart of how movement without inertia looks: reversing directions](./images/developing_mechanics/inertia_1.svg){width=50%}
+
+If this is connected to a [fully-tracking camera system](#fully_tracking_camera) your player is in for a ride rivaling the deadliest rollercoasters in the world. What we want is the speed curve to behave more like the following (here too we assume that positive speed means "going right", while negative speed means "going left"):
+
+![Example chart of how movement with inertia looks](./images/developing_mechanics/inertia_2.svg){width=50%}
+
+A "softer" transition between directions can be a good way to avoid nausea as well as making the game behave more realistically, the change of direction can be also coupled with a skidding animation to make it even more convincing.
+
+::: trivia :::
+Inertia is so important (and common) that even the famous "Super Mario Bros." (1983) for the NES features it, as well as a "skidding animation".
+::::::::::::::
+
+{{placeholder}}
+
+<!-- TODO: How to simulate starting and finishing a run from and to a standstill, without being too jarring (NEEDS CODE) -->
+
 2D Platformers
 ---------------
 
@@ -159,12 +185,6 @@ In this example we are assuming that the framework used uses the screen coordina
 {{placeholder}}
 
 <!-- TODO: How to walk on stairs -->
-
-### Simulating Inertia
-
-{{placeholder}}
-
-<!-- TODO: How to simulate starting and finishing a run from and to a standstill, without being too jarring -->
 
 ### Jump Buffering {#jump_buffering}
 
