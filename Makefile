@@ -22,13 +22,13 @@ latex:
 	$(PANDOC_STANDALONE) $(PANDOC_DEFAULT_ARGS) $(CHAPTERS_CMD) $(VERSION) $(PDF_TEMPLATE) -M proglang=pseudocode -o Book_LaTeX.latex
 
 epub_pseudocode:
-	$(PANDOC) $(PANDOC_DEFAULT_ARGS) template/front_matter.md $(CHAPTERS_CMD) $(VERSION) -M proglang="pseudocode" -t json | $(GLADTEX_PKG) | $(PANDOC_STANDALONE) -f json $(EPUB_TEMPLATE) --to=epub -o Pseudocode_Edition.epub
+	$(PANDOC) $(PANDOC_DEFAULT_ARGS) template/epub_addons/front_matter.md template/epub_addons/dedication.md $(CHAPTERS_CMD) $(VERSION) -M proglang="pseudocode" -t json | $(GLADTEX_PKG) | $(PANDOC_STANDALONE) -f json $(EPUB_TEMPLATE) --to=epub -o Pseudocode_Edition.epub
 
 epub_python:
-	$(PANDOC) $(PANDOC_DEFAULT_ARGS) template/front_matter.md $(CHAPTERS_CMD) $(VERSION) -M proglang="python" -t json | $(GLADTEX_PKG) | $(PANDOC_STANDALONE) -f json $(EPUB_TEMPLATE) --to=epub -o Python_Edition.epub
+	$(PANDOC) $(PANDOC_DEFAULT_ARGS) template/epub_addons/front_matter.md template/epub_addons/dedication.md $(CHAPTERS_CMD) $(VERSION) -M proglang="python" -t json | $(GLADTEX_PKG) | $(PANDOC_STANDALONE) -f json $(EPUB_TEMPLATE) --to=epub -o Python_Edition.epub
 
 epub_cpp:
-	$(PANDOC) $(PANDOC_DEFAULT_ARGS) template/front_matter.md $(CHAPTERS_CMD) $(VERSION) -M proglang="C++" -t json | $(GLADTEX_PKG) | $(PANDOC_STANDALONE) -f json $(EPUB_TEMPLATE) --to=epub -o C++_Edition.epub
+	$(PANDOC) $(PANDOC_DEFAULT_ARGS) template/epub_addons/front_matter.md template/epub_addons/dedication.md $(CHAPTERS_CMD) $(VERSION) -M proglang="C++" -t json | $(GLADTEX_PKG) | $(PANDOC_STANDALONE) -f json $(EPUB_TEMPLATE) --to=epub -o C++_Edition.epub
 
 .PHONY: clean
 clean:

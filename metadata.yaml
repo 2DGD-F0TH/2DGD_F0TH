@@ -23,17 +23,6 @@ keywords:
     - games
     - game-design
     - programming
-# Inspiring Quote
-initquote: "Perseverance is the backbone of success."
-# Quote Author
-initquoteauthor: "Anonymous"
-# Dedication
-dedication:
-    - To my family
-    - To my friends, both international and not
-    - To those who never give up
-# Space between quote and dedications
-vspace: 200
 # Index?
 toc: True
 # Toc Depth (Default 4)

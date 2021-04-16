@@ -13,7 +13,9 @@ function epigraphs(elem)
     else
         if elem.classes[1] == 'epigraph' then
             local author = elem.attributes["author"]
-            table.insert(elem.content, pandoc.RawBlock("html", '<div class="epigraph-author">' .. author .. '</div>'))
+            if author ~=nil then
+                table.insert(elem.content, pandoc.RawBlock("html", '<div class="epigraph-author">' .. author .. '</div>'))
+            end
         end
         return elem
     end
