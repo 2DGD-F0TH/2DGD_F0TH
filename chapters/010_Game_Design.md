@@ -497,3 +497,28 @@ This method can be implemented in many ways, one of them could be assigning a le
 | > +3                       | 1                 |
 
 Table: An example of "level-based" experience rewards
+
+Miscellaneous
+-------------
+
+This section denotes some various things that don't really fit in "tips and tricks" but are still related to game design.
+
+### You cannot use the "Red Cross" in games
+
+::: pitfall :::
+What follows **is not legal advice**. I am not a lawyer.
+
+If you want to know more (as in quantity and quality of information), contact your favourite lawyer.
+:::::::::::::::
+
+When you are developing a game, you will be tempted to use the famous "red cross" symbol on your health packs or health-related items.
+
+**Don't do that**
+
+The red cross symbol (a red cross over white background) is not in the public domain, but it's actually a symbol governed by the ICRC (International Committee of the Red Cross) and you may get in legal trouble for misusing it.
+
+Halo and Doom changed their health packs symbol, from the red cross to a "red H" and a "pill" respectively.
+
+The ICRC enforcement of this rule is inconsistent, but it would technically be a violation of the First Geneva Convention, chapter VII, articles 44 and 53.
+
+Also states themselves (like Canada) tend to have rules of law regulating the use of the symbol in more detail.
