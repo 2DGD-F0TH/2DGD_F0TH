@@ -523,11 +523,12 @@ Reading UML diagrams
 
 UML (Universal Modeling Language) is a set of graphical tools that allow a team to better organize and plan a software product. Diagrams are drawn in such a way to give the reader an overall assessment of the situation described while being easy to read and understand.
 
-In this chapter we will take a look at 3 diagrams used in UML:
+In this chapter we will take a look at 4 diagrams used in UML:
 
 - Use Case Diagrams
 - Class Diagrams
 - Activity Diagrams
+- Sequence Diagrams
 
 ### Use Case Diagrams
 
