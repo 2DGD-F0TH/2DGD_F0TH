@@ -158,7 +158,7 @@ When developing a sequel, you will have to live up to your previous game, as wel
 
 Not only a sequel must be "as good or better" than its predecessor, but also it should add something to the original game, as well as the established lore (if there is one).
 
-Your time and resource management must be top-notch to be able to "bring more with less", since your resource need cannot skyrocket without a reason.
+Your time and resource management must be top-notch to be able to "bring more with less", since your resource needs cannot skyrocket without a reason.
 
 Also don't get caught in the some kind of "sequel disease" where you end up making a sequel just to "milk the intellectual property": you will end up ruining the whole series.
 
