@@ -29,20 +29,18 @@ If you want to view a copy of the license, visit <a href="http://creativecommons
 </g>
 </svg>
 
-<p>The PDF releases of this book can be found at the following addresses:</p>
+<p>The PDF and EPub releases of this book can be found at the following address:</p>
 <ul>
     <li><a href="https://therealpenaz91.itch.io/2dgd-f0th">https://therealpenaz91.itch.io/2dgd-f0th</a> (Official Itch.io Page)</li>
-    <li><a href="https://gitlab.com/Penaz/2dgd_f0th">https://gitlab.com/Penaz/2dgd_f0th</a> (Official GitLab Repository)/</li>
-    <li><a href="https://github.com/Penaz91/2DGD_F0TH/">https://github.com/Penaz91/2DGD_F0TH/</a> (Official GitHub Mirror Repository)</li>
 </ul>
 
 <p>This book's source code can be found in the following official repositories:</p>
 <ul>
     <li>
-        <a href="https://gitlab.com/Penaz/2dgd_f0th">https://gitlab.com/Penaz/2dgd_f0th</a>
+        <a href="https://gitlab.com/Penaz/2dgd_f0th">https://gitlab.com/Penaz/2dgd_f0th</a> (Official GitLab Repository)
     </li>
     <li>
-        <a href="https://github.com/Penaz91/2DGD_F0TH/">https://github.com/Penaz91/2DGD_F0TH/</a>
+        <a href="https://github.com/Penaz91/2DGD_F0TH/">https://github.com/Penaz91/2DGD_F0TH/</a> (Official GitHub Repository)
     </li>
 </ul>
 
