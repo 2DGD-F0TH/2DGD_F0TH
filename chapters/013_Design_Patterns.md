@@ -382,3 +382,10 @@ Table: Summary table for the Facade design pattern
 {{placeholder}}
 
 <!-- TODO: Code for the facade pattern -->
+
+Service Locator
+---------------
+
+{{placeholder}}
+
+<!-- TODO: Service locator pattern -->
