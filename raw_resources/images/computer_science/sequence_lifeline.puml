@@ -1,0 +1,6 @@
+@startuml
+-> WebServer: Request
+activate WebServer
+return Response
+deactivate WebServer
+@enduml

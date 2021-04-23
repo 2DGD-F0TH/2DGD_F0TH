@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="161px" preserveAspectRatio="none" style="width:142px;height:161px;" version="1.1" viewBox="0 0 142 161" width="142px" zoomAndPan="magnify"><defs><filter height="300%" id="fsxzkyatwtqx1" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><rect fill="#FFFFFF" filter="url(#fsxzkyatwtqx1)" height="29.1328" style="stroke:#A80036;stroke-width:1.0;" width="10" x="81" y="71.4297"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="85.5" x2="85.5" y1="40.2969" y2="118.5625"/><rect fill="#FEFECE" filter="url(#fsxzkyatwtqx1)" height="30.2969" style="stroke:#A80036;stroke-width:1.5;" width="89" x="39.5" y="5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="75" x="46.5" y="24.9951">WebServer</text><rect fill="#FEFECE" filter="url(#fsxzkyatwtqx1)" height="30.2969" style="stroke:#A80036;stroke-width:1.5;" width="89" x="39.5" y="117.5625"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="75" x="46.5" y="137.5576">WebServer</text><rect fill="#FFFFFF" filter="url(#fsxzkyatwtqx1)" height="29.1328" style="stroke:#A80036;stroke-width:1.0;" width="10" x="81" y="71.4297"/><polygon fill="#A80036" points="69,67.4297,79,71.4297,69,75.4297,73,71.4297" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="0" x2="75" y1="71.4297" y2="71.4297"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="52" x="7" y="66.3638">Request</text><polygon fill="#A80036" points="11,96.5625,1,100.5625,11,104.5625,7,100.5625" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="5" x2="85" y1="100.5625" y2="100.5625"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="62" x="17" y="95.4966">Response</text><!--MD5=[3ccfcf50beabf0244269f0d9b0677f1b]
+@startuml
+-> WebServer: Request
+activate WebServer
+return Response
+deactivate WebServer
+@enduml
+
+PlantUML version 1.2021.4(Sun Apr 04 10:49:39 CEST 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

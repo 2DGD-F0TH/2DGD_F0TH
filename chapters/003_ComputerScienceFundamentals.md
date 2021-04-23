@@ -749,6 +749,46 @@ The components of activity diagrams shown here are just a small part of the used
 
 ### Sequence Diagrams
 
+Sequence diagrams are used to represents how objects interact with each other and such interactions are represented in a time sequence.
+
+#### Lifelines
+
+The central concept of sequence diagrams are lifelines: the represent the time an object is "alive" and when it is doing something.
+
+![Example of a sequence diagram lifeline](./images/computer_science/sequence_lifeline.svg){width=30%}
+
+The time flows from top to bottom, a dashed line represents the object being instantiated in memory, while the rectangle that replaces the dotted line represents the object being "active" (for instance one of its functions is called).
+
+#### Messages
+
+Each object (represented by a lifeline) communicates with other objects and the "outside" through "messages".
+
+Messages are represented by arrows and they are represented here:
+
+![Messages in a sequence diagram](./images/computer_science/sequence_messages.svg){width=30%}
+
+Let's see them one by one:
+
+- **Found Messages** are messages that come from "outside", from the perspective of the part of the system we are analyzing, they may come from another system or even the user.
+- **Synchronous Messages and returns** are messages that activate a class and wait for a "return message". These usually represent a synchronous function call (but it can represent a more abstract concept).
+- **Asynchronous Messages** are messages that activate a class but don't wait for a return value. These usually represent asynchronous functions calls.
+- **Self-messages** are messages from an object to itself, they usually represent an internal function call.
+- **Lost Messages** are messages sent towards the "outside", from the perspective of the part of the system we are analyzing.
+
+#### Object Instantiation
+
+{{placeholder}}
+
+#### Object Destruction
+
+{{placeholder}}
+
+#### Grouping and loops
+
+{{placeholder}}
+
+#### Notes
+
 {{placeholder}}
 
 <!-- TODO: Explain Sequence Diagrams -->

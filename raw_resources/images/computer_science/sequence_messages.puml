@@ -1,0 +1,14 @@
+@startuml
+[o-> Class_A: Found Message
+activate Class_A
+Class_A -> Class_B: Synchronous Message
+activate Class_B
+Class_B --> Class_C: Asynchronous Message
+activate Class_C
+deactivate Class_C
+Class_B -> Class_B: Self-message
+return Return
+deactivate Class_B
+deactivate Class_A
+Class_A ->o?: Lost Message
+@enduml
