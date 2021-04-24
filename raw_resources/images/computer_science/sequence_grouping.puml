@@ -1,0 +1,12 @@
+@startuml
+actor User
+User -> Monte_Carlo_Calculator++: compute()
+loop 10000 times
+    Monte_Carlo_Calculator -> Input_Generator: generate_input()
+    activate Input_Generator
+    ||45||
+    return result
+    deactivate Input_Generator
+end
+User <-- Monte_Carlo_Calculator-- : result
+@enduml

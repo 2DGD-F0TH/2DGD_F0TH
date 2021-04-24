@@ -1,0 +1,7 @@
+@startuml
+Class_1 --> Class_2++ : doStuff()
+return result
+note left of Class_1
+    This is a note.
+end note
+@enduml

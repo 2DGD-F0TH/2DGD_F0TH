@@ -791,17 +791,15 @@ Sometimes it may be useful to represent the instantiation and destruction of obj
 
 #### Grouping and loops
 
-{{placeholder}}
+From time to time, we may need to represent a series of messages being sent in parallel, a loop, or just group some messages to represent them in a clearer manner. This is where grouping comes of use: it has a representation based on "boxes", like the following:
 
-#### Delays
-
-{{placeholder}}
+![A loop grouping in a sequence diagram](./images/computer_science/sequence_grouping.svg){width=40%}
 
 #### Notes
 
-{{placeholder}}
+Like all UML diagrams, it is possible to use notes to add some comments that may be useful for the interpretation of our diagrams, like follows.
 
-<!-- TODO: Explain Sequence Diagrams -->
+![Example of notes in a sequence diagram](./images/computer_science/sequence_notes.svg){width=40%}
 
 Generic Programming
 --------------------
