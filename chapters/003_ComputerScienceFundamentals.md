@@ -765,7 +765,7 @@ The participants don't have to be actual classes, since sequence diagrams repres
 
 Some UML drawing software allows for custom shapes for each participant, like the following:
 
-![Some alternative shapes for participants](./images/computer_science/sequence_participants.svg){width=40%}
+![Some alternative shapes for participants](./images/computer_science/sequence_participants.svg){width=50%}
 
 #### Messages
 
@@ -773,7 +773,7 @@ Each object (represented by a lifeline) communicates with other objects and the 
 
 Messages are represented by arrows and they are represented here:
 
-![Messages in a sequence diagram](./images/computer_science/sequence_messages.svg){width=30%}
+![Messages in a sequence diagram](./images/computer_science/sequence_messages.svg){width=50%}
 
 Let's see them one by one:
 
