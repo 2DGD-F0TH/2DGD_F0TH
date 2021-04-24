@@ -749,15 +749,23 @@ The components of activity diagrams shown here are just a small part of the used
 
 ### Sequence Diagrams
 
-Sequence diagrams are used to represents how objects interact with each other and such interactions are represented in a time sequence.
+Sequence diagrams are used to represents how objects (called "participants") interact with each other and such interactions are represented in a time sequence.
 
 #### Lifelines
 
-The central concept of sequence diagrams are lifelines: the represent the time an object is "alive" and when it is doing something.
+The central concept of sequence diagrams are lifelines: the represent the time an participant is "alive" and when it is doing something.
 
 ![Example of a sequence diagram lifeline](./images/computer_science/sequence_lifeline.svg){width=30%}
 
-The time flows from top to bottom, a dashed line represents the object being instantiated in memory, while the rectangle that replaces the dotted line represents the object being "active" (for instance one of its functions is called).
+The time flows from top to bottom, a dashed line represents the participant exists (for instance an object is instantiated in memory), while the rectangle that replaces the dotted line represents the participant being "active" (for instance one of the object's functions is called).
+
+##### Participants
+
+The participants don't have to be actual classes, since sequence diagrams represent interactions at a "higher level" than mere code-bound planning.
+
+Some UML drawing software allows for custom shapes for each participant, like the following:
+
+![Some alternative shapes for participants](./images/computer_science/sequence_participants.svg){width=40%}
 
 #### Messages
 
@@ -775,15 +783,17 @@ Let's see them one by one:
 - **Self-messages** are messages from an object to itself, they usually represent an internal function call.
 - **Lost Messages** are messages sent towards the "outside", from the perspective of the part of the system we are analyzing.
 
-#### Object Instantiation
+#### Object Instantiation and Destruction
 
-{{placeholder}}
+Sometimes it may be useful to represent the instantiation and destruction of objects in a sequence diagram. UML provides such facilities via the `<<instantiate>>`, `<<create>>` and `<<destroy>>` keywords, as well as a symbol for the destruction of an object.
 
-#### Object Destruction
-
-{{placeholder}}
+![Object instantiation and destruction in a sequence diagram](./images/computer_science/sequence_instantiation_destruction.svg){width=40%}
 
 #### Grouping and loops
+
+{{placeholder}}
+
+#### Delays
 
 {{placeholder}}
 

@@ -1,0 +1,7 @@
+@startuml
+Class_1 --> Class_2**: <<instantiate>>
+Class_1 --> Class_2++ : doStuff()
+||45||
+return result
+Class_1 --> Class_2!! : <<destroy>>
+@enduml

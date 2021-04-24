@@ -1,0 +1,24 @@
+@startuml
+actor Actor
+participant Generic_Participant
+queue Queue
+database Database
+collections Collection
+activate Actor
+Actor -> Generic_Participant
+activate Generic_Participant
+Generic_Participant -> Queue
+activate Queue
+Queue -> Database
+activate Database
+Database --> Queue
+deactivate Database
+deactivate Queue
+Generic_Participant -> Collection
+activate Collection
+Collection --> Generic_Participant
+deactivate Collection
+Generic_Participant --> Actor
+deactivate Generic_Participant
+deactivate Actor
+@enduml
