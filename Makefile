@@ -1,8 +1,13 @@
+# Make the latex engine selectable via Env Var
+ifndef LATEX_ENGINE
+	LATEX_ENGINE=xelatex
+endif
+# Some defaults
 PANDOC=pandoc
 PANDOC_STANDALONE=pandoc -s
 CHAPTERS_CMD=`find chapters/*.md | sort -V` metadata.yaml
 PANDOC_DEFAULT_ARGS=--lua-filter ./filters/filter_helper.lua --listings -N
-PDF_TEMPLATE=--pdf-engine=xelatex --template template/template.tex
+PDF_TEMPLATE=--pdf-engine=$(LATEX_ENGINE) --template template/template.tex
 EPUB_TEMPLATE=--css template/epub.css --highlight-style pygments --template template/template.xhtml
 VERSION=-M version=`git describe --tags`
 GLADTEX_PKG=gladtex -d "gladtex_imgs" --png -P -p "\usepackage{cancel}\usepackage{gensymb}" -
