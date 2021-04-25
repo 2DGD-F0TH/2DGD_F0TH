@@ -753,7 +753,7 @@ Sequence diagrams are used to represents how objects (called "participants") int
 
 #### Lifelines
 
-The central concept of sequence diagrams are lifelines: the represent the time an participant is "alive" and when it is doing something.
+The central concept of sequence diagrams are lifelines: the represent the time a participant is "alive" and when it is doing something.
 
 ![Example of a sequence diagram lifeline](./images/computer_science/sequence_lifeline.svg){width=30%}
 
