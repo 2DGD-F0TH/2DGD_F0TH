@@ -769,13 +769,13 @@ Some UML drawing software allows for custom shapes for each participant, like th
 
 #### Messages
 
-Each object (represented by a lifeline) communicates with other objects and the "outside" through "messages".
+Each object (represented by a lifeline) communicates with other objects (and the "outside") through "messages".
 
-Messages are represented by arrows and they are represented here:
+Messages are represented by arrows and an example can be seen here:
 
 ![Messages in a sequence diagram](./images/computer_science/sequence_messages.svg){width=50%}
 
-Let's see them one by one:
+Let's analyze them one by one:
 
 - **Found Messages** are messages that come from "outside", from the perspective of the part of the system we are analyzing, they may come from another system or even the user.
 - **Synchronous Messages and returns** are messages that activate a class and wait for a "return message". These usually represent a synchronous function call (but it can represent a more abstract concept).
