@@ -7,6 +7,15 @@ Creating your resources
 Art is not what you see, but what you make others see.
 ::::::
 
+Assumptions
+-----------
+
+This book (for now) assumes you already have some minimal knowledge of some matters, including but not limited to:
+
+- Bars (in music)
+- Beats (in music)
+- Basic music notation (either *letter notation*~[g]~ or the *modern music notation*~[g]~)
+
 Graphics {#GraphicsResources}
 ---------
 
@@ -725,6 +734,32 @@ A pattern is essentially a piece of a song: a group of tracks with their own ins
 {{placeholder}}
 <!-- TODO: Finish talking about patterns in trackers -->
 
+### Basic Rhythms
+
+When composing music, we may not know where to start: this is the objective of this section: give you some easy rhythms to start with. Here I will use LMMS's beat+bassline editor to represent the notes, as it's the easiest to understand.
+
+#### Four on the floor
+
+This is the most basic rhythm there is: let's consider a situation where we have 16 beats per bar (so each note is 1/16th):
+
+![A single bar in our basic rhythm](./images/resources/sixteen_beats.png){width=50%}
+
+The four on the floor rhythm uses a kick drum in the 1st, 5th, 9th and 13th beat, giving a constant rhythm.
+
+![A basic four on the floor rhythm](./images/resources/four_on_the_floor.png){width=50%}
+
+This is practically the basic of all dance-based music.
+
+#### Four on the floor with off-beat hi-hats
+
+A basic rhythm like the "four on the floor", by itself, can prove to be quite boring. To spice it up, we can add some closed hi-hats in the off-beats, like the following:
+
+![Four on the floor with off-beat hi-hats](./images/resources/fotf_offbeat.png){width=50%}
+
+If you listen closely, a lot of music has this basic pattern mixed into it, in one way or another.
+
+{{placeholder}}
+
 Fonts
 -------
 
@@ -810,7 +845,7 @@ precision lowp float;
 uniform float u_time;
 
 void main() {
-	gl_FragColor = vec4(1.0,0.0,0.0,1.0);
+    gl_FragColor = vec4(1.0,0.0,0.0,1.0);
 }
 ```
 

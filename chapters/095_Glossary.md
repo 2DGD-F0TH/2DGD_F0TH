@@ -52,6 +52,12 @@ K {-}
 Kanboard
 : Short for "Kanban Board", are boards used to manage work. The board is usually divided into swimlanes and "cards" that represent the work to do are moved from left to right, to represent the progress of the work itself.
 
+L {-}
+-----
+
+Letter Notation
+: Also known as "letter music notation", it's a music notation system that uses letters A through G to write music.
+
 M {-}
 -----
 
@@ -60,6 +66,9 @@ Malware
 
 Memory Leak
 : A memory leak is usually the result of a programming error, where the memory is not correctly managed. This usually entails allocating and using memory without releasing it, thus the program will eat more and more memory as it keeps running.
+
+Modern music notation
+: The most common way to write music, using symbols to indicate the duration and type of note, while the symbol's positioning in a 5-line staff defines its pitch.
 
 O {-}
 -----
