@@ -44,7 +44,7 @@ You should still plan ahead for your Game Jam experience:
 - Make sure your PC is well set up;
 - Make sure your development environment works correctly;
 - Ensure you can compile some test programs correctly;
-- Have a good IDE~[g]~ ready;
+- Have a good *IDE*~[g]~ ready;
 - Plan your meals well, the less time you cook, the more time you can rest and think;
 - Have a generic roadmap that tells you how much time you want to dedicate to each phase;
 - Have some ready-to-use resources to use as placeholders;
