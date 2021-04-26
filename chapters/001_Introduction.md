@@ -68,8 +68,6 @@ There will be times when it's needed to write down something from another source
 >
 > I am another row of the block quote! Have a nice day!
 
-<!-- TODO: Insert more conventions, assumptions... -->
-
 ### Boxes
 
 In your journey through this book, you may find some boxes, let's see which ones you may come across.
@@ -89,6 +87,8 @@ This is a trivia box, it will give out some small facts that can help you unders
 ### Engine Used
 
 This book does not use any engine. All algorithms will be presented pretending there is some "generic engine" behind the scenes that handles sprites, vectors and the like. The objective of this book is teaching algorithms, tips and tricks and game design in the most engine-agnostic (and language-agnostic, if you're looking at the "pseudocode edition") way possible.
+
+<!-- TODO: Insert more conventions, assumptions... -->
 
 Structure of this Book
 ----------------------
