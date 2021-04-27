@@ -131,6 +131,73 @@ A "softer" transition between directions can be a good way to avoid nausea as we
 Inertia is so important (and common) that even the famous "Super Mario Bros." (1983) for the NES features it, as well as a "skidding animation".
 ::::::::::::::
 
+When simulating inertia, the first things we need to know are:
+
+- The top speed
+- The acceleration rate
+- The deceleration rate
+
+If we were to talk absolute numbers, every frame the speed to apply (when a movement button is pressed) would be calculated as:
+
+$$v = min(top\ speed, v + a_1 \cdot t)$$
+
+Where $v$ stands for "velocity", $a_2$ is our "acceleration" and $t$ for time (our `dt` in most cases), everything is clamped by the top speed, since we don't want our character to accelerate infinitely.
+
+When we release the movement button, we would want to calculate the speed as:
+
+$$v = max(0, v - a_2 \cdot t)$$
+
+The only thing that changes is that we are subtracting $a_2$, which is our "deceleration", again everything is clamped by a minimum speed of zero (if we didn't do that, our character would start moving the opposite direction).
+
+When applying movement, we would just need to use the following formula:
+
+$$x = x + v$$
+
+Sadly we can't move only one way, so we need to stop talking "absolute numbers" and "mirror our thinking": we can see moving leftwards as moving rightwards with a negative speed.
+
+This means that we have three conditions to take care of:
+
+- $a > 0$ when we move rightwards
+- $a = 0$ when we release the moving buttons
+- $a < 0$ when we move leftwards
+
+Now we can apply the formula:
+
+$$v = v + a$$
+
+And make sure that everything is clamped accordingly, so that:
+
+$$-top\ speed < v < top\ speed$$
+
+To simplify further, we can decompose the acceleration $a$ into two components, so that:
+
+$$ a = d \cdot |a_0|$$
+
+Where $|a_0|$ is the absolute value of the acceleration (our "acceleration rate") and $d$ is a number that represents the direction. Now we can transform the three conditions to:
+
+- $d = 1$ when we move rightwards
+- $d = 0$ when we release the moving buttons
+- $d = -1$ when we move leftwards
+
+Now we can start writing some code:
+
+<!-- TODO: Make inertia explanation clearer -->
+<!-- TODO: Code for inertia
+if moving:
+    if left:
+        d = -1
+    if right:
+        d = 1
+else:
+    d = 0
+speed += d * accel
+if speed > max_speed:
+    speed = max_speed
+if speed < - max_speed:
+    speed = - max_speed
+x = x+speed
+-->
+
 {{placeholder}}
 
 <!-- TODO: How to simulate starting and finishing a run from and to a standstill, without being too jarring (NEEDS CODE) -->
