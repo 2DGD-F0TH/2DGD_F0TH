@@ -145,9 +145,19 @@ Furthermore, lives and continues are a great tool to reward your player for thei
 
 #### 1-UPs
 
-{{placeholder}}
+When a life system is in place, getting an extra life (a so-called 1-UP) is cause for celebration, since it allows the player to get further into the game or play with new and bolder strategies or just feel more at ease.
 
-<!-- TODO: Getting a 1-up is an important event, and it should be "celebrated" accordingly, usually with a jingle -->
+There are many ways you can reward the player with an extra life, such as:
+
+- Finding a secret;
+- Reaching a certain score threshold (for example every 100.000 points);
+- Finding a certain item (a "physical 1-UP");
+- Complete a certain combo-chain (for example kill over 8 enemies without touching the ground);
+- ...
+
+No matter how the 1-UP is achieved, this should be celebrated with a jingle that is very recognizable: this will allow the player to "know" that they got a 1-UP without thinking too hard about it. Not "celebrating" this event would make it "ordinary" and uninteresting, while it's extremely important in the grand scheme of things.
+
+Some games even go as far as temporarily pause the game while the (short) jingle plays, that how important an extra-life is: "Stop everything! We got a 1-UP here!".
 
 <!-- TODO: Talk about other level design tips -->
 
