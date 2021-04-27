@@ -801,6 +801,21 @@ Like all UML diagrams, it is possible to use notes to add some comments that may
 
 ![Example of notes in a sequence diagram](./images/computer_science/sequence_notes.svg){width=40%}
 
+### Other diagrams
+
+UML is composed by a ton of diagrams that can be used to communicate with your teammates and organize your work, among them we find:
+
+- Component Diagrams;
+- Communication Diagrams;
+- Composite Structure Diagrams;
+- Deployment Diagrams;
+- Package Diagrams;
+- Profile Diagrams;
+- State Diagrams;
+- Timing Diagrams.
+
+I this chapter we just saw the ones that will help you the most when reading the rest of this book, as well as effectively planning any project you have in mind.
+
 Generic Programming
 --------------------
 
