@@ -151,7 +151,7 @@ This algorithm, being based on a minimum-spanning tree algorithm, this algorithm
 
 Now let's see an example implementation of the Randomized Kruskal's Algorithm:
 
-<!-- TODO: Code -->
+<!-- TODO: Code for randomized kruskal's method -->
 
 {{placeholder}}
 
@@ -195,7 +195,7 @@ This bias is more noticeable with bigger mazes, like the following one.
 
 Let's see an example implementation of this algorithm:
 
-<!-- TODO: Code -->
+<!-- TODO: Code for the recursive division algorithm -->
 
 {{placeholder}}
 
@@ -231,7 +231,7 @@ Given its deep roots into the computer science "Binary Tree" structure (where th
 
 Let's see an example implementation of the "binary tree algorithm":
 
-<!-- TODO: Code -->
+<!-- TODO: Code for the binary tree algorithm -->
 
 {{placeholder}}
 
@@ -271,7 +271,7 @@ Obviously we can repeat the iteration as many times as we want, and we get a maz
 
 Let's see a possible implementation of this strange, but interesting algorithm:
 
-<!-- TODO: Code -->
+<!-- TODO: Code for the Eller's Algorithm -->
 
 {{placeholder}}
 

@@ -237,4 +237,4 @@ A good game: Dark Souls
 
 {{placeholder}}
 
-<!-- TODO: Analyze -->
+<!-- TODO: Analyze Dark Souls -->

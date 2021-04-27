@@ -259,7 +259,7 @@ Dependency Injection
 --------------------
 
 {{placeholder}}
-<!-- TODO -->
+<!-- TODO: Dependency injection design pattern -->
 
 Decorator
 ---------
@@ -290,7 +290,7 @@ Visitor
 -------
 
 {{placeholder}}
-<!-- TODO -->
+<!-- TODO: Visitor Design pattern -->
 
 Adapter
 -------

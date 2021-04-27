@@ -91,10 +91,7 @@ This allows the camera to be less twitchy, giving a more natural sensation. Furt
 
 {{placeholder}}
 
-<!-- TODO: Talk about camera traps, rectangular spaces where the character is "trapped inside",
-as soon as the player "escapes the trap" the camera scrolls to "trap them again", this allows
-for less jarring camera movement. Traps can be small for fast games (sonic) or larger for
-slower ones -->
+<!-- TODO: Talk about camera traps, rectangular spaces where the character is "trapped inside", as soon as the player "escapes the trap" the camera scrolls to "trap them again", this allows for less jarring camera movement. Traps can be small for fast games (sonic) or larger for slower ones -->
 
 ### Look-Ahead Camera
 
@@ -108,9 +105,7 @@ So this camera is not ideal for games that require precision platforming, since 
 
 {{placeholder}}
 
-<!-- TODO: Camera that gives more space in front of the character, allowing for better
-reaction times, must be coded well on transitions (between opposite sides) or it can be
-extremely confusing or nauseating -->
+<!-- TODO: Camera that gives more space in front of the character, allowing for better reaction times, must be coded well on transitions (between opposite sides) or it can be extremely confusing or nauseating -->
 
 ### Hybrid Approaches
 

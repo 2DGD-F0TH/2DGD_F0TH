@@ -34,7 +34,7 @@ Some special values you may see are:
 
 If your animation stutters or its speed varies according to the load of your platform but your FPS counter is still stuck at the maximum allowed framerate, you may have forgotten to tie the animation to the delta-time in your game loop. Check the [timing your game loop](#timingloops) section for more information.
 
-<!-- TODO: Continue -->
+<!-- TODO: Continue with more profiling suggestions -->
 {{placeholder}}
 
 ### First investigations
@@ -78,7 +78,7 @@ If you suspect a memory leak, you may want to take a look at these sections:
 
 {{placeholder}}
 
-<!-- TODO: Continue -->
+<!-- TODO: Continue with more investigation suggestions -->
 
 Optimizing your game
 --------------------

@@ -158,12 +158,13 @@ Not all non-convex shapes are technically called "concave" (they should be calle
 
 {{placeholder}}
 
-<!-- TODO -->
+<!-- TODO: Talk more about convex vs. concave polygons -->
 
 ### Projections {#projections}
 
 {{placeholder}}
-<!-- TODO -->
+
+<!-- TODO: Talk about the math behind projecting a polygon on a line -->
 
 Matrices
 ---------

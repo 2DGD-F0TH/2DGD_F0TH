@@ -848,7 +848,7 @@ Some other implementations use a $\frac{1}{4}$/$\frac{3}{4}$ rule, halving the a
 **Note:** Not all programming languages have native support for arrays, for instance Python uses lists.
 
 {{placeholder}}
-<!-- TODO: Code? -->
+<!-- TODO: Code to make a dynamic array? -->
 
 | Operation                  | Average Cost           |
 | :---------:                | :-----:                |
@@ -897,7 +897,7 @@ Inserting at an arbitrary position requires us to scan the list until we find th
 
 ![Inserting a new node at an arbitrary position in a (double-ended) linked list](./images/computer_science/de_linked_list_insert_arbitrary.svg){width=90%}
 
-<!-- TODO: Code? -->
+<!-- TODO: Code for linked list? -->
 {{placeholder}}
 
 | Operation                  | Average Cost                         |
@@ -929,7 +929,7 @@ All the operations of insertion, indexing and deletion are performed in a simila
 
 ![Doubly Linked List Reference Image](./images/computer_science/doubly_linked_list_reference.svg){width=60%}
 
-<!-- TODO: Code? -->
+<!-- TODO: Code for doubly linked lists? -->
 
 {{placeholder}}
 
@@ -1059,7 +1059,7 @@ Table: Performance table for Heaps
 
 Table: Summary Table for Heaps
 
-<!-- TODO: Code? -->
+<!-- TODO: Code for heaps? -->
 {{placeholder}}
 
 ### Stacks

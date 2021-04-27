@@ -147,7 +147,7 @@ Furthermore, lives and continues are a great tool to reward your player for thei
 
 {{placeholder}}
 
-<!-- Getting a 1-up is an important event, and it should be "celebrated" accordingly, usually with a jingle -->
+<!-- TODO: Getting a 1-up is an important event, and it should be "celebrated" accordingly, usually with a jingle -->
 
 <!-- TODO: Talk about other level design tips -->
 
