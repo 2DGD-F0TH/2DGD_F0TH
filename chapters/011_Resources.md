@@ -738,6 +738,8 @@ A pattern is essentially a piece of a song: a group of tracks with their own ins
 
 When composing music, we may not know where to start: this is the objective of this section: give you some easy rhythms to start with. Here I will use LMMS's beat+bassline editor to represent the notes, as it's the easiest to understand.
 
+Remember to check your tempo too, since it may make the difference between something akin to the "house" genre and something more "techno".
+
 #### Four on the floor
 
 This is the most basic rhythm there is: let's consider a situation where we have 16 beats per bar (so each note is 1/16th):
