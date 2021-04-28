@@ -131,6 +131,8 @@ A "softer" transition between directions can be a good way to avoid nausea as we
 Inertia is so important (and common) that even the famous "Super Mario Bros." (1983) for the NES features it, as well as a "skidding animation".
 ::::::::::::::
 
+In this section we will look at how to simulate inertia in a 1-dimensional space, where we can only move left or right.
+
 When simulating inertia, the first things we need to know are:
 
 - The top speed
@@ -147,7 +149,6 @@ When we release the movement button, we would want to calculate the speed as:
 
 $$v = max(0, v - a_2 \cdot t)$$
 
-<!-- FIXME: This is all wrong, we can't have a=0 when releasing a button, doing so will make the character keep its speed. Redo.
 
 The only thing that changes is that we are subtracting $a_2$, which is our "deceleration", again everything is clamped by a minimum speed of zero (if we didn't do that, our character would start moving the opposite direction).
 
@@ -155,12 +156,11 @@ When applying movement, we would just need to use the following formula:
 
 $$x = x + v$$
 
-Sadly we can't move only one way, so we need to stop talking "absolute numbers" and "mirror our thinking": we can see moving leftwards as moving rightwards with a negative speed.
+Sadly we can't move only one way, so we need to stop talking "absolute numbers" and think in a more general way: we can see moving leftwards as moving rightwards with a negative speed.
 
-This means that we have three conditions to take care of:
+This means that we have two conditions to take care of:
 
 - $a > 0$ when we move rightwards
-- $a = 0$ when we release the moving buttons
 - $a < 0$ when we move leftwards
 
 Now we can apply the formula:
@@ -171,33 +171,38 @@ And make sure that everything is clamped accordingly, so that:
 
 $$-top\ speed < v < top\ speed$$
 
-To simplify further, we can decompose the acceleration $a$ into two components, so that:
+Now, let's decompose the acceleration $a$ into two components, so that:
 
-$$ a = d \cdot |a_0|$$
+$$ a = d \cdot |a_r|$$
 
-Where $|a_0|$ is the absolute value of the acceleration (our "acceleration rate") and $d$ is a number that represents the direction. Now we can transform the three conditions to:
+Where $|a_r|$ is the absolute value of the acceleration (our "acceleration rate") and $d$ is a number that represents the direction. Now we can expand the conditions to:
 
-- $d = 1$ when we move rightwards
+- $d = 1$ when we want to move rightwards
 - $d = 0$ when we release the moving buttons
-- $d = -1$ when we move leftwards
+- $d = -1$ when we want to move leftwards
+
+We need to put a special condition when $d=0$, since we want the character to decelerate and come to a stop (we can call $d_r$ the deceleration rate).
 
 Now we can start writing some code:
--->
 
 <!-- TODO: Make inertia explanation clearer -->
 <!-- TODO: Code for inertia
-if moving:
-    if left:
-        d = -1
-    if right:
-        d = 1
+if d==0:
+    // we are stopping
+    if v > 0:
+        // we are decelerating while moving rightwards
+        v = max(0, v - d_r * t)
+    if v < 0:
+        // we are decelerating while moving leftwards
+        v = min(0, v + d_r * t)
 else:
-    d = 0
-speed += d * accel
-if speed > max_speed:
-    speed = max_speed
-if speed < - max_speed:
-    speed = - max_speed
+    // We don't care cause the formula works both ways
+    v = v + d * a_0
+// Clamping
+if v > max_speed:
+    v = max_speed
+if v < - max_speed:
+    v = - max_speed
 x = x+speed
 -->
 
