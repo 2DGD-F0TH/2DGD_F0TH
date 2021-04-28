@@ -147,6 +147,8 @@ When we release the movement button, we would want to calculate the speed as:
 
 $$v = max(0, v - a_2 \cdot t)$$
 
+<!-- FIXME: This is all wrong, we can't have a=0 when releasing a button, doing so will make the character keep its speed. Redo.
+
 The only thing that changes is that we are subtracting $a_2$, which is our "deceleration", again everything is clamped by a minimum speed of zero (if we didn't do that, our character would start moving the opposite direction).
 
 When applying movement, we would just need to use the following formula:
@@ -180,6 +182,7 @@ Where $|a_0|$ is the absolute value of the acceleration (our "acceleration rate"
 - $d = -1$ when we move leftwards
 
 Now we can start writing some code:
+-->
 
 <!-- TODO: Make inertia explanation clearer -->
 <!-- TODO: Code for inertia
