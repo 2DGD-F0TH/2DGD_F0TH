@@ -337,8 +337,33 @@ You can always "flatten the image" (merge all the layers into one) later.
 
 ### Normal Mapping
 
-{{placeholder}}
-<!-- TODO: Normal Maps allow to fake "3d light" in a 2d envinronment -->
+If you want your 2D game to look amazing, you can't escape shaders. One of the ways to use shaders is calculating light, but since we're in a 2D environment, we don't have "normal vectors" to use to calculate how the light interacts with our 2D objects.
+
+Enter normal maps: these are sprites that "map" their color channels to the direction of the "normal vector": this means that communicate direction with color. Awesome, isn't it?
+
+::: trivia :::
+If you're curious, normal maps usually have this color to direction mapping:
+
+- x (which can go from -1 to +1) is mapped to the red channel (which can go from 0 to 255)
+- y (which can go from -1 to +1) is mapped to the green channel (which can go from 0 to 255)
+- z (which can go from 0 to -1) is mapped to the blue channel (which can go from 128 to 255)
+::::::::::::::
+
+This is an example of a texture, along with a possible normal map:
+
+![Example of a normal map](./images/resources/normal_mapping_1.jpg){width=50%}
+
+There are many ways to get a normal map: you can try to get a program to generate one for you, make the object in a 3D modeler and extract the normal map from there, or just draw it by hand.
+
+If you choose the last option some tools, like Aseprite, have a "normal mapping" mode that shows you this special color picker:
+
+![Aseprite's normal mapping color picker (both in its normal and discrete versions)](./images/resources/normal_mapping_2.png){width=40%}
+
+Just imagine this color picker like a "3D sphere" and pick the color of the face of the "3d surface" you're trying to draw.
+
+::: pitfall :::
+Be careful with your shaders, some may expect one or more of your channels to be "flipped".
+:::::::::::::::
 
 ### Tips and Tricks
 

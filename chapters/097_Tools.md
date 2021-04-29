@@ -54,6 +54,12 @@ This is a great "name your own price" tool that allows you to create normal maps
 
 <https://azagaya.itch.io/laigter>
 
+### NormalMap-Online
+
+This is a very nice tool that allows you to create normal maps automatically, for free. Good for a quick game jam or for starters.
+
+<https://cpetry.github.io/NormalMap-Online/>
+
 Shaders {-}
 ----------
 
