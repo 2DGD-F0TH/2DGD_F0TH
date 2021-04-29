@@ -138,72 +138,58 @@ When simulating inertia, the first things we need to know are:
 - The top speed
 - The acceleration rate
 - The deceleration rate
+- The direction we're going
+- The direction we want to go
 
-If we were to talk absolute numbers, every frame the speed to apply (when a movement button is pressed) would be calculated as:
+Let's think of the following situation, our character is running rightwards at a velocity `v`, measured in pixels per frame:
 
-$$v = min(top\ speed, v + a_1 \cdot t)$$
+![Example of character running](./images/developing_mechanics/inertia_3.svg){width=50%}
 
-Where $v$ stands for "velocity", $a_2$ is our "acceleration" and $t$ for time (our `dt` in most cases), everything is clamped by the top speed, since we don't want our character to accelerate infinitely.
+This means that the character's `x` coordinate is moving every frame using the formula:
 
-When we release the movement button, we would want to calculate the speed as:
+$$x_{n+1} = x_n + v$$
 
-$$v = max(0, v - a_2 \cdot t)$$
+Now we suddenly want the player to start walking leftwards: we need to apply an acceleration `a` in that direction:
 
+![Applying an acceleration to a character running](./images/developing_mechanics/inertia_4.svg){width=50%}
 
-The only thing that changes is that we are subtracting $a_2$, which is our "deceleration", again everything is clamped by a minimum speed of zero (if we didn't do that, our character would start moving the opposite direction).
+The new acceleration will influence the velocity, frame by frame, with the formula
 
-When applying movement, we would just need to use the following formula:
+$$v_{n+1} = v_n + a$$
 
-$$x = x + v$$
+Since velocity and acceleration have opposite directions, the acceleration we're applying will start "eating away the velocity" frame by frame, until our character starts moving leftwards. This "eating away" phase is what gives the feeling of inertia.
 
-Sadly we can't move only one way, so we need to stop talking "absolute numbers" and think in a more general way: we can see moving leftwards as moving rightwards with a negative speed.
+![Applying an acceleration frame by frame leads to the feeling of inertia](./images/developing_mechanics/inertia_5.svg){width=50%}
 
-This means that we have two conditions to take care of:
+Being acceleration and velocity both vectors, we can apply an acceleration both in a one-dimensional way (like a 2D platformer) or a 2-dimensional way (like a space shooter) and the formulas will still be valid.
 
-- $a > 0$ when we move rightwards
-- $a < 0$ when we move leftwards
-
-Now we can apply the formula:
-
-$$v = v + a$$
-
-And make sure that everything is clamped accordingly, so that:
-
-$$-top\ speed < v < top\ speed$$
-
-Now, let's decompose the acceleration $a$ into two components, so that:
-
-$$ a = d \cdot |a_r|$$
-
-Where $|a_r|$ is the absolute value of the acceleration (our "acceleration rate") and $d$ is a number that represents the direction. Now we can expand the conditions to:
-
-- $d = 1$ when we want to move rightwards
-- $d = 0$ when we release the moving buttons
-- $d = -1$ when we want to move leftwards
-
-We need to put a special condition when $d=0$, since we want the character to decelerate and come to a stop (we can call $d_r$ the deceleration rate).
+Deceleration is a special case of what we've seen so far, with the exception that the acceleration will always have direction opposite to velocity and as soon as velocity reaches zero, we stop applying it.
 
 Now we can start writing some code:
 
 <!-- TODO: Make inertia explanation clearer -->
 <!-- TODO: Code for inertia
-if d==0:
-    // we are stopping
-    if v > 0:
-        // we are decelerating while moving rightwards
-        v = max(0, v - d_r * t)
-    if v < 0:
-        // we are decelerating while moving leftwards
-        v = min(0, v + d_r * t)
+if not direction_pressed:
+    if moving:
+        // we are stopping
+        // find the velocity direction
+        accel_dir = v/||v||
+        // apply the opposite direction to the deceleration
+        a = accel_dir * a_r
+        v = max(0, v + a * t)
+        // If the new velocity has the same direction as acceleration, we are about to go in the opposite direction, we want to stop instead
+        new_dir = v/||v||
+        if accel_dir == new_dir:
+        v = vector(0,0)
+        moving = False
 else:
-    // We don't care cause the formula works both ways
-    v = v + d * a_0
+    // We don't care cause the formula works anyway
+    v = v + a
 // Clamping
-if v > max_speed:
-    v = max_speed
-if v < - max_speed:
-    v = - max_speed
-x = x+speed
+if ||v|| > max_speed:
+    dir = v/||v||
+    v = max_speed * dir
+x = x + v * t
 -->
 
 {{placeholder}}
