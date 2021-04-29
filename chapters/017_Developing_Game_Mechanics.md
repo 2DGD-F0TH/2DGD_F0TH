@@ -169,22 +169,23 @@ Now we can start writing some code:
 
 <!-- TODO: Make inertia explanation clearer -->
 <!-- TODO: Code for inertia
-if not direction_pressed:
+if direction_pressed:
+    // We don't care cause the formula works anyway
+    v = v + a
+    moving = True
+else:
+    // we are stopping
     if moving:
-        // we are stopping
         // find the velocity direction
         accel_dir = v/||v||
         // apply the opposite direction to the deceleration
         a = accel_dir * a_r
         v = max(0, v + a * t)
-        // If the new velocity has the same direction as acceleration, we are about to go in the opposite direction, we want to stop instead
+        // If the new velocity now has the same direction as acceleration, we are about to go in the opposite direction, we want to stop instead
         new_dir = v/||v||
         if accel_dir == new_dir:
-        v = vector(0,0)
-        moving = False
-else:
-    // We don't care cause the formula works anyway
-    v = v + a
+            v = vector(0,0)
+            moving = False
 // Clamping
 if ||v|| > max_speed:
     dir = v/||v||
