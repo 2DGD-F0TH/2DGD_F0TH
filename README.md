@@ -3,7 +3,7 @@
 
 Project Status:
 
-![Latest Version](https://img.shields.io/github/v/tag/penaz91/2DGD_F0TH?label=Latest%20Version&style=for-the-badge)
+![Latest Version](https://img.shields.io/github/v/tag/penaz91/2dgd_f0th?label=Latest%20Version&style=for-the-badge)
 ![GitHub Forks](https://img.shields.io/github/forks/penaz91/2DGD_F0TH?label=GitHub%20Forks&style=for-the-badge)
 ![GitHub Stars](https://img.shields.io/github/stars/penaz91/2DGD_F0TH?label=GitHub%20Stars&style=for-the-badge)
 
