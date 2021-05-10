@@ -371,17 +371,19 @@ Let's take a simple box, with no shading, like the one below:
 
 ![A box that will be used to show how normal maps influence light](./images/resources/Box_No_Light.png){width=25%}
 
-Now we'll shine a light on the box, without any normal map: the light will be a round gradient that will come from the top right corner of the image. This is the result.
+Now we'll shine a light on the box, without any normal map: this will happen twice:
 
-![How the lack of normal mapping makes lighting look artificial](./images/resources/No_Normal_Map.png){width=25%}
+In the first example (left) the light will be a round gradient that will come from the top right corner of the image, while in the second example the light will be a bit stronger and coming from the top left corner. This is the result.
+
+![How the lack of normal mapping makes lighting look artificial](./images/resources/No_Normal_Map.png){width=35%}
 
 Now we'll draw the simplest normal map possible: just filling the 3 faces of the box that we can see with the (kind of) corresponding colors from our "3d sphere" (the normal mapping color picker), we can see the result is very different
 
-![How normal mapping changes lighting](./images/resources/Normal_Map_Rough.png){width=50%}
+![How normal mapping changes lighting](./images/resources/Normal_Map_Rough.png){width=60%}
 
 Now let's make something a bit more detailed, by highlighting the faces of the cross-braces on the sides of the box, the way they're lit it's again different:
 
-![A more detailed normal map results in better lighting](./images/resources/Normal_Map_Detailed.png){width=50%}
+![A more detailed normal map results in better lighting](./images/resources/Normal_Map_Detailed.png){width=60%}
 
 You can get as detailed as you want, but remember that it may have some performance impact if you go overboard with many sprites.
 
@@ -481,12 +483,23 @@ Along with sample rate, there is another value in audio that expresses its quali
 
 The bit depth defines how many "volume values" we can have in a single sample, which shapes the quality of the sound in a different way than sample rate.
 
-If our audio has a 1-bit sample rate, each sample will have only 2 values:
+If our audio has a 1-bit bit depth, each sample will have only 2 values:
 
 - **0:** Mute
 - **1:** Blast at full volume
 
-Which reduces the quality of the audio.
+Which strongly reduces the quality of the audio.
+
+::: trivia :::
+In Pokèmon Yellow for GameBoy, Pikachu's voice was encoded with in 1-bit depth.
+::::::::::::::
+
+If we had a 2-bit depth, we could make each sample have more volume values:
+
+- 00: Mute
+- 01: 33% volume
+- 10: 66% volume
+- 11: 100% volume
 
 Usually audio has a 16 Bit depth, but more modern systems make use of 24 Bits or even 32 Bits.
 
@@ -494,13 +507,13 @@ Usually audio has a 16 Bit depth, but more modern systems make use of 24 Bits or
 
 As with graphics, there are audio formats that allow you to store uncompressed information, as well as compressed (but without losses) sounds. The most common lossless audio formats include:
 
-- WAV;
-- AIFF;
-- FLAC.
+- WAV (uncompressed);
+- AIFF (usually uncompressed, but AIFF-C supports both lossless and lossy compression);
+- FLAC (lossless compression).
 
 #### Lossy Formats
 
-As with graphics, there are also "lossy formats" that allow us to store information in even less space by getting rid of information that is well outside our hearing spectrum, for instance. Some of the most known are:
+As with graphics, there are also "lossy formats" that allow us to store information in even less space by getting rid of information that is considered outside our hearing spectrum, for instance. Some of the most known are:
 
 - Mpeg Layer 3 (MP3);
 - OGG Vorbis;
