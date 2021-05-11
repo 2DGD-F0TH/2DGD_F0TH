@@ -462,7 +462,7 @@ The most important aspect of "designing farming" is definitely reward the player
 
 {{placeholder}}
 
-<!-- TODO: Finish -->
+<!-- TODO: Finish talking about farming -->
 
 <!-- TODO: usually in RPGs, grinding = experience , farming = items, avoiding pitfalls like mandatory grinding that is used in bad games to "pad" -->
 
