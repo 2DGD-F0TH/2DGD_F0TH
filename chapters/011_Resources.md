@@ -530,11 +530,29 @@ The best way to repair clipping is to re-record the audio completely, although s
 
 Also you should be wary of clipping, because there may be cases where it damages your audio equipment.
 
+### Sound Synthesis
+
+Now we're entering technical territory. We're going to talk about sound synthesis: the art of creating sounds, also called "sound synthesis".
+
+### AM Synthesis
+
+The first, and technically simplest way to generate sound is via AM (amplitude modulation) synthesis.
+
+With this technique you take the wave form created by an *oscillator*~[g]~ and modulate its amplitude (volume) according to a second wave form.
+
+![Example of AM Synthesis](./images/resources/AM_Synthesis.png){width=50%}
+
+In this example we see a 440Hz sine wave (in the middle) having its amplitude (quite heavily) modulated by a 110Hz sine wave (on top): the resulting wave form on the bottom has a "tremolo effect" to it.
+
 ### FM Synthesis
 
-{{placeholder}}
+With this technique you take the wave form created by an *oscillator*~[g]~ (called "carrier frequency") but instead of modulating its amplitude, you modulate its frequency (pitch) according to another wave (called "modulator frequency").
 
-<!-- TODO: Talk about what FM synthesis is -->
+![Example of FM Synthesis](./images/resources/FM_Synthesis.png){width=50%}
+
+In this example (for sake of visibility) we have a 110Hz sine wave (in the middle) having its frequency (again, heavily) modulated by a 22Hz sine wave (on top): we can see the result in the bottom of the figure.
+
+This frequency modulation happens so fast that we end up with something that sounds completely different from the original wave form.
 
 ### Basic Wave Forms
 

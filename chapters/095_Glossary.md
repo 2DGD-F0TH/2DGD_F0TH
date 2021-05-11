@@ -73,6 +73,9 @@ Modern music notation
 O {-}
 -----
 
+Oscillator
+: An oscillator is a device (usually hardware) used to create an alternating current. Oscillators can be used in audio synthesis to create pitches.
+
 Out of order execution
 : Paradygm used in high performance CPUs to reduce the wasted instruction cycles. The instructions are performed in an order given by the availability of the input data and execution units instead than the original order defined by the programmer.
 
