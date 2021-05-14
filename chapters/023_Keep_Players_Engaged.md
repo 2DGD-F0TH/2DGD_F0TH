@@ -111,3 +111,23 @@ New Game+ is a mode that gets unlocked when you finish a game on a certain savef
 - **Keep your statistics:** this is very useful, in a similar way to the "keep your equipment" bullet point, just more specific to RPG-style games;
 - **Unlock new items:** this makes the game a bit different by allowing to use brand new, previously locked, equipment in the new "run";
 - **Make the game more challenging:** this makes every new run a harder challenge to the player, by making enemies stronger, more resistant or just by adding more enemies in the various areas. A good idea is also making making enemies from mid and end-game appear earlier.
+
+### Transmogrification
+
+We all know that looks matter, and there are people who are willing to "pay extra" to look how they want. This is especially true in MMO games, where (sadly) peer pressure tends to be quite high.
+
+Say hello to "Transmogrification" (sometimes called "transmog", "tmog", "xmog" or just "mog"): it's a system that allows players to change the look of a weapon, armor or anything to make it look like another weapon, armor or whatever.
+
+In short, transmog solves the issue that is represented by the following sentence:
+
+> This thing looks so cool! But its stats are horrible...
+
+Using transmog you can have both the power of your best armor (or weapon, or mighty stick) with the looks of the (less powerful) armor (or weapon, and don't forget the stick) that just looks so cool.
+
+Transmogrification can be implemented quite easily by allowing each instance of an object have a customizable sprite, instead of locking it behind the item itself. You just have to remember to save the skin used by each object's skin in your inventory/savefile.
+
+Design-wise, you should make transmogrification quite challenging to get, since it's a "quality of life" enhancement, but at the same time it shouldn't be so frustrating that the players just give up trying.
+
+Any decision that will be frustrating to the player (maybe to "encourage" them to make use of microtransactions) will always come back to bite you.
+
+Remember: you are not a AAA developer or publisher, **you can't afford to take the hit of these decisions**: being too greedy can completely destroy a good game's performance.
