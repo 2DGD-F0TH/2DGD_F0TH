@@ -532,3 +532,14 @@ Halo and Doom changed their health packs symbol, from the red cross to a "red H"
 The ICRC enforcement of this rule is inconsistent, but it would technically be a violation of the First Geneva Convention, chapter VII, articles 44 and 53.
 
 Also states themselves (like Canada) tend to have rules of law regulating the use of the symbol in more detail.
+
+### Auto-saving
+
+Some people may consider auto-saving a simple "quality of life improvement", but it can also save the players a lot of frustration in case your game crashes: trust me, no matter how good your programming is, your game will crash (it may be a buggy graphics driver, an edge case that hits 0.0001% of the time or just bad luck).
+
+If possible, you should provide the player with both an auto-save feature and a "manual save" one, this way the player can save where they want but also have a back-up just in case.
+
+To implement an auto-saving feature, we need a slot to auto-save into, so we can choose one of two ways:
+
+- **Choosing the save slot when starting a new game:** this means that the auto-save feature will auto-save and overwrite the selected save slot at every major event, which may be not desired. This is where the manual saving feature comes handy: allowing the player to save manually will also allow them to create a backup savefile.
+- **Dedicated "auto-save" slot:** this leaves the manual saving feature intact, but also adds a "special saving slot" the player can't save onto. This slot is dedicated to the most recent auto-save (regardless of the save slot we load from).
