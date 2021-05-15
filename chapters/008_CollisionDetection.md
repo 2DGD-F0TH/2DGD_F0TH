@@ -255,6 +255,30 @@ Let's see the code:
 ```{src='collisiondetection/point_triangle' caption='Point/Triangle Collision Detection'}
 ```
 
+This obviously presents the (usual) problem when it comes to precision: computers have no knowledge of infinity (due to their finiteness, see [computers are (not) precise](#precision_issues)). This means that we need (again) to give some leeway and define an "acceptable error" in our calculations, thus we will create a "small enough value" (which in math is represented by the greek letter "epsilon": $\epsilon$) and change our algorithm accordingly.
+
+Let's see how we can change that.
+
+Our main test is that the sum of the area of the 3 triangles we create ($A_1,A_2,A_3$) is equal to the area of the original triangle ($A_0$), in math terms:
+
+$$ A_1 + A_2 + A_3 = A_0$$
+
+We can also rewrite such equation this way:
+
+$$ A_1 + A_2 + A_3 - A_0 = 0$$
+
+Due to possible precision issues we know that there are some values where the equation above is not true, so we choose a "low enough error" that we are willing to accept, for example $\epsilon = 0.0001$, and use this test instead:
+
+$$ | A_1 + A_2 + A_3 - A_0 | < \epsilon$$
+
+Which can be expanded (if you want) to
+
+$$ -\epsilon < A_1 + A_2 + A_3 - A_0 < \epsilon $$
+
+{{placeholder}}
+
+<!-- TODO: Point/Triangle collision detection with epsilon -->
+
 ### Circle/Rectangle Collision
 
 First of all we need to identify which side of the rectangle we should test against, so if the centre of the circle is to the right of the rectangle, we will test against the right edge of the rectangle, if it's above we'll test against the top edge and so on...
