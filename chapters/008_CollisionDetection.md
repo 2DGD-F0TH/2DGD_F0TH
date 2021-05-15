@@ -52,9 +52,9 @@ This algorithm consists in a constant number of operations, so it runs in O(1).
 
 Since numbers in computers can be **really** precise, a collision between two points may be a bit too precise, so it could prove useful to have a "buffer" around the point, so that we can say that the two points collided when they're **around the same place**.
 
-<!-- TODO: Add point/point collision with buffer zone -->
+In this case, it may prove to be a lot more useful to do a [point vs circle](#point_circle) detection, or even a [circle vs circle](#circle_circle) collision detection, in that case the "radius" would be the "approximation" of a point.
 
-### Collision Between A Point and a Circle
+### Collision Between A Point and a Circle {#point_circle}
 
 Now a circle comes into the mix, a circle has two major characteristics: a **center** and a **radius**.
 
@@ -90,7 +90,7 @@ Again, the lazier version:
 
 Although slightly more heavy, computation-wise, this algorithm still runs in O(1).
 
-### Collision Between Two Circles
+### Collision Between Two Circles {#circle_circle}
 
 Let's add another circle into the mix now, and think in more or less the same way as before:
 
@@ -202,11 +202,9 @@ In code, it would look something like the following:
 ```{src='collisiondetection/line_point' caption='Line to Point Collision detection'}
 ```
 
-It could prove useful to put a "buffer zone" in here too, so that the collision detection doesn't result too jerky and precise.
+It could prove useful to put a "buffer zone" in here too, so that the collision detection doesn't result too jerky and precise. In that case you may want to take a look at the [line vs circle](#line_circle) algorithm, in that case the radius would be the "approximation" of the point.
 
-<!-- TODO: Line vs Point with buffer zone -->
-
-### Line/Circle Collision
+### Line/Circle Collision {#line_circle}
 
 As in the previous paragraph, we memorize a line as a pair of Points, so checking if the circle collides with either end of the line is easy, using the Point/Circle collision algorithm.
 
