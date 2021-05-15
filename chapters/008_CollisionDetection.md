@@ -352,17 +352,25 @@ This can prove useful to test for "line of sight" inside an AI algorithm.
 
 {{placeholder}}
 
+<!-- TODO: Point/Polygon collision detection -->
+
 ### Circle/Polygon Collision
 
 {{placeholder}}
+
+<!-- TODO: Circle/Polygon collision Detection -->
 
 ### Rectangle/Polygon Collision
 
 {{placeholder}}
 
+<!-- TODO: Rectangle/Polygon Collision Detection -->
+
 ### Line/Polygon Collision
 
 {{placeholder}}
+
+<!-- TODO: Line/Polygon Collision Detection -->
 
 ### Polygon/Polygon Collision
 
