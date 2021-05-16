@@ -125,7 +125,7 @@ The shorter version would be:
 Again, this algorithm performs a number of operations that is constant, so it runs in O(1).
 
 
-### Collision Between Two Axis-Aligned Rectangles (AABB)
+### Collision Between Two Axis-Aligned Rectangles (AABB) {#AABB}
 
 This is one of the most used types of collision detection used in games: it's a bit more involved than other types of collision detection, but it's still computationally easy to perform. This is usually called the "Axis Aligned Bounding Box" collision detection, or AABB.
 
@@ -233,7 +233,7 @@ The final algorithm should look something like this:
 ```{src='collisiondetection/line_circle' caption='Line to circle collision detection'}
 ```
 
-### Point/Rectangle Collision
+### Point/Rectangle Collision {#point_rectangle}
 
 If we want to see if a point collides with a rectangle is really easy, we just need to check if the point's coordinates are inside the rectangle.
 
@@ -453,18 +453,60 @@ This is simple to achieve: we just need to loop over all the vertices and find o
 ```{src='collisiondetection/bounding_box' caption='How to find the bounding box of a polygon'}
 ```
 
-{{placeholder}}
-<!-- TODO: Include a bounding box explanation to reduce the computational load -->
-
-#### The "Polygon" structure
-
-{{placeholder}}
-<!-- TODO: A "polygon" structure, with an ordered list of vertices and a calculated bounding box -->
+To check if the collision "may happen", we can just use a simple [Point vs Rectangle collision check](#point_rectangle).
 
 #### Point/Polygon collision detection with triangles
 
-{{placeholder}}
-<!-- TODO: Warn of inefficiencies and get to the meat of the matter -->
+Finally, after all the math and preparations, we can start working towards our collision detection algorithm.
+
+::: pitfall :::
+This algorithm works only with convex polygons that have no holes, also it definitely is not the most efficient way to check for collisions between a point and a polygon.
+
+This is more akin to an exercise in creativity and less about "notions": we found a simple solution to a complex problem, even if it is not efficient.
+:::::::::::::::
+
+##### The "Polygon" class
+
+Differently from previous classes and structures, the "polygon" class will need a little more work. This is because we are going to do more than just merely memorize vertices.
+
+First of all we need an **ordered** list (or array) of vertices, which will be represented by points. Secondly, we need facilities to calculate list of triangles, as well as their areas.
+
+::: pitfall :::
+You may be tempted to memorize the "triangles" that are an output of the "fan triangulation", as well as their areas. This may be a good idea if well managed, but we will need to take care of "moving" those triangles too (their areas won't change).
+
+If you are a programming wizard you can pull it off using references or pointers, probably. Also a hidden danger is when the polygon gets deformed: in that case all the triangle areas will have to be recalculated.
+
+Same goes for the bounding box, which will change in size when the polygon rotates. In this book we will try to keep the class as generic as possible (as well as simple), thus we will just recalculate everything every frame as needed.
+:::::::::::::::
+
+Thirdly, we need the constructor to do some math before we can use the polygon. Finally we need to integrate a "fanning" function.
+
+Whew... That's a lot of work, but here's the code for the polygon class:
+
+```{src='collisiondetection/polygon' caption='A (not so) simple polygon class'}
+```
+
+##### The algorithm
+
+After all this preparation, we are finally ready for the algorithm, which will happen in two passes:
+
+1. A "broad"-ish pass, where we compare the point to the polygon's bounding box
+2. A "proper-narrow" pass, where we do a series of triangle vs point collision detections
+
+Here's the code:
+
+```{src='collisiondetection/polygon_point' caption='Polygon vs Point collision detection'}
+```
+
+##### Performance analysis
+
+The algorithm seems fairly simple, but we may want to check its performance to see how efficient it is. In this analysis `n` will be the number of vertices.
+
+The best case is that the point we're testing is outside the polygon's bounding box: this means that we calculate the bounding box (which is $\Theta(n)$) and we check the point against it (which is $\Theta(1)$), thus our best case (lower bound) is $\Omega(n)$.
+
+The worst case is when the whole algorithm is performed to the end, which means the point is inside the bounding box, but outside the polygon: this means we calculate the bounding box ($\Theta(n)$), check against it ($\Theta(1)$), do the "fan triangulation" ($\Theta(n)$), check each triangle without finding any collision ($O(n)$) and get to the end. Out worst case (upper bound) is $O(n)$.
+
+Even though we have a tight bound of $\Theta(n)$ in our entire algorithm (thus the amount of calculations goes up slowly with the addition of new vertices), we need to be mindful of the amount of calculation that is done, including some heavy operations like square roots.
 
 ### Circle/Polygon Collision
 
