@@ -373,26 +373,44 @@ This can prove useful to test for "line of sight" inside an AI algorithm.
 ### Point/Polygon Collision
 
 {{placeholder}}
+<!-- TODO: Point/Polygon collision detection for convex polygons -->
 
-<!-- TODO: Point/Polygon collision detection -->
+#### Jordan's Curve Theorem
+
+{{placeholder}}
+<!-- TODO: Explain simply the jordan's curve theorem - efficient but hard to implement and understand (but works for all polygons) -->
+
+#### Thinking outside the box: polygon triangulation
+
+{{placeholder}}
+<!-- TODO: Talk about polygon triangulation -->
+
+#### An additional broad-pass
+
+{{placeholder}}
+<!-- TODO: Include a bounding box explanation to reduce the computational load -->
+
+#### The "Polygon" structure
+
+{{placeholder}}
+<!-- TODO: A "polygon" structure, with an ordered list of vertices and a calculated bounding box -->
+
+#### Point/Polygon collision detection with triangles
+
+{{placeholder}}
+<!-- TODO: Warn of inefficiencies and get to the meat of the matter -->
 
 ### Circle/Polygon Collision
 
 {{placeholder}}
 
-<!-- TODO: Circle/Polygon collision Detection -->
-
-### Rectangle/Polygon Collision
-
-{{placeholder}}
-
-<!-- TODO: Rectangle/Polygon Collision Detection -->
+<!-- TODO: Circle/Polygon collision Detection: either the center is inside or the circle is touching one of the edges -->
 
 ### Line/Polygon Collision
 
 {{placeholder}}
 
-<!-- TODO: Line/Polygon Collision Detection -->
+<!-- TODO: Line/Polygon Collision Detection: either one of (or both) the ends of the line is inside of the polygon or the line crosses one of the edges -->
 
 ### Polygon/Polygon Collision
 
