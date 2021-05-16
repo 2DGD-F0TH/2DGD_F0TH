@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="153.55571mm"
+   height="99.972397mm"
+   viewBox="0 0 153.55571 99.972397"
+   version="1.1"
+   id="svg8"
+   inkscape:version="1.0.2 (e86c870879, 2021-01-15, custom)"
+   sodipodi:docname="jordan_curve_1.svg">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.4"
+     inkscape:cx="238.15898"
+     inkscape:cy="207.83808"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     inkscape:window-width="2560"
+     inkscape:window-height="1019"
+     inkscape:window-x="1920"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-35.072946,-39.968702)">
+    <rect
+       style="fill:#ffffff;stroke:#000000;stroke-width:0.564999;stroke-linejoin:round"
+       id="rect833"
+       width="152.99071"
+       height="99.407394"
+       x="35.355446"
+       y="40.251202"
+       rx="0"
+       ry="0" />
+    <path
+       style="fill:#e5ff80;stroke:#000000;stroke-width:0.22988px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 100.68143,68.359728 c 19.25399,-15.068198 6.72423,-26.598867 36.29934,-11.513222 29.57511,15.085643 -0.88847,11.933254 6.37967,25.346611 7.26814,13.413355 5.5632,48.565943 -10.31662,38.869623 -15.87983,-9.69633 9.97428,-45.059189 -6.96372,-41.960282 -16.93799,3.098907 -10.52416,62.415552 -25.77129,42.474852 C 85.061691,101.63662 49.497603,125.01961 62.146227,108.81879 74.794851,92.617976 96.695249,94.515992 94.245874,81.593444 91.796503,68.670901 100.68143,68.359728 100.68143,68.359728 Z"
+       id="path836" />
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;line-height:1.25;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+       x="110.95036"
+       y="73.338768"
+       id="text839"><tspan
+         sodipodi:role="line"
+         id="tspan837"
+         x="110.95036"
+         y="73.338768"
+         style="font-size:7.05556px;stroke-width:0.264583">Inside</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;line-height:1.25;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+       x="52.08147"
+       y="130.95325"
+       id="text839-3"><tspan
+         sodipodi:role="line"
+         id="tspan837-6"
+         x="52.08147"
+         y="130.95325"
+         style="font-size:7.05556px;stroke-width:0.264583">Outside</tspan></text>
+  </g>
+</svg>
