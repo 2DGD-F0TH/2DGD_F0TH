@@ -1,0 +1,41 @@
+structure Point:
+    // Rewritten as a memo
+    Integer x
+    Integer y
+
+class Rectangle:
+    Point corner
+    Integer width
+    Integer height
+    // ...
+    static function from_points(Point topleft, Point bottomright):
+        // ...
+// ...
+
+function bounding_box(Point[] vertices):
+    // First we create and bootstrap the variables
+    int xmin = vertices[0].x;
+    int xmax = vertices[0].x;
+    int ymin = vertices[0].y;
+    int ymax = vertices[0].y;
+    // Now we iterate through all the other vertices
+    for each vertex in vertices:
+        if vertex.x < xmin:
+            xmin = vertex.x;
+        if vertex.x > xmax:
+            xmax = vertex.x;
+        if vertex.y < ymin:
+            ymin = vertex.y;
+        if vertex.y > ymax:
+            ymax = vertex.y;
+    // Now we can build the needed points for the bounding box
+    A = new Point();
+    C = new Point();
+    A.x = xmin;
+    A.y = ymin;
+    C.x = xmax;
+    C.y = ymax;
+    // We build our bounding box
+    boundingBox = Rectangle.from_points(A, C)
+    // and return it
+    return boundingBox

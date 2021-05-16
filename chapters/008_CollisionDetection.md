@@ -444,6 +444,10 @@ The vertices of our bounding box will always be:
 
 $$ A(x_{min}, y_{min})\ B(x_{max}, y_{min})\ C(x_{max},y_{max})\ D(x_{min}, y_{max})$$
 
+::: tip :::
+Thanks to how rectangles work, we can just use the points $A$ and $C$ to build a rectangle: since they contain all 4 coordinates, we can infer $B$ and $D$ from them.
+:::::::::::
+
 This is simple to achieve: we just need to loop over all the vertices and find our coordinates. The algorithm here below:
 
 ```{src='collisiondetection/bounding_box' caption='How to find the bounding box of a polygon'}
