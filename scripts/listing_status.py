@@ -22,7 +22,7 @@ def main() -> None:
             for item in fn
         }
         print("[{}]".format(language).rjust(15, " "),
-              "[{}]".format("*" * len(files)))
+              "{}".format("|" * len(files)))
 
     pseudocode_files: set = {
         item
@@ -43,8 +43,10 @@ def main() -> None:
             }
             if files:
                 print("Missing Listings: {}".format(language))
+                print(30 * "-")
                 for fil in files:
                     print(fil)
+                print(30 * "=")
 
 
 if __name__ == "__main__":
