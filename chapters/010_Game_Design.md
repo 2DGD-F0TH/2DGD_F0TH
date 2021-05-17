@@ -508,6 +508,21 @@ This method can be implemented in many ways, one of them could be assigning a le
 
 Table: An example of "level-based" experience rewards
 
+Perceived Fairness
+------------------
+
+### You don't need precise collision detection
+
+{{placeholder}}
+
+<!-- TODO: Demonstrate how even the most precise collision detection can ruin a game in the eyes of the player by being TOO PRECISE -->
+
+### Immediate dangers should be drawn last
+
+{{placeholder}}
+
+<!-- TODO: Immediate dangers that can hurt the player should be as visible as possible (and drawn on top of other things), to avoid cheap hits/deaths. Obviously without breaking the immersion (by drawing a bomb in front of a wall while it should be behind) -->
+
 Miscellaneous
 -------------
 

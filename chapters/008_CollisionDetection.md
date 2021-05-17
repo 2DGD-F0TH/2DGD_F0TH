@@ -618,12 +618,6 @@ A logic "AND" operation is performed, pixel-by-pixel, on the bitmasks; with the 
 
 This algorithm has a time complexity of $O(n \cdot m)$ where $n$ is the total number of pixels of the first bitmask, while $m$ is the total number of pixels in the second bitmask.
 
-### You don't need precise collision detection
-
-{{placeholder}}
-
-<!-- TODO: Demonstrate how even the most precise collision detection can ruin a game in the eyes of the player by being TOO PRECISE -->
-
 Broad-phase collision detection: is a collision even possible?
 --------------------------------------------------------------
 
