@@ -192,7 +192,7 @@ The most important factor is whether the areas we will load into are safe: if th
 You should use a "press to continue prompt" when at least one of the following conditions applies:
 
 - **Any area we load to may be unsafe:** We don't want our players to take a small break, walk around the room and come back to a dead character;
-- **There is text on the loading screen: ** Be it a tip, world building or story, the player may be reading it, and taking away the text will annoy them.
+- **There is text on the loading screen:** Be it a tip, world building or story, the player may be reading it, and taking away the text will annoy them.
 
 ### Avoiding a loading screen altogether
 
