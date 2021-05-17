@@ -425,7 +425,7 @@ This specific triangulation is called "fan triangulation" and it is chosen for i
 
 #### Bounding Boxes
 
-Before making our poor CPU undertake big calculations, we may want to check if there is even a possibility of a collusion, maybe with a simpler algorithm.
+Before making our poor CPU undertake big calculations, we may want to check if there is even a possibility of a collision, maybe with a simpler algorithm.
 
 The great majority of the lifetime of our game objects is spent not colliding with anything, so if we can easily exclude a collision before starting complex algorithms, our game will just benefit from it.
 
@@ -538,18 +538,28 @@ Here's the full algorithm:
 ```{src='collisiondetection/circle_polygon' caption='Polygon vs Circle collision detection'}
 ```
 
-
-<!-- TODO: Remember the 5th case: a huge circle with a small polygon inside, in that case it's a simple point/circle collision with any of the vertices of the polygon -->
-
-{{placeholder}}
-
-<!-- TODO: Circle/Polygon collision Detection: either the center is inside or the circle is touching one of the edges -->
-
 ### Line/Polygon Collision
 
-{{placeholder}}
+The line vs polygon collision detection algorithm is not really different from the ones we have seen previously. Let's take a look at an image with all the cases we can think about:
 
-<!-- TODO: Line/Polygon Collision Detection: either one of (or both) the ends of the line is inside of the polygon or the line crosses one of the edges -->
+![Example image used for line/polygon collision detection](./images/collision_detection/line_poly.svg){width=40%}
+
+Here we can see 4 cases (this time for real):
+
+- **Line $\overline{AB}$:** The segment is completely inside the polygon (including its ends);
+- **Line $\overline{CD}$:** The segment is partially inside the polygon (one of its ends is inside the polygon);
+- **Line $\overline{EF}$:** The segment crosses the polygon, but both its ends are outside the polygon;
+- **Line $\overline{GH}$:** The segment is completely outside the polygon;
+
+We can solve the cases involving the lines $\overline{AB}$ and $\overline{CD}$ by checking if either of the ends is inside the polygon, using a point/polygon collision check.
+
+The case involving the line $\overline{EF}$ can be solved by a line/line collision check between the $\overline{EF}$ and all the edges of the polygon.
+
+Let's take a look at the full algorithm:
+
+
+```{src='collisiondetection/line_polygon' caption='Polygon vs Line collision detection'}
+```
 
 ### Polygon/Polygon Collision
 

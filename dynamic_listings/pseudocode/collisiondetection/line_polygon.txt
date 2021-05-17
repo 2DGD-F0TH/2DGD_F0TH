@@ -1,0 +1,22 @@
+// ...
+function line_polygon(Line line, Polygon poly):
+    // First of all, let's check if either of the line ends are inside the polygon
+    // This covers cases AB and CD
+    if polygon_point(poly, line.A):
+        // One of the ends is inside the polygon, we have a hit
+        return True
+    if polygon_point(poly, line.B):
+        // One of the ends is inside the polygon, we have a hit
+        return True
+    // Now we check for case EF
+    for each j between 1 and poly.vertices.length() - 1:
+        // We iterate through all the vertices
+        Line temp_line = Line.fromPoints(poly.vertices[j-1], poly.vertices[j]);
+        if line_line_collsion(temp_line, line):
+            return True
+    // Let's not miss the edge between the last vertex and the first one
+    Line temp_line = Line.fromPoints(poly.vertices[poly.vertices.length() - 1], poly.vertices[0]);
+    if line_line_collision(temp_line, line):
+        return True
+    // If none of the previous checks was triggered, we don't have a collision
+    return False

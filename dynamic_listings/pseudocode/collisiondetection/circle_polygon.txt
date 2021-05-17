@@ -8,6 +8,10 @@ function circle_polygon(Polygon poly, Circle circ):
         // In case we find a hit, we already know there is a collision
         if line_circle_collision(circ, temp_line):
             return True
+    // Let's not miss the edge between the last vertex and the first one
+    Line temp_line = Line.fromPoints(poly.vertices[poly.vertices.length() - 1], poly.vertices[0]);
+    if line_circle_collision(circ, temp_line):
+        return True
     // Now Let's check for cases "A" and "B"
     if polygon_point(poly, circ.center):
         // If the center is inside the polygon, we have a collision
