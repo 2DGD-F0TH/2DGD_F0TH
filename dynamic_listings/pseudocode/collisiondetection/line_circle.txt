@@ -37,7 +37,7 @@ function line_circle_collision(Circle circle, Line line):
     // Now let's calculate the x and y coordinates
     x = x1 + u * (x2 - x1)
     y = y1 + u * (y2 - y1)
-    // "Reuse", we'll use some older functions, let's create a point, with the coordinates we found
+    // "Reuse": we'll use some older functions, let's create a point, with the coordinates we found
     P = Point(x,y)
     // Let's check if the "closest point" we found is on the line
     if (line_point_collision(line, P)) == False:
