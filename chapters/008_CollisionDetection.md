@@ -563,15 +563,39 @@ Let's take a look at the full algorithm:
 
 ### Polygon/Polygon Collision
 
-{{placeholder}}
+Here we are, the final frontier, polygon vs polygon collision detection. We went through a lot of pages of notions and reasoning to get here, now we have the tools to undertake one of the more complex collision detection methods.
 
-<!-- TODO: add an algorithm to check for convex polygons colliding each other (hulls) -->
+Remember: we are checking if two **convex** polygons are colliding, let's see an example image first.
+
+![Example image used for polygon/polygon collision detection](./images/collision_detection/polygon_polygon.svg){width=40%}
+
+We can see 4 cases here, from the simplest to the hardest:
+
+- The Square **D** is outside the polygon;
+- The Pentagon **B** is completely inside the polygon
+- The Octagon **E** is colliding with the heptagon **C** and a vertex of **C** is inside of **E**;
+- The heptagon **C** is colliding with the hexagon **A**, but none of its vertices of **C** are inside of **A**;
+
+We can easily solve the cases involving **A** and **E** with a "polygon vs line" collision detection, while the case involving **B** can be checked by doing a "polygon vs point" check.
+
+Let's take a look at the algorithm:
+
+```{src='collisiondetection/polygon_polygon' caption='Polygon vs Polygon collision detection'}
+```
+
+As you can see, the algorithm is quite short, but it builds on a lot of previous algorithms that we already studied, so there is a lot of "hidden complexity" behind these few rows of code.
 
 ### Non-convex polygons collision {#non_convex}
 
 {{placeholder}}
 
 <!-- TODO: The solution is given by the number of times the line between the "inside point" and the "test point" intersects with the perimeter and the jordan curve theorem -->
+
+#### Polygon triangulation: the return
+
+{{placeholder}}
+
+<!-- TODO: Talk about how any polygon can be "triangulated" (just not in the "fan style") - memorizing a polygon as a "bunch of triangles" can be useful to simplify collision detection. Talk about "ear clipping", for instance. -->
 
 ### Pixel-Perfect collision
 
@@ -589,6 +613,12 @@ A logic "AND" operation is performed, pixel-by-pixel, on the bitmasks; with the 
 ```
 
 This algorithm has a time complexity of $O(n \cdot m)$ where $n$ is the total number of pixels of the first bitmask, while $m$ is the total number of pixels in the second bitmask.
+
+### You don't need precise collision detection
+
+{{placeholder}}
+
+<!-- TODO: Demonstrate how even the most precise collision detection can ruin a game in the eyes of the player by being TOO PRECISE -->
 
 Broad-phase collision detection: is a collision even possible?
 --------------------------------------------------------------
