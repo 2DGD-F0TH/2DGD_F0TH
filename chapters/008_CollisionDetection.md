@@ -506,7 +506,7 @@ The best case is that the point we're testing is outside the polygon's bounding 
 
 The worst case is when the whole algorithm is performed to the end, which means the point is inside the bounding box, but outside the polygon: this means we calculate the bounding box ($\Theta(n)$), check against it ($\Theta(1)$), do the "fan triangulation" ($\Theta(n)$), check each triangle without finding any collision ($O(n)$) and get to the end. Out worst case (upper bound) is $O(n)$.
 
-Even though we have a tight bound of $\Theta(n)$ in our entire algorithm (thus the amount of calculations goes up slowly with the addition of new vertices), we need to be mindful of the amount of calculation that is done, including some heavy operations like square roots.
+Even though we have a tight bound of $\Theta(n)$ in our entire algorithm (which means the amount of calculations goes up slowly with the addition of new vertices), we need to be mindful of the amount of calculation that is done, including some heavy operations like square roots.
 
 ### Circle/Polygon Collision
 
