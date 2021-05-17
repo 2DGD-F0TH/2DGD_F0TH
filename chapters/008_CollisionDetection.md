@@ -585,6 +585,10 @@ Let's take a look at the algorithm:
 
 As you can see, the algorithm is quite short, but it builds on a lot of previous algorithms that we already studied, so there is a lot of "hidden complexity" behind these few rows of code.
 
+::: tip :::
+We can make the algorithm perform a bit better by adding a check between the (axis aligned) bounding boxes first: this will drastically reduce the amount of "line vs polygon" and "point vs polygon" checks, at the expense of a slightly heavier algorithm when a collision happens.
+:::::::::::
+
 ### Non-convex polygons collision {#non_convex}
 
 {{placeholder}}
