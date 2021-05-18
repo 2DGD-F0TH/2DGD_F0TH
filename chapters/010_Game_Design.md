@@ -513,9 +513,23 @@ Perceived Fairness
 
 ### You don't need precise collision detection
 
-{{placeholder}}
+Here we go, spouting bold claims again. Here's a bolder one: you don't **want** precise collision detection. It's slower, harder to implement and most of all, the player may get annoyed at it.
 
-<!-- TODO: Demonstrate how even the most precise collision detection can ruin a game in the eyes of the player by being TOO PRECISE -->
+In the heat of a gaming session, with all the action going on, the player may become a bit "blind" to small things: this means that they will perceive as arbitrary anything that is not "evident".
+
+Let's take this arrow vs "generic jumping man" example:
+
+![A pixel perfect detection would trigger in this case](./images/game_design/collision_1.png){width=40%}
+
+With still images, things are obvious: that's a collision, it's on the tip of the character's toe, but it's a hit. It may be 1 or 2 pixels (it's actually 3), but it is still a hit.
+
+Now let's imagine the image moving: the arrow darting from left to right while the character is ascending, it looks like a near-hit, the player will appreciate the adrenaline rush of a near-death. If we go and declare that as a "hit", the player won't understand why, they will say "that's unfair, it just missed me". Our collision detection was **too precise**.
+
+![A smaller hitbox may save the player some frustration](./images/game_design/collision_2.png){width=40%}
+
+Sometimes we just need a hitbox that is small enough to avoid these "looks-like-a-miss" incidents: the instances where the collision detection triggers are evident and the player will appreciate the sensation given by the near-deaths.
+
+Obviously you need to strike a balance, if the hitbox is so small that evident hits are counted as misses (with few exceptions, like [bullet hells](#bullethell)) it will break the immersion.
 
 ### Immediate dangers should be well visible
 
@@ -542,10 +556,6 @@ Other instead prefer making the "foreground objects" semi-transparent, so that t
 ![Making objects transparent is a solution too](./images/game_design/dangers_4.svg){width=30%}
 
 This solution is usually applied when the player themselves are behind the obstacle, giving a more "interactive" and "less confusing" feel to the entire game.
-
-{{placeholder}}
-
-<!-- TODO: Immediate dangers that can hurt the player should be as visible as possible (and drawn on top of other things), to avoid cheap hits/deaths. Obviously without breaking the immersion (by drawing a bomb in front of a wall while it should be behind) -->
 
 Miscellaneous
 -------------

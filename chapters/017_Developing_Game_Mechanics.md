@@ -382,7 +382,7 @@ We can switch back and forth between the two domains with "transforms", the most
 {{placeholder}}
 <!-- TODO: How to perform beat detection in games -->
 
-"Bullet Hell" Style Games
+"Bullet Hell" Style Games {#bullethell}
 -------------------------
 
 The common definition of a "bullet hell" game is usually the one of a scrolling (usually space-themed) shooter with a very high level of difficulty and lots of enemy bullets on screen (hence the name).
