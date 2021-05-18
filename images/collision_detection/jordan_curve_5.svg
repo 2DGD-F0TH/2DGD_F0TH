@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="67.41mm"
+   height="50.353mm"
+   version="1.1"
+   viewBox="0 0 67.41 50.353"
+   id="svg32"
+   sodipodi:docname="jordan_curve_5.svg"
+   inkscape:version="1.0.2 (e86c870879, 2021-01-15, custom)">
+  <metadata
+     id="metadata38">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs36" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1019"
+     id="namedview34"
+     showgrid="false"
+     inkscape:zoom="2.6368137"
+     inkscape:cx="112.27735"
+     inkscape:cy="63.684085"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg32" />
+  <path
+     d="M 16.438,46.042 H 30.4 V 20.422 H 53.794 V 49.62 H 67.278 V 0.136 H 16.644 Z"
+     fill="#e5ff80"
+     stroke-width="0.26458px"
+     id="path2"
+     style="stroke:#000000" />
+  <circle
+     cx="24.374002"
+     cy="34.942001"
+     r="1.4075"
+     stroke-linejoin="round"
+     stroke-width="0.565"
+     id="circle4"
+     style="stroke:#000000" />
+  <circle
+     cx="4.5550027"
+     cy="44.162003"
+     r="1.4075"
+     stroke-linejoin="round"
+     stroke-width="0.565"
+     id="circle6"
+     style="stroke:#000000" />
+  <text
+     x="17.877901"
+     y="41.512489"
+     font-family="'DejaVu Sans'"
+     font-size="4.2333px"
+     letter-spacing="0px"
+     stroke-width="0.26458"
+     word-spacing="0px"
+     style="line-height:1.25"
+     xml:space="preserve"
+     id="text12"><tspan
+       x="17.877901"
+       y="41.512489"
+       stroke-width="0.26458"
+       id="tspan10">P</tspan></text>
+  <text
+     x="-0.23761499"
+     y="49.506905"
+     font-family="'DejaVu Sans'"
+     font-size="4.2333px"
+     letter-spacing="0px"
+     stroke-width="0.26458"
+     word-spacing="0px"
+     style="line-height:1.25"
+     xml:space="preserve"
+     id="text18"><tspan
+       x="-0.23761499"
+       y="49.506905"
+       stroke-width="0.26458"
+       id="tspan16">Q<tspan
+   baseline-shift="sub"
+   font-size="65%"
+   id="tspan14">1</tspan></tspan></text>
+  <circle
+     cx="60.488995"
+     cy="37.162003"
+     r="1.4075"
+     stroke="#000000"
+     stroke-linejoin="round"
+     stroke-width="0.565"
+     id="circle20" />
+  <text
+     x="60.914974"
+     y="42.656799"
+     font-family="'DejaVu Sans'"
+     font-size="4.2333px"
+     letter-spacing="0px"
+     stroke-width="0.26458"
+     word-spacing="0px"
+     style="line-height:1.25"
+     xml:space="preserve"
+     id="text26"><tspan
+       x="60.914974"
+       y="42.656799"
+       stroke-width="0.26458"
+       id="tspan24">Q<tspan
+   baseline-shift="sub"
+   font-size="65%"
+   id="tspan22">2</tspan></tspan></text>
+  <path
+     d="M 60.349,37.192 24.34,34.7855 4.61,44.4183"
+     fill="none"
+     stroke="#000000"
+     stroke-dasharray="1.5875, 1.5875"
+     stroke-width="0.26458"
+     id="path28" />
+  <circle
+     cx="30.419771"
+     cy="35.246418"
+     r="0.63529146"
+     stroke-linejoin="round"
+     stroke-width="0.255019"
+     id="circle6-3"
+     style="fill:#aa0000;stroke:#aa0000" />
+  <circle
+     cx="53.871643"
+     cy="36.88509"
+     r="0.63529146"
+     stroke-linejoin="round"
+     stroke-width="0.255019"
+     id="circle6-3-6"
+     style="fill:#aa0000;stroke:#aa0000" />
+  <circle
+     cx="16.440557"
+     cy="38.705078"
+     r="0.63529146"
+     stroke-linejoin="round"
+     stroke-width="0.255019"
+     id="circle6-3-7"
+     style="fill:#aa0000;stroke:#aa0000" />
+</svg>
