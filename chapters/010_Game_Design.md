@@ -517,7 +517,31 @@ Perceived Fairness
 
 <!-- TODO: Demonstrate how even the most precise collision detection can ruin a game in the eyes of the player by being TOO PRECISE -->
 
-### Immediate dangers should be drawn last
+### Immediate dangers should be well visible
+
+One of the biggest frustrations a player can encounter is definitely being damaged (or killed) by a hidden object.
+
+To avoid these "unfair shots", we should draw immediate dangers "late" in the drawing phase of the game loop, but there is an issue: we don't want to break the immersion.
+
+Let's take the following example: a bomb gets spawned just behind a chest by an enemy, and our character is dangerously close to it.
+
+![A bomb spawned behind a chest, drawn in a realistic order](./images/game_design/dangers_1.svg){width=30%}
+
+If the bomb is "behind" the chest, we can't suddenly make it pop "in front of" the chest, that would definitely ruin the immersion, also it may end up messing with the forced perspective that some 2D games use.
+
+![Moving the bomb in front of the chest may ruin immersion](./images/game_design/dangers_2.svg){width=30%}
+
+As you can see, even though the bomb has a shadow, it looks like the bomb and the shadow are "floating mid-air", thus ruining immersion.
+
+Different games implement different solutions to the problem, some prefer highlighting the danger with an outline drawn over everything, something like the following:
+
+![Highlighting the hidden part of a danger can be useful](./images/game_design/dangers_3.svg){width=30%}
+
+Other instead prefer making the "foreground objects" semi-transparent, so that the player can see what lies behind.
+
+![Making objects transparent is a solution too](./images/game_design/dangers_4.svg){width=30%}
+
+This solution is usually applied when the player themselves are behind the obstacle, giving a more "interactive" and "less confusing" feel to the entire game.
 
 {{placeholder}}
 
