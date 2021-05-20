@@ -71,7 +71,47 @@ Just to reiterate: this is not a problem of the single programming language, we 
 
 This is a computer issue in general, this may not be a huge problem for general use but if we try to be too precise with our calculations this may come back to bite us.
 
-<!-- TODO: A good idea to reinforce this would be talking about "catastrophic cancellation" -->
+
+### Catastrophic cancellation
+
+With a name as dangerous-sounding as "catastrophic cancellation", this sure looks like a dangerous phenomenon, but it's only dangerous if we don't know what it is.
+
+Catatrophic Cancellation (sometimes called "cancellation error") is an event that may happen when subtracting two (usually large) numbers that are close to each other in value.
+
+**Warning:** from here on, in this section, there will be some technical language. I will try to make it as simple and understandable as possible.
+
+Let's imagine a computer, such computer's memory can handle at most 8 decimals while its ALU (the unit that takes case of "doing math") can handle at most 16 decimal places.
+
+Now let's take two numbers:
+
+$$x=0.5654328749846\ y=0.5654328510104$$
+
+When we go to transfer such numbers in our memory, the computer will approximate such numbers to fit in its memory constraints. We'll represent that by applying to each number a function $fl()$ that we can read as "float representation of this number". So we'll end up having:
+
+$$fl(x)=0.56543287\ fl(y)=0.56543285$$
+
+This is generally called an "assignment error", where during the assignment to a variable, a number loses part of its information.
+
+Let's try an calculate how off those approximations are (by calculating the percent "relative error"), just to get an idea of what we lost by just loading the numbers on our "fake computer":
+
+$$\delta_x = \frac{| x - fl(x) |}{x} = ~ 0.00000088\%$$
+$$\delta_y = \frac{| y - fl(y) |}{y} = ~ 0.00000017\%$$
+
+We can see that our approximations are **very close** to the numbers we want to calculate, now let's calculate $x-y$. Making things by hand we would have:
+
+$$x - y = 0.239772 \times 10^{-7}$$
+
+That's a tiny number right there. Now let's calculate $fl(x) - fl(y)$, remembering that the ALU will fill up to 16 decimals:
+
+$$fl(x) - fl(y) = 0.5654328700000000 - 0.5654328500000000 = 0.0000000200000000 = 0.2 \times 10^{-7}$$
+
+That doesn't look so bad, unless we look at the "relative error":
+
+$$\delta = \frac{| 0.239772 \times 10^{-7} - 0.2 \times 10^{-7} |}{0.239772 \times 10^{-7}} = 16.6\%$$
+
+Oh no... We're off by 16\% of the total result! That's a huge loss! A real catastrophe.
+
+What happened? If you look closely, the numbers are really close and even have 7 decimal digits in common, since our computer can memorize only 8 digits, the 9th to 13th decimal digits that looked so unimportant suddenly become a huge part of the result (due to the subtraction) but are already lost.
 
 De Morgan's Laws and Conditional Expressions
 --------------------------------------------
