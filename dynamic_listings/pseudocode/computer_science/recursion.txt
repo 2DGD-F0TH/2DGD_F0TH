@@ -1,0 +1,8 @@
+function count_backwards(int n):
+    // Stop condition
+    if n == 0:
+        return;
+    // Procedure
+    print(n);
+    // Recursive call
+    count_backwards(n-1);
