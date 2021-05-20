@@ -275,6 +275,13 @@ Let's see a possible implementation of this strange, but interesting algorithm:
 
 {{placeholder}}
 
+Dungeon Generation
+------------------
+
+{{placeholder}}
+
+<!-- TODO: Talk about some algorithms that can be used to generate dungeon rooms in the style of Binding of Isaac: first you generate the "big map", then each room is chosen among a pool of pre-made rooms that can be re-rextured -->
+
 Noise Generation
 -----------------
 
