@@ -706,6 +706,13 @@ For a total of 10 tests, which can be further optimized by avoiding testing pair
 
 <!-- TODO: Easier on the CPU but harder to implement, every frame you build a quad tree and use that to check on collisions -->
 
+Building AABB-Trees
+-------------------
+
+{{placeholder}}
+
+<!-- TODO: A simple explanation of AABB trees to allow for account for proximity of objects -->
+
 Other Collision Detection Methods
 ---------------------------------
 
