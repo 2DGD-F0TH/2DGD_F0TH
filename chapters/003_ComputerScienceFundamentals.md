@@ -1365,4 +1365,4 @@ Usually these multithreaded functionalities are part of the programming language
 #### Atomic Operations
 
 {{placeholder}}
-<!--TODO: Talk about atomic operations -->
+<!-- TODO: Talk about atomic operations -->

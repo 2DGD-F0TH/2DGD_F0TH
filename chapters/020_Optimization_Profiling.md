@@ -130,7 +130,7 @@ This way instead we're doing sanity checks and related operations only once, mov
 
 {{placeholder}}
 
-<!--TODO: Properly disposing of unused entities is important to avoid memory leaks -->
+<!-- TODO: Properly disposing of unused entities is important to avoid memory leaks -->
 
 ### Using analyzers to detect Memory Leaks {#mem_analyzers}
 
