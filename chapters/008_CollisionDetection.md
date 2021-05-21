@@ -709,6 +709,32 @@ For a total of 10 tests, which can be further optimized by avoiding testing pair
 Building AABB-Trees
 -------------------
 
+Another way to efficiently execute a broad-phase collision detection is by building trees containing Axis-Aligned Bounding Boxes.
+
+The main idea is similar to what we've seen with binary search trees, mixed with the quad-trees we've just talked about: we are trying to keep track of objects that are close together (like Quad-Trees do) and when searching, we try to eliminate a good portion of data each time we descend the tree (similarly to binary search trees).
+
+This is done by calculating a "cost function" every time we insert an object into the tree: our objective is making the cost as little as possible. An idea for the cost function could be the size of the rectangle (expressed by its perimeter, or just $width + height$).
+
+Our example image, would be represented this way:
+
+![How an AABB-tree would process our example image](./images/collision_detection/collision_aabb_example.svg){width=50%}
+
+This can look a bit confusing, let's see how the tree would look like:
+
+![How a possible AABB-tree structure would look like](./images/collision_detection/aabb_tree.svg){width=50%}
+
+The idea behind this type of tree is making queries as fast as we can, and that can be done by checking on smaller rectangles on every iteration of our search algorithm. For instance we can find a list of possible colliding entities with a given bounding box in only a few tests (in our example).
+
+Let's take for instance a circle "P" that is exactly between the points 3 and 4:
+
+![Example of a search in an AABB-Tree](./images/collision_detection/aabb_tree_query.svg){width=50%}
+
+1. First we do the root test, to see if it may collide with any of the 7 circles we have (if it was outside of the green rectangle, we would have finished already);
+2. We do the "left (cyan) child" test, in this case we're not colliding with the relative bounding box, so we keep going. (And we excluded 1,2,6, and 7);
+3. We do the "right (cyan) child" test, we're colliding with the relative bounding box, we continue on this branch;
+4. We do the "left (red) child" test, we're colliding with the relative bounding box, now we can do a narrow-phase collision detection with the leaves of this node (so we excluded 5).
+
+
 {{placeholder}}
 
 <!-- TODO: A simple explanation of AABB trees to allow for account for proximity of objects -->
