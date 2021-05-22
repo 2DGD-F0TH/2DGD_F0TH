@@ -262,6 +262,12 @@ A think that many people tend to forget, but that is really important is that yo
 
 In short: any numeric value that can transition "smoothly" between two values in a certain amount of time can be tweened.
 
+### Bouncing
+
+{{placeholder}}
+
+<!-- TODO: Talk about how to use tweening to make a property "bounce", giving a more natural feeling. When around 80% of the time is passed, the property reaches between 110 and 120% of the original value. The remaining 20% of the time is used to "ease back" to the wanted value. This gives a "bouncy" feeling, which is less jarring and more natural -->
+
 Chaining
 --------
 
