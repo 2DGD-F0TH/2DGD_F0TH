@@ -142,18 +142,17 @@ These tools analyze the code without running it, checking the style and common b
 
 Most of these tools are included in IDEs but some (like LLVM's scan-build) are standalone.
 
-![An example screen from LLVM's scan-build](./images/profiling_optimization/scan_build.png){width=40%}
+![An example screen from LLVM's scan-build](./images/profiling_optimization/scan_build.png){width=50%}
 
 #### Dynamic testing tools
 
 Some tools require the game to be running, some general-purpose ones are used to find memory leaks (like Valgrind), while others have more specific purposes and are usually integrated into the engine.
 
+![A screenshot from Valgrind, looks like we have a memory leak here](./images/profiling_optimization/valgrind.png){width=50%}
+
 These more specific tools can track the FPS, memory as well as the calls done to each function, allowing you to track down what is bogging down your game.
 
 ![A screenshot from Godot's profiler](./images/profiling_optimization/godot_profiler.png){width=50%}
-
-{{placeholder}}
-<!-- TODO: Talk about tools like LLVM/Clang scan_build and Valgrind -->
 
 ### Resource Pools {#res_pools}
 
