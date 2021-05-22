@@ -123,11 +123,25 @@ Some famous games, like DOOM and Dark Souls, use secrets-in-secrets to trick pla
 We can see how we hid a secret inside of another secret and used a piece of valuable (but not *too valuable*) treasure to make the player think they found the secret, while the real secret is hiding behind another fake wall.
 
 
-### Reward Backtracking (but don't make it mandatory)
+### Reward Backtracking (but don't make it mandatory!)
 
-<!-- TODO: Talk about how to reward players that backtrack (like opening a door that was locked shut before a boss) -->
+To make the game's experience broader and richer, you may want to reward the player's exploration efforts by hiding treasure behind some backtracking.
 
-{{placeholder}}
+For instance you can show the player a locked door somewhere in the level, such door will unlock and open after beating a boss monster or a wave-based challenge in the next room and hide some weapons that would otherwise be unlocked further into the game.
+
+A nice idea would be "suggesting" to the player that something interesting happened, by playing the sound of the door opening as soon as the event is triggered. Another idea would be showing the player that the door opened (for instance if you're in an open area, the player would be able to see clearly that an open gate that was closed before).
+
+The most important thing to remember is that all of this needs to be optional, a reward for the player's willingness to explore your levels further: avoid making backtracking mandatory, this will only feel like you're "padding the game" with nothing worth of note.
+
+The player is paying you with their time and effort, it's only right that you pay them back with a pleasurable experience.
+
+::: trivia :::
+A nice example of backtracking bonuses (although mandatory to 100% the game) is used in the level "Sphynxinator" in Crash Bandicoot 3: Warped.
+
+When you start the level, you can run backwards and you'll find 4 crates (which are necessary to get the "Gem" and 100% the game, but not mandatory for the normal ending), one of which is an extra life.
+
+The backtracking is really short and gives you a nice bonus.
+::::::::::::::
 
 ### The "lives" system
 
