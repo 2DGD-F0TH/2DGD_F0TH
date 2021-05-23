@@ -341,7 +341,7 @@ Permadeath makes the "save game" functionality more of a "suspension of the game
 
 #### Turn-based Gameplay
 
-Like tabletop games, the gameplay of roguelikes is turn-based: this allows the player to take as much time as needed to take a decision.
+Like tabletop games, the gameplay of roguelikes is usually turn-based: this allows the player to take as much time as needed to take a decision.
 
 #### Lack of mode-based gameplay
 
@@ -424,6 +424,12 @@ Many times underrated, minigames are a really vital part of a great game experie
 Minigames can be a fun diversion from the main game, extending the engagement time, as well as a priceless resource for bigger open-ended games: you can use common "low-level" materials to feed into the minigame to get better materials, weapons or prizes.
 
 This is a win/win situation, you throw away unused materials to get useful tools, materials or cosmetics, also playing into the mechanism that maybe some people will get things wrong and need the "low-level" materials again, further lengthening the engagement of your game.
+
+#### When unlockables are involved, be balanced
+
+{{placeholder}}
+
+<!-- TODO: This is usually for games that involve roguelike mechanics, where you can unlock "good" and "bad" items. In the age of wikis, you should make the player unlock either a positive item, a neutral item with situational good outcomes or 1 positive + 1 negative. If you push a negative unlockable item, the players will actively avoid unlocking it, a possible solution would make the negative unlock be a requirement for a "bigger" positive unlock (boss unlocks negative, 5 bosses unlock very positive item) -->
 
 ### Shooters {#gd_shooters}
 

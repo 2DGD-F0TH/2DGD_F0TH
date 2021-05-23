@@ -288,6 +288,12 @@ To work well, timed jumps need to be implemented by tracking the jump button's `
 ```{src='developing_mechanics/timed_jumps' caption='Example code of how timed jumps work'}
 ```
 
+### Screen Wrap
+
+{{placeholder}}
+
+<!-- TODO: Used in puzzle platformers: when you exit a stage right, you re-enter left (or top-bottom), this also means that one of the 2 directions must be locked (or the camera will jolt back and forth). -->
+
 Top-view RPG-Like Games
 -----------------------
 
