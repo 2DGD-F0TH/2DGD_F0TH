@@ -14,6 +14,7 @@ This book assumes you already have some minimal knowledge of maths, including bu
 - Roots
 - Equations
 - Limits
+- Cartesian Coordinate system
 
 Also we will represent derivatives with the $f'(x)$ symbol, instead of the more verbose $\frac{\partial f}{\partial x}$.
 
@@ -158,11 +159,57 @@ Any shape where you can find at least one line that crosses the shape more than 
 Not all non-convex shapes are technically called "concave" (they should be called "non-convex"), but for the sake of simplicity we'll use the term "non-convex" and "concave" interchangeably in this book.
 :::::::::::::::
 
+### Self-intersecting polygons
+
+Contrary to what many think, polygons can self-intersect too, which can make calculations a lot harder.
+
+![Example of a self-intersecting polygon](./images/maths/self_intersecting_poly.svg){width=40%}
+
+For the sake of game development, we will usually talk about simple polygons which are polygons that don't self-intersect and have no holes in them. More strictly we will (for 99.9% of the time) talk about **convex simple polygons**.
+
+### Straight Lines and their equations
+
+One of the main topics we will encounter over and over in our game development adventure will be "straight lines". We will need to draw them, see if two straight lines collide, project stuff onto them, and much more. So it's important that we know them well.
+
+Here's a straight line:
+
+$$ ax + by + c = 0$$
+
+That's not what you expected, right? What you've seen is the "general form" of a straight line's equation, because you can represent lines using equations (also circles, and other stuff). This is not a much-used form, though, probably the most used form is called the "slope-intercept form":
+
+$$ y = mx + q$$
+
+Where in this case $m$ is the *slope* of our straight line, and $q$ represents the so-called *y-intercept* (the value of $y$ when $x=0$). If $q=0$ the line goes through the origin of the Cartesian coordinate system, if $m=0$ the line is horizontal.
+
+::: pitfall :::
+"Vertical straight lines" is where the slope-intercept form fails, in fact vertical straight lines have an equation in the form of $x=k$
+:::::::::::::::
+
+#### Getting the equation of a straight line, given two points
+
+We all know that given two points we can strike one and only one line. How many times did you measure two points (maybe while doing some DIY) and stroke a line between them?
+
+It will be useful in our adventure to be able to get the equation of a straight line starting from two points, so let's call our two points $P(x_1,y_1)$ and $Q(x_2,y_2)$, then the straight line that crosses both those points will have equation:
+
+$$ \frac{y-y_1}{x-x_1} = \frac{y_2 - y_1}{x_2 - x_1}$$
+
+This may seem really complicated, but with some small calculations we can reach a formula for our straight line in any form (generic or "slope-intercept").
+
+::: pitfall :::
+Again, this formula fails when we are dealing with "vertical lines", because the denominator at the right side of the equation will be zero. But in that case we'll already know the formula: it will be $x=x_1$ (which in turn will be equal to $x_2$)
+:::::::::::::::
+
+#### Getting the equation, given the slope and a point
+
 {{placeholder}}
 
-<!-- TODO: Talk more about convex vs. concave polygons -->
+<!-- TODO: y-y_p=m(x-x_p) -->
 
 ### Projections {#projections}
+
+In some situations (as you will see in the [SAT Theorem](#SAT)), we may need to get to project polygons onto a line, this usually involves projecting **points** to a line.
+
+Given the formulas we've seen earlier, and doing some thinking, we can easily project a point onto any straight line. Let's see how to do it.
 
 {{placeholder}}
 

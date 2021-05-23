@@ -909,7 +909,7 @@ Sometimes it can happen that the position is reset incorrectly due to machine pr
 
 Sometimes the "spazziness" of the character derives from the fact that collision reaction sets the character one pixel over the floor, triggering the "falling" state, the next frame the state would be changed to "idle" and then in the frame "n+2" the cycle would restart with collision reaction putting the character one pixel over the floor.
 
-Separating Axis Theorem
+Separating Axis Theorem {#SAT}
 -----------------------
 
 We have taken an in-depth look at a series of specialized algorithms, but there is a more generic theorem that allows us to determine if two convex polygons are colliding: The *Separating Axis Theroem* or SAT. This theorem states:
