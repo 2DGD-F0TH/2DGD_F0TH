@@ -37,7 +37,7 @@ The animation component will just be updated (like the other components) and it 
 
 {{placeholder}}
 
-<!-- TODO: A class that yelds frames, with an internal counter and all the necessary facilitations for animating a sprite -->
+<!-- TODO: A class that yields frames, with an internal counter and all the necessary facilitations for animating a sprite -->
 
 Finite State Machine
 ---------------------
