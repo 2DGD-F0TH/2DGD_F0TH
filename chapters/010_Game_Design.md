@@ -427,9 +427,21 @@ This is a win/win situation, you throw away unused materials to get useful tools
 
 #### When unlockables are involved, be balanced
 
-{{placeholder}}
+When you're creating a game that involves "unlockables" (for instance a roguelike where you unlock more items for the upcoming runs), you should absolutely balance your unlockables in a way that compels the player to unlock them.
 
-<!-- TODO: This is usually for games that involve roguelike mechanics, where you can unlock "good" and "bad" items. In the age of wikis, you should make the player unlock either a positive item, a neutral item with situational good outcomes or 1 positive + 1 negative. If you push a negative unlockable item, the players will actively avoid unlocking it, a possible solution would make the negative unlock be a requirement for a "bigger" positive unlock (boss unlocks negative, 5 bosses unlock very positive item) -->
+If you hide a "negative item" behind an unlockable, the player will actively avoid doing the actions that lead to unlocking such item. This is especially true now, in the age of widespread Wikis.
+
+If you have to implement unlockables you should either:
+
+- **Make the unlocked item a "good item":** this will naturally compel the player to unlock such item to make the subsequent runs easier and more fun and varied;
+- **Make the unlocked item a "neutral item" with situational good outcomes:** the player will be less attracted by these items, but the situational good outcomes (we can call them "interactions" or "synergies") can make the player willing to put in the effort to unlock such item;
+- **Unlock 2 items at once: a "good" one and a "bad" one:** the player may be less attracted by this "good+bad" combination, but may still be willing to go through with the unlock effort for the sake of the "good item" and also for added variety in their next runs;
+
+If you really want to gate a "bad item" behind "a gate", a good idea would make the "bad item" a pre-requisite for unlocking a "very good item". Alternatively, you can unlock the bad item "on the way" to unlocking a "good item": for instance you can make "beat the first boss 5 times" a requirement for the bad item to be unlocked, while "beat the second boss 10 times" could be a requirement for the "good item" to be spawned.
+
+::: tip :::
+Remember: you should always account for wikis, some people think that wikis "ruin the surprise" of the game, while others use wikis just out of curiosity, some again instead use wikis as a "guide" to make the game easier or organize their strategy better.
+:::::::::::
 
 ### Shooters {#gd_shooters}
 
