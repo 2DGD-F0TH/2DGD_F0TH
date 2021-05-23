@@ -219,7 +219,7 @@ Guess what? This (again) doesn't allow us to create "vertical lines", because we
 
 ### Projections {#projections}
 
-In some situations (as you will see in the [SAT Theorem](#SAT)), we may need to get to project polygons onto a line, this usually involves projecting **points** to a line.
+In some situations (as you will see in the [SAT](#SAT)), we may need to get to project polygons onto a line, this usually involves projecting **points** to a line.
 
 Given the formulas we've seen earlier, and doing some thinking, we can easily project a point onto any straight line. Let's see how to do it.
 
