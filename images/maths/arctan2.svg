@@ -1,0 +1,851 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   viewBox="0 0 800 800"
+   id="svg253"
+   sodipodi:docname="arctan2.svg"
+   inkscape:version="1.0.2 (e86c870879, 2021-01-15, custom)">
+  <metadata
+     id="metadata257">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1019"
+     id="namedview255"
+     showgrid="false"
+     inkscape:zoom="1.0375"
+     inkscape:cx="441.44578"
+     inkscape:cy="400"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg253" />
+  <defs
+     id="defs5">
+    <symbol
+       id="symbol9406"
+       overflow="visible">
+      <path
+         d="m7.1875-3.375c0-2.0312-1.5-3.6562-3.3125-3.6562-1.7969 0-3.3125 1.5938-3.3125 3.6562 0 2.0469 1.5312 3.5938 3.3125 3.5938 1.8125 0 3.3125-1.5781 3.3125-3.5938zm-3.3125 3.3594c-0.98438 0-2.3438-0.85938-2.3438-3.3594 0-2.5625 1.375-3.4375 2.3438-3.4375 1 0 2.3438 0.90625 2.3438 3.4375s-1.4062 3.3594-2.3438 3.3594zm1.7812-4.1094h-0.25v0.34375h-3.0625v-0.34375h-0.25v1.4375h0.25v-0.34375h3.0625v0.34375h0.25z"
+         id="path2" />
+    </symbol>
+  </defs>
+  <g
+     transform="translate(0,-252.36)"
+     id="g251">
+    <g
+       transform="matrix(0.96731,0,0,0.95587,14.033,36.438)"
+       fill="#cccccc"
+       id="g37">
+      <rect
+         x="155.37"
+         y="298.19"
+         width="1.9907"
+         height="692.34998"
+         opacity="0.67257"
+         id="rect7" />
+      <rect
+         x="57.922001"
+         y="298.19"
+         width="1.9907"
+         height="692.34998"
+         opacity="0.67257"
+         id="rect9" />
+      <rect
+         x="106.65"
+         y="298.19"
+         width="1.9907"
+         height="692.34998"
+         opacity="0.67257"
+         id="rect11" />
+      <rect
+         x="204.10001"
+         y="298.19"
+         width="1.9907"
+         height="692.34998"
+         opacity="0.67257"
+         id="rect13" />
+      <rect
+         x="252.83"
+         y="298.19"
+         width="1.9907"
+         height="692.34998"
+         opacity="0.67257"
+         id="rect15" />
+      <rect
+         x="301.54999"
+         y="298.19"
+         width="1.9907"
+         height="692.34998"
+         opacity="0.67257"
+         id="rect17" />
+      <rect
+         x="350.28"
+         y="298.19"
+         width="1.9907"
+         height="692.34998"
+         opacity="0.67257"
+         id="rect19" />
+      <rect
+         x="399"
+         y="298.19"
+         width="1.9907"
+         height="692.34998"
+         opacity="0.67257"
+         id="rect21" />
+      <rect
+         x="447.73001"
+         y="298.19"
+         width="1.9907"
+         height="692.34998"
+         opacity="0.67257"
+         id="rect23" />
+      <rect
+         x="496.45999"
+         y="298.19"
+         width="1.9907"
+         height="692.34998"
+         opacity="0.67257"
+         id="rect25" />
+      <rect
+         x="545.17999"
+         y="298.19"
+         width="1.9907"
+         height="692.34998"
+         opacity="0.67257"
+         id="rect27" />
+      <rect
+         x="593.90997"
+         y="298.19"
+         width="1.9907"
+         height="692.34998"
+         opacity="0.67257"
+         id="rect29" />
+      <rect
+         x="642.64001"
+         y="298.19"
+         width="1.9907"
+         height="692.34998"
+         opacity="0.67257"
+         id="rect31" />
+      <rect
+         x="691.35999"
+         y="298.19"
+         width="1.9907"
+         height="692.34998"
+         opacity="0.67257"
+         id="rect33" />
+      <rect
+         x="740.09003"
+         y="298.19"
+         width="1.9907"
+         height="692.34998"
+         opacity="0.67257"
+         id="rect35" />
+    </g>
+    <g
+       transform="matrix(0.95587,0,0,0.95587,18.609,28.791)"
+       fill="#cccccc"
+       id="g69">
+      <rect
+         transform="rotate(90)"
+         x="306.19"
+         y="-746.16998"
+         width="2.0144999"
+         height="692.34998"
+         opacity="0.67257"
+         id="rect39" />
+      <rect
+         transform="rotate(90)"
+         x="355.5"
+         y="-746.16998"
+         width="2.0144999"
+         height="692.34998"
+         opacity="0.67257"
+         id="rect41" />
+      <rect
+         transform="rotate(90)"
+         x="404.81"
+         y="-746.16998"
+         width="2.0144999"
+         height="692.34998"
+         opacity="0.67257"
+         id="rect43" />
+      <rect
+         transform="rotate(90)"
+         x="454.12"
+         y="-746.16998"
+         width="2.0144999"
+         height="692.34998"
+         opacity="0.67257"
+         id="rect45" />
+      <rect
+         transform="rotate(90)"
+         x="503.42999"
+         y="-746.16998"
+         width="2.0144999"
+         height="692.34998"
+         opacity="0.67257"
+         id="rect47" />
+      <rect
+         transform="rotate(90)"
+         x="552.73999"
+         y="-746.16998"
+         width="2.0144999"
+         height="692.34998"
+         opacity="0.67257"
+         id="rect49" />
+      <rect
+         transform="rotate(90)"
+         x="602.04999"
+         y="-746.16998"
+         width="2.0144999"
+         height="692.34998"
+         opacity="0.67257"
+         id="rect51" />
+      <rect
+         transform="rotate(90)"
+         x="651.34998"
+         y="-746.16998"
+         width="2.0144999"
+         height="692.34998"
+         opacity="0.67257"
+         id="rect53" />
+      <rect
+         transform="rotate(90)"
+         x="700.65997"
+         y="-746.16998"
+         width="2.0144999"
+         height="692.34998"
+         opacity="0.67257"
+         id="rect55" />
+      <rect
+         transform="rotate(90)"
+         x="749.96997"
+         y="-746.16998"
+         width="2.0144999"
+         height="692.34998"
+         opacity="0.67257"
+         id="rect57" />
+      <rect
+         transform="rotate(90)"
+         x="799.28003"
+         y="-746.16998"
+         width="2.0144999"
+         height="692.34998"
+         opacity="0.67257"
+         id="rect59" />
+      <rect
+         transform="rotate(90)"
+         x="848.59003"
+         y="-746.16998"
+         width="2.0144999"
+         height="692.34998"
+         opacity="0.67257"
+         id="rect61" />
+      <rect
+         transform="rotate(90)"
+         x="897.90002"
+         y="-746.16998"
+         width="2.0144999"
+         height="692.34998"
+         opacity="0.67257"
+         id="rect63" />
+      <rect
+         transform="rotate(90)"
+         x="947.21002"
+         y="-746.16998"
+         width="2.0144999"
+         height="692.34998"
+         opacity="0.67257"
+         id="rect65" />
+      <rect
+         transform="rotate(90)"
+         x="996.52002"
+         y="-746.16998"
+         width="2.0144999"
+         height="692.34998"
+         opacity="0.67257"
+         id="rect67" />
+    </g>
+    <text
+       transform="scale(1.086,0.92085)"
+       x="385.84802"
+       y="330.46396"
+       fill="#000000"
+       font-family="sans-serif"
+       letter-spacing="0px"
+       word-spacing="0px"
+       style="line-height:0%"
+       xml:space="preserve"
+       id="text73">       <tspan
+   x="385.84802"
+   y="330.46396"
+   font-family="sans-serif"
+   font-size="34.353px"
+   style="line-height:1.25"
+   id="tspan71">y</tspan>    </text>
+    <g
+       fill="#cccccc"
+       letter-spacing="0px"
+       word-spacing="0px"
+       id="g91">
+      <text
+         x="220.94608"
+         y="314.44348"
+         font-family="Andalus"
+         style="line-height:0%"
+         xml:space="preserve"
+         id="text77">       <tspan
+   x="220.94608"
+   y="314.44348"
+   font-size="39.636px"
+   style="line-height:1.25"
+   id="tspan75">II</tspan>    </text>
+      <text
+         x="555.98907"
+         y="1017.5952"
+         font-family="sans-serif"
+         style="line-height:0%"
+         xml:space="preserve"
+         id="text81">       <tspan
+   x="555.98907"
+   y="1017.5952"
+   fill="#cccccc"
+   font-family="Andalus"
+   font-size="39.636px"
+   style="line-height:1.25"
+   id="tspan79">IV</tspan>    </text>
+      <text
+         x="215.0374"
+         y="1017.5952"
+         font-family="Andalus"
+         style="line-height:0%"
+         xml:space="preserve"
+         id="text85">       <tspan
+   x="215.0374"
+   y="1017.5952"
+   font-size="39.636px"
+   style="line-height:1.25"
+   id="tspan83">III</tspan>    </text>
+      <text
+         x="569.61597"
+         y="314.44348"
+         font-family="Andalus"
+         style="line-height:0%"
+         xml:space="preserve"
+         id="text89">       <tspan
+   x="569.61597"
+   y="314.44348"
+   font-size="39.636px"
+   style="line-height:1.25"
+   id="tspan87">I</tspan>    </text>
+    </g>
+    <g
+       transform="matrix(1.6545,0,0,1.6545,-379.55,-138.43)"
+       fill="#666666"
+       id="g97">
+      <path
+         d="m 471.78,236.17 -2.9744,12.874 h 1.8975 v 457.75 h -1.9487 l 2.9744,12.973 2.9743,-12.973 h -1.9487 v -457.75 h 2 z"
+         color="#000000"
+         style="text-indent:0;text-transform:none"
+         id="path93" />
+      <path
+         d="m 712.34,478 -12.874,-2.9744 v 1.8975 h -456.49 v -1.9487 l -12.973,2.9744 12.973,2.9743 v -1.9487 h 456.49 v 2 z"
+         color="#000000"
+         style="text-indent:0;text-transform:none"
+         id="path95" />
+    </g>
+    <g
+       fill="#000000"
+       font-family="sans-serif"
+       letter-spacing="0px"
+       word-spacing="0px"
+       id="g231">
+      <text
+         x="346.67825"
+         y="663.34076"
+         style="line-height:0%"
+         xml:space="preserve"
+         id="text101">       <tspan
+   x="346.67825"
+   y="663.34076"
+   font-family="sans-serif"
+   font-size="9.6813px"
+   style="line-height:1.25"
+   id="tspan99">-1</tspan>    </text>
+      <text
+         x="301.99408"
+         y="663.34076"
+         style="line-height:0%"
+         xml:space="preserve"
+         id="text105">       <tspan
+   x="301.99408"
+   y="663.34076"
+   font-family="sans-serif"
+   font-size="9.6813px"
+   style="line-height:1.25"
+   id="tspan103">-2</tspan>    </text>
+      <text
+         x="259.81961"
+         y="663.21765"
+         style="line-height:0%"
+         xml:space="preserve"
+         id="text109">       <tspan
+   x="259.81961"
+   y="663.21765"
+   font-family="sans-serif"
+   font-size="9.6813px"
+   style="line-height:1.25"
+   id="tspan107">-3</tspan>    </text>
+      <text
+         x="208.13617"
+         y="663.34076"
+         style="line-height:0%"
+         xml:space="preserve"
+         id="text113">       <tspan
+   x="208.13617"
+   y="663.34076"
+   font-family="sans-serif"
+   font-size="9.6813px"
+   style="line-height:1.25"
+   id="tspan111">-4</tspan>    </text>
+      <text
+         x="160.22179"
+         y="663.22247"
+         style="line-height:0%"
+         xml:space="preserve"
+         id="text117">       <tspan
+   x="160.22179"
+   y="663.22247"
+   font-family="sans-serif"
+   font-size="9.6813px"
+   style="line-height:1.25"
+   id="tspan115">-5</tspan>    </text>
+      <text
+         x="112.37598"
+         y="663.22247"
+         style="line-height:0%"
+         xml:space="preserve"
+         id="text121">       <tspan
+   x="112.37598"
+   y="663.22247"
+   font-family="sans-serif"
+   font-size="9.6813px"
+   style="line-height:1.25"
+   id="tspan119">-6</tspan>    </text>
+      <text
+         x="66.411148"
+         y="663.34076"
+         style="line-height:0%"
+         xml:space="preserve"
+         id="text125">       <tspan
+   x="66.411148"
+   y="663.34076"
+   font-family="sans-serif"
+   font-size="9.6813px"
+   style="line-height:1.25"
+   id="tspan123">-7</tspan>    </text>
+      <text
+         x="23.332592"
+         y="663.22247"
+         style="line-height:0%"
+         xml:space="preserve"
+         id="text129">       <tspan
+   x="23.332592"
+   y="663.22247"
+   font-family="sans-serif"
+   font-size="9.6813px"
+   style="line-height:1.25"
+   id="tspan127">-8</tspan>    </text>
+      <text
+         x="445.67102"
+         y="663.5885"
+         style="line-height:0%"
+         xml:space="preserve"
+         id="text133">       <tspan
+   x="445.67102"
+   y="663.5885"
+   font-family="sans-serif"
+   font-size="9.6813px"
+   style="line-height:1.25"
+   id="tspan131">1</tspan>    </text>
+      <text
+         x="492.94119"
+         y="663.5885"
+         style="line-height:0%"
+         xml:space="preserve"
+         id="text137">       <tspan
+   x="492.94119"
+   y="663.5885"
+   font-family="sans-serif"
+   font-size="9.6813px"
+   style="line-height:1.25"
+   id="tspan135">2</tspan>    </text>
+      <text
+         x="539.36261"
+         y="663.46558"
+         style="line-height:0%"
+         xml:space="preserve"
+         id="text141">       <tspan
+   x="539.36261"
+   y="663.46558"
+   font-family="sans-serif"
+   font-size="9.6813px"
+   style="line-height:1.25"
+   id="tspan139">3</tspan>    </text>
+      <text
+         x="587.03693"
+         y="663.5885"
+         style="line-height:0%"
+         xml:space="preserve"
+         id="text145">       <tspan
+   x="587.03693"
+   y="663.5885"
+   font-family="sans-serif"
+   font-size="9.6813px"
+   style="line-height:1.25"
+   id="tspan143">4</tspan>    </text>
+      <text
+         x="633.37567"
+         y="663.47028"
+         style="line-height:0%"
+         xml:space="preserve"
+         id="text149">       <tspan
+   x="633.37567"
+   y="663.47028"
+   font-family="sans-serif"
+   font-size="9.6813px"
+   style="line-height:1.25"
+   id="tspan147">5</tspan>    </text>
+      <text
+         x="680.94128"
+         y="663.47028"
+         style="line-height:0%"
+         xml:space="preserve"
+         id="text153">       <tspan
+   x="680.94128"
+   y="663.47028"
+   font-family="sans-serif"
+   font-size="9.6813px"
+   style="line-height:1.25"
+   id="tspan151">6</tspan>    </text>
+      <text
+         x="728.41003"
+         y="663.5885"
+         style="line-height:0%"
+         xml:space="preserve"
+         id="text157">       <tspan
+   x="728.41003"
+   y="663.5885"
+   font-family="sans-serif"
+   font-size="9.6813px"
+   style="line-height:1.25"
+   id="tspan155">7</tspan>    </text>
+      <text
+         x="770.95435"
+         y="663.47028"
+         style="line-height:0%"
+         xml:space="preserve"
+         id="text161">       <tspan
+   x="770.95435"
+   y="663.47028"
+   font-family="sans-serif"
+   font-size="9.6813px"
+   style="line-height:1.25"
+   id="tspan159">8</tspan>    </text>
+      <text
+         x="405.62039"
+         y="609.24188"
+         style="line-height:0%"
+         xml:space="preserve"
+         id="text165">       <tspan
+   x="405.62039"
+   y="609.24188"
+   font-family="sans-serif"
+   font-size="9.6813px"
+   style="line-height:1.25"
+   id="tspan163">1</tspan>    </text>
+      <text
+         x="406.39084"
+         y="561.38855"
+         style="line-height:0%"
+         xml:space="preserve"
+         id="text169">       <tspan
+   x="406.39084"
+   y="561.38855"
+   font-family="sans-serif"
+   font-size="9.6813px"
+   style="line-height:1.25"
+   id="tspan167">2</tspan>    </text>
+      <text
+         x="406.26801"
+         y="514.47369"
+         style="line-height:0%"
+         xml:space="preserve"
+         id="text173">       <tspan
+   x="406.26801"
+   y="514.47369"
+   font-family="sans-serif"
+   font-size="9.6813px"
+   style="line-height:1.25"
+   id="tspan171">3</tspan>    </text>
+      <text
+         x="406.55157"
+         y="467.66766"
+         style="line-height:0%"
+         xml:space="preserve"
+         id="text177">       <tspan
+   x="406.55157"
+   y="467.66766"
+   font-family="sans-serif"
+   font-size="9.6813px"
+   style="line-height:1.25"
+   id="tspan175">4</tspan>    </text>
+      <text
+         x="406.27274"
+         y="419.70792"
+         style="line-height:0%"
+         xml:space="preserve"
+         id="text181">       <tspan
+   x="406.27274"
+   y="419.70792"
+   font-family="sans-serif"
+   font-size="9.6813px"
+   style="line-height:1.25"
+   id="tspan179">5</tspan>    </text>
+      <text
+         x="406.31049"
+         y="372.91602"
+         style="line-height:0%"
+         xml:space="preserve"
+         id="text185">       <tspan
+   x="406.31049"
+   y="372.91602"
+   font-family="sans-serif"
+   font-size="9.6813px"
+   style="line-height:1.25"
+   id="tspan183">6</tspan>    </text>
+      <text
+         x="406.21594"
+         y="326.06262"
+         style="line-height:0%"
+         xml:space="preserve"
+         id="text189">       <tspan
+   x="406.21594"
+   y="326.06262"
+   font-family="sans-serif"
+   font-size="9.6813px"
+   style="line-height:1.25"
+   id="tspan187">7</tspan>    </text>
+      <text
+         x="406.28214"
+         y="283.20926"
+         style="line-height:0%"
+         xml:space="preserve"
+         id="text193">       <tspan
+   x="406.28214"
+   y="283.20926"
+   font-family="sans-serif"
+   font-size="9.6813px"
+   style="line-height:1.25"
+   id="tspan191">8</tspan>    </text>
+      <text
+         x="388.46841"
+         y="702.6073"
+         style="line-height:0%"
+         xml:space="preserve"
+         id="text197">       <tspan
+   x="388.46841"
+   y="702.6073"
+   font-family="sans-serif"
+   font-size="9.6813px"
+   style="line-height:1.25"
+   id="tspan195">-1</tspan>    </text>
+      <text
+         x="387.20154"
+         y="748.05695"
+         style="line-height:0%"
+         xml:space="preserve"
+         id="text201">       <tspan
+   x="387.20154"
+   y="748.05695"
+   font-family="sans-serif"
+   font-size="9.6813px"
+   style="line-height:1.25"
+   id="tspan199">-2</tspan>    </text>
+      <text
+         x="387.13065"
+         y="795.44519"
+         style="line-height:0%"
+         xml:space="preserve"
+         id="text205">       <tspan
+   x="387.13065"
+   y="795.44519"
+   font-family="sans-serif"
+   font-size="9.6813px"
+   style="line-height:1.25"
+   id="tspan203">-3</tspan>    </text>
+      <text
+         x="387.159"
+         y="842.94214"
+         style="line-height:0%"
+         xml:space="preserve"
+         id="text209">       <tspan
+   x="387.159"
+   y="842.94214"
+   font-family="sans-serif"
+   font-size="9.6813px"
+   style="line-height:1.25"
+   id="tspan207">-4</tspan>    </text>
+      <text
+         x="387.07864"
+         y="890.2854"
+         style="line-height:0%"
+         xml:space="preserve"
+         id="text213">       <tspan
+   x="387.07864"
+   y="890.2854"
+   font-family="sans-serif"
+   font-size="9.6813px"
+   style="line-height:1.25"
+   id="tspan211">-5</tspan>    </text>
+      <text
+         x="387.13538"
+         y="937.79657"
+         style="line-height:0%"
+         xml:space="preserve"
+         id="text217">       <tspan
+   x="387.13538"
+   y="937.79657"
+   font-family="sans-serif"
+   font-size="9.6813px"
+   style="line-height:1.25"
+   id="tspan215">-6</tspan>    </text>
+      <text
+         x="387.13065"
+         y="985.24622"
+         style="line-height:0%"
+         xml:space="preserve"
+         id="text221">       <tspan
+   x="387.13065"
+   y="985.24622"
+   font-family="sans-serif"
+   font-size="9.6813px"
+   style="line-height:1.25"
+   id="tspan219">-7</tspan>    </text>
+      <text
+         x="387.11646"
+         y="1026.6959"
+         style="line-height:0%"
+         xml:space="preserve"
+         id="text225">       <tspan
+   x="387.11646"
+   y="1026.6959"
+   font-family="sans-serif"
+   font-size="9.6813px"
+   style="line-height:1.25"
+   id="tspan223">-8</tspan>    </text>
+      <text
+         transform="scale(1.086,0.92085)"
+         x="690.15411"
+         y="754.58588"
+         style="line-height:0%"
+         xml:space="preserve"
+         id="text229">       <tspan
+   x="690.15411"
+   y="754.58588"
+   font-family="sans-serif"
+   font-size="41.943px"
+   style="line-height:1.25"
+   id="tspan227">x</tspan>    </text>
+    </g>
+    <path
+       d="M 400.72,653.01 589.01,416.78"
+       fill="none"
+       stroke="#ff0000"
+       stroke-width="2"
+       id="path233" />
+    <circle
+       cx="589.28998"
+       cy="417.23001"
+       r="3.2537"
+       fill="#ff0000"
+       stroke="#ff0000"
+       stroke-linejoin="round"
+       stroke-width="2"
+       id="circle235" />
+    <text
+       x="588.61346"
+       y="445.75818"
+       font-family="'DejaVu Sans'"
+       letter-spacing="0px"
+       word-spacing="0px"
+       style="line-height:0%"
+       xml:space="preserve"
+       id="text239"><tspan
+         x="588.61346"
+         y="445.75818"
+         font-size="26.667px"
+         style="line-height:1.25"
+         id="tspan237">(x,y)</tspan></text>
+    <circle
+       fill="none"
+       stroke="#0000ff"
+       stroke-linejoin="round"
+       stroke-width="2"
+       id="circle241"
+       cx="0"
+       cy="0"
+       r="0" />
+    <g
+       transform="matrix(3.6468,0,0,3.6468,189.21,297.02)"
+       fill="#0000ff"
+       id="g249">
+      <g
+         fill="#0000ff"
+         id="g247">
+        <g
+           fill="#0000ff"
+           id="g245">
+          <use
+             x="91.925003"
+             y="81.962997"
+             width="100%"
+             height="100%"
+             fill="#0000ff"
+             xlink:href="#symbol9406"
+             id="use243" />
+        </g>
+      </g>
+    </g>
+  </g>
+  <path
+     id="path1082"
+     style="fill:none;stroke:#0000ff;stroke-width:3;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+     d="m 475.14124,303.73574 a 122.19204,122.19204 0 0 1 47.73798,94.08234" />
+</svg>

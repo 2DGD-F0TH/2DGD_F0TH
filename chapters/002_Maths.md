@@ -259,6 +259,22 @@ $$
 
 The coordinates $x$ and $y$ we just found are actually the coordinates $x_r$ and $y_r$ of our projected point $P_r$.
 
+#### Projecting arbitrary lines on the axes
+
+Similarly to what we've done with points, we can project arbitrary lines (or better, the ends of such lines) onto the axes. This will help us in doing some calculations later.
+
+To project any line to the x-axis we can just "pass all the line's points through" the following function:
+
+$$proj_x(x,y) = x$$
+
+If we want to project such line on the y-axis, we can just use this other function:
+
+$$proj_y(x,y) = y$$
+
+We can see the graphical representation of projecting a line onto the axes below:
+
+![Projecting a line onto the axes](./images/maths/projection_on_axes.svg){width=50%}
+
 Matrices
 ---------
 
@@ -556,7 +572,7 @@ The most important trigonometric functions are sine and cosine. They are usually
 
 Given the unit circle, let a line through the origin with an angle $\theta$ with the positive side of the x-axis intersect such unit circle. The x coordinate of the intersection point is defined by the measure $cos(\theta)$, while the y coordinate is defined by the measure $sin(\theta)$.
 
-![Unit Circle definition of sine and cosine](./images/maths/sincos.png){width=40%}
+![Unit Circle definition of sine and cosine](./images/maths/sincos.svg){width=40%}
 
 For the purposes of this book, we will just avoid the complete definition of the tangent function, and just leave it as a formula of sine and cosine:
 
@@ -640,7 +656,7 @@ This formula allows you to find the angle of a vector, relative to the coordinat
 
 $$ \theta = arctan(\frac{y}{x}) $$
 
-![Graphical plotting of the angle of a vector](./images/maths/arctan2.png){width=40%}
+![Graphical plotting of the angle of a vector](./images/maths/arctan2.svg){width=40%}
 
 Numerical Analysis
 ------------------
