@@ -24,6 +24,10 @@ function dynamic_codeblock(blk)
         blk.attributes.language = language
         code = pandoc.CodeBlock(content, blk.attr)
         code.classes = {language}
+        if language == "pseudocode" then
+            -- Workaround to allow pseudocode to be enclosed in frames
+            table.insert(code.classes, "sourceCode")
+        end
         if FORMAT ~= "latex" then
             if blk.attributes.caption then
                 local caption = pandoc.Div(pandoc.Para(pandoc.Str("Code: " .. blk.attributes.caption)))
