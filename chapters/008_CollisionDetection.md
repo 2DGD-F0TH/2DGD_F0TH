@@ -275,9 +275,10 @@ Which can be expanded (if you want) to
 
 $$ -\epsilon < A_1 + A_2 + A_3 - A_0 < \epsilon $$
 
-{{placeholder}}
+The code wouldn't change much, but for sake of clarity, here it is:
 
-<!-- TODO: Point/Triangle collision detection with epsilon -->
+```{src='collisiondetection/point_triangle_epsilon' caption='Point/Triangle Collision Detection with epsilon'}
+```
 
 ### Circle/Rectangle Collision
 
