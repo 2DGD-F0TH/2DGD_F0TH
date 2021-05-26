@@ -1009,6 +1009,14 @@ The only difference is that we're checking a condition where the rectangle **don
 
 Due to its nature, this algorithm has higher efficiency when there are few collisions, since it exits as soon as we find a separating axis (a gap in the projections).
 
+#### From arbitrary axes to "x and y"
+
+The only thing that remains is how to switch from an "arbitrary axis" to our usual "x and y" axes. Here projections will help us again: we can simply project our projections.
+
+![Projecting our projections onto the x and y axes](./images/collision_detection/SAT_Projection_2.svg){width=50%}
+
+If we look closely, we're just projecting polygons onto a bunch of axes so that they get "flattened to lines", then we're projecting such lines onto the x and y axes to see if there those lines are touching or not.
+
 Ray Casting
 -----------
 
