@@ -23,12 +23,12 @@ class Polygon:
          * an array of triangles corresponding to the "fan triangulation"
          */
         // We fix the "base" of the fan on the first vertex
-        Point root_vertex = vertex[0];
+        Point root_vertex = vertices[0];
         Triangle[] temp_triangles = new Triangle[];
         // Now we iterate through all the other vertices
-        for each j from 2 to vertex.length() - 1:
+        for each j from 2 to vertices.length() - 1:
             // j goes from the third vertex, to the last
             // j - 1 goes from the second to the second to last
-            triangles.append(Triangle.from_points(root_vertex, j - 1, j))
+            temp_triangles.append(Triangle.from_points(root_vertex, j - 1, j))
         // In the end, we will have the triangles array, we can just return it
         return temp_triangles
