@@ -422,7 +422,7 @@ We can take inspiration from 3D graphics, where any solid shape (and thus the po
 
 ![Decomposing a polygon into triangles](./images/collision_detection/polygon_triangulation.svg){width=40%}
 
-This specific triangulation is called "fan triangulation" and it is chosen for its `\Theta(n)` (where n is the number of vertices) execution time.
+This specific triangulation is called "fan triangulation" and it is chosen for its $\Theta(n)$ (where n is the number of vertices) execution time.
 
 #### Bounding Boxes
 
