@@ -1004,7 +1004,7 @@ In the example, we can find two axes that have non-overlapping projections, thus
 ::: trivia :::
 If you use Axis-Aligned rectangles as your "polygons", you will notice how the Separating Axis Theorem will degenerate into something very similar to a simple AABB collision detection.
 
-The only difference is that we're checking a condition where the rectangle **don't** collide.
+The only difference is that we're checking a condition where the rectangles **don't** collide.
 ::::::::::::::
 
 Due to its nature, this algorithm has higher efficiency when there are few collisions, since it exits as soon as we find a separating axis (a gap in the projections).
