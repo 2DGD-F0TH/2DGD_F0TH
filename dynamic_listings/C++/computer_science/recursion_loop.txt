@@ -1,5 +1,5 @@
 #include<iostream>
-function count_backwards(int n){
+void count_backwards(int n){
     // Condition for the loop
     while (n != 0){
         // The function body

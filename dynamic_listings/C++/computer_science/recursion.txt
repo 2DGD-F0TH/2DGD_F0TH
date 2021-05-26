@@ -1,4 +1,4 @@
-function count_backwards(int n){
+void count_backwards(int n){
     // Stop condition
     if (n == 0){
         return;

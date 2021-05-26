@@ -1,7 +1,7 @@
 class Polygon{
     Point[] vertices;
 
-    function calculate_bounding_box(){
+    Rectangle calculate_bounding_box(){
         // This function calculates the bounding box
         // -------------------------
         // First we create and bootstrap the variables
@@ -18,7 +18,7 @@ class Polygon{
         return boundingBox;
     }
 
-    function do_fanning(){
+    Triangle[] do_fanning(){
         /*
          * This function iterates over the vertices and returns
          * an array of triangles corresponding to the "fan triangulation"

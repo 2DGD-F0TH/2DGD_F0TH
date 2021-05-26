@@ -9,13 +9,13 @@ class Rectangle{
     int width
     int height
     // ...
-    static function from_points(Point topleft, Point bottomright){
+    static Rectangle from_points(Point topleft, Point bottomright){
         // ...
     }
 // ...
 }
 
-function bounding_box(Point[] vertices){
+Rectangle bounding_box(Point[] vertices){
     // First we create and bootstrap the variables
     int xmin = vertices[0].x;
     int xmax = vertices[0].x;

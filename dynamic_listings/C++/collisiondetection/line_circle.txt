@@ -27,7 +27,7 @@ bool circle_point_collision(Circle c, Point p){
     // ...
 }
 
-function line_circle_collision(Circle circle, Line line):
+bool line_circle_collision(Circle circle, Line line):
     // We check the ends first
     collides_A = circle_point_collision(circle, line.A);
     collides_B = circle_point_collision(circle, line.B);
