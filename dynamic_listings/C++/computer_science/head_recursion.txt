@@ -1,0 +1,11 @@
+#include<iostream>
+function count_backwards(int n):
+    // Stop condition
+    if (n == 0):
+        // If we don't do this, we won't print 0
+        std::cout << n << std::endl;
+        return;
+    // Recursive call
+    count_backwards(n-1);
+    // Procedure
+    std::cout << n << std::endl;

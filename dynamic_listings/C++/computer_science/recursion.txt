@@ -1,0 +1,8 @@
+function count_backwards(int n):
+    // Stop condition
+    if (n == 0):
+        return;
+    // Procedure
+    std::cout << n << std::endl;
+    // Recursive call
+    count_backwards(n-1);
