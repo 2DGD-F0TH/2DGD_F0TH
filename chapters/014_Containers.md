@@ -264,9 +264,14 @@ In short: any numeric value that can transition "smoothly" between two values in
 
 ### Bouncing
 
-{{placeholder}}
+Easing is a great way to make more "natural looking" transitions, but in nature nothing is absolutely precise: we may want to overshoot a bit and correct it so it looks a bit like a "bounce".
 
-<!-- TODO: Talk about how to use tweening to make a property "bounce", giving a more natural feeling. When around 80% of the time is passed, the property reaches between 110 and 120% of the original value. The remaining 20% of the time is used to "ease back" to the wanted value. This gives a "bouncy" feeling, which is less jarring and more natural -->
+The idea behind this is the following: when around 80% of the time has passed, our property should have overshot its maximum value by something between 10% and 20% (more would look unnatural). The remaining 20% of the time will be used to "ease back" to the final value. This will give us the bouncy feeling we want.
+
+Here is a quick example of a function that will help us create a bounce effect: the `t` variable represents the time of the animation that has passed, with $0$ being the beginning and $1$ being the end of the animation itself.
+
+```{src='containers/bounce_tween' caption='A bouncy tween function'}
+```
 
 Chaining
 --------

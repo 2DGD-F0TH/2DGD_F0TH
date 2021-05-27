@@ -72,3 +72,8 @@ Game Development
 ### Videos
 
 - **OneLoneCoder's YT:** <https://www.youtube.com/channel/UC-yuWVUplUJZvieEligKBkA> {{freeprod}}
+
+References and Cheat Sheets
+---------------------------
+
+- **Easing functions Cheat Sheet:** <https://easings.net/> {{freeprod}}
