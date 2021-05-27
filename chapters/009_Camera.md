@@ -69,6 +69,8 @@ This is the camera used in the classic Super Mario Bros. for the Nintendo Entert
 
 {{placeholder}}
 
+<!-- TODO: Horizontal tracking camera (maybe code?) -->
+
 #### Full-Tracking Camera {#fully_tracking_camera}
 
 Sometimes our levels don't span only horizontally, so we need to track the player in both axes, keeping it in the center of the screen at all times. This is good for platformers that don't require extremely precise manouvering, since precise manouvering could result in way too much movement from the camera.
@@ -77,7 +79,8 @@ Sometimes our levels don't span only horizontally, so we need to track the playe
 
 {{placeholder}}
 
-<!-- TODO: Talk about position tracking cameras, both horizontal-only and 2-axis, can be jarring -->
+<!-- TODO: Fully tracking camera (can be jarring, maybe code?) -->
+
 
 ### Camera Trap
 

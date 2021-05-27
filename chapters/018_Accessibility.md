@@ -98,3 +98,5 @@ Some special cases
 A special mention goes to the VR game "Moss", where a character (named Quill) communicates both emotionally and gives clues on the puzzles using the American Sign Language (ASL).
 
 {{placeholder}}
+
+<!-- TODO: More talk about accessibility -->

@@ -34,8 +34,8 @@ Some special values you may see are:
 
 If your animation stutters or its speed varies according to the load of your platform but your FPS counter is still stuck at the maximum allowed framerate, you may have forgotten to tie the animation to the delta-time in your game loop. Check the [timing your game loop](#timingloops) section for more information.
 
-<!-- TODO: Continue with more profiling suggestions -->
 {{placeholder}}
+<!-- TODO: Continue with more profiling suggestions -->
 
 ### First investigations
 
@@ -52,7 +52,7 @@ If you have taken all the frame limiting approaches as stated above, that may me
 If instead your game is not using all of the CPU computing power, you may have a problem on the GPU: your game may be calling the drawing routines too often. The less a game has to communicate with the hardware, the higher the performance. In that case using Sprite Atlases and other "batching techniques" that allow to draw many objects with only one call will help your game perform better.
 
 {{placeholder}}
-
+<!-- TODO: Maybe add some screenshots of htop or top to drive home the point of CPU consumption, see if it's possible to check for drawing calls (maybe kcachegrind and line_profiler?) -->
 
 #### Is your game eating up more and more RAM as it's running?
 

@@ -211,6 +211,7 @@ You should use a "press to continue prompt" when at least one of the following c
 ### Avoiding a loading screen altogether
 
 {{placeholder}}
+
 <!-- TODO: Dynamic loading: some games use closed rooms with nothing in them (double door) to unload the old map and load the new one dynamically without forcing a loading screen -->
 
 Designing the story and gameplay flow
@@ -484,6 +485,7 @@ Some cultures are used to (and enjoy) a higher amount of grinding than others, s
 You should also be very careful on "forcing grinding" on your players: players like having choice and really dislike having anything forced on them, and this can change with your target audience.
 
 {{placeholder}}
+
 <!-- TODO: Find that NES/SNES game from GDQ that got the exp requirements halved in the US release -->
 
 ##### Farming
@@ -495,8 +497,6 @@ The most important aspect of "designing farming" is definitely reward the player
 {{placeholder}}
 
 <!-- TODO: Finish talking about farming -->
-
-<!-- TODO: usually in RPGs, grinding = experience , farming = items, avoiding pitfalls like mandatory grinding that is used in bad games to "pad" -->
 
 #### Leveling Curves
 

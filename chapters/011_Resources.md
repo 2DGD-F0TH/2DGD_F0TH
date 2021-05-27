@@ -169,6 +169,8 @@ Libraries like OpenGL support "sprite atlases" (or sprite batches), allowing for
 
 {{placeholder}}
 
+<!-- TODO: Finish talking about sprite sheets -->
+
 
 ### Virtual Resolution {#VirtualRes}
 
@@ -445,6 +447,8 @@ And we obtain the following result:
 
 {{placeholder}}
 
+<!-- TODO: Finish talking about "inside room" tilesets -->
+
 #### Sprites and icons
 
 ##### Shape first
@@ -699,6 +703,7 @@ The doppler effect would actually apply to light too, but we would need to have 
 ### FM Synthesis vs Sample-based music
 
 {{placeholder}}
+
 <!-- TODO: Explain the difference between FM Synthesis and modern sample-based music -->
 
 ### "Swappable" sound effects
@@ -727,6 +732,7 @@ Making a configuration file instead of hard-coding the elements allows for easy 
 ### Some audio processing tips
 
 {{placeholder}}
+
 <!-- TODO: Give some tips to process audio files -->
 
 #### Prefer cutting over boosting
@@ -790,6 +796,7 @@ The next command does more or less the same thing, besides changing the vibrato 
 The `E40` command resets the vibrato waveform to the default "sine wave".
 
 {{placeholder}}
+
 <!-- TODO: Finish talking about music trackers -->
 
 #### Samples
@@ -799,6 +806,7 @@ Samples are the basis of a music tracker: they are essentially wave forms which 
 Usually samples come in the form of small digital sound files, most trackers allow the sample to be looped (wholly or in part) to simulate a "sustain" effect.
 
 {{placeholder}}
+
 <!-- TODO: Finish talking about sound samples -->
 
 #### Instruments
@@ -806,6 +814,7 @@ Usually samples come in the form of small digital sound files, most trackers all
 An instrument is a set of a sound sample, with some effects applied by default (if you want). Essentially an instrument is a "container" for a sample and some parameters to allow the change of pitch and effects.
 
 {{placeholder}}
+
 <!-- TODO: Finish talking about tracker instrument -->
 
 #### Channels
@@ -813,6 +822,7 @@ An instrument is a set of a sound sample, with some effects applied by default (
 A "channel" (also called a "voice"), is a space where one sample is played back at a time. One channel is not "fixed" to a certain instrument and modern music trackers can mix an unlimited number of channels. Many times music makers limit themselves to a certain number of channels to achieve a "retro feeling" or to challenge themselves.
 
 {{placeholder}}
+
 <!-- TODO: Finish talking about channels in trackers -->
 
 #### Patterns
@@ -820,6 +830,7 @@ A "channel" (also called a "voice"), is a space where one sample is played back 
 A pattern is essentially a piece of a song: a group of tracks with their own instruments, settings and notes written in them. The "pattern" abstraction allows you to easily repeat pieces of a song by just referring to the pattern.
 
 {{placeholder}}
+
 <!-- TODO: Finish talking about patterns in trackers -->
 
 ### Basic Rhythms
@@ -849,6 +860,8 @@ A basic rhythm like the "four on the floor", by itself, can prove to be quite bo
 If you listen closely, a lot of music has this basic pattern mixed into it, in one way or another.
 
 {{placeholder}}
+
+<!-- TODO: Teach more basic rhythms to get people going -->
 
 Fonts
 -------

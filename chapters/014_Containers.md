@@ -83,9 +83,9 @@ In the menu stack we also have some functionalities that may not be included in 
 Particle Systems
 -----------------
 
-<!-- TODO: Talk about particle systems, particles and particle emitters -->
-
 {{placeholder}}
+
+<!-- TODO: Talk about particle systems, particles and particle emitters -->
 
 ### Particles
 

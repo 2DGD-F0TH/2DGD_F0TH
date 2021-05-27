@@ -585,6 +585,8 @@ This way we can create new objects by reusing basic components, making maintenan
 
 {{placeholder}}
 
+<!-- TODO: Talk about composition -->
+
 ### Coupling
 
 Coupling is a term used to define the phenomenon where an edit to some part of a software snowballs into a bunch of edits in parts of the software that depend on the modified part, and the part that depend on the previously edited dependency, etc...
@@ -594,6 +596,8 @@ Introducing unnecessary coupling in our software will come back to bite us in th
 This means that it's in our best interest to reduce code coupling as much as possible, following the good principles of "nutshell programming" and following the SOLID principles, shown next.
 
 {{placeholder}}
+
+<!-- TODO: Talk about coupling -->
 
 ### The DRY Principle
 
@@ -873,6 +877,8 @@ The "Sent Signal" symbol is represented with a convex pentagon (which reminds an
 ![Example of signals in activity diagrams](./images/computer_science/activity_signals.svg){width=30%}
 
 {{placeholder}}
+
+<!-- TODO: Talk about signals in activity diagrams -->
 
 #### Swimlanes
 
@@ -1234,6 +1240,8 @@ Depending on the single implementation, the operation used to "pop" an item from
 
 {{placeholder}}
 
+<!-- TODO: Code for stacks? -->
+
 ### Queues
 
 Queues are the exact opposite of stacks, they are FIFO (First in - First Out) data structures: you can put items on the back of the queue, while you can remove from the head of the queue.
@@ -1248,6 +1256,8 @@ As with stacks, queues leverage limitations in their way of working for greater 
 
 {{placeholder}}
 
+<!-- TODO: Code for Queues? -->
+
 ### Circular Queues
 
 Circular Queues are a particular kind of queues that are infinitely iterable, every time an iterator goes after the last element in the queue, it will wrap around to the beginning.
@@ -1259,6 +1269,8 @@ Circular Queues can be implemented via linked lists or cleverly indexed arrays, 
 ![Array and linked list implementation of a circular queue](./images/computer_science/circular_queue_implementation.svg){width=50%}
 
 {{placeholder}}
+
+<!-- TODO: Code for circular queues? -->
 
 Introduction to MultiTasking
 ------------------------------

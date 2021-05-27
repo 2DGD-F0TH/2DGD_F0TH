@@ -70,8 +70,8 @@ As the last step, for this 5x5 grid, we perform another "square step", finding 1
 
 ![How the diamond-square algorithm works (5/5)](images/algorithms/diamond_square_5.png){width=50%}
 
-<!-- TODO: Evolution of the Midpoint displacement, usable for 2D height maps -->
 {{placeholder}}
+<!-- TODO: Evolution of the Midpoint displacement, usable for 2D height maps -->
 
 ### Maze Generation
 
@@ -103,14 +103,13 @@ This "digging and backtracking" keeps going until there are no other cells that 
 
 In some versions of the algorithm we need to also keep track of cells that will be used as "walls", so the actual implementation varies.
 
-<!-- TODO: System-Stack Recursive backtracker version -->
-
 {{placeholder}}
+<!-- TODO: System-Stack Recursive backtracker version code -->
 
 This algorithm can involve a big deal of recursion, which can lead to a *stack overflow*~[g]~ in your program, stopping the algorithm from working and your game in its entirety. It is possible to work around this issue by using an explicit stack, instead of using the call stack.
 
-<!-- TODO: Explicit stack recursive backtracker version -->
 {{placeholder}}
+<!-- TODO: Explicit stack recursive backtracker version -->
 
 This algorithm, being taken from a Depth-First search algorithm, is biased towards creating very long corridors.
 
@@ -151,9 +150,8 @@ This algorithm, being based on a minimum-spanning tree algorithm, this algorithm
 
 Now let's see an example implementation of the Randomized Kruskal's Algorithm:
 
-<!-- TODO: Code for randomized kruskal's method -->
-
 {{placeholder}}
+<!-- TODO: Code for randomized kruskal's method -->
 
 ### Recursive Division Algorithm
 
@@ -195,9 +193,8 @@ This bias is more noticeable with bigger mazes, like the following one.
 
 Let's see an example implementation of this algorithm:
 
-<!-- TODO: Code for the recursive division algorithm -->
-
 {{placeholder}}
+<!-- TODO: Code for the recursive division algorithm -->
 
 ### Binary Tree Algorithm
 
@@ -231,9 +228,8 @@ Given its deep roots into the computer science "Binary Tree" structure (where th
 
 Let's see an example implementation of the "binary tree algorithm":
 
-<!-- TODO: Code for the binary tree algorithm -->
-
 {{placeholder}}
+<!-- TODO: Code for the binary tree algorithm -->
 
 ### Eller's Algorithm
 
@@ -271,9 +267,8 @@ Obviously we can repeat the iteration as many times as we want, and we get a maz
 
 Let's see a possible implementation of this strange, but interesting algorithm:
 
-<!-- TODO: Code for the Eller's Algorithm -->
-
 {{placeholder}}
+<!-- TODO: Code for the Eller's Algorithm -->
 
 Dungeon Generation
 ------------------
