@@ -15,9 +15,10 @@ If you want to contribute to this project, you can follow this procedure.
 
 There are some guidelines your contributions should meet to be added to the book.
 
-- Algorithms **must** be written in pseudo-code first, in a platform agnostic way: the pseudocode version is the one that is published by the CI/CD system. If you want to put other type of code, like C++ or Python, you can, in the appropriate "listings" folders but there must be a pseudo-code version.
-- The most important algorithms (like search algorithms or graph navigation ones) should have at least a big-O estimate of their worst case (although this won't be mandatory), other estimates in addition to this one are welcome (slices of code don't necessarily need estimates, but you can add them if you think they would help). This will help the reader distinguish between better and worse-performing algorithms.
+- Algorithms **must** be written in pseudo-code first, in a platform agnostic way: the pseudocode version is the one that all the language-specific versions are based on. If you want to put other type of code, like C++ or Python, you can, in the appropriate "listings" folders but there must be a pseudo-code version.
+- The most important algorithms (like search algorithms or graph navigation ones) will greatly benefit from a big-O estimate of their worst case (although this won't be mandatory), other estimates in addition to this one are welcome (slices of code don't necessarily need estimates, but you can add them if you think they would help). This will help the reader distinguish between better and worse-performing algorithms.
 - You should avoid using overly technical terms, if possible. If that is not possible, then you should define such term in the "Glossary" appendix of the book and add a ~[g]~ at the end of the term (so that the reader knows such term is in the glossary).
+- If you want to add a `{{placeholder}}`, remember to follow that with a `<<!--TODO: ..... -->` so that it's easy to understand what's missing.
 
 These are not strict requirements, they won't make your pull request get rejected, but you may be asked to tweak some things.
 
@@ -25,7 +26,7 @@ These are not strict requirements, they won't make your pull request get rejecte
 
 This book is built in a way that allows everyone to have the book in their own favourite programming language, as long as the listings for such language are available. LaTeX will take care of the highlighting.
 
-If you want to add a new programming language, navigate to the `listings` folder, copy the `pseudocode` folder (or any other code folder you want) and name it with your language's name - [check here for the languages supported by the plugin used](https://en.wikibooks.org/wiki/LaTeX/Source_Code_Listings#Supported_languages).
+If you want to add a new programming language, navigate to the `listings` folder, copy the `pseudocode` folder (or any other code folder you want) and name it with your language's name. The languages that feature syntax highlighting are the ones supported by [skylighting](https://github.com/jgm/skylighting).
 
 The only thing left to do is translating all the pseudo-code listings into your favourite programming language.
 
@@ -33,7 +34,7 @@ After that you can try and make a copy of the book, by editing the `Makefile`. R
 
 You may also want to refer to the "Dynamic Code Blocks" section of this document.
 
-#### What if my programming language is not in the list?
+#### What if my programming language is not supported?
 
 No worries, you can still add your own. Check the [FAQ Document](FAQ_GUIDES.md).
 
@@ -41,7 +42,7 @@ No worries, you can still add your own. Check the [FAQ Document](FAQ_GUIDES.md).
 
 The pictures used should be simple to understand and not covered by copyright (screenshots of real games should be avoided if possible, as copyright and the "fair use" doctrine are quite complicated), where possible images should be saved in the following formats:
 
-- **Diagrams:** Vector SVG format - Some people may find useful to zoom into an image to better understand it and they usually have a low size;
+- **Diagrams:** Vector SVG format (possibly optimized) - Some people may find useful to zoom into an image to better understand it and they usually have a low size;
 - **Picture Examples:** PNG Format, they have a good quality/compression tradeoff.
 
 The most important pictures *should* have a caption to describe them, but not necessarily, that's up to you.
@@ -54,9 +55,9 @@ The book should be written as much as possible in [Pandoc Markdown](https://pand
 
 If the situation calls for it (for instance you *absolutely need* a certain table styling) an SVG image is preferred.
 
-Inline LaTeX is usable in Pandoc's Markdown but is completely ignored when creating an EPub document, thus the book will miss content.
+Inline LaTeX is usable in Pandoc's Markdown but is completely ignored when creating an EPub document, thus such version of the book will miss content.
 
-### Special Environments and commands
+### Special Commands
 
 To simplify the writing of the book as much as possible, I have included some keywords that will pre-processed by Pandoc's filter system:
 
