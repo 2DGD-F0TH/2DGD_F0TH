@@ -46,6 +46,9 @@ I {-}
 IDE
 : Short for "Integrated Development Environment", it is a program that integrates a text editor with syntax highlighting, a compiler, a code checker, a project explorer and other features (like a tag explorer, for instance).
 
+Information Hiding
+: Information hiding is one of the basic principles of programming: each part of a program (a "module") should not expose its inner workings, but rather expose a stable "interface" to the outside world. This will help separating modules from each other and avoid "snowball effects" when modifying the inner workings of one of them.
+
 K {-}
 -----
 

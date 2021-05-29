@@ -591,13 +591,19 @@ This way we can create new objects by reusing basic components, making maintenan
 
 Coupling is a term used to define the phenomenon where an edit to some part of a software snowballs into a bunch of edits in parts of the software that depend on the modified part, and the part that depend on the previously edited dependency, etc...
 
+The parts involved are defined as "coupled" because, even though they are separated, their maintenance very much behaves like they were a single entity. This also means that the elements that are coupled are harder to reuse, since they are so tightly related that they end up serving each other and nothing else.
+
 Introducing unnecessary coupling in our software will come back to bite us in the future, affecting maintainability in a very negative way, since any edit we make (for instance, to fix a bug) can potentially lead to edit the rest of the software (or game) we are writing.
 
+Reducing coupling is done by reducing interdependency, coordination and information flow between elements of a program.
+
+Examples of coupling include:
+
+- A module uses code of another module (this breaks the principle of *information hiding*~[g]~);
+- Many modules access the same global data;
+- A module controls the flow of another module (like passing a parameter that decides "what to do").
+
 This means that it's in our best interest to reduce code coupling as much as possible, following the good principles of "nutshell programming" and following the SOLID principles, shown next.
-
-{{placeholder}}
-
-<!-- TODO: Talk about coupling -->
 
 ### The DRY Principle
 
