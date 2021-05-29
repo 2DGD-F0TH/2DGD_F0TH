@@ -402,6 +402,12 @@ ScrumBan is a hybrid approach between Scrum and Kanban, mixing the Daily Scrum a
 
 This approach is usually used during migration from a Scrum-Based approach to a purely Kanban-based approach.
 
+### Lean Development
+
+{{placeholder}}
+
+<!-- TODO: Talk about lean development principles and history -->
+
 ### Where to go from here
 
 Obviously the models presented are not set in stone, but are "best practices" that have been proven to help with project management, and not even all of them.
