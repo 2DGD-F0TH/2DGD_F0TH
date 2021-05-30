@@ -20,7 +20,7 @@ There are several different platforms a game can be developed for, and each one 
 
 Arcade cabinets have been around for decades, and have still a huge part in the heart of gaming aficionados with classic series going on like "Metal Slug". The main objective of these machines is to make you have fun, while forcing you to put quarters in to continue your game.
 
-These cabinets' software is known to be very challenging, having some nice graphics and sound. Arcade games are usually presented in the form of an "arcade board", which is the equivalent of a fully-fledged console, with its own processing chips and read-only memory.
+These cabinets' software is known to be very challenging (sometimes due to the fact that you're popping quarters into the machine for the "right to play"), having some nice graphics and sound. Arcade games are usually presented in the form of an "arcade board", which is the equivalent of a fully-fledged console, with its own processing chips and read-only memory.
 
 In the case of arcades, the hardware is usually tailored to support the software; with some exceptions added later (like the Capcom Play System, also known as CPS), where the hardware is more stable between arcades, while the software changes.
 
@@ -38,6 +38,10 @@ This hardware stability is a double-edged sword: the hardware can be really hard
 ### Personal Computer
 
 Personal Computers are another huge part of the video game industry. They are extremely flexible (being general-purpose machines) but have a huge drawback: their hardware is not the same from one unit to the other. This means that the programmer needs to use "abstraction layers" to be able to communicate with all the different hardware.
+
+This compounds with the fact that "abstraction layers" used by the developer (like SDL, SFML or GLFW) are running on top of other "abstraction layers", like sound servers, device drivers, etc... which can be littered with bugs themselves. Just look at how many indirections we have on a modern Linux system (which usually bundle with PulseAudio):
+
+![How many abstraction layers are used just for a game to be able to play sounds](./images/game_design/sound_abstraction.svg){width=30%}
 
 This can have performance costs, as well as forcing the programmer to add options to lower graphic settings, resolution and more.
 
@@ -151,3 +155,5 @@ Some examples of Rhythm games are "Dance-Dance Revolution" (also known as DDR), 
 ### Visual novels
 
 Visual novels are graphical adventures whose primary objective is "telling a story", they can be linear or have a "choose your own path" component. They usually feature multiple endings and hand-crafted still images as artwork.
+
+The more modern versions feature more interactive components and fully-fledged 3D graphics, but what ties the genre together is usually a "point and click" style of gameplay.

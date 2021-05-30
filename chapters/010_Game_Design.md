@@ -596,7 +596,7 @@ This section denotes some various things that don't really fit in "tips and tric
 
 ### You cannot use the "Red Cross" in games
 
-::: pitfall :::
+::: note :::
 What follows **is not legal advice**. I am not a lawyer.
 
 If you want to know more (as in quantity and quality of information), contact your favourite lawyer.

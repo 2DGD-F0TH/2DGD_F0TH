@@ -38,11 +38,13 @@ Most of the time, events will be put in a queue that will be processed separatel
 
 This usually depends on the implementation of the event queue: an event queue is less wasteful in terms of resources and allows for less coupled code, but the queue could be cluttered with events we're not interested in (for instance mouse movement events in a game that uses only keyboard for controls) so we need to take the time to configure our event handler to ignore certain events when not necessary.
 
+::: note :::
 A well-configured event-based input system **is the most efficient way of doing things**, allowing code to be executed only when necessary.
+::::::::::::
 
 On the opposite side, we have so-called "real-time input", where at a certain point of our update routine, we check for the instantaneous status of the input peripherals and process it immediately. This allows for a faster, more reactive code and to apply some different logic (for instance pressing left and right on the keyboard can be coded to make the character stop). Besides being more immediate, this system shares a lot of traits with "polling" which can be performance-heavy, as well as inducing some undesired code coupling.
 
-Again, a well-implemented and well-configured event-based system should feel no different from real-time input, with the advantage of having better performance and having less code coupling.
+Again, a well-implemented and well-configured event-based system should feel no different from real-time input, with the advantage of having better performance and having less [code coupling](#coupling).
 
 Timing your loop {#timingloops}
 ----------------
@@ -145,7 +147,7 @@ This makes it so that a part of the drawn frame shows the result of an output st
 
 ![An example of screen tearing](./images/gameloop/screentearing.png){width=50%}
 
-A very used fix for this phenomenon is **double buffering**, where two color buffers are used. While the first is shown on screen, the game loop updates and draws on the second color buffer.
+A very common fix for this phenomenon is **double buffering**, where two color buffers are used. While the first is shown on screen, the game loop updates and draws on the second color buffer.
 
 When comes the time to draw the color buffer on screen, an operation called "flipping" is performed, where the second color buffer is shown on screen, so that the game loop can draw on the first color buffer.
 
@@ -174,11 +176,11 @@ If we divide each "layer" we can see how the painter's algorithm works:
 
 ![A small example of the "painter's algorithm"](./images/gameloop/painter_algorithm.png){width=40%}
 
-As a painter, we draw the background items before the foreground ones, layering each one on top of the other. Sometimes games make use of priority queues to decide which items to draw first, other times game developers (usually under the time constraints of a game jam) just hard-code the draw order.
+Just like a real painter, we draw the background items before the foreground ones, layering each one on top of the other. Sometimes games make use of priority queues to decide which items to draw first, other times game developers (usually under the time constraints of a game jam) just hard-code the draw order.
 
 ### Clearing the screen
 
-Special note to clearing the screen: this is an operation that sometimes may look useless but, like changing the canvas for a painter, clearing the screen (or actually the "buffer" we're drawing on) avoids a good deal of graphical glitches.
+Special note about clearing the screen: this is an operation that sometimes may look useless but, like changing the canvas for a painter, clearing the screen (or actually the "buffer" we're drawing on) avoids a good deal of graphical glitches.
 
 ![How not clearing the screen can create glitches](./images/gameloop/glitchy_noclear.png){width=50%}
 

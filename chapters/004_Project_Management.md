@@ -209,7 +209,7 @@ If the answer is no, then you may want to ignore such criticism, but if it is co
 
 This is what could be considered the apex of mishandling criticism: the usage of DMCA takedowns to quash criticism towards your game.
 
-::: pitfall :::
+::: note :::
 What follows **is not legal advice**. I am not a lawyer.
 
 If you want to know more (as in quantity and quality of information), contact your favourite lawyer.
@@ -517,6 +517,8 @@ A high number of local variables instead may point to a complexity issue: your a
 This metric is specific for functions, when a function has a lot of parameters, it's harder to call and harder to understand. Functions should have no more than 5 parameters in most cases, more and it will be complex.
 
 Some automated tools in your IDE may be able to warn you in case methods and functions have too many parameters.
+
+To solve this issue, you may need to review the function (maybe it has too many responsibilities?) or pass a so-called "complex structure" to it (thus merging all the parameters into one).
 
 ### Other metrics
 

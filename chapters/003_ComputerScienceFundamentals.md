@@ -47,13 +47,13 @@ Recursive functions have three main components:
 
 - A **base case** (sometimes called a "stop condition"): this allows the function to stop calling itself when a certain condition is reached;
 - A **procedure** that elaborates on data or simply does something (in our example, it just prints the number);
-- A **recursive call** to the same function we are writing, the call is done in a way that every call gets closer to the "stop condition". It can be done on a subset of a list (until the list has only 1 item) or on a smaller number.
+- A **recursive call** to the same function we are writing, the call is done in a way that every call gets closer to the "stop condition". It can be done by calling the function on a subset of its argument (if it is a list), until the list has only 1 item or on a smaller number (if the function argument is a number instead).
 
 Recursion can be classified in many ways:
 
-- By the number of recursive calls: single vs multiple recursion;
-- By how the recursive call is made: direct (a function calls itself directly) vs indirect (a function A is called by another function B, which in turn is called by function A)
-- By the position of the recursive call: head vs tail recursion.
+- **By the number of recursive calls:** single vs multiple recursion;
+- **By how the recursive call is made:** direct (a function calls itself directly) vs indirect (a function A is called by another function B, which in turn is called by function A)
+- **By the position of the recursive call:** head vs tail recursion.
 
 I want to underline the last distinction: what we've seen in the previous listing is called "tail recursion": the recursive call is done **after** everything else (the procedure).
 
@@ -77,6 +77,7 @@ Let's assume a computer with a reduced precision and we execute the following C+
 
 int main ()
 {
+    // This will reduce the computer's precision for this execution
     std::cout << std::setprecision(20);
 
     float d1(1.0);
@@ -122,7 +123,7 @@ This is a computer issue in general, this may not be a huge problem for general 
 
 With a name as dangerous-sounding as "catastrophic cancellation", this sure looks like a dangerous phenomenon, but it's only dangerous if we don't know what it is.
 
-Catatrophic Cancellation (sometimes called "cancellation error") is an event that may happen when subtracting two (usually large) numbers that are close to each other in value.
+Catastrophic Cancellation (sometimes called "cancellation error") is an event that may happen when subtracting two (usually large) numbers that are close to each other in value.
 
 **Warning:** from here on, in this section, there will be some technical language. I will try to make it as simple and understandable as possible.
 
@@ -132,7 +133,7 @@ Now let's take two numbers:
 
 $$x=0.5654328749846\ y=0.5654328510104$$
 
-When we go to transfer such numbers in our memory, the computer will approximate such numbers to fit in its memory constraints. We'll represent that by applying to each number a function $fl()$ that we can read as "float representation of this number". So we'll end up having:
+When we transfer such numbers in our memory, the computer will approximate such numbers to fit in its memory constraints. We'll represent that by applying to each number a function $fl()$ that we can read as "float representation of this number". So we'll end up having:
 
 $$fl(x)=0.56543287\ fl(y)=0.56543285$$
 
@@ -587,7 +588,7 @@ This way we can create new objects by reusing basic components, making maintenan
 
 <!-- TODO: Talk about composition -->
 
-### Coupling
+### Coupling {#coupling}
 
 Coupling is a term used to define the phenomenon where an edit to some part of a software snowballs into a bunch of edits in parts of the software that depend on the modified part, and the part that depend on the previously edited dependency, etc...
 
@@ -601,9 +602,14 @@ Examples of coupling include:
 
 - A module uses code of another module (this breaks the principle of *information hiding*~[g]~);
 - Many modules access the same global data;
-- A module controls the flow of another module (like passing a parameter that decides "what to do").
+- A module controls the flow of another module (like passing a parameter that decides "what to do");
+- Subclassing.
 
 This means that it's in our best interest to reduce code coupling as much as possible, following the good principles of "nutshell programming" and following the SOLID principles, shown next.
+
+:::: note ::::
+We may be tempted to try and "remove coupling completely", but that's usually a wasted effort. We want to reduce coupling as much as possible and instead improve "cohesion". Sometimes coupling is unavoidable (as in case of subclassing). Balance is the key.
+::::::::::::::
 
 ### The DRY Principle
 

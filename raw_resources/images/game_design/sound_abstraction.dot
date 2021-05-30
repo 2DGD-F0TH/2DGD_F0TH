@@ -1,0 +1,9 @@
+//
+// sound_abstraction.dot
+//
+// Created on 2021-05-30 by Penaz
+//
+digraph sound_abstraction {
+    node[shape="box"]
+    Game -> "SDL/SFML/GLFW" -> "PulseAudio Library Layer" -> "PulseAudio Engine" -> "Linux Kernel Drivers" -> "Sound Card";
+}

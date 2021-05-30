@@ -27,7 +27,9 @@ The broad pass can use a very simple algorithm to check for the possibility of a
 
 When the simpler algorithm detects the possibility of a collision, a more precise algorithm is used to check if a collision really happened, usually such finer algorithms are computationally expensive and will benefit from the first "broad pass" filter, thus avoiding useless heavy calculations.
 
+::: note :::
 In this chapter we'll see the easier narrow-pass detection first, followed by the more complex broad-pass algorithms, but remember that a good collision detection system does a "broad-pass" first, before delving into the "narrow-pass".
+::::::::::::
 
 Narrow-Pass Collision Detection: did it really collide?
 -------------------------------------------------------
@@ -375,7 +377,7 @@ This can prove useful to test for "line of sight" inside an AI algorithm.
 
 Here we are, the most complex matter when it comes to narrow-phase collision detection: detecting collisions between arbitrary convex polygons.
 
-::: pitfall :::
+::: note :::
 In this book we will focus on convex polygons "without holes", which is the most common situation you'll find yourself in.
 :::::::::::::::
 
@@ -461,9 +463,9 @@ To check if the collision "may happen", we can just use a simple [Point vs Recta
 Finally, after all the math and preparations, we can start working towards our collision detection algorithm.
 
 ::: pitfall :::
-This algorithm works only with convex polygons that have no holes, also it definitely is not the most efficient way to check for collisions between a point and a polygon.
+This algorithm works only with convex polygons that have no holes, also it probably is not the most efficient way to check for collisions between a point and a polygon.
 
-This is more akin to an exercise in creativity and less about "notions": we found a simple solution to a complex problem, even if it is not efficient.
+This is more akin to an exercise in creativity and less about "notions": we found a simple solution to a complex problem. Even if it is not the most efficient, it may be "efficient enough".
 :::::::::::::::
 
 ##### The "Polygon" class
@@ -473,11 +475,9 @@ Differently from previous classes and structures, the "polygon" class will need 
 First of all we need an **ordered** list (or array) of vertices, which will be represented by points. Secondly, we need facilities to calculate list of triangles, as well as their areas.
 
 ::: pitfall :::
-You may be tempted to memorize the "triangles" that are an output of the "fan triangulation", as well as their areas. This may be a good idea if well managed, but we will need to take care of "moving" those triangles too (their areas won't change).
+You may be tempted to memorize the "triangles" that are an output of the "fan triangulation", as well as their areas. This may be a good idea if well managed, but we will need to take care of "moving" those triangles and manage when the polygon gets deformed: in that case all the triangle areas will have to be recalculated.
 
-If you are a programming wizard you can pull it off using references or pointers, probably. Also a hidden danger is when the polygon gets deformed: in that case all the triangle areas will have to be recalculated.
-
-Same goes for the bounding box, which will change in size when the polygon rotates. In this book we will try to keep the class as generic as possible (as well as simple), thus we will just recalculate everything every frame as needed.
+Same goes for the bounding box, which will change in size when the polygon rotates or deforms. In this book we will try to keep the class as generic as possible (as well as simple), thus we will just recalculate everything every frame as needed.
 :::::::::::::::
 
 Thirdly, we need the constructor to do some math before we can use the polygon. Finally we need to integrate a "fanning" function.
@@ -517,7 +517,7 @@ Let's see an example image first:
 
 ![Example image used for circle/polygon collision detection](./images/collision_detection/circle_polygon.svg){width=40%}
 
-Here we can see four different cases of collision (or lack thereof) between a circle and a polygon (if you're particularly acute, you may have notices we're missing a 5th case, but we'll talk about it shortly):
+Here we can see four different cases of collision (or lack thereof) between a circle and a polygon (if you're particularly acute, you may have noticed we're missing a 5th case, but we'll talk about it shortly):
 
 - **Case A:** The circle is completely inside the polygon;
 - **Case B:** The circle is partially inside the polygon, with the center being **inside** the polygon;
