@@ -155,7 +155,7 @@ Any shape where you can find at least one line that crosses the shape more than 
 
 ![Example of a concave shape](./images/maths/concave_shape.svg){width=35%}
 
-::: pitfall :::
+::: note :::
 Not all non-convex shapes are technically called "concave" (they should be called "non-convex"), but for the sake of simplicity we'll use the term "non-convex" and "concave" interchangeably in this book.
 :::::::::::::::
 
@@ -508,7 +508,9 @@ $$ \begin{bmatrix}
     8 & 12 & 16
 \end{bmatrix}$$
 
-Multiplication between matrices is **non commutative**, which means that the result of $A \times B$ is not equal to the result of $B \times A$, actually one of the results may not even be possible to calculate.
+:::: note ::::
+Multiplication between matrices is **non commutative**, which means that the result of $A \times B$ is not equal to the result of $B \times A$: actually one of the results may not even be possible to calculate.
+::::::::::::::
 
 ### Other uses for matrices
 
@@ -673,7 +675,7 @@ $$ x_1 = x_0 - \frac{f(x_0)}{f'(x_0)}$$
 
 Each subsequent guess (and thus iteration) can be obtained similarly by using the formula:
 
-$$ x_{n+1} = n - \frac{f(n)}{f'(n)}$$
+$$ x_{n+1} = x_n - \frac{f(n)}{f'(n)}$$
 
 And such guess will be more precise than the previous one (if we don't consider some situations where approaching the root can be problematic or not possible). The algorithm will stop when you reach an approximation that is "good enough".
 
