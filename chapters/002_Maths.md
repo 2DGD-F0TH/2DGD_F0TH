@@ -142,9 +142,27 @@ Knowing that the length of a vector is a scalar (a number, not a vector), normal
 
 ### "Clamping" a Vector
 
-{{placeholder}}
+This is not an operation "per se", but there are occasions where we need to limit the length of a vector: this usually happens when we are working with velocity, as not limiting it would allow an object to change position faster and faster, making the game less playable and even breaking time-stepping collision detection algorithms.
 
-<!-- TODO: Not an operation per se, but there are occasions where we need to "clamp the length" of a vector -->
+To clamp a vector, we need to find its magnitude and direction first, which is the "normalized vector". Let's think about the vector $v$, its magnitude and direction are:
+
+$$ ||v|| = \sqrt{v \cdot v} $$
+$$ \hat{v} = \frac{v}{||v||} $$
+
+After that, we can build a new vector using the "clamped magnitude" (which we'll call $||v||_{clamp}$), calculated as such:
+
+$$
+||v||_{clamp}=\begin{cases}
+||v||\ when\ ||v|| < ||v||_{max}\\
+||v||_{max}\ otherwise
+\end{cases}
+$$
+
+To build the new vector, we just need to multiply $||v||_{clamp}$ by $\hat{v}$:
+
+$$ v = ||v||_{clamp} \cdot \hat{v} $$
+
+The new vector will have the same direction as the old one, but its magnitude will be clamped, just like we wanted.
 
 Geometry
 --------
