@@ -140,6 +140,12 @@ $$ \hat{a} = \frac{a}{||a||} $$
 
 Knowing that the length of a vector is a scalar (a number, not a vector), normal scalar multiplication rules apply. (See [Scaling Vectors](#scalingvectors))
 
+### "Clamping" a Vector
+
+{{placeholder}}
+
+<!-- TODO: Not an operation per se, but there are occasions where we need to "clamp the length" of a vector -->
+
 Geometry
 --------
 

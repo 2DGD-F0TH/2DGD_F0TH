@@ -168,6 +168,10 @@ Deceleration is a special case of what we've seen so far, with the exception tha
 Now we can start writing some code:
 
 <!-- TODO: Make inertia explanation clearer -->
+
+```{src='developing_mechanics/inertia' caption='Code for simulating inertia'}
+```
+
 <!-- TODO: Code for inertia
 if direction_pressed:
     // We don't care cause the formula works anyway
