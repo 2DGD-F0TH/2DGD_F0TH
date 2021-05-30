@@ -38,6 +38,17 @@
   \end{minipage}
   \end{tcolorbox}
 }
+\newenvironment{note}{
+  \begin{tcolorbox}[colback=brown!5!white,colframe=brown!75!white,title=Note!]
+    \begin{minipage}{.15\textwidth}
+      \centering
+      \includegraphics[width=0.9\linewidth]{./images/note.pdf}
+    \end{minipage}
+    \begin{minipage}{.80\textwidth}
+}{
+  \end{minipage}
+  \end{tcolorbox}
+}
 \newenvironment{pitfall}{
   \begin{tcolorbox}[colback=red!5!white,colframe=red!75!black,title=Pitfall Warning!]
     \begin{minipage}{.15\textwidth}
@@ -50,7 +61,7 @@
   \end{tcolorbox}
 }
 \newenvironment{trivia}{
-  \begin{tcolorbox}[colback=green!5!white,colframe=green!75!black,title=Trivia Time!]
+  \begin{tcolorbox}[colback=green!5!white,colframe=green!75!black,title=Random Trivia!]
     \begin{minipage}{.15\textwidth}
       \centering
       \includegraphics[width=0.9\linewidth]{./images/trivia.pdf}

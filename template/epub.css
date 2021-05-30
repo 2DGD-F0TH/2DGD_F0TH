@@ -60,7 +60,7 @@ div.hanging-indent{
     margin-left: 1.5em;
     text-indent: -1.5em;
 }
-div.pitfall,div.tip,div.trivia{
+div.pitfall,div.tip,div.trivia,div.note{
     padding: 0.5em;
     margin: 1em 0;
 }
@@ -89,6 +89,15 @@ div.trivia{
 div.trivia div.box-title{
     background-color: #F2FFF2;
     border: 2px solid #00DF00;
+    font-weight: bold;
+}
+div.note{
+    background-color: #FBF8F5;
+    border: 2px solid #CF9F6F;
+}
+div.note div.box-title{
+    background-color: #FBF8F5;
+    border: 2px solid #CF9F6F;
     font-weight: bold;
 }
 div.box-title{
