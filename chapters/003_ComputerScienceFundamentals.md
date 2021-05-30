@@ -852,25 +852,25 @@ Activity diagrams are the more powerful version of flow charts: they represent t
 
 Each diagram begins what a "start node", represented with a filled black circle, and they end with an "end node" which is represented with a filled black circle inside of a hollow circle.
 
-![Example of activity diagrams start and end nodes](./images/computer_science/activity_start_end.png){width=30%}
+![Example of activity diagrams start and end nodes](./images/computer_science/activity_start_end.svg){width=20%}
 
 #### Actions
 
 Each action taken by the software is represented in the diagram via a rounded rectangle, a very short description of the action is written inside the rounded rectangle space.
 
-![Example of Action in activity diagrams](./images/computer_science/activity_action.png){width=30%}
+![Example of Action in activity diagrams](./images/computer_science/activity_action.svg){width=30%}
 
 #### Decisions (Conditionals) and loops
 
 Decisions and loops are enclosed in diamonds. If a condition needs to be written, the diamond can become an hexagon, to make space for the condition to be written or guards can be used to express the condition.
 
-![Example of decision, using hexagons to represent the condition](./images/computer_science/activity_decision_hex.svg){width=30%}
+![Example of decision, using hexagons to represent the condition](./images/computer_science/activity_decision_hex.svg){width=40%}
 
-![Example of loops, using guards to represent the condition](./images/computer_science/activity_loop_guards.svg){width=30%}
+![Example of loops, using guards to represent the condition](./images/computer_science/activity_loop_guards.svg){width=40%}
 
 All the branches that depend on a condition or are part of a loop start and end on a diamond, as shown below.
 
-![Example of how nested loops and conditions are performed](./images/computer_science/nested_activity.svg){width=30%}
+![Example of how nested loops and conditions are performed](./images/computer_science/nested_activity.svg){width=40%}
 
 #### Synchronization
 
