@@ -501,11 +501,17 @@ Here's the code:
 
 ##### Performance analysis
 
-The algorithm seems fairly simple, but we may want to check its performance to see how efficient it is. In this analysis `n` will be the number of vertices.
+The algorithm seems fairly simple, but we may want to check its performance to see how efficient it is. In this analysis `n` will be the number of vertices, while `m` is the number of triangles.
 
 The best case is that the point we're testing is outside the polygon's bounding box: this means that we calculate the bounding box (which is $\Theta(n)$) and we check the point against it (which is $\Theta(1)$), thus our best case (lower bound) is $\Omega(n)$.
 
-The worst case is when the whole algorithm is performed to the end, which means the point is inside the bounding box, but outside the polygon: this means we calculate the bounding box ($\Theta(n)$), check against it ($\Theta(1)$), do the "fan triangulation" ($\Theta(n)$), check each triangle without finding any collision ($O(n)$) and get to the end. Out worst case (upper bound) is $O(n)$.
+The worst case is when the whole algorithm is performed to the end, which means the point is inside the bounding box, but outside the polygon: this means we calculate the bounding box ($\Theta(n)$), check against it ($\Theta(1)$), do the "fan triangulation" ($\Theta(n)$), check each triangle without finding any collision ($O(m)$) and get to the end. Out worst case (upper bound) is $O(n + m)$.
+
+Considering the fact that the number of triangles `m` is tied to the number of vertices `n` by the formula (valid for simple convex polygons)
+
+$$ m = n - 2 $$
+
+We have an upper bound of $O(n+m) = O(n+n+2) = \sim O(n)$, this is because the constant gets "squashed by the linear behaviour" of `n`, and $2 \cdot n$ behaves asymptotically in the same way as $n$ when the dataset grows.
 
 Even though we have a tight bound of $\Theta(n)$ in our entire algorithm (which means the amount of calculations goes up slowly with the addition of new vertices), we need to be mindful of the amount of calculation that is done, including some heavy operations like square roots.
 
