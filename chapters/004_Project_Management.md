@@ -468,6 +468,12 @@ When you have a test suite, you may already be thinking about a metric that tell
 
 That is both the useful and damaging part of this metric: *code coverage* doesn't tell you **how well** your code is tested, just **how much code was executed**, so it's easy to incur into what I like to call "incidental coverage": the code coverage presents a higher value, when the code is merely "executed" and not thoroughly "tested".
 
+Code coverage is split in many "sub-sets", like:
+
+- **Statement Coverage:** how many statements of the program are executed;
+- **Branch Coverage:** defines which branches (as in portions of the if/else and "switch" statements) are executed;
+- **Function Coverage:** how many functions or subroutines are called.
+
 This is also why it's better to prepare unit tests first, and delay the integration tests for a while.
 
 To know more about those terms, head to the [testing section](#testing).
