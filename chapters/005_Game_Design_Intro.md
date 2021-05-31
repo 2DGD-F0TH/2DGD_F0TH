@@ -22,6 +22,8 @@ Arcade cabinets have been around for decades, and have still a huge part in the 
 
 These cabinets' software is known to be very challenging (sometimes due to the fact that you're popping quarters into the machine for the "right to play"), having some nice graphics and sound. Arcade games are usually presented in the form of an "arcade board", which is the equivalent of a fully-fledged console, with its own processing chips and read-only memory.
 
+![How an arcade machine usually looks like](./images/game_design/arcade.svg){width=30%}
+
 In the case of arcades, the hardware is usually tailored to support the software; with some exceptions added later (like the Capcom Play System, also known as CPS), where the hardware is more stable between arcades, while the software changes.
 
 ### Console
