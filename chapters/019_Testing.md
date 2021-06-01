@@ -151,3 +151,9 @@ Differently from the "Closed Beta" phase, and usually coming after that, the "Op
 The product should have the same characteristics that are used in the "closed beta" phase, plus possibly a higher degree stability.
 
 Open Beta is usually done to test the robustness of the network system at higher loads, and having a possibly large (maybe larger than expected) player base can be a real test for the infrastructure.
+
+### A/B Testing
+
+{{placeholder}}
+
+<!-- TODO: Talk about A/B testing -->
