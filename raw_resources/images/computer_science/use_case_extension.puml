@@ -10,7 +10,7 @@ rectangle System{
 
     User -- (Login)
 
-    (Login) <.. (Help on Login): <<include>>
+    (Login) <.. (Help on Login): <<extend>>
 
 }
 
