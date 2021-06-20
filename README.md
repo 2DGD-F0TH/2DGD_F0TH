@@ -69,7 +69,7 @@ Building the book
 
 To build the book you need the following software:
 
-- Pandoc
+- Pandoc 2.13 or higher (except 2.14 and 2.14.0.1 due to MediaBag regressions)
 - TexLive or equivalent
 - GNU Make or equivalent
 - GladTex (v3 or superior) - For EPub Output
