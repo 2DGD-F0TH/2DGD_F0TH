@@ -14,7 +14,7 @@ rectangle System{
 
     (Customer Authentication) <.. (Deposit): <<include>>
 
-    (Customer Authentication) <.. (:ithdraw): <<include>>
+    (Customer Authentication) <.. (Withdraw): <<include>>
 
 }
 
