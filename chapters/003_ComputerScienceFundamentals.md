@@ -1325,6 +1325,13 @@ Circular Queues can be implemented via linked lists or cleverly indexed arrays, 
 
 <!-- TODO: Code for circular queues? -->
 
+Data Redundancy
+---------------
+
+{{placeholder}}
+
+<!-- TODO: Talk about how data redundancy can be used to speed up some operations (like having a list with a counter speeds up counting items) at the expense of some heavier operations (add and remove will need to update the counter) and the risks involved (like the counter desyncing in some cases if there are bugs) -->
+
 Introduction to MultiTasking
 ------------------------------
 
