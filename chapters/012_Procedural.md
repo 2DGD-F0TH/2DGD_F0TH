@@ -131,6 +131,12 @@ If the player progresses quickly, the game will become harder, instead if the pl
 
 The objective of adaptive difficulty is to create an "optimal experience" for everyone, by determining if the current game is "too easy" or "too hard" for the player.
 
+#### Rubberbanding
+
+{{placeholder}}
+
+<!-- TODO: Usually done in racing games, it's akin to the other runners/players being "tied to you with a rubberband", if you go too far ahead or behind, they will be "pulled towards you", by either speeding up or slowing down. This is also done by other games like NBA Jam by "tweaking" player skills to keep the game challenging -->
+
 ### Static vs. Adaptive Difficulty
 
 Each approach has its own advantages and shortcomings, which can make one or the other better suited for your game.
