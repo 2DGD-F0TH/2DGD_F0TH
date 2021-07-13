@@ -484,9 +484,11 @@ Some cultures are used to (and enjoy) a higher amount of grinding than others, s
 
 You should also be very careful on "forcing grinding" on your players: players like having choice and really dislike having anything forced on them, and this can change with your target audience.
 
-{{placeholder}}
+:::: trivia ::::
+Super Hydlide for the Sega Genesis/MegaDrive is one of the games that had its experience requirements tailored to the tastes of the market it was targeted to.
 
-<!-- TODO: The US release of Super Hydlide (Genesis) got the exp requirements halved -->
+Considering the Japan release as the baseline, the US release sees its experience requirements halved.
+::::::::::::::::
 
 ##### Farming
 
