@@ -486,7 +486,7 @@ You should also be very careful on "forcing grinding" on your players: players l
 
 {{placeholder}}
 
-<!-- TODO: Find that NES/SNES game from GDQ that got the exp requirements halved in the US release -->
+<!-- TODO: The US release of Super Hydlide (Genesis) got the exp requirements halved -->
 
 ##### Farming
 
