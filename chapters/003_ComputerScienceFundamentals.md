@@ -1328,6 +1328,26 @@ Circular Queues can be implemented via linked lists or cleverly indexed arrays, 
 Data Redundancy
 ---------------
 
+When dealing with certain structures, there are operations that are inherently complex to do: let's take for example counting the elements in a list:
+
+```{src='computer_science/redundancy_1' caption='Counting the elements in a list'}
+```
+
+It's easy to see that an algorithm like this has a $\Theta(n)$ complexity, which may not be ideal for an operation as common as finding the length of a list.
+
+This is where data redundancy comes into play: the length of a list is an intrinsic property of the list itself, so why not save it inside the "head" of our structure?
+
+This will obviously require a bit more work in all the methods that will change the number of elements inside the list, since we need to keep the "length" property in sync with the actual length of the list, but in exchange we can count the elements in a list by doing a simple lookup.
+
+Let's see an example implementation:
+
+```{src='computer_science/redundancy_2' caption='Counting the elements in a list with data redundancy'}
+```
+
+:::: pitfall ::::
+It is extremely important that we keep our "redundant properties" synchronized with the actual state of our objects, even when exceptions are raised. Not doing so will create bugs.
+:::::::::::::::::
+
 {{placeholder}}
 
 <!-- TODO: Talk about how data redundancy can be used to speed up some operations (like having a list with a counter speeds up counting items) at the expense of some heavier operations (add and remove will need to update the counter) and the risks involved (like the counter desyncing in some cases if there are bugs) -->
