@@ -33,7 +33,7 @@ class Player:
             self.velocity.clamp(MAX_SPEED)
         else:
             # We are stopping, let's subtract the deceleration
-            velocity_value = self.velocity.length() - self.DECEL * dt
+            velocity_value = len(self.velocity) - self.DECEL * dt
             if velocity_value < 0:
                 # If, After decelerating, we have a negative value, we need
                 # to make it zero or the object will start moving backwards
