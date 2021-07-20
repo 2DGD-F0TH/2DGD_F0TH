@@ -133,9 +133,15 @@ The objective of adaptive difficulty is to create an "optimal experience" for ev
 
 #### Rubberbanding
 
-{{placeholder}}
+Rubberbanding (not to be confused with "network lag", sometimes called "rubberbanding") is an instance of adaptive difficulty, mostly used in racing games, where the opponents' abilities (like speed in racing games) are "tweaked" to keep the game challenging (but not unfair).
 
-<!-- TODO: Usually done in racing games, it's akin to the other runners/players being "tied to you with a rubberband", if you go too far ahead or behind, they will be "pulled towards you", by either speeding up or slowing down. This is also done by other games like NBA Jam by "tweaking" player skills to keep the game challenging -->
+This usually ends up with opponents getting faster the further in the lead the player is (sometimes even going over the maximum speed) or going slower when the player falls behind too much.
+
+You can see as a virtual "rubber band" that ties your opponents to you, the more the rubber band is stretched, the more the opponents are "attracted" to you (or you to them, it can work both ways).
+
+::: trivia :::
+"Rubberbanding" is not limited to racing games. For instance NBA Jam tweaks player skills to keep the game competitive and enjoyable.
+::::::::::::::
 
 ### Static vs. Adaptive Difficulty
 
