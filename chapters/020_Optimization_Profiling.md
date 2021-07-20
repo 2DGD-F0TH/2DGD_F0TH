@@ -169,6 +169,23 @@ This has a tradeoff: you're trading CPU time for Memory space, since the lookup 
 
 In modern games instances of lookup tables are as rare as hens' teeth, but it's an interesting historical view over some older forms of optimization.
 
+### Memoization {#memoization}
+
+Memoization (sometimes known as "tabling") is an optimization technique that consists in saving the result of an expensive function, as well as the function's arguments for later calls: this way when the same arguments are passed to the function, you can return the stored value instead of performing the calculation again.
+
+This is due to the fact that functions are deterministic, so if you have the same inputs you will always receive the same outputs: this allows to minimize expensive computations at the expense of memory.
+
+Obviously this technique can't really be applied to functions that make use of pseudo-random numbers and connected functionalities, because memoization would completely void such randomization.
+
+Memoization is usually implemented via decorators that check if the arguments passed are inside a defined data structure (usually a hash table): if there is a hit, the result is returned immediately, if not the original (expensive) function is run and its result is memorized in said structure.
+
+Memoization should be used only on functions that are:
+
+- Expensive
+- Called often with the same arguments
+
+If we start using this technique on all functions, we may end up with a software that occupies a lot of memory without any significant speedup.
+
 ### Approximations
 
 Many times when developing games we don't need to have a value that is precise to the 10th digit, that's where approximation comes into hand.

@@ -273,7 +273,7 @@ As you can see the decorator makes heavy use of abstract classes and interfaces,
 ------------------    ------------------------------------------------------------------------------
 **Pattern Name**      Decorator
 
-**When to Use it**    When you need to add or remove functionalities from a class dynamically.
+**When to Use it**    When you need to add or remove functionalities from a class dynamically. Very useful for applying [memoization techniques](#memoization).
 
 **Advantages**        Decoupling, added flexibility.
 
