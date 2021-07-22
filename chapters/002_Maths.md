@@ -124,7 +124,7 @@ Given the vectors $v = [1,2]$ and $u = [4,3]$, the dot vector is:
 
 $$ v \cdot u = (1 \cdot 4) + (2 \cdot 3) = 4 + 6 = 10 $$
 
-### Vector Length and Normalization
+### Vector Length and Normalisation
 
 Given a vector $a = [a_1, a_2, ..., a_n]$, you can define the length of the vector as:
 
@@ -134,7 +134,7 @@ Or alternatively
 
 $$ ||a|| = \sqrt{a \cdot a}$$
 
-We can get a 1-unit long vector by "normalizing" it, getting a vector that is useful to affect (or indicate) direction without affecting magnitude. A normalized vector is usually indicated with a "hat", so the normalized vector of $a = [a_1, a_2, ..., a_n]$ is
+We can get a 1-unit long vector by "normalising" it, getting a vector that is useful to affect (or indicate) direction without affecting magnitude. A normalised vector is usually indicated with a "hat", so the normalised vector of $a = [a_1, a_2, ..., a_n]$ is
 
 $$ \hat{a} = \frac{a}{||a||} $$
 
@@ -144,7 +144,7 @@ Knowing that the length of a vector is a scalar (a number, not a vector), normal
 
 This is not an operation "per se", but there are occasions where we need to limit the length of a vector: this usually happens when we are working with velocity, as not limiting it would allow an object to change position faster and faster, making the game less playable and even breaking time-stepping collision detection algorithms.
 
-To clamp a vector, we need to find its magnitude and direction first, which is the "normalized vector". Let's think about the vector $v$, its magnitude and direction are:
+To clamp a vector, we need to find its magnitude and direction first, which is the "normalised vector". Let's think about the vector $v$, its magnitude and direction are:
 
 $$ ||v|| = \sqrt{v \cdot v} $$
 $$ \hat{v} = \frac{v}{||v||} $$
@@ -167,7 +167,7 @@ The new vector will have the same direction as the old one, but its magnitude wi
 Geometry
 --------
 
-Among all the math we found so far (and the math we will explain later), we cannot avoid talking a bit about geometry: in this book we will talk about the minimal amount of geometry necessary to understand the underlying concepts of what's coming up.
+Among all the maths we found so far (and the maths we will explain later), we cannot avoid talking a bit about geometry: in this book we will talk about the minimal amount of geometry necessary to understand the underlying concepts of what's coming up.
 
 ### Convex vs Concave polygons {#conc_conv}
 
@@ -219,7 +219,7 @@ Where in this case $m$ is the *slope* of our straight line, and $q$ represents t
 
 #### Getting the equation of a straight line, given two points
 
-We all know that given two points we can strike one and only one line. How many times did you measure two points (maybe while doing some DIY) and stroke a line between them?
+We all know that given two points we can strike one and only one line. How many times did you measure two points (maybe while doing some D.I.Y.) and stroke a line between them?
 
 It will be useful in our adventure to be able to get the equation of a straight line starting from two points, so let's call our two points $P(x_1,y_1)$ and $Q(x_2,y_2)$, then the straight line that crosses both those points will have equation:
 
@@ -570,7 +570,7 @@ When you want to develop a game, you will probably find yourself needing to rota
 
 ### Radians vs Degrees
 
-In everyday life, angles are measured in degrees, from 0 to 360 degrees. In some situations in math, it is more comfortable to measure angles using radians, from 0 to $2 \pi$.
+In everyday life, angles are measured in degrees, from 0 to 360 degrees. In some situations in maths, it is more comfortable to measure angles using radians, from 0 to $2 \pi$.
 
 You can convert back and forth between radians and degrees with the following formulas:
 
@@ -674,7 +674,7 @@ Table: Some double-angle formulae used in trigonometry
 
 ### Inverse Formulas
 
-As with practically all math formulas, there are inverse formulas for sine and cosine, called $arcsin$ and $arccos$, which allow to find an angle, given its sine and cosine.
+As with practically all maths formulas, there are inverse formulas for sine and cosine, called $arcsin$ and $arccos$, which allow to find an angle, given its sine and cosine.
 
 In this book we won't specify more, besides what could be the most useful: the 2-argument arctangent.
 
@@ -687,7 +687,7 @@ $$ \theta = arctan(\frac{y}{x}) $$
 Numerical Analysis
 ------------------
 
-Here we will give some pointers over some algorithms and methods that may be useful to better explain some topics treated in this book. Feel free to skip or quickly read this section if you don't want to dive into too much detail over this kind of math.
+Here we will give some pointers over some algorithms and methods that may be useful to better explain some topics treated in this book. Feel free to skip or quickly read this section if you don't want to dive into too much detail over this kind of maths.
 
 ### Newton-Raphson method {#newtonmethod}
 
@@ -710,7 +710,7 @@ Coordinate Systems on computers
 
 When it comes to 2D graphics on computers, our world gets quite literally turned upside down.
 
-In our math courses we learned about the Coordinate Plane, with an origin and an `x` axis going from left to right and a `y` axis going from bottom to top, where said axis cross it's called the "Origin".
+In our maths courses we learned about the Coordinate Plane, with an origin and an `x` axis going from left to right and a `y` axis going from bottom to top, where said axis cross it's called the "Origin".
 
 ![Image of a coordinate plane](images/maths/coord.svg){width=30%}
 
@@ -723,7 +723,7 @@ The origin is placed on the top left of the screen (at coordinates `(0,0)`) and 
 Transformation Matrices
 -----------------------
 
-There will be a time, in our game development journey where we need to rotate an object, and that's bound to be pretty easy because rotation is something that practically all engines and toolkits do natively. But also there will be times where we need to do transformations by hand.
+There will be a time, in our game development journey where we need to rotate an object, and that's bound to be pretty easy because rotation is something that practically all engines and tool kits do natively. But also there will be times where we need to do transformations by hand.
 
 An instance where it may happen is rotating an item relative to a certain point or another item: imagine a squadron of war planes flying in formation, where all the planes will move (and thus rotate) relative to the "team leader".
 
@@ -870,11 +870,11 @@ $$
 \end{bmatrix}
 $$
 
-In short, you need to rotate the item by first "bringing it centered to the origin", rotating it and then bring it back into its original position.
+In short, you need to rotate the item by first "bringing it centred to the origin", rotating it and then bring it back into its original position.
 
 ### Shearing
 
-During stretching, we used the elements that are in the "main diagonal" to stretch our objects. If we modify the elements in the "antidiagonal", we will obtain shear mapping (or shearing).
+During stretching, we used the elements that are in the "main diagonal" to stretch our objects. If we modify the elements in the "anti-diagonal", we will obtain shear mapping (or shearing).
 
 Shearing will move points along a certain axis with a "strength" defined by the distance along the other axis: if we shear a rectangle, we will obtain a parallelogram.
 
