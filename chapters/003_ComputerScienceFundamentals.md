@@ -106,7 +106,7 @@ This program will temporarily set a reduced precision in our number representati
 
 ![Results of the simple float precision test](./images/computer_science/precision_1.png){width=50%}
 
-With the number $1$ it's all good, but... what is going on with $0.1$? What is all that garbage? The number $0.01$ is even worse! That's not even close! Why $0.1 + 0.1 + 0.1$ comes out as not $0.3$! **What is math anymore?**
+With the number $1$ it's all good, but... what is going on with $0.1$? What is all that garbage? The number $0.01$ is even worse! That's not even close! Why $0.1 + 0.1 + 0.1$ comes out as not $0.3$! **What is maths anymore?**
 
 We have just met one of the (many) limitations of computers: computers cannot represent certain numbers without "approximating". Compilers and libraries exist to work around these issues, but we need to be ready to avoid surprises.
 
@@ -127,7 +127,7 @@ Catastrophic Cancellation (sometimes called "cancellation error") is an event th
 
 **Warning:** from here on, in this section, there will be some technical language. I will try to make it as simple and understandable as possible.
 
-Let's imagine a computer, such computer's memory can handle at most 8 decimals while its ALU (the unit that takes case of "doing math") can handle at most 16 decimal places.
+Let's imagine a computer, such computer's memory can handle at most 8 decimals while its A.L.U. (the unit that takes case of "doing maths") can handle at most 16 decimal places.
 
 Now let's take two numbers:
 
@@ -148,7 +148,7 @@ We can see that our approximations are **very close** to the numbers we want to 
 
 $$x - y = 0.239772 \times 10^{-7}$$
 
-That's a tiny number right there. Now let's calculate $fl(x) - fl(y)$, remembering that the ALU will fill up to 16 decimals:
+That's a tiny number right there. Now let's calculate $fl(x) - fl(y)$, remembering that the A.L.U. will fill up to 16 decimals:
 
 $$fl(x) - fl(y) = 0.5654328700000000 - 0.5654328500000000 = 0.0000000200000000 = 0.2 \times 10^{-7}$$
 
@@ -158,7 +158,7 @@ $$\delta = \frac{| 0.239772 \times 10^{-7} - 0.2 \times 10^{-7} |}{0.239772 \tim
 
 Oh no... We're off by 16\% of the total result! That's a huge loss! A real catastrophe.
 
-What happened? If you look closely, the numbers are really close and even have 7 decimal digits in common, since our computer can memorize only 8 digits, the 9th to 13th decimal digits that looked so unimportant suddenly become a huge part of the result (due to the subtraction) but are already lost.
+What happened? If you look closely, the numbers are really close and even have 7 decimal digits in common, since our computer can memorise only 8 digits, the 9th to 13th decimal digits that looked so unimportant suddenly become a huge part of the result (due to the subtraction) but are already lost.
 
 Random Numbers are not really random {#random}
 ------------------------------------
@@ -264,7 +264,7 @@ An example of a O(log(n)) algorithm is the so-called "binary search" on a ordere
 
 The best case is the time when you get the element to find to be the "middle element" of the list, in that case the algorithm will execute in linear time: $\Theta(1)$ - You need **at least one lookup** ($\Omega(1)$) and **at most one lookup** ($O(1)$).
 
-In the worst case, the element is not present in the list, so you have to split the list and find the middle element until you realize that you don't have any more elements to iterate - this translates into a **tight bound** of $\Theta(log_{2}n)$
+In the worst case, the element is not present in the list, so you have to split the list and find the middle element until you realise that you don't have any more elements to iterate - this translates into a **tight bound** of $\Theta(log_{2}n)$
 
 ### O(n)
 
@@ -289,7 +289,7 @@ Some algorithms that run in O(n·log(n)) are:
 
 - Quick Sort
 - Heap Sort
-- Fast Fourier Transforms (FFT)
+- Fast Fourier Transforms (F.F.T.)
 
 These algorithms are more complex than a simple example and would require a chapter on their own, so we'll leave examples aside for now.
 
@@ -336,7 +336,7 @@ Now let's see another algorithm:
 
 In this case we are iterating through a list, we can see that as the list grows, the number of times we print an element on our screen grows too. So if the list is $n$ items long, we will have $n$ calls to the output statement. This is an $O(n)$ complexity algorithm.
 
-Now let's take something we already saw and analyze it: the bubble sort algorithm:
+Now let's take something we already saw and analyse it: the bubble sort algorithm:
 
 ```{src='computer_science/bubblesort' caption='The bubble sort algorithm, an O(n²) algorithm'}
 ```
@@ -378,7 +378,7 @@ Here we can see how big-O estimates compare to each other, graphically and how i
 
 ![Big-O Estimates, plotted](./images/computer_science/big_o_plot.svg){width=60%}
 
-There is a very specific reason why the $O(2^n)$ estimate is missing from the previous plot: we wouldn't be able to see anything worthwile if it was included, as seen from the following plot:
+There is a very specific reason why the $O(2^n)$ estimate is missing from the previous plot: we wouldn't be able to see anything worthwhile if it was included, as seen from the following plot:
 
 ![How O(2^n^) overpowers lower complexities](./images/computer_science/big_o_plot2.svg){width=60%}
 
@@ -544,11 +544,11 @@ Object Oriented Programming
 
 ### Introduction
 
-One of the biggest programming paradigms in use is surely the "Object Oriented Programming" (from now on: "OOP") paradigm. The fundamental unit of a program, in this paradigm is the *Object*. This paradigm allows to structure your code in a more modular and re-usable way, as well as implementing abstractions, allowing for more solid code and making it possible for other code to make use of your own code without needing to know any details besides its *Interface*.
+One of the biggest programming paradigms in use is surely the "Object Oriented Programming" (from now on: "O.O.P.") paradigm. The fundamental unit of a program, in this paradigm is the *Object*. This paradigm allows to structure your code in a more modular and re-usable way, as well as implementing abstractions, allowing for more solid code and making it possible for other code to make use of your own code without needing to know any details besides its *Interface*.
 
 ### Objects
 
-Objects are the fundamental unit in OOP, objects are essentially a collection of data and functions. Objects are actually the physical instantiation of what is called a "Class".
+Objects are the fundamental unit in O.O.P., objects are essentially a collection of data and functions. Objects are actually the physical instantiation of what is called a "Class".
 
 To simplify the concept: a "Class" is a house blueprint, an "Object" is the house itself.
 
@@ -563,7 +563,7 @@ Objects contain data and functions, for the sake of precision, we will use their
 
 ### Abstraction and Interfaces
 
-Abstraction is a fundamental point in OOP, and it is usually taken care of via so-called **Interfaces**.
+Abstraction is a fundamental point in O.O.P., and it is usually taken care of via so-called **Interfaces**.
 
 Interfaces are the front-end that an object offers to other objects so they can interact.
 
@@ -571,19 +571,19 @@ As an example: the interface to your PC is given by Keyboard, Mouse and Screen -
 
 Being able to abstract a concept, removing the necessity to know the internal workings of the code that is used, is fundamental to be able to write solid and maintainable code, because implementations change, but interfaces rarely do.
 
-Making classes work together with interfaces allows you to modify and optimize your code without having each edit snowball into a flurry of compiler (or interpreter) errors. For instance: a rectangle class exposes in its interface a method `getArea()` - you don't need to know how to calculate the area, you just call that method and know it will return the area of the rectangle.
+Making classes work together with interfaces allows you to modify and optimise your code without having each edit snowball into a flurry of compiler (or interpreter) errors. For instance: a rectangle class exposes in its interface a method `getArea()` - you don't need to know how to calculate the area, you just call that method and know it will return the area of the rectangle.
 
 The concept of keeping the internal workings of a class is called *Information Hiding*.
 
 ### Inheritance and Polymorphism
 
-One of the biggest aspects of OOP is **inheritance**: you can create other classes based on a so-called "base class", allowing for extendability of your software.
+One of the biggest aspects of O.O.P. is **inheritance**: you can create other classes based on a so-called "base class", allowing for extensibility of your software.
 
 You can create a "Person" class, with a name, surname and age as fields, and by inheriting from the "Person" class you can create a "Student" class, which has all the fields from Person, plus the "clubs" and "grade" fields.
 
 This allows to create a "tree of classes" that represents part of your software.
 
-From inheritance, OOP presents a concept called **Polymorphism** (From "Poly" - Many, "Morph" - Shape), where you can use the base class to represent the entire class tree, allowing for substitution.
+From inheritance, O.O.P. presents a concept called **Polymorphism** (From "Poly" - Many, "Morph" - Shape), where you can use the base class to represent the entire class tree, allowing for substitution.
 
 In our "Person-Student" example, you could use a pointer to either a Person or a Student for the sake of getting their first name.
 
@@ -601,7 +601,7 @@ Many times, Mixins are described as "included" rather than "inherited", due to t
 The python web framework Django makes heavy use of mixins in its class-based views: you can create a standard "View" (representing a web page, for instance), and then add login protection (via LoginRequiredMixin) or permissions (via PermissionRequiredMixin). This is all done using Python's multiple inheritance.
 ::::
 
-A code example of mixins is beyond the scope of this book, since each language has its own way of implementing mixins, some easy (like Python), other a bit more complex (like C++, see "Curiously Recurring Template Patterns", or CRTP).
+A code example of mixins is beyond the scope of this book, since each language has its own way of implementing mixins, some easy (like Python), other a bit more complex (like C++, see "Curiously Recurring Template Patterns", or C.R.T.P.).
 
 ### The Diamond Problem
 
@@ -637,7 +637,7 @@ The parts involved are defined as "coupled" because, even though they are separa
 
 Introducing unnecessary coupling in our software will come back to bite us in the future, affecting maintainability in a very negative way, since any edit we make (for instance, to fix a bug) can potentially lead to edit the rest of the software (or game) we are writing.
 
-Reducing coupling is done by reducing interdependency, coordination and information flow between elements of a program.
+Reducing coupling is done by reducing interdependence, coordination and information flow between elements of a program.
 
 Examples of coupling include:
 
@@ -654,9 +654,9 @@ We may be tempted to try and "remove coupling completely", but that's usually a 
 
 ### The DRY Principle
 
-DRY is a mnemonic acronym that stands for "Don't Repeat Yourself" and condenses in itself the principle of reducing repetition inside a software, replacing it with *abstractions* and by *normalizing data*.
+DRY is a mnemonic acronym that stands for "Don't Repeat Yourself" and condenses in itself the principle of reducing repetition inside a software, replacing it with *abstractions* and by *normalising data*.
 
-This allows for each piece of code (and knowledge, since the DRY principle applies to documentation too) to be unambiguous, centralizing its responsibilities and avoiding repetition.
+This allows for each piece of code (and knowledge, since the DRY principle applies to documentation too) to be unambiguous, centralising its responsibilities and avoiding repetition.
 
 Violations of the DRY principle are called "WET" (write everything twice) solutions, which base themselves on repetition and give higher chances of mistakes and inconsistency.
 
@@ -668,7 +668,7 @@ SOLID is a mnemonic acronym that condenses five principles of good design, to ma
 - **Open-closed Principle**: Each software entity should be open to extension, but closed for modification. This means that each class (for instance) should be extensible, either via inheritance or composition, but it should not be possible to modify the class's code. This is practically enforcing *Information Hiding*.
 - **Liskov Substitution Principle**: Objects in a program should be replaceable with instances of their subtypes and the correctness of the program should not be affected. This is the base of inheritance and polimorphism, if by substituting a base class with one of its child (which should have a Child-is-a-Base relationship, for instance "Circle is a shape") the program is not correct anymore, either something is wrong with the program, or the classes should not be in a "IS-A" relationship.
 - **Interface Segregation**: Classes should provide many specific interfaces instead of one general-purpose interface, this means that no client should depend on methods that it doesn't use. This makes the software easier to refactor and maintain, and reduces coupling.
-- **Dependency Inversion**: Software components should depend on abstractions and not concretions. This is another staple of nutshell programming and OOP - Each class should make use of some other class's interface, not its inner workings. This allows for maintainability and easier update and change of code, without having the changes snowball into an Armageddon of errors.
+- **Dependency Inversion**: Software components should depend on abstractions and not concretions. This is another staple of nutshell programming and O.O.P. - Each class should make use of some other class's interface, not its inner workings. This allows for maintainability and easier update and change of code, without having the changes snowball into an Armageddon of errors.
 
 ### "Composition over Inheritance" design
 
@@ -714,7 +714,7 @@ entity:
       duration: 0.1
 ```
 
-With more complex building algorithms, it is possible to change behaviours and much more with just a configuration file, and this gives itself well to roguelike games, which random selection of enemies can benefit from an extension of the enemy pool. In fact, it's really easy to configure a new type of enemy and have it work inside the game without recompiling anything.
+With more complex building algorithms, it is possible to change behaviours and much more with just a configuration file, and this gives itself well to rogue-like games, which random selection of enemies can benefit from an extension of the enemy pool. In fact, it's really easy to configure a new type of enemy and have it work inside the game without recompiling anything.
 
 This allows for more readable code and a higher extensibility.
 
@@ -748,7 +748,7 @@ Actors are represented with a stick figure and can inherit from each other: this
 
 In the previous example, we can see that a "Free User" is an "Authenticated User", as well as a "Power User" (which could be a paying user) is itself an "Authenticated User" while an "Ultimate User" (which could be a higher tier of paying user) is a "Power User" (thus has all the "Power User" capabilities, plus some unique) and by transitive property an "Authenticated User".
 
-As seen, inheritance between actors is represented with a solid line with a hollow closed arrow. Such arrow points towards the "supertype" or "parent" from which the subject (or "subtype", or "child") inherits.
+As seen, inheritance between actors is represented with a solid line with a hollow closed arrow. Such arrow points towards the "super-type" or "parent" from which the subject (or "sub-type", or "child") inherits.
 
 This representation will come back in the UML language for other diagrams too.
 
@@ -762,7 +762,7 @@ Use cases are represented with an ellipse with the name of the use case inside. 
 
 ##### Inheritance
 
-As with many other elements used in UML, use cases can inherit from each other. Inheritance (also called "Generalization") is represented with a closed hollow arrow that points towards the parent use case.
+As with many other elements used in UML, use cases can inherit from each other. Inheritance (also called "Generalisation") is represented with a closed hollow arrow that points towards the parent use case.
 
 ![Example of a use case hierarchy](./images/computer_science/use_case_hierarchy.svg){width=40%}
 
@@ -770,7 +770,7 @@ As with many other elements used in UML, use cases can inherit from each other. 
 
 Use case extensions specify how and when optional behaviour takes place. Extended use cases are meaningful on their own and are independent from the extending use case, while the extending use case define the optional behaviour that may not have much sense by itself.
 
-Extensions are represented via a dashed line with an open arrow on the end, labeled with the `<<extend>>` keyword, pointing towards the extending use case.
+Extensions are represented via a dashed line with an open arrow on the end, labelled with the `<<extend>>` keyword, pointing towards the extending use case.
 
 ![Example of a use case extension](./images/computer_science/use_case_extension.svg){width=40%}
 
@@ -780,7 +780,7 @@ Inclusions specify how the behaviour of the included use case is inserted in the
 
 In this situation, the including use case **is not** complete by itself.
 
-Inclusions are represented via a dashed line with an open arrow on the end, labeled with the `<<include>>` pointing towards the included use case.
+Inclusions are represented via a dashed line with an open arrow on the end, labelled with the `<<include>>` pointing towards the included use case.
 
 ![Example of a use case inclusion](./images/computer_science/use_case_inclusion.svg){width=40%}
 
@@ -802,7 +802,7 @@ Use cases can be further detailed by creating sub-use cases, like the following 
 
 #### Classes
 
-Class diagrams are used a step after analyzing your game, since they are used for planning classes. The central element of a class diagram is the "class", which is represented as follows:
+Class diagrams are used a step after analysing your game, since they are used for planning classes. The central element of a class diagram is the "class", which is represented as follows:
 
 ![Example of classes in UML](./images/computer_science/class_example.svg){width=60%}
 
@@ -817,11 +817,11 @@ Static members are shown with an \underline{underlined} name, while abstract mem
 Sometimes there is a need to convey the concept of "interface" inside a UML class diagram, that can easily be done in 2 ways:
 
 - By using the class construct, with the keyword (called "stereotype") `<<interface>>` written on top of it;
-- By using the "lollipop notation" (also called "interface realization").
+- By using the "lollipop notation" (also called "interface realisation").
 
 ![Defining an interface in UML](./images/computer_science/interface.svg){width=15%}
 
-![Interface Realization in UML](./images/computer_science/interface_realization.svg){width=15%}
+![Interface Realisation in UML](./images/computer_science/interface_realization.svg){width=15%}
 
 #### Relationships between entities of the class diagram
 
@@ -831,21 +831,21 @@ Expressing only single classes on their own doesn't give UML a lot of expressive
 
 ##### Inheritance
 
-Inheritance is represented via a hollow closed arrow head that points towards the base class (exactly like in [Actor inheritance](#UMLUserCaseActors)), this means that the classes are in a "supertype and subtype" relationship.
+Inheritance is represented via a hollow closed arrow head that points towards the base class (exactly like in [Actor inheritance](#UMLUserCaseActors)), this means that the classes are in a "super-type and sub-type" relationship.
 
 ![Example of inheritance in UML class diagrams](./images/computer_science/class_inheritance.svg){width=15%}
 
 In this example we say that "Student IS-A Person" and inherits all Person's methods and fields.
 
-##### Interface realization
+##### Interface realisation
 
-Interface realization can be complex to understand at first, given its formal definition:
+Interface realisation can be complex to understand at first, given its formal definition:
 
-> The interface realization relationship specifies that the realizing class must conform to the contract that the provided interface specifies.
+> The interface realisation relationship specifies that the realising class must conform to the contract that the provided interface specifies.
 
-In short, it means that the class is implementing all the methods specified by the interface (thus "realizing" it, as in making it real).
+In short, it means that the class is implementing all the methods specified by the interface (thus "realising" it, as in making it real).
 
-![Example of interface realization in UML class diagram](./images/computer_science/class_interface_realization.svg){width=30%}
+![Example of interface realisation in UML class diagram](./images/computer_science/class_interface_realization.svg){width=30%}
 
 ##### Association
 
@@ -913,9 +913,9 @@ All the branches that depend on a condition or are part of a loop start and end 
 
 ![Example of how nested loops and conditions are performed](./images/computer_science/nested_activity.svg){width=40%}
 
-#### Synchronization
+#### Synchronisation
 
-Synchronization (or parallel processing) is represented in activity diagrams by using filled black bars that enclose the concurrent processes: the bars are called "synchronization points" or "forks" and "joins"
+Synchronisation (or parallel processing) is represented in activity diagrams by using filled black bars that enclose the concurrent processes: the bars are called "synchronisation points" or "forks" and "joins"
 
 ![Example of concurrent processes in activity diagrams](./images/computer_science/activity_concurrent.svg){width=30%}
 
@@ -935,7 +935,7 @@ The "Sent Signal" symbol is represented with a convex pentagon (which reminds an
 
 #### Swimlanes
 
-Swimlanes are a way to organize and group related activities in columns. For instance a shopping activity diagram can have the "Customer", "Order", "Accounting" and "Shipping" swimlanes, each of which contains activities related to their own categories.
+Swimlanes are a way to organise and group related activities in columns. For instance a shopping activity diagram can have the "Customer", "Order", "Accounting" and "Shipping" swimlanes, each of which contains activities related to their own categories.
 
 ![Example of swimlanes in activity diagrams](./images/computer_science/activity_swimlanes.svg){width=50%}
 
@@ -977,13 +977,13 @@ Messages are represented by arrows and an example can be seen here:
 
 ![Messages in a sequence diagram](./images/computer_science/sequence_messages.svg){width=50%}
 
-Let's analyze them one by one:
+Let's analyse them one by one:
 
-- **Found Messages** are messages that come from "outside", from the perspective of the part of the system we are analyzing, they may come from another system or even the user.
+- **Found Messages** are messages that come from "outside", from the perspective of the part of the system we are analysing, they may come from another system or even the user.
 - **Synchronous Messages and returns** are messages that activate a class and wait for a "return message". These usually represent a synchronous function call (but it can represent a more abstract concept).
 - **Asynchronous Messages** are messages that activate a class but don't wait for a return value. These usually represent asynchronous functions calls.
 - **Self-messages** are messages from an object to itself, they usually represent an internal function call.
-- **Lost Messages** are messages sent towards the "outside", from the perspective of the part of the system we are analyzing.
+- **Lost Messages** are messages sent towards the "outside", from the perspective of the part of the system we are analysing.
 
 #### Object Instantiation and Destruction
 
@@ -1005,7 +1005,7 @@ Like all UML diagrams, it is possible to use notes to add some comments that may
 
 ### Other diagrams
 
-UML is composed by a ton of diagrams that can be used to communicate with your teammates and organize your work, among them we find:
+UML is composed by a ton of diagrams that can be used to communicate with your teammates and organise your work, among them we find:
 
 - Component Diagrams;
 - Communication Diagrams;
@@ -1071,7 +1071,7 @@ Some other implementations use a $\frac{1}{4}$/$\frac{3}{4}$ rule, halving the a
 | :---------:                | :-----:                |
 | Indexing                   | O(1)                   |
 | Insert/Delete At Beginning | O(n)                   |
-| Insert/Delete At End       | O(1) amortized         |
+| Insert/Delete At End       | O(1) amortised         |
 | Insert/Delete at position  | O(n)                   |
 
 Table: Performance table for Dynamic Arrays
@@ -1260,7 +1260,7 @@ Heaps are one of the maximally efficient implementation of priority queues, sinc
 | :---------:    | :-----:             |
 | Find Minimum   | $O(1)$ to $O(log(n))$, depending on the implementation |
 | Remove Minimum | $O(log(n))$         |
-| Insert         | $\Theta(1)$ to $O(log(n))$ depending on the implementaion |
+| Insert         | $\Theta(1)$ to $O(log(n))$ depending on the implementation |
 
 Table: Performance table for Heaps
 
@@ -1345,14 +1345,14 @@ Let's see an example implementation:
 ```
 
 :::: pitfall ::::
-It is extremely important that we keep our "redundant properties" synchronized with the actual state of our objects, even when exceptions are raised. Not doing so will create bugs.
+It is extremely important that we keep our "redundant properties" synchronised with the actual state of our objects, even when exceptions are raised. Not doing so will create bugs.
 :::::::::::::::::
 
 {{placeholder}}
 
 <!-- TODO: Talk about how data redundancy can be used to speed up some operations (like having a list with a counter speeds up counting items) at the expense of some heavier operations (add and remove will need to update the counter) and the risks involved (like the counter desyncing in some cases if there are bugs) -->
 
-Introduction to MultiTasking
+Introduction to Multi-Tasking
 ------------------------------
 
 When it comes to humans, we are used to have everything at our disposal immediately, but when it comes to computers, each processing unit (CPU) is usually able to perform only one task at a time.
@@ -1365,16 +1365,16 @@ To allow for multi-tasking (doing many activities at once), the CPU switches bet
 
 <!-- TODO: A lean introduction to the concept of co-routines -->
 
-Introduction to MultiThreading {#multithreading}
+Introduction to Multi-Threading {#multithreading}
 ------------------------------
 
 <!-- TODO: How to implement multi-threading via mutex, immutable objects and atomic operations -->
 
 When it comes to games and software, we usually think of it as a single line of execution, branching to (not really) infinite possibilities; but when it comes to games, we may need to dip our toes into the world of multi-threaded applications.
 
-### What is MultiThreading
+### What is Multi-Threading
 
-MultiThreading means that multiple threads exist in the context of a single process, each thread has an independent line of execution but all the threads share the process resources.
+Multi-Threading means that multiple threads exist in the context of a single process, each thread has an independent line of execution but all the threads share the process resources.
 
 In a game, we have the "Game Process", which can contain different threads, like:
 
@@ -1383,11 +1383,11 @@ In a game, we have the "Game Process", which can contain different threads, like
 - Loading Thread
 - ...
 
-MultiThreading is also useful when we want to perform concurrent execution of activities.
+Multi-Threading is also useful when we want to perform concurrent execution of activities.
 
-### Why MultiThreading?
+### Why Multi-Threading?
 
-Many people think of MultiThreading as "parallel execution" of tasks that leads to faster performance. That is not always the case. Sometimes MultiThreading is used to simplify data sharing between flows of execution, other times threads guarantee lower latency, other times again we may *need* threads to get things working at all.
+Many people think of Multi-Threading as "parallel execution" of tasks that leads to faster performance. That is not always the case. Sometimes Multi-Threading is used to simplify data sharing between flows of execution, other times threads guarantee lower latency, other times again we may *need* threads to get things working at all.
 
 For instance let's take a loading screen: in a single-threaded application, we are endlessly looping in the input-update-draw cycle, but what if the "update" part of the cycle is used to load resources from a slow storage media like a Hard Disk or even worse, a disk drive?
 
@@ -1435,7 +1435,7 @@ Critical Regions (sometimes called "Critical Sections") are those pieces of code
 
 ### Ensuring determinism
 
-Let's take a look at how to implement multithreading in a safe way, allowing our game to perform better without non-deterministic behaviours. There are other implementation approaches (like thread-local storage and re-entrancy) but we will take a look at the most common here.
+Let's take a look at how to implement multi-threading in a safe way, allowing our game to perform better without non-deterministic behaviours. There are other implementation approaches (like thread-local storage and re-entrancy) but we will take a look at the most common here.
 
 #### Immutable Objects
 
@@ -1443,7 +1443,7 @@ The easiest way to implement thread-safety is to make the shared data immutable.
 
 #### Mutex
 
-Mutex (Short for **mut**ual **ex**clusion) means that the access to the shared data is serialized in a way that only one thread can read or write to such data at any given time. Mutual exclusion can be achieved via algorithms (be careful of *out of order execution*~[g]~), via hardware or using "software mutex devices" like:
+Mutex (Short for **mut**ual **ex**clusion) means that the access to the shared data is serialised in a way that only one thread can read or write to such data at any given time. Mutual exclusion can be achieved via algorithms (be careful of *out of order execution*~[g]~), via hardware or using "software mutex devices" like:
 
 - Locks (known also as *mutexes*)
 - Semaphores
@@ -1452,7 +1452,7 @@ Mutex (Short for **mut**ual **ex**clusion) means that the access to the shared d
 - Recursive Locks
 - ...
 
-Usually these multithreaded functionalities are part of the programming language used, or available via libraries.
+Usually these multi-threaded functionalities are part of the programming language used, or available via libraries.
 
 #### Atomic Operations
 
