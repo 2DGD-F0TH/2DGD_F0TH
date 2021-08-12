@@ -41,6 +41,7 @@ Collections of different topics
 
 - **Daily "Free Learning" offer from PacktPub:** <https://www.packtpub.com/free-learning> {{freeprod}}
 - **"Awesome lists":** <https://github.com/sindresorhus/awesome> {{freeprod}}
+- **Gamedevelop.io:** <https://gamedevelop.io/> {{freeprod}}
 
 Pixel Art
 -----------
