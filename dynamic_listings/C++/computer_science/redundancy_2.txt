@@ -1,0 +1,32 @@
+class List{
+    private:
+        Node* nodeList;
+        int length;
+    // ...
+    public:
+        int getLength(){
+            return length;
+        }
+
+        void addItem(Node* node){
+            // ... Normal operation ...
+            // ...
+            // We update our length counter
+            length = length + 1;
+        }
+
+        void removeItem(Node* node){
+            // ... Normal removal operation ...
+            // ...
+            // We update our length counter
+            length = length - 1;
+        }
+
+        void clear(){
+            // ... Normal clear operation ...
+            // ...
+            // We clear the length too
+            length = 0;
+        }
+    // ...
+}
