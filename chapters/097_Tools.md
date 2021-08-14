@@ -24,6 +24,12 @@ Aseprite is an open-source and commercial tool for creating pixel-art graphics. 
 
 <https://www.aseprite.org/>
 
+### LibreSprite {-}
+
+LibreSprite was created as a fork of Aseprite, but it keeps the previous GNU GPL 2 license.
+
+<https://libresprite.github.io/>
+
 ### Pixelorama {-}
 
 Pixelorama is a really interesting beast, since it is made using the Godot game engine and GDScript, it features tools, animation timeline, tool options, pattern filling, and many many more interesting features.
