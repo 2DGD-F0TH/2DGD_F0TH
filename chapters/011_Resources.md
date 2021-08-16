@@ -706,6 +706,55 @@ The doppler effect would actually apply to light too, but we would need to have 
 
 <!-- TODO: Explain the difference between FM Synthesis and modern sample-based music -->
 
+### Simulating older consoles' audio
+
+Sometimes we want to give our players a sensation of nostalgia, or we just want to limit ourselves to get the most out of our creativity (creativity comes from limitations), so we may decide to emulate the audio of a famous console (or at least remember of it in some way).
+
+It's not sufficient to "make it sound" the same way (same pitch, same general sound) but we also need to adhere at the limitations of the consoles. Let's take a look at some of the most famous.
+
+#### Commodore Vic20
+
+<!-- TODO: VIC chip: 3 pulse wave (range of 3 octaves, each octave is one octave apart from the others, so you get octaves 1,3,5 or 2,4,6, etc...) + Noise -->
+{{placeholder}}
+
+#### Commodore 64
+
+{{placeholder}}
+
+<!-- TODO: MOS 6581/8580: 3 channels (pulse, sawtooth, triangle, noise) that can be reprogrammed in real time, ADSR controls for each channel -->
+
+#### Commodore Amiga
+
+{{placeholder}}
+
+<!-- TODO: 4 Channel sample-based stereo -->
+
+#### Sega Master System / GameGear
+
+{{placeholder}}
+
+<!-- TODO: TI-SN76489 equivalent: 3 pulse wave + noise -->
+
+#### Sega Genesis
+
+<!-- TODO: TI-SN76489 equivalent + Yamaha YM2612 = 3 pulse wave + noise + 6 FM channels + 1 DAC, stereo-->
+{{placeholder}}
+
+#### NES
+
+<!-- TODO: 5 channels: 2 pulse, 1 triangle, 1 noise, 1 DAC + extensions given from cartridges -->
+{{placeholder}}
+
+#### SNES
+
+{{placeholder}}
+<!-- TODO: Nintendo S-SMP: 8 FM channels stereo -->
+
+#### AdLib / SoundBlaster
+
+{{placeholder}}
+<!-- TODO: 9 Channels - Sine-based sound (pure sine, sine with muted negative end, |sin(x)|, pseudo-sawtooth) -->
+
 ### "Swappable" sound effects
 
 Back to our walking example, an idea to increase the variety of sound effects at our disposal would be keeping a list of "swappable sounds": sounds that are still part of the class we're considering, but are radically different.
