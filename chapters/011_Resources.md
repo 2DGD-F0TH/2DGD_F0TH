@@ -710,50 +710,91 @@ The doppler effect would actually apply to light too, but we would need to have 
 
 Sometimes we want to give our players a sensation of nostalgia, or we just want to limit ourselves to get the most out of our creativity (creativity comes from limitations), so we may decide to emulate the audio of a famous console (or at least remember of it in some way).
 
-It's not sufficient to "make it sound" the same way (same pitch, same general sound) but we also need to adhere at the limitations of the consoles. Let's take a look at some of the most famous.
+It's not sufficient to "make it sound" the same way (same pitch, same general sound) but we also need to adhere at the limitations of the consoles. Usually such limitations are in the number of channels (which means the number of notes that can played at once by all instruments), but sometimes it's more structural.
+
+:::: note ::::
+These is just a simplified version of the limitations of each console. Also if you want you can freely break any of the "rules" and make something original that has the "taste" of something "classic".
+::::::::::::::
+
+Let's take a look at some of the most famous.
 
 #### Commodore Vic20
 
-<!-- TODO: VIC chip: 3 pulse wave (range of 3 octaves, each octave is one octave apart from the others, so you get octaves 1,3,5 or 2,4,6, etc...) + Noise -->
-{{placeholder}}
+The Commodore Vic20 is one of the first famous home computers; its audio comes from the VIC chip, the same chip that takes care of the video output.
+
+The VIC chip has 3 channels dedicated only to square/pulse waves, with a range of 3 octaves where each octave is a single octave apart from the others (So its octave structure would be something like 1st - 3rd - 5th).
+
+The VIC chip also features a noise channel, for a total of 4 voices. Remember that these voices are shared between music and sound effects.
 
 #### Commodore 64
 
-{{placeholder}}
+Probably the most famous home computer of the 8-bit era and had an amazing sound chip for the time: the timeless SID chip.
 
-<!-- TODO: MOS 6581/8580: 3 channels (pulse, sawtooth, triangle, noise) that can be reprogrammed in real time, ADSR controls for each channel -->
+The SID chip (in its two main iterations: the MOS 6581 and the 8580) has 3 channels, each one can be reprogrammed in real time to use one of four wave forms:
+
+- Square/pulse wave
+- Triangle
+- Sawtooth
+- Noise
+
+This real-time programming capability makes it easier to give the "illusion of more instruments", also the SID chip features ADSR controls for each channel, giving more possibilities.
 
 #### Commodore Amiga
 
-{{placeholder}}
+This is another famous home computer, although some could argue that it was being produced during the fall of Commodore, it is still the cradle of sample-based music and music trackers.
 
-<!-- TODO: 4 Channel sample-based stereo -->
+The Commodore Amiga's sound chip, name Paula, had a 4-channel PCM sample-based sound system, where each sample has an 8-bit resolution. Nothing stops people from just mixing more samples together and give the illusion of more channels.
+
+Another limitation of the Paula chip is that 2 channels are strictly dedicated to the "left" stereo channel, while the other 2 are for the "right" stereo channel.
 
 #### Sega Master System / GameGear
 
-{{placeholder}}
+The Sega Master System is a quite famous 8-bit console, which had moderate success, and has a lot in common (hardware-wise) with the portable Sega GameGear and those similarities extend to the sound chip too.
 
-<!-- TODO: TI-SN76489 equivalent: 3 pulse wave + noise -->
+The sound chip used is an equivalent of the Texas Instruments SN76489 which features 3 channels dedicated to square/pulse waves + a noise channel.
 
-#### Sega Genesis
+:::: trivia ::::
+The ancestor of the Master System, the SEGA SG-1000 used a real TI-SN76489, while the Master System uses a "clone" integrated into its VDP (Video Display Processor).
+::::::::::::::::
 
-<!-- TODO: TI-SN76489 equivalent + Yamaha YM2612 = 3 pulse wave + noise + 6 FM channels + 1 DAC, stereo-->
-{{placeholder}}
+#### Sega Genesis/MegaDrive
+
+Probably Sega's most famous console: the Genesis/MegaDrive is a bit of a weird beast when it comes to sound. You'll see why.
+
+Mainly the console uses a Yamaha YM2612 chip for sound, which offers 6 programmable FM channels + 1 DAC (digital to analog converter) that can play small samples. The sound chip is technically stereo, but the feature is underused due to the fact that in the original console stereo sound could be heard only through the headphone jack.
+
+In addition, mostly for Master System compatibility, the console features a TI-SN76489 chip equivalent (integrated into its VDP), adding 3 square wave channels and a noise channel.
+
+:::: trivia ::::
+To underline how important the sound was in this console, just think that sound had its own dedicated fully-fledged CPU! It was a Zylog Z80, the same used as main CPU in the Sinclair ZX Spectrum.
+::::::::::::::::
 
 #### NES
 
-<!-- TODO: 5 channels: 2 pulse, 1 triangle, 1 noise, 1 DAC + extensions given from cartridges -->
-{{placeholder}}
+Probably the most famous console in the world, the NES had a limited but interesting toolkit for its sound.
+
+The base console had 5 channels, distributed as follows:
+
+- 2 channels dedicated to square waves;
+- 1 channel only for triangle waves;
+- 1 noise channel;
+- 1 channel dedicated to playing small digital sound samples (used normally for drums).
+
+But what's most interesting is that such capabilities could be extended by cartridge hardware, the most famous is probably the Konami VRC6, which added 2 more square wave channels, as well as a sawtooth one, used in Castlevania III.
+
+:::: trivia ::::
+Just to underline how extensible this system was, the Konami VRC7 contained a sound chip that provided a 6-channel FM sythetizer. Sadly its extended audio capabilities were used in a single, japan-exclusive game.
+::::::::::::::::
 
 #### SNES
 
-{{placeholder}}
-<!-- TODO: Nintendo S-SMP: 8 FM channels stereo -->
+The SNES is a huge step forward in time for audio on Nintendo systems, featuring 8 channels that make use of 8-bit samples.
+
+The S-SMP Chip also features a variety of filters and effects, so you have pretty much full freedom except for the number of channels.
 
 #### AdLib / SoundBlaster
 
-{{placeholder}}
-<!-- TODO: 9 Channels - Sine-based sound (pure sine, sine with muted negative end, |sin(x)|, pseudo-sawtooth) -->
+The AdLib and SoundBlaster cards are based on the Yamaha YM3812 chip, which features 9 channels that use a digital oscillator. Given the high number of channels and the freedom given by them, it's pretty easy to get a result that sounds like old DOS game as soon as you get the tone down.
 
 ### "Swappable" sound effects
 
