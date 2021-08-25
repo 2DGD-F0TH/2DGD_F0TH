@@ -404,9 +404,15 @@ This approach is usually used during migration from a Scrum-Based approach to a 
 
 ### Lean Development
 
-{{placeholder}}
+Lean development tries to bring the principles of lean manufacturing into software development. The basis of lean development is divided in 7 principles:
 
-<!-- TODO: Talk about lean development principles and history -->
+- **Remove Waste:** "waste" can be partial work, useless features, waiting, defects, work changing hands...
+- **Amplify Learning:** coding is seen as a learning process and different ideas should be tested on the field, giving great importance to the learning process;
+- **Decide late:** the later you take decisions, the more assumptions and predictions are replaced with facts, Also strong committments should happen as late as possible, as they will make the system less flexible;
+- **Deliver early:** technology evolves rapidly, and the one that survives is the fastest. If you can deliver your product free from defects as soon as possible you will get feedback quickly, and get to the next iteration sooner;
+- **Empower the team:** managers are taught to listen to the developers, as well as provide suggestions;
+- **Build integrity in:** the components of the system should work well together and give a cohesive experience, giving the customer and impression of integrity;
+- **Optimize the whole:** optimization is done by splitting big tasks into smaller ones which helps finding and eliminating the cause of defects.
 
 ### Where to go from here
 
