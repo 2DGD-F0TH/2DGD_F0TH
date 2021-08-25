@@ -1368,13 +1368,17 @@ Introduction to Multi-Tasking
 
 When it comes to humans, we are used to have everything at our disposal immediately, but when it comes to computers, each processing unit (CPU) is usually able to perform only one task at a time.
 
-To allow for multi-tasking (doing many activities at once), the CPU switches between tasks at high speeds, giving us the illusion that many things are happening at once. There are many methods to ensure multi-tasking without *process starvation*~[g]~, the most used is **pre-emption** where there are forced context switches between processes, to avoid one hogging the CPU.
+To allow for multi-tasking (doing many activities at once), the CPU switches between tasks at high speeds, giving us the illusion that many things are happening at once. There are many methods to ensure multi-tasking without *process starvation*~[g]~, the most used is *pre-emption*~[g]~ where there are forced context switches between processes, to avoid one hogging the CPU.
 
-### Co-Routines
+### Coroutines
 
-{{placeholder}}
+If you search for the word "coroutine" online, you will find a lot of extremely convoluted explanations involving the knowledge of the difference between *preemptive*~[g]~ and *non-preemptive* multitasking, subroutines, threads and lots more. Let's try to make sense of this.
 
-<!-- TODO: A lean introduction to the concept of co-routines -->
+First of all, coroutines are computer programs can run in multitasking (so it can run separated from our main game loop) which are used in non-preemptive multitasking. Differently from the preemptive style defined in the glossary, in non preemptive multitasking the operating system never forces a context switch, but it's the coroutine's job to **yield** the control over to another function.
+
+Instead of "fighting for resources", coroutines politely free the processor and give control of it to something else (could be the caller or another coroutine), this form of multitasking is often called **cooperative multitasking**.
+
+A particularly interesting point of coroutines is the fact that their execution can be "suspended" and "resumed" without losing its internal state. Coroutines are using in more advanced engines (using the *Actor Model*) and in some particular situations. You may never need to use a single coroutine, or you may need to use them every day, so it's worth knowing at least what they are.
 
 Introduction to Multi-Threading {#multithreading}
 ------------------------------

@@ -85,8 +85,16 @@ Out of order execution
 P {-}
 -----
 
+Pre-emption
+: See *preemptive multitasking*
+
+
+Preemptive multitasking
+: A multitasking environment where the operating system forcibly initiates context switches (saves the state and interrupts temporarily) between running processes, regardless whether their job is finished or not.
+
 Process Starvation
 : See *starvation*
+
 
 R {-}
 -----
