@@ -1348,9 +1348,20 @@ Let's see an example implementation:
 It is extremely important that we keep our "redundant properties" synchronised with the actual state of our objects, even when exceptions are raised. Not doing so will create bugs.
 :::::::::::::::::
 
-{{placeholder}}
+Let's consider another example: we have a standard linked list, like the one that follows:
 
-<!-- TODO: Talk about how data redundancy can be used to speed up some operations (like having a list with a counter speeds up counting items) at the expense of some heavier operations (add and remove will need to update the counter) and the risks involved (like the counter desyncing in some cases if there are bugs) -->
+![Singly-Linked List has no redundancy](./images/computer_science/linked_list_no_redundancy.svg){width=60%}
+
+Our "pointer" is pointing the node containing the number "5", and now we want to know the value of the node that precedes it. To do that we need to start from the head, saving in a temporary variable our nodes, until we find the node pointed by our "pointer".
+
+```{src='computer_science/redundancy_3' caption='Finding the previous element in a singly linked list'}
+```
+
+This operation has $O(n)$ complexity, which is not great. If we wanted to print a list in reverse with such technique, the situation would be even worse.
+
+Doubly-linked lists are another example of data redundancy. We are saving the content of the "previous" node, so that we can do a simple lookup with complexity $O(1)$ and easily (and efficiently) do our "reverse printing".
+
+![A doubly linked list is an example of redundancy](./images/computer_science/doubly_linked_list_redundancy.svg){width=60%}
 
 Introduction to Multi-Tasking
 ------------------------------
