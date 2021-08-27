@@ -1034,6 +1034,10 @@ We will include big-O performance counters for the basic functions of: adding/re
 
 This section is in no way exhaustive, but should be enough to make an informed decision on what containers to use for our components, according to necessities.
 
+:::: note ::::
+This section will be purely theoretical and no code will be shown for any container, this is because implementations vary wildly between programming languages and some of these "advanced containers" are integrated in such languages.
+::::::::::::::
+
 ### Dynamic Arrays
 
 In many languages, arrays are sized statically, with a size decided at compile time. This severely limits the array's usefulness.
@@ -1063,9 +1067,6 @@ Some implementations of the Dynamic Arrays try to save space when the number of 
 Some other implementations use a $\frac{1}{4}$/$\frac{3}{4}$ rule, halving the array capacity when the item deletion brings the number of items lower than $\frac{1}{4}$ of the array and doubling it when an insertion makes the number of elements higher than $\frac{3}{4}$ of the array capacity.
 
 **Note:** Not all programming languages have native support for arrays, for instance Python uses lists.
-
-{{placeholder}}
-<!-- TODO: Code to make a dynamic array? -->
 
 | Operation                  | Average Cost           |
 | :---------:                | :-----:                |
@@ -1114,9 +1115,6 @@ Inserting at an arbitrary position requires us to scan the list until we find th
 
 ![Inserting a new node at an arbitrary position in a (double-ended) linked list](./images/computer_science/de_linked_list_insert_arbitrary.svg){width=90%}
 
-<!-- TODO: Code for linked list? -->
-{{placeholder}}
-
 | Operation                  | Average Cost                         |
 | :---------:                | :-----:                              |
 | Indexing                   | O(n)                                 |
@@ -1145,10 +1143,6 @@ A doubly-linked list is a variation of a linked list where each node not only ha
 All the operations of insertion, indexing and deletion are performed in a similar fashion to the classic singly-linked list we saw earlier, just with an additional pointer to account for.
 
 ![Doubly Linked List Reference Image](./images/computer_science/doubly_linked_list_reference.svg){width=60%}
-
-<!-- TODO: Code for doubly linked lists? -->
-
-{{placeholder}}
 
 | Operation                  | Average Cost          |
 | :---------:                | :-----:               |
@@ -1276,9 +1270,6 @@ Table: Performance table for Heaps
 
 Table: Summary Table for Heaps
 
-<!-- TODO: Code for heaps? -->
-{{placeholder}}
-
 ### Stacks
 
 Stacks are a particular data structure, they have a limited way of working: you can only put or remove items on top of the stack, plus being able to "peek" on top of the stack.
@@ -1290,10 +1281,6 @@ Stacks are LIFO (Last in - First Out) data structures, and can be implemented wi
 Depending on the single implementation, the operation used to "pop" an item from the stack will also return the element, ready to be used in an upcoming computation.
 
 ![Array and linked list implementations of a stack](./images/computer_science/stack_implementation.svg){width=40%}
-
-{{placeholder}}
-
-<!-- TODO: Code for stacks? -->
 
 ### Queues
 
@@ -1307,10 +1294,6 @@ As with stacks, queues leverage limitations in their way of working for greater 
 
 ![Array and linked list implementation of a queue](./images/computer_science/queue_implementation.svg){width=40%}
 
-{{placeholder}}
-
-<!-- TODO: Code for Queues? -->
-
 ### Circular Queues
 
 Circular Queues are a particular kind of queues that are infinitely iterable, every time an iterator goes after the last element in the queue, it will wrap around to the beginning.
@@ -1320,10 +1303,6 @@ Circular Queues are a particular kind of queues that are infinitely iterable, ev
 Circular Queues can be implemented via linked lists or cleverly indexed arrays, with all the advantages and disadvantages that such structures entail.
 
 ![Array and linked list implementation of a circular queue](./images/computer_science/circular_queue_implementation.svg){width=50%}
-
-{{placeholder}}
-
-<!-- TODO: Code for circular queues? -->
 
 Data Redundancy
 ---------------
