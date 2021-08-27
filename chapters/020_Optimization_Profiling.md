@@ -49,10 +49,11 @@ First of all, you should check if you're using the frame limiting approaches off
 
 If you have taken all the frame limiting approaches as stated above, that may mean that the game is doing a lot of CPU work and you may need to make the game perform less work for each frame. In this case profiling tools are precious to find the spots where the CPU spends most of its time: Valgrind or GProf are great profiling tools.
 
-If instead your game is not using all of the CPU computing power, you may have a problem on the GPU: your game may be calling the drawing routines too often. The less a game has to communicate with the hardware, the higher the performance. In that case using Sprite Atlases and other "batching techniques" that allow to draw many objects with only one call will help your game perform better.
+![Using Valgrind's Callgrind tool and Kcachegrind we can see what is bogging down our game](./images/profiling_optimization/callgrind.png){width=60%}
 
-{{placeholder}}
-<!-- TODO: Maybe add some screenshots of htop or top to drive home the point of CPU consumption, see if it's possible to check for drawing calls (maybe kcachegrind and line_profiler?) -->
+#### Is your game overloading your GPU?
+
+If instead your game is not using all of the CPU computing power, you may have a problem on the GPU: your game may be calling the drawing routines too often. The less a game has to communicate with the hardware, the higher the performance. In that case using Sprite Atlases and other "batching techniques" that allow to draw many objects with only one call will help your game perform better.
 
 #### Is your game eating up more and more RAM as it's running?
 
