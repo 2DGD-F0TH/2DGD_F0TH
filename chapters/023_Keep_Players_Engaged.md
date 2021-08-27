@@ -53,7 +53,7 @@ The speedrunning community can really change your game from "obscure" to "well k
 
 Giving your own game a "speedrun mode" can prove beneficial, lowering the entrance bar to speedrunners and letting them know that you are thinking about them and would like them to speedrun your game.
 
-![What a possible "speedrun mode" may look like](./images/community/speedrun.png){width=60%}
+![What a simple "speedrun mode" may look like](./images/community/speedrun_simple.png){width=60%}
 
 What could such "speedrun mode" contain? More features than you may think about:
 
@@ -61,7 +61,12 @@ What could such "speedrun mode" contain? More features than you may think about:
 - **A time for each section:** usually called "splits", they can feature the difference with older recorded times for each single level or section of the game;
 - **Automatic Cutscene Skip:** cutscenes are usually just a waste of time in speedrunning, some may appreciate the fact that in this mode cutscenes don't play;
 - **Automatic chronometer stop:** the chronometer can automatically stop at the end of the game, and the game itself can identify when a section is finished, giving a consistent way of evaluating speedruns;
-- **Automatic save of best times:** this will help speedrunners with the management of their times and remember their "PB" (personal best).
+- **Automatic save of best times:** this will help speedrunners with the management of their times and remember their "PB" (personal best);
+- **An input monitor:** this will show the buttons pressed by the speedrunner, it may prove to be an invaluable tool if a new strategy is discovered.
+
+Here's how a more complex and advanced "speedrun mode" screen could look like:
+
+![What a mode advanced "speedrun mode" may look like](./images/community/speedrun_advanced.png){width=60%}
 
 Some game developers went to the extent of not fixing some glitches for the sake of speedrunning.
 
