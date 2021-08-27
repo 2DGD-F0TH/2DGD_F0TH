@@ -154,6 +154,6 @@ Open Beta is usually done to test the robustness of the network system at higher
 
 ### A/B Testing
 
-{{placeholder}}
+A/B testing is a particular kind of testing that doesn't involve the "solidity of the game", as much as the enjoyability of some of its features. In A/B testing users are randomly presented with one of two versions of a certain feature; with a slight difference (usually a single variable that affects the experience is changed) between each of the two "versions".
 
-<!-- TODO: Talk about A/B testing -->
+A/B testing is normally used in an user experience research setting, but it can be used in game development too, to see which version (usually called *variant*) is better suited for the game, or even prepare a "segmented strategy" where one of the two variants could find place in a certain situation (for example a "simplified control scheme" vs a "full control scheme").
