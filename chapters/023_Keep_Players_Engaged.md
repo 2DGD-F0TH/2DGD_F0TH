@@ -58,9 +58,10 @@ Giving your own game a "speedrun mode" can prove beneficial, lowering the entran
 What could such "speedrun mode" contain? More features than you may think about:
 
 - **A game-wide chronometer:** this will allow to register how long beating the game takes;
-- **A time for each section:** with the difference with older recorded times for each single level or section of the game;
+- **A time for each section:** usually called "splits", they can feature the difference with older recorded times for each single level or section of the game;
 - **Automatic Cutscene Skip:** cutscenes are usually just a waste of time in speedrunning, some may appreciate the fact that in this mode cutscenes don't play;
-- **Automatic chronometer stop:** the chronometer can automatically stop at the end of the game, and the game itself can identify when a section is finished, giving a consistent way of evaluating speedruns.
+- **Automatic chronometer stop:** the chronometer can automatically stop at the end of the game, and the game itself can identify when a section is finished, giving a consistent way of evaluating speedruns;
+- **Automatic save of best times:** this will help speedrunners with the management of their times and remember their "PB" (personal best).
 
 Some game developers went to the extent of not fixing some glitches for the sake of speedrunning.
 
