@@ -80,6 +80,11 @@ When it comes to photosensitivity, (very dangerous) seizures are not the only ou
 
 Having an option to disable or tone down flashing lights and intense (sometimes even overbearing) visual effects can make a game a lot more enjoyable to someone who has some kind of sensitivity to light.
 
+No motion blur
+--------------
+
+There are some people like motion blur, some who don't and some who can't physically stand it: making motion blur a toggle can be both a quality of life improvement as well as something that can help people who have issues with sight.
+
 Assisted Gameplay
 -----------------
 
