@@ -20,6 +20,7 @@ def main() -> None:
             item
             for _, _, fn in walk(pjoin(DIRECTORY, language))
             for item in fn
+            if item.endswith("txt")
         }
         print("[{}]".format(language).rjust(15, " "),
               "{}".format("|" * len(files)))
