@@ -16,12 +16,36 @@ This is a small project that aims to gather some knowledge about game developmen
 
 As well as being a source of knowledge this project aims to be a learning experience for everyone involved too, by gathering contributions from the community, teaching others how to make a game, teaching algorithms but also learning tips and tricks from people who are more experienced.
 
-Looking for contributors!
---------------------------
+**This project is looking for contributors:** [see below](#looking-for-contributors)
+
+Getting the book
+-----------------
+
+### Ready-to-read version
+
+**As of March 21st, 2021 the ready-to-read versions of this book will be available only through Itch.io**
+
+[Link to the Itch.io page](https://therealpenaz91.itch.io/2dgd-f0th)
+
+I decided to use only Itch as it's more stable and not influenced by any kind of CI/CD issue or tantrum. I have to make the files and upload them there anyway, so I may as well use that page as my main point of download for the project.
+
+Versions currently available: PDF and EPub
+
+### Source Code
+
+The source code for this ebook is available through the following official repositories:
+
+- [Link to the GitLab Repository](https://gitlab.com/Penaz/2dgd_f0th/)
+- [Link to the GitHub Repository](https://github.com/Penaz91/2DGD_F0TH)
+
+You can learn how to build the book yourself in the [specific section of this readme](#building-the-book)
+
+Looking for contributors
+------------------------
 
 Hi! Penaz here.
 
-After over 300 pages of content, I am reaching the point where I poured the majority of my knowledge inside this e-book, and simplifying and explaining takes away a lot of time. With the little time I have, research can only get me so far.
+After over 400 pages of content, I am reaching the point where I poured the majority of my knowledge inside this e-book, and simplifying and explaining takes away a lot of time. With the little time I have, research can only get me so far.
 
 I'd love to translate the currently available listings many other languages, such as lua, as well as add new algorithms, containers, tips and tricks and design patterns. Though my work leaves me very little free time to study and re-work things in a more understandable way.
 
@@ -45,24 +69,6 @@ Welcome aboard! You can contribute to this project by **forking** it and adding 
 Are you an user that would like to see something added to the book? Feel free to open an issue!
 
 All contributions will be handled with maximum respect and in accordance to our [Code of Conduct](CODE_OF_CONDUCT.md).
-
-Getting the book
------------------
-
-### Ready-to-read version
-
-**As of March 21st, 2021 the ready-to-read versions of this book will be available only through Itch.io**
-
-[Link to the Itch.io page](https://therealpenaz91.itch.io/2dgd-f0th)
-
-I decided to use only Itch as it's more stable and not influenced by any kind of CI/CD issue or tantrum. I have to make the files and upload them there anyway, so I may as well use that page as my main point of download for the project.
-
-### Source Code
-
-The source code for this ebook is available through the following official repositories:
-
-- [Link to the GitLab Repository](https://gitlab.com/Penaz/2dgd_f0th/)
-- [Link to the GitHub Repository](https://github.com/Penaz91/2DGD_F0TH)
 
 Building the book
 -------------------
