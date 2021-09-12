@@ -1,7 +1,7 @@
 {{pagebreak}}
 
-Introduction to Game Design
-============================
+A Game Design Dictionary
+========================
 
 :::::: {.epigraph author="Duane Alan Hahn"}
 Why should you make games? Do it to give players joy from your unique perspective and to have fun expressing yourself. You win and the players win.
@@ -9,7 +9,7 @@ Why should you make games? Do it to give players joy from your unique perspectiv
 
 In this section we will talk about platforms, input systems and game genres, in a quick fashion. This chapter will introduce you to the language and terms used in game design, this way the following chapters will be easier to comprehend.
 
-We will talk about the differences and challenges deriving from each decision and the basic way game genres work.
+We will talk about the differences and challenges deriving from each decision and the basic way game genres work. The objective of this chapter is giving you some terminology and knowledge about game design, before deep-diving into the topic.
 
 Platforms
 ----------
