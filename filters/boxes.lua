@@ -21,6 +21,10 @@ function boxes(elem)
             table.insert(elem.content, 1, pandoc.RawBlock('latex', '\\begin{note}'))
             table.insert(elem.content, pandoc.RawBlock('latex', '\\end{note}'))
         end
+        if elem.classes[1] == 'cover' then
+            table.insert(elem.content, 1, pandoc.RawBlock('latex', '\\begin{cover}'))
+            table.insert(elem.content, pandoc.RawBlock('latex', '\\end{cover}'))
+        end
         return elem.content
     else
         if elem.classes[1] == 'trivia' then
