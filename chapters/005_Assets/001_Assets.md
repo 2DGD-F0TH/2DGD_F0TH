@@ -1,6 +1,6 @@
 {{pagebreak}}
 
-Creating your resources
+Creating your assets
 =======================
 
 :::::: {.epigraph author="Edgar Degas"}
