@@ -1,3 +1,3 @@
 :::: cover ::::
-The basics
+Part 1: The basics
 :::::::::::::::
