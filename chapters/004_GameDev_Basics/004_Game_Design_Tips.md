@@ -1,7 +1,7 @@
 {{pagebreak}}
 
-Game Design
-=============
+Game Design Tips
+================
 
 :::::: {.epigraph author="Milton Glaser"}
 There are three responses to a piece of design - yes, no, and WOW! Wow is the one to aim for.
