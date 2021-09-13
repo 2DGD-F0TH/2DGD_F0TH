@@ -64,6 +64,11 @@ div.pitfall,div.tip,div.trivia,div.note{
     padding: 0.5em;
     margin: 1em 0;
 }
+div.cover{
+    page-break-before: always;
+    page-break-after: always;
+    font-size: 4em;
+}
 div.pitfall{
     background-color: #FFF2F2;
     border: 2px solid #BF0000;
