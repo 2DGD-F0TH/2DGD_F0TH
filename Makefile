@@ -5,7 +5,7 @@ endif
 # Some defaults
 PANDOC=pandoc
 PANDOC_STANDALONE=pandoc -s
-CHAPTERS_CMD=`find chapters/**/*.md | sort -V` metadata.yaml
+CHAPTERS_CMD=`find chapters -iname "*.md" | sort -V` metadata.yaml
 PANDOC_DEFAULT_ARGS=--lua-filter ./filters/filter_helper.lua --listings -N
 PDF_TEMPLATE=--pdf-engine=$(LATEX_ENGINE) --template template/template.tex
 EPUB_TEMPLATE=--css template/epub.css --highlight-style pygments --template template/template.xhtml
