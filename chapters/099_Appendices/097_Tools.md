@@ -54,13 +54,13 @@ Blender is an open-source surface modeling program, used in the movie industry a
 
 <https://www.blender.org/>
 
-### Laighter
+### Laighter {-}
 
 This is a great "name your own price" tool that allows you to create normal maps for 2D textures, to give your game a more "professional" feeling.
 
 <https://azagaya.itch.io/laigter>
 
-### NormalMap-Online
+### NormalMap-Online {-}
 
 This is a very nice tool that allows you to create normal maps automatically, for free. Good for a quick game jam or for starters.
 
