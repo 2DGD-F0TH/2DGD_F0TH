@@ -16,117 +16,28 @@ For each proposed engine or framework, along with a short description, you will 
 - **Platform compatibility:** This will tell you if the product is good for your objective, by telling you which platforms you can deploy on, like Linux, Windows or even on the web via HTML5;
 - **License:** This will tell you how to behave when it comes to the legal stuff, since some engines do not allow commercial use in their free versions.
 
-SFML {-}
---------
+Game Maker Studio {-}
+---------------------
 
-**Website:** <https://www.sfml-dev.org/>
+**Website:** <https://www.yoyogames.com/gamemaker>
 
-**Price:** Free
+**Price:** Commercial
 
-SFML (Simple Fast Multimedia Library) is a library dedicated to creation of multimedia applications (not limited to videogames), providing a simple interface to the system's components.
+Game Maker Studio is one of the simplest game-making toolkits available on the market, but that doesn't mean it's not powerful. In fact, one of the most famous games of recent history was made with it: Undertale.
 
-**Relevant Bindings:**
-
-| C++        | C          | C#         | Go         | Java       | Python     | Ruby       | Lua        | Rust       | JavaScript |
-|:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |
-| ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |            | ✓ |            |
-
-**Other Bindings:**
-
-| Proprietary Language | Visual Programming |
-| :-:                  | :-:                |
-|                      |                    |
-
-**Platform Compatibility:**
-
-| Windows    | Linux      | Mac OS     | iOS        | Android    | Web-Based  |
-|:-------:   |:-----:     |:------:    |:---:       |:-------:   |:---------: |
-| ✓ | ✓ | ✓ | *          | *          |            |
-
-\*: Currently in development
-
-SFML is distributed under the ZLib/png license, which allows for both commercial and personal use, both in proprietary and open-source situations.
-
-SDL {-}
-----------
-
-**Website:** <https://www.libsdl.org/>
-
-**Price:** Free
-
-SDL (Simple DirectMedia Layer) is one of the most famous libraries around to make multimedia applications as well as videogames.
+It makes use of its own scripting language, and some visual toolkits as well.
 
 **Relevant Bindings:**
 
 | C++        | C          | C#         | Go         | Java       | Python     | Ruby       | Lua        | Rust       | JavaScript |
 |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |
-| ✓ | ✓ | ✓ | ✓ |            | ✓ |            | ✓ | ✓ |            |
+|            |            |            |            |            |            |            |            |            |            |
 
 **Other Bindings:**
 
 | Proprietary Language | Visual Programming |
 | :-:                  | :-:                |
-|                      |                    |
-
-**Platform Compatibility:**
-
-| Windows    | Linux      | Mac OS     | iOS        | Android    | Web-Based  |
-|:-------:   |:-----:     |:------:    |:---:       |:-------:   |:---------: |
-| ✓ | ✓ | ✓ | ✓ | ✓ |            |
-
-SDL is distributed under the ZLib license, which allows for both commercial and personal use, both in proprietary and open-source situations. Many of the languages listed as "usable" are compatible via extensions.
-
-The versions of SDL up to version 1.2 are instead distributed under the GNU LGPL license, which is more complex and may need to be analyzed by legal experts.
-
-Löve {-}
---------
-
-**Website:** <http://love2d.org/>
-
-**Price:** Free
-
-Löve is a lua-based framework for creating games, features an extensive documentation and features some levels of abstraction that help with game development.
-
-**Relevant Bindings:**
-
-| C++        | C          | C#         | Go         | Java       | Python     | Ruby       | Lua        | Rust       | JavaScript |
-|:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |
-|            |            |            |            |            |            |            | ✓ |            |            |
-
-**Other Bindings:**
-
-| Proprietary Language | Visual Programming |
-| :-:                  | :-:                |
-|                      |                    |
-
-**Platform Compatibility:**
-
-| Windows    | Linux      | Mac OS     | iOS        | Android    | Web-Based  |
-|:-------:   |:-----:     |:------:    |:---:       |:-------:   |:---------: |
-| ✓ | ✓ | ✓ | ✓ | ✓ |            |
-
-Löve is distributed under the ZLib/png license, which allows for both commercial and personal use, both in proprietary and open-source situations.
-
-Unity 3D {-}
------------
-
-**Website:** <https://unity.com/>
-
-**Price:** Free for Personal Use + Paid Version for commercial projects
-
-Unity is probably among the most famous 3D engines used to create videogames, as well as other projects that make use of its 3D capabilities (like VR/AR-based projects). It uses the C# programming language.
-
-**Relevant Bindings:**
-
-| C++        | C          | C#         | Go         | Java       | Python     | Ruby       | Lua        | Rust       | JavaScript |
-|:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |
-|            |            | ✓ |            |            |            |            |            |            |            |
-
-**Other Bindings:**
-
-| Proprietary Language | Visual Programming |
-| :-:                  | :-:                |
-|                      |                    |
+| ✓           | ✓         |
 
 **Platform Compatibility:**
 
@@ -134,8 +45,94 @@ Unity is probably among the most famous 3D engines used to create videogames, as
 |:-------:   |:-----:     |:------:    |:---:       |:-------:   |:---------: |
 | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 
-Unity is a proprietary engine, distributed under a proprietary license, with a Free edition available.
+Game Maker Studio is commercial software, regulated by its own EULA, but it was added here for sake of completeness.
 
+GDevelop {-}
+-----------
+
+**Website:** <https://gdevelop-app.com/>
+
+**Price:** Free
+
+GDevelop is an open-source toolkit to make games, mostly based on visual programming, GDevelop supports the use of JavaScript to code parts of the game, as well as JSON and support for HTTP Requests. GDevelop also supports exporting to Android and Facebook Instant Games, as well as exporting to iOS and web-based platforms.
+
+**Relevant Bindings:**
+
+| C++        | C          | C#         | Go         | Java       | Python     | Ruby       | Lua        | Rust       | JavaScript |
+|:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |
+|            |            |            |            |            |            |            |            |            | ✓ |
+
+**Other Bindings:**
+
+| Proprietary Language | Visual Programming |
+| :-:                  | :-:                |
+|                      | ✓         |
+
+**Platform Compatibility:**
+
+| Windows    | Linux      | Mac OS     | iOS        | Android    | Web-Based  |
+|:-------:   |:-----:     |:------:    |:---:       |:-------:   |:---------: |
+| ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+
+GDevelop is distributed under the MIT license (although the name and logo are copyright), although the main license file refers to other license files inside each folder. So you may want to check the GitHub repository for more information.
+
+GLFW {-}
+--------
+
+**Website:** <https://www.glfw.org/>
+
+**Price:** Free
+
+GLFW is an Open-Source library for OpenGL, OpenGL ES and Vulkan, that allows to create windows, context and surfaces, as well as receiving input and events. It is written in C.
+
+**Relevant Bindings:**
+
+| C++        | C          | C#         | Go         | Java       | Python     | Ruby       | Lua        | Rust       | JavaScript |
+|:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |
+| ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |            |
+
+**Other Bindings:**
+
+| Proprietary Language | Visual Programming |
+| :-:                  | :-:                |
+|                      |                    |
+
+**Platform Compatibility:**
+
+| Windows    | Linux      | Mac OS     | iOS        | Android    | Web-Based  |
+|:-------:   |:-----:     |:------:    |:---:       |:-------:   |:---------: |
+| ✓ | ✓ | ✓ |            |            |            |
+
+GLFW is distributed under the ZLib/png license, which allows for both commercial and personal use, both in proprietary and open-source situations.
+
+Godot {-}
+---------
+
+**Website:** <https://godotengine.org/>
+
+**Price:** Free
+
+Godot is a fully-fledged engine that makes use of a node-based approach and supports many ways of programming your own game, both in 2D and 3D, including its own language (GDScript) and visual scripting.
+
+**Relevant Bindings:**
+
+| C++        | C          | C#         | Go         | Java       | Python     | Ruby       | Lua        | Rust       | JavaScript |
+|:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |
+| ✓ |            | ✓ |            |            |            |            |            |            |            |
+
+**Other Bindings:**
+
+| Proprietary Language | Visual Programming |
+| :-:                  | :-:                |
+| ✓           | ✓         |
+
+**Platform Compatibility:**
+
+| Windows    | Linux      | Mac OS     | iOS        | Android    | Web-Based  |
+|:-------:   |:-----:     |:------:    |:---:       |:-------:   |:---------: |
+| ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+
+Godot is currently distributed under the MIT license, you should check the Legal section of the Godot Documentation for all the additional licenses that you may need to know about.
 
 IRRlicht {-}
 -----------
@@ -166,6 +163,63 @@ IRRlicht is a 3D engine (as in does only 3D rendering) made in C++ that aims to 
 
 IRRlicht distributed under the ZLib/png license, which allows for both commercial and personal use, both in proprietary and open-source situations.
 
+Löve {-}
+--------
+
+**Website:** <http://love2d.org/>
+
+**Price:** Free
+
+Löve is a lua-based framework for creating games, features an extensive documentation and features some levels of abstraction that help with game development.
+
+**Relevant Bindings:**
+
+| C++        | C          | C#         | Go         | Java       | Python     | Ruby       | Lua        | Rust       | JavaScript |
+|:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |
+|            |            |            |            |            |            |            | ✓ |            |            |
+
+**Other Bindings:**
+
+| Proprietary Language | Visual Programming |
+| :-:                  | :-:                |
+|                      |                    |
+
+**Platform Compatibility:**
+
+| Windows    | Linux      | Mac OS     | iOS        | Android    | Web-Based  |
+|:-------:   |:-----:     |:------:    |:---:       |:-------:   |:---------: |
+| ✓ | ✓ | ✓ | ✓ | ✓ |            |
+
+Löve is distributed under the ZLib/png license, which allows for both commercial and personal use, both in proprietary and open-source situations.
+
+MonoGame {-}
+-------------
+
+**Website:** <http://www.monogame.net/>
+
+**Price:** Free
+
+MonoGame is an open-source porting of XNA 4, it allows for people used to Microsoft's XNA framework to port their games to other platforms, as well as creating new games from scratch. Many games make use of this framework, one above all: Stardew Valley.
+
+**Relevant Bindings:**
+
+| C++        | C          | C#         | Go         | Java       | Python     | Ruby       | Lua        | Rust       | JavaScript |
+|:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |
+|            |            | ✓ |            |            |            |            |            |            |            |
+
+**Other Bindings:**
+
+| Proprietary Language | Visual Programming |
+| :-:                  | :-:                |
+|                      |                    |
+
+**Platform Compatibility:**
+
+| Windows    | Linux      | Mac OS     | iOS        | Android    | Web-Based  |
+|:-------:   |:-----:     |:------:    |:---:       |:-------:   |:---------: |
+| ✓ | ✓ | ✓ | ✓ | ✓ |            |
+
+MonoGame is distributed under a mixed license: Microsoft Public License + MIT License. You may want to check the license yourself on the project's GitHub page.
 
 Ogre3D {-}
 ---------
@@ -225,74 +279,76 @@ Panda3D is a complete and open source 3D game engine.
 
 Panda3D itself is distributed under the modified BSD license, which is very permissive, but it brings together many third-party libraries that are released under different licenses. It is suggested to check the license section of the manual for more information.
 
-Godot {-}
----------
+SDL {-}
+----------
 
-**Website:** <https://godotengine.org/>
+**Website:** <https://www.libsdl.org/>
 
 **Price:** Free
 
-Godot is a fully-fledged engine that makes use of a node-based approach and supports many ways of programming your own game, both in 2D and 3D, including its own language (GDScript) and visual scripting.
+SDL (Simple DirectMedia Layer) is one of the most famous libraries around to make multimedia applications as well as videogames.
 
 **Relevant Bindings:**
 
 | C++        | C          | C#         | Go         | Java       | Python     | Ruby       | Lua        | Rust       | JavaScript |
 |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |
-| ✓ |            | ✓ |            |            |            |            |            |            |            |
+| ✓ | ✓ | ✓ | ✓ |            | ✓ |            | ✓ | ✓ |            |
 
 **Other Bindings:**
 
 | Proprietary Language | Visual Programming |
 | :-:                  | :-:                |
-| ✓           | ✓         |
+|                      |                    |
 
 **Platform Compatibility:**
 
 | Windows    | Linux      | Mac OS     | iOS        | Android    | Web-Based  |
 |:-------:   |:-----:     |:------:    |:---:       |:-------:   |:---------: |
-| ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| ✓ | ✓ | ✓ | ✓ | ✓ |            |
 
-Godot is currently distributed under the MIT license, you should check the Legal section of the Godot Documentation for all the additional licenses that you may need to know about.
+SDL is distributed under the ZLib license, which allows for both commercial and personal use, both in proprietary and open-source situations. Many of the languages listed as "usable" are compatible via extensions.
 
-Game Maker Studio {-}
----------------------
+The versions of SDL up to version 1.2 are instead distributed under the GNU LGPL license, which is more complex and may need to be analyzed by legal experts.
 
-**Website:** <https://www.yoyogames.com/gamemaker>
+SFML {-}
+--------
 
-**Price:** Commercial
+**Website:** <https://www.sfml-dev.org/>
 
-Game Maker Studio is one of the simplest game-making toolkits available on the market, but that doesn't mean it's not powerful. In fact, one of the most famous games of recent history was made with it: Undertale.
+**Price:** Free
 
-It makes use of its own scripting language, and some visual toolkits as well.
+SFML (Simple Fast Multimedia Library) is a library dedicated to creation of multimedia applications (not limited to videogames), providing a simple interface to the system's components.
 
 **Relevant Bindings:**
 
 | C++        | C          | C#         | Go         | Java       | Python     | Ruby       | Lua        | Rust       | JavaScript |
 |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |
-|            |            |            |            |            |            |            |            |            |            |
+| ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |            | ✓ |            |
 
 **Other Bindings:**
 
 | Proprietary Language | Visual Programming |
 | :-:                  | :-:                |
-| ✓           | ✓         |
+|                      |                    |
 
 **Platform Compatibility:**
 
 | Windows    | Linux      | Mac OS     | iOS        | Android    | Web-Based  |
 |:-------:   |:-----:     |:------:    |:---:       |:-------:   |:---------: |
-| ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| ✓ | ✓ | ✓ | *          | *          |            |
 
-Game Maker Studio is commercial software, regulated by its own EULA, but it was added here for sake of completeness.
+\*: Currently in development
 
-MonoGame {-}
--------------
+SFML is distributed under the ZLib/png license, which allows for both commercial and personal use, both in proprietary and open-source situations.
 
-**Website:** <http://www.monogame.net/>
+Unity 3D {-}
+-----------
 
-**Price:** Free
+**Website:** <https://unity.com/>
 
-MonoGame is an open-source porting of XNA 4, it allows for people used to Microsoft's XNA framework to port their games to other platforms, as well as creating new games from scratch. Many games make use of this framework, one above all: Stardew Valley.
+**Price:** Free for Personal Use + Paid Version for commercial projects
+
+Unity is probably among the most famous 3D engines used to create videogames, as well as other projects that make use of its 3D capabilities (like VR/AR-based projects). It uses the C# programming language.
 
 **Relevant Bindings:**
 
@@ -310,64 +366,6 @@ MonoGame is an open-source porting of XNA 4, it allows for people used to Micros
 
 | Windows    | Linux      | Mac OS     | iOS        | Android    | Web-Based  |
 |:-------:   |:-----:     |:------:    |:---:       |:-------:   |:---------: |
-| ✓ | ✓ | ✓ | ✓ | ✓ |            |
-
-MonoGame is distributed under a mixed license: Microsoft Public License + MIT License. You may want to check the license yourself on the project's GitHub page.
-
-GDevelop {-}
------------
-
-**Website:** <https://gdevelop-app.com/>
-
-**Price:** Free
-
-GDevelop is an open-source toolkit to make games, mostly based on visual programming, GDevelop supports the use of JavaScript to code parts of the game, as well as JSON and support for HTTP Requests. GDevelop also supports exporting to Android and Facebook Instant Games, as well as exporting to iOS and web-based platforms.
-
-**Relevant Bindings:**
-
-| C++        | C          | C#         | Go         | Java       | Python     | Ruby       | Lua        | Rust       | JavaScript |
-|:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |
-|            |            |            |            |            |            |            |            |            | ✓ |
-
-**Other Bindings:**
-
-| Proprietary Language | Visual Programming |
-| :-:                  | :-:                |
-|                      | ✓         |
-
-**Platform Compatibility:**
-
-| Windows    | Linux      | Mac OS     | iOS        | Android    | Web-Based  |
-|:-------:   |:-----:     |:------:    |:---:       |:-------:   |:---------: |
 | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 
-GDevelop is distributed under the MIT license (although the name and logo are copyright), although the main license file refers to other license files inside each folder. So you may want to check the GitHub repository for more information.
-
-GLFW {-}
---------
-
-**Website:** <https://www.glfw.org/>
-
-**Price:** Free
-
-GLFW is an Open-Source library for OpenGL, OpenGL ES and Vulkan, that allows to create windows, context and surfaces, as well as receiving input and events. It is written in C.
-
-**Relevant Bindings:**
-
-| C++        | C          | C#         | Go         | Java       | Python     | Ruby       | Lua        | Rust       | JavaScript |
-|:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |
-| ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |            |
-
-**Other Bindings:**
-
-| Proprietary Language | Visual Programming |
-| :-:                  | :-:                |
-|                      |                    |
-
-**Platform Compatibility:**
-
-| Windows    | Linux      | Mac OS     | iOS        | Android    | Web-Based  |
-|:-------:   |:-----:     |:------:    |:---:       |:-------:   |:---------: |
-| ✓ | ✓ | ✓ |            |            |            |
-
-GLFW is distributed under the ZLib/png license, which allows for both commercial and personal use, both in proprietary and open-source situations.
+Unity is a proprietary engine, distributed under a proprietary license, with a Free edition available.
