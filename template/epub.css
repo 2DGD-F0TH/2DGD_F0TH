@@ -68,6 +68,7 @@ div.cover{
     page-break-before: always;
     page-break-after: always;
     font-size: 4em;
+    font-weight: bold;
 }
 div.pitfall{
     background-color: #FFF2F2;
