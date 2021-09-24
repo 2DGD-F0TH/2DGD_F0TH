@@ -41,7 +41,7 @@ This hardware stability is a double-edged sword: the hardware can be really hard
 
 Personal Computers are another huge part of the video game industry. They are extremely flexible (being general-purpose machines) but have a huge drawback: their hardware is not the same from one unit to the other. This means that the programmer needs to use "abstraction layers" to be able to communicate with all the different hardware.
 
-This compounds with the fact that "abstraction layers" used by the developer (like SDL, SFML or GLFW) are running on top of other "abstraction layers", like sound servers, device drivers, etc... which can be littered with bugs themselves. Just look at how many indirections we have on a modern Linux system (which usually bundle with PulseAudio):
+This compounds with the fact that "abstraction layers" used by the developer (like SDL, SFML or GLFW) are running on top of other "abstraction layers", like sound servers, device drivers, etc... which can be littered with bugs themselves. Just look at how many indirections we have on a modern Linux system (which is usually bundled with PulseAudio):
 
 ![How many abstraction layers are used just for a game to be able to play sounds](./images/game_design/sound_abstraction.svg){width=30%}
 
