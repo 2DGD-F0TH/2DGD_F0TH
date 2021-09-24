@@ -140,6 +140,12 @@ When it comes to project management, it's always tough to gauge the project dura
 
 This means that projects will last at least 3 times the time you foresee.
 
+That may seem a lot like an exaggeration, but unforeseen events happen and they can have a huge impact on the release of your game. It's better to err on the side of caution and even delay the release if something goes wrong. Shigeru Miyamoto said the following:
+
+> A delayed game is eventually good, a bad game is bad forever.
+
+so maybe being "abundant" with your time estimates is not that wrong.
+
 ### Brainstorming: the good, the bad and the ugly
 
 Brainstorming is an activity that involves the design team writing down all the ideas they possibly can (without caring about their quality yet).
