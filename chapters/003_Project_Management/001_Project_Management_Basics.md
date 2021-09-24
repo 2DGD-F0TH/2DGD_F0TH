@@ -113,7 +113,7 @@ Under the umbrella of a sound artist, you can find:
 - Music Mixers;
 - Audio Programmers.
 
-The knowledge of DAW (Digital Audio Workstation) software is fundamental, as well as knowing some so-called "middlewares", like FMOD. Another important bit of knowledge is being able to use Audio editors (like Audacity) effectively.
+The knowledge of DAW (Digital Audio Workstation) software is fundamental, as well as knowing some so-called "middlewares", like FMOD. Another important bit of knowledge is being able to use Audio editors effectively.
 
 ### Tester
 
