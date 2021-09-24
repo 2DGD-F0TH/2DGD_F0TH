@@ -496,6 +496,16 @@ Farming entails the same actions as grinding, but here we are using enemies as "
 
 The most important aspect of "designing farming" is definitely reward the player for their farming: if a "special item" requires a lot of materials (and thus a lot of farming), such item should be worth the effort, or the player will feel cheated out of their time, effort and materials.
 
+:::: note ::::
+You should be mindful that some players will exploit some of your more complex mechanics to be able to farm for items and currency faster. This happened in the game "The Witcher III", where players used to kill cows and then meditate to make such cows respawn.
+::::::::::::::
+
+:::: trivia ::::
+In the game "The Witcher III", precisely in patch 1.05, a mechanic to prevent such exploitation was introduced. The "Bovine Defence Force Initiative" consisted of a respawning moderately-leveled monster (called "Chort") that attacks the player, thus making the farming very dangerous for low level players.
+
+On the flip side, higher level players could exploit this endlessly respawning monster to gain Chort Hides, which are worth more currency than Cow Hides. This was patched by making only one Chort spawn.
+::::::::::::::::
+
 {{placeholder}}
 
 <!-- TODO: Finish talking about farming -->

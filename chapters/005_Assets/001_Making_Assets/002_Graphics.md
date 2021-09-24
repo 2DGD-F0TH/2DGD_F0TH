@@ -288,7 +288,7 @@ Palette swapping is a technique mostly used in older videogames, where an alread
 
 This palette swap makes the new graphic quite recognizably distinct from the original graphic. This technique was normally used to tell apart first and second player.
 
-A prime example of this is the videogame that (re)started it all: Super Mario Bros. Mario and Luigi are exactly the same graphic, but Luigi uses a different palette.
+A prime example of this is the videogame that (re)started it all: Super Mario Bros. Mario and Luigi are exactly the same sprite, but Luigi uses a different palette.
 
 Some other videogames use palette swapping to indicate their status (like using a green or purple-based palette to indicate the "poisoned" status), or indicate a difference in their statistics (like a red-based palette to indicate an enhanced attack statistic), in other occasions different palettes are used to distinguish stronger versions of the same enemy.
 
