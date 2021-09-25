@@ -10,6 +10,16 @@ A {-}
 API
 : Short for "Application Programming Interface", it's a set of definitions, tools and clearly defined methods of communication between various software components.
 
+C {-}
+-----
+
+Call by reference
+: Evaluation strategy where a function parameters are bound to a function by passing a reference to the arguments, this could cause *side effects*~[g]~ since the function would be able to change variables outside its local scope.
+
+Call by value
+: Evaluation strategy where a function parameters are bound to a function by making a copy of the values used as an argument.
+
+
 D {-}
 -----
 
@@ -107,6 +117,9 @@ Rootkit
 
 S {-}
 -----
+
+Side Effect
+: In computer science a function is said to have a "side effect" when it changes variables outside its local environment, this can happen in languages which use *call by reference*~[g]~ evaluation strategies.
 
 Stack Overflow
 : A stack overflow is a situation where too much data is pushed into a data structure called a "stack". One of the most common cases of "stack overflow" happens during recursion: when a function is called all the current work variables are saved and pushed into a stack data structure in memory, along with a "return address" that will allow us to come back to this point of the program. When a recursion is too deep (the recursive function calls itself too many times), the call stack gets filled up and it's not able to continue the execution, leading to an aborted operation.
