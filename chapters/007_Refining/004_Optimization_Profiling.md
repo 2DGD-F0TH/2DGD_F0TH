@@ -129,9 +129,19 @@ This way instead we're doing sanity checks and related operations only once, mov
 
 ### Entity Cleanup and Memory leaks {#cleanup_leaks}
 
-{{placeholder}}
+One of the biggest scourges in software development (and an even bigger one in game development) are memory leaks: the program allocates memory but doesn't release it properly.
 
-<!-- TODO: Properly disposing of unused entities is important to avoid memory leaks -->
+Memory management (as well as any kind of "resource management") can be summarized in 3 phases:
+
+- Acquisition;
+- Usage;
+- Release.
+
+This is especially annoying when languages that don't have automatic garbage collection (like C++) are involved, but it can affect any programming language. Memory management is hard, and we should always release any resource that we acquire as soon as we're done using it, but that's not always easy: for instance when loading and unloading levels is involved.
+
+As mentioned before, this problem affects all languages, since some resources may be acquired by some "active code" that is actually never running, thus preventing the garbage collector from working as it should.
+
+Besides "being careful" with your resource management, you can check for memory leaks by using specific tools.
 
 ### Using analyzers to detect Memory Leaks {#mem_analyzers}
 
@@ -250,6 +260,19 @@ This means that frame-by-frame animations should not be used when taking care of
 Remember that Tweening doesn't apply only to positions, you can tween any property of a game object.
 
 So a quick way you can optimize your game, is removing all the unnecessary animations and replace them with tweening, your game will surely benefit from that.
+
+### Remove dead code
+
+There are many definitions for "dead code", some use the "unreachable code" definition (for instance code placed after a "return statement") some use a more extensive definition.
+
+I like to think of dead code as "wasted code", which is:
+
+- Anything that happens to be written after a "return statement" in a function: return statements are used to give control of the program back to the caller of a function, so this code will never be executed;
+- Unused variables: variables are allocated in memory, require calculations and CPU cycles, if not used that's just a waste;
+- Unused code: complete functions that are never called are a waste of memory (because they may be loaded in RAM) and of disk space, making the executables bigger;
+- Debug code: sometimes we need to write code to debug other code, this code may end up being part of a "release version" and weigh it down.
+
+You should be careful when optimizing out dead code, even more when you are dealing with functions which result is not used: those functions may change some global state (or change stuff by usage of *side effects*~[g]~).
 
 Non-Optimizations
 -----------------
