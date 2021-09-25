@@ -3,8 +3,9 @@ Graphics {#GraphicsResources}
 
 ### Some computer graphics basics
 
-{{placeholder}}
-<!-- TODO: Talk about some computer grahics basics -->
+Before we start doing anything, we need to know some basics about graphics. In this section we will introduce some terms like "bit depth" (or "color depth"), "filtering", "sprite sheets", "virtual resolution" and others.
+
+We will see a lot of stuff, from a bird-eye view of how graphics are stored in video memory to normal maps and more.
 
 #### Color Depth
 
