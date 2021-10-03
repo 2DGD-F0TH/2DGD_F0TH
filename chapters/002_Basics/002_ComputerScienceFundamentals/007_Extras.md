@@ -49,6 +49,10 @@ column = 7 % 3 = 1
 \end{cases}
 $$
 
+::: note :::
+This can be done with structures with n dimensions, but the formula becomes a lot more complex the more dimensions you add. We'll stop at 2 for now.
+::::::::::::
+
 
 Data Redundancy
 ---------------
