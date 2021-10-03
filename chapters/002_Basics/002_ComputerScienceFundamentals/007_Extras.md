@@ -1,3 +1,55 @@
+Treating multidimensional structures like one-dimensional ones
+--------------------------------------------------------------
+
+This is usually done when dealing with pointers, but we may need to use some math to deal with sprites and animations too.
+
+As we'll see in the [Sprite sheets section](#SpriteSheets), it is more efficient to store sprites and animation frames in sprite sheets.
+
+When dealing with frames of animation, we like our frames to be "one-dimensional", each "cell" represents a certain "time".
+
+![The "easy way" of dealing with frames](./images/computer_science/one_dimensional_array.svg){width=60%}
+
+When dealing with sprite sheets, we may find that our animation has frames saved in a "matrix" of some sort, like so:
+
+![A sample sprite sheet with the same frames as before](./images/computer_science/two_dimensional_array.svg){width=25%}
+
+The images we've just seen will help you understand how the following formulas work.
+
+To convert from 2-dimensional $(row,column)$ coordinates to a single index, the formula is:
+
+$$
+index = width \times row + column
+$$
+
+:::: note ::::
+Remember that in many programming languages arrays and similar structures are 0-indexed. This is the system that will be used here.
+::::::::::::::
+
+So if I want to know the index of the 3rd element of the second row, with index (2,1), the formula becomes:
+
+$$
+index = 3 \times 1 + 2 = 5
+$$
+
+The inverse formula is the following:
+
+$$
+\begin{cases}
+row = \lfloor \frac{index}{width} \rfloor \\
+column = index % width
+\end{cases}
+$$
+
+So if we wanted to know the (row,column) position of the frame with index 7 we would have:
+
+$$
+\begin{cases}
+row = \lfloor \frac{7}{3} \rfloor = \lfloor 2.33333 \rfloor = 2\\
+column = 7 % 3 = 1
+\end{cases}
+$$
+
+
 Data Redundancy
 ---------------
 
