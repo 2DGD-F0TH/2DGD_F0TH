@@ -85,6 +85,13 @@ No motion blur
 
 There are some people like motion blur, some who don't and some who can't physically stand it: making motion blur a toggle can be both a quality of life improvement as well as something that can help people who have issues with sight.
 
+
+Reduced Motion
+--------------
+
+{{placeholder}}
+<!-- TODO: Some people get motion sickness with some levels and patterns that involve a lot of movement (See Sonic 4 Episode 2: Death Egg Mk.ii), having an option for reduced motion can be helpful -->
+
 Assisted Gameplay
 -----------------
 
