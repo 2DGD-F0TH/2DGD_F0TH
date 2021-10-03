@@ -89,8 +89,11 @@ There are some people like motion blur, some who don't and some who can't physic
 Reduced Motion
 --------------
 
-{{placeholder}}
-<!-- TODO: Some people get motion sickness with some levels and patterns that involve a lot of movement (See Sonic 4 Episode 2: Death Egg Mk.ii), having an option for reduced motion can be helpful -->
+Some people may be particularly sensitive to cameras or texture patterns that involve lots of motion, this could cause discomfort in the player or even full-blown motion sickness. Having an option to reduce motion (like avoiding certain camera rotation mechanics or making some patterns static) can really help users enjoy your game without having the game "hurt" them.
+
+::: trivia :::
+Sonic 4: Episode 2 has a level (precisely "Death Egg. Mk. II") which has a really cool mechanic where the camera follows the ground you're riding on, rotating with it. This is a really cool effect, but this is one of the effects that could cause motion sickness. A trigger to disable the camera rotation (and maybe take a slight hit in "realism") could help a lot, even though it could introduce some control scheme challenges.
+::::::::::::::
 
 Assisted Gameplay
 -----------------
