@@ -1,42 +1,51 @@
-class 2D_Grid():
+class 2D_Grid(){
     // Represents a 2D grid of "Tile" classes
-    Tile[][] grid = null
-    int width = 0
-    int height = 0
+    Tile[][] grid = null;
+    int width = 0;
+    int height = 0;
 
-    function constructor(int rows, int cols):
+    void function constructor(int rows, int cols){
         // Prepares the memory for the grid
-        grid = new Tile[rows][cols]
-        height = rows
-        width = cols
+        grid = new Tile[rows][cols];
+        height = rows;
+        width = cols;
+    }
 
-    function getCell(int row, int col):
+    Tile function getCell(int row, int col):
         // Gets a cell from the 2D Grid
-        if (row >= 0 AND row < height) AND (col >=0 AND col < width):
+        if (row >= 0 AND row < height) AND (col >=0 AND col < width){
             // We better check if we are inside the grid
-            return grid[row][col]
-        else:
-            return null
+            return grid[row][col];
+        }else{
+            return null;
+        }
 
-    function getAdjacentCells(int row, int col):
+    Tile[] function getAdjacentCells(int row, int col){
         /* Returns a list of cells adjacent the ones we give
            REMEMBER: We index at 0 so the first row is 0, the last one is at
            "height - 1", same goes for columns */
         Tile[] toReturn = new Tile[]  // We assume arrays can resize when necessary
-        if (row >= 0 AND row < height) AND (col >=0 AND col < width):
+        if (row >= 0 AND row < height) AND (col >=0 AND col < width){
             // We better check if we are inside the grid
-            if (row > 0):
+            if (row > 0){
                 // We are not on the first row, we can add the cell above
-                toReturn.append(getCell(row - 1, col))
-            if (row < height - 1):
+                toReturn.append(getCell(row - 1, col));
+            }
+            if (row < height - 1){
                 // We are not on the last row, we can add the cell below
-                toReturn.append(getCell(row + 1, col))
-            if (col > 0):
+                toReturn.append(getCell(row + 1, col));
+            }
+            if (col > 0){
                 // We are not on the first column, we can add the cell on the left
-                toReturn.append(getCell(row, col - 1))
-            if (col < width - 1):
+                toReturn.append(getCell(row, col - 1));
+            }
+            if (col < width - 1){
                 // We are not on the last column, we can add the cell on the right
-                toReturn.append(getCell(row, col + 1))
+                toReturn.append(getCell(row, col + 1));
+            }
+        }
         /* If the checks went well, toReturn will have
            a list of the adjacent cells, if not it will be empty */
-        return toReturn
+        return toReturn;
+    }
+}

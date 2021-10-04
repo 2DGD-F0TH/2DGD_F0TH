@@ -59,6 +59,7 @@ As with conditionals, the condition is wrapped in parentheses and written in "st
 
 - While (condition)
 - Do .... While (Condition)
+- Do .... Until (Condition)
 - For (Condition)
 
 Here are some examples:

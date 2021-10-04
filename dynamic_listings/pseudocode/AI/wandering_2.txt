@@ -1,54 +1,68 @@
 const string[] DIRECTIONS = ["NORTH", "EAST", "SOUTH", "WEST"];
 
-class AIEntity:
+class AIEntity{
     // 0=North, 1=East, ...
     forward_direction_index = 0;
     current_cell = (1,0);
     // ...
-    function get_adjacent_cell(Cell cell, string direction):
+    Cell function get_adjacent_cell(Cell cell, string direction){
         // Returns the adjacent cell in said direction
-        cell_copy = cell.copy()
-        if direction == "NORTH":
+        cell_copy = cell.copy();
+        if (direction == "NORTH"){
             cell_copy.y -= 1;
-        if direction == "SOUTH":
+        }
+        if (direction == "SOUTH"){
             cell_copy.y += 1;
-        if direction == "WEST":
+        }
+        if (direction == "WEST"){
             cell_copy.x -= 1;
-        if direction == "EAST":
+        }
+        if (direction == "EAST"){
             cell_copy.x += 1;
+        }
         return cell_copy;
+    }
 
-    function is_valid(Cell cell):
+    bool function is_valid(Cell cell){
         /* Returns true if the cell is valid, aka
          * does not have a wall and does not go backwards */
-        if cell.is_wall():
+        if (cell.is_wall()){
             // The cell is a wall
             return False;
-        if cell == get_adjacent_cell[(forward_direction_index + 2) % 4]:
+        }
+        if (cell == get_adjacent_cell[(forward_direction_index + 2) % 4]){
             // We're going backwards
             return False;
+        }
         // In all other cases, it's valid
         return True;
+    }
 
-    function get_available_directions(Cell cell):
+    string[] function get_available_directions(Cell cell){
         /* Returns a list of available directions */
         string[] result = [];
-        for direction in DIRECTIONS:
-            if is_valid(get_adjacent_cell(cell, direction)):
+        for (direction in DIRECTIONS){
+            if (is_valid(get_adjacent_cell(cell, direction))){
                 result.append(direction);
+            }
+        }
         return result;
+    }
 
-    function update(float dt):
+    void function update(float dt){
         // ...
         // Get a list of the available directions
-        string[] available_directions = get_available_directions(current_cell)
-        string chosen_direction = "NORTH"  // Just a default
-        if available_directions.is_empty():
+        string[] available_directions = get_available_directions(current_cell);
+        string chosen_direction = "NORTH";  // Just a default
+        if (available_directions.is_empty()){
             // No directions are available, let's go back
             chosen_direction = DIRECTIONS[(forward_direction_index + 2) % 4];
-        else:
+        }else{
             // Choose a random direction among the available ones
             chosen_direction = random_choice(available_directions);
+        }
         // Move
         next_cell = get_adjacent_cell(current_cell, chosen_direction);
         move_to(next_cell);
+    }
+}

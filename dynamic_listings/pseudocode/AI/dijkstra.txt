@@ -1,30 +1,30 @@
-currentNode = start
-add currentNode to closedSet
+currentNode = start;
+add currentNode to closedSet;
 do{
-    for each Node n adjacent to currentNode{
-        if closedSet contains n{
-            skip the node n
-        }else if openSet contains n{  // Check if this path is better
-            compute new_g (path cost value)
-            if new_g < n.g{
+    for (each Node n adjacent to currentNode){
+        if (closedSet contains n){
+            skip the node n;
+        }else if (openSet contains n){  // Check if this path is better
+            compute new_g (path cost value);
+            if (new_g < n.g){
                 // We found a better path from start to currentNode
-                n.parent = currentNode
-                n.g = new_g
+                n.parent = currentNode;
+                n.g = new_g;
             }
         }else{
-            n.parent = currentNode
-            compute n.g
-            add n to openSet
+            n.parent = currentNode;
+            compute n.g;
+            add n to openSet;
         }
-    } loop
-
-    if openSet is empty{
-        // We exhausted all possibilities
-        break loop
     }
-    currentNode = Node with the lowest g in the openSet
-    remove currentNode from openSet
-    add currentNode to closedSet
-} until(currentNode == end)
+
+    if (openSet is empty){
+        // We exhausted all possibilities
+        break loop;
+    }
+    currentNode = Node with the lowest g in the openSet;
+    remove currentNode from openSet;
+    add currentNode to closedSet;
+}until(currentNode == end)
 
 // Reconstruct the path like in the greedy "best-first" algorithm

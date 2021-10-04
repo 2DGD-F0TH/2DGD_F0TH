@@ -3,5 +3,6 @@ struct Tile{
     integer y;
 }
 
-function euclidean_distance(Tile start, Tile goal):
-    return square_root((start.x - goal.x) ^2 + (start.y - goal.y)^2)
+float function euclidean_distance(Tile start, Tile goal){
+    return square_root((start.x - goal.x)^2 + (start.y - goal.y)^2);
+}
