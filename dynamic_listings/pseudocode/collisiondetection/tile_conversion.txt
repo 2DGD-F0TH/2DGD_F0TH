@@ -1,8 +1,9 @@
-constant TILE_WIDTH = 32
-constant TILE_HEIGHT = 32
+constant TILE_WIDTH = 32;
+constant TILE_HEIGHT = 32;
 
-function convert_pixels_to_tile(Integer x, Integer y):
+int[] function convert_pixels_to_tile(int x, int y){
     // Converts a point into tile coordinates
-    tile_x = floor(x / TILE_WIDTH)
-    tile_y = floor(y / TILE_HEIGHT)
-    return (tile_x, tile_y)
+    int tile_x = floor(x / TILE_WIDTH);
+    int tile_y = floor(y / TILE_HEIGHT);
+    return [tile_x, tile_y];
+}

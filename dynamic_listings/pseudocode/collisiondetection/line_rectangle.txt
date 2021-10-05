@@ -1,25 +1,31 @@
-function lineLineCollision(float x1, float y1, float x2, float y2, float x3, float y3, float x4, float y4):
+bool function lineLineCollision(float x1, float y1, float x2, float y2, float x3, float y3, float x4, float y4){
     // our previous implementation of the line/line collision detection
+    // ...
+}
 
-function pointRectCollision(float x1, float y1, float rectx, float recty, float rectwidth, float rectheight):
+bool function pointRectCollision(float x1, float y1, float rectx, float recty, float rectwidth, float rectheight){
     // our previous implementation of a point/rectangle collision detection
+    // ...
+}
 
-function lineRectangleCollision(float x1, float y1, float x2, float y2, float rectx, float recty, float rectwidth, float rectheight):
+bool function lineRectangleCollision(float x1, float y1, float x2, float y2, float rectx, float recty, float rectwidth, float rectheight){
     // If we want to test if a line is completely inside of a rect, we just need
     // to see if any of its endpoints is inside the rectangle
-    if (pointRectCollision(x1, y1, rectx, recty, rectwidth, rectheight) OR pointRectCollision(x2, y2, rectx, recty, rectwidth, rectheight)):
+    if (pointRectCollision(x1, y1, rectx, recty, rectwidth, rectheight) OR pointRectCollision(x2, y2, rectx, recty, rectwidth, rectheight)){
         // At least one of the ends of the segment is inside the rectangle
-        return True
-
+        return True;
+    }
     // Now to test the rectangle against the line, if it's not completely inside
-    left = lineLineCollision(x1, y1, x2, y2, rectx, recty, rectx, recty + rectheight)
-    right = lineLineCollision(x1, y1, x2, y2, rectx + rectwidth, recty, rectx + rectwidth, recty + rectheight)
-    top = lineLineCollision(x1, y1, x2, y2, rectx, recty, rectx + rectwidth, recty)
-    bottom = lineLineCollision(x1, y1, x2, y2, rectx, recty + rectheight, rectx + rectwidth, recty + rectheight)
+    bool left = lineLineCollision(x1, y1, x2, y2, rectx, recty, rectx, recty + rectheight);
+    bool right = lineLineCollision(x1, y1, x2, y2, rectx + rectwidth, recty, rectx + rectwidth, recty + rectheight);
+    bool top = lineLineCollision(x1, y1, x2, y2, rectx, recty, rectx + rectwidth, recty);
+    bool bottom = lineLineCollision(x1, y1, x2, y2, rectx, recty + rectheight, rectx + rectwidth, recty + rectheight);
 
-    if left OR right OR top OR bottom:
+    if (left OR right OR top OR bottom){
         // We hit one of the sides, we are colliding
-        return True
+        return True;
+    }
 
     // In any other case, return false
-    return False
+    return False;
+}

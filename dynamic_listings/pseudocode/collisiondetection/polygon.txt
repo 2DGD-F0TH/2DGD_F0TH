@@ -1,7 +1,7 @@
-class Polygon:
+class Polygon{
     Point[] vertices;
 
-    function calculate_bounding_box():
+    Rectangle function calculate_bounding_box(){
         // This function calculates the bounding box
         // -------------------------
         // First we create and bootstrap the variables
@@ -15,9 +15,10 @@ class Polygon:
         // We build our bounding box
         Rectangle boundingBox = Rectangle.from_points(A, C)
         // and return it
-        return boundingBox
+        return boundingBox;
+    }
 
-    function do_fanning():
+    Triangle[] function do_fanning(){
         /*
          * This function iterates over the vertices and returns
          * an array of triangles corresponding to the "fan triangulation"
@@ -26,9 +27,12 @@ class Polygon:
         Point root_vertex = vertices[0];
         Triangle[] temp_triangles = new Triangle[];
         // Now we iterate through all the other vertices
-        for each j from 2 to vertices.length() - 1:
+        for (each j from 2 to vertices.length() - 1){
             // j goes from the third vertex, to the last
             // j - 1 goes from the second to the second to last
-            temp_triangles.append(Triangle.from_points(root_vertex, j - 1, j))
+            temp_triangles.append(Triangle.from_points(root_vertex, j - 1, j));
+        }
         // In the end, we will have the triangles array, we can just return it
-        return temp_triangles
+        return temp_triangles;
+    }
+}

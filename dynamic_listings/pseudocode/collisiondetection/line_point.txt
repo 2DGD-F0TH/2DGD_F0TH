@@ -1,25 +1,30 @@
-structure Point:
-    Integer x
-    Integer y
+structure Point{
+    int x;
+    int y;
+}
 
-structure Line:
-    Point A
-    Point B
+structure Line{
+    Point A;
+    Point B;
+}
 
-function distance(Point A, Point B):
+float function distance(Point A, Point B){
     // Calculates the distance between two points
-    return square_root((A.x + B.x)^2 + (A.y + B.y)^2)
+    return square_root((A.x + B.x)^2 + (A.y + B.y)^2);
+}
 
-function line_point_collision(Point pt, Line ln):
+bool function line_point_collision(Point pt, Line ln){
     // First, let's calculate the length of the line
-    length = distance(ln.A, ln.B)
+    float length = distance(ln.A, ln.B);
     // Now let's calculate the distance between the point pt
     // and the point "A" of the line
-    pt_a = distance(ln.A, pt)
+    float pt_a = distance(ln.A, pt);
     // Same Goes for the distance between pt and "B"
-    pt_b = distance(ln.B, pt)
+    float pt_b = distance(ln.B, pt);
     // Now for the detection
-    if (pt_a + pt_b == length):
-        return True
-    else:
-        return False
+    if (pt_a + pt_b == length){
+        return True;
+    }else{
+        return False;
+    }
+}

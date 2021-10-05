@@ -1,14 +1,18 @@
-structure Circle:
+structure Circle{
     // Let's define a circle class/structure
     Point center;
-    Integer radius
+    int radius;
+}
 
-function distance(Point A, Point B):
+float function distance(Point A, Point B){
     // Calculates the distance between two points
-    return square_root((A.x + B.x)^2 + (A.y + B.y)^2)
+    return square_root((A.x + B.x)^2 + (A.y + B.y)^2);
+}
 
-function circle_circle_collision(Circle A, Circle B):
-    if distance(A.center, B.center) <= A.radius + B.radius:
-        return True
-    else:
-        return False
+bool function circle_circle_collision(Circle A, Circle B){
+    if (distance(A.center, B.center) <= A.radius + B.radius){
+        return True;
+    }else{
+        return False;
+    }
+}

@@ -1,12 +1,23 @@
-function is_collision(item A, item B):
+bool function is_collision(Item A, Item B){
     // Defines how two items collide (being circles, this could be a difference of radii)
+    // ...
+}
 
-items = [1, 2, 3, 4, 5, 6, 7]
-colliding_items = []
+Item[] items = [item1, item2, ...];
 
-for A in items:
-    for B in items:
-        if A is not B:
-            // We avoid checking if an item collides with itself, for obvious reasons
-            if is_collision(A, B):
-                colliding_items.add((A, B))
+Item[] function get_colliding_items(Item[] items_to_check){
+    Item[] colliding_items = [];
+
+    for (A in items_to_check){
+        for (B in items_to_check){
+            if (A is not B){
+                // We avoid checking if an item collides with itself, for obvious reasons
+                if (is_collision(A, B)){
+                    // We keep together the pair of items that collided
+                    colliding_items.add(new pair(A, B));
+                }
+            }
+        }
+    }
+    return colliding_items;
+}

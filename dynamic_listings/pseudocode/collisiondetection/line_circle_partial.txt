@@ -1,20 +1,25 @@
-structure Point:
-    Integer x
-    Integer y
+structure Point{
+    int x;
+    int y;
+}
 
-structure Line:
-    Point A
-    Point B
+structure Line{
+    Point A;
+    Point B;
+}
 
-structure Circle:
-    Point center
-    Integer radius
+structure Circle{
+    Point center;
+    int radius;
+}
 
-...
+// ...
 
-function line_circle_collision(Circle circle, Line line):
-    collides_A = circle_point_collision(circle, line.A)
-    collides_B = circle_point_collision(circle, line.B)
-    if (collides_A OR collides_B):
-        return True
-    ...
+boolean function line_circle_collision(Circle circle, Line line){
+    bool collides_A = circle_point_collision(circle, line.A);
+    bool collides_B = circle_point_collision(circle, line.B);
+    if (collides_A OR collides_B){
+        return True;
+    }
+    // ...
+}
