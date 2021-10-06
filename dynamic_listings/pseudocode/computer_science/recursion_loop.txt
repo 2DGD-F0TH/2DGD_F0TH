@@ -1,7 +1,9 @@
-function count_backwards(int n):
+void function count_backwards(int n){
     // Condition for the loop
-    while (n != 0):
+    while (n != 0){
         // The function body
         print(n);
         // We update the condition to count down
         n = n - 1;
+    }
+}

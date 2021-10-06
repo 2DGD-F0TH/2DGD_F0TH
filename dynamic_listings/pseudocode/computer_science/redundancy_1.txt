@@ -2,10 +2,9 @@ class List{
     Node nodeList;
     // ...
     int getLength(){
-        counter = 0
-        for item in nodeList{
+        int counter = 0;
+        for (item in nodeList){
             counter = counter + 1;
-            next item;
         }
         return counter;
     }

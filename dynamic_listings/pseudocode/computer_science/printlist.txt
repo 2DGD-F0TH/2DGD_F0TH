@@ -1,3 +1,5 @@
-printList(list):
-    for each element in list:
-        print element
+void function printList(items[] list){
+    for (each element in list){
+        print element;
+    }
+}

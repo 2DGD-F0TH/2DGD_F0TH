@@ -1,2 +1,7 @@
-function isFirstElementNull(elements):
-    return true if elements[0] is null
+bool function isFirstElementNull(elements){
+    if (elements[0] is null){
+        return True;
+    }else{
+        return False;
+    }
+}

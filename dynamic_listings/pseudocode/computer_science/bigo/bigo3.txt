@@ -1,16 +1,18 @@
 // -------------------------------------
-n = length(A)
-repeat
-    swapped = false
-    for i = 1 to n-1 inclusive do
-        if A[i-1] > A[i] then
-            swap( A[i-1], A[i] )
-            swapped = true
-        end if
-    end for
-until not swapped
+int n = length(A);
+bool swapped = false;
+do{
+    swapped = false;
+    for (i from 1 to n-1 inclusive){
+        if (A[i-1] > A[i]){
+            swap( A[i-1], A[i] );
+            swapped = true;
+        }
+    }
+} until (not swapped);
 
 // -------------------------------------
 
-for item in A:
-    print(item)
+for (item in A){
+    print(item);
+}
