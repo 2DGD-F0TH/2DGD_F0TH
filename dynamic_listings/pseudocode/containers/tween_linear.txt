@@ -1,2 +1,3 @@
-function linearTween(time, begin, change, duration):
-    return change * (time / duration) + begin
+float function linearTween(float time, float begin, float change, float duration){
+    return change * (time / duration) + begin;
+}

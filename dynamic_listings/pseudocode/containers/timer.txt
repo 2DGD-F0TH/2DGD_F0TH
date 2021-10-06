@@ -21,7 +21,7 @@ class Timer{
         this.active = active;
     }
 
-    public function update(float dt){
+    void function update(float dt){
         if (not this.active){
             // We return directly if the timer is disabled
             return;

@@ -1,2 +1,3 @@
-function easeIn(time, duration, power):
-    return (time/duration)^power
+float function easeIn(float time, float duration, float power){
+    return (time/duration) ^ power;
+}
