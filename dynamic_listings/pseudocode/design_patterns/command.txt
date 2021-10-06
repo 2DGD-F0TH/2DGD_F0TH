@@ -6,13 +6,11 @@ abstract class Command{
 
 class JumpCommand inherits from Command{
     // This will implement the execute method
-    public:
-        function execute(){
-            jump();
-        }
+    void function execute(){
+        jump();
+    }
 
-    private:
-        function jump(){
-            // DO STUFF
-        }
+    void function jump(){
+        // DO STUFF
+    }
 }

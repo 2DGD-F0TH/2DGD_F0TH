@@ -1,7 +1,7 @@
 abstract class Handler{
     // This is the handler abstract/class interface that the sender connects to
     Handler next;  // The next handler in the chain
-    public function handle_request(){
+    void function handle_request(){
         if (condition){
             // In case I can handle this request
             real_handler();
@@ -12,11 +12,11 @@ abstract class Handler{
         }
     }
 
-    private function real_handler(){
+    void function real_handler(){
         // This function gets implemented in the concrete classes
     }
 
-    public function add_handler(new_handler){
+    Handler function add_handler(Handler new_handler){
         next = new_handler;
         return next;  // Allows for chaining .add_handler().add_handler()...
     }

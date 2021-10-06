@@ -1,20 +1,20 @@
 abstract class Strategy{
     // This class defines the strategy interface the client will refer to
 
-    public function algorithm(){
+    void function algorithm(){
         // This algorithm will be implemented by the subclasses
     }
 }
 
 class ConcreteStrategy1 inherits from Strategy{
-    public function algorithm() override{
+    void function algorithm() override{
         // Real implementation of the algorithm
         // DO STUFF
     }
 }
 
 class ConcreteStrategy2 inherits from Strategy{
-    public function algorithm() override{
+    void function algorithm() override{
         // Real implementation of the algorithm
         // DO STUFF SLIGHTLY DIFFERENTLY
     }
@@ -23,7 +23,7 @@ class ConcreteStrategy2 inherits from Strategy{
 // Example Usage
 function main(){
     Strategy to_execute;
-    if condition{
+    if (condition){
         to_execute = new ConcreteStrategy1();
     }else{
         to_execute = new ConcreteStrategy2();

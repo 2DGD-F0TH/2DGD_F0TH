@@ -1,14 +1,14 @@
 class LazySingleton {
 
-    private static LazySingleton instance = null;
+    static LazySingleton instance = null;
 
-    private LazySingleton() {}
+    LazySingleton() {}
 
-    public static Singleton getInstance() {
+    Singleton static function getInstance() {
         // Multi-threading: manage race conditions
         // ----- Critical region start -----
         if (instance == null) {
-                instance = new Singleton();
+            instance = new Singleton();
         }
         // ----- Critical region end -----
 

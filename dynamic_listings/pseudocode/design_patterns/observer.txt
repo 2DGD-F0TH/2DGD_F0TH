@@ -1,26 +1,32 @@
-class Subject:
+class Subject{
     /* This is the observed class that contains the list of observers and
      * the notifyObservers method */
 
-    observers = List()
+    Observer[] observers = new list of Observer;
 
-    function register_observer(observer):
-        observers.append(observer)
+    void function register_observer(observer){
+        observers.append(observer);
+    }
 
-    function notifyObservers():
-        for each observer in observers:
-            observer.update()
+    void function notifyObservers(){
+        for (each observer in observers){
+            observer.update();
+        }
+    }
+}
 
 
-class Observer:
+class Observer{
     /* This is the class that contains the update method, used to force
      * an update in the observer */
 
-    function update():
-        print("I have been updated!")
+    void function update(){
+        print("I have been updated!");
+    }
+}
 
 
-subject = Subject()
-observer = Observer()
-subject.register_observer(observer)
-subject.notifyObservers()
+subject = Subject();
+observer = Observer();
+subject.register_observer(observer);
+subject.notifyObservers();

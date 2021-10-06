@@ -1,11 +1,11 @@
 class Singleton {
 
-    private static Singleton INSTANCE = new Singleton();
+    static Singleton INSTANCE = new Singleton();
 
     // This makes the constructor impossible to use outside of the class
-    private Singleton() {}
+    Singleton() {}
 
-    public static Singleton getInstance() {
+    Singleton static function getInstance() {
         return INSTANCE;
     }
 }
