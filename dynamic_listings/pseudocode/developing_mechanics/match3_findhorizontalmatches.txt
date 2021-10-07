@@ -1,24 +1,35 @@
-function findHorizontalMatches():
-    matchLength = 0
-    minMatchLength = 3
-    for each row in matrix:
-        lastMatchingTile = null
-        for each column in row:
-            currentTile = matrix[row][column].tile
-            if currentTile == lastMatchingTile:
-                matchLength = matchLength + 1
-            else:
-                if matchLength >= minMatchLength:
+Tile[] function findHorizontalMatches(){
+    int matchLength = 0;
+    const int minMatchLength = 3;
+    Tile[] matches = new Tile[];
+    for (each row in matrix){
+        Tile lastMatchingTile = null;
+        for (each column in row){
+            Tile currentTile = matrix[row][column].tile;
+            if (currentTile == lastMatchingTile){
+                matchLength = matchLength + 1;
+            }else{
+                if (matchLength >= minMatchLength){
                     // We need to memorize all the tiles involved in the match
-                    for each tile from matrix[row][column-matchLength] to matrix[row][column]:
-                        memorize(tile)
-                else:
+                    for (each tile from matrix[row][column-matchLength] to matrix[row][column]){
+                        matches.add(tile);
+                    }
+                }else{
                     // No matches, reset the counter and set the current tile as last matching
-                    matchLength = 1
-                    lastMatchingTile = currentTile
+                    matchLength = 1;
+                    lastMatchingTile = currentTile;
+                }
+            }
             // We need to account for the right-hand border corner case
-            if column == size(matrix[row]):
-                if matchLength >= minMatchLength:
+            if (column == size(matrix[row])){
+                if (matchLength >= minMatchLength){
                     // We need to memorize all the tiles involved in the match
-                    for each tile from matrix[row][column-matchLength] to matrix[row][column]:
-                        memorize(tile)
+                    for (each tile from matrix[row][column-matchLength] to matrix[row][column]){
+                        matches.add(tile);
+                    }
+                }
+            }
+        }
+    }
+    return matches;
+}

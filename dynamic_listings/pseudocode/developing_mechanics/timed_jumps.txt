@@ -1,14 +1,18 @@
-class Player:
-    const float JUMP_VELOCITY = -12.0
-    float y_speed
+class Player{
+    const float JUMP_VELOCITY = -12.0;
+    float y_speed;
     // ...
-    function onJumpKeyPressed():
+    void function onJumpKeyPressed(){
         /* The jump key has just been pressed (doesn't account the jump key being
         pressed from previous frames) */
-        y_speed = JUMP_VELOCITY
+        y_speed = JUMP_VELOCITY;
+    }
 
-    function onJumpKeyReleased():
+    void function onJumpKeyReleased(){
         // The jump key was just released, cut the y_speed so the jump is lower
-        if y_speed < JUMP_VELOCITY / 2:
+        if (y_speed < JUMP_VELOCITY / 2){
             // The speed is higher than the cutoff speed (in absolute value)
-            y_speed = JUMP_VELOCITY / 2
+            y_speed = JUMP_VELOCITY / 2;
+        }
+    }
+}
