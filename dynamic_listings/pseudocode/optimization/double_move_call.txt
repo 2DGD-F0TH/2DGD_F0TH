@@ -1,7 +1,8 @@
-function update(dt):
+void function update(dt){
     Vector vector_up = (0, -1);
     Vector vector_right = (1, 0);
     // ...
     characterController.Move(vector_up * dt);
     characterController.Move(vector_right * dt);
     // ...
+}

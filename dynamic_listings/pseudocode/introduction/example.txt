@@ -1,2 +1,3 @@
-function Example(phrase):
-    print phrase
+void function Example(string phrase){
+    print(phrase);
+}

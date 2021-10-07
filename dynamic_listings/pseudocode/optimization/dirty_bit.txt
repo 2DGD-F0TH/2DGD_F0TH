@@ -1,19 +1,25 @@
-class Player:
-    Vector speed = Vector(0, 0)
-    bool needs_update = False
+class Player{
+    Vector speed = Vector(0, 0);
+    bool needs_update = False;
     // ...
-    function input():
+    void function input(){
         // ...
-        if right_key.is_Pressed:
-            speed = speed + Vector(1, 0)  // Move right
-            needs_update = True
+        if (right_key.is_Pressed){
+            speed = speed + Vector(1, 0);  // Move right
+            needs_update = True;
             // ...
-        if up_key.is_Pressed:
-            speed = speed + Vector(0, -100)  // Move up (jump)
-            needs_update = True
+        }
+        if (up_key.is_Pressed){
+            speed = speed + Vector(0, -100);  // Move up (jump)
+            needs_update = True;
+        }
         // ...
+    }
 
-    function update(dt):
-        if needs_update:
+    void function update(float dt){
+        if (needs_update){
             // Do Update instructions
             // ...
+        }
+    }
+}

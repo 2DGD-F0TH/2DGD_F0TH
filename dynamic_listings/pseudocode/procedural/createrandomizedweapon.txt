@@ -1,10 +1,15 @@
-function createRandomizedWeapon():
-    load a random body from the folder "weaponBodies/shotguns"
-    load a random scope from the folder "weaponScopes/shotguns"
-    load a random barrel from the folder "weaponBarrels/shotguns"
-    load a random ammo magazine from the folder "weaponMagazines/shotguns"
-    put together the loaded pieces
-    set weapon damage to a value between 35 and 50
-    set weapon range to a value between 13 and 18
-    set weapon spread to a value between 20 and 30
-    return generated weapon
+Weapon function createRandomizedWeapon(){
+    Weapon wp = new Weapon();
+    // Load some randomized components
+    wp.loadRandomBodyFrom("weaponBodies/shotguns");
+    wp.loadRandomScopeFrom("weaponScopes/shotguns");
+    wp.loadRandomBarrelFrom("weaponBarrels/shotguns");
+    wp.loadRandomAmmoMagazineFrom("weaponMagazines/shotguns");
+    // set weapon damage to a value between 35 and 50
+    wp.setDamage(random(35, 80));
+    // set weapon range to a value between 13 and 18
+    wp.setRange(random(13, 18));
+    // set weapon spread to a value between 20 and 30
+    wp.setSpread(random(20, 30));
+    return wp;
+}
