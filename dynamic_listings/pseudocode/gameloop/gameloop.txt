@@ -1,6 +1,8 @@
-function game():
-    game_is_running=True
-    while game_is_running:
-        process_user_input()
-        update_world()
-        draw()
+void function game(){
+    bool game_is_running = True;
+    while (game_is_running){
+        process_user_input();
+        update_world();
+        draw();
+    }
+}
