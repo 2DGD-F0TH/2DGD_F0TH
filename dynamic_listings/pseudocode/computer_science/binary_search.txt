@@ -4,9 +4,9 @@ int binarySearch(item[] elements, item element_to_find){
         return the middle element position;
     }else{
         if (element_to_find > middle_element){
-            perform binarySearch on the half of the list bigger than "middle element";
+            perform binarySearch on the half of the list bigger than middle_element;
         }else{
-            perform binarySearch on the half of the list smaller than "middle element";
+            perform binarySearch on the half of the list smaller than middle_element;
         }
     }
     return null;
