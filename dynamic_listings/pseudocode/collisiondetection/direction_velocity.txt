@@ -1,5 +1,5 @@
 // Direction+Velocity collision reaction with rectangles
-void function update(dt){
+void function update(float dt){
     // ...
     player.position.x = player.position.x + player.x_speed * dt;
     // Refer to your favourite collision detection and broad/fine passes

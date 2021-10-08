@@ -15,7 +15,7 @@ structure Circle{
 
 // ...
 
-boolean function line_circle_collision(Circle circle, Line line){
+bool function line_circle_collision(Circle circle, Line line){
     bool collides_A = circle_point_collision(circle, line.A);
     bool collides_B = circle_point_collision(circle, line.B);
     if (collides_A OR collides_B){
