@@ -1,5 +1,5 @@
 // ...
-boolean function circle_polygon(Polygon poly, Circle circ){
+bool function circle_polygon(Polygon poly, Circle circ){
     // Case C (and partly B) are less resource-intensive than
     // a point/polygon check, so let's do them first
     for (i from 0 to poly.vertices.length() - 1){
