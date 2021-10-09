@@ -199,13 +199,41 @@ If we start using this technique on all functions, we may end up with a software
 
 ### Approximations
 
-Many times when developing games we don't need to have a value that is precise to the 10th digit, that's where approximation comes into hand.
+Many times when developing games we don't need to have a value that is precise to the 10th decimal digit, that's where approximation comes into hand.
 
 A prime example of approximation was used in Quake III Arena, via the algorithm known as "Fast Inverse Square Root". Back in 1999 calculating the inverse square root of a number was an expensive calculation for the CPU, so the developers decided to create an algorithm that would calculate an approximation quickly.
 
 This was done by playing around with the floating point low-level structure and using a "magic constant" (`0x5f3759df`) to create a good "first guess", after that a single iteration of the [Newton-Raphson Method](#newtonmethod) is applied to refine the guess.
 
 This proved to be faster than directly calculating a normalized vector (which uses a square root and a division, expensive at the time) and also faster than using a lookup table. The algorithm proved to be slower (and less precise) than the dedicated SSE instruction in the newer x86 CPUs.
+
+### Eager vs. Lazy Evaluation
+
+Lazy objects are yet another possibility when it comes to optimization, with some drawbacks: you create an object but the calculations related to its state are performed when the object is first used, instead of when it is constructed.
+
+This can be really useful when you have a great quantity of items that you are iterating through, one at a time, but don't need the whole collection at hand at once. When it comes to collections, lazy objects help saving memory at the cost of more CPU cycles while the game is running.
+
+In some languages, this concept is abstracted in a language feature (like "generator expressions" in Python), while in others you'll have to work a little bit harder to get them.
+
+Let's take an example, we have a custom object that contains a reference to a list of numbers: when we iterate through this object, we want it to return the numbers saved, halved.
+
+::: note :::
+What follows is just a didactic example, but should be simple enough to understand the difference between "eager" and "lazy" objects.
+::::::::::::
+
+#### Eager approach
+
+The eager approach is to take the list of numbers, create a second list inside our object with the numbers halved: this will make sure that the values are always ready and readily available, but will consume more memory. Here's the example:
+
+```{src='optimization/eager_mode' caption='An eager object'}
+```
+
+#### Lazy approach
+
+If we know that we are working with millions of values, and we are going through them kind of rarely, saving all the halved values in RAM may not be a good idea. This is where lazy evaluation comes into play: instead of memorizing the value in RAM, we calculate it on-demand. Here's the example:
+
+```{src='optimization/lazy_mode' caption='A lazy object'}
+```
 
 Tips and tricks
 ---------------
