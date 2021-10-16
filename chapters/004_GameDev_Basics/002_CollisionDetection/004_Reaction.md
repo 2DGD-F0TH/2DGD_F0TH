@@ -23,9 +23,9 @@ How do we react to this event in a convincing (not necessarily "realistic") and 
 
 We will use the following image as reference for each collision reaction:
 
-![Images used as a reference for collision reaction](./images/collision_detection/reaction_reference.png){width=40%}
+![Images used as a reference for collision reaction](./images/collision_detection/reaction_reference.svg){width=40%}
 
-We will study each case separately, and each case will be a piece of this reference image.
+We will study each case separately, at the time the collision is detected (so the two objects are already interpenetrating), and each case will be a piece of this reference image.
 
 #### The Direction + Velocity Method
 
@@ -65,7 +65,7 @@ This method works in a similar fashion to the direction and velocity method, but
 
 This requires measuring how much the objects overlap on each axis, which can be a little more involved, but not really expensive.
 
-![Example of shallow-axis based reaction](./images/collision_detection/shallow_axis.png){width=90%}
+![Example of shallow-axis based reaction](./images/collision_detection/shallow_axis_1.svg){width=90%}
 
 In the previous picture, we can see how the algorithm chooses to solve the collision on the $y$ axis first and only on the x axis after; but since solving the $y$ axis solves the collision, no reaction is performed on the $x$ axis.
 
