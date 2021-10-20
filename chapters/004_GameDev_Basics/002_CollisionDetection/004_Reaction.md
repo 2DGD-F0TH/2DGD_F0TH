@@ -27,6 +27,7 @@ We will use the following image as reference for each collision reaction:
 
 We will study each case separately, at the time the collision is detected (so the two objects are already interpenetrating), and each case will be a piece of this reference image.
 
+<!-- FIXME: This makes no sense!
 #### The Direction + Velocity Method
 
 This is the simplest method, computationally speaking: as soon as the objects gets inside of a wall, you push it back according to the direction its velocity has or just the direction of the character itself.
@@ -58,6 +59,7 @@ This method can be used only with completely solid platforms. If you want to mak
 ![How velocity changing direction can teleport you](./images/collision_detection/velocity_teleport.png){width=80%}
 
 In the previous example we try to jump on a platform by going through it, but our jump quite doesn't make it. Since velocity has changed direction, we end up being teleported over the platform, which is considered a glitch.
+-->
 
 #### Shallow-axis based reaction method
 
