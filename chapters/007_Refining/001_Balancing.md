@@ -38,6 +38,12 @@ Giving some leeway to the player, for instance by having a more generous hit-box
 
 There are infinite ways to make a game challenging without having to force the player into accepting very precise hit-boxes or extremely tight gameplay.
 
+Economy
+-------
+
+{{placeholder}}
+
+<!-- TODO: Talk about how to balance economy, money sources vs money sinks, the risks of rampant inflation (usually when sources >> sinks) (rampant price increases of products, fixed-price operations become too cheap, etc...) as well as deflation (sources << sinks) (price drops, money hoarding, freezing of the economy, with bartering as a consequence, fixed-price operations become prohibithive, some game features may become "locked behind the money") -->
 
 A primer on Cheating
 --------------------
