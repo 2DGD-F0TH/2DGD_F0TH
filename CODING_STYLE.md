@@ -33,10 +33,13 @@ Pseudocode doesn't really have a structure, which makes things a lot harder to r
 
 ### Basics
 
-The pseudocode used in this book will be C-like, thus it should follow the broad strokes of that language:
+The pseudocode used in this book will be C-like, thus it should follow the broad strokes of that language, with some additions taken from Python's PEP 484 (Type hints) and decorators:
+
+- Return types are put after the function, with an arrow;
+- Static methods are "decorated" with `@staticmethod`
 
 ```
-int function addNumbers (int a, int b){
+function addNumbers (int a, int b) -> int{
     return a + b;
 }
 ```

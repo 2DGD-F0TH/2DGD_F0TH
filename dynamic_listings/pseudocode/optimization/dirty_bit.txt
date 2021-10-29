@@ -2,7 +2,7 @@ class Player{
     Vector speed = Vector(0, 0);
     bool needs_update = False;
     // ...
-    void function input(){
+    function input(){
         // ...
         if (right_key.is_Pressed){
             speed = speed + Vector(1, 0);  // Move right
@@ -16,7 +16,7 @@ class Player{
         // ...
     }
 
-    void function update(float dt){
+    function update(float dt){
         if (needs_update){
             // Do Update instructions
             // ...

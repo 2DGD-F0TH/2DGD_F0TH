@@ -1,4 +1,4 @@
-float function clamp(float value, float min, float max){
+function clamp(float value, float min, float max) -> float{
     // Clamps "value" so it is always between "min" and "max"
     if (value < min){
         return min;

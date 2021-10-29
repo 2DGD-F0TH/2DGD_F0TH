@@ -10,5 +10,5 @@ while (game_is_running){
         update_world(deltaTime);
         frametime = frametime - deltaTime;
     }
-    draw()
+    draw();
 }

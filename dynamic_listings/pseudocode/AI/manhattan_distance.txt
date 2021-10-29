@@ -3,6 +3,6 @@ struct Tile{
     integer y;
 }
 
-int function manhattan_distance(Tile start, Tile goal){
+function manhattan_distance(Tile start, Tile goal) -> int{
     return abs(start.x - goal.x) + abs(start.y - goal.y);
 }

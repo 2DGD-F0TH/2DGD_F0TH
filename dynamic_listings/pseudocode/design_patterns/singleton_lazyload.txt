@@ -2,13 +2,15 @@ class LazySingleton {
 
     static LazySingleton instance = null;
 
-    LazySingleton() {}
+    // Block the constructor from working, we don't want to build more than one instance
+    constructor() {}
 
-    Singleton static function getInstance() {
+    @staticmethod
+    function getInstance() -> LazySingleton{
         // Multi-threading: manage race conditions
         // ----- Critical region start -----
         if (instance == null) {
-            instance = new Singleton();
+            instance = new LazySingleton();
         }
         // ----- Critical region end -----
 

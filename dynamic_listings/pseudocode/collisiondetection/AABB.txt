@@ -10,7 +10,7 @@ structure Rectangle{
     int height;
 }
 
-bool function rect_rect_collision(Rectangle A, Rectangle B){
+function rect_rect_collision(Rectangle A, Rectangle B) -> bool{
     if ((A.corner.x < B.corner.x + B.width) AND
        (A.corner.x + A.width > B.corner.x) AND
        (A.corner.y < B.corner.y + B.height) AND

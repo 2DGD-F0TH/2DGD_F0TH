@@ -1,4 +1,4 @@
-Tile[] function findHorizontalMatches(){
+function findHorizontalMatches() -> Tile[]{
     int matchLength = 0;
     const int minMatchLength = 3;
     Tile[] matches = new Tile[];

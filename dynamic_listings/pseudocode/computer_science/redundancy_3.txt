@@ -1,4 +1,4 @@
-Node function get_previous_node(List lst, Node current_node){
+function get_previous_node(List lst, Node current_node) -> Node{
     Node pointer = lst.head;
     Node previous = null;
     while (pointer != current_node){

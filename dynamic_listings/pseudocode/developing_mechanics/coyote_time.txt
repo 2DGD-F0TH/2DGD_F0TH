@@ -4,7 +4,7 @@ class Player{
     bool onground = False
     bool has_jumped = False
     // ...
-    void function update(float dt):
+    function update(float dt):
         // ...
         if (onground){
             // Do stuff when player is on ground
@@ -21,7 +21,7 @@ class Player{
             }
         }
 
-    void function jump(){
+    function jump(){
         // This function takes care of jumping
         // ...
         if (coyote_time > 0){

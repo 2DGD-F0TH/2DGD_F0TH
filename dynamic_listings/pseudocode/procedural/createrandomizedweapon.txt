@@ -1,4 +1,4 @@
-Weapon function createRandomizedWeapon(){
+function createRandomizedWeapon() -> Weapon{
     Weapon wp = new Weapon();
     // Load some randomized components
     wp.loadRandomBodyFrom("weaponBodies/shotguns");

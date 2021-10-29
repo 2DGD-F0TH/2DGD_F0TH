@@ -1,4 +1,4 @@
-void function printList(items[] list){
+function printList(items[] list){
     for (each element in list){
         print element;
     }

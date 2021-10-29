@@ -12,7 +12,7 @@ terrain[31] = random_float(MIN, MAX);
 interpolate(terrain, 0, 31);
 
 
-void function midpoint_displacement(int begin, int end, int octave){
+function midpoint_displacement(int begin, int end, int octave){
     // Get the midpoint
     float midpoint = floor((end - begin) / 2);
     // Get the midpoint value

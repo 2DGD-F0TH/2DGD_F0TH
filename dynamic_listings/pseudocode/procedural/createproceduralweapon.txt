@@ -1,4 +1,4 @@
-Weapon function createProceduralWeapon(){
+function createProceduralWeapon() -> Weapon{
     Weapon wp = new Weapon();
     // Load some pre-defined components
     wp.loadBody("body0001.png");

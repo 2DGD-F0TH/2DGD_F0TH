@@ -16,7 +16,7 @@ structure Sprite{
     int height;
 }
 
-bool function pixel_perfect_collision(Sprite A, Sprite B){
+function pixel_perfect_collision(Sprite A, Sprite B) -> bool{
     // Calculate the intersecting rectangle to limit checks
     int x1 = max(A.x, B.x);
     int x2 = min((A.x + A.width), (B.x + B.width));

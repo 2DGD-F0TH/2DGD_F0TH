@@ -1,5 +1,5 @@
 // ...
-bool function polygon_polygon(Polygon p1, Polygon p2){
+function polygon_polygon(Polygon p1, Polygon p2) -> bool{
     // First we do a polygon vs line check for all the edges
     for (i from 0 to p2.vertices.length() - 1){
         int j = i + 1;

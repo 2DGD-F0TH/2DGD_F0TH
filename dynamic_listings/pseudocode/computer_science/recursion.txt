@@ -1,4 +1,4 @@
-void function count_backwards(int n){
+function count_backwards(int n){
     // Stop condition
     if (n == 0){
         return;

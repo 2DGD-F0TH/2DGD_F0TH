@@ -1,6 +1,6 @@
 const float INVINCIBILITY_TIME = 0.75;  // Seconds of invincibility
 // ...
-void function update(float dt){
+function update(float dt){
     float inv_time = 0;
     // ...
     if (inv_time <= 0){

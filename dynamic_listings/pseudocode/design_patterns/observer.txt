@@ -4,11 +4,11 @@ class Subject{
 
     Observer[] observers = new list of Observer;
 
-    void function register_observer(observer){
+    function register_observer(observer){
         observers.append(observer);
     }
 
-    void function notifyObservers(){
+    function notifyObservers(){
         for (each observer in observers){
             observer.update();
         }
@@ -20,7 +20,7 @@ class Observer{
     /* This is the class that contains the update method, used to force
      * an update in the observer */
 
-    void function update(){
+    function update(){
         print("I have been updated!");
     }
 }

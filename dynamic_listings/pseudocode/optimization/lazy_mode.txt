@@ -1,12 +1,12 @@
 class LazyObject{
     int[] numbers_reference;
 
-    void constructor(int[] numbers){
+    constructor(int[] numbers){
         // Saves the original list (possibly as a reference)
         numbers_reference = numbers;
     }
 
-    int getObject(int index){
+    getObject(int index) -> int{
         // Calculates the halved number on-demand
         return numbers_reference[index] / 2;
     }

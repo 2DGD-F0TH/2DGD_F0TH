@@ -1,4 +1,4 @@
-float function bounce_tween(float t){
+function bounce_tween(float t) -> float{
     // This constant will allow us to overshoot the max value by around 10%
     const float c = 1.70158;
 

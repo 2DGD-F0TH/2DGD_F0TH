@@ -4,14 +4,14 @@ class 2D_Grid(){
     int width = 0;
     int height = 0;
 
-    void function constructor(int rows, int cols){
+    function constructor(int rows, int cols){
         // Prepares the memory for the grid
         grid = new Tile[rows][cols];
         height = rows;
         width = cols;
     }
 
-    Tile function getCell(int row, int col):
+    function getCell(int row, int col) -> Tile{
         // Gets a cell from the 2D Grid
         if (row >= 0 AND row < height) AND (col >=0 AND col < width){
             // We better check if we are inside the grid
@@ -19,8 +19,9 @@ class 2D_Grid(){
         }else{
             return null;
         }
+    }
 
-    Tile[] function getAdjacentCells(int row, int col){
+    function getAdjacentCells(int row, int col) -> Tile[]{
         /* Returns a list of cells adjacent the ones we give
            REMEMBER: We index at 0 so the first row is 0, the last one is at
            "height - 1", same goes for columns */

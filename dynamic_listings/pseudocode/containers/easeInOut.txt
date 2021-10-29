@@ -1,4 +1,4 @@
-float function easeInOut(float time, float duration, float power){
+function easeInOut(float time, float duration, float power) -> float{
     float threshold = duration / 2;
     if (time <= threshold){
         return easeIn(time, duration, power);

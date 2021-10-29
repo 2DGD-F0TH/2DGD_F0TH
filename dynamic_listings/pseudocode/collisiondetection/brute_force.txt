@@ -1,11 +1,11 @@
-bool function is_collision(Item A, Item B){
+function is_collision(Item A, Item B) -> bool{
     // Defines how two items collide (being circles, this could be a difference of radii)
     // ...
 }
 
 Item[] items = [item1, item2, ...];
 
-Item[] function get_colliding_items(Item[] items_to_check){
+function get_colliding_items(Item[] items_to_check) -> Item[]{
     Item[] colliding_items = [];
 
     for (A in items_to_check){

@@ -1,4 +1,4 @@
-Tile[] function findVerticalMatches(){
+function findVerticalMatches() -> Tile[]{
     int matchLength = 0;
     int minMatchLength = 3;
     Tile[] matches = new Tile[];

@@ -17,7 +17,7 @@ structure Circle{
     int radius;
 }
 
-bool function circle_rectangle_collision(Circle circ, Rectangle rect){
+function circle_rectangle_collision(Circle circ, Rectangle rect) -> bool{
     // Detects a collision between a circle and a rectangle
 
     // These variables are used as the coordinates we should test against

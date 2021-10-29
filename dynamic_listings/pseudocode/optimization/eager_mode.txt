@@ -1,14 +1,14 @@
 class EagerObject{
     int[] halved_numbers;
 
-    void constructor(int[] numbers){
+    constructor(int[] numbers){
         // Prepares the halved numbers list
         for (number in numbers){
             halved_numbers.append(number / 2);
         }
     }
 
-    int getObject(int index){
+    getObject(int index) -> int{
         // Returns the pre-calculated object at the requested index
         return halved_numbers[index];
     }

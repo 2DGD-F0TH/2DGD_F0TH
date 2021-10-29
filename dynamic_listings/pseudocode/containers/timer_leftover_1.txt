@@ -5,7 +5,7 @@ class Timer{
      * ...
      */
 
-    void function update(float dt){
+    function update(float dt){
         if (not this.active){
             // We return directly if the timer is disabled
             return;

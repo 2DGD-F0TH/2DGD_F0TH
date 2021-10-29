@@ -8,7 +8,7 @@ class Player{
     Vector2 position = Vector2();  // Defines our current position, in (x,y) coordinates
     bool is_moving = False;  // Tells us if we're moving
 
-    void function handle_input(){
+    function handle_input(){
         // First of all, we need to zero the input_accel, or we'll be working on "residual data"
         input_accel = Vector2.ZERO;
         // Now we can handle movement
@@ -30,7 +30,7 @@ class Player{
         }
     }
 
-    void function handle_movement(float dt){
+    function handle_movement(float dt){
         if (is_moving){
             // Vectors will take care of summing forces
             velocity = velocity + ACCEL * dt * input_accel;

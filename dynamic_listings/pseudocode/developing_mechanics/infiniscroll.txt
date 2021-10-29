@@ -3,7 +3,7 @@ const float BACKGROUND_X_SIZE = 512;  // The horizontal size of the background
 const float LOOP_POINT = 256;  // The horizontal loop point of the image
 const float DISTANCE_FACTOR = 0.5;  // The background moves at half the player speed
 
-void function update(float dt){
+function update(float dt){
     // ...
     // In case we're moving right, the background scrolls left slightly
     if (player.speed_x > 0){
@@ -30,7 +30,7 @@ void function update(float dt){
     }
 }
 
-void function draw(){
+function draw(){
     ...
     // Draw the background
     screen.draw(background, (background_x_offset, 0));

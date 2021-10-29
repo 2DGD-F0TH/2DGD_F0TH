@@ -5,7 +5,7 @@ class AIEntity{
     forward_direction_index = 0;
     current_cell = (1,0);
     // ...
-    function get_adjacent_cell(Cell cell, string direction){
+    function get_adjacent_cell(Cell cell, string direction) -> Cell{
         // Returns the adjacent cell in said direction
         cell_copy = cell.copy();
         if (direction == "NORTH"){
@@ -23,7 +23,7 @@ class AIEntity{
         return cell_copy;
     }
 
-    function is_valid(Cell cell){
+    function is_valid(Cell cell) -> bool{
         /* Returns true if the cell is valid, aka
          * does not have a wall and does not go backwards */
         if (cell.is_wall()){

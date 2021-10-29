@@ -2,25 +2,25 @@ class List{
     Node nodeList;
     int length;
     // ...
-    int getLength(){
+    function getLength() -> int{
         return length;
     }
 
-    void addItem(Node node){
+    function addItem(Node node){
         // ... Normal operation ...
         // ...
         // We update our length counter
         length = length + 1;
     }
 
-    void removeItem(Node node){
+    function removeItem(Node node){
         // ... Normal removal operation ...
         // ...
         // We update our length counter
         length = length - 1;
     }
 
-    void clear(){
+    function clear(){
         // ... Normal clear operation ...
         // ...
         // We clear the length too

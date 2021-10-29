@@ -1,4 +1,4 @@
-void bubbleSort(items [] A){
+function bubbleSort(items [] A){
     int n = length(A);
     bool swapped = false;
     do{

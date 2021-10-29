@@ -13,20 +13,20 @@ structure Circle{
     int radius;
 }
 
-float function distance(Point A, Point B){
+function distance(Point A, Point B) -> float{
     // Calculates the distance between two points
     return square_root((A.x + B.x)^2 + (A.y + B.y)^2);
 }
 
-bool function line_point_collision(Line line, Point point){
+function line_point_collision(Line line, Point point) -> bool{
     // ...
 }
 
-bool function circle_point_collision(Circle circ, Point point){
+function circle_point_collision(Circle circ, Point point) -> bool{
     // ...
 }
 
-bool function line_circle_collision(Circle circle, Line line){
+function line_circle_collision(Circle circle, Line line) -> bool{
     // We check the ends first
     bool collides_A = circle_point_collision(circle, line.A);
     bool collides_B = circle_point_collision(circle, line.B);

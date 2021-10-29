@@ -1,13 +1,13 @@
 abstract class Component{
     // Defines the abstract class/interface for the component pattern
-    void function update(){
+    function update(){
         // Do nothing, this is an abstract class
     }
 }
 
 class ConcreteComponent1 inherits from Component{
     // Defines the concrete component number 1
-    void function update(){
+    function update(){
         // Do Stuff
     }
 }
@@ -17,7 +17,8 @@ class ConcreteComponent2 inherits from Component{
 
     // The component can contain a list of other components that get updated
     Component[] list = new vector of 9 Component;
-    void function update(){
+
+    function update(){
         for (each component in list){
             component.update();
         }
@@ -30,7 +31,7 @@ class Client{
     ConcreteComponent1 first_component;
     ConcreteComponent2 second_component;
 
-    void function update(){
+    function update(){
         // This is the Client's update function
         first_component.update();
         second_component.update();

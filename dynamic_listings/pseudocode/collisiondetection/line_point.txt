@@ -8,12 +8,12 @@ structure Line{
     Point B;
 }
 
-float function distance(Point A, Point B){
+function distance(Point A, Point B) -> float{
     // Calculates the distance between two points
     return square_root((A.x + B.x)^2 + (A.y + B.y)^2);
 }
 
-bool function line_point_collision(Point pt, Line ln){
+function line_point_collision(Point pt, Line ln) -> bool{
     // First, let's calculate the length of the line
     float length = distance(ln.A, ln.B);
     // Now let's calculate the distance between the point pt

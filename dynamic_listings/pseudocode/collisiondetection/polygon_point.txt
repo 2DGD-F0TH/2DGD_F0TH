@@ -1,5 +1,5 @@
 // ...
-bool function polygon_point(Polygon poly, Point point){
+function polygon_point(Polygon poly, Point point) -> bool{
     // First of all, we get the polygon's bounding box
     Rectangle bounding_box = poly.calculate_bounding_box();
     // Then we do a simple point vs. rectangle check

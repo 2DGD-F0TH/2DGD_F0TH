@@ -3,9 +3,10 @@ class Singleton {
     static Singleton INSTANCE = new Singleton();
 
     // This makes the constructor impossible to use outside of the class
-    Singleton() {}
+    constructor() {}
 
-    Singleton static function getInstance() {
+    @staticmethod
+    function getInstance() -> Singleton{
         return INSTANCE;
     }
 }
