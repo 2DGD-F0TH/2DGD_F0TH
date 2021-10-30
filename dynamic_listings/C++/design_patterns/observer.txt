@@ -1,5 +1,6 @@
 #include <vector>
 #include <iostream>
+
 class Subject{
     /* This is the observed class that contains the list of observers and
      * the notifyObservers method */
@@ -17,7 +18,7 @@ class Subject{
                 observer->update();
             }
         }
-}
+};
 
 
 class Observer{
@@ -28,7 +29,7 @@ class Observer{
         void update(){
             std::cout << "I have been updated!" << std::endl;
         }
-}
+};
 
 
 int main(){

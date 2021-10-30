@@ -3,6 +3,9 @@ class Handler{
     private:
         Handler* next = nullptr;  // The next handler in the chain
 
+        // This function gets implemented in the concrete classes
+        virtual void real_handler() = 0;
+
     public:
         void handle_request(){
             if (condition){
@@ -19,8 +22,4 @@ class Handler{
             next = new_handler;
             return *next;  // Allows for chaining .add_handler().add_handler()...
         }
-
-    private:
-        // This function gets implemented in the concrete classes
-        virtual void real_handler() = 0;
-}
+};

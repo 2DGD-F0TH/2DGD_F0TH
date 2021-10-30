@@ -3,7 +3,7 @@ class Common{
     private:
         Mesh mesh;
         Texture texture;
-}
+};
 
 class FlyWeight{
     // Contains only the necessary data to create an instance of the item
@@ -11,4 +11,4 @@ class FlyWeight{
         Common common_pointer;
         Vector position;
         float scale_factor;
-}
+};

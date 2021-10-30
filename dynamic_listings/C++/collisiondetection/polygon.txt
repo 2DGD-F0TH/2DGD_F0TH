@@ -1,6 +1,6 @@
 class Polygon{
     private:
-        Point[] vertices;
+        Point* vertices;
 
     public:
         Rectangle calculate_bounding_box(){

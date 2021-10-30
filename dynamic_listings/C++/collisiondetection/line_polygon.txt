@@ -4,11 +4,11 @@ bool line_polygon(Line line, Polygon poly){
     // This covers cases AB and CD
     if polygon_point(poly, line.A){
         // One of the ends is inside the polygon, we have a hit
-        return True
+        return true;
     }
     if polygon_point(poly, line.B){
         // One of the ends is inside the polygon, we have a hit
-        return True
+        return true;
     }
     // Now we check for case EF
     for (int i = 0; i < poly.vertices.length(); i++){
@@ -20,12 +20,12 @@ bool line_polygon(Line line, Polygon poly){
         }
         Line temp_line = Line.fromPoints(poly.vertices[i], poly.vertices[j]);
         if line_line_collsion(temp_line, line){
-            return True
+            return true;
         }
     }
     if line_line_collision(temp_line, line){
-        return True
+        return true;
     }
     // If none of the previous checks was triggered, we don't have a collision
-    return False
+    return false;
 }

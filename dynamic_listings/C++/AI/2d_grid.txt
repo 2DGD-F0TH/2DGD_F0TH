@@ -1,6 +1,7 @@
 #include <vector>
+
 class 2D_Grid{
-    Tile** grid;
+    Tile*** grid;
     int width= 0;
     int height=0;
 

@@ -1,15 +1,15 @@
 bool binarySearch(int[] lst, int item){
     int first = 0;
     int last = lst.size() - 1;
-    found = false;
+    bool found = false;
     while(first <= last && !found){
         // Find the middle element
         int midpoint = (int) (first + last) / 2;
-        if lst[midpoint] == item{
+        if (lst[midpoint] == item){
             // We found it!
             found = true;
         }else{
-            if item < lst[midpoint]{
+            if (item < lst[midpoint]){
                 // Continue on the "first half"
                 last = midpoint - 1;
             }else{

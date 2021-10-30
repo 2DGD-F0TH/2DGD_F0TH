@@ -44,7 +44,7 @@ Rectangle bounding_box(Point[] vertices){
     C.x = xmax;
     C.y = ymax;
     // We build our bounding box
-    boundingBox = Rectangle.from_points(A, C)
+    boundingBox = Rectangle.from_points(A, C);
     // and return it
-    return boundingBox
+    return boundingBox;
 }

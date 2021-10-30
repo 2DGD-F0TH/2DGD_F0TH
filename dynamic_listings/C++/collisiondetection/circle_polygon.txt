@@ -12,20 +12,20 @@ bool circle_polygon(Polygon poly, Circle circ){
         Line temp_line = Line.fromPoints(poly.vertices[i], poly.vertices[j]);
         // In case we find a hit, we already know there is a collision
         if line_circle_collision(circ, temp_line){
-            return True
+            return true;
         }
     }
     // Now Let's check for cases "A" and "B"
     if polygon_point(poly, circ.center){
         // If the center is inside the polygon, we have a collision
-        return True
+        return true
     }
     // Now let's check for the rare edge-case: if this case happens, all the vertices
     // are inside the circle, so we can only check one of them
     if circle_point_collision(circ, poly.vertices[0]){
         // If any vertex is inside the circle, we have a collision, so we check the first
-        return True
+        return true
     }
     // If none of the checks above returned, we don't have a collision (case D)
-    return False
+    return false
 }

@@ -1,17 +1,18 @@
 // -------------------------------------
 // A is an array of integers
 int n = A.size();
+bool swapped = false;
 do{
-    bool swapped = false;
+    swapped = false;
     for (i = 0; i < n; ++i) {
-        if A[i-1] > A[i]{
+        if (A[i-1] > A[i]){
             int tmp = A[i-1];
             A[i-1] = A[i];
             A[i] = tmp;
             swapped = true;
         }
     }
-}while(!swapped)
+}while(swapped)
 
 // -------------------------------------
 

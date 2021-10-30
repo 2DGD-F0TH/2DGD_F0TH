@@ -3,7 +3,7 @@ class Component{
     public:
         // Do nothing, this is an abstract class
         virtual void update() = 0;
-}
+};
 
 class ConcreteComponent1 public Component{
     // Defines the concrete component number 1
@@ -11,7 +11,7 @@ class ConcreteComponent1 public Component{
         void update(){
             // Do Stuff
         }
-}
+};
 
 class ConcreteComponent2 public Component{
     // Defines the concrete component number 2
@@ -19,6 +19,7 @@ class ConcreteComponent2 public Component{
     // The component can contain a list of other components that get updated
     private:
         Component[] list = {...};
+
     public:
         void update(){
             for(auto comp:list){
@@ -26,7 +27,7 @@ class ConcreteComponent2 public Component{
             }
             // Do Other Stuff
         }
-}
+};
 
 class Client{
     ConcreteComponent1 first_component* = new ConcreteComponent1();
@@ -37,4 +38,4 @@ class Client{
         first_component->update();
         second_component->update();
     }
-}
+};

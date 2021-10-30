@@ -7,5 +7,6 @@ int[] convert_pixels_to_tile(int x, int y){
     // Converts a point into tile coordinates
     int tile_x = std::floor(x / TILE_WIDTH);
     int tile_y = std::floor(y / TILE_HEIGHT);
-    return [tile_x, tile_y]
+    int to_return[2] = {tile_x, tile_y};
+    return to_return;
 }

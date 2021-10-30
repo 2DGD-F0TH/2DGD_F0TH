@@ -8,15 +8,15 @@ bool polygon_polygon(Polygon p1, Polygon p2){
             j = 0;
         }
         temp_line = Line.fromPoints(p2.vertices[i], p2.vertices[j])
-        if polygon_line(p1, temp_line){
+        if (polygon_line(p1, temp_line)){
             // We have a hit
-            return True;
+            return true;
         }
     }
     // Now we check in case one polygon contains the other, we can just check a single vertex
     if (polygon_point(p1, p2.vertices[0]) || polygon_point(p2, p1.vertices[0])){
-        return True;
+        return true;
     }
     // None of the checks was triggered, there is no collision
-    return False;
+    return false;
 }

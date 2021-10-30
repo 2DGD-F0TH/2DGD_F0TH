@@ -6,7 +6,9 @@
 std::vector<Node*> openSet* = new std::vector<Node*>();
 std::vector<Node*> closedSet* = new std::vector<Node*>();
 Node* currentNode = start;
+
 closedSet->push_back(currentNode);
+
 do{
     for (Node* n: currentNode->getAdjacentList()){
         // ClosedSet Contains N

@@ -1,4 +1,5 @@
 #include <cmath>
+
 struct Point{
     int x;
     int y;
@@ -27,7 +28,7 @@ bool circle_point_collision(Circle c, Point p){
     // ...
 }
 
-bool line_circle_collision(Circle circle, Line line):
+bool line_circle_collision(Circle circle, Line line){
     // We check the ends first
     collides_A = circle_point_collision(circle, line.A);
     collides_B = circle_point_collision(circle, line.B);
@@ -57,3 +58,4 @@ bool line_circle_collision(Circle circle, Line line):
         // Let's Reuse the Point/Circle Algorithm
         return circle_point_collision(circle, P);
     }
+}

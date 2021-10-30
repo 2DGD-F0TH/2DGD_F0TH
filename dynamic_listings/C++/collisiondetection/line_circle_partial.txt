@@ -19,7 +19,7 @@ bool line_circle_collision(Circle circle, Line line){
     collides_A = circle_point_collision(circle, line.A);
     collides_B = circle_point_collision(circle, line.B);
     if (collides_A || collides_B){
-        return true
+        return true;
     }
     // ...
 }

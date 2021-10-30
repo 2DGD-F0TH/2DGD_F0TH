@@ -10,6 +10,6 @@ bool point_triangle_collision(float px, float py, float x1, float y1, float x2, 
     if (std::abs(area1 + area2 + area3 - original_area) < epsilon){
         return true;
     }else{
-        return false:
+        return false;
     }
 }

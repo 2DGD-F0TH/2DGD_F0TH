@@ -2,7 +2,7 @@ class Command{
     // This is the abstract class that will be used as interface
     public:
         virtual void execute() = 0;
-}
+};
 
 class JumpCommand public Command{
     // This will implement the execute method
@@ -15,4 +15,4 @@ class JumpCommand public Command{
         void jump(){
             // DO STUFF
         }
-}
+};

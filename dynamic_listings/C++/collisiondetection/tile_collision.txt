@@ -15,7 +15,8 @@ int[] convert_pixels_to_tile(int x, int y){
     // Converts a point into tile coordinates
     int tile_x = std::floor(x / TILE_WIDTH);
     int tile_y = std::floor(y / TILE_HEIGHT);
-    return [tile_x, tile_y]
+    int to_return[2] = {tile_x, tile_y};
+    return to_return;
 }
 
 // We assume the player is falling, so no check will be shown here
@@ -27,7 +28,7 @@ std::vector<Point> points_to_check = {
 for (Point point: points_to_check){
     int[] detected_tile_coordinates = convert_pixels_to_tile(point.x, point.y);
     Tile* detected_tile = get_tile(detected_tile_coordinates);
-    if AABB(player, detected_tile->rectangle){
+    if (AABB(player, detected_tile->rectangle)){
         // React to the collision
     }
 }
