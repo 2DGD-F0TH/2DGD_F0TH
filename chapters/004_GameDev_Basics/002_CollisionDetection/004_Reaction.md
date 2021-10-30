@@ -27,43 +27,40 @@ We will use the following image as reference for each collision reaction:
 
 We will study each case separately, at the time the collision is detected (so the two objects are already interpenetrating), and each case will be a piece of this reference image.
 
-<!-- FIXME: This makes no sense!
-#### The Direction + Velocity Method
+#### A naive approach
 
-This is the simplest method, computationally speaking: as soon as the objects gets inside of a wall, you push it back according to the direction its velocity has or just the direction of the character itself.
+This is the simplest method we can think of: as soon as the object gets inside of a wall, you push it back to one of the edges of the block, while keeping an eye on the direction it's moving.
 
 ##### How it works
 
 This works when you treat the `x` and `y` axis separately, updating one, checking the collisions that come up from it, update the other axis and check for new collisions.
 
-```{src='collisiondetection/direction_velocity' caption='Code for the direction + velocity collision reaction'}
+```{src='collisiondetection/naive_reaction' caption='Code for the naive collision reaction'}
 ```
 
 ##### Analysis
 
 Let's see how this method reacts in each situation.
 
-When we are trying to fall on the ground, this method works as follows:
+When we are trying to slam against the wall, this method works as follows:
 
-![How the direction + velocity method reacts to collisions on a horizontal plane](./images/collision_detection/direction_velocity_reference.png){width=80%}
+![How the naive method reacts to collisions against a wall](./images/collision_detection/naive_reaction_1.svg){width=80%}
 
-1. We divide the movement vector in its `x` and `y` components.
-2. We move along the `x` axis and check for collisions, in this case there are none (the ghost represents our previous position.
-3. We move along the `y` axis, after checking for collisions we find that we are colliding on the ground (the ghost represents our next position).
-4. We react to the collision by moving the sprite on top of the ground.
+1. We separate our position vector in its $x$ and $y$ components.
+2. We check for collisions, and if so, we react on the $x$ axis in a direction opposite to the $x$ component of the velocity.
+3. We check for collisions again, if there are any, we react on the $y$ axis, in a direction opposite to the $y$ component of the velocity.
 
-##### Quirks and issues
+##### Problems
 
-This method can be used only with completely solid platforms. If you want to make use of platforms that you can cross one-way, since you may get teleported around when your velocity changes direction.
+Problems arise when we try to use the same method to react to a collision on a horizontal plane. In that case reacting on the x axis first will bring some unexpected surprises.
 
-![How velocity changing direction can teleport you](./images/collision_detection/velocity_teleport.png){width=80%}
+![How the naive method reacts to collisions against the ground](./images/collision_detection/naive_reaction_2.svg){width=80%}
 
-In the previous example we try to jump on a platform by going through it, but our jump quite doesn't make it. Since velocity has changed direction, we end up being teleported over the platform, which is considered a glitch.
--->
+We need to find a way to decide which axis we should correct first.
 
 #### Shallow-axis based reaction method
 
-This method works in a similar fashion to the direction and velocity method, but prioritizes reactions on the axis that shows the shallowest overlap.
+This method works in a similar fashion to the naive method, but prioritizes reactions on the axis that shows the shallowest overlap.
 
 This requires measuring how much the objects overlap on each axis, which can be a little more involved, but not really expensive.
 
@@ -74,6 +71,38 @@ In the previous picture, we can see how the algorithm chooses to solve the colli
 {{placeholder}}
 
 <!-- TODO: Similar to direction + velocity, but reacts only on the most shallow direction -->
+
+##### Quirks and issues
+
+This method can be used only with completely solid platforms. If you want to make use of platforms that you can cross one-way, since you may get teleported around when your velocity changes direction.
+
+![How velocity changing direction can teleport you](./images/collision_detection/velocity_teleport.png){width=80%}
+
+In the previous example we try to jump on a platform by going through it, but our jump quite doesn't make it. Since velocity has changed direction, we end up being teleported over the platform, which is considered a glitch.
+
+#### Interleaving single-axis movement and collision detection
+
+This is a method quite simple to understand: you split the movement in its $x$ and $y$ components, move on the first component, check and react, move on the other component, check and react again.
+
+##### How it works
+
+This works by treating the $x$ and $y$ axes separately, updating one, checking the collisions that come up from it, update the other axis and check for new collisions.
+
+```{src='collisiondetection/interleaved_movement_collision' caption='Code for interleaving movement and collision reaction'}
+```
+
+##### Analysis
+
+Let's see how this method reacts in each situation.
+
+When we are trying to fall on the ground, this method works as follows:
+
+![How the the interleaving method reacts to collisions on a horizontal plane](./images/collision_detection/interleaving_reference.png){width=80%}
+
+1. We divide the movement vector in its $x$ and $y$ components.
+2. We move along the $x$ axis and check for collisions, in this case there are none (the ghost represents our previous position.
+3. We move along the $y$ axis, after checking for collisions we find that we are colliding on the ground (the ghost represents our next position).
+4. We react to the collision by moving the sprite on top of the ground.
 
 #### The "Snapshot" Method
 

@@ -1,7 +1,7 @@
-// Direction+Velocity collision reaction with rectangles
+// Naive collision reaction with rectangles
 void update(float dt){
     // ...
-    player.position.x = player.position.x + player.x_speed * dt;
+    player.position = player.position + player.speed * dt;
     // Refer to your favourite collision detection and broad/fine passes
     if (collision(player, object)){
         if (player.x_speed > 0){  // going right
@@ -13,7 +13,6 @@ void update(float dt){
             player.x_speed = 0;  // stop the player
         }
     }
-    player.position.y = player.position.y + player.y_speed * dt;
     // Again, refer to your favourite collision detection and broad/fine passes
     if (collision(player, object)){
         if (player.y_speed > 0){  // going down

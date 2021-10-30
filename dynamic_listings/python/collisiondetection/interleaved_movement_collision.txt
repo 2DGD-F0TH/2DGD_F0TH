@@ -1,4 +1,4 @@
-# Direction+Velocity collision reaction with rectangles
+# Interleaving movement and collision reaction with rectangles
 def update(dt):
     # ...
     player.position.x += player.x_speed * dt
