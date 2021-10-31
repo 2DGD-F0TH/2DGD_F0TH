@@ -18,7 +18,7 @@ class Timer{
                 function_to_execute();
                 if (one_shot){
                     // If this timer is a one-shot, we disable it
-                    active = False;
+                    active = false;
                 }
                 // We reset the timer differently, by adding the "set time" until we have a positive value
                 while (time <= 0){

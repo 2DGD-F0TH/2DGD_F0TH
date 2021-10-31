@@ -12,7 +12,7 @@ class Timer{
         bool active;
 
     public:
-        Timer(float time_set, function_ptr funct, bool oneshot = False, bool act=False){
+        Timer(float time_set, function_ptr funct, bool oneshot = false, bool act=false){
             // We prepare the timer and memorize the setting
             time = time_set;
             set_time = time;
@@ -36,7 +36,7 @@ class Timer{
                 function_to_execute();
                 if (one_shot){
                     // If this timer is a one-shot, we disable it
-                    active = False;
+                    active = false;
                 }
                 // We reset the timer (we may need to re-activate it manually later)
                 time = set_time;
