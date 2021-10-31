@@ -72,14 +72,6 @@ In the previous picture, we can see how the algorithm chooses to solve the colli
 
 <!-- TODO: Similar to direction + velocity, but reacts only on the most shallow direction -->
 
-##### Quirks and issues
-
-This method can be used only with completely solid platforms. If you want to make use of platforms that you can cross one-way, since you may get teleported around when your velocity changes direction.
-
-![How velocity changing direction can teleport you](./images/collision_detection/velocity_teleport.png){width=80%}
-
-In the previous example we try to jump on a platform by going through it, but our jump quite doesn't make it. Since velocity has changed direction, we end up being teleported over the platform, which is considered a glitch.
-
 #### Interleaving single-axis movement and collision detection
 
 This is a method quite simple to understand: you split the movement in its $x$ and $y$ components, move on the first component, check and react, move on the other component, check and react again.
