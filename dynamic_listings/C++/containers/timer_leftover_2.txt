@@ -7,7 +7,7 @@ class Timer{
 
     public:
         void update(float dt){
-            if (not active){
+            if (!active){
                 // We return directly if the timer is disabled
                 return;
             }
