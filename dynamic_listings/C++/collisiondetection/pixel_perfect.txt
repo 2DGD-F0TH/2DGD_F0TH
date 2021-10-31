@@ -35,8 +35,9 @@ bool pixel_perfect_collision(Sprite A, Sprite B){
         for (int x=x1; x < x2; x++){
             Color a = A.bitmask.getColor(x - A.x, y - A.y);
             Color b = B.bitmask.getColor(x - B.x, y - B.y);
-            if (a.isWhite() && b.isWhite()):
+            if (a.isWhite() && b.isWhite()){
                 return true;
+            }
         }
     }
 

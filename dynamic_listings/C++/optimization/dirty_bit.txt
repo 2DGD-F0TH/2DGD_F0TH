@@ -4,7 +4,7 @@ class Player{
         bool needs_update = false;
     // ...
     public:
-        void input():
+        void input(){
             // ...
             if (Keyboard.get(RIGHT_KEY).is_Pressed){
                 speed = speed + Vector(1, 0);  // Move right
@@ -16,11 +16,13 @@ class Player{
                 needs_update = true;
             }
             // ...
+        }
 
-        void update(float dt):
+        void update(float dt){
             if (needs_update){
                 // Do Update instructions
                 // ...
                 //
             }
+        }
 };
