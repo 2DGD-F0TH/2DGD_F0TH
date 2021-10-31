@@ -3,7 +3,7 @@ const float jumpBufferTime = 5.0;
 // ...
 void update(float dt){
     //...
-    if controls.jump.isPressed(){
+    if (controls.jump.isPressed()){
         player.hasBufferedJump = true;
         player.jumpBufferCountdown = jumpBufferTime;
     }

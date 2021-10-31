@@ -27,4 +27,4 @@ class Timer{
                 time = time + (multiplier * set_time);
             }
         }
-}
+};

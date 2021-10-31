@@ -1,3 +1,5 @@
+#include<vector>
+
 class Polygon{
     private:
         Point* vertices;
@@ -20,19 +22,19 @@ class Polygon{
             return boundingBox;
         }
 
-        Triangle[] do_fanning(){
+        std::vector<Triangle> do_fanning(){
             /*
             * This function iterates over the vertices and returns
             * an array of triangles corresponding to the "fan triangulation"
             */
             // We fix the "base" of the fan on the first vertex
             Point root_vertex = vertices[0];
-            Triangle[] temp_triangles = new Triangle[];
+            std::vector<Triangle> temp_triangles = new std::vector<Triangle>();
             // Now we iterate through all the other vertices
             for (int j = 2; j < vertices.length(); j++){
                 // j goes from the third vertex, to the last
                 // j - 1 goes from the second to the second to last
-                temp_triangles.append(Triangle.from_points(root_vertex, j - 1, j))
+                temp_triangles.push_back(Triangle.from_points(root_vertex, j - 1, j))
             }
             // In the end, we will have the triangles array, we can just return it
             return temp_triangles;

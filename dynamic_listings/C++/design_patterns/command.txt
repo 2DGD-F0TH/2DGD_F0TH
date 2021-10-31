@@ -4,7 +4,7 @@ class Command{
         virtual void execute() = 0;
 };
 
-class JumpCommand public Command{
+class JumpCommand: public Command{
     // This will implement the execute method
     public:
         void execute(){

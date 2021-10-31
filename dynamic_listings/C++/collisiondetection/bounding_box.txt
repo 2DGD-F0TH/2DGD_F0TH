@@ -13,7 +13,7 @@ class Rectangle{
         // ...
     }
 // ...
-}
+};
 
 Rectangle bounding_box(Point[] vertices){
     // First we create and bootstrap the variables

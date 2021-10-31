@@ -9,46 +9,47 @@ class Player{
         const float ACCEL = 15.0;  // The acceleration rate
         const float DECEL = 30.0;  // The deceleration rate
 
-    void handle_input(){
-        // First of all, we need to zero the input_accel, or we'll be working on "residual data"
-        input_accel = Vector2.ZERO;
-        // Now we can handle movement
-        if (KEYBOARD.Left_Arrow_Pressed){
-            input_accel.x = input_accel.x - 1;
-        }
-        if (KEYBOARD.Right_Arrow_Pressed){
-            input_accel.x = input_accel.x + 1;
-        }
-        if KEYBOARD.Down_Arrow_Pressed{
-            input_accel.y = input_accel.y + 1;
-        }
-        if (KEYBOARD.Right_Arrow_Pressed){
-            input_accel.y = input_accel.y - 1
-        }
-        // If any component of the acceleration vector is not zero, we are moving
-        if (input_accel != Vector2.ZERO){
-            is_moving = true;
-        }
-    }
-
-    void handle_movement(float dt){
-        if (is_moving){
-            // Vectors will take care of summing forces
-            velocity = velocity + ACCEL * dt * input_accel;
-            // We need to clamp the speed, to avoid going too fast
-            velocity.clamp(MAX_SPEED);
-        }else{
-            // We are stopping, let's subtract the deceleration
-            float velocity_value = velocity.length() - DECEL * dt;
-            if (velocity_value < 0){
-                // If, After decelerating, we have a negative value, we need to make it zero or the object will start moving backwards
-                velocity_value = 0;
+    public:
+        void handle_input(){
+            // First of all, we need to zero the input_accel, or we'll be working on "residual data"
+            input_accel = Vector2.ZERO;
+            // Now we can handle movement
+            if (KEYBOARD.Left_Arrow_Pressed){
+                input_accel.x = input_accel.x - 1;
             }
-            // We are just changing the length of the vector, so we can just clamp its length
-            velocity.clamp(velocity_value);
+            if (KEYBOARD.Right_Arrow_Pressed){
+                input_accel.x = input_accel.x + 1;
+            }
+            if KEYBOARD.Down_Arrow_Pressed{
+                input_accel.y = input_accel.y + 1;
+            }
+            if (KEYBOARD.Right_Arrow_Pressed){
+                input_accel.y = input_accel.y - 1
+            }
+            // If any component of the acceleration vector is not zero, we are moving
+            if (input_accel != Vector2.ZERO){
+                is_moving = true;
+            }
         }
 
-        // Now it's time to move the object
-        position = position + velocity;
-    }
-}
+        void handle_movement(float dt){
+            if (is_moving){
+                // Vectors will take care of summing forces
+                velocity = velocity + ACCEL * dt * input_accel;
+                // We need to clamp the speed, to avoid going too fast
+                velocity.clamp(MAX_SPEED);
+            }else{
+                // We are stopping, let's subtract the deceleration
+                float velocity_value = velocity.length() - DECEL * dt;
+                if (velocity_value < 0){
+                    // If, After decelerating, we have a negative value, we need to make it zero or the object will start moving backwards
+                    velocity_value = 0;
+                }
+                // We are just changing the length of the vector, so we can just clamp its length
+                velocity.clamp(velocity_value);
+            }
+
+            // Now it's time to move the object
+            position = position + velocity;
+        }
+};

@@ -16,16 +16,16 @@ bool circle_polygon(Polygon poly, Circle circ){
         }
     }
     // Now Let's check for cases "A" and "B"
-    if polygon_point(poly, circ.center){
+    if (polygon_point(poly, circ.center)){
         // If the center is inside the polygon, we have a collision
-        return true
+        return true;
     }
     // Now let's check for the rare edge-case: if this case happens, all the vertices
     // are inside the circle, so we can only check one of them
-    if circle_point_collision(circ, poly.vertices[0]){
+    if (circle_point_collision(circ, poly.vertices[0])){
         // If any vertex is inside the circle, we have a collision, so we check the first
-        return true
+        return true;
     }
     // If none of the checks above returned, we don't have a collision (case D)
-    return false
+    return false;
 }

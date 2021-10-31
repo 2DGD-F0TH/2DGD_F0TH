@@ -9,24 +9,24 @@ player_instance = player_instance + (velocity * dt);
 // ...
 // Considering "colliding_blocks" as the list of blocks colliding with player
 for (auto block: colliding_blocks){
-    if (snapshot.y >= block.y + block.height) && (player_instance.y < block.y + block.height){
+    if ((snapshot.y >= block.y + block.height) && (player_instance.y < block.y + block.height)){
         // We are coming on the block from below, react accordingly
         // Ignoring this reaction will allow players to phase through blocks when coming from below
         player_instance.y = block.y + block.height;
     }
 
-    if (snapshot.y + snapshot.height <= block.y) && (player_instance.y + snapshot.height > block.y){
+    if ((snapshot.y + snapshot.height <= block.y) && (player_instance.y + snapshot.height > block.y)){
         // We are coming on the block from above
         player_instance.y = block.y;
         player_instance.on_ground = true;
     }
 
-    if (snapshot.y + snapshot.width <= block.x) && (player_instance.x > block.x){
+    if ((snapshot.y + snapshot.width <= block.x) && (player_instance.x > block.x)){
         // We are coming on the block from left
         player_instance.x = block.x - player_instance.width;
     }
 
-    if (snapshot.y >= block.x + block.width) && (player_instance.x < block.x + block.width){
+    if ((snapshot.y >= block.x + block.width) && (player_instance.x < block.x + block.width)){
         // We are coming on the block from right
         player_instance.x = block.x + block.width;
     }

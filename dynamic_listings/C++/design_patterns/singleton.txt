@@ -10,4 +10,4 @@ class Singleton {
         static Singleton getInstance() {
             return *INSTANCE;
         }
-}
+};

@@ -8,7 +8,7 @@ bool polygon_point(Polygon poly, Point point){
         return false;
     }
     // If instead we are in the bounding box, we need to get the "fan triangulation"
-    Triangle[] triangles = poly.do_fanning();
+    std::vector<Triangle> triangles = poly.do_fanning();
     // Now we check, for each triangle, if the point collides
     for (int i = 0; i < triangles.length(); i++){
         if (point_triangle(triangles[i], point)){

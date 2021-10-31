@@ -1,33 +1,35 @@
-public class Player{
-    bool coyote_time_started = false;
-    float = coyote_time = 0.0;
-    bool onground = false;
-    bool has_jumped = false;
+class Player{
+    private:
+        bool coyote_time_started = false;
+        float = coyote_time = 0.0;
+        bool onground = false;
+        bool has_jumped = false;
     // ...
-    void update(float dt){
-        // ...
-        if (onground){
-            // Do stuff when player is on ground
+    public:
+        void update(float dt){
             // ...
-        }else{
-            if (!has_jumped){
-                // Player is not on the ground and has not jumped, the player is falling
-                if (!coyote_time_started){
-                    coyote_time_started = true;
-                    coyote_time = 5.0;
-                }else{
-                    coyote_time = coyote_time - dt;
+            if (onground){
+                // Do stuff when player is on ground
+                // ...
+            }else{
+                if (!has_jumped){
+                    // Player is not on the ground and has not jumped, the player is falling
+                    if (!coyote_time_started){
+                        coyote_time_started = true;
+                        coyote_time = 5.0;
+                    }else{
+                        coyote_time = coyote_time - dt;
+                    }
                 }
             }
         }
-    }
 
-    void jump(){
-        // This function takes care of jumping
-        // ...
-        if (coyote_time > 0){
-            // Do Jump
+        void jump(){
+            // This function takes care of jumping
             // ...
+            if (coyote_time > 0){
+                // Do Jump
+                // ...
+            }
         }
-    }
-}
+};

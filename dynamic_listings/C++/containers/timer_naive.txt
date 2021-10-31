@@ -24,4 +24,4 @@ class Timer{
                 time = time + set_time;
             }
         }
-}
+};

@@ -15,59 +15,62 @@ T get_random(const std::vector<T> &vect){
 const std::vector<std::String> DIRECTIONS = {"NORTH", "EAST", "SOUTH", "WEST"};
 
 class AIEntity{
-    // 0=North, 1=East, ...
-    int forward_direction_index = 0;
-    Cell current_cell = new Cell(1,0);
-    // ...
-    Cell get_adjacent_cell(Cell cell, std::String direction){
-        // Returns the adjacent cell in said direction
-        cell_copy = cell.copy()
-        if (direction == "NORTH"){
-            cell_copy.y -= 1;
-        }
-        if (direction == "SOUTH"){
-            cell_copy.y += 1;
-        }
-        if (direction == "WEST"){
-            cell_copy.x -= 1;
-        }
-        if (direction == "EAST"){
-            cell_copy.x += 1;
-        }
-        return cell_copy;
-    }
-
-    bool is_valid(Cell cell){
-        /* Returns true if the cell is valid, aka
-        * does not have a wall and does not go backwards */
-        if (cell.is_wall()){
-            // The cell is a wall
-            return false;
-        }
-        if (cell == get_adjacent_cell[(forward_direction_index + 2) % 4]){
-            // We're going backwards
-            return false;
-        }
-        // In all other cases, it's valid
-        return true;
-    }
-
-    void update(float dt){
+    private:
+        // 0=North, 1=East, ...
+        int forward_direction_index = 0;
+        Cell current_cell = new Cell(1,0);
         // ...
-        // Choose a random direction
-        std::String chosen_direction = get_random<std::String>(DIRECTIONS);
-        int i = 0;
-        Cell next_cell = get_adjacent_cell(current_cell, chosen_direction);
-        while (!(is_valid(next_cell)) && i != 4){
-            chosen_direction = DIRECTIONS[(DIRECTIONS.indexOf(chosen_direction) + 1) % 4];
-            next_cell = get_adjacent_cell(current_cell, chosen_direction);
+
+    public:
+        Cell get_adjacent_cell(Cell cell, std::String direction){
+            // Returns the adjacent cell in said direction
+            cell_copy = cell.copy()
+            if (direction == "NORTH"){
+                cell_copy.y -= 1;
+            }
+            if (direction == "SOUTH"){
+                cell_copy.y += 1;
+            }
+            if (direction == "WEST"){
+                cell_copy.x -= 1;
+            }
+            if (direction == "EAST"){
+                cell_copy.x += 1;
+            }
+            return cell_copy;
         }
-        if (i == 4){
-            // We exhausted the possibilities, go backwards
-            chosen_direction = DIRECTIONS[(forward_direction_index + 2) % 4];
-            next_cell = get_adjacent_cell(current_cell, chosen_direction);
+
+        bool is_valid(Cell cell){
+            /* Returns true if the cell is valid, aka
+            * does not have a wall and does not go backwards */
+            if (cell.is_wall()){
+                // The cell is a wall
+                return false;
+            }
+            if (cell == get_adjacent_cell[(forward_direction_index + 2) % 4]){
+                // We're going backwards, we don't want that
+                return false;
+            }
+            // In all other cases, it's valid
+            return true;
         }
-        // Move
-        move_to(next_cell);
-    }
-}
+
+        void update(float dt){
+            // ...
+            // Choose a random direction
+            std::String chosen_direction = get_random<std::String>(DIRECTIONS);
+            int i = 0;
+            Cell next_cell = get_adjacent_cell(current_cell, chosen_direction);
+            while (!(is_valid(next_cell)) && i != 4){
+                chosen_direction = DIRECTIONS[(DIRECTIONS.indexOf(chosen_direction) + 1) % 4];
+                next_cell = get_adjacent_cell(current_cell, chosen_direction);
+            }
+            if (i == 4){
+                // We exhausted the possibilities, go backwards
+                chosen_direction = DIRECTIONS[(forward_direction_index + 2) % 4];
+                next_cell = get_adjacent_cell(current_cell, chosen_direction);
+            }
+            // Move
+            move_to(next_cell);
+        }
+};

@@ -11,13 +11,13 @@ struct Rectangle{
     Point corner;
     int width;
     int height;
-}
+};
 
 struct Circle{
     // Let's define a circle class/structure
     Point center;
     int radius;
-}
+};
 
 bool circle_rectangle_collision(Circle circ, Rectangle rect){
     // Detects a collision between a circle and a rectangle

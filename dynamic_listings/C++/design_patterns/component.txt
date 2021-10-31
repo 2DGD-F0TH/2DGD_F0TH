@@ -5,7 +5,7 @@ class Component{
         virtual void update() = 0;
 };
 
-class ConcreteComponent1 public Component{
+class ConcreteComponent1: public Component{
     // Defines the concrete component number 1
     public:
         void update(){
@@ -13,7 +13,7 @@ class ConcreteComponent1 public Component{
         }
 };
 
-class ConcreteComponent2 public Component{
+class ConcreteComponent2: public Component{
     // Defines the concrete component number 2
 
     // The component can contain a list of other components that get updated

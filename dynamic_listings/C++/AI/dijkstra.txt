@@ -8,7 +8,7 @@ Node* currentNode = start;
 closedSet->push_back(currentNode);
 
 do{
-    for (Node* n in currentNode->getAdjacentList()){
+    for (Node* n : currentNode->getAdjacentList()){
         // ClosedSet Contains N
         if (std::find(closedSet->begin(), closedSet->end(), currentNode) != closedSet->end()){
             // We already analyzed this node, skip it
@@ -35,7 +35,7 @@ do{
     }
 
     // Order openSet by g
-    std::sort(openSet->begin(), openSet->end(), [](Node* i, Node* j){return (i->g < i->g);})
+    std::sort(openSet->begin(), openSet->end(), [](Node* i, Node* j){return (i->g < i->g);});
     // Since openset is ordered by g, the first element is the one with the lowest total cost
     currentNode = openset->front();
     openset->erase(openset->front());

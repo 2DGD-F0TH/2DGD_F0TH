@@ -12,7 +12,7 @@ do{
             swapped = true;
         }
     }
-}while(swapped)
+}while(swapped);
 
 // -------------------------------------
 
