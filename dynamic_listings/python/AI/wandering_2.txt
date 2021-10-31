@@ -31,7 +31,7 @@ class AIEntity:
         if cell == self.get_adjacent_cell[
                 (self.forward_direction_index + 2) % 4
         ]:
-            # We're going backwards
+            # We're going backwards, we don't want that
             return False
         # In all other cases, it's valid
         return True

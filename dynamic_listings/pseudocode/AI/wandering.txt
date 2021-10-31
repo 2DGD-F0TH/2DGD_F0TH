@@ -31,7 +31,7 @@ class AIEntity{
             return False;
         }
         if (cell == get_adjacent_cell[(forward_direction_index + 2) % 4]){
-            // We're going backwards
+            // We're going backwards, we don't want that
             return False;
         }
         // In all other cases, it's valid
