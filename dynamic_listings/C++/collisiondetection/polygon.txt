@@ -39,4 +39,4 @@ class Polygon{
             // In the end, we will have the triangles array, we can just return it
             return temp_triangles;
         }
-}
+};
