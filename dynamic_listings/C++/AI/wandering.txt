@@ -24,7 +24,7 @@ class AIEntity{
     public:
         Cell get_adjacent_cell(Cell cell, std::String direction){
             // Returns the adjacent cell in said direction
-            cell_copy = cell.copy()
+            cell_copy = cell.copy();
             if (direction == "NORTH"){
                 cell_copy.y -= 1;
             }

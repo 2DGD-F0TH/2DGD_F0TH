@@ -14,7 +14,7 @@ function findVerticalMatches(){
                     // We need to memorize all the tiles involved in the match
                     for (int k = row-matchLength; k < row; ++k){
                         Tile* tile = matrix[k][column];
-                        memorize(tile)
+                        memorize(tile);
                     }
                 }else{
                     // No matches, reset the counter and set the current tile as last matching
@@ -28,7 +28,7 @@ function findVerticalMatches(){
                     // We need to memorize all the tiles involved in the match
                     for (int k = row-matchlength; k < row; ++k){
                         Tile* tile = matrix[k][column];
-                        memorize(tile)
+                        memorize(tile);
                     }
                 }
             }

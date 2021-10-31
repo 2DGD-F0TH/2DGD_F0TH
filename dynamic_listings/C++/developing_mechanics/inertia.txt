@@ -4,7 +4,7 @@ class Player{
         Vector2 input_accel = Vector2();  // Defines the direction we are accelerating
         Vector2 velocity = Vector2();  // Defines the direction and magnitude of our speed
         Vector2 position = Vector2();  // Defines our current position, in (x,y) coordinates
-        bool is_moving = false  // Tells us if we're moving
+        bool is_moving = false;  // Tells us if we're moving
         const float MAX_SPEED = 50.0;  // Maximum speed
         const float ACCEL = 15.0;  // The acceleration rate
         const float DECEL = 30.0;  // The deceleration rate
@@ -24,7 +24,7 @@ class Player{
                 input_accel.y = input_accel.y + 1;
             }
             if (KEYBOARD.Right_Arrow_Pressed){
-                input_accel.y = input_accel.y - 1
+                input_accel.y = input_accel.y - 1;
             }
             // If any component of the acceleration vector is not zero, we are moving
             if (input_accel != Vector2.ZERO){

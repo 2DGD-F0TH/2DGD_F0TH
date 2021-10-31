@@ -34,7 +34,7 @@ class Polygon{
             for (int j = 2; j < vertices.length(); j++){
                 // j goes from the third vertex, to the last
                 // j - 1 goes from the second to the second to last
-                temp_triangles.push_back(Triangle.from_points(root_vertex, j - 1, j))
+                temp_triangles.push_back(Triangle.from_points(root_vertex, j - 1, j));
             }
             // In the end, we will have the triangles array, we can just return it
             return temp_triangles;

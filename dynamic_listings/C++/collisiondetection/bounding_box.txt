@@ -5,9 +5,9 @@ struct Point{
 };
 
 class Rectangle{
-    Point corner
-    int width
-    int height
+    Point corner;
+    int width;
+    int height;
     // ...
     static Rectangle from_points(Point topleft, Point bottomright){
         // ...

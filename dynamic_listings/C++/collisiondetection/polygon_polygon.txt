@@ -7,7 +7,7 @@ bool polygon_polygon(Polygon p1, Polygon p2){
             // Wrap around in case we get to the end
             j = 0;
         }
-        temp_line = Line.fromPoints(p2.vertices[i], p2.vertices[j])
+        temp_line = Line.fromPoints(p2.vertices[i], p2.vertices[j]);
         if (polygon_line(p1, temp_line)){
             // We have a hit
             return true;
