@@ -23,16 +23,16 @@ Rectangle bounding_box(Point[] vertices){
     int ymax = vertices[0].y;
     // Now we iterate through all the other vertices
     for (i = 0; i < vertices.length(); i++){
-        if vertex[i].x < xmin{
+        if (vertex[i].x < xmin){
             xmin = vertex[i].x;
         }
-        if vertex[i].x > xmax{
+        if (vertex[i].x > xmax){
             xmax = vertex[i].x;
         }
-        if vertex[i].y < ymin{
+        if (vertex[i].y < ymin){
             ymin = vertex[i].y;
         }
-        if vertex[i].y > ymax{
+        if (vertex[i].y > ymax){
             ymax = vertex[i].y;
         }
     }

@@ -11,7 +11,7 @@ bool circle_polygon(Polygon poly, Circle circ){
         }
         Line temp_line = Line.fromPoints(poly.vertices[i], poly.vertices[j]);
         // In case we find a hit, we already know there is a collision
-        if line_circle_collision(circ, temp_line){
+        if (line_circle_collision(circ, temp_line)){
             return true;
         }
     }
