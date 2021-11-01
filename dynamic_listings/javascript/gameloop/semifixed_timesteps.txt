@@ -1,0 +1,14 @@
+let dt = 1.0/60.0;
+let game_is_running = true;
+
+while (game_is_running){
+    let frametime = measure_time_from_last_frame();
+
+    while (frametime > 0.0){
+        let deltaTime = min(dt, frametime);
+        process_user_input();
+        update_world(deltaTime);
+        frametime = frametime - deltaTime;
+    }
+    draw();
+}

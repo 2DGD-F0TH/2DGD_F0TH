@@ -1,0 +1,10 @@
+let targetTime = 1.0/60.0;
+let game_is_running = True;
+
+while (game_is_running){
+    let dt = measure_time_from_last_frame();
+    process_user_input();
+    update_world(dt);
+    draw();
+    wait(targetTime - time_spent_this_frame());
+}
