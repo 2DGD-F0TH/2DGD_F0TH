@@ -114,3 +114,39 @@ This method solves the problem given by platforms that can be crossed one-way.
 {{placeholder}}
 
 <!-- TODO: Useful for games like pacman, check the direction where you are going using the offset, if the next cell is a wall, react -->
+
+### When two moving items collide
+
+So far we've seen methods that involve a moving object colliding with a stationary one, but what if we wanted to react to a collision between two moving objects?
+
+Some more math will be needed but it's not extremely difficult to pull off.
+
+First of all, we need to find the "collision vector" (we'll call that $u_{coll}$), which is simply a vector that is calculated using the difference of the objects' positions. We'll need just the direction, so we will normalize it too (so it will become $\hat{u}_{coll}$).
+
+Let's imagine two objects, with the following positions: $A(x_1, y_1)$ and $B(x_2, y_2)$
+
+$$
+u_{coll} = (x_2 - x_1, y_2 - y_1)
+$$
+$$
+\hat{u}_{coll} = \frac{u}{||u||}
+$$
+
+Now we need to know how the objects are moving in relation to each other, this will allow us to see if and how we need to react. Let's calculate the "relative velocity" of the objects.
+
+$$
+v_{rel} = (v_{x2} - v_{x1}, v_{y2} - v_{y1})
+$$
+
+Now we need to see how the relative velocity affects the collision, which means we need to project such velocity onto the collision vector. Sounds like a job for the dot product.
+
+$$
+s = \hat{u}_coll \cdot v_{rel}
+$$
+$s$ can be called "the speed of collision" (it's a scalar number, not a vector) and tells us what we need to know: if $s < 0$ then the objects are moving away from each other already and we don't need to do anything. If $s > 0$ then the objects are moving towards each other
+
+To react to objects that are moving towards each other, we just need to change their velocity by a factor of $s \cdot \hat{u}_coll$.
+
+{{placeholder}}
+
+<!-- TODO: Code to demonstrate how to deal with collisions between moving objects -->
