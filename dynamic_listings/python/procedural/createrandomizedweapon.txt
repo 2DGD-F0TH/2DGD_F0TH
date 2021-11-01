@@ -15,8 +15,10 @@ def createRandomizedWeapon():
     barrel = Sprite(random_choice(barrels))
     ammo_mag = Sprite(random_choice(mags))
     weapon = composeWeapon(body, scope, barrel, ammo_mag)
-    # Set the randomly generated properties
+    # Set weapon damage to a value between 35 and 50
     weapon.setDamage(randint(35, 50))
+    # Set weapon range to a value between 13 and 18
     weapon.setRange(randint(13,28))
+    # Set weapon spread to a value between 20 and 30
     weapon.setSpread(randint(20,30))
     return weapon

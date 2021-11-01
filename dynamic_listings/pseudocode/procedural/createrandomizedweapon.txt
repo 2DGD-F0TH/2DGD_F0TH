@@ -6,7 +6,7 @@ function createRandomizedWeapon() -> Weapon{
     wp.loadRandomBarrelFrom("weaponBarrels/shotguns");
     wp.loadRandomAmmoMagazineFrom("weaponMagazines/shotguns");
     // set weapon damage to a value between 35 and 50
-    wp.setDamage(random(35, 80));
+    wp.setDamage(random(35, 50));
     // set weapon range to a value between 13 and 18
     wp.setRange(random(13, 18));
     // set weapon spread to a value between 20 and 30
