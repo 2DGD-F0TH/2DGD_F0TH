@@ -7,7 +7,7 @@ struct Color{
 };
 
 struct Bitmask{
-    Color[] data;
+    Color data[];
     Color getColor(int x, int y){
         // ...
     }

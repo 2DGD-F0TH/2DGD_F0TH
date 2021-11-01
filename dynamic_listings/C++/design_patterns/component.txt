@@ -18,7 +18,7 @@ class ConcreteComponent2: public Component{
 
     // The component can contain a list of other components that get updated
     private:
-        Component[] list = {...};
+        Component list[...] = {...};
 
     public:
         void update(){
