@@ -1,4 +1,4 @@
-binarySearch(item[] elements, item element_to_find) -> int{
+function binarySearch(item[] elements, item element_to_find) -> int{
     get middle_element;
     if (element_to_find == middle_element){
         return the middle element position;
