@@ -1,4 +1,4 @@
-function update(dt){
+function update(float dt){
     Vector vector_up = (0, -1);
     Vector vector_right = (1, 0);
     // ...
