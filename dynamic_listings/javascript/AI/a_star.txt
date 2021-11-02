@@ -1,0 +1,45 @@
+let openSet = [];
+let closedSet = [];
+let currentNode = start;
+closedSet.push(currentNode);
+do{
+    for (const n of currentNode.getAdjacentList()){
+        if (closedSet.includes(n)){
+            continue;
+        }else if (openSet.includes(n)){  // Check if this path is better
+            let new_g = getPathCost(n, start);
+            if (new_g < n.g){
+                // We found a better path from start to currentNode
+                n.parent = currentNode;
+                n.g = new_g;
+                n.f = n.g + n.h;
+            }
+        }else{
+            n.parent = currentNode;
+            n.g = getPathCost(n, start);
+            n.h = getHeuristicCost(n, end);
+            n.f = n.g + n.h;
+            openSet.push(n);
+        }
+    }
+
+    if (openSet.length === 0){
+        // We exhausted all possibilities
+        break;
+    }
+    // We order the openset by f, the first element will be the one with the lowest total cost
+    openSet.sort((first, second) => {
+        if (first.f < second.f){
+            return -1;
+        }
+        if (first.f > second.f){
+            return 1;
+        }
+        return 0;
+    });
+    // Shift pops and returns the first element of the array
+    currentNode = openSet.shift();
+    closedSet.push(currentNode)
+}while(currentNode != end);
+
+// Reconstruct the path like in the greedy "best-first" algorithm
