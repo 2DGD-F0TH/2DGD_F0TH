@@ -47,7 +47,7 @@ class AIEntity{
                 // The cell is a wall
                 return false;
             }
-            if (cell == get_adjacent_cell[(forward_direction_index + 2) % 4]){
+            if (cell == get_adjacent_cell([(forward_direction_index + 2) % 4])){
                 // We're going backwards, we don't want that
                 return false;
             }
@@ -64,6 +64,7 @@ class AIEntity{
             while (!(is_valid(next_cell)) && i != 4){
                 chosen_direction = DIRECTIONS[(DIRECTIONS.indexOf(chosen_direction) + 1) % 4];
                 next_cell = get_adjacent_cell(current_cell, chosen_direction);
+                i = i + 1;
             }
             if (i == 4){
                 // We exhausted the possibilities, go backwards

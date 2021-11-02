@@ -48,6 +48,7 @@ class AIEntity:
             ]
             next_cell = self.get_adjacent_cell(self.current_cell,
                                                chosen_direction)
+            i += 1
         if i == 4:
             # We exhausted the possibilities, go backwards
             chosen_direction = DIRECTIONS[
