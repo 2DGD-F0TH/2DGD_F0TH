@@ -12,13 +12,10 @@ do{
                 // We found a better path from start to currentNode
                 n.parent = currentNode;
                 n.g = new_g;
-                n.f = n.g + n.h;
             }
         }else{
             n.parent = currentNode;
             n.g = getPathCost(n, start);
-            n.h = getHeuristicCost(n, end);
-            n.f = n.g + n.h;
             openSet.push(n);
         }
     }
@@ -27,12 +24,12 @@ do{
         // We exhausted all possibilities
         break;
     }
-    // We order the openset by f, the first element will be the one with the lowest total cost
+    // We order the openset by g, the first element will be the one with the lowest total cost
     openSet.sort((first, second) => {
-        if (first.f < second.f){
+        if (first.g < second.g){
             return -1;
         }
-        if (first.f > second.f){
+        if (first.g > second.g){
             return 1;
         }
         return 0;
