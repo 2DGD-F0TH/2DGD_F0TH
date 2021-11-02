@@ -1,0 +1,10 @@
+function count_backwards(n){
+    // Stop condition
+    if (n == 0){
+        return;
+    }
+    // Procedure
+    console.log(n);
+    // Recursive call
+    count_backwards(n-1);
+}
