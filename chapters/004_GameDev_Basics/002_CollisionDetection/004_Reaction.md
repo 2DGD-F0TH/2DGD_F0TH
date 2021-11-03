@@ -64,9 +64,13 @@ This method works in a similar fashion to the naive method, but prioritizes reac
 
 This requires measuring how much the objects overlap on each axis, which can be a little more involved, but not really expensive.
 
-![Example of shallow-axis based reaction](./images/collision_detection/shallow_axis_1.svg){width=90%}
+![Example of shallow-axis based reaction on a horizontal plane](./images/collision_detection/shallow_axis_1.svg){width=90%}
 
 In the previous picture, we can see how the algorithm chooses to solve the collision on the $y$ axis first and only on the x axis after; but since solving the $y$ axis solves the collision, no reaction is performed on the $x$ axis.
+
+![Example of shallow-axis based reaction on a vertical plane](./images/collision_detection/shallow_axis_2.svg){width=60%}
+
+In this new situation, the algorithm chooses to solve the collision on the $x$ axis first; but since solving the $x$ axis solves the collision, no reaction is performed on the $y$ axis.
 
 {{placeholder}}
 
