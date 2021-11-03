@@ -1,0 +1,35 @@
+class Point{
+    // Rewritten as a memo
+    constructor(){
+        this.x = null;
+        this.y = null;
+    }
+}
+
+class Line{
+    constructor(){
+        this.A = new Point();
+        this.B = new Point();
+    }
+}
+
+function distance(A, B){
+    // Calculates the distance between two points
+    return Math.sqrt((A.x + B.x)^2 + (A.y + B.y)^2);
+}
+
+function line_point_collision(pt, ln){
+    // First, let's calculate the length of the line
+    let length = distance(ln.A, ln.B);
+    // Now let's calculate the distance between the point pt
+    // and the point "A" of the line
+    let pt_a = distance(ln.A, pt);
+    // Same Goes for the distance between pt and "B"
+    let pt_b = distance(ln.B, pt);
+    // Now for the detection
+    if (pt_a + pt_b == length){
+        return true;
+    }else{
+        return false;
+    }
+}
