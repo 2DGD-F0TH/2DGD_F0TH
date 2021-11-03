@@ -83,9 +83,19 @@ To build the book you need the following software:
 
 Before building the book, you might want to decide your favourite programming language, and use the corresponding command:
 
+**PDF Version:**
+
 - Pseudocode with basic Syntax Highlighting: `make pseudocode`
 - Python 3: `make python`
 - C++: `make cpp`
+- JavaScript: `make js`
+
+**EPub Version:**
+
+- Pseudocode with basic Syntax Highlighting: `make epub_pseudocode`
+- Python 3: `make epub_python`
+- C++: `make epub_cpp`
+- JavaScript: `make epub_js`
 
 *The old "Pseudocode without syntax highlighting" has been discontinued*
 
