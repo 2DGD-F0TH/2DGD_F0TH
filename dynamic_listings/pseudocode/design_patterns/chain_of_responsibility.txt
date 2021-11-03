@@ -8,7 +8,7 @@ abstract class Handler{
             real_handler();
         }
 
-        if next is not null{
+        if (next is not null){
             next.handle_request();
         }
     }
