@@ -1,6 +1,6 @@
 function findVerticalMatches() -> Tile[]{
     int matchLength = 0;
-    int minMatchLength = 3;
+    const int minMatchLength = 3;
     Tile[] matches = new Tile[];
     for (each column in matrix){
         Tile lastMatchingTile = null;
