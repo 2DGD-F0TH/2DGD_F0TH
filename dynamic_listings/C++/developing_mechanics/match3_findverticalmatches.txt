@@ -1,6 +1,6 @@
 function findVerticalMatches(){
-    matchLength = 0;
-    minMatchLength = 3;
+    int matchLength = 0;
+    const int minMatchLength = 3;
     int colsize = (sizeof matrix[0] / sizeof matrix[0][0]);
     for (int column = 0; column < colsize; ++column){
         Tile* lastMatchingTile = nullptr;
