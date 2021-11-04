@@ -198,6 +198,40 @@ Mutex (Short for **mut**ual **ex**clusion) means that the access to the shared d
 
 Usually these multi-threaded functionalities are part of the programming language used, or available via libraries.
 
+Let's see how Mutex solve our concurrency problem.
+
+As seen before, we have a shared variable and two threads that want to add one to it.
+
+![How mutex works (1/8)](./images/computer_science/Mutex1.svg){width=60%}
+
+Now the first thread reads the variable and "locks" the mutex (thus stopping other threads from accessing the variable).
+
+![How mutex works (2/8)](./images/computer_science/Mutex2.svg){width=60%}
+
+When the second thread wants to access the "critical region", it will check on the Mutex, find it "locked" and be forced to wait: it cannot read the variable, because we would have a "race condition" otherwise.
+
+![How mutex works (3/8)](./images/computer_science/Mutex3.svg){width=60%}
+
+As soon as the first thread finishes its job, it will write the result in the variable and "unlock" the mutex, allowing others to access the variable.
+
+![How mutex works (4/8)](./images/computer_science/Mutex4.svg){width=60%}
+
+Since the second thread was waiting, it will read the variable result (now 2) and "lock" the mutex for safety. The second thread entered the "critical region".
+
+![How mutex works (5/8)](./images/computer_science/Mutex5.svg){width=60%}
+
+The second thread will do its job as normal, if a third thread tried to access the variable, it would be stopped by the locked mutex.
+
+![How mutex works (6/8)](./images/computer_science/Mutex6.svg){width=60%}
+
+When its job is done, the second thread will write to the variable and "unlock" the Mutex, thus allowing other threads or processes to access the variable.
+
+![How mutex works (7/8)](./images/computer_science/Mutex7.svg){width=60%}
+
+Now both threads finished their jobs and the result inside the variable is correct.
+
+![How mutex works (8/8)](./images/computer_science/Mutex8.svg){width=60%}
+
 #### Atomic Operations
 
 {{placeholder}}
