@@ -100,7 +100,7 @@ This way we excluded 1,2,6, and 7. We now do the "right (cyan) child" test, we'r
 
 We do the "left (red) child" test, we're colliding with the relative bounding box, now we can do a narrow-phase collision detection with the leaves of this node (and in the meantime we also excluded 5).
 
-![Querying an AABB-tree (3/3)](./images/collision_detection/aabb_tree_query_explained_2.svg){width=50%}
+![Querying an AABB-tree (3/3)](./images/collision_detection/aabb_tree_query_explained_3.svg){width=50%}
 
 
 {{placeholder}}
