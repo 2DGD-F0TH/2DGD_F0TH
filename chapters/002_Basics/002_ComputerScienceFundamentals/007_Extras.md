@@ -36,7 +36,7 @@ The inverse formula is the following:
 $$
 \begin{cases}
 row = \lfloor \frac{index}{width} \rfloor \\
-column = index % width
+column = index \% width
 \end{cases}
 $$
 
@@ -45,7 +45,7 @@ So if we wanted to know the (row,column) position of the frame with index 7 we w
 $$
 \begin{cases}
 row = \lfloor \frac{7}{3} \rfloor = \lfloor 2.33333 \rfloor = 2\\
-column = 7 % 3 = 1
+column = 7 \% 3 = 1
 \end{cases}
 $$
 
