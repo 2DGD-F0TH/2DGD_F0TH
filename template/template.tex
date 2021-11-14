@@ -235,9 +235,9 @@ $if(listings)$
 % -----------------------------------------------
 % ------- \code command definition -------
 $if(proglang)$
-\newcommand{\code}[2]{\IfFileExists{./dynamic_listings/$proglang$/#1.txt}{\lstinputlisting[language=$proglang$,caption={#2}]{./dynamic_listings/$proglang$/#1.txt}}{\texttt{[MISSING CODE LISTING]}}}
+    \newcommand{\code}[2]{\IfFileExists{./dynamic_listings/$proglang$/#1.txt}{\lstinputlisting[language=$proglang$,caption={#2}]{./dynamic_listings/$proglang$/#1.txt}}{\texttt{[MISSING CODE LISTING]}}}
 $else$
-\newcommand{\code}[2]{\IfFileExists{./dynamic_listings/pseudocode/#1.txt}{\lstinputlisting[caption={#2}]{./dynamic_listings/pseudocode/#1.txt}}{\texttt{[MISSING CODE LISTING]}}}
+    \newcommand{\code}[2]{\IfFileExists{./dynamic_listings/pseudocode/#1.txt}{\lstinputlisting[caption={#2}]{./dynamic_listings/pseudocode/#1.txt}}{\texttt{[MISSING CODE LISTING]}}}
 $endif$
 % ----------------------------------------
 
@@ -409,8 +409,13 @@ contents = {%
     \BgThispage
     $if(proglang)$
     \def \proglang{$proglang$}
+    \def \langext{$lang_extension$}
     \begin{textblock*}{19cm}(0.5cm,0.6cm) % {block width} {coords}
+        $if(lang_extension)$
+        \hfill\textcolor{white}{\LARGE\textbf{\textsc{\expandafter\MakeUppercase \proglang\ Edition (\langext)}}}
+        $else$
         \hfill\textcolor{white}{\LARGE\textbf{\textsc{\expandafter\MakeUppercase \proglang\ Edition}}}
+        $endif$
     \end{textblock*}
     $endif$
     \null
