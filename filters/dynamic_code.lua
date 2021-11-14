@@ -8,7 +8,11 @@ function dynamic_codeblock(blk)
         if language == nil or language == "" then
             language = "pseudocode"
         end
-        local fullpath = "dynamic_listings/" .. language .. "/" .. blk.attributes.src .. ".txt"
+        local extension = metavars.find_var("lang_extension")
+        if extension == nil or extension == "" then
+            extension = "default"
+        end
+        local fullpath = "dynamic_listings/" .. language .. "/" .. extension .. "/" .. blk.attributes.src .. ".txt"
         local file_handler = io.open(fullpath)
         if not file_handler then
             io.stderr:write("Cannot open file " .. fullpath .. " | Skipping\n")
