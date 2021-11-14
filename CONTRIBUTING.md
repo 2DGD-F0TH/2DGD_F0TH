@@ -26,13 +26,17 @@ These are not strict requirements, they won't make your pull request get rejecte
 
 This book is built in a way that allows everyone to have the book in their own favourite programming language, as long as the listings for such language are available. LaTeX will take care of the highlighting.
 
-If you want to add a new programming language, navigate to the `listings` folder, copy the `pseudocode` folder (or any other code folder you want) and name it with your language's name. The languages that feature syntax highlighting are the ones supported by [skylighting](https://github.com/jgm/skylighting).
+If you want to add a new programming language, navigate to the `listings` folder, copy the `pseudocode` folder (or any other code folder you want) and name it with your language's name. The languages that feature syntax highlighting are the ones supported by [skylighting](https://github.com/jgm/skylighting) and LaTeX's "listings" package.
 
 The only thing left to do is translating all the pseudo-code listings into your favourite programming language.
 
 After that you can try and make a copy of the book, by editing the `Makefile`. Remember to add the new language in the `README.md` file.
 
 You may also want to refer to the "Dynamic Code Blocks" section of this document.
+
+### Language Addons / Extensions
+
+You can add new listings that include your favourite framework/library by creating a new folder in the language of choice and using the `lang_extension` metavariable (just add `-M lang_extension="your_folder_name"`) to the commands in the MakeFile.
 
 #### What if my programming language is not supported?
 
