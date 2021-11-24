@@ -18,7 +18,7 @@ There are some guidelines your contributions should meet to be added to the book
 - Algorithms **must** be written in pseudo-code first, in a platform agnostic way: the pseudocode version is the one that all the language-specific versions are based on. If you want to put other type of code, like C++ or Python, you can, in the appropriate "listings" folders but there must be a pseudo-code version.
 - The most important algorithms (like search algorithms or graph navigation ones) will greatly benefit from a big-O estimate of their worst case (although this won't be mandatory), other estimates in addition to this one are welcome (slices of code don't necessarily need estimates, but you can add them if you think they would help). This will help the reader distinguish between better and worse-performing algorithms.
 - You should avoid using overly technical terms, if possible. If that is not possible, then you should define such term in the "Glossary" appendix of the book and add a ~[g]~ at the end of the term (so that the reader knows such term is in the glossary).
-- If you want to add a `{{placeholder}}`, remember to follow that with a `<<!--TODO: ..... -->` so that it's easy to understand what's missing.
+- If you want to add a `{{placeholder}}`, remember to follow that with a `<!-- TODO: ..... -->` so that it's easy to understand what's missing.
 
 These are not strict requirements, they won't make your pull request get rejected, but you may be asked to tweak some things.
 
@@ -37,6 +37,23 @@ You may also want to refer to the "Dynamic Code Blocks" section of this document
 ### Language Addons / Extensions
 
 You can add new listings that include your favourite framework/library by creating a new folder in the language of choice and using the `lang_extension` metavariable (just add `-M lang_extension="your_folder_name"`) to the commands in the MakeFile.
+
+An example is worth a thousand words: let's pretend we want to add support for Pygame, a library for game development in python.
+
+1. Go to the `dynamic_listings/python/` directory and create a new folder called "pygame"
+2. Copy the contents of the `default` subdirectory and change them according to the library you're writing for (in this case, Pygame)
+3. Go back to the root of the project and edit the `Makefile` file, by copying the default python command and adding the lang extension metavariable. It should look something like this:
+
+```
+[... other code here ...]
+
+python_pygame:
+	$(PANDOC_STANDALONE) $(PANDOC_DEFAULT_ARGS) $(CHAPTERS_CMD) $(VERSION) $(PDF_TEMPLATE) -M proglang=python -M lang_extension=pygame -o Python_Pygame_Edition.pdf
+
+[... more code here ...]
+```
+
+4. Now you can build your "extended edition" by using the make commands you just created (in this case `make python_pygame`).
 
 #### What if my programming language is not supported?
 
@@ -76,6 +93,7 @@ Also there are some special classes you can use to make boxes:
 - `tip`: This class allows to create a "tip box", showing a highlighted box to write your tips in;
 - `pitfall`: This class allows to create a "pitfall box", showing a highlighted box to write any traps and pitfalls of a proposed solution.
 - `trivia`: This class allows to create a "trivia box", giving some information and trivia about something, which may give better understanding.
+- `note`: This class allows to create a "note", which doesn't fit any of the previous cases. This is used when the content still needs to be highlighted in some way.
 
 These boxes can be created using Pandoc's "fenced div" syntax, like follows:
 
