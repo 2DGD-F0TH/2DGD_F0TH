@@ -74,7 +74,7 @@ Let's see an example implementation:
 ```
 
 :::: pitfall ::::
-It is extremely important that we keep our "redundant properties" synchronised with the actual state of our objects, even when exceptions are raised. Not doing so will create bugs.
+It is extremely important that we keep our "redundant properties" synchronized with the actual state of our objects, even when exceptions are raised. Not doing so will create bugs.
 :::::::::::::::::
 
 Let's consider another example: we have a standard linked list, like the one that follows:
@@ -175,11 +175,11 @@ We just experienced what is called a **"race condition"**: there is no real orde
 
 #### Critical Regions
 
-Critical Regions (sometimes called "Critical Sections") are those pieces of code where a shared resource is used, and as such it can lead to erroneous or unexpected behaviours. Such sections must be protected from concurrent access, which means only one process or thread can access them at one given time.
+Critical Regions (sometimes called "Critical Sections") are those pieces of code where a shared resource is used, and as such it can lead to erroneous or unexpected behaviors. Such sections must be protected from concurrent access, which means only one process or thread can access them at one given time.
 
 ### Ensuring determinism
 
-Let's take a look at how to implement multi-threading in a safe way, allowing our game to perform better without non-deterministic behaviours. There are other implementation approaches (like thread-local storage and re-entrancy) but we will take a look at the most common here.
+Let's take a look at how to implement multi-threading in a safe way, allowing our game to perform better without non-deterministic behaviors. There are other implementation approaches (like thread-local storage and re-entrancy) but we will take a look at the most common here.
 
 #### Immutable Objects
 
@@ -187,7 +187,7 @@ The easiest way to implement thread-safety is to make the shared data immutable.
 
 #### Mutex
 
-Mutex (Short for **mut**ual **ex**clusion) means that the access to the shared data is serialised in a way that only one thread can read or write to such data at any given time. Mutual exclusion can be achieved via algorithms (be careful of *out of order execution*~[g]~), via hardware or using "software mutex devices" like:
+Mutex (Short for **mut**ual **ex**clusion) means that the access to the shared data is serialized in a way that only one thread can read or write to such data at any given time. Mutual exclusion can be achieved via algorithms (be careful of *out of order execution*~[g]~), via hardware or using "software mutex devices" like:
 
 - Locks (known also as *mutexes*)
 - Semaphores

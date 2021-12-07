@@ -52,7 +52,7 @@ Some other implementations use a $\frac{1}{4}$/$\frac{3}{4}$ rule, halving the a
 | :---------:                | :-----:                |
 | Indexing                   | O(1)                   |
 | Insert/Delete At Beginning | O(n)                   |
-| Insert/Delete At End       | O(1) amortised         |
+| Insert/Delete At End       | O(1) amortized         |
 | Insert/Delete at position  | O(n)                   |
 
 Table: Performance table for Dynamic Arrays

@@ -13,7 +13,7 @@ There are 3 types of Asymptotic notation you should know: $\Omega$, $\Theta$ and
 
 **O()** represents **an upper bound**: it's the most used notation and means that the algorithm will take **at most** as many cycles as specified.
 
-**$\Theta$()** is a **tight bound**, used when the big-O notation and the big-$\Omega$ notation have the same value, which can help define the behaviour of the algorithm better.
+**$\Theta$()** is a **tight bound**, used when the big-O notation and the big-$\Omega$ notation have the same value, which can help define the behavior of the algorithm better.
 
 We will now talk about the most common Big-O notations, from "most efficient" to "least efficient".
 
@@ -43,7 +43,7 @@ An example of a O(log(n)) algorithm is the so-called "binary search" on a ordere
 
 The best case is the time when you get the element to find to be the "middle element" of the list, in that case the algorithm will execute in linear time: $\Theta(1)$ - You need **at least one lookup** ($\Omega(1)$) and **at most one lookup** ($O(1)$).
 
-In the worst case, the element is not present in the list, so you have to split the list and find the middle element until you realise that you don't have any more elements to iterate - this translates into a **tight bound** of $\Theta(log_{2}n)$
+In the worst case, the element is not present in the list, so you have to split the list and find the middle element until you realize that you don't have any more elements to iterate - this translates into a **tight bound** of $\Theta(log_{2}n)$
 
 ### O(n)
 
@@ -115,7 +115,7 @@ Now let's see another algorithm:
 
 In this case we are iterating through a list, we can see that as the list grows, the number of times we print an element on our screen grows too. So if the list is $n$ items long, we will have $n$ calls to the output statement. This is an $O(n)$ complexity algorithm.
 
-Now let's take something we already saw and analyse it: the bubble sort algorithm:
+Now let's take something we already saw and analyze it: the bubble sort algorithm:
 
 ```{src='computer_science/bubblesort' caption='The bubble sort algorithm, an O(n²) algorithm'}
 ```

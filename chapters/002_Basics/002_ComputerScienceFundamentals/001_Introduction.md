@@ -158,7 +158,7 @@ $$\delta = \frac{| 0.239772 \times 10^{-7} - 0.2 \times 10^{-7} |}{0.239772 \tim
 
 Oh no... We're off by 16\% of the total result! That's a huge loss! A real catastrophe.
 
-What happened? If you look closely, the numbers are really close and even have 7 decimal digits in common, since our computer can memorise only 8 digits, the 9th to 13th decimal digits that looked so unimportant suddenly become a huge part of the result (due to the subtraction) but are already lost.
+What happened? If you look closely, the numbers are really close and even have 7 decimal digits in common, since our computer can memorize only 8 digits, the 9th to 13th decimal digits that looked so unimportant suddenly become a huge part of the result (due to the subtraction) but are already lost.
 
 Random Numbers are not really random {#random}
 ------------------------------------
