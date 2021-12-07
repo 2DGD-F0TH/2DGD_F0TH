@@ -71,7 +71,7 @@ Given the vectors $v = [1,2]$ and $u = [4,3]$, the dot vector is:
 
 $$ v \cdot u = (1 \cdot 4) + (2 \cdot 3) = 4 + 6 = 10 $$
 
-### Vector Length and Normalisation
+### Vector Length and Normalization
 
 Given a vector $a = [a_1, a_2, ..., a_n]$, you can define the length of the vector as:
 
@@ -81,7 +81,7 @@ Or alternatively
 
 $$ ||a|| = \sqrt{a \cdot a}$$
 
-We can get a 1-unit long vector by "normalising" it, getting a vector that is useful to affect (or indicate) direction without affecting magnitude. A normalised vector is usually indicated with a "hat", so the normalised vector of $a = [a_1, a_2, ..., a_n]$ is
+We can get a 1-unit long vector by "normalizing" it, getting a vector that is useful to affect (or indicate) direction without affecting magnitude. A normalized vector is usually indicated with a "hat", so the normalized vector of $a = [a_1, a_2, ..., a_n]$ is
 
 $$ \hat{a} = \frac{a}{||a||} $$
 
@@ -91,7 +91,7 @@ Knowing that the length of a vector is a scalar (a number, not a vector), normal
 
 This is not an operation "per se", but there are occasions where we need to limit the length of a vector: this usually happens when we are working with velocity, as not limiting it would allow an object to change position faster and faster, making the game less playable and even breaking time-stepping collision detection algorithms.
 
-To clamp a vector, we need to find its magnitude and direction first, which is the "normalised vector". Let's think about the vector $v$, its magnitude and direction are:
+To clamp a vector, we need to find its magnitude and direction first, which is the "normalized vector". Let's think about the vector $v$, its magnitude and direction are:
 
 $$ ||v|| = \sqrt{v \cdot v} $$
 $$ \hat{v} = \frac{v}{||v||} $$

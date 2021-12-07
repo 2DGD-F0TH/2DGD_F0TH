@@ -148,7 +148,7 @@ $$
 \end{bmatrix}
 $$
 
-In short, you need to rotate the item by first "bringing it centred to the origin", rotating it and then bring it back into its original position.
+In short, you need to rotate the item by first "bringing it centered to the origin", rotating it and then bring it back into its original position.
 
 ### Shearing
 
