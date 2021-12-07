@@ -7,7 +7,7 @@ Introduction
 A journey of a thousand miles begins with a single step
 ::::::::::::::::
 
-Welcome to the book! This book aims to be an organised collection of the community's knowledge on game development techniques, algorithms and experience with the objective of being as comprehensive as possible.
+Welcome to the book! This book aims to be an organized collection of the community's knowledge on game development techniques, algorithms and experience with the objective of being as comprehensive as possible.
 
 Why another game development book?
 ----------------------------------
@@ -101,7 +101,7 @@ This book is structured in many chapters, here you will find a small description
 
 - **Foreword:** You didn't skip it, right?
 - **Introduction:** Here we present the structure of the book and the reasons why it came to exist. You are reading it now, hold tight, you're almost there!
-- **The Maths Behind Game Development:** Here we will learn the basic maths that are behind any game, like vectors, matrices and screen coordinates.
+- **The Math Behind Game Development:** Here we will learn the basic Math that are behind any game, like vectors, matrices and screen coordinates.
 - **Some Computer Science Fundamentals:** Here we will learn (or revise) some known computer science fundamentals (and some less-known too!) and rules that will help us managing the development of our game.
 - **Project Management Tips:** Project management is hard! Here we will take a look at some common pitfalls and tips that will help us deliver our own project and deliver it in time.
 - **Introduction to game design:** In this section we will talk about platforms games can run on, input methods as well as some game genres.
@@ -119,7 +119,7 @@ This book is structured in many chapters, here you will find a small description
 - **Developing Game Mechanics:** Here we will dive into the game development's darkest and dirtiest secrets, how games fool us into strong emotions but also how some of the most used mechanics are implemented.
 - **Accessibility in video games:** Here we will learn the concept of "accessibility" and see what options we can give to our players to make our game more accessible (as well as more enjoyable to use).
 - **Testing your game:** This section is all about hunting bugs, without a can of bug spray. A deep dive into the world of testing, both automated and manual.
-- **Optimising and Profiling your game:** When things don't go right, like the game is stuttering or too slow, we have to rely on profiling and optimisation. In this section we will learn tips and tricks and procedures to see how to make our games perform better.
+- **Optimizing and Profiling your game:** When things don't go right, like the game is stuttering or too slow, we have to rely on profiling and optimization. In this section we will learn tips and tricks and procedures to see how to make our games perform better.
 - **Balancing Your Game:** A very idealistic vision on game balance, in this chapter we will take a look inside the player's mind and look at how something that may seem "a nice challenge" to us can translate into a "terrible balance issue" to our players.
 - **Marketing Your Game:** Here we will take a look at mistakes the industry has done when marketing and maintaining their own products, from the point of view of a small indie developer. We will also check some of the more controversial topics like loot boxes, micro transactions and season passes.
 - **Engaging your community:** a lot of a game's power comes from its community, in this section we will take a look at some suggestion you can implement in your game (and out-of-game too) to further engage your loyal fans.
