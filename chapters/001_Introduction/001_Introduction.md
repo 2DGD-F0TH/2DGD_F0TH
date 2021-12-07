@@ -101,7 +101,7 @@ This book is structured in many chapters, here you will find a small description
 
 - **Foreword:** You didn't skip it, right?
 - **Introduction:** Here we present the structure of the book and the reasons why it came to exist. You are reading it now, hold tight, you're almost there!
-- **The Math Behind Game Development:** Here we will learn the basic Math that are behind any game, like vectors, matrices and screen coordinates.
+- **The Maths Behind Game Development:** Here we will learn the basic maths that are behind any game, like vectors, matrices and screen coordinates.
 - **Some Computer Science Fundamentals:** Here we will learn (or revise) some known computer science fundamentals (and some less-known too!) and rules that will help us managing the development of our game.
 - **Project Management Tips:** Project management is hard! Here we will take a look at some common pitfalls and tips that will help us deliver our own project and deliver it in time.
 - **Introduction to game design:** In this section we will talk about platforms games can run on, input methods as well as some game genres.
