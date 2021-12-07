@@ -639,6 +639,8 @@ To implement an auto-saving feature, we need a slot to auto-save into, so we can
 
 ### Feedback is important
 
-{{placeholder}}
+It is extremely important to add feedback to actions, such as hits: a good visual feedback and the right sound can make all the difference in the world for your game.
 
-<!-- TODO: Giving feedback for hits is important, by lighting up the sprite that got hit. It is also important to make the feedback balanced: an explosion weapon should be more powerful than a single bullet -->
+The most common visual reaction to a hit is lighting up (by adding a white overlay) the sprite that got hit: this way it is really evident that a hit happened.
+
+The visual feedback should also mirror the effectiveness of the hit too. An explosive weapon should do tons more damage than a single bullet: if this doesn't happen the weapons will feel unbalanced and just badly designed.
