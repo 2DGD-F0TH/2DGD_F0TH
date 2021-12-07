@@ -636,3 +636,9 @@ To implement an auto-saving feature, we need a slot to auto-save into, so we can
 
 - **Choosing the save slot when starting a new game:** this means that the auto-save feature will auto-save and overwrite the selected save slot at every major event, which may be not desired. This is where the manual saving feature comes handy: allowing the player to save manually will also allow them to create a backup savefile.
 - **Dedicated "auto-save" slot:** this leaves the manual saving feature intact, but also adds a "special saving slot" the player can't save onto. This slot is dedicated to the most recent auto-save (regardless of the save slot we load from).
+
+### Feedback is important
+
+{{placeholder}}
+
+<!-- TODO: Giving feedback for hits is important, by lighting up the sprite that got hit. It is also important to make the feedback balanced: an explosion weapon should be more powerful than a single bullet -->
