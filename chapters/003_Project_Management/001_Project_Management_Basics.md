@@ -119,7 +119,7 @@ The knowledge of DAW (Digital Audio Workstation) software is fundamental, as wel
 
 Probably the most important job in a game development team, testing needs people with high attention to detail, as well as the ability to handle stress well.
 
-Testers are able to find, describe and help you reproduce bugs and misbehaviours of your game.
+Testers are able to find, describe and help you reproduce bugs and misbehaviors of your game.
 
 Some generic tips
 ---------------------
@@ -211,14 +211,14 @@ The question you should ask yourself is simple:
 
 If the answer is no, then you may want to ignore such criticism, but if it is constructive, maybe you want to keep it in consideration.
 
-#### Misusing of the Digital Millenium Copyright Act
+#### Misusing of the Digital Millennium Copyright Act
 
 This is what could be considered the apex of mishandling criticism: the usage of DMCA takedowns to quash criticism towards your game.
 
 ::: note :::
 What follows **is not legal advice**. I am not a lawyer.
 
-If you want to know more (as in quantity and quality of information), contact your favourite lawyer.
+If you want to know more (as in quantity and quality of information), contact your favorite lawyer.
 :::::::::::::::
 
 Sadly, mostly in the YouTube ecosystem, DMCA takedowns are often used as a means to suppress criticism and make video-reviews disappear from the Internet. Useless to say that this is **potentially illegal** as well as **definitely despicable**.
@@ -232,7 +232,7 @@ The so-called "Fair Use" is a limited exception to the copyright law that target
 The test for "Fair use" has four factors (according to 17 U.S.C. §107):
 
 1. **The Purpose and character of the use:** if someone can demonstrate that their use advances knowledge or the progress of arts through the addition of something new, it's probably fair use. This usually is defined by the question "is the work **transformative** enough?"
-2. **The nature of the copyrighted work:** For instance, facts and ideas are not protected by copyright, but only their particular expression or fixation is protected. Essentially you can't really sue someone for making a game very similar to yours (For instance making a 2D sidescrolling, run'n'gun plaformer).
+2. **The nature of the copyrighted work:** For instance, facts and ideas are not protected by copyright, but only their particular expression or fixation is protected. Essentially you can't really sue someone for making a game very similar to yours (For instance making a 2D sidescrolling, run'n'gun platformer).
 3. **The amount and substantiality of the portion used in relation to the work as a whole:** If someone uses a small part (compared to the whole) of the work, and if that part is not really substantial, then it's probably fair use.
 4. **The effect on the potential market for the copyrighted work:** this defines if the widespread presence of the "allegedly infringing use" can hinder on the copyright owner's ability to exploit (earn from) their original work.
 
@@ -240,7 +240,7 @@ There can also be some additional factors that may be considered, but these four
 
 ##### The "Review Case"
 
-Let's take a simple example: a video-review on our brand new videogame, that takes some small pieces of gameplay (totalling about 5 minutes), on video and comments on the gameplay, sound and graphics. A very common scenario with (I hope) an unsurprising turnout.
+Let's take a simple example: a video-review on our brand new videogame, that takes some small pieces of gameplay (totaling about 5 minutes), on video and comments on the gameplay, sound and graphics. A very common scenario with (I hope) an unsurprising turnout.
 
 Let's take a look at the first point: the purpose is criticism, the review brings something new to the table (essentially **it is transformative**): someone's impression and comments about the commercial work.
 
@@ -414,7 +414,7 @@ Lean development tries to bring the principles of lean manufacturing into softwa
 
 - **Remove Waste:** "waste" can be partial work, useless features, waiting, defects, work changing hands...
 - **Amplify Learning:** coding is seen as a learning process and different ideas should be tested on the field, giving great importance to the learning process;
-- **Decide late:** the later you take decisions, the more assumptions and predictions are replaced with facts, Also strong committments should happen as late as possible, as they will make the system less flexible;
+- **Decide late:** the later you take decisions, the more assumptions and predictions are replaced with facts, Also strong commitments should happen as late as possible, as they will make the system less flexible;
 - **Deliver early:** technology evolves rapidly, and the one that survives is the fastest. If you can deliver your product free from defects as soon as possible you will get feedback quickly, and get to the next iteration sooner;
 - **Empower the team:** managers are taught to listen to the developers, as well as provide suggestions;
 - **Build integrity in:** the components of the system should work well together and give a cohesive experience, giving the customer and impression of integrity;
@@ -517,7 +517,7 @@ Counting (automatically) the number of coding style breaches can help you estima
 
 Some people say that inheritance is evil and should be avoided, some other say it's good. As with all things, *in medio stat virtus* (virtue stands in the middle), sometimes inheritance is better left where it is, other times its usage is necessary for things to make sense.
 
-The *depth of inheritance* metric tells us how deep the inheritance hierarchy is, thus this metric will tell the us the strength of one of the possible dependency types. The deeper the inheritance, the more dependencies we have, which means that we have more classes that, if edited, will change the behaviour of the "children classes".
+The *depth of inheritance* metric tells us how deep the inheritance hierarchy is, thus this metric will tell the us the strength of one of the possible dependency types. The deeper the inheritance, the more dependencies we have, which means that we have more classes that, if edited, will change the behavior of the "children classes".
 
 It's better having a short inheritance depth, (although it's not necessarily wrong) having a longer chain of dependencies might mean we have a structural problem, where some classes are "too generic" and at the top of the hierarchy we have some kind of "universal object".
 
