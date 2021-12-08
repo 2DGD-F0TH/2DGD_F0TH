@@ -40,7 +40,7 @@ def distance(A, B):
     :returns: A float that represents the distance between A and B
 
     """
-    return sqrt((A.x + B.x)**2 + (A.y + B.y)**2)
+    return sqrt((A.x - B.x)**2 + (A.y - B.y)**2)
 
 
 def line_point_collision(pt, ln):

@@ -15,7 +15,7 @@ structure Circle{
 
 function distance(Point A, Point B) -> float{
     // Calculates the distance between two points
-    return square_root((A.x + B.x)^2 + (A.y + B.y)^2);
+    return square_root((A.x - B.x)^2 + (A.y - B.y)^2);
 }
 
 function line_point_collision(Line line, Point point) -> bool{

@@ -8,7 +8,7 @@ class Circle{
 
 function distance(A, B){
     // Calculates the distance between two points
-    return Math.sqrt((A.x + B.x)^2 + (A.y + B.y)^2);
+    return Math.sqrt((A.x - B.x)^2 + (A.y - B.y)^2);
 }
 
 function circle_circle_collision(A, B){
