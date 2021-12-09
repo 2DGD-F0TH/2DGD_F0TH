@@ -6,7 +6,7 @@ structure Circle{
 
 function distance(Point A, Point B) -> bool{
     // Calculates the distance between two points
-    return square_root((A.x + B.x)^2 + (A.y + B.y)^2);
+    return square_root((A.x - B.x)^2 + (A.y - B.y)^2);
 }
 
 function circle_point_collision(Circle A, Point B) -> bool{
