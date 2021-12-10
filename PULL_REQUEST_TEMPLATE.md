@@ -22,4 +22,4 @@
 
 - [ ] My contribution follows the contribution guidelines
 - [ ] I added myself in the contributors section (or I am already present)
-- [ ] I consent that my contribution will be distributed under the CC BY-NC License
+- [ ] I consent that my contribution will be distributed under the CC BY-NC-SA License
