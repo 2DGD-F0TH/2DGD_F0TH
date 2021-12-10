@@ -22,6 +22,36 @@ There are some guidelines your contributions should meet to be added to the book
 
 These are not strict requirements, they won't make your pull request get rejected, but you may be asked to tweak some things.
 
+### Tools needed
+
+Compared to building the book, you may need some more tools to be able to make read all the file formats used in this book.
+
+- **Any text editor** that supports Markdown: for editing the chapters and code listings
+- **Inkscape** (or an equivalent SVG/PDF editor): for editing svg images
+- **Pandoc**: for building the book
+- **TeXLive** or equivalent: for building the PDF Version
+- **GNU Make** or equivalent: for using the MakeFile Scripts
+- **GladTex** (v3 or superior): for converting math formulas into SVG for EPub
+- **Librsvg**: for converting SVGs into a format suitable for TeXLive
+- **PlantUML**: for UML diagrams in the `*.puml` format
+- **Dia**: for editing diagrams in the `*.dia` format
+- **Gimp**: for editing images in the `*.xcf` format
+- **GraphViz** (required for PlantUml): for editing diagrams in the `*.dot` format
+- **Git**: for version control
+- **Any PDF Reader**: just to make sure that the PDF looks good
+- **Any EPub Reader**: just to make sure that the EPub looks equally good
+
+### Knowledge (kinda) needed
+
+If you want to contribute more than just to the content of this project, you may want (but not necessarily **need**) to know:
+
+- **HTML and CSS**: for the EPub template
+- **LaTeX**: for the PDF template
+- **Lua**: for Pandoc Filters
+- **Python**: for some scripts
+- **MakeFile Syntax**
+- **YAML**: for the ebook metadata (is very self-explanatory, don't worry about this)
+
 ### Adding a new programming language
 
 This book is built in a way that allows everyone to have the book in their own favourite programming language, as long as the listings for such language are available. LaTeX will take care of the highlighting.
