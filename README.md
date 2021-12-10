@@ -107,7 +107,7 @@ The `master` branch is usually pretty much final (its contents will be expanded 
 License
 --------
 
-This project is meant to be a free source of knowledge for who wants to develop their first game (but also be a reference book you can come back to), currently this project is under the Creative Commons Attribution-NonCommercial License.
+This project is meant to be a free source of knowledge for who wants to develop their first game (but also be a reference book you can come back to), currently this project is under the Creative Commons Attribution-NonCommercial-ShareAlike License.
 
 ### Why this license?
 
