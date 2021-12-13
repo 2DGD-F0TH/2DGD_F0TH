@@ -52,6 +52,22 @@ If you want to contribute more than just to the content of this project, you may
 - **MakeFile Syntax**
 - **YAML**: for the ebook metadata (is very self-explanatory, don't worry about this)
 
+### Directory Structure
+
+This is the directory structure of the project, along with some descriptions that may help you understanding them.
+
+- **chapters**: this is where the main body of the book is written; all the theory and formulas are here, written in Pandoc Markdown
+- **dynamic_listings**: this is where you will find the code listings, they will be replaced when the book gets "compiled", thus making the "editions"
+- **filters**: this directory contains Pandoc's Lua filters, used to fill in the code listings, epigraphs, placeholders, page breaks, symbols and highlighted sections (boxes)
+- **images**: this folder contains the images that will be inserted in the book
+- **scripts**: this folder contains some scripts that may be useful to maintain the book
+- **template**: this folder contains the LaTeX and HTML templates (for PDF and EPub output)
+
+You can also find other folders, such as:
+
+- **raw_resources**: this folder contains some raw resources used to build the book, usually the code used to generate UML and dot diagrams, or XCF files used to create some images.
+- **gladtex_imgs**: this is a temporary folder used by the GladTeX tool to convert math formulas into SVG images (thus improving compatibility with EPub readers).
+
 ### Adding a new programming language
 
 This book is built in a way that allows everyone to have the book in their own favourite programming language, as long as the listings for such language are available. LaTeX will take care of the highlighting.
