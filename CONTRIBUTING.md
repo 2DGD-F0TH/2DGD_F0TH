@@ -80,6 +80,18 @@ After that you can try and make a copy of the book, by editing the `Makefile`. R
 
 You may also want to refer to the "Dynamic Code Blocks" section of this document.
 
+### Translating the book
+
+If you want to take over the task of translating the book into another language, here's something you should be mindful of:
+
+- Translations are considered "derivative work" and should be distributed under the same license of this book
+- Translating the **chapters** content will translate the theory part of the book
+- Translating the **dynamic listings** directory is necessary, since comments are in English
+- Some images may need translation
+- This book is an eternal "work in progress", so you'll have to expect changes.
+
+Currently there is no "centralized" way to handle translations, so please open an issue and we can work out a solution.
+
 ### Language Addons / Extensions
 
 You can add new listings that include your favourite framework/library by creating a new folder in the language of choice and using the `lang_extension` metavariable (just add `-M lang_extension="your_folder_name"`) to the commands in the MakeFile.
