@@ -183,6 +183,10 @@ This is a title {.unnumbered .unlisted}
 
 That `{.unnumbered .unlisted}` defines an "unnumbered and unlisted section", which is mostly an aesthetic choice that I used to make some appendices (like the Glossary) clearer in the Table of Contents.
 
+### Miscellaneous
+
+If you want to add tools or engines, try to be detailed while keeping it short. Engines and tools are written in alphabetical order.
+
 ### Problems? Questions?
 
 The most common questions will be usually answered in the `FAQ_GUIDES.md` document, for the rest, feel free to open an issue on either GitHub or GitLab.
