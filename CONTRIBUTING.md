@@ -177,11 +177,11 @@ To create a new dynamic code listing just write the following:
 You may notice that (usually in the appendices), there are titles looking like the following:
 
 ```
-This is a title {-}
+This is a title {.unnumbered .unlisted}
 -------------------
 ```
 
-That `{-}` defines an "unnumbered section", which is mostly an aesthetic choice that I used to make some appendices (like the Glossary) clearer.
+That `{.unnumbered .unlisted}` defines an "unnumbered and unlisted section", which is mostly an aesthetic choice that I used to make some appendices (like the Glossary) clearer in the Table of Contents.
 
 ### Problems? Questions?
 

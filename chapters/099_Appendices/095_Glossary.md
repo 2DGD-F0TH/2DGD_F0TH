@@ -4,13 +4,13 @@
 Glossary
 ========
 
-A {-}
+A {.unnumbered .unlisted}
 -----
 
 API
 : Short for "Application Programming Interface", it's a set of definitions, tools and clearly defined methods of communication between various software components.
 
-C {-}
+C {.unnumbered .unlisted}
 -----
 
 Call by reference
@@ -20,7 +20,7 @@ Call by value
 : Evaluation strategy where a function parameters are bound to a function by making a copy of the values used as an argument.
 
 
-D {-}
+D {.unnumbered .unlisted}
 -----
 
 Dangling Pointer
@@ -29,19 +29,19 @@ Dangling Pointer
 Dynamic Execution
 : See *out of order execution*
 
-E {-}
+E {.unnumbered .unlisted}
 -----
 
 EULA
 : Short of "End User License Agreement", is essentially a contract that estabilishes the purchaser's right to use the software, usually with some limitations on how the copy can be used.
 
-G {-}
+G {.unnumbered .unlisted}
 -----
 
 Greedy Algorithms
 : Class of algorithms that try to solve a problem by making the locally optimal choice **at each stage**, approximating the global solution, without any global planning.
 
-H {-}
+H {.unnumbered .unlisted}
 -----
 
 Hash Function
@@ -50,7 +50,7 @@ Hash Function
 HUD
 : Short of "Heads Up Display", in games it usually shows your health, ammunition, minimap and other information.
 
-I {-}
+I {.unnumbered .unlisted}
 -----
 
 IDE
@@ -59,19 +59,19 @@ IDE
 Information Hiding
 : Information hiding is one of the basic principles of programming: each part of a program (a "module") should not expose its inner workings, but rather expose a stable "interface" to the outside world. This will help separating modules from each other and avoid "snowball effects" when modifying the inner workings of one of them.
 
-K {-}
+K {.unnumbered .unlisted}
 -----
 
 Kanboard
 : Short for "Kanban Board", are boards used to manage work. The board is usually divided into swimlanes and "cards" that represent the work to do are moved from left to right, to represent the progress of the work itself.
 
-L {-}
+L {.unnumbered .unlisted}
 -----
 
 Letter Notation
 : Also known as "letter music notation", it's a music notation system that uses letters A through G to write music.
 
-M {-}
+M {.unnumbered .unlisted}
 -----
 
 Malware
@@ -83,7 +83,7 @@ Memory Leak
 Modern music notation
 : The most common way to write music, using symbols to indicate the duration and type of note, while the symbol's positioning in a 5-line staff defines its pitch.
 
-O {-}
+O {.unnumbered .unlisted}
 -----
 
 Oscillator
@@ -92,7 +92,7 @@ Oscillator
 Out of order execution
 : Paradygm used in high performance CPUs to reduce the wasted instruction cycles. The instructions are performed in an order given by the availability of the input data and execution units instead than the original order defined by the programmer.
 
-P {-}
+P {.unnumbered .unlisted}
 -----
 
 Pre-emption
@@ -106,7 +106,7 @@ Process Starvation
 : See *starvation*
 
 
-R {-}
+R {.unnumbered .unlisted}
 -----
 
 Race Condition
@@ -115,7 +115,7 @@ Race Condition
 Rootkit
 : Usually associated with malware, a rootkit is a software that manages to get access to reserved areas of an operating system, usually to hide its own, or other softwares' presence.
 
-S {-}
+S {.unnumbered .unlisted}
 -----
 
 Side Effect
@@ -130,7 +130,7 @@ Starvation
 Static Typing
 : Languages characterized by *static typing* are the ones where the type of a certain variable (integer, string, class, ...) is known at compile time.
 
-U {-}
+U {.unnumbered .unlisted}
 -----
 
 UI
@@ -139,7 +139,7 @@ UI
 Unreachable Memory
 : This is a phenomenon where some dynamically allocated memory has no more references pointing to it. This is a common cause of memory leaks in programming languages without automatic garbage collection (like C and C++).
 
-W {-}
+W {.unnumbered .unlisted}
 -----
 
 Wiki

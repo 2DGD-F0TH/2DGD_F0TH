@@ -16,7 +16,7 @@ For each proposed engine or framework, along with a short description, you will 
 - **Platform compatibility:** This will tell you if the product is good for your objective, by telling you which platforms you can deploy on, like Linux, Windows or even on the web via HTML5;
 - **License:** This will tell you how to behave when it comes to the legal stuff, since some engines do not allow commercial use in their free versions.
 
-Game Maker Studio {-}
+Game Maker Studio {.unnumbered .unlisted}
 ---------------------
 
 **Website:** <https://www.yoyogames.com/gamemaker>
@@ -47,7 +47,7 @@ It makes use of its own scripting language, and some visual toolkits as well.
 
 Game Maker Studio is commercial software, regulated by its own EULA, but it was added here for sake of completeness.
 
-GDevelop {-}
+GDevelop {.unnumbered .unlisted}
 -----------
 
 **Website:** <https://gdevelop-app.com/>
@@ -76,7 +76,7 @@ GDevelop is an open-source toolkit to make games, mostly based on visual program
 
 GDevelop is distributed under the MIT license (although the name and logo are copyright), although the main license file refers to other license files inside each folder. So you may want to check the GitHub repository for more information.
 
-GLFW {-}
+GLFW {.unnumbered .unlisted}
 --------
 
 **Website:** <https://www.glfw.org/>
@@ -105,7 +105,7 @@ GLFW is an Open-Source library for OpenGL, OpenGL ES and Vulkan, that allows to 
 
 GLFW is distributed under the ZLib/png license, which allows for both commercial and personal use, both in proprietary and open-source situations.
 
-Godot {-}
+Godot {.unnumbered .unlisted}
 ---------
 
 **Website:** <https://godotengine.org/>
@@ -134,7 +134,7 @@ Godot is a fully-fledged engine that makes use of a node-based approach and supp
 
 Godot is currently distributed under the MIT license, you should check the Legal section of the Godot Documentation for all the additional licenses that you may need to know about.
 
-IRRlicht {-}
+IRRlicht {.unnumbered .unlisted}
 -----------
 
 **Website:** <http://irrlicht.sourceforge.net/>
@@ -163,7 +163,7 @@ IRRlicht is a 3D engine (as in does only 3D rendering) made in C++ that aims to 
 
 IRRlicht distributed under the ZLib/png license, which allows for both commercial and personal use, both in proprietary and open-source situations.
 
-Löve {-}
+Löve {.unnumbered .unlisted}
 --------
 
 **Website:** <http://love2d.org/>
@@ -192,7 +192,7 @@ Löve is a lua-based framework for creating games, features an extensive documen
 
 Löve is distributed under the ZLib/png license, which allows for both commercial and personal use, both in proprietary and open-source situations.
 
-MonoGame {-}
+MonoGame {.unnumbered .unlisted}
 -------------
 
 **Website:** <http://www.monogame.net/>
@@ -221,7 +221,7 @@ MonoGame is an open-source porting of XNA 4, it allows for people used to Micros
 
 MonoGame is distributed under a mixed license: Microsoft Public License + MIT License. You may want to check the license yourself on the project's GitHub page.
 
-Ogre3D {-}
+Ogre3D {.unnumbered .unlisted}
 ---------
 
 **Website:** <https://www.ogre3d.org/>
@@ -250,7 +250,7 @@ Ogre3D is an open source 3D graphics engine (it's used to render 3D graphics onl
 
 Ogre3D comes in 2 versions: version 1.x is distributed under the GNU LGPL license, while the more recent 2.x version is distributed under the more premissive MIT license.
 
-Panda3D {-}
+Panda3D {.unnumbered .unlisted}
 ------------
 
 **Website:** <https://www.panda3d.org/>
@@ -279,7 +279,7 @@ Panda3D is a complete and open source 3D game engine.
 
 Panda3D itself is distributed under the modified BSD license, which is very permissive, but it brings together many third-party libraries that are released under different licenses. It is suggested to check the license section of the manual for more information.
 
-SDL {-}
+SDL {.unnumbered .unlisted}
 ----------
 
 **Website:** <https://www.libsdl.org/>
@@ -310,7 +310,7 @@ SDL is distributed under the ZLib license, which allows for both commercial and 
 
 The versions of SDL up to version 1.2 are instead distributed under the GNU LGPL license, which is more complex and may need to be analyzed by legal experts.
 
-SFML {-}
+SFML {.unnumbered .unlisted}
 --------
 
 **Website:** <https://www.sfml-dev.org/>
@@ -341,7 +341,7 @@ SFML (Simple Fast Multimedia Library) is a library dedicated to creation of mult
 
 SFML is distributed under the ZLib/png license, which allows for both commercial and personal use, both in proprietary and open-source situations.
 
-Unity 3D {-}
+Unity 3D {.unnumbered .unlisted}
 -----------
 
 **Website:** <https://unity.com/>
