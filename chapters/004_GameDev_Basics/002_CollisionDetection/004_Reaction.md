@@ -93,11 +93,11 @@ Let's see how this method reacts in each situation.
 
 When we are trying to fall on the ground, this method works as follows:
 
-![How the the interleaving method reacts to collisions on a horizontal plane](./images/collision_detection/interleaving_reference.png){width=80%}
+![How the the interleaving method reacts to collisions on a horizontal plane](./images/collision_detection/interleaving_reference.svg){width=80%}
 
 1. We divide the movement vector in its $x$ and $y$ components.
-2. We move along the $x$ axis and check for collisions, in this case there are none (the ghost represents our previous position.
-3. We move along the $y$ axis, after checking for collisions we find that we are colliding on the ground (the ghost represents our next position).
+2. We move along the $x$ axis and check for collisions, in this case there are none.
+3. We move along the $y$ axis, after checking for collisions we find that we are colliding on the ground.
 4. We react to the collision by moving the sprite on top of the ground.
 
 #### The "Snapshot" Method
