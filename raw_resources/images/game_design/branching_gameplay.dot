@@ -10,13 +10,10 @@ digraph branching_gameplay {
     b -> d;
     b -> e;
     c -> f;
-    c -> g;
+    d -> g;
     d -> h;
-    d -> i;
+    e -> i;
     e -> j;
-    e -> k;
+    f -> k;
     f -> l;
-    f -> m;
-    g -> n;
-    g -> o;
 }

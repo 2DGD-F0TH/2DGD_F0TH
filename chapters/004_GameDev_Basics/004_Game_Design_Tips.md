@@ -242,7 +242,7 @@ Table: Summary of linear gameplay
 
 Going towards more complex flow types, we can use branching to allow for more interactivity.
 
-![Example Scheme of branching gameplay](./images/game_design/branching_gameplay.svg){width=60%}
+![Example Scheme of branching gameplay](./images/game_design/branching_gameplay.svg){width=50%}
 
 This type of gameplay flow allows for a lot of interactivity by crafting the game in a way that player decisions have a direct influence on the story flow.
 
