@@ -414,6 +414,8 @@ Telegraphing is a nice way to suggest the player how to avoid screen-filling att
 
 ![Example of a telegraphed screen-filling attack in a shooter](./images/game_design/telegraphing.png){width=60%}
 
+Another form of telegraphing is showing where the attacks will come from, using a "charging up animation": this will attract the player's attention towards those spots and help them gauge the next attack.
+
 :::: trivia :::::
 A form of telegraphing was used in the Bioshock series: the first shots of an enemy against you always miss, that is used to avoid "out of the blue" situation, which somehow communicates both the presence and position of enemies.
 :::::::::::::::::
