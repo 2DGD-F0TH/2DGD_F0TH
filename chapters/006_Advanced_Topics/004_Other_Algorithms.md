@@ -39,6 +39,10 @@ Let's take a look at a possible implementation of the midpoint displacement algo
 ```{src='algorithms/midpoint_displacement' caption='Example implementation of the midpoint displacement algorithm'}
 ```
 
+::: note :::
+This algorithm can be extended to create 2D height-maps (which can be used in turn to create 3D ground) and noise textures quite easily, but it also presents some artifacts that can be noticeable. The diamond-square algorithm solves this issue.
+::::::::::::
+
 ### Diamond-Square Algorithm
 
 The diamond-square algorithm is an evolution in 2D of the midpoint displacement algorithm (so far, we just changed one value, in one dimension).
