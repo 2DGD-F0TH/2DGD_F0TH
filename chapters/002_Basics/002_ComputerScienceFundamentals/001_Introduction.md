@@ -116,7 +116,7 @@ Just to reiterate: this is not a problem of the single programming language, we 
 
 ![Python 3 doesn't fare much better when it comes to precision](./images/computer_science/precision_3.png){width=50%}
 
-This is a computer issue in general, this may not be a huge problem for general use but if we try to be too precise with our calculations this may come back to bite us.
+This is a computer issue in general: this may not be a huge problem for general use but, if we try to be too precise with our calculations, this may come back to bite us.
 
 
 ### Catastrophic cancellation
