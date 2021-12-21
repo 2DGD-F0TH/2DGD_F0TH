@@ -23,6 +23,8 @@ $$
 
 :::: note ::::
 Remember that in many programming languages arrays and similar structures are 0-indexed. This is the system that will be used here.
+
+If you're using a language that indexes arrays starting from 1 (like Lua), these formulas need to be changed a bit.
 ::::::::::::::
 
 So if I want to know the index of the 3rd element of the second row, with index (2,1), the formula becomes:
