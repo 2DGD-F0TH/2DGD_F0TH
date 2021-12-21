@@ -1,6 +1,6 @@
 #include<iostream>
 
-void count_backwards(int n){
+void count_forwards(int n){
     // Stop condition
     if (n == 0){
         // If we don't do this, we won't print 0
@@ -8,7 +8,7 @@ void count_backwards(int n){
         return;
     }
     // Recursive call
-    count_backwards(n-1);
+    count_forwards(n-1);
     // Procedure
     std::cout << n << std::endl;
 }
