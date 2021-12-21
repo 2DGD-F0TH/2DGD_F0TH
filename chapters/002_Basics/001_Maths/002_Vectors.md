@@ -89,7 +89,7 @@ Knowing that the length of a vector is a scalar (a number, not a vector), normal
 
 ### "Clamping" a Vector
 
-This is not an operation "per se", but there are occasions where we need to limit the length of a vector: this usually happens when we are working with velocity, as not limiting it would allow an object to change position faster and faster, making the game less playable and even breaking time-stepping collision detection algorithms.
+This is not an operation "per se", but there are occasions where we need to limit the length of a vector: this usually happens when we are working with velocity, as not limiting it would allow an object to change position faster and faster, making the game less playable and even [breaking time-stepping collision detection algorithms](#bulletthroughpaper).
 
 To clamp a vector, we need to find its magnitude and direction first, which is the "normalized vector". Let's think about the vector $v$, its magnitude and direction are:
 
