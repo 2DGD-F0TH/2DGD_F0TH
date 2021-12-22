@@ -116,6 +116,8 @@ There are hybrid approaches to cameras too, mixing and matching different types 
 
 This allows the game to have a more dynamic feel, but also saves memory, since the SNES had to load only one "zone" at a time, instead of the whole map.
 
+Another idea would be using an "out-of-center" camera trap that changes position according to how the player "escapes the camera trap", thus solving some of the biggest issues of the look-ahead camera.
+
 Feel free to experiment and invent!
 
 Clamping your camera position
