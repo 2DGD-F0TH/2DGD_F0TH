@@ -71,6 +71,10 @@ Everything is great, until our computer starts slowing down (high load or just n
 
 This means that every time the computer slows down, even for a microsecond, the game will slow down too, which can be annoying.
 
+:::: note ::::
+Also the same problem can apply: if `computer A` can run the game at 30fps maximum, while `computer B` will run at 120fps (and we don't account for that), using fixed timesteps the game will run 4 times as fast on `computer B`.
+::::::::::::::
+
 ### Variable Time Steps {#variable_timesteps}
 
 A way to limit the issues given by a fixed time step approach is to make use of variable time steps, which are simple in theory, but can prove hard to manage.
