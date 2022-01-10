@@ -243,7 +243,7 @@ Jump buffering usually is put into practice using a timer, in a fashion similar 
 
 Coyote time (also known as "edge tolerance") is a technique used to allow a player to jump a few frames after they fall off a platform, allowing for a more fluid gameplay.
 
-![Example of how coyote time would work](./images/developing_mechanics/coyote_time.png){width=60%}
+![Example of how coyote time would work](./images/developing_mechanics/coyote_time.svg){width=60%}
 
 The trick is starting a countdown as soon as the player leaves a platform without jumping, then if the player presses the jump button while that time is still going, they will perform the jump action, like they still were on a platform.
 
