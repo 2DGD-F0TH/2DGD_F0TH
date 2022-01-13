@@ -206,27 +206,27 @@ This is another very efficient "passage carver" algorithm: for each cell we carv
 
 Let's see how the algorithm works: we start from the bottom-right cell of the maze (the last one).
 
-![How the Binary Tree Maze generation works (1/6)](./images/algorithms/bintree_1.png){width=30%}
+![How the Binary Tree Maze generation works (1/6)](./images/algorithms/bintree_1.svg){width=30%}
 
 Now we decide, randomly, to carve a passage either upwards or leftwards (we will not carve a passage that "creates a hole in a wall"). In this case we go leftwards.
 
-![How the Binary Tree Maze generation works (2/6)](./images/algorithms/bintree_2.png){width=30%}
+![How the Binary Tree Maze generation works (2/6)](./images/algorithms/bintree_2.svg){width=30%}
 
 Now let's go to the second-to-last cell...
 
-![How the Binary Tree Maze generation works (3/6)](./images/algorithms/bintree_3.png){width=30%}
+![How the Binary Tree Maze generation works (3/6)](./images/algorithms/bintree_3.svg){width=30%}
 
 And again, decide randomly to carve a passage either upwards or leftwards, this time we chose upwards.
 
-![How the Binary Tree Maze generation works (4/6)](./images/algorithms/bintree_4.png){width=30%}
+![How the Binary Tree Maze generation works (4/6)](./images/algorithms/bintree_4.svg){width=30%}
 
 Again we go to the "previous" cell and continue with our process, until we hit the left wall (which will force us to carve a passage upwards) or the top wall (which will force us to go left); when we hit both the top and the left walls, we stop.
 
-![How the Binary Tree Maze generation works (5/6)](./images/algorithms/bintree_5.png){width=30%}
+![How the Binary Tree Maze generation works (5/6)](./images/algorithms/bintree_5.svg){width=30%}
 
 Here is the result of the algorithm:
 
-![How the Binary Tree Maze generation works (6/6)](./images/algorithms/bintree_6.png){width=30%}
+![How the Binary Tree Maze generation works (6/6)](./images/algorithms/bintree_6.svg){width=30%}
 
 Given its deep roots into the computer science "Binary Tree" structure (where the root is the upper-left corner), this algorithm shows only half of the cell types available in mazes: there are no crossroads and all dead ends will either have a passage upwards or leftwards (but again, never both at the same time).
 

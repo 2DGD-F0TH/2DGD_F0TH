@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="200.26459mm"
+   height="200.26459mm"
+   viewBox="0 0 200.26459 200.26459"
+   version="1.1"
+   id="svg5"
+   sodipodi:docname="bintree_6.svg"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20, custom)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.90744576"
+     inkscape:cx="332.80226"
+     inkscape:cy="402.2279"
+     inkscape:window-width="1920"
+     inkscape:window-height="1019"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1"
+     inkscape:snap-intersection-paths="true" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-4.7746283,-48.367708)">
+    <g
+       inkscape:label="GridCartesian:X4:Y4"
+       transform="translate(4.90692,48.5)"
+       id="g848"
+       style="stroke:#000000;stroke-opacity:1;stroke-width:0.2;stroke-miterlimit:4;stroke-dasharray:none">
+      <g
+         inkscape:label="MajorXGridlines"
+         id="g836"
+         style="stroke:#000000;stroke-opacity:1;stroke-width:0.2;stroke-miterlimit:4;stroke-dasharray:none">
+        <path
+           style="fill:none;stroke:#000000;stroke-width:0.2;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+           d="m 50,150 v 50"
+           inkscape:label="MajorXDiv1"
+           id="path830" />
+        <path
+           style="fill:none;stroke:#000000;stroke-width:0.2;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+           d="m 100,150 v 50"
+           inkscape:label="MajorXDiv2"
+           id="path832" />
+        <path
+           style="fill:none;stroke:#000000;stroke-width:0.2;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+           d="m 149.92326,100 v 50"
+           inkscape:label="MajorXDiv3"
+           id="path834" />
+      </g>
+      <g
+         inkscape:label="MajorYGridlines"
+         id="g844"
+         style="stroke:#000000;stroke-opacity:1;stroke-width:0.2;stroke-miterlimit:4;stroke-dasharray:none">
+        <path
+           style="fill:none;stroke:#000000;stroke-width:0.2;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+           d="M 50,50 H 200"
+           inkscape:label="MajorYDiv1"
+           id="path838" />
+        <path
+           style="fill:none;stroke:#000000;stroke-width:0.2;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+           d="m 50,100 h 99.95885"
+           inkscape:label="MajorYDiv2"
+           id="path840" />
+      </g>
+      <rect
+         x="0"
+         y="0"
+         width="200"
+         height="200"
+         style="fill:none;stroke:#000000;stroke-width:0.2;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+         inkscape:label="Border"
+         id="rect846" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.2;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+         d="m 150,150 h 49.4695"
+         inkscape:label="MajorYDiv3"
+         id="path842-3" />
+    </g>
+  </g>
+</svg>
