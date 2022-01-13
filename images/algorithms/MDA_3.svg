@@ -1,19 +1,88 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="345.826782pt" height="249.448822pt" viewBox="0 0 345.826782 249.448822" version="1.1">
-<defs>
-<clipPath id="clip1">
-  <path d="M 0 70 L 345.828125 70 L 345.828125 249.449219 L 0 249.449219 Z M 0 70 "/>
-</clipPath>
-<clipPath id="clip2">
-  <path d="M 0 65 L 345.828125 65 L 345.828125 249.449219 L 0 249.449219 Z M 0 65 "/>
-</clipPath>
-</defs>
-<g id="surface1">
-<g clip-path="url(#clip1)" clip-rule="nonzero">
-<path style=" stroke:none;fill-rule:nonzero;fill:rgb(0%,50.195312%,0%);fill-opacity:1;" d="M 0.371094 125.097656 L 0.371094 249.078125 L 345.453125 249.078125 L 345.453125 125.214844 L 268.507812 88.300781 L 172.324219 70.007812 L 83.074219 114.804688 Z M 0.371094 125.097656 "/>
-</g>
-<g clip-path="url(#clip2)" clip-rule="nonzero">
-<path style="fill:none;stroke-width:0.744469;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:4;" d="M 0.371094 125.097656 L 0.371094 249.078125 L 345.453125 249.078125 L 345.453125 125.214844 L 268.507812 88.300781 L 172.324219 70.007812 L 83.074219 114.804688 Z M 0.371094 125.097656 "/>
-</g>
-</g>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="345.826782pt"
+   height="249.448822pt"
+   viewBox="0 0 345.826782 249.448822"
+   version="1.1"
+   id="svg855"
+   sodipodi:docname="MDA_3.svg"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20, custom)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview857"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="pt"
+     showgrid="false"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:zoom="2.5195549"
+     inkscape:cx="198.84465"
+     inkscape:cy="87.713906"
+     inkscape:window-width="1920"
+     inkscape:window-height="1019"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg855">
+    <sodipodi:guide
+       position="83.050382,125.31976"
+       orientation="1,0"
+       id="guide1233" />
+    <sodipodi:guide
+       position="268.4998,130.67785"
+       orientation="1,0"
+       id="guide1235" />
+  </sodipodi:namedview>
+  <defs
+     id="defs844">
+    <clipPath
+       id="clip1">
+      <path
+         d="M 0 70 L 345.828125 70 L 345.828125 249.449219 L 0 249.449219 Z M 0 70 "
+         id="path838" />
+    </clipPath>
+    <clipPath
+       id="clip2">
+      <path
+         d="M 0 65 L 345.828125 65 L 345.828125 249.449219 L 0 249.449219 Z M 0 65 "
+         id="path841" />
+    </clipPath>
+  </defs>
+  <g
+     id="surface1">
+    <g
+       clip-path="url(#clip1)"
+       clip-rule="nonzero"
+       id="g848">
+      <path
+         style=" stroke:none;fill-rule:nonzero;fill:rgb(0%,50.195312%,0%);fill-opacity:1;"
+         d="M 0.371094 125.097656 L 0.371094 249.078125 L 345.453125 249.078125 L 345.453125 125.214844 L 268.507812 88.300781 L 172.324219 70.007812 L 83.074219 114.804688 Z M 0.371094 125.097656 "
+         id="path846" />
+    </g>
+    <g
+       clip-path="url(#clip2)"
+       clip-rule="nonzero"
+       id="g852">
+      <path
+         style="fill:none;stroke-width:0.744469;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:4;"
+         d="M 0.371094 125.097656 L 0.371094 249.078125 L 345.453125 249.078125 L 345.453125 125.214844 L 268.507812 88.300781 L 172.324219 70.007812 L 83.074219 114.804688 Z M 0.371094 125.097656 "
+         id="path850" />
+    </g>
+  </g>
+  <path
+     style="fill:none;stroke:#ff0000;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:4.5, 4.5;stroke-dashoffset:0;stroke-opacity:1"
+     d="M 83.050382,0.46012001 V 247.96565"
+     id="path1029" />
+  <path
+     style="fill:none;stroke:#ff0000;stroke-width:0.75;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:4.5, 4.5;stroke-dashoffset:0;stroke-opacity:1"
+     d="M 268.4998,0.46012414 V 247.96565"
+     id="path1029-3" />
 </svg>
