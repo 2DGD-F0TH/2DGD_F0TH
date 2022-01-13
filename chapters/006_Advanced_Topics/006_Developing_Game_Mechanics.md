@@ -232,7 +232,7 @@ Normally when a character is mid-air, the jump button does nothing, in code:
 
 Jump Buffering consists in allowing the player to "buffer" a jump slightly before the character lands, making the controls a bit less stiff and the gameplay more fluid.
 
-![Example of how jump buffering would work](./images/developing_mechanics/jump_buffering.png){width=60%}
+![Example of how jump buffering would work](./images/developing_mechanics/jump_buffering.svg){width=60%}
 
 Jump buffering usually is put into practice using a timer, in a fashion similar to the following:
 

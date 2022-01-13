@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="153.06401mm"
+   height="68.486526mm"
+   version="1.1"
+   viewBox="0 0 153.06401 68.486525"
+   id="svg80"
+   sodipodi:docname="jump_buffering.svg"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20, custom)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview82"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="2.1519812"
+     inkscape:cx="143.12393"
+     inkscape:cy="129.18328"
+     inkscape:window-width="1920"
+     inkscape:window-height="1019"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg80" />
+  <defs
+     id="defs8">
+    <marker
+       id="a"
+       overflow="visible"
+       orient="auto">
+      <path
+         transform="scale(0.4)"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         fill="context-stroke"
+         fill-rule="evenodd"
+         stroke="context-stroke"
+         stroke-width="1pt"
+         id="path2" />
+    </marker>
+    <marker
+       id="b"
+       overflow="visible"
+       orient="auto">
+      <path
+         transform="scale(0.4)"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         fill="context-stroke"
+         fill-rule="evenodd"
+         stroke="context-stroke"
+         stroke-width="1pt"
+         id="path5" />
+    </marker>
+  </defs>
+  <path
+     d="M 48.261966,0 V 68.331"
+     id="path10"
+     style="fill:none;stroke:#000000" />
+  <path
+     d="M 99.446966,0 V 68.331"
+     id="path12"
+     style="fill:none;stroke:#000000" />
+  <g
+     transform="matrix(0.14809,0,0,0.14809,73.411116,12.322618)"
+     id="g38">
+    <path
+       transform="matrix(1.4296,0,0,1.4085,3.544,-87.965)"
+       d="m 9.5,215.36 c 0,9.8031 -7.9469,17.75 -17.75,17.75 -9.8031,0 -17.75,-7.9469 -17.75,-17.75 0,-9.803 7.9469,-17.75 17.75,-17.75 9.8031,0 17.75,7.947 17.75,17.75 z"
+       id="path22" />
+    <path
+       transform="matrix(1.0493,0,0,1.0352,0.40669,-7.5832)"
+       d="m 9.5,215.36 c 0,9.8031 -7.9469,17.75 -17.75,17.75 -9.8031,0 -17.75,-7.9469 -17.75,-17.75 0,-9.803 7.9469,-17.75 17.75,-17.75 9.8031,0 17.75,7.947 17.75,17.75 z"
+       fill="#ffffff"
+       id="path24" />
+    <rect
+       transform="rotate(27.113)"
+       x="87.575996"
+       y="195.28"
+       width="19.375"
+       height="0.625"
+       fill="#ff0000"
+       id="rect26" />
+    <path
+       transform="translate(3.25,7.5)"
+       d="m -10.125,207.86 c 0,0.75939 -0.61561,1.375 -1.375,1.375 -0.75939,0 -1.375,-0.61561 -1.375,-1.375 0,-0.75939 0.61561,-1.375 1.375,-1.375 0.75939,0 1.375,0.61561 1.375,1.375 z"
+       id="path28" />
+    <rect
+       transform="rotate(90)"
+       x="214.55"
+       y="21"
+       width="1.625"
+       height="4.75"
+       id="rect30" />
+    <rect
+       transform="rotate(90)"
+       x="214.55"
+       y="-9.125"
+       width="1.625"
+       height="4.75"
+       id="rect32" />
+    <rect
+       transform="scale(-1)"
+       x="7.4375"
+       y="-232.92"
+       width="1.625"
+       height="4.75"
+       id="rect34" />
+    <rect
+       transform="scale(-1)"
+       x="7.4375"
+       y="-203.17"
+       width="1.625"
+       height="4.75"
+       id="rect36" />
+  </g>
+  <rect
+     x="4.1634769"
+     y="42.983673"
+     width="7.0033002"
+     height="7.0033002"
+     id="rect40"
+     style="fill:#ff0000;fill-opacity:0.99703" />
+  <rect
+     x="60.790051"
+     y="51.339485"
+     width="7.0033002"
+     height="7.0033002"
+     id="rect42"
+     style="fill:#ff0000;fill-opacity:0.99703" />
+  <rect
+     x="144.26788"
+     y="48.600777"
+     width="7.0033002"
+     height="7.0033002"
+     id="rect44"
+     style="fill:#ff0000;fill-opacity:0.99703" />
+  <path
+     d="m 12.964966,47.506788 c 11.453,-0.60829 11.044,11.212 11.044,11.212"
+     marker-end="url(#a)"
+     id="path48"
+     style="fill:none;stroke:#000000" />
+  <path
+     d="m 70.724514,53.349477 c 11.453,-0.60829 11.044,11.212 11.044,11.212"
+     marker-end="url(#b)"
+     id="path50"
+     style="fill:none;stroke:#000000" />
+  <path
+     d="m 112.57789,59.570769 c 11.743,-0.93637 10.754,8.005 10.754,8.005 0,0 -0.88954,-14.854 16.228,-15.443"
+     marker-end="url(#a)"
+     id="path52"
+     style="fill:none;stroke:#000000" />
+  <g
+     font-size="4.9389px"
+     id="g68"
+     transform="translate(-8.8130344,-131.48)"
+     style="font-family:'DejaVu Sans';letter-spacing:0px;word-spacing:0px;stroke-width:0.26458">
+    <text
+       x="16.089895"
+       y="136.49078"
+       style="line-height:1.25"
+       xml:space="preserve"
+       id="text58"><tspan
+         x="16.089895"
+         y="136.49078"
+         font-size="4.9389px"
+         stroke-width="0.26458"
+         id="tspan56">Frame n</tspan></text>
+    <text
+       x="67.683823"
+       y="136.49078"
+       style="line-height:1.25"
+       xml:space="preserve"
+       id="text62"><tspan
+         x="67.683823"
+         y="136.49078"
+         font-size="4.9389px"
+         stroke-width="0.26458"
+         id="tspan60">Frame n+1</tspan></text>
+    <text
+       x="122.9192"
+       y="136.52335"
+       style="line-height:1.25"
+       xml:space="preserve"
+       id="text66"><tspan
+         x="122.9192"
+         y="136.52335"
+         font-size="4.9389px"
+         stroke-width="0.26458"
+         id="tspan64">Frame n+2</tspan></text>
+  </g>
+  <path
+     style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     d="M 0,67.986528 H 153.06402"
+     id="path1360" />
+  <text
+     xml:space="preserve"
+     style="font-size:4.23333px;line-height:1.25;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+     x="19.922276"
+     y="32.100197"
+     id="text2176"><tspan
+       sodipodi:role="line"
+       id="tspan2174"
+       style="font-size:4.23333px;text-align:center;text-anchor:middle;stroke-width:0.264583"
+       x="19.922276"
+       y="32.100197">Jump button</tspan><tspan
+       sodipodi:role="line"
+       style="font-size:4.23333px;text-align:center;text-anchor:middle;stroke-width:0.264583"
+       x="19.922276"
+       y="37.391861"
+       id="tspan2178">pressed</tspan></text>
+</svg>
