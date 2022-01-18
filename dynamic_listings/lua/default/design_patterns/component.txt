@@ -1,0 +1,43 @@
+Component = {}
+
+function Component:new(o)
+    o = o or {}
+    setmetatable(o, self)
+    self.__index = self
+    return o
+end
+
+function Component:update()
+    -- Do nothing, this is an abstract class
+    error("This is an abstract class, cannot execute")
+end
+
+-- Defines Concrete Component Number 1
+ConcreteComponent1 = Component:new()
+
+function ConcreteComponent1:update()
+    -- Do Stuff
+    print("Doing stuff with component 1")
+end
+
+-- Defines Concrete Component Number 2
+
+ConcreteComponent2 = Component:new({component_list={}})
+
+function ConcreteComponent2:update()
+    for i = 0, #self.component_list do
+        self.component_list[i]:update()
+    end
+    -- Do Other Stuff
+end
+
+Client = {
+    first_component = ConcreteComponent1:new(),
+    second_component = ConcreteComponent2:new()
+}
+
+function Client:update()
+    -- This is the client's update function
+    self.first_component.update()
+    self.second_component.update()
+end
