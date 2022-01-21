@@ -128,29 +128,29 @@ The algorithm needs the following data structures to work:
 
 Initially all the cells are separated by walls, and each cell is its own set.
 
-![How the Randomized Kruskal's Algorithm Works (1/6)](./images/algorithms/Kruskal1.png){width=30%}
+![How the Randomized Kruskal's Algorithm Works (1/6)](./images/algorithms/Kruskal1.svg){width=30%}
 
 Now we select a random wall from our list, if the cells separated by such wall are part of different sets, we delete the wall and join the cells into a single set.
 
-![How the Randomized Kruskal's Algorithm Works (2/6)](./images/algorithms/Kruskal2.png){width=30%}
+![How the Randomized Kruskal's Algorithm Works (2/6)](./images/algorithms/Kruskal2.svg){width=30%}
 
 The "different sets" check allows us to avoid having loops in our maze (and also deleting all the walls, in some cases). Next we select another wall, check if the cells divided by the wall are from different sets and join them.
 
-![How the Randomized Kruskal's Algorithm Works (3/6)](./images/algorithms/Kruskal3.png){width=30%}
+![How the Randomized Kruskal's Algorithm Works (3/6)](./images/algorithms/Kruskal3.svg){width=30%}
 
 This doesn't look much like a maze yet, but by uniting the cells we can start seeing some short paths forming in our maze.
 
-![How the Randomized Kruskal's Algorithm Works (4/6)](./images/algorithms/Kruskal4.png){width=30%}
+![How the Randomized Kruskal's Algorithm Works (4/6)](./images/algorithms/Kruskal4.svg){width=30%}
 
 The black cells are starting to develop a path, as stated earlier. As the sets get bigger, there will be less walls we can "break down" to join our sets.
 
-![How the Randomized Kruskal's Algorithm Works (5/6)](./images/algorithms/Kruskal5.png){width=30%}
+![How the Randomized Kruskal's Algorithm Works (5/6)](./images/algorithms/Kruskal5.svg){width=30%}
 
 When there is only one set left, our maze is complete.
 
-![How the Randomized Kruskal's Algorithm Works (6/6)](./images/algorithms/Kruskal6.png){width=30%}
+![How the Randomized Kruskal's Algorithm Works (6/6)](./images/algorithms/Kruskal6.svg){width=30%}
 
-This algorithm, being based on a minimum-spanning tree algorithm, this algorithm is biased towards creating a large number of short dead ends.
+Being based on a minimum-spanning tree algorithm, this algorithm is biased towards creating a large number of short dead ends.
 
 Now let's see an example implementation of the Randomized Kruskal's Algorithm:
 
