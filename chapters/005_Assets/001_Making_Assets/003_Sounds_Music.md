@@ -492,6 +492,12 @@ A basic rhythm like the "four on the floor", by itself, can prove to be quite bo
 
 If you listen closely, a lot of music has this basic pattern mixed into it, in one way or another.
 
+#### A simple rock beat
+
+By using hi-hats, a kick drum and a snare drum, you can create a very simple rock beat. Keep 4 beats in a bar, each beat put a hi-hat, on 1 and 2 put a kick drum and on 3 a snare drum.
+
+![A simple rock beat](./images/resources/simple_rock_beat.png){width=50%}
+
 {{placeholder}}
 
 <!-- TODO: Teach more basic rhythms to get people going -->
