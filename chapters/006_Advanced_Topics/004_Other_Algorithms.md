@@ -91,19 +91,19 @@ The Randomized DFS Algorithm is usually implemented using the backtracking techn
 
 The idea behind the algorithm is, starting from a defined "cell", to explore the grid randomly by choosing an available direction, digging a path.
 
-![How the recursive backtracker algorithm works (1)](./images/algorithms/RDFS_1.png){width=30%}
+![How the recursive backtracker algorithm works (1)](./images/algorithms/RDFS_1.svg){width=30%}
 
 When the algorithm detects that there is no available direction that means that the "head" of our digger is hitting against already explored cells or the map borders.
 
-![How the recursive backtracker algorithm works (2)](./images/algorithms/RDFS_2.png){width=30%}
+![How the recursive backtracker algorithm works (2)](./images/algorithms/RDFS_2.svg){width=30%}
 
 In such case, we "backtrack" until we find a cell with at least one available direction and continue our exploration.
 
-![How the recursive backtracker algorithm works (3)](./images/algorithms/RDFS_3.png){width=30%}
+![How the recursive backtracker algorithm works (3)](./images/algorithms/RDFS_3.svg){width=30%}
 
 This "digging and backtracking" keeps going until there are no other cells that have not been visited.
 
-![How the recursive backtracker algorithm works (4)](./images/algorithms/RDFS_4.png){width=30%}
+![How the recursive backtracker algorithm works (4)](./images/algorithms/RDFS_4.svg){width=30%}
 
 In some versions of the algorithm we need to also keep track of cells that will be used as "walls", so the actual implementation varies.
 
