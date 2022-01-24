@@ -99,7 +99,7 @@ Skills Required:
 
 ### Advanced Level
 
-For the advanced level, we will make our alien foes more menacing by introducing movement and making the shoot at random intervals towards out laser cannon. The aliens do not need to accelerate as in the original game (but it's not really difficult to implement).
+For the advanced level, we will make our alien foes more menacing by introducing movement and making the shoot at random intervals towards our laser cannon. The aliens do not need to accelerate as in the original game (but it's not really difficult to implement).
 
 When an alien touches the ground, we will lose the game. Thus making the game a bit more difficult to manage (as well as to play).
 
