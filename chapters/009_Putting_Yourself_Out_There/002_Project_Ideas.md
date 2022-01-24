@@ -20,7 +20,7 @@ A title screen for each game is not required or necessary, but if you want to ma
 Tic-Tac-Toe
 -----------
 
-![Example picture of Tic-Tac-Toe](./images/project_ideas/tic_tac_toe.png){width=50%}
+![Example picture of Tic-Tac-Toe](./images/project_ideas/tic_tac_toe.svg){width=30%}
 
 Tic-Tac-Toe is a "finite" game, there are a finite number of choices and strategies but that makes it ideal for a simple project.
 
@@ -194,7 +194,7 @@ Furthermore, you can implement a sort of "biased bouncing" for the paddle: the f
 
 This way the center of the paddle is "neutral", keeping the normal bouncing mechanics, while the leftmost and rightmost sides allow the player to direct the ball the way they want.
 
-![Biased Bouncing for breakout](./images/project_ideas/breakout_bias.png){width=50%}
+![Biased Bouncing for breakout](./images/project_ideas/breakout_bias.svg){width=50%}
 
 Shooter Arena
 -------------

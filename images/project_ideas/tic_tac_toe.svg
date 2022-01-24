@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="150mm"
+   height="150mm"
+   viewBox="0 0 150 150"
+   version="1.1"
+   id="svg5"
+   sodipodi:docname="tic_tac_toe.svg"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20, custom)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.74653479"
+     inkscape:cx="283.97873"
+     inkscape:cy="283.97873"
+     inkscape:window-width="1920"
+     inkscape:window-height="1019"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-29.9069,-73.5)">
+    <g
+       inkscape:label="GridCartesian:X3:Y3"
+       transform="translate(29.9069,73.5)"
+       id="g844"
+       style="stroke-width:1.4;stroke-miterlimit:4;stroke-dasharray:none">
+      <g
+         inkscape:label="MajorXGridlines"
+         id="g834"
+         style="stroke-width:1.4;stroke-miterlimit:4;stroke-dasharray:none">
+        <path
+           style="fill:none;stroke:#000000;stroke-width:1.4;stroke-miterlimit:4;stroke-dasharray:none"
+           d="M 50,0 V 150"
+           inkscape:label="MajorXDiv1"
+           id="path830" />
+        <path
+           style="fill:none;stroke:#000000;stroke-width:1.4;stroke-miterlimit:4;stroke-dasharray:none"
+           d="M 100,0 V 150"
+           inkscape:label="MajorXDiv2"
+           id="path832" />
+      </g>
+      <g
+         inkscape:label="MajorYGridlines"
+         id="g840"
+         style="stroke-width:1.4;stroke-miterlimit:4;stroke-dasharray:none">
+        <path
+           style="fill:none;stroke:#000000;stroke-width:1.4;stroke-miterlimit:4;stroke-dasharray:none"
+           d="M 0,50 H 150"
+           inkscape:label="MajorYDiv1"
+           id="path836" />
+        <path
+           style="fill:none;stroke:#000000;stroke-width:1.4;stroke-miterlimit:4;stroke-dasharray:none"
+           d="M 0,100 H 150"
+           inkscape:label="MajorYDiv2"
+           id="path838" />
+      </g>
+      <text
+         xml:space="preserve"
+         style="font-size:38.3577px;line-height:1.25;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';letter-spacing:0px;word-spacing:0px;stroke-width:1.4;stroke-miterlimit:4;stroke-dasharray:none"
+         x="11.120543"
+         y="39.086788"
+         id="text1234"><tspan
+           sodipodi:role="line"
+           id="tspan1232"
+           style="stroke-width:1.4;stroke-miterlimit:4;stroke-dasharray:none"
+           x="11.120543"
+           y="39.086788">X</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:38.3577px;line-height:1.25;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';letter-spacing:0px;word-spacing:0px;stroke-width:1.4;stroke-miterlimit:4;stroke-dasharray:none"
+         x="113.3037"
+         y="140.88896"
+         id="text1234-3"><tspan
+           sodipodi:role="line"
+           id="tspan1232-6"
+           style="stroke-width:1.4;stroke-miterlimit:4;stroke-dasharray:none"
+           x="113.3037"
+           y="140.88896">X</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:43.0318px;line-height:1.25;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';letter-spacing:0px;word-spacing:0px;stroke-width:1.4;stroke-miterlimit:4;stroke-dasharray:none"
+         x="109.47888"
+         y="90.891617"
+         id="text2225"><tspan
+           sodipodi:role="line"
+           id="tspan2223"
+           style="stroke-width:1.4;stroke-miterlimit:4;stroke-dasharray:none"
+           x="109.47888"
+           y="90.891617">O</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:43.0318px;line-height:1.25;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';letter-spacing:0px;word-spacing:0px;stroke-width:1.4;stroke-miterlimit:4;stroke-dasharray:none"
+         x="57.287079"
+         y="90.891617"
+         id="text2225-7"><tspan
+           sodipodi:role="line"
+           id="tspan2223-5"
+           style="stroke-width:1.4;stroke-miterlimit:4;stroke-dasharray:none"
+           x="57.287079"
+           y="90.891617">O</tspan></text>
+    </g>
+  </g>
+</svg>
