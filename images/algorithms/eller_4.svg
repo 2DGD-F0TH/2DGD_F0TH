@@ -1,2 +1,150 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="500.26mm" height="100.26mm" version="1.1" viewBox="0 0 500.26 100.26" xmlns="http://www.w3.org/2000/svg"><g transform="translate(145.23 -123.37)"><g transform="translate(-145.09 123.5)" fill="none" stroke="#000"><g stroke-width=".26458"><path d="m150 0v50"/><path d="m250 0v50"/><path d="m300 0v50"/></g><g stroke-width=".26458px"><path d="m0 3.6667e-8h500"/><path d="m200 50h50"/><path d="m400 50h50"/><path d="m300 50h50"/></g><g transform="translate(0,50)" stroke-width=".26458"><path d="m50 0v50"/><path d="m100 0v50"/><path d="m150 0v50"/><path d="m200 0v50"/><path d="m250 0v50"/><path d="m300 0v50"/><path d="m350 0v50"/><path d="m400 0v50"/><path d="m450 0v50"/></g><g stroke-width=".26458px"><path d="m50 50h50"/><path d="m0 100h500"/><path d="m0 100v-100"/><path d="m500 3.3021e-8v100"/></g></g></g></svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="500.26mm"
+   height="100.26mm"
+   version="1.1"
+   viewBox="0 0 500.26 100.26"
+   id="svg54"
+   sodipodi:docname="eller_4.svg"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20, custom)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs58" />
+  <sodipodi:namedview
+     id="namedview56"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.66957681"
+     inkscape:cx="1167.1551"
+     inkscape:cy="189.67204"
+     inkscape:window-width="1920"
+     inkscape:window-height="1019"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg54" />
+  <g
+     transform="translate(145.23 -123.37)"
+     id="g52">
+    <g
+       transform="translate(-145.09 123.5)"
+       fill="none"
+       stroke="#000"
+       id="g50">
+      <g
+         stroke-width=".26458"
+         id="g8">
+        <path
+           d="m150 0v50"
+           id="path2" />
+        <path
+           d="m250 0v50"
+           id="path4" />
+        <path
+           d="m300 0v50"
+           id="path6" />
+      </g>
+      <g
+         stroke-width=".26458px"
+         id="g18">
+        <path
+           d="m0 3.6667e-8h500"
+           id="path10" />
+        <path
+           d="m200 50h50"
+           id="path12" />
+        <path
+           d="m400 50h50"
+           id="path14" />
+        <path
+           d="m300 50h50"
+           id="path16" />
+      </g>
+      <g
+         transform="translate(0,50)"
+         stroke-width=".26458"
+         id="g38">
+        <path
+           d="m50 0v50"
+           id="path20" />
+        <path
+           d="m100 0v50"
+           id="path22" />
+        <path
+           d="m150 0v50"
+           id="path24" />
+        <path
+           d="m200 0v50"
+           id="path26" />
+        <path
+           d="m250 0v50"
+           id="path28" />
+        <path
+           d="m300 0v50"
+           id="path30" />
+        <path
+           d="m350 0v50"
+           id="path32" />
+        <path
+           d="m400 0v50"
+           id="path34" />
+        <path
+           d="m450 0v50"
+           id="path36" />
+      </g>
+      <g
+         stroke-width=".26458px"
+         id="g48">
+        <path
+           d="m50 50h50"
+           id="path40" />
+        <path
+           d="m0 100h500"
+           id="path42" />
+        <path
+           d="m0 100v-100"
+           id="path44" />
+        <path
+           d="m500 3.3021e-8v100"
+           id="path46" />
+      </g>
+    </g>
+  </g>
+  <rect
+     style="fill:#999999;fill-opacity:0.592814;stroke:none;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round"
+     id="rect941"
+     width="50"
+     height="50"
+     x="50.139999"
+     y="50.129997" />
+  <rect
+     style="fill:#999999;fill-opacity:0.592814;stroke:none;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round"
+     id="rect943"
+     width="50"
+     height="50"
+     x="200.14"
+     y="50.129997" />
+  <rect
+     style="fill:#999999;fill-opacity:0.592814;stroke:none;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round"
+     id="rect945"
+     width="50"
+     height="50"
+     x="300.14001"
+     y="50.129997" />
+  <rect
+     style="fill:#999999;fill-opacity:0.592814;stroke:none;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round"
+     id="rect947"
+     width="50"
+     height="50"
+     x="400.14001"
+     y="50.129997" />
+</svg>

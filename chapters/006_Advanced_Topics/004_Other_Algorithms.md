@@ -157,7 +157,7 @@ Now let's see an example implementation of the Randomized Kruskal's Algorithm:
 {{placeholder}}
 <!-- TODO: Code for randomized kruskal's method -->
 
-### Recursive Division Algorithm
+#### Recursive Division Algorithm
 
 This algorithm is a bit similar to the recursive backtracker, but instead of focusing on passages, this algorithm focuses on walls: the idea is recursively dividing the space available with a horizontal or vertical wall which has a "hole" placed randomly.
 
@@ -200,7 +200,7 @@ Let's see an example implementation of this algorithm:
 {{placeholder}}
 <!-- TODO: Code for the recursive division algorithm -->
 
-### Binary Tree Algorithm
+#### Binary Tree Algorithm
 
 This is another very efficient "passage carver" algorithm: for each cell we carve a passage that either leads upwards or leftwards (but never both).
 
@@ -235,37 +235,37 @@ Let's see an example implementation of the "binary tree algorithm":
 {{placeholder}}
 <!-- TODO: Code for the binary tree algorithm -->
 
-### Eller's Algorithm
+#### Eller's Algorithm
 
 Eller's algorithm is the most memory-efficient maze-generation algorithm known so far: you generate the maze row-by-row, without needing to memorize the whole maze in memory while creating it.
 
 To start, we decide the width and height of the maze, and create a single row, large as the width we want. Then we set each cell to be its own "set".
 
-![How Eller's Maze Generation Algorithm Works (1/7)](./images/algorithms/eller_1.png){width=30%}
+![How Eller's Maze Generation Algorithm Works (1/7)](./images/algorithms/eller_1.svg){width=30%}
 
 Now we scroll through the cells and randomly join adjacent cells that are part of two different "sets".
 
-![How Eller's Maze Generation Algorithm Works (2/7)](./images/algorithms/eller_2.png){width=30%}
+![How Eller's Maze Generation Algorithm Works (2/7)](./images/algorithms/eller_2.svg){width=30%}
 
 After joining we create some "holes" in the bottom wall, making sure that each "set" has at least one hole to get to the next row.
 
-![How Eller's Maze Generation Algorithm Works (3/7)](./images/algorithms/eller_3.png){width=30%}
+![How Eller's Maze Generation Algorithm Works (3/7)](./images/algorithms/eller_3.svg){width=30%}
 
 After that we start creating the next row, connecting the cells that have a "hole" with the previous row and assigning them the same set. In the picture the gray cells didn't get a set assigned yet.
 
-![How Eller's Maze Generation Algorithm Works (4/7)](./images/algorithms/eller_4.png){width=30%}
+![How Eller's Maze Generation Algorithm Works (4/7)](./images/algorithms/eller_4.svg){width=30%}
 
 After that we assign a new set to the remaining cells.
 
-![How Eller's Maze Generation Algorithm Works (5/7)](./images/algorithms/eller_5.png){width=30%}
+![How Eller's Maze Generation Algorithm Works (5/7)](./images/algorithms/eller_5.svg){width=30%}
 
 At this point we just need to iterate, ignoring the previous row: we join adjacent cells that are not part of the same "set" (we grayed out the previous row).
 
-![How Eller's Maze Generation Algorithm Works (6/7)](./images/algorithms/eller_6.png){width=30%}
+![How Eller's Maze Generation Algorithm Works (6/7)](./images/algorithms/eller_6.svg){width=30%}
 
 Then we create "holes" for each set and prepare the next row. In case we want the maze to be wholly interconnected then if the row is the last row, we can just join all the cells.
 
-![How Eller's Maze Generation Algorithm Works (7/7)](./images/algorithms/eller_7.png){width=30%}
+![How Eller's Maze Generation Algorithm Works (7/7)](./images/algorithms/eller_7.svg){width=30%}
 
 Obviously we can repeat the iteration as many times as we want, and we get a maze as big as we want. This algorithm has no obvious biases and is good for very efficient dungeon generation, if you add rooms, for instance.
 
