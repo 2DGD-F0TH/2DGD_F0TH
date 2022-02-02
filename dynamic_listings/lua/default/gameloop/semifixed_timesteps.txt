@@ -1,0 +1,14 @@
+local dt = 1.0/60.0
+local game_is_running = true
+
+while (game_is_running) do
+    local frametime = measure_time_from_last_frame()
+
+    while (frametime > 0.0) do
+        local deltaTime = min(dt, frametime)
+        process_user_input()
+        update_world(deltaTime)
+        frametime = frametime - deltaTime
+    end
+    draw()
+end

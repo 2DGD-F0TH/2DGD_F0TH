@@ -1,0 +1,8 @@
+local game_is_running = true
+
+while (game_is_running) do
+    local dt = measure_time_from_last_frame()
+    process_user_input()
+    update_world(dt)
+    draw()
+end
