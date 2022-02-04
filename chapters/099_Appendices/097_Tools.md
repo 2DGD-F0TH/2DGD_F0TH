@@ -153,9 +153,14 @@ Tenacity is a fork of the Audacity audio editor, mostly due to licensing woes an
 Maps {.unnumbered .unlisted}
 --------
 
+### LDtk {.unnumbered .unlisted}
+
+LDtk is a level editor focused on user-friendliness, it also has some interesting features like auto-rendering where it takes care of placing decorations automatically. It has a pay-what-you-want policy, but you can also get it for free (if you like it, support the creator!).
+
+<https://ldtk.io/>
+
 ### Tiled {.unnumbered .unlisted}
 
 Tiled is a map editor tool that can be used to draw your maps using a tilemap, supports orthogonal, isometric and even hexagonal maps.
 
 <https://www.mapeditor.org/>
-
