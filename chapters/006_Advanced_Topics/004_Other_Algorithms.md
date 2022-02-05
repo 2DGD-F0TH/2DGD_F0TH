@@ -167,23 +167,23 @@ Let's see how the algorithm works.
 
 Starting from an empty maze, with no walls, we decide the direction (horizontal or vertical) of our first wall and add it, in a random position, making sure that there's an opening in such wall.
 
-![How the Recursive Division Algorithm Works (1/6)](./images/algorithms/recursive_division_1.png){width=30%}
+![How the Recursive Division Algorithm Works (1/6)](./images/algorithms/recursive_division_1.svg){width=30%}
 
 We select one of the two sub-areas we find, recursively and we add another wall in a random position and with a random direction.
 
-![How the Recursive Division Algorithm Works (2/6)](./images/algorithms/recursive_division_2.png){width=30%}
+![How the Recursive Division Algorithm Works (2/6)](./images/algorithms/recursive_division_2.svg){width=30%}
 
 We select one of the two sub-sub-area, and add another wall, with a random position and direction.
 
-![How the Recursive Division Algorithm Works (3/6)](./images/algorithms/recursive_division_3.png){width=30%}
+![How the Recursive Division Algorithm Works (3/6)](./images/algorithms/recursive_division_3.svg){width=30%}
 
 We keep on diving each sub-area recursively, adding walls, until the sub-area had one of its 2 dimensions (horizontal or vertial) equal to 1 cell.
 
-![How the Recursive Division Algorithm Works (4/6)](./images/algorithms/recursive_division_4.png){width=30%}
+![How the Recursive Division Algorithm Works (4/6)](./images/algorithms/recursive_division_4.svg){width=30%}
 
 When that happens, we backtrack to one of the previous sub-sections and continue.
 
-![How the Recursive Division Algorithm Works (5/6)](./images/algorithms/recursive_division_5.png){width=30%}
+![How the Recursive Division Algorithm Works (5/6)](./images/algorithms/recursive_division_5.svg){width=30%}
 
 This keeps going until the maze is complete.
 
