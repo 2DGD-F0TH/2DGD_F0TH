@@ -21,7 +21,7 @@ On the opposite side, we have **sans-serif fonts**, where such small strokes are
 
 A famous sans-serif font is Arial.
 
-### Proportional and Monospaced fonts
+#### Proportional and Monospaced fonts
 
 The majority of fonts used today are **proportional**, where each letter occupies its own space proportional to its own width. Examples of proportional fonts are Times New Roman and Arial.
 
