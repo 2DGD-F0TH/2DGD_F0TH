@@ -252,6 +252,10 @@ Here we can take a look at a sample implementation of the Component Design Patte
 ```{src='design_patterns/component' caption='Example Implementation Of the Component Pattern'}
 ```
 
+:::: tip ::::
+You can also think about components as "capabilities": objects can be "movable", so they have an input or physics component, they can be "drawable" so they have a graphics component, etc...
+:::::::::::::
+
 ------------------    ------------------------------------------------------------------------------
 **Pattern Name**      Component/Composite
 
