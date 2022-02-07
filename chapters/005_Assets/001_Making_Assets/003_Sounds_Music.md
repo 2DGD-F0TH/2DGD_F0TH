@@ -503,7 +503,7 @@ By using hi-hats, a kick drum and a snare drum, you can create a very simple roc
 <!-- TODO: Teach more basic rhythms to get people going -->
 
 
-#### Adaptive Music
+### Adaptive Music
 
 Adaptive Music (sometimes called "dynamic music" or "interactive music") is a background music track that reacts to the events of the game. Such reactions can involve volume, rhythm, tune, adding new instruments (adding drums, for instance).
 
