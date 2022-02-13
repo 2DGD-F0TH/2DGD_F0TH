@@ -94,7 +94,7 @@ This pattern can be useful to code GUIs, making actions in our games that can be
 
 Table: Summary table for the Command Pattern
 
-Flyweight
+Flyweight {#flyweight}
 ---------
 
 Sometimes it may be necessary to keep track of a large number of very similar objects.

@@ -1,0 +1,32 @@
+class Particle{
+    /*
+     * This is a simple particle class, it contains a reference to
+     * its texture, as well as some state
+     */
+    Texture texture;
+    Vector2D position;
+    Vector2D velocity;
+    Vector2D acceleration;
+    float lifespan;
+
+    constructor(Texture texture, float position){
+        // We prepare the particle for usage
+        this.texture = texture;
+        this.position = position;
+        this.lifespan = 2000;  // About 2 seconds
+    }
+
+    function update(float dt){
+        // We update the velocity (assuming dt is in milliseconds)
+        this.velocity = this.velocity + this.acceleration;
+        // Then the position
+        this.position = this.position + this.velocity * dt;
+        // Now we update the lifespan of the particle;
+        this.lifespan = this.lifespan - dt;
+    }
+
+    function is_dead() -> boolean{
+        // Returns a boolean representing if the particle is dead
+        return this.lifespan <= 0;
+    }
+}
