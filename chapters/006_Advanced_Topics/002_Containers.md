@@ -83,6 +83,8 @@ In the menu stack we also have some functionalities that may not be included in 
 Particle Systems
 -----------------
 
+Many special effects in games (like fire, dust and even falling leaves) are done using particle systems. Particle systems consist mainly of 2 parts: the particles themselves and the emitters. This is where we will be focusing.
+
 {{placeholder}}
 
 <!-- TODO: Talk about particle systems, particles and particle emitters -->
@@ -93,23 +95,11 @@ Particle Systems
 
 <!-- TODO: What is a particle, what does it do, etc... -->
 
-### Generators
-
-{{placeholder}}
-
-<!-- TODO: What is a particle generator -->
-
 ### Emitters
 
 {{placeholder}}
 
 <!-- TODO: What is a particle emitter, how does it differ from a generator -->
-
-### Updaters
-
-{{placeholder}}
-
-<!-- TODO: What is a particle updater, how it works, etc... -->
 
 ### Force Application
 
