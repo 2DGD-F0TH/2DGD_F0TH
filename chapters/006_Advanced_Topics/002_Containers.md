@@ -100,7 +100,14 @@ Let's see an example of a particle class:
 ```{src='containers/particle' caption='A simple particle class'}
 ```
 
-Particle can be even more complex: for instance you could add a variable to track the particle's rotation (useful for falling leaves).
+Particle can be even more complex: for instance you could add a variable to track the particle's rotation (useful for falling leaves). Also if you want to take care of resetting the particle status (for recycling), you may need to memorize the initial status in more variables, as well as include some more utility methods.
+
+```{src='containers/particle_complex' caption='A more complex particle class'}
+```
+
+:::: tip ::::
+If you want your particles to behave in a more "randomized way", you may want to save less "initial status variables" and delegate more of the "reset logic" to the particle system.
+:::::::::::::
 
 {{placeholder}}
 <!-- TODO: What is a particle, how does it work, etc... -->
@@ -109,18 +116,23 @@ Particle can be even more complex: for instance you could add a variable to trac
 
 A particle emitter represents a spot that "emits particles", it instantiates a list of particles and defines their initial settings. An emitter usually takes care of ignoring "dead particles" (the ones whose lifespan is over) as well as the ancillary cleanup.
 
-:::: pitfall ::::
-Try to avoid destroying "dead particles" and instanciate new ones every time, the continuous creation and destruction of classes will slow down your game considerably. It's much better to instantiate all the needed particles and "recycle" the dead ones as necessary, by resetting their properties.
-:::::::::::::::::
-
 Emitters can emit a stream of particles, as well as just a burst of them, or even both: it all depends on what you want your system to do.
-
-```{src='containers/particle_emitter' caption='A simple particle emitter class'}
-```
 
 :::: tip ::::
 Don't think that you need a lot of particles to make a convincing effect: a well-coded particle emitter can make a convincing (or at least enjoyable) effect with 5 to 10 particles per emitter.
 :::::::::::::
+
+```{src='containers/particle_emitter' caption='A simple particle emitter class'}
+```
+
+:::: pitfall ::::
+Try to avoid destroying "dead particles" and instantiate new ones every time, the continuous creation and destruction of classes will slow down your game considerably. It's much better to instantiate all the needed particles and "recycle" the dead ones as necessary, by resetting their properties.
+:::::::::::::::::
+
+If you want to recycle particles, your emitter will be a little more complex.
+
+```{src='containers/particle_emitter_complex' caption='A more complex (and complete) particle emitter class'}
+```
 
 {{placeholder}}
 

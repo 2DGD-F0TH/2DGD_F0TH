@@ -9,11 +9,13 @@ class Particle{
     Vector2D acceleration;
     float lifespan;
 
-    constructor(Texture texture, float position){
+    constructor(Texture texture, Vector2D position, Vector2D velocity, Vector2D acceleration, float lifespan = 2000){
         // We prepare the particle for usage
         this.texture = texture;
         this.position = position;
-        this.lifespan = 2000;  // About 2 seconds
+        this.velocity = velocity;
+        this.acceleration = acceleration;
+        this.lifespan = lifespan;  // About 2 seconds by default
     }
 
     function update(float dt){
@@ -28,5 +30,10 @@ class Particle{
     function is_dead() -> boolean{
         // Returns a boolean representing if the particle is dead
         return this.lifespan <= 0;
+    }
+
+    function setPosition(Vector2D position){
+        // Sets the particle position
+        this.position = position;
     }
 }

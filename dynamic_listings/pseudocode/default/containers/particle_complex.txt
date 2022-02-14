@@ -1,0 +1,63 @@
+class Particle{
+    /*
+     * This is a simple particle class, it contains a reference to
+     * its texture, as well as some state
+     */
+    // The particle texture
+    Texture texture;
+    // Position, velocity and acceleration on the 2D plane
+    Vector2D position;
+    Vector2D velocity;
+    Vector2D acceleration;
+    // Lifespan of the particle
+    float lifespan;
+    // Current angle of rotation, and relative velocity and acceleration
+    float rotation;
+    float angular_velocity;
+    float angular_acceleration;
+
+    // Initial Status, for resetting
+    Vector2D initial_velocity;
+    Vector2D initial_rotation;
+    Vector2D initial_a_vel;
+    float initial_lifespan;
+
+    constructor(Texture texture, Vector2D position, Vector2D velocity, Vector2D acceleration, float lifespan = 2000, float rotation = 0, float a_vel = 0, float a_accel = 0){
+        // We prepare the particle for usage
+        this.texture = texture;
+        this.position = position;
+        this.velocity = velocity;
+        this.acceleration = acceleration;
+        this.lifespan = lifespan;  // About 2 seconds by default
+        // We also prepare the reset variables: the position will be set by the emitter
+        this.initial_lifespan = lifespan;
+        this.initial_velocity = velocity;
+        this.initial_a_vel = a_vel;
+        this.initial_rotation = rotation;
+    }
+
+    function update(float dt){
+        // We update the velocity (assuming dt is in milliseconds)
+        this.velocity = this.velocity + this.acceleration;
+        // Then the position
+        this.position = this.position + this.velocity * dt;
+        // Then the rotation
+        this.angular_velocity = this.angular_velocity + this.angular_acceleration ;
+        this.rotation = (this.rotation  + this.angular_velocity * dt) % 360;  // Wrap to zero when at 360 degrees
+        // Now we update the lifespan of the particle;
+        this.lifespan = this.lifespan - dt;
+    }
+
+    function is_dead() -> boolean{
+        // Returns a boolean representing if the particle is dead
+        return this.lifespan <= 0;
+    }
+
+    function reset(){
+        // This function resets the initial status of the particle
+        this.velocity = this.initial_velocity;
+        this.rotation = this.initial_rotation;
+        this.a_vel = this.initial_a_vel;
+        this.lifespan = this.initial_lifespan;
+    }
+}

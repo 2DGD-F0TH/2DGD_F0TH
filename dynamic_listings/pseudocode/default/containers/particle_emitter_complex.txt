@@ -1,0 +1,35 @@
+class Emitter{
+    /*
+     * This is a simple particle emitter, it contains a list
+     * of particles and it updates and manages them
+     */
+    Vector2D origin;
+    Particle[] particles;
+    // Defines if this emitter streams continuously or only a burst of particles
+    boolean one_shot = False;
+
+    constructor(Vector2D location, boolean one_shot = False){
+        this.origin = location;
+        this.particles = new Particle[8];  // We prepare 8 particles
+        this.one_shot = one_shot;
+    }
+
+    function update(float dt){
+        // Update the entire system, by updating each particle
+        for (each particle in this.particles){
+            if (this.one_shot){
+                if (particle.is_dead()){
+                    skip particle;
+                }else{
+                    particle.update();
+                }
+            }else{
+                if (particle.is_dead()){
+                    particle.reset();  // Resets the state of the particle
+                    particle.setPosition(origin);
+                }
+                particle.update(dt);
+            }
+        }
+    }
+}

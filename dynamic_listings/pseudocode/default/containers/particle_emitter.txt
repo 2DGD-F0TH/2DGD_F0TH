@@ -1,0 +1,22 @@
+class Emitter{
+    /*
+     * This is a simple particle emitter, it contains a list
+     * of particles and it updates and manages them
+     */
+    Vector2D origin;
+    Particle[] particles;
+
+    constructor(Vector2D location){
+        this.origin = location;
+        this.particles = new Particle[8];  // We prepare 8 particles
+    }
+
+    function update(float dt){
+        // Update the entire system, by updating each particle
+        for (each particle in this.particles){
+            if (not particle.is_dead()){
+                particle.update(dt);
+            }
+        }
+    }
+}
