@@ -89,7 +89,7 @@ Many special effects in games (like fire, dust and even falling leaves) are done
 
 The basic building block of our particle system is the particle: which can represent a speck of dust, a puff of smoke or a single leaf.
 
-![Some examples of particles](./images/containers/particles.png){width=30%}
+![Some examples of particles](./images/containers/particle_example.svg){width=30%}
 
 :::: tip ::::
 Particles are a great candidate for a [flyweight pattern](#flyweight). They usually share the same texture, which is the heaviest component they have.
