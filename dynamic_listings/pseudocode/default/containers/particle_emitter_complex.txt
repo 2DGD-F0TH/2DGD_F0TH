@@ -26,7 +26,7 @@ class Emitter{
             }else{
                 if (particle.is_dead()){
                     particle.reset();  // Resets the state of the particle
-                    particle.setPosition(origin);
+                    particle.setPosition(this.origin);
                 }
                 particle.update(dt);
             }
