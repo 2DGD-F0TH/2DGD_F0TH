@@ -140,6 +140,24 @@ If you want to recycle particles, your emitter will be a little more complex.
 
 ### Force Application
 
+Until now we've had constant acceleration applied to our particles, without keeping track of one of the most basic principles of physics: Newton's second law of motion.
+
+As a reminder, here's the formula:
+
+$$
+force = mass \cdot acceleration
+$$
+
+To make it useful for our purposes, we will have "force" as the input of our function, while acceleration is its output, so:
+
+$$
+acceleration = \frac{force}{mass}
+$$
+
+This way we can influence the acceleration of a particle by using a force (represented as a vector), with a function similar to the following:
+
+```{src='containers/particle_force' caption='A particle with mass and force application'}
+```
 {{placeholder}}
 
 <!-- TODO: Talk about applying forces to particles -->
