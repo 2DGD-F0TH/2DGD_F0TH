@@ -304,3 +304,12 @@ We can create some "TV-like" static with a few lines of code, like the following
 {{placeholder}}
 
 <!-- TODO: Noise generation algorithm, runs in O(2^n) for n dimensions -->
+
+Animation
+---------
+
+### Skeleton animation
+
+{{placeholder}}
+
+<!-- TODO: Talk about skeleton animation, keyframes, joints and how it can be used to make "big bosses" that use many parts without having to use giant (and heavy) sprites -->
