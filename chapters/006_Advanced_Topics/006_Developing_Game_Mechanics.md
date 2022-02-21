@@ -190,11 +190,11 @@ A useful precaution to avoid the [bullet through paper](#bulletthroughpaper) pro
 
 The previous trick shows a physics-accurate jumping: if we plot the height against time, we would get something that represents the curve of jump like the following:
 
-![Plotting a physics-accurate jump](./images/developing_mechanics/physics_accurate_jump_plot.png){width=50%}
+![Plotting a physics-accurate jump](./images/developing_mechanics/physics_accurate_jump_plot.svg){width=50%}
 
 Although this can give the sensation that the character we're controlling is "floaty", which is not fun. In this case it's a better idea to enhance gravity when falling, to give the character some more "weight", which would be represented, more or less, by the following curve:
 
-![Plotting a jump with enhanced gravity](./images/developing_mechanics/enhanced_gravity_jump_plot.png){width=50%}
+![Plotting a jump with enhanced gravity](./images/developing_mechanics/enhanced_gravity_jump_plot.svg){width=50%}
 
 This can be obtained with few simple lines of code, not very different from the gravity example of earlier:
 
