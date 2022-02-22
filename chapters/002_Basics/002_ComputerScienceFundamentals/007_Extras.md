@@ -237,4 +237,5 @@ Now both threads finished their jobs and the result inside the variable is corre
 #### Atomic Operations
 
 {{placeholder}}
+
 <!-- TODO: Talk about atomic operations -->

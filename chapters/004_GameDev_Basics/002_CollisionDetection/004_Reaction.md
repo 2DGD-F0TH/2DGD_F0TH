@@ -111,6 +111,8 @@ The secret to this method is taking a snapshot of the object's position before i
 
 This method solves the problem given by platforms that can be crossed one-way.
 
+{{placeholder}}
+
 <!-- TODO: Snapshot before and after updating, react accordingly, allows for more advanced stuff -->
 
 #### The "Tile + Offset" Method
