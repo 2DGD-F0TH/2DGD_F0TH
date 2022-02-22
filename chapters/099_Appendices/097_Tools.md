@@ -164,3 +164,12 @@ LDtk is a level editor focused on user-friendliness, it also has some interestin
 Tiled is a map editor tool that can be used to draw your maps using a tilemap, supports orthogonal, isometric and even hexagonal maps.
 
 <https://www.mapeditor.org/>
+
+Libraries {.unnumbered .unlisted}
+---------
+
+### Open Adaptive Music Library (oaml)
+
+Oaml is a library dedicated to the development of adaptive music in videogames, it supports Unity and Godot as of now. Last development at the time of writing was in 2018, though.
+
+<https://oamldev.github.io/>
