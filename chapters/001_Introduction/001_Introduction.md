@@ -92,6 +92,18 @@ This is just a note box, it's not a pitfall, a tip or a trivia. This is used for
 
 This book does not use any engine. All algorithms will be presented pretending there is some "generic engine" behind the scenes that handles sprites, vectors and the like. The objective of this book is teaching algorithms, tips and tricks and game design in the most engine-agnostic (and language-agnostic, if you're looking at the "pseudocode edition") way possible.
 
+### About editions
+
+This book comes in various editions, and they come with some caveats.
+
+- **Pseudocode Edition:** This is the standard edition, using a C-like syntax that tries to be as readable as possible and abstracts itself from any kind of engine;
+- **Python Edition:** Python is considered one of the easiest language to start coding on. Many tend to complain about its performance, but its similarity to Godot Engine's GDScript and its flexibility make it a good candidate for starters.
+- **C++ Edition:** C++ is probably the most used language in game development (along with C#) but it can be really difficult to manage. It has no garbage collection, forcing you to manage the memory manually, and pointers can prove to be a difficult concept for many.
+- **JavaScript Edition:** Javascript is the de-facto "internet language" and its influence is spreading to desktop applications and videogames too. Many games now can be played on the browser thanks to it and the HTML5 canvas elements. This is a language that can be very forgiving and frustrating at the same time.
+<!-- TODO: When Lua edition is out, uncomment me!
+- **Lua Edition:** Lua is one of the most spread scripting languages in the world of videogames. Having a very small interpreter it can be added to a lot of code bases without weighing them down much. It is not a proper object-oriented language, but it has very strong metaprogramming capabilities (where you can "program the programming language"). There are some libraries that allow for classes and object-oriented concepts to fit in Lua.
+-->
+
 <!-- TODO: Insert more conventions, assumptions... -->
 
 Structure of this Book
