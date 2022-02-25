@@ -1,0 +1,58 @@
+Point = {}
+
+function Point:new(o)
+    -- This is an example constructor
+    o = o or {x=0, y=0}
+    setmetatable(o, self)
+    self.__index = self
+    return o
+end
+
+Rectangle = {}
+
+function Rectangle:new(o)
+    -- This is an example constructor
+    o = o or {corner=Point:new(), width=0, height=0}
+    setmetatable(o, self)
+    self.__index = self
+    return o
+end
+
+function Rectangle:from_points(topleft, bottomright)
+    --- ...
+end
+
+local function bounding_box(vertices)
+    -- First we create and bootstrap the variables
+    local xmin = vertices[0].x
+    local xmax = vertices[0].x
+    local ymin = vertices[0].y
+    local ymax = vertices[0].y
+    -- Now we iterate through all the other vertices
+    for i = 0, #vertices do
+        local vertex = vertices[i]
+        if (vertex.x < xmin) then
+            xmin = vertex.x
+        end
+        if (vertex.x > xmax) then
+            xmax = vertex.x
+        end
+        if (vertex.y < ymin) then
+            ymin = vertex.y
+        end
+        if (vertex.y > ymax) then
+            ymax = vertex.y
+        end
+    end
+    -- Now we can build the needed points for the bounding box
+    A = Point:new()
+    C = Point:new()
+    A.x = xmin
+    A.y = ymin
+    C.x = xmax
+    C.y = ymax
+    -- We build our bounding box
+    local boundingBox = Rectangle:from_points(A, C)
+    -- and return it
+    return boundingBox
+end
