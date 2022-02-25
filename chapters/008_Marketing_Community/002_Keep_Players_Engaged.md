@@ -70,6 +70,12 @@ Here's how a more complex and advanced "speedrun mode" screen could look like:
 
 Some game developers went to the extent of not fixing some glitches for the sake of speedrunning.
 
+### Streaming
+
+If your game is going to be free or open source, it may be a good idea to stream its building process! This could also help attract some people who can give a hand in the future.
+
+This is also a nice way to build a community around your game, get feedback and suggestions that could give your game that edge that it might be missing.
+
 Replayability
 -------------
 

@@ -173,3 +173,12 @@ Libraries {.unnumbered .unlisted}
 Oaml is a library dedicated to the development of adaptive music in videogames, it supports Unity and Godot as of now. Last development at the time of writing was in 2018, though.
 
 <https://oamldev.github.io/>
+
+Misc
+----
+
+### Open Broadcaster Software (OBS Studio)
+
+While not strictly a coding-related software, OBS is an amazing software for broadcasting your streams, it could be a good idea to show your progress by programming while streaming.
+
+<https://obsproject.com/>
