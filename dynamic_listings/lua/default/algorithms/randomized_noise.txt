@@ -7,8 +7,8 @@ local texture = Texture:new({width=WIDTH, height=HEIGHT})
 math.randomseed(os.time())
 
 -- Now we iterate through each pixel of the texture
-for row = 0, #texture do
-    for col = 0, #row do
+for row = 1, #texture do
+    for col = 1, #row do
         -- We create a random gray color (0 is black, 255 is white)
         local rand_gray_tone = math.random(0,255)
         -- Most colors are made of Red Green and Blue, by placing them at the

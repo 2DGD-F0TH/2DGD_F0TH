@@ -29,7 +29,7 @@ local function bounding_box(vertices)
     local ymin = vertices[0].y
     local ymax = vertices[0].y
     -- Now we iterate through all the other vertices
-    for i = 0, #vertices do
+    for i = 1, #vertices do
         local vertex = vertices[i]
         if (vertex.x < xmin) then
             xmin = vertex.x
