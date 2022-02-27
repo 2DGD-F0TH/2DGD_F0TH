@@ -51,4 +51,4 @@ epub_lua:
 
 clean:
 	rm -f *.pdf *.aux *.toc *.lol *.lot *.log *.out *.latex outsourced_descriptions.html gladtex_imgs/* *.epub *.mobi
-	echo "Pulizia Completa"
+	echo "Cleanup finished"
