@@ -47,7 +47,7 @@ class AIEntity{
                 // The cell is a wall
                 return false;
             }
-            if (cell == get_adjacent_cell([(forward_direction_index + 2) % 4])){
+            if (cell == get_adjacent_cell(current_cell, DIRECTIONS[(forward_direction_index + 2) % 4])){
                 // We're going backwards, we don't want that
                 return false;
             }

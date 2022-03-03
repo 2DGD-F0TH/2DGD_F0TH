@@ -28,9 +28,9 @@ class AIEntity:
         if cell.is_wall():
             # The cell is a wall
             return False
-        if cell == self.get_adjacent_cell[
-                (self.forward_direction_index + 2) % 4
-        ]:
+        if cell == self.get_adjacent_cell(
+                self.current_cell,
+                DIRECTIONS[(self.forward_direction_index + 2) % 4]):
             # We're going backwards, we don't want that
             return False
         # In all other cases, it's valid
