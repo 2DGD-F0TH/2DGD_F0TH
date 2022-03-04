@@ -43,6 +43,9 @@ def main() -> None:
             if item.endswith("txt")
         }
     reference = len(files["pseudocode"])
+    print(term_size.columns * "═")
+    print("Current Listings Status")
+    print(term_size.columns * "━")
     for language, file_set in files.items():
         print_bar(
             language,
@@ -66,11 +69,12 @@ def main() -> None:
                 if item not in file_list
             }
             if files_set:
+                print(term_size.columns * "━")
                 print("Missing Listings: {}".format(language))
-                print(30 * "─")
+                print(term_size.columns * "─")
                 for fil in files_set:
                     print(fil)
-                print(30 * "═")
+    print(term_size.columns * "═")
 
 
 if __name__ == "__main__":
