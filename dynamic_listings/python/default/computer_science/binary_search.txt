@@ -7,12 +7,14 @@ def binarySearch(lst, item):
         midpoint = (first + last) // 2
         if lst[midpoint] == item:
             # We found it!
-            found = True
+            return midpoint
         else:
             if item < lst[midpoint]:
-            # Continue on the "first half"
+                # Continue on the "first half"
                 last = midpoint - 1
             else:
-            # Continue on the "second half"
+                # Continue on the "second half"
                 first = midpoint + 1
-    return found
+    if not found:
+        # We return None to tell we didn't find anything
+        return None

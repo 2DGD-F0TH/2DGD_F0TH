@@ -1,4 +1,4 @@
-bool binarySearch(int[] lst, int item){
+int binarySearch(int[] lst, int item){
     int first = 0;
     int last = lst.size() - 1;
     bool found = false;
@@ -7,7 +7,7 @@ bool binarySearch(int[] lst, int item){
         int midpoint = (int) (first + last) / 2;
         if (lst[midpoint] == item){
             // We found it!
-            found = true;
+            return midpoint;
         }else{
             if (item < lst[midpoint]){
                 // Continue on the "first half"
@@ -18,5 +18,8 @@ bool binarySearch(int[] lst, int item){
             }
         }
     }
-    return found;
+    if (!found){
+        // We return -1 to tell "not found"
+        return -1;
+    }
 }
