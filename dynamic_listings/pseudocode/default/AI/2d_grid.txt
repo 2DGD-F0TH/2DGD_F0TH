@@ -1,4 +1,4 @@
-class 2D_Grid(){
+class Grid_2D(){
     // Represents a 2D grid of "Tile" classes
     Tile[][] grid = null;
     int width = 0;

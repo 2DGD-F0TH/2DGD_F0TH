@@ -1,6 +1,6 @@
 #include <vector>
 
-class 2D_Grid{
+class Grid_2D{
     private:
         Tile*** grid;  // A 2D array of pointers
         int width = 0;
