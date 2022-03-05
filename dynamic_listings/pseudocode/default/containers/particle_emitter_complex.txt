@@ -21,7 +21,7 @@ class Emitter{
                 if (particle.is_dead()){
                     skip particle;
                 }else{
-                    particle.update();
+                    particle.update(dt);
                 }
             }else{
                 if (particle.is_dead()){

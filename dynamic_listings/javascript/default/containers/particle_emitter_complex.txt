@@ -18,7 +18,7 @@ class Emitter{
                 if (particle.is_dead()){
                     continue;
                 }else{
-                    particle.update();
+                    particle.update(dt);
                 }
             }else{
                 if (particle.is_dead()){
