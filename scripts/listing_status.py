@@ -10,6 +10,15 @@ from os import walk, listdir, sep
 ROOT_DIR = dirname(dirname(__file__))
 DIRECTORY = pjoin(ROOT_DIR, "dynamic_listings")
 
+SYMBOLS = {
+    "block": "▇",
+    "dbl_border": "═",
+    "heavy_border": "━",
+    "light_border": "─",
+    "tee": "├",
+    "vdots": "⁞"
+}
+
 
 class LVAPath:
     """
@@ -17,6 +26,7 @@ class LVAPath:
     by its path, without considering its language and language variant
     """
     internal_path = None
+    path_components: list[str] = []
 
     def __init__(self, path, filename):
         """
@@ -25,8 +35,8 @@ class LVAPath:
         """
         normalized_path = relpath(normpath(path), DIRECTORY)
         split_path = normalized_path.split(sep)
-        components = split_path[2:]
-        self.internal_path = pjoin(*components, filename)
+        self.path_components = split_path[2:]
+        self.internal_path = pjoin(*self.path_components, filename)
 
     def __eq__(self, o):
         """
@@ -60,7 +70,7 @@ def print_bar(language, max_lang_length, length, reference_max, terminal_size):
     # Add 3 to max_lang_length to account for the square brackets [] + padding
     print(
         "[{}]".format(language).rjust(max_lang_length + 3, " "),
-        "{}".format("▇" * int_part,)
+        "{}".format(SYMBOLS["block"] * int_part,)
     )
 
 
@@ -86,9 +96,9 @@ def main() -> None:
             }
     reference = len(files["pseudocode"])
     max_lang_length: int = len(max(files.keys(), key=len))
-    print(term_size.columns * "═")
+    print(term_size.columns * SYMBOLS["dbl_border"])
     print("Current Listings Status")
-    print(term_size.columns * "━")
+    print(term_size.columns * SYMBOLS["heavy_border"])
     for language, file_set in files.items():
         print_bar(
             language,
@@ -104,12 +114,12 @@ def main() -> None:
         if langvar != "pseudocode":
             files_set = pseudocode_files - file_list
             if files_set:
-                print(term_size.columns * "━")
+                print(term_size.columns * SYMBOLS["heavy_border"])
                 print("Missing Listings: {}".format(langvar))
-                print(term_size.columns * "─")
+                print(term_size.columns * SYMBOLS["light_border"])
                 for fil in files_set:
                     print(fil)
-    print(term_size.columns * "═")
+    print(term_size.columns * SYMBOLS["dbl_border"])
 
 
 if __name__ == "__main__":
