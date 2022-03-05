@@ -4,10 +4,47 @@ A small script to show the status of listings translations
 """
 import shutil
 from os.path import join as pjoin
-from os.path import dirname
-from os import walk, listdir
+from os.path import dirname, normpath, relpath
+from os import walk, listdir, sep
 
-DIRECTORY = pjoin(dirname(__file__), "../dynamic_listings")
+ROOT_DIR = dirname(dirname(__file__))
+DIRECTORY = pjoin(ROOT_DIR, "dynamic_listings")
+
+
+class LVAPath:
+    """
+    Language and Variant-agnostic path: a class that is hashable
+    by its path, without considering its language and language variant
+    """
+    internal_path = None
+
+    def __init__(self, path, filename):
+        """
+        Initialization of internal variables, by splitting and removing
+        the first 2 components, and then joining the remaining
+        """
+        normalized_path = relpath(normpath(path), DIRECTORY)
+        split_path = normalized_path.split(sep)
+        components = split_path[2:]
+        self.internal_path = pjoin(*components, filename)
+
+    def __eq__(self, o):
+        """
+        Equality operator
+        """
+        return self.internal_path == o.internal_path
+
+    def __hash__(self):
+        """
+        Hash operator, for set usage
+        """
+        return hash(self.internal_path)
+
+    def __str__(self):
+        """
+        Simple toString operator
+        """
+        return str(self.internal_path)
 
 
 def print_bar(language, max_lang_length, length, reference_max, terminal_size):
@@ -42,8 +79,8 @@ def main() -> None:
             else:
                 langvar = f"{language} + {variant}"
             files[langvar] = {
-                item
-                for _, _, fn in walk(pjoin(DIRECTORY, language, variant))
+                LVAPath(d, item)
+                for d, _, fn in walk(pjoin(DIRECTORY, language, variant))
                 for item in fn
                 if item.endswith("txt")
             }
