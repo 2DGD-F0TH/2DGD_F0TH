@@ -33,16 +33,22 @@ def main() -> None:
     """
     term_size = shutil.get_terminal_size((80, 20))
     languages: list = listdir(DIRECTORY)
-    max_lang_length: int = len(max(languages, key=len))
     files: dict = {}
     for language in languages:
-        files[language] = {
-            item
-            for _, _, fn in walk(pjoin(DIRECTORY, language))
-            for item in fn
-            if item.endswith("txt")
-        }
+        variants = listdir(pjoin(DIRECTORY, language))
+        for variant in variants:
+            if variant == "default":
+                langvar = language
+            else:
+                langvar = f"{language} + {variant}"
+            files[langvar] = {
+                item
+                for _, _, fn in walk(pjoin(DIRECTORY, language, variant))
+                for item in fn
+                if item.endswith("txt")
+            }
     reference = len(files["pseudocode"])
+    max_lang_length: int = len(max(files.keys(), key=len))
     print(term_size.columns * "═")
     print("Current Listings Status")
     print(term_size.columns * "━")
@@ -56,21 +62,13 @@ def main() -> None:
         )
 
     pseudocode_files: set = files["pseudocode"]
-    for language in languages:
-        if language != "pseudocode":
-            file_list: set = {
-                item
-                for d, _, fn in walk(pjoin(DIRECTORY, language))
-                for item in fn
-            }
-            files_set = {
-                item
-                for item in pseudocode_files
-                if item not in file_list
-            }
+    # ----
+    for langvar, file_list in files.items():
+        if langvar != "pseudocode":
+            files_set = pseudocode_files - file_list
             if files_set:
                 print(term_size.columns * "━")
-                print("Missing Listings: {}".format(language))
+                print("Missing Listings: {}".format(langvar))
                 print(term_size.columns * "─")
                 for fil in files_set:
                     print(fil)
