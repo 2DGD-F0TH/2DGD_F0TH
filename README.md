@@ -23,7 +23,7 @@ Getting the book
 
 ### Ready-to-read version
 
-**As of March 21st, 2021 the ready-to-read versions of this book will be available only through Itch.io**
+**As of March 21st, 2021 the ready-to-read versions of this book will be available (for free) only through Itch.io**
 
 [Link to the Itch.io page](https://therealpenaz91.itch.io/2dgd-f0th)
 
