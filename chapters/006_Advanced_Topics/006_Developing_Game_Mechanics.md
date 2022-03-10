@@ -217,9 +217,10 @@ This can be done by reducing gravity when the jump is peaking, thus obtaining a 
 
 ![Plotting a jump with multiple gravity changes](./images/developing_mechanics/multiple_gravity_jump_plot.svg){width=50%}
 
-{{placeholder}}
+This is an example of a jump with multiple "gravity changes":
 
-<!-- TODO: You can reduce gravity at the peak of the jump to give players more time to aim - needs code -->
+```{src='developing_mechanics/multiple_gravity_jump' caption='Code for jump with more gravity while falling and less when peaking'}
+```
 
 ### Ladders
 
