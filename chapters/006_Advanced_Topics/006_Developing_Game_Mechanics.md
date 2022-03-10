@@ -170,6 +170,12 @@ Now we can start writing some code:
 ```{src='developing_mechanics/inertia' caption='Code for simulating inertia'}
 ```
 
+### Corner correction
+
+{{placeholder}}
+
+<!-- TODO: If you jump and are under a wall by one pixel, you would smack your head on the "ceiling", sometimes it's better moving the character on the x-axis slightly to avoid that. This can be extended to other games (like top-down) where the character may get stuck in a corner. -->
+
 2D Platformers
 ---------------
 
@@ -203,6 +209,18 @@ This can be obtained with few simple lines of code, not very different from the 
 
 In this example we are assuming that the framework used uses the screen coordinate system, and jumping brings the player from bottom towards the top of the screen. If you want different behaviour (like gravity inversion in puzzle games), something a tiny bit more involved may be in order.
 
+### Making jumps "float differently"
+
+As an addendum to the previous section, you can change how gravity is applied at the peak of the jump to give the player more time to correct their movement.
+
+This can be done by reducing gravity when the jump is peaking, thus obtaining a plot similar to the following:
+
+![Plotting a jump with multiple gravity changes](./images/developing_mechanics/multiple_gravity_jump_plot.svg){width=50%}
+
+{{placeholder}}
+
+<!-- TODO: You can reduce gravity at the peak of the jump to give players more time to aim - needs code -->
+
 ### Ladders
 
 {{placeholder}}
@@ -220,6 +238,12 @@ In this example we are assuming that the framework used uses the screen coordina
 {{placeholder}}
 
 <!-- TODO: How to walk on stairs -->
+
+### Ledge Grabbing
+
+{{placeholder}}
+
+<!-- TODO: How to grab onto ledges -->
 
 ### Jump Buffering {#jump_buffering}
 
@@ -260,6 +284,12 @@ To work well, timed jumps need to be implemented by tracking the jump button's `
 
 ```{src='developing_mechanics/timed_jumps' caption='Example code of how timed jumps work'}
 ```
+
+### Wall Jumps
+
+{{placeholder}}
+
+<!-- TODO: Some games have mechanics involving wall jumps, at those times it may be good to add "sticky walls" to give players more time to make their wall-jump -->
 
 ### Screen Wrap
 
