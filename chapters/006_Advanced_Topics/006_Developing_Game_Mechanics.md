@@ -385,11 +385,13 @@ We can switch back and forth between the two domains with "transforms", the most
 #### The Fast Fourier Transform
 
 {{placeholder}}
+
 <!-- TODO: FFT, to turn time domain into frequency domain -->
 
 #### Beat Detection
 
 {{placeholder}}
+
 <!-- TODO: How to perform beat detection in games -->
 
 "Bullet Hell" Style Games {#bullethell}

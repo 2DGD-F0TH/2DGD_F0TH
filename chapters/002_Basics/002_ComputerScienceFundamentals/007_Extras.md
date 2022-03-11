@@ -114,8 +114,6 @@ A particularly interesting point of coroutines is the fact that their execution 
 Introduction to Multi-Threading {#multithreading}
 ------------------------------
 
-<!-- TODO: How to implement multi-threading via mutex, immutable objects and atomic operations -->
-
 When it comes to games and software, we usually think of it as a single line of execution, branching to (not really) infinite possibilities; but when it comes to games, we may need to dip our toes into the world of multi-threaded applications.
 
 ### What is Multi-Threading

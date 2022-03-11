@@ -84,16 +84,19 @@ Sometimes your images will need to be scaled or filtered to avoid annoying artif
 #### Nearest Neighbor Filtering
 
 {{placeholder}}
+
 <!-- TODO: Nearest Neighbor Filtering -->
 
 #### Bilinear Filtering
 
 {{placeholder}}
+
 <!-- TODO: Bilinear Filtering -->
 
 #### Trilinear Filtering
 
 {{placeholder}}
+
 <!-- TODO: Trilinear Filtering -->
 
 ### General Tips
@@ -306,6 +309,7 @@ Palette Swapping can be used in more creative ways, though. Going back to Super 
 #### What pixel art is and what it is not
 
 {{placeholder}}
+
 <!-- TODO: Talk how pixel art is a mean, and it's more than just a "style" -->
 
 #### Tools
@@ -330,6 +334,7 @@ You can always "flatten the image" (merge all the layers into one) later.
 #### Sub-pixel animation
 
 {{placeholder}}
+
 <!-- TODO: Style of animation where the "outlines" don't move, but the color change in the internal pixels can give illusion of sub-pixel movement -->
 
 ### Normal Mapping

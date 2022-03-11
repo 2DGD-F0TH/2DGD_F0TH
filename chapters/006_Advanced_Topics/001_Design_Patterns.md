@@ -273,6 +273,7 @@ Dependency Injection
 --------------------
 
 {{placeholder}}
+
 <!-- TODO: Dependency injection design pattern -->
 
 Decorator
@@ -298,12 +299,14 @@ As you can see the decorator makes heavy use of abstract classes and interfaces,
 Table: Summary table for the Decorator design pattern
 
 {{placeholder}}
+
 <!-- TODO: Code for the decorator pattern -->
 
 Visitor
 -------
 
 {{placeholder}}
+
 <!-- TODO: Visitor Design pattern -->
 
 Adapter
@@ -335,6 +338,7 @@ The "object adapter" is the version where the adaptor delegates the task to the 
 ![Diagram of the Object Adapter Pattern](./images/design_patterns/class_object_adapter.svg){width=50%}
 
 {{placeholder}}
+
 <!-- TODO: Code for object adapter -->
 
 ### Class Adapter
@@ -344,6 +348,7 @@ The "class adapter" version instead inherits the adaptee class at compile-time. 
 ![Diagram of the Class Adapter Pattern](./images/design_patterns/class_class_adapter.svg){width=50%}
 
 {{placeholder}}
+
 <!-- TODO: Code for class adapter -->
 
 Prototype
@@ -369,6 +374,7 @@ There is the UML diagram for the pattern:
 Table: Summary table for the Prototype design pattern
 
 {{placeholder}}
+
 <!-- TODO: add code for the prototype pattern -->
 
 Facade

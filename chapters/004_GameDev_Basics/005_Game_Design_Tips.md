@@ -173,6 +173,8 @@ No matter how the 1-UP is achieved, this should be celebrated with a jingle that
 
 Some games even go as far as temporarily pause the game while the (short) jingle plays, that how important an extra-life is: "Stop everything! We got a 1-UP here!".
 
+{{placeholder}}
+
 <!-- TODO: Talk about other level design tips -->
 
 Loading Screens

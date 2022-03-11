@@ -110,6 +110,7 @@ If you want your particles to behave in a more "randomized way", you may want to
 :::::::::::::
 
 {{placeholder}}
+
 <!-- TODO: What is a particle, how does it work, etc... -->
 
 ### Emitters

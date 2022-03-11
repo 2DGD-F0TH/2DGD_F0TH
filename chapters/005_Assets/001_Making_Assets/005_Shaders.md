@@ -51,6 +51,7 @@ Modern engines, like Unity and Unreal Engine also include GUI node-based editors
 #### The data types
 
 {{placeholder}}
+
 <!-- TODO: Talk about GLSL data types -->
 
 ### Some GLSL Shaders examples
