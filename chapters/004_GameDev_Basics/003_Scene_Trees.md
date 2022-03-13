@@ -19,6 +19,8 @@ Scene trees and their functionalities
 
 A scene tree is "yet another abstraction layer": pieces of your level are arranged in a parent-child relationship, which encourages [composition-based approaches](#composition) heavily, making the code more flexible and easier to maintain.
 
+![How a scene tree looks (specifically in Godot)](./images/scene_trees/scene_tree_example.png){width=30%}
+
 Each scene tree contains one or more "nodes" that represent a component of our level, like a sprite. These nodes can be grouped "logically" but scene trees can bring a lot more to the table.
 
 ### How scene trees can make drawing entities easier
