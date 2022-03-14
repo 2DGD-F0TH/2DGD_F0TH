@@ -1,0 +1,79 @@
+class Maze{
+    constructor(w, h):
+        /*
+         * A simple constructor
+         */
+        int width = w;  // Needs to be an odd number
+        int height = h;  // Needs to be an odd number
+
+        // Create a 2D matrix containing the maze data
+        // False = Path, True = Wall
+        boolean[] cells = [width x height] 2D array filled with "True";
+        Vector2D[] carved_passages = new Vector2D[];
+
+    // ...
+    // Same as the previous example
+    // ...
+
+    function draw_maze(x, y){
+        /*
+         * Draws a maze using the recursive backtracker algorithm and
+         * system stack recursion.
+         *
+         * This version will dig walls 2 cells at a time, thus leaving some cells
+         * acting as "walls" instead of having a more complex structure.
+        */
+        // First thing, we push our cell into our "carved passages",
+        // this will simulate the system stack
+        carved_passages.push(new Vector2D(x,y));
+        // When the "carved_passages" array is empty, we are back at the start of the maze
+        int stored_x = x
+        int stored_y = y
+        while (not carved_passages.is_empty()){
+            // We dig a path in the current cell
+            make_path(stored_x, stored_y);
+            // We create a list of available directions (x and y)
+            Vector2D[] directions = new Array(
+                Vector2D(1, 0),
+                Vector2D(-1, 0),
+                Vector2D(0, 1),
+                Vector2D(0, -1)
+            );
+            // And we shuffle them
+            shuffle_in_place(directions);
+
+            // While there is at least one direction available
+            while not (directions.is_empty()){
+                // We take the last item in our directions list (which is random)
+                direction_to_try = directions.pop();
+
+                // Calculate the new node's coordinates using the chosen direction.
+                // We are doubling the movement in each direction, so some cells
+                // can act as walls
+                int next_x = stored_x + (direction_to_try.x * 2);
+                int next_y = stored_y + (direction_to_try.y * 2);
+
+                // If the node we found is a wall, it means we didn't visit it
+                // (and it's inside our maze boundaries)
+                if (is_wall(next_x, next_y)){
+                    // We have found a new node to dig towards
+
+                    // Since we are moving 2 cells at a time, we need to carve
+                    // the cell that "links" our "current node" and the "next node"
+                    int link_cell_x = stored_x + direction_to_try.x;
+                    int link_cell_y = stored_y + direction_to_try.y;
+                    make_path(link_cell_x, link_cell_y);
+
+                    // Repeat the carving process with the new coordinates
+                    // we do this by pushing into the stack
+                    carved_passages.push(new Vector2D(next_x, next_y));
+                }
+            }
+            // If all available directions are exhausted, we pop
+            // one layer from our stack: we go back one step
+            Vector2D popped_vector = carved_passages.pop();
+            stored_x = popped_vector.x;
+            stored_y = popped_vector.y;
+        }
+    }
+}
