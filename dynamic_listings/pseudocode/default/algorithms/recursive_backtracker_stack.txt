@@ -71,9 +71,15 @@ class Maze{
             }
             // If all available directions are exhausted, we pop
             // one layer from our stack: we go back one step
-            Vector2D popped_vector = carved_passages.pop();
-            stored_x = popped_vector.x;
-            stored_y = popped_vector.y;
+            if (directions.is_empty()){
+                Vector2D popped_vector = carved_passages.pop();
+                stored_x = popped_vector.x;
+                stored_y = popped_vector.y;
+            }else{
+                // If not, we continue
+                stored_x = next_x;
+                stored_y = next_y;
+            }
         }
     }
 }
