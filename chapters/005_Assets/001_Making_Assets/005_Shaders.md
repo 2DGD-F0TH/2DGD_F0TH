@@ -44,11 +44,41 @@ Modern engines, like Unity and Unreal Engine also include GUI node-based editors
 
 ### The GLSL Programming Language
 
+GLSL is a programming language that is syntactically close to C, thus if you know a bit of the C programming language, GLSL will at least "look" familiar.
+
 {{placeholder}}
 
 <!-- TODO: Teach some basic GLSL -->
 
 #### The data types
+
+There are many data types in GLSL, here is a quick list of data types supported in GLSL.
+
+##### Non-vector types
+
+Among these we find "the usual suspects", that means:
+
+- **bool** a standard conditional type, it can be true or false;
+- **int** a standard 32-bit integer, with sign;
+- **uint** a 32-bit integer without sign;
+- **float** single precision floating point number;
+- **double** double precision floating point number.
+
+##### Vector Types
+
+Non-vector types can be aggregated into vectors, which can have 2, 3 or 4 elements:
+
+- **bvec2 bvec3 bvec4** vector of booleans, with 2,3 or 4 elements;
+- **ivec2 ivec3 ivec4** vector of signed integers, with 2,3 or 4 elements;
+- **uvec2 uvec3 uvec4** vector of unsigned integers, with 2,3 or 4 elements;
+- **vec2 vec3 vec4** vector of single-prevision floating point numbers;
+- **dvec2 dvec3 dvec4** vector of double-prevision floating point numbers.
+
+##### Matrices
+
+Matrices are groups of floating points (either single or double prevision) that have $n \times m$ size.
+
+The type is `matnxm` (for instance `mat2x3` represents a $2 \times 3$ matrix). A shortcut for an $n \times n$ matrix is `matn` (so `mat3` would represent a $3 \times 3$ matrix).
 
 {{placeholder}}
 
