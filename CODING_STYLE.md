@@ -24,7 +24,22 @@ let num = 1;
 let b = Boolean(num);
 ```
 
-**Try to avoid ternary conditionals:** as nifty and short as they can be, sometimes they are not as readable as necessary in a beginner-friendly book.
+**Try to avoid ternary conditionals:** as nifty and short as they can be, sometimes they are not as readable as necessary in a beginner-friendly book. So, instead of writing the following:
+
+```
+// Ternary operators are hard to read
+let fee = isMember ? 2.00 : 10.00;
+```
+
+Write the following:
+
+```
+// Let's just extend the if statement
+let fee = 10.00;  // Standard non-member fee
+if (isMember){
+    fee = 2.00;
+}
+```
 
 Pseudocode
 ----------
