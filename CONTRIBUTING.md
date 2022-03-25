@@ -134,7 +134,7 @@ The book should be written as much as possible in [Pandoc Markdown](https://pand
 
 If the situation calls for it (for instance you *absolutely need* a certain table styling) an SVG image is preferred.
 
-Inline LaTeX is usable in Pandoc's Markdown but is completely ignored when creating an EPub document, thus such version of the book will miss content.
+Inline LaTeX is usable in Pandoc's Markdown but is completely ignored when creating an EPub document, this means that such version of the book will miss content.
 
 ### Special Commands
 
@@ -158,12 +158,12 @@ These boxes can be created using Pandoc's "fenced div" syntax, like follows:
 ```
 ::::: trivia :::::
 This is a trivia box
-:::::
+::::::::::::::::::
 ```
 
 ### Dynamic Code Blocks
 
-This book is structured in a way that allows to create many "editions" by specifying a programming language, this means that code is not written directly inside the markdown documents, but instead it is separated in `.txt` files in the `dynamic_listings` folder.
+This book is structured in a way that allows to create many "editions" by specifying a programming language, this means that code is not written directly inside the markdown documents, but instead it is separated in `.txt` files in the `dynamic_listings` folder. This allows for easily "switching" code listings without having many copies of the repository.
 
 To create a new dynamic code listing just write the following:
 
@@ -181,7 +181,7 @@ This is a title {.unnumbered .unlisted}
 -------------------
 ```
 
-That `{.unnumbered .unlisted}` defines an "unnumbered and unlisted section", which is mostly an aesthetic choice that I used to make some appendices (like the Glossary) clearer in the Table of Contents.
+That `{.unnumbered .unlisted}` defines an "unnumbered and unlisted section", which is mostly an aesthetic choice that I used to make some appendices (like the Glossary) appear in a cleaner manner in the Table of Contents.
 
 ### Miscellaneous
 
