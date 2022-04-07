@@ -38,7 +38,7 @@ The source code for this ebook is available through the following official repos
 - [Link to the GitLab Repository](https://gitlab.com/Penaz/2dgd_f0th/)
 - [Link to the GitHub Repository](https://github.com/Penaz91/2DGD_F0TH)
 
-You can learn how to build the book yourself in the [specific section of this readme](#building-the-book)
+You can learn how to build the book yourself in the Wiki!
 
 Looking for contributors
 ------------------------
@@ -47,57 +47,19 @@ Hi! Penaz here.
 
 After over 400 pages of content, I am reaching the point where I poured the majority of my knowledge inside this e-book, and simplifying and explaining takes away a lot of time. With the little time I have, research can only get me so far.
 
-I'd love to translate the currently available listings many other languages, such as lua, as well as add new algorithms, containers, tips and tricks and design patterns. Though my work leaves me very little free time to study and re-work things in a more understandable way.
+I'd love to translate the currently available listings many other languages, as well as add new algorithms, containers, tips and tricks and design patterns. Though my work leaves me very little free time (and energy) to study and re-work things in a more understandable way.
 
 If you are a programmer, game designer, game developer, artist, writer or "game dev aficionado" that wants to contribute to a completely free and open resource for new game developers that want to start seriously; feel free to fork the repository and pour your knowledge in this magic soup that is this book!
 
 I'm more than happy to take a look at pull requests, it would be a honor.
 
-Also remember to put yourself in the CONTRIBUTORS section, just below!
+Also remember to put yourself in the CONTRIBUTORS section!
 
 If instead there is something unclear about the book, or something you would like to see added, drop by the ISSUES section and leave a ticket there, I will try to fix it, or at least add a placeholder for the future.
 
-Thank you for reading.
-
-Contributing
--------------
-
-Are you a game developer? A computer science student? Maybe you are an artist that wants to contribute by giving insight into pixel art or music creation?
-
-Welcome aboard! You can contribute to this project by **forking** it and adding your own knowledge to it, after that you can create a pull request. Please check the [Contributing](CONTRIBUTING.md) document.
-
-Are you an user that would like to see something added to the book? Feel free to open an issue!
-
 All contributions will be handled with maximum respect and in accordance to our [Code of Conduct](CODE_OF_CONDUCT.md).
 
-Building the book
--------------------
-
-To build the book you need the following software:
-
-- Pandoc 2.13 or higher (except 2.14 and 2.14.0.1 due to MediaBag regressions)
-- TexLive or equivalent
-- GNU Make or equivalent
-- GladTex (v3 or superior) - For EPub Output
-- Librsvg (For `rsvg-convert`) - For PDF Output
-
-Before building the book, you might want to decide your favourite programming language, and use the corresponding command:
-
-**PDF Version:**
-
-- Pseudocode with basic Syntax Highlighting: `make pseudocode`
-- Python 3: `make python`
-- C++: `make cpp`
-- JavaScript: `make js`
-
-**EPub Version:**
-
-- Pseudocode with basic Syntax Highlighting: `make epub_pseudocode`
-- Python 3: `make epub_python`
-- C++: `make epub_cpp`
-- JavaScript: `make epub_js`
-
-*The old "Pseudocode without syntax highlighting" has been discontinued*
+Thank you for reading.
 
 Branches
 --------
