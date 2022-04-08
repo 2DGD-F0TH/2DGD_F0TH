@@ -46,7 +46,7 @@ Some implementations of the Dynamic Arrays try to save space when the number of 
 
 Some other implementations use a $\frac{1}{4}$/$\frac{3}{4}$ rule, halving the array capacity when the item deletion brings the number of items lower than $\frac{1}{4}$ of the array and doubling it when an insertion makes the number of elements higher than $\frac{3}{4}$ of the array capacity.
 
-**Note:** Not all programming languages have native support for arrays, for instance Python uses lists.
+**Note:** Not all programming languages have native support for arrays, for instance Python normally uses lists (although it supports arrays via the `array` standard library).
 
 | Operation                  | Average Cost           |
 | :---------:                | :-----:                |
