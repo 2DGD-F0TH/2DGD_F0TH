@@ -168,16 +168,16 @@ Tiled is a map editor tool that can be used to draw your maps using a tilemap, s
 Libraries {.unnumbered .unlisted}
 ---------
 
-### Open Adaptive Music Library (oaml)
+### Open Adaptive Music Library (oaml) {.unnumbered .unlisted}
 
 Oaml is a library dedicated to the development of adaptive music in videogames, it supports Unity and Godot as of now. Last development at the time of writing was in 2018, though.
 
 <https://oamldev.github.io/>
 
-Misc
+Misc {.unnumbered .unlisted}
 ----
 
-### Open Broadcaster Software (OBS Studio)
+### Open Broadcaster Software (OBS Studio) {.unnumbered .unlisted}
 
 While not strictly a coding-related software, OBS is an amazing software for broadcasting your streams, it could be a good idea to show your progress by programming while streaming.
 
