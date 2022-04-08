@@ -4,7 +4,7 @@ function Example(string phrase){
 
 class ExampleClass{
     // This is a simple example class
-    ExampleClass(){
+    constructor(){
         // This is an example constructor
     }
 }
