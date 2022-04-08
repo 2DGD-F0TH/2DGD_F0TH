@@ -54,7 +54,20 @@ $$
 \end{bmatrix}
 $$
 
-You can mix and match the factors and obtain different kinds of stretching, if the same factor $k$ is used both on the x and y-axis, we are performing a *scaling* operation.
+You can mix and match the factors and obtain different kinds of stretching, if the same factor $k$ is used both on the x and y-axis, we are performing a *scaling* operation, like follows:
+
+$$
+\begin{bmatrix}
+    x'\\
+    y'
+\end{bmatrix} = \begin{bmatrix}
+    k & 0\\
+    0 & k
+\end{bmatrix} \begin{bmatrix}
+    x\\
+    y
+\end{bmatrix}
+$$
 
 In instead of stretching you want to squeeze something by a factor of $k$, you just need to use the following matrices for the x-axis:
 
