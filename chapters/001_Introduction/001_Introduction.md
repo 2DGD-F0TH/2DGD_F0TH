@@ -90,7 +90,9 @@ This is just a note box, it's not a pitfall, a tip or a trivia. This is used for
 
 ### Engine Used
 
-This book does not use any engine. All algorithms will be presented pretending there is some "generic engine" behind the scenes that handles sprites, vectors and the like. The objective of this book is teaching algorithms, tips and tricks and game design in the most engine-agnostic (and language-agnostic, if you're looking at the "pseudocode edition") way possible.
+Most editions of this book does not use any engine. All algorithms will be presented pretending there is some "generic engine" behind the scenes that handles sprites, vectors and the like. The objective of this book is teaching algorithms, tips and tricks and game design in the most engine-agnostic (and language-agnostic, if you're looking at the "pseudocode edition") way possible.
+
+If instead you're reading a version that features "language extensions", all algorithms will be in your favourite language, using your favourite engine.
 
 ### About editions
 
