@@ -319,6 +319,12 @@ Nothing forbids us to mix and match methods to create something that suits our g
 
 A very much appreciated and used gameplay flow is having a linear story with lots of "side quests" to give some diversion from normal gameplay, as well as replay value, since people are bound to miss some side quests.
 
+### Looping Gameplay
+
+{{placeholder}}
+
+<!-- TODO: Typical of roguelike games, each game is a "run" which helps you progress in a "bigger story" (like in the style of Binding Of Isaac) where each run changes the following ones by adding objects, bosses and levels -->
+
 Some game genres and their characteristics
 ------------------------------------------
 
