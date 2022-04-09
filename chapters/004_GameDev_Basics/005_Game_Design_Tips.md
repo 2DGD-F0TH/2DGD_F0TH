@@ -447,6 +447,7 @@ If you have to implement unlockables you should either:
 - **Make the unlocked item a "good item":** this will naturally compel the player to unlock such item to make the subsequent runs easier and more fun and varied;
 - **Make the unlocked item a "neutral item" with situational good outcomes:** the player will be less attracted by these items, but the situational good outcomes (we can call them "interactions" or "synergies") can make the player willing to put in the effort to unlock such item;
 - **Unlock 2 items at once: a "good" one and a "bad" one:** the player may be less attracted by this "good+bad" combination, but may still be willing to go through with the unlock effort for the sake of the "good item" and also for added variety in their next runs;
+- **Make the unlocked item a "bad item that can become good":** this way the player may be attracted by trying to make a synergy using a "bad item" to cancel its bad effect while keeping the good ones. This allows the player to get engaged in "making builds" for their character.
 
 If you really want to gate a "bad item" behind "a gate", a good idea would make the "bad item" a pre-requisite for unlocking a "very good item". Alternatively, you can unlock the bad item "on the way" to unlocking a "good item": for instance you can make "beat the first boss 5 times" a requirement for the bad item to be unlocked, while "beat the second boss 10 times" could be a requirement for the "good item" to be spawned.
 
