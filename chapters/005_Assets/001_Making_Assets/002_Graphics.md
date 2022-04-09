@@ -236,7 +236,7 @@ This doesn't mean the background should be devoid of detail, just don't overdo i
 
 Bright colors attract attention as much as detail does, so a good idea is making each background layer more "muted" (color-wise) than the ones in foreground.
 
-The main technique to make backgrounds more mutes is lowering saturation, blending the colors with grey: this will make the background less distracting to the player.
+The main technique to make backgrounds more muted is lowering saturation, blending the colors with grey: this will make the background less distracting to the player.
 
 So another rule can be written as:
 
