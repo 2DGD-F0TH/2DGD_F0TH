@@ -267,20 +267,26 @@ The VIC chip also features a noise channel, for a total of 4 voices. Remember th
 
 Probably the most famous home computer of the 8-bit era and had an amazing sound chip for the time: the timeless SID chip, which was used for audio output and controlling paddles/joysticks.
 
-The SID chip (in its two main iterations: the MOS 6581 and the 8580) has 3 channels, each one can be reprogrammed in real time to use one of four wave forms:
+The SID chip (in its two main iterations: the MOS 6581 and the 8580) has 3 channels, each one can be programmed to use one of four wave forms:
 
 - Square/pulse wave
 - Triangle
 - Sawtooth
 - Noise
 
-This real-time programming capability makes it easier to give the "illusion of more instruments", also the SID chip features ADSR controls for each channel, giving more possibilities.
+also the SID chip features ADSR controls for each channel, giving even more control and possibilities.
 
 :::: trivia ::::
 The MOS 6581 (the first SID Chip model) had a flaw in its volume register that was very special: if you could change the value of the \$D418 register fast enough, you could play audio samples with a 4-bit resolution, effectively giving the C64 a 4th channel for playing PCM samples!
 
 This issue was fixed in the later MOS 8580 revision, but it can be "added back" by adding a resistor on the board.
 ::::::::::::::::
+
+But one thing that makes the SID chip very special is the ability to reprogram (and thus change) the instruments on the fly. This real-time programming capability makes it possible to give the "illusion of more instruments"
+
+:::: note ::::
+You can hear the difference between a somewhat "simple song" like "Monty on the run" and something more complex, like the "R-Type" title theme (check the oscilloscopes). To see how "volume samples" worked, check the oscilloscopes of "Hot Rod" and "Netherworld".
+::::::::::::::
 
 #### Commodore Amiga
 
