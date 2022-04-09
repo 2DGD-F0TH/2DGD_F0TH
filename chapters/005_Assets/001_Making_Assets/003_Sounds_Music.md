@@ -285,7 +285,7 @@ This issue was fixed in the later MOS 8580 revision, but it can be "added back" 
 But one thing that makes the SID chip very special is the ability to reprogram (and thus change) the instruments on the fly. This real-time programming capability makes it possible to give the "illusion of more instruments"
 
 :::: note ::::
-You can hear the difference between a somewhat "simple song" like "Monty on the run" and something more complex, like the "R-Type" title theme (check the oscilloscopes). To see how "volume samples" worked, check the oscilloscopes of "Hot Rod" and "Netherworld".
+You can hear the difference between a somewhat "simple song" like "Monty on the run" and something more complex, like the "R-Type" title theme (check the oscilloscopes). To see how "volume samples" worked, check the oscilloscopes of "Hot Rod" and "Netherworld" (both title themes).
 ::::::::::::::
 
 #### Commodore Amiga
@@ -303,7 +303,7 @@ The Sega Master System is a quite famous 8-bit console, which had moderate succe
 The sound chip used is an equivalent of the Texas Instruments SN76489 which features 3 channels dedicated to square/pulse waves + a noise channel.
 
 :::: trivia ::::
-The ancestor of the Master System, the SEGA SG-1000 used a real TI-SN76489, while the Master System uses a "clone" integrated into its VDP (Video Display Processor).
+To be precise, the ancestor of the Master System, the SEGA SG-1000, used a real TI-SN76489, while the Master System uses a "clone" integrated into its VDP (Video Display Processor).
 ::::::::::::::::
 
 #### Sega Genesis/MegaDrive
