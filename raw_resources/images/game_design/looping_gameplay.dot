@@ -1,0 +1,25 @@
+//
+// looping_gameplay.dot
+//
+// Created on 2022-04-10 by penaz
+//
+digraph looping_gameplay{
+    rankdir="LR";
+    subgraph cluster1{
+        label="Runs"
+        D1[label="End1", color="red"];
+        A1 -> B1 -> C1 -> D1;
+        A2 -> B2 -> C2;
+        A3 -> B3;
+        D4[label="End2", color="red"]
+        A4 -> B4 -> C4 -> D4;
+    }
+    subgraph cluster2{
+        label="Main game"
+        A -> B -> C -> D -> E -> F;
+        B->A1;
+        B->A2;
+        B->A3;
+        B->A4;
+    }
+}

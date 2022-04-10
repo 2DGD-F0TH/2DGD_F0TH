@@ -321,9 +321,19 @@ A very much appreciated and used gameplay flow is having a linear story with lot
 
 ### Looping Gameplay
 
-{{placeholder}}
+This is a typical gameplay flow of roguelike games, where the player has to play the same game many times, beginning to end, eventually advancing a "bigger story".
 
-<!-- TODO: Typical of roguelike games, each game is a "run" which helps you progress in a "bigger story" (like in the style of Binding Of Isaac) where each run changes the following ones by adding objects, bosses and levels -->
+![Example Scheme of looping gameplay with a overarching story](./images/game_design/looping_gameplay.svg){width=60%}
+
+The most important thing when laying out a looping kind of gameplay is that the world needs to change between each "run": either by adding new weapons/items/collectibles or by unlocking a new part of the story (new levels, for instance) or adding new characters. Each run should feel like unique by itself.
+
+----------------------    ----------------------------------------------------
+**Gameplay Flow Type**    Looping Gameplay
+
+**Advantages**            Great replayability.
+
+**Disadvantages**         Needs a lot of care in laying out how the runs evolve between one and the next: if all the runs "feel the same" the player will abandon the game.
+------------------------------------------------------------------------------
 
 Some game genres and their characteristics
 ------------------------------------------
