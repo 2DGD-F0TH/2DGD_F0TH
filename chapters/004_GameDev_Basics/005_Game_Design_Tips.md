@@ -473,7 +473,7 @@ One of the most annoying things that can happen when you're running-and-gunning 
 
 Your own bullets, as well as (and most importantly!) the enemies' should stand out from the background and the other sprites, so that the player can see and avoid them.
 
-Some people may want to ask why your own bullets should stand out too, the answer is: so you can easily aim for your targets.
+Some people may want to ask why your own bullets should stand out too, the answer is: so you can easily aim for your targets and distinguish your own bullets from the enemies'.
 
 [^chests]: 32x32 Chests attribution: Bonsaiheldin ([http://nora.la](http://nora.la)), hosted at [opengameart](https://opengameart.org/content/treasure-chests-32x32)
 
