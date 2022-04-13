@@ -79,6 +79,8 @@ Clipping is a phenomenon when you're trying to output (or record) a wave that ex
 
 You surely heard clipping in audio before, usually when people scream on a low-quality microphone and the audio gets distorted.
 
+![Example of audio clipping](./images/resources/audio_peaking.png){width=40%}
+
 The best way to repair clipping is to re-record the audio completely, although some tools can help in case you absolutely cannot re-record the audio.
 
 Also you should be wary of clipping, because there may be cases where it damages your audio equipment.
