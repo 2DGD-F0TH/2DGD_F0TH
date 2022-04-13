@@ -305,6 +305,8 @@ This issue was fixed in the later MOS 8580 revision, but it can be "added back" 
 
 But one thing that makes the SID chip very special is the ability to reprogram (and thus change) the instruments on the fly. This real-time programming capability makes it possible to give the "illusion of more instruments"
 
+![A freeze frame of a C64 song, you can see the instruments changing](./images/resources/c64_instrument_change.png){width=60%}
+
 :::: note ::::
 You can hear the difference between a somewhat "simple song" like "Monty on the run" and something more complex, like the "R-Type" title theme (check the oscilloscopes). To see how "volume samples" worked, check the oscilloscopes of "Hot Rod" and "Netherworld" (both title themes).
 ::::::::::::::
@@ -331,7 +333,7 @@ To be precise, the ancestor of the Master System, the SEGA SG-1000, used a real 
 
 Probably Sega's most famous console: the Genesis/MegaDrive is a bit of a weird beast when it comes to sound. You'll see why.
 
-Mainly the console uses a Yamaha YM2612 chip for sound, which offers 6 programmable FM channels + 1 DAC (digital to analog converter) that can play small samples. The sound chip is technically stereo, but the feature is underused due to the fact that in the original console stereo sound could be heard only through the headphone jack.
+Mainly the console uses a Yamaha YM2612 chip for sound, which offers 6 programmable FM channels + 1 DAC (digital to analog converter) that can play small samples. The sound chip is technically stereo, but the feature is underused due to the fact that, in the original console, stereo sound could be heard only through the headphone jack.
 
 In addition, mostly for Master System compatibility, the console features a TI-SN76489 chip equivalent (integrated into its VDP), adding 3 square wave channels and a noise channel.
 
