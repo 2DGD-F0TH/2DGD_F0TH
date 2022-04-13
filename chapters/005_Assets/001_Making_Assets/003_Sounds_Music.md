@@ -241,9 +241,28 @@ The doppler effect would actually apply to light too, but we would need to have 
 
 ### FM Synthesis vs Sample-based music
 
-{{placeholder}}
+FM synthesis was invented to circumvent one of the biggest issues that plagued the 8 and 16-bit era: lack of space.
 
-<!-- TODO: Explain the difference between FM Synthesis and modern sample-based music -->
+Games were saved on small cartridges (which ranged, on average, from 4kb on the Vic20 to 2MB on the Genesis/MegaDrive), such cartridges had to contain graphics, music and the entire code of the game.
+
+Back then there were no compressed music files, not that it would have helped much, so instead of memorizing the song itself, the instructions to play the song would be saved.
+
+Let's make a simple example: we need to make a very simplistic soundtrack, composed of a pure sine wave that represents the "A above middle C" (or $A_4$) for an indefinite amount of time. We could either save all the samples (and thus waste precious cartridge space), or we could just save the following "code":
+
+```{caption="How FM music may be saved on an old console"}
+stop all channels;
+select the sinewave waveform on channel 1;
+set the frequency of channel 1 at 440Hz;
+start channel 1;
+```
+
+All music made via FM synthesis is nothing more than a bunch of instructions for the FM chip on how to work.
+
+The next step forward was on the Commodore Amiga, where the first sample-based music started: we save small pieces of PCM audio (called samples), rework them a bit using ADSR envelope and pitch-shifting and call them "instruments". Such instruments are then used to compose the track.
+
+The music heard from these systems is fruit of a "hybrid approach": small pieces of (sometimes recorded) audio actually exist in the track, and they're re-used, pitch shifted and reworked all around the track. This makes for very small files (around 10 to 100kb) with a lot of flexibility.
+
+Modern music is essentially made up of a huge, monolithic sample, usually in the form of an MP3 file or something equivalent, recorded from real-life instruments or synthetized, but instead of "saving the instructions" like in the old days, we just save the entire track as a PCM sample.
 
 ### Simulating older consoles' audio
 
