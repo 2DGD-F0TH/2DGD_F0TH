@@ -5,7 +5,7 @@ abstract class Handler{
     function handle_request(){
         if (condition){
             // In case I can handle this request
-            real_handler();
+            return real_handler();
         }
 
         if (next is not null){

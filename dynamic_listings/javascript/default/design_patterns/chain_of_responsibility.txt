@@ -13,7 +13,7 @@ class Handler{
     handle_request(){
         if (condition){
             // In case I can handle this request
-            this.real_handler();
+            return this.real_handler();
         }
 
         if (this.next != null){

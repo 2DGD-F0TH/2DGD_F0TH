@@ -13,7 +13,7 @@ end
 function Handler:handle_request()
     if (condition) then
         -- In case I can handle this request
-        self.real_handler()
+        return self.real_handler()
     end
 
     if (next ~= nil) then

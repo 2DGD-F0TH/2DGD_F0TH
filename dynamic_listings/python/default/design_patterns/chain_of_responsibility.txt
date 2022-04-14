@@ -5,7 +5,7 @@ class Handler:
     def handle_request(self):
         if condition:
             # In case I can handle this request
-            self.real_handler()
+            return self.real_handler()
 
         if self.next is not None:
             self.next.handle_request()
