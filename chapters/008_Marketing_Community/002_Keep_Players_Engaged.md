@@ -107,6 +107,12 @@ Some developers prefer to squash fan games under the Digital Millennium Copyrigh
 
 In my humble opinion, fan games are good, they signal the community's desire for more, and you should probably play them too, new ideas come from comparing your own thoughts with other peoples'.
 
+### Mutators
+
+{{placeholder}}
+
+<!-- TODO: Modes that introduce a slight variation over the "standard gameplay" by changint its rules, for instance instadeath, double the amount of enemies spawned, forcing a certain weapon, less pickups/powerups, only certain powerups spawn, etc... ->
+
 ### Randomizing
 
 In recent years, a certain kind of hacks for old games (mostly built around the Legend Of Zelda and Metroid series) that mix up the gameplay by mixing up the item locations, with a certain logic to avoid unbeatable games.
