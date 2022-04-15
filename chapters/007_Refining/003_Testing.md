@@ -51,7 +51,7 @@ Before talking about the nitty-gritty of testing, we need to talk about "Mocking
 
 Mocking is a procedure that is usually performed during tests, that substitutes (in-place) an object or function with a so-called "mock". A mock is something designed to have no real logic, and just return a pre-defined result, or just have a pre-defined, very simple, behaviour.
 
-Mocking will help you "detaching" objects that depend on each other, substituting such dependencies with "puppets" (the mock objects) that behave consistently and are not affected by bugs that may be present in the object that you are mocking.
+Mocking will help you "detach" objects that depend on each other, substituting such dependencies with "puppets" (the mock objects) that behave consistently and are not affected by bugs that may be present in the object that you are mocking.
 
 Types of testing
 ----------------
