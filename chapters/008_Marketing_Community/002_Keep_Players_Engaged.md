@@ -109,9 +109,24 @@ In my humble opinion, fan games are good, they signal the community's desire for
 
 ### Mutators
 
-{{placeholder}}
+Your game has a well-defined gameplay, everything seems balanced and all is well, until you start feeling that the gameplay has become stale and needs a shakeup.
 
-<!-- TODO: Modes that introduce a slight variation over the "standard gameplay" by changint its rules, for instance instadeath, double the amount of enemies spawned, forcing a certain weapon, less pickups/powerups, only certain powerups spawn, etc... ->
+This is an absolutely normal feeling that you'll get after testing your game for a while, and it will be the feeling that some players will get after playing your game for a long time.
+
+This shakeup can come in the form of "mutators", small options that change some rules of the base game, making it easier, harder or just adding some cosmetic effect. This gives a layer of customization that players will appreciate, as well as either a challenge or a relaxing (or silly) time.
+
+Some examples of mutators can be:
+
+- **Instant Death:** There is no energy bar, you die as soon as you're hit. This is a good idea for players who want a challenge;
+- **More enemies:** This mutator changes the enemy spawn points to spawn more enemies (can be double the amount, for instance), another way to give a challenge to players;
+- **Forced weapon/build:** This mutator forces the player to start with a certain weapon or build, thus limiting their choices and forcing them to play differently from the way they're used to;
+- **Draining Health:** The energy bar drains as time passes, making the player search for health pickups to be able to survive;
+- **Limited powerups:** Only certain powerups can spawn;
+- **Changed assets:** Some games like putting a "big head mode" (where characters have comically huge heads), or change the normal game sounds to silly ones, this could be a way to change up the game without changing its gameplay;
+- **Power Fantasy:** Make the player hilariously overpowered, many players enjoy the feeling of power as they mow down dozens of enemies effortlessly, couples well with the "more enemies" mutator to counterbalance the difficulty (thus having more enemies, but they are easier to beat);
+- ...
+
+These mutators are usually compatible with each other, so you can have an overpowered player, but instant death, for instance.
 
 ### Randomizing
 
