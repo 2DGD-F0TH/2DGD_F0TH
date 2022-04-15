@@ -68,7 +68,7 @@ Another thing to remember: money is a good too, and is subject to the same laws.
 
 ### Money sources and sinks
 
-Any artificial economy is usually composed by 3 "components":
+Any artificial economy is usually composed by 2 "components":
 
 - **Money Sources:** they create money from nothing, these can be quest givers, treasure chests and the like;
 - **Money Sinks:** places that "destroy money", these are NPC salesmen at the market (that create items from nothing), fortune machines, anything that takes or exchanges money for something else.
