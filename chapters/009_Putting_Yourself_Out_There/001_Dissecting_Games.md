@@ -89,7 +89,7 @@ This further piles up with the lack of direction the player faces in this game s
 
 #### Item management
 
-Usually when you buy a new weapon inside an RPG, you get to un-equip the old weapon and substitute it with the new one, then eventually sell the old one to recover some currency. This gives the game's challenge new dimensions: item management and a simple economy sistem.
+Usually when you buy a new weapon inside an RPG, you get to un-equip the old weapon and substitute it with the new one, then eventually sell the old one to recover some currency. This gives the game's challenge new dimensions: item management and a simple economy system.
 
 Well, this game instead lacks any kind of item management: every time you buy a new weapon, the old one will be automatically discarded. You cannot sell old weapons, and the auto-discard removes the possibility of trying a new weapon and in case go back to the old one.
 
