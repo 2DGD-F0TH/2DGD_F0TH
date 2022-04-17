@@ -120,6 +120,14 @@ This software is available for Windows, Linux, MacOS, Android and iOS.
 
 <https://helio.fm/>
 
+### JFXR {.unnumbered .unlisted}
+
+Another alternative to SFXR, JFXR aims to be a browser-based alternative that is more powerful than the original.
+
+Being completely browser-based, this software should work on all systems, including modern smartphones.
+
+<https://github.com/ttencate/jfxr>
+
 ### LMMS {.unnumbered .unlisted}
 
 LMMS (Linux Multimedia Studio) is a software used to create digital music, it works in a similar fashion to the commercially available FruityLoops.
@@ -131,6 +139,14 @@ LMMS (Linux Multimedia Studio) is a software used to create digital music, it wo
 MilkyTracker is an editor for tracker files, Amiga-style that takes a lot of inspiration from FastTracker II, it has a lot of functionality, it's well-documented and the community is active.o
 
 <https://milkytracker.titandemo.org/>
+
+### rFXGen {.unnumbered .unlisted}
+
+This is another web-based alternative to SFXR. It aims to be simpler to use, has a less dated interface and lets you save files that contain the generation parameters, thus extremely lightweight.
+
+This software is available both on browsers and as a downloadable. It's open source and downloadable from itch.io in a "name your own price" fashion.
+
+<https://raylibtech.itch.io/rfxgen>
 
 ### Rimshot {.unnumbered .unlisted}
 
@@ -146,9 +162,15 @@ SFXR (and its other iterations) is a small software that can help you create 8-b
 
 ### Tenacity {.unnumbered .unlisted}
 
-Tenacity is a fork of the Audacity audio editor, mostly due to licensing woes and complaints about new telemetry functionalities and data collection.
+Tenacity is a fork of the Audacity audio editor, mostly due to licensing woes and complaints about new telemetry functionalities and data collection inserted by the company that bought Audacity.
 
 <https://tenacityaudio.org/>
+
+### Wafxr {.unnumbered .unlisted}
+
+This is another SFXR-inspired sound generator, but instead of generating static WAV files, it generates audio dynamically via Web Audio. This, coupled with the `wasgen` library allows you to save the "playback code" of a certain sound to include it in your games.
+
+<https://github.com/fenomas/wafxr>
 
 Maps {.unnumbered .unlisted}
 --------
