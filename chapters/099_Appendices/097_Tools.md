@@ -199,6 +199,12 @@ Oaml is a library dedicated to the development of adaptive music in videogames, 
 Misc {.unnumbered .unlisted}
 ----
 
+### Chronolapse {.unnumbered .unlisted}
+
+Chronolapse is a software specialized in timelapse creation. This can be a really nice addition to a Game Jam's post-mortem post, which will show a timelapse of the entire game development process, thus making it more interesting.
+
+<https://github.com/collingreen/chronolapse>
+
 ### Open Broadcaster Software (OBS Studio) {.unnumbered .unlisted}
 
 While not strictly a coding-related software, OBS is an amazing software for broadcasting your streams, it could be a good idea to show your progress by programming while streaming.
