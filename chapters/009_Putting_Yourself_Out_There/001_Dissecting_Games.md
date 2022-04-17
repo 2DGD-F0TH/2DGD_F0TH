@@ -147,7 +147,7 @@ Given the size of the font and the size of the pictures, only 4 digits fit. Give
 
 The solution adopted was to drop the last digit of the health counter in all cases (even if your maximum health has less than 5 digits): so if you see "15" your health is actually between "150" and "159".
 
-Also for some reason, if your health is lower than 10 points, your health shows as 0.
+Also for some reason, if your health is lower than 10 points, your health shows as 0 (my speculation is that is would be written as "00" to "09").
 
 ### Inconveniencing the player
 
