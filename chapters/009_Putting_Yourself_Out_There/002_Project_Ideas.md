@@ -257,6 +257,12 @@ Further Skills Required:
 - Ray Casting.
 
 <!--
+Picross
+=======
+
+{{placeholder}}
+ TODO: A simple picross clone, helps people understand matrices better, as well as loading and saving from files
+
 Simple Platformer
 =================
 
