@@ -49,7 +49,7 @@ If you want to view a copy of the license, visit <a href="http://creativecommons
         <a href="https://gitlab.com/Penaz/2dgd_f0th">https://gitlab.com/Penaz/2dgd_f0th</a> (Official GitLab Repository)
     </li>
     <li>
-        <a href="https://github.com/Penaz91/2DGD_F0TH/">https://github.com/Penaz91/2DGD_F0TH/</a> (Official GitHub Repository)
+        <a href="https://github.com/2DGD-F0TH/2DGD_F0TH/">https://github.com/2DGD-F0TH/2DGD_F0TH/</a> (Official GitHub Repository)
     </li>
 </ul>
 
