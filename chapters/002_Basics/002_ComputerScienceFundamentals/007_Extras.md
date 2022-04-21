@@ -139,7 +139,7 @@ The update function will keep running until all the resources are loaded, the ga
 
 ### Thread Safety
 
-Threads are concurrent execution are powerful tools in our "programmer's toolbox", but as with all powers, it has its own drawbacks.
+Threads and concurrent execution are powerful tools in our "programmer's toolbox", but as with all powers, it has its own drawbacks.
 
 #### Race conditions
 
