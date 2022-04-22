@@ -1,0 +1,39 @@
+@startuml
+class Object{
+    + input();
+    + update(dt);
+    + draw();
+    + collide();
+}
+
+class VisibleObject{
+    + draw();
+}
+
+class InvisibleObject{
+    + draw();
+}
+
+class CollidableObject{
+    + collide();
+}
+
+class NonCollidableObject{
+    + collide();
+}
+
+class MovableObject{
+    +update();
+}
+
+class ImmovableObject{
+    +update();
+}
+
+VisibleObject --|> Object
+InvisibleObject --|> Object
+CollidableObject --|> Object
+NonCollidableObject --|> Object
+MovableObject --|> Object
+ImmovableObject --|> Object
+@enduml

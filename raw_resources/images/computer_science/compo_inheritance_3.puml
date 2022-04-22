@@ -1,0 +1,75 @@
+@startuml
+package Interfaces{
+    interface Updatable{
+        + update();
+    }
+
+    interface Visible{
+        + draw();
+    }
+
+    interface Collidable{
+        + collide();
+    }
+}
+
+package Implementations{
+    class VisibleObject{
+        + draw();
+    }
+
+    class InvisibleObject{
+        + draw();
+    }
+
+    class CollidableObject{
+        + collide();
+    }
+
+    class NonCollidableObject{
+        + collide();
+    }
+
+    class MovableObject{
+        + update();
+    }
+
+    class ImmovableObject{
+        + update();
+    }
+}
+
+package Objects{
+    class PlayableCharacter{
+        + update();
+        + draw();
+        + collide();
+        - visiblecomponent: Visible;
+        - collidablecomponent: Collidable;
+        - movablecomponent: Updatable;
+    }
+
+    class Building{
+        + update();
+        + draw();
+        + collide();
+        - visiblecomponent: Visible;
+        - collidablecomponent: Collidable;
+        - movablecomponent: Updatable;
+    }
+}
+
+VisibleObject .down.|> Visible
+InvisibleObject .down.|> Visible
+CollidableObject .down.|> Collidable
+NonCollidableObject .down.|> Collidable
+MovableObject .down.|> Updatable
+ImmovableObject .down.|> Updatable
+Building .up.> Updatable
+Building .up.> Visible
+Building .up.> Collidable
+PlayableCharacter .up.> Updatable
+PlayableCharacter .up.> Visible
+PlayableCharacter .up.> Collidable
+
+@enduml
