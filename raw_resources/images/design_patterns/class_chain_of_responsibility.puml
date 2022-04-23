@@ -1,6 +1,8 @@
 @startuml
 
-class Sender
+class Sender{
+    -  handler: Handler
+}
 
 abstract class Handler{
     + handle_request()
@@ -18,9 +20,9 @@ class Receiver3{
     + handle_request()
 }
 
-Receiver1 --|> Handler
-Receiver2 --|> Handler
-Receiver3 --|> Handler
+Receiver1 -up-|> Handler
+Receiver2 -up-|> Handler
+Receiver3 -up-|> Handler
 
 Sender --> Handler: handler
 

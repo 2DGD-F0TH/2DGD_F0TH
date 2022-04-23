@@ -18,9 +18,9 @@ class ConcreteStrategy3{
     + algorithm()
 }
 
-ConcreteStrategy1 --|> Strategy
-ConcreteStrategy2 --|> Strategy
-ConcreteStrategy3 --|> Strategy
+ConcreteStrategy1 -up-|> Strategy
+ConcreteStrategy2 -up-|> Strategy
+ConcreteStrategy3 -up-|> Strategy
 
-Client --> Strategy
+Client -right-> Strategy
 @enduml

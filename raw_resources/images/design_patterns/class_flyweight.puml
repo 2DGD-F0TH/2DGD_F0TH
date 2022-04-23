@@ -5,25 +5,27 @@ class Common{
 }
 
 class FlyWeight1{
+    - common_component: Common
     - position: Vector
     - scaling_factor: float
 }
 
 class FlyWeight2{
+    - common_component: Common
     - position: Vector
     - scaling_factor: float
 }
 
-note "This class contains the intrinsic state:\n in this case we have the shared mesh and texture" as N1
+note "This class contains the intrinsic state:\nin this case we have the shared mesh\nand texture" as N1
 
 note "These classes contain the extrinsic state instead:\n in this case the position and scaling factor\n plus a pointer to the Common class" as N2
 
 
-FlyWeight1 --> Common: <<use>>
-FlyWeight2 --> Common: <<use>>
+FlyWeight1 -up-> Common: <<use>>
+FlyWeight2 -up-> Common: <<use>>
 
-N1 .. Common
-N2 .. FlyWeight1
-N2 .. FlyWeight2
+N1 .left. Common
+N2 .up. FlyWeight1
+N2 .up. FlyWeight2
 
 @enduml

@@ -19,7 +19,7 @@ class AnotherConcreteObserver{
     + update()
 }
 
-Observer --o Subject
+Observer -left-o Subject
 Observer <|-- ConcreteObserver
 Observer <|-- AnotherConcreteObserver
 

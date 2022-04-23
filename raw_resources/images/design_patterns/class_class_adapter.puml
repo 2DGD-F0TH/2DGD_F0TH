@@ -14,14 +14,15 @@ class Adaptor{
 
 note right of Adaptor
     The adapter subclasses
-    the adaptee
+    the adaptee and realizes
+    the target interface
 end note
 
 class Adaptee{
     + incompatibleMethod()
 }
 
-Client --> Target
-Adaptor ..|> Target
-Adaptor --|> Adaptee
+Client -down-> Target
+Adaptor .up.|> Target
+Adaptor -up-|> Adaptee
 @enduml

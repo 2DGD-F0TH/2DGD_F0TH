@@ -11,14 +11,14 @@ class Client{
     + doStuff()
 }
 
-Client ..> Prototype : <<import>>
-ConcretePrototype ..|> Prototype
+Client .right.> Prototype : <<import>>
+ConcretePrototype .up.|> Prototype
 
-note top of Client
+note left of Client
     calls "prototype.clone()"
 end note
 
-note top of ConcretePrototype
+note left of ConcretePrototype
     the clone() method returns
     a copy of the class
 end note

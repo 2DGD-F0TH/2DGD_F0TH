@@ -1,6 +1,8 @@
 @startuml
 
-class Invoker
+class Invoker{
+    - command: Command
+}
 
 abstract class Command{
     + execute()
@@ -10,8 +12,8 @@ class Command1{
     + execute()
 }
 
-Invoker --> Command: command
+Invoker -right-> Command: command
 
-Command1 --|> Command
+Command1 -up-|> Command
 
 @enduml

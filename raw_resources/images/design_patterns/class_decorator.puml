@@ -1,14 +1,14 @@
 @startuml
-abstract class Component{
+abstract class DecoratedObject{
     +void doStuff()
 }
 
-class Concrete_Component{
+class Concrete_DecoratedObject{
     +void doStuff()
 }
 
 abstract class Decorator{
-    -Component component
+    -DecoratedObject component
     +void doStuff()
 }
 
@@ -16,8 +16,8 @@ class Concrete_Decorator{
     +void doStuff()
 }
 
-Decorator --|> Component
-Concrete_Component --|> Component
-Concrete_Decorator --|> Decorator
-Decorator o-- Component
+Decorator -up-|> DecoratedObject
+Concrete_DecoratedObject -up-|> DecoratedObject
+Concrete_Decorator -up-|> Decorator
+Decorator o-- DecoratedObject
 @enduml

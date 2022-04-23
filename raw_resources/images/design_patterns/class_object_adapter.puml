@@ -1,6 +1,6 @@
 @startuml
 class Client{
-    + adaptor: Adaptor
+    + adaptor: Target
     + doStuff()
 }
 
@@ -22,7 +22,7 @@ class Adaptee{
     + incompatibleMethod()
 }
 
-Client --> Target
-Adaptor ..|> Target
-Adaptor --> Adaptee
+Client -left-> Target
+Adaptor .up.|> Target
+Adaptor -up-> Adaptee
 @enduml

@@ -1,6 +1,8 @@
 @startuml
 
-class Client
+class Client{
+    - simplecomponent: Component
+}
 
 abstract class Component{
     + update()
@@ -14,7 +16,7 @@ class ConcreteComponent2{
     + update()
 }
 
-Client --> Component
+Client -right-> Component
 Component <|-- ConcreteComponent1
 Component <|-- ConcreteComponent2
 ConcreteComponent2 o-- Component
