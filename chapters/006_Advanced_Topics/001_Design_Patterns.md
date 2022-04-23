@@ -76,7 +76,7 @@ The command pattern allows us to abstract a function (or any executable line of 
 
 This pattern can be useful to code GUIs, making actions in our games that can be undone, macros, replays and much more.
 
-![UML diagram for the Command Pattern](./images/design_patterns/command.svg){width=30%}
+![UML diagram for the Command Pattern](./images/design_patterns/command.svg){width=50%}
 
 ```{src='design_patterns/command' caption='Example code for the Command Pattern'}
 ```
@@ -197,7 +197,7 @@ Chain of Responsibility
 
 Sometimes we have the necessity of handling conditionals that are themselves connected to runtime conditions. This is where the *chain of responsibility pattern* comes into play, being essentially an object-oriented version of an `if ... else if ... else` statement.
 
-![UML Diagram of the Chain of Responsibility Pattern](./images/design_patterns/chain_of_responsibility.svg){width=60%}
+![UML Diagram of the Chain of Responsibility Pattern](./images/design_patterns/chain_of_responsibility.svg){width=50%}
 
 As can be seen from the diagram, the sender is not directly connected to the receiver, but instead it's connected to a "Handler" interface, making them independent.
 
@@ -234,7 +234,7 @@ At this point our software engineering senses are tingling, something is dangero
 
 A better alternative in bigger projects is splitting the monolithic class and create different components and allow for their reuse later. Enter the Component pattern.
 
-![Diagram of the Component Design Pattern](./images/design_patterns/class_component.svg){width=40%}
+![Diagram of the Component Design Pattern](./images/design_patterns/class_component.svg){width=50%}
 
 The client is connected to a list of Components that have the same interface (in the previous case, the `update()` method), so each Game Entity can become a "container of components" that define its behaviour.
 
@@ -358,7 +358,7 @@ Sometimes, in our game, we need to decide which objects to create at runtime, as
 
 There is the UML diagram for the pattern:
 
-![Diagram of the Prototype Pattern](./images/design_patterns/class_prototype.svg){width=40%}
+![Diagram of the Prototype Pattern](./images/design_patterns/class_prototype.svg){width=50%}
 
 ------------------    ------------------------------------------------------------------------------
 **Pattern Name**      Prototype
@@ -382,7 +382,7 @@ Facade
 
 There are times where you have a very complex library, with a very complex interface, that is extremely complex to interact with. The Facade pattern hides such complexity behind a simple-to-use interface that works by delegation.
 
-![Diagram of the Facade Pattern](./images/design_patterns/class_facade.svg){width=40%}
+![Diagram of the Facade Pattern](./images/design_patterns/class_facade.svg){width=50%}
 
 This pattern should be used with extreme care and only when necessary, since adding "levels of indirection" will make the code more complex and harder to maintain.
 

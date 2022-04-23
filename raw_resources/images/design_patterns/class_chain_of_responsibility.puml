@@ -24,7 +24,7 @@ Receiver1 -up-|> Handler
 Receiver2 -up-|> Handler
 Receiver3 -up-|> Handler
 
-Sender --> Handler: handler
+Sender -right-> Handler: handler
 
 Handler --> Handler: successor
 
