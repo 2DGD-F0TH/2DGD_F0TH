@@ -12,8 +12,8 @@ class C{
 }
 
 
-B --|> A
-C --|> A
-D --|> B
-D --|> C
+B -up-|> A
+C -up-|> A
+D -up-|> B
+D -up-|> C
 @enduml
