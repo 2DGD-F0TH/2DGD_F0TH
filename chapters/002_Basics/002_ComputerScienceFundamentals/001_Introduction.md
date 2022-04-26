@@ -16,6 +16,137 @@ In this chapter we'll assume you already know what the following terms mean:
 - Truth Table
 - Algorithm
 
+Programming Languages
+---------------------
+
+Programming languages are a programmer's way to talk to a computer (or a console): they are a way to make an electronic apparatus do something (without involving analogue electronics).
+
+Programming languages can be distinguished by many traits, it is important to know such differences, even though you may have already chosen your programming language.
+
+### By how they build
+
+The way that a programming language gets you from code to "working product" can heavily influence both the final product as well as the speed of development.
+
+#### Compiled Languages
+
+Compiled languages need to go through a building process before it is possible for the product to be run anywhere. This has some advantages, as well as some disadvantages.
+
+Among the disadvantages we have that the final product is usually non-portable, that means it cannot be run anywhere besides the machine it was compiled for. This means that you will have to create separate builds for each console, as well as different builds for each operating system.
+
+Another disadvantage can be development speed: before you can test anything your game needs to be rebuilt. Sometimes the rebuild process can be quick (thanks to some techniques that avoid building things that didn't change), something it can be long.
+
+A very strong advantage of compiled languages is speed. Being essentially compiled to machine code, compiled languages have an easier time squeezing every last drop of performance from the platform you're building for. In addition, some languages can use features to physically remove unused code from the build: this way release builds can be much faster than debug ones, because the debug code is physically removed.
+
+Among compiled languages we can find C and C++, as well as Rust and Go.
+
+#### Interpreted Language
+
+Interpreted languages, in their strictest sense, are at the other side of the spectrum: the program is not compiled ahead of time but instead the source code is fed into an interpreter, which executes each row of instructions, one after the other.
+
+They have the disadvantage of being usually slower than compiled languages and it's not easy to create builds that physically remove unused (debug) code without having to modify the sources manually. Also each console or operating system will need to have the interpreter installed, which may be an issue.
+
+The advantage is in development speed: you can edit the source code and immediately run the interpreter to see the result, without having to wait for a new build to complete. Another advantage is portability: you don't need to create a new build for every system you want to run your game in, as long as an interpreter is available your game will run.
+
+An example of a purely interpreted language is BASIC.
+
+#### Hybrid Approaches
+
+In any project, the ability to code quickly is as important as the performance of the final product: there is a thin balance to strike between "having a product with good performance" and "having a product that is released when needed". If your product releases too late, it doesn't matter how performing it is, the market will have chosen another product. If your product releases early but it underperforms, it will be replaced by better products.
+
+Thus some hybrid approaches have been invented: one of these is bytecode-compiled languages.
+
+Bytecode-compiled languages (sometimes called "Intermediate representations") are something that is not quite compiled, but it's not precisely interpreted either: the code is converted into bytecode, which is then fed to the interpreter (or "virtual machine") to run.
+
+Being a representation that is "closer to the hardware" than the original source code, there is a gain in performance, while keeping the flexibility of interpreted code.
+
+:::: trivia ::::
+Some programming languages, like Haskell and Vala use the C programming language as an intermediate language, since C was meant to be an abstraction of the assembly language.
+::::::::::::::::
+
+Other approaches include Just-In-Time compiling, which trades off some longer starting times (sometimes called "warmup times") for better overall performance.
+
+Among the bytecode-compiled languages we can find Java and Python, while Lua can be considered a Just-In-Time Compiled language (thanks to LuaJIT).
+
+### By Paradygm
+
+A programming paradygm is how the programming language lets you program. There is not a single, definitive way to code, thus programming languages can be distinguished by their paradygm.
+
+#### Imperative Languages
+
+Imperative languages are probably the most spread in modern programming: they make use of "orders" (called "statements") to change the status of the program.
+
+This paradygm makes use of variables, statements, subroutines to make the program look like a set of instructions, a recipe, to make the program do what it needs to do (an algorithm).
+
+Imperative languages include C, COBOL, Basic and Fortran.
+
+#### Functional Languages
+
+Functional languages make programs work by applying and composing functions (in the mathematical sense). Functions can be bound to variables and chained together (composed) to reach the result.
+
+Functional languages include Haskell, Common Lisp and Scheme.
+
+#### Multiparadigm Languages
+
+Many programming languages tend to "melt together" many programming paradygms, allowing for functional style programming in imperative languages.
+
+This means that functions can be bound to variables and passed around as any other object, they can be composed to reach the result if the programmer decides to do so (for instance for readability).
+
+Multiparadigm include Python, Lua, Python and Go.
+
+### By the way types are determined
+
+Sometimes underrated, how types are evaluated can completely change the way you program your game. Not knowing precisely how your language of choice treats types can lead to hard-to-debug issues.
+
+#### Static Typing
+
+Statically typed languages have their types decided ahead of time (usually when the program is compiled) and usually they cannot be changed.
+
+This means that you have to have full awareness of which types will be used while writing your game. Which can be difficult at times.
+
+Statically-typed languages include C, C++ and C#, as well as Java.
+
+#### Dynamic Typing
+
+Dynamically typed languages have their types decided at runtime,
+
+{{placeholder}}
+<!-- TODO: Finish -->
+
+#### Duck Typing
+
+{{placeholder}}
+<!-- TODO: Finish -->
+
+### By the "strength" of typing
+
+{{placeholder}}
+<!-- TODO: Finish -->
+
+#### Strong Typing
+
+{{placeholder}}
+<!-- TODO: Finish -->
+
+#### Weak Typing
+
+{{placeholder}}
+<!-- TODO: Finish -->
+
+### By memory management
+
+{{placeholder}}
+<!-- TODO: Finish -->
+
+#### Languages without Garbage Collection
+
+{{placeholder}}
+<!-- TODO: Finish -->
+
+#### Garbage-collected Languages
+
+{{placeholder}}
+<!-- TODO: Finish -->
+
 Recursion
 ---------
 
