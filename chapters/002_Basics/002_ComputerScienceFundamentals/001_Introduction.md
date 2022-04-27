@@ -149,18 +149,23 @@ What about the good old C language? C has strong typing for the great majority o
 
 ### By memory management
 
-{{placeholder}}
-<!-- TODO: Finish -->
+Another way to classify programming languages is how you can (or have to) manage your memory.
 
 #### Languages without Garbage Collection
 
-{{placeholder}}
-<!-- TODO: Finish -->
+Some programming languages allow you to play with your system's memory as you wish: they give you all the tools (pointers, references, ...) to manually allocate and free memory.
+
+This comes with its advantages and drawbacks: higher performance is surely a big advantage. A huge disadvantage is the fact that memory management is completely manual: dangling pointers and unreachable memory are common place, because there is nothing to clear after you.
+
+Non Garbage-collected languages include C and C++.
 
 #### Garbage-collected Languages
 
-{{placeholder}}
-<!-- TODO: Finish -->
+Some other languages prefer taking away part of the control on memory to help avoiding the problems that non Garbage-collected languages bring: there is something that cleans after you, which is the Garbage Collector.
+
+The big disadvantage of this approach is that the garbage collector needs reference counting, CPU cycles to run, which means that the whole program runs slower.
+
+Garbage collected languages include Java and Python.
 
 Recursion
 ---------
