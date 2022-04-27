@@ -300,7 +300,7 @@ I like to think of dead code as "wasted code", which is:
 - Anything that happens to be written after a "return statement" in a function: return statements are used to give control of the program back to the caller of a function, so this code will never be executed;
 - Unused variables: variables are allocated in memory, require calculations and CPU cycles, if not used that's just a waste;
 - Unused code: complete functions that are never called are a waste of memory (because they may be loaded in RAM) and of disk space, making the executables bigger;
-- Debug code: sometimes we need to write code to debug other code, this code may end up being part of a "release version" and weigh it down.
+- Debug code: sometimes we need to write code to debug other code, this code may end up being part of a "release version" and weigh it down, this may also make the game more sensitive to cheating and hacking.
 
 You should be careful when optimizing out dead code, even more when you are dealing with functions which result is not used: those functions may change some global state (or change stuff by usage of *side effects*~[g]~).
 
