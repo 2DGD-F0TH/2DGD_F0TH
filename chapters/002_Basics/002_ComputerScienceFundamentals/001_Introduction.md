@@ -87,7 +87,7 @@ Functional languages include Haskell, Common Lisp and Scheme.
 
 #### Multiparadigm Languages
 
-Many programming languages tend to "melt together" many programming paradygms, allowing for functional style programming in imperative languages.
+Many programming languages tend to "melt together" many programming paradygms, allowing (for instance) for functional style programming in imperative languages.
 
 This means that functions can be bound to variables and passed around as any other object, they can be composed to reach the result if the programmer decides to do so (for instance for readability).
 
@@ -107,30 +107,45 @@ Statically-typed languages include C, C++ and C#, as well as Java.
 
 #### Dynamic Typing
 
-Dynamically typed languages have their types decided at runtime,
+Dynamically typed languages have their types decided at runtime. This allows for simpler syntax, but at the cost of lower performance, due to the fact that types are determined and verified at runtime.
 
-{{placeholder}}
-<!-- TODO: Finish -->
+Dynamically-typed languages include JavaScript and Ruby.
 
 #### Duck Typing
 
-{{placeholder}}
-<!-- TODO: Finish -->
+Duck typing is probably the most misunderstood typing system. It can be described by the following sentence:
+
+> If it walks like a duck and it quacks like a duck, then it must be a duck.
+
+This means that types are inferred by their behaviour (their capabilities), thus creating a series of `-like` objects that behave more or less the same. This means that types can make use of the iteration capabilities of the language as long as they implement some basic methods that allow iteration (like `nextElement()` and `length()`).
+
+This means that we have "file-like" objects, which behave like files, are used like files, but not necessarily have a counterpart in mass storage (they could be in-memory files), or "iterables" (sometimes called "list-like") which behave like lists of items, but may actually be strings (seen as a "list of letters").
+
+In the end, in duck typing, the interfaces are treated as some kind of "informal protocol" that tells the language how to use an object. The "protocol" doesn't even need to be implemented fully: if you have a "file-like" object that implements only the reading method, you can still use it as it was a file, as long as you don't try to write to it.
+
+Duck Typing is used in the Python programming language.
 
 ### By the "strength" of typing
 
-{{placeholder}}
-<!-- TODO: Finish -->
+How types are treated after each variable is instantiated can be the source of a lot of headaches while coding, thus it is paramount to be aware of how strong your preferred language's typing system is.
 
 #### Strong Typing
 
-{{placeholder}}
-<!-- TODO: Finish -->
+Strongly typed languages don't allow one type to be treated like it was another type without an explicit conversion (usually called "cast"). This prevents unforeseen automatic type conversions that may lead to bugs and faults being undetected at compile time or runtime.
+
+Some examples of strongly typed languages are C++, C#, Python and Java.
 
 #### Weak Typing
 
-{{placeholder}}
-<!-- TODO: Finish -->
+Weak typed languages allow one type to be treated like another without explicit conversion. This may make the syntax simpler, but may be source of unforeseen bugs.
+
+For instance a string may be treated as it was a number, this means that in some languages (where the operator `+` means both "addition between numbers" and "joining strings together") you may find that a result is a sum of numbers instead of two strings joined together.
+
+An example of a weakly typed language is JavaScript.
+
+:::: trivia ::::
+What about the good old C language? C has strong typing for the great majority of the time, unless we consider the `void*` generic pointer. This kind of pointer can be used in other pointer variables without an explicit cast.
+::::::::::::::::
 
 ### By memory management
 
