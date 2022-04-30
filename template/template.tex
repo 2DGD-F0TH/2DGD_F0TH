@@ -22,8 +22,6 @@
 \addtolength{\cftsubsecnumwidth}{10pt}
 \addtolength{\cftsubsubsecnumwidth}{10pt}
 % --------------- Commands ---------------
-\newcommand{\tabitem}{~~\llap{\textbullet}~~}
-\newcommand{\ttabitem}{~~~~\llap{$$\circ$$}~~}
 \newcommand{\paidprod}{{\color{red}\textbf{[P]}}}
 \newcommand{\freeprod}{{\color{green!80!black}\textbf{[F]}}}
 \newcommand{\donprod}{{\color{orange}\textbf{[D]}}}
@@ -234,13 +232,6 @@ $if(listings)$
 \input{template/additional_languages/pseudocode}
 \input{template/additional_languages/javascript}
 % -----------------------------------------------
-% ------- \code command definition -------
-$if(proglang)$
-    \newcommand{\code}[2]{\IfFileExists{./dynamic_listings/$proglang$/#1.txt}{\lstinputlisting[language=$proglang$,caption={#2}]{./dynamic_listings/$proglang$/#1.txt}}{\texttt{[MISSING CODE LISTING]}}}
-$else$
-    \newcommand{\code}[2]{\IfFileExists{./dynamic_listings/pseudocode/#1.txt}{\lstinputlisting[caption={#2}]{./dynamic_listings/pseudocode/#1.txt}}{\texttt{[MISSING CODE LISTING]}}}
-$endif$
-% ----------------------------------------
 
 % ------- Language highlighting config -------
 \definecolor{mygreen}{rgb}{0,0.6,0}
