@@ -57,6 +57,8 @@ Also remember to put yourself in the CONTRIBUTORS section!
 
 If instead there is something unclear about the book, or something you would like to see added, drop by the ISSUES section and leave a ticket there, I will try to fix it, or at least add a placeholder for the future.
 
+Another way to contribute is to translate the entire book in another language! Check the Wiki for more information.
+
 All contributions will be handled with maximum respect and in accordance to our [Code of Conduct](CODE_OF_CONDUCT.md).
 
 Thank you for reading.
