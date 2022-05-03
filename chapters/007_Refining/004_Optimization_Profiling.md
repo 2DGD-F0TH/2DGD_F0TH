@@ -281,6 +281,10 @@ This could create some issues when it comes to games that have their challenge d
 
 In that case we may just put out an exception (where certain entities are updated no matter what) or divide our level into smaller "rooms" that are instead entirely updated all the time. Another way could be updating the internal state of the objects, but not drawing them at all, which would still lighten the workload.
 
+:::: tip ::::
+If you want to keep updating far away entities (for instance to avoid seeing all entities start updating as soon as they enter the screen), you can update entities every other frame, or just update one half of the entities on one frame and the other half on the next.
+:::::::::::::
+
 ### Tweening is better than animating
 
 Animators and animation frames are performance-hungry and should absolutely not be used in all those situations where you can instead use inbetweening techniques.
