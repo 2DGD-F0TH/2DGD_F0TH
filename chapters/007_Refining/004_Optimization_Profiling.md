@@ -108,9 +108,13 @@ If your engine/framework supports it, you should use sprite atlases/batches, as 
 
 Another way to optimize your drawing routine is avoiding to change textures often: changing textures can result in a lot of context changes (like copying the new texture from the RAM to the GPU memory), so you should use only one oversized texture (in the form of a [Sprite Sheet](#SpriteSheets)) and draw only a part of it, changing the coordinates of the rectangle that gets drawn. This way you'll save the PC a lot of work.
 
-{{placeholder}}
+#### Off-screen objects
 
-<!-- TODO: Finish talking about optimizing drawing - Sub section about avoiding to draw off-screen sprites? -->
+Make sure that your engine doesn't try to draw objects on off-screen area (maybe on virtual surfaces): drawing is an expensive operation and we should do it on the smallest possible set of objects, which is the visible screen area (the viewport).
+
+Drawing objects doesn't change their internal state, so you can keep updating the objects and then draw them only when they fall (even just partially) inside the display's viewport.
+
+Many engines already take care of this optimization, but some lower-level libraries may leave that optimization to you. A good way to test is drawing thousands (or even millions, with the help of a `for` cycle) of sprites off-screen without any update code (maybe in a specific project) and see if the engine slows down considerably the more entities are added.
 
 ### Reduce the calls to the Engine Routines
 
@@ -168,9 +172,19 @@ These more specific tools can track the FPS, memory as well as the calls done to
 
 ### Resource Pools {#res_pools}
 
+Among the most performance-hungry operations in computers we find instantiation and destruction of objects: they involve context switches in the CPU, memory allocation/freeing and a sleuth of other things.
+
+If you find yourself needing to instantiate and destroy a lot of objects of the same type, you may want to consider a "resource pool" for such object.
+
+A resource pool is a group of objects that is instantiated once, ready to use and kept in memory (eventually without updating the internal status of the "inactive objects") until needed.
+
+When you need one of the objects, instead of instantiating it (and thus allocating memory, changing CPU context, etc...) you just "pull" an item from the pool and change its internal state as needed (since the memory is already instantiated). When you're done, instead of destroying the class (thus calling memory free methods and changing the CPU context again), you "return" the item to the resource pool, ready for another round.
+
+Particle systems are a prime example of resource pools: instead of continuously creating and destroying particles, you create some in advance to recycle and reuse during the game.
+
 {{placeholder}}
 
-<!-- TODO: resource pools of reusable items are great -->
+<!-- TODO: Example images for resource pools -->
 
 ### Lookup Tables
 
