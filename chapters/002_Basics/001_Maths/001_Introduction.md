@@ -7,7 +7,7 @@ The Maths Behind Game Development
 Do not worry about your difficulties in Mathematics. I can assure you mine are still greater.
 ::::::
 
-This book assumes you already have some minimal knowledge of maths, but we will also try to keep the bar of entry as low as possible.
+This book assumes you already have some knowledge of maths, but we will also try to keep the bar of entry as low as possible.
 
 Also we will represent derivatives with the $f'(x)$ symbol, instead of the more verbose $\frac{\partial f}{\partial x}$.
 
@@ -169,17 +169,53 @@ Because as we are counting up with x, we are dividing 1 by bigger and bigger num
 Derivatives
 -----------
 
+:::: note ::::
+This is not a complete guide to derivatives, there is so much more to it than written in here. This is mostly for informational purposes when the term "derivative" will be used in this book.
+::::::::::::::
+
 Derivatives are technically just a limit, to be precise they are the following limit:
 
 $$ \lim_{h\to0}\frac{f(x+h) - f(h)}{h} $$
 
-{{placeholder}}
+They also have a nifty property that is used extensively in calculus: if $f'(x) > 0$ then $f(x)$ is increasing, while if $f'(x) < 0$ then $f(x)$ is decreasing. This means that the equation $f'(x)=0$ can be used to find local extrema: also known as "local minimums" and "local maximums".
 
-<!-- TODO: Finish -->
+There are some rules to quickly derivate functions, here we list some of the most basic.
 
-The Cartesian Coordinate System
--------------------------------
+: Some simple derivation rules (k is any constant number and e is Euler's number)
 
-{{placeholder}}
++----------+-------------------+
+| Function | Derivative        |
++:========:+:=================:+
+| $k$      | $0$               |
++----------+-------------------+
+| $x^k$    | $k \cdot x^{k-1}$ |
++----------+-------------------+
+| $e^x$    | $e^x$             |
++----------+-------------------+
 
-<!-- TODO: Talk about the cartesian coordinate system -->
+Then there are rules for sums, multiplications and divisions.
+
+: Some derivation rules for combined functions (a and b are constants)
+
++---------------------+------------------------------------------+
+| Functions           | Derivative                               |
++:===================:+:========================================:+
+| $af(x)+bg(x)$       | $af'(x) + bg'(x)$                        |
++---------------------+------------------------------------------+
+| $f(x)g(x)$          | $f'(x)g(x) + f(x)g'(x)$                  |
++---------------------+------------------------------------------+
+| $\frac{f(x)}{g(x)}$ | $\frac{f'(x)g(x) - f(x)g'(x)}{(g(x))^2}$ |
++---------------------+------------------------------------------+
+| $f(g(x))$           | $f'(g(x)) \cdot g'(x)$                   |
++---------------------+------------------------------------------+
+
+The Cartesian Plane
+-------------------
+
+The cartesian plane is a plane that features a 2-dimensional coordinate system. This way we can represent points with a pair of coordinates $(x, y)$.
+
+![Example of a cartesian plane](./images/maths/coord.svg){width=60%}
+
+Using a cartesian plane we can represent the position of items, as well as their shape, space occupation, as well as vectors that represent forces, velocity and direction.
+
+It is an essential tool for 2D game development, and it will be one of the abstractions we will use to represent items in a 2-Dimensional plane.
