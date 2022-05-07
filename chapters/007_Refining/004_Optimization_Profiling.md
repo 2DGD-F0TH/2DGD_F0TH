@@ -110,7 +110,7 @@ Another way to optimize your drawing routine is avoiding to change textures ofte
 
 {{placeholder}}
 
-<!-- TODO: Finish talking about optimizing drawing -->
+<!-- TODO: Finish talking about optimizing drawing - Sub section about avoiding to draw off-screen sprites? -->
 
 ### Reduce the calls to the Engine Routines
 
