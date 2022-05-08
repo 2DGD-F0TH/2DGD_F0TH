@@ -178,9 +178,17 @@ If you find yourself needing to instantiate and destroy a lot of objects of the 
 
 A resource pool is a group of objects that is instantiated once, ready to use and kept in memory (eventually without updating the internal status of the "inactive objects") until needed.
 
-When you need one of the objects, instead of instantiating it (and thus allocating memory, changing CPU context, etc...) you just "pull" an item from the pool and change its internal state as needed (since the memory is already instantiated). When you're done, instead of destroying the class (thus calling memory free methods and changing the CPU context again), you "return" the item to the resource pool, ready for another round.
+![A resource pool instantiates objects and "keeps them" ready when needed](./images/profiling_optimization/resource_pool_init.svg){width=40%}
 
-Particle systems are a prime example of resource pools: instead of continuously creating and destroying particles, you create some in advance to recycle and reuse during the game.
+When you need one of the objects, instead of instantiating it (and thus allocating memory, changing CPU context, etc...) you just "pull" an item from the pool and change its internal state as needed (since the memory is already instantiated). This allows you to "move" the cost of instantiating the object to some place in your code where some delays are expected (for instance the loading screens, after you loaded your resources).
+
+![Pulling an object from a resource pool](./images/profiling_optimization/resource_pool_pull.svg){width=40%}
+
+When you're done, instead of destroying the class (thus calling memory free methods and changing the CPU context again), you "return" the item to the resource pool, ready for another round. This allows you to "move" the cost of destroying the object somewhere where slowdowns are acceptable, for instance (again) loading screens.
+
+![Returning an object from a resource pool](./images/profiling_optimization/resource_pool_return.svg){width=40%}
+
+Particle systems are a prime example of resource pools: instead of continuously creating and destroying particles, you create all the particle object in advance to recycle and reuse during the game.
 
 {{placeholder}}
 
