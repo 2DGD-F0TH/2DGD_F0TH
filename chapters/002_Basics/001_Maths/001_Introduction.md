@@ -70,8 +70,8 @@ Taking the examples of earlier, we have that $\sqrt[3]{8} = 2$, $\sqrt[4]{4} = 4
 $\sqrt[2]{4} = \sqrt{4} = 2$
 
 :::: pitfall ::::
-When talking "real numbers", there is $\sqrt{-1}$, that would fall into the "complex numbers" category, which are a matter outside the scope of this revision. That's because there is no real number that multiplied by itself an even amount of times gives a negative number.
-To make things more complex, roots with odd indices of negative numbers are part of the real numbers: $\sqrt[3]{-8}=-2$ because $(-2)^3=-8$
+When talking "real numbers", there is no $\sqrt{-1}$: that would fall into the "complex numbers" category, which are a matter outside the scope of this revision. That's because there is no real number that multiplied by itself an even amount of times that would give a negative number.
+To make things more complex, roots with odd indices of negative numbers are part of the real numbers instead: $\sqrt[3]{-8}=-2$ because $(-2)^3=-8$
 :::::::::::::::::
 
 Equations
