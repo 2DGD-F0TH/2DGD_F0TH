@@ -172,7 +172,7 @@ Garbage collected languages include Java and Python.
 
 ### Languages available for this book
 
-Here is a quick rundown of how the languages are classified for this book (excluding "pseudocode", which is not really a programming language).
+Here is a quick rundown of how the languages used in the various editions of this book (excluding "pseudocode", which is not really a programming language) are classified.
 
 - **C++**, a compiled programming language with strong static typing. It is multiparadigm (although it was born as an imperative language) and has no garbage collector.
 - **JavaScript**, an interpreted language (although some engines support Just-In-Time compiling), with weak dynamic typing that supports some duck typing principles. It is multiparadigm and features a garbage collector.
