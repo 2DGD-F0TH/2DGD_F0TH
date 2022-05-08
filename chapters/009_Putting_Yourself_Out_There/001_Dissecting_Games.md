@@ -47,6 +47,10 @@ After selecting the "teleport" spell, you select a team mate to target such spel
 
 This means that the teleport spell is more beneficial (4 times faster) when it fails than when it succeeds.
 
+:::: note ::::
+To be more precise, if the teleport spell succeeds and you manage to get each character (one by one) out of the battle, you keep your position on the current map. If instead it fails, your entire party will be kicked from the battle and you will find yourself at the beginning of the map. In practical terms, that doesn't make much of a difference, because you will probably need to get to the nearest healer anyway.
+::::::::::::::
+
 #### Statistics
 
 There are some statistics that make sense in other RPGs, but do not in this game.
