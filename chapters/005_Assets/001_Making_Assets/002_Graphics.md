@@ -13,16 +13,36 @@ Raster graphics use bits to represent the color of each single pixel, the amount
 
 The color depth used for our images can influence the performance and look of our game: more bits means more color choices, but also more memory occupied by those colors. Coupled with high resolutions, an image can easily (if uncompressed) weight MB worth of memory.
 
-Let's see the most common color depths used in history:
+Let's see the most common color depths used in history, first we start with a full-color reference image:
 
-- **1-Bit color:** Each pixel gets only 1 single bit, which means it's either black or white. This was used mostly in text-based systems, but some indie games manage to get great results out of just two colors.
-- **2-Bit color:** Each pixel can select from a palette of 4 colors (usually fixed). This was used by CGA cards on the IBM, and usually the colors could be chosen from one of four available palettes: "white, black, light cyan, light magenta" or "yellow, black, light red, light green". The other two palettes are just a "low intensity variant" of the ones we've just seen.
-- **4-Bit color:** Here we start seeing 16 colors, usually chosen from a selection of fixed palettes. This was used by EGA cards on the IBM, as well as the Commodore 64 (along with "color cells").
-- **8-Bit color:** 256 colors chosen from a fully programmable palette (that's some luxury right there!). Used on VGA cards at low resolution.
+![Reference image that we will for bit depth comparison](./images/resources/bit_depth_reference.png){width=40%}
+
+**1-Bit color:** Each pixel gets only 1 single bit, which means it's either black or white. This was used mostly in text-based systems, but some indie games manage to get great results out of just two colors.
+
+![Reference image, quickly converted to 1-bit color depth](./images/resources/bit_depth_1bit.png){width=40%}
+
+**2-Bit color:** Each pixel can select from a palette of 4 colors (usually fixed). This was used by CGA cards on the IBM, and usually the colors could be chosen from one of four available palettes: "white, black, light cyan, light magenta" or "yellow, black, light red, light green". The other two palettes are just a "low intensity variant" of the ones we've just seen.
+
+![Reference image, converted to 2-bit color depth in CGA style](./images/resources/bit_depth_2bit.png){width=40%}
+
+:::: trivia ::::
+CGA was limited in the number of colors used, but due to a "defect" in the composite NTSC output (called "composite artifact colors" or "cross-color artifacting") these 4 colors could be used carefully to create completely new colors.
+::::::::::::::::
+
+**4-Bit color:** Here we start seeing 16 colors, usually chosen from a selection of fixed palettes. This was used by EGA cards on the IBM, as well as the Commodore 64 (along with "color cells").
+
+![Reference image, converted to a 4-bit color depth in EGA style](./images/resources/bit_depth_4bit.png){width=40%}
+
+**8-Bit color:** 256 colors chosen from a fully programmable palette (that's some luxury right there!). Used on VGA cards at low resolution.
+
+![Reference image, converted to an 8-bit color depth](./images/resources/bit_depth_8bit.png){width=40%}
+
+The previous image looks a lot like the reference image, save for some artifacting. Since at higher color depths we won't see much difference, let's just list the remaining ones:
+
 - **16-Bit color:** Sometimes called "High Color", allows for up to 32768 colors with transparency, or up to 65536 without transparency.
 - **24-Bit color:** Sometimes called "True Color", this is the most used color depth, allowing for over 16 million colors. Each red-green-blue channel has 256 possible values.
 - **30-Bit color:** Sometimes called "Deep Color", this format allows for 10 bits per channel and over 1 billion colors on screen. Supported by many graphic cards and some high-end mobile phones.
-- **48-Bit color:** This format allows for hundreds of thousands of billions of colors (if you want to read the number, it's around 281474976710656). This is used by image editing software to avoid loss of data while working with colors.
+- **48-Bit color:** This format allows for hundreds of thousands of billions of colors (if you want to read the number, it's around $281474976710656$). This is used by image editing software to avoid loss of data while working with colors.
 
 #### Direct Color vs. Indexed Color
 
