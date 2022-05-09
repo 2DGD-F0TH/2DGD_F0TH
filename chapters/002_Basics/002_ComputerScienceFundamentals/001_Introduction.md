@@ -42,7 +42,7 @@ A very strong advantage of compiled languages is speed. Being essentially compil
 
 Among compiled languages we can find C and C++, as well as Rust and Go.
 
-##### Interpreted Language
+##### Interpreted Languages
 
 Interpreted languages, in their strictest sense, are at the other side of the spectrum: the program is not compiled ahead of time but instead the source code is fed into an interpreter, which executes each row of instructions, one after the other.
 
@@ -52,11 +52,11 @@ The advantage is in development speed: you can edit the source code and immediat
 
 An example of a purely interpreted language is BASIC.
 
-###### Hybrid Approaches
+##### Hybrid Approaches
 
-In any project, the ability to code quickly is as important as the performance of the final product: there is a thin balance to strike between "having a product with good performance" and "having a product that is released when needed". If your product releases too late, it doesn't matter how performing it is, the market will have chosen another product. If your product releases early but it underperforms, it will be replaced by better products.
+In any project, the ability to code quickly is as important as the performance of the final product: there is a thin balance to strike between "having a product with good performance" and "having a product that is released when needed". If your product releases too late, it doesn't matter how performant it is, the market will have chosen another product. If your product releases early but it underperforms, it will be replaced by better products.
 
-Thus some hybrid approaches have been invented: one of these is bytecode-compiled languages.
+Thus some hybrid approaches have been invented: one of these is, for instance, bytecode-compiled languages.
 
 Bytecode-compiled languages (sometimes called "Intermediate representations") are something that is not quite compiled, but it's not precisely interpreted either: the code is converted into bytecode, which is then fed to the interpreter (or "virtual machine") to run.
 
