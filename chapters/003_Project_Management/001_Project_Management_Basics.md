@@ -121,8 +121,8 @@ Probably the most important job in a game development team, testing needs people
 
 Testers are able to find, describe and help you reproduce bugs and misbehaviors of your game.
 
-Some generic tips
----------------------
+Some general tips
+-----------------
 
 ### Be careful of feature creep
 
