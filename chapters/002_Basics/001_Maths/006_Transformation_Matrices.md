@@ -11,6 +11,10 @@ In this chapter we'll talk about the 3 most used transformations:
 - Rotation;
 - Shearing.
 
+And to do so, we will use the following reference image, complete with a quadrant of the Cartesian plane.
+
+![Reference image for transformation matrices](./images/maths/transform_reference.svg){width=35%}
+
 ### Stretching
 
 Stretching is a transformation that enlarges all distances in a certain direction by a defined constant factor. In 2D graphics you can stretch (or squeeze) along the x-axis, the y-axis or both.
@@ -53,6 +57,10 @@ $$
     y
 \end{bmatrix}
 $$
+
+Stretching our reference image along the x and y axes respectively would look something like this:
+
+![Stretching along the x and y axes](./images/maths/transform_stretch.svg){width=55%}
 
 You can mix and match the factors and obtain different kinds of stretching, if the same factor $k$ is used both on the x and y-axis, we are performing a *scaling* operation, like follows:
 
@@ -131,6 +139,10 @@ T_R = \begin{bmatrix}
 \end{bmatrix}
 $$
 
+This could how our square could look, after a rotation:
+
+![The result of applying a rotation matrix](./images/maths/transform_rotate.svg){width=35%}
+
 If instead we want our rotation to be **counterclockwise**, we will instead use the following matrix:
 
 $$
@@ -198,3 +210,7 @@ $$
     y
 \end{bmatrix}
 $$
+
+Here is how shearing would look, as an example:
+
+![Shearing along the x and y axes](./images/maths/transform_shear.svg){width=55%}
