@@ -450,7 +450,7 @@ During development you need to keep an eye on the quality of your project, that'
 
 ### SLOC
 
-This is probably the simplest metric out there: The "Source Line of Code" (SLOC). It is used to measure the size of a program by counting its lines of code. Once Bill gates said the following:
+This is probably the simplest metric out there: The "Source Line of Code" (SLOC). It is used to measure the size of a program by counting its lines of code. Once Bill Gates said the following:
 
 > Measuring programming progress by lines of code is like measuring aircraft building progress by weight.
 
