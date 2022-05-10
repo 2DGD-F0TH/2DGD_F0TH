@@ -11,6 +11,6 @@ class Student{
     + getGPA()
 }
 
-Student --|> Person
+Student -up-|> Person
 
 @enduml

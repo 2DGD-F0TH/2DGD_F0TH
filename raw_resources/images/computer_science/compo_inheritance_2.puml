@@ -32,16 +32,16 @@ class ImmovableObject{
 
 class Building{}
 
-VisibleObject --|> Object
-InvisibleObject --|> Object
-CollidableObject --|> Object
-NonCollidableObject --|> Object
-MovableObject --|> Object
-ImmovableObject --|> Object
-Building --|> ImmovableObject
-Building --|> VisibleObject
-Building --|> CollidableObject
-PlayableCharacter --|> MovableObject
-PlayableCharacter --|> CollidableObject
-PlayableCharacter --|> VisibleObject
+VisibleObject -up-|> Object
+InvisibleObject -up-|> Object
+CollidableObject -up-|> Object
+NonCollidableObject -up-|> Object
+MovableObject -up-|> Object
+ImmovableObject -up-|> Object
+Building -up-|> ImmovableObject
+Building -up-|> VisibleObject
+Building -up-|> CollidableObject
+PlayableCharacter -up-|> MovableObject
+PlayableCharacter -up-|> CollidableObject
+PlayableCharacter -up-|> VisibleObject
 @enduml

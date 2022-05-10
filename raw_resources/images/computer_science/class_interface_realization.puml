@@ -7,7 +7,7 @@ class ConcreteClass{
     + doStuff()
 }
 
-ConcreteClass ..|> Interface
+ConcreteClass .up.|> Interface
 
 note top of ConcreteClass
     The "doStuff()" method is obligatorily

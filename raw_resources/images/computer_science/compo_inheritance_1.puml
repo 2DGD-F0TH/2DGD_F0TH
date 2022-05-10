@@ -30,10 +30,10 @@ class ImmovableObject{
     +update();
 }
 
-VisibleObject --|> Object
-InvisibleObject --|> Object
-CollidableObject --|> Object
-NonCollidableObject --|> Object
-MovableObject --|> Object
-ImmovableObject --|> Object
+VisibleObject -up-|> Object
+InvisibleObject -up-|> Object
+CollidableObject -up-|> Object
+NonCollidableObject -up-|> Object
+MovableObject -up-|> Object
+ImmovableObject -up-|> Object
 @enduml
