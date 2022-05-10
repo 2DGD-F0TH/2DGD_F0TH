@@ -114,7 +114,9 @@ Make sure that your engine doesn't try to draw objects on off-screen area (maybe
 
 Drawing objects doesn't change their internal state, so you can keep updating the objects and then draw them only when they fall (even just partially) inside the display's viewport.
 
-Many engines already take care of this optimization, but some lower-level libraries may leave that optimization to you. A good way to test is drawing thousands (or even millions, with the help of a `for` cycle) of sprites off-screen without any update code (maybe in a specific project) and see if the engine slows down considerably the more entities are added.
+![Not putting off-screen objects in the drawing queue can be a good optimization](./images/profiling_optimization/off_screen_optimization.svg){width=40%}
+
+Some engines may already take care of this optimization, but some lower-level libraries may also leave that optimization to you. A good way to test is drawing thousands (or even millions, with the help of a `for` cycle) of sprites off-screen without any update code (maybe in a specific project) and see if the engine slows down considerably the more entities are added.
 
 ### Reduce the calls to the Engine Routines
 
