@@ -7,11 +7,27 @@ Before we start doing anything, we need to know some basics about graphics. In t
 
 We will see a lot of stuff, from a bird-eye view of how graphics are stored in video memory to normal maps and more.
 
+#### The color wheel
+
+We can't start talking about colors without mentioning primary and secondary colors, and have a "color wheel" accompany the explanation.
+
+![The "color wheel" for screens](./images/resources/color_wheel.svg){width=40%}
+
+In art classes, you've probably learned that primary colors were Magenta, Yellow and Cyan. On screens it's a bit different (this is due to how light works, compared to paint): on screens we have Red, Green and Blue as primary colors (thus making up the "RGB system").
+
+In fact if you looked really close on old CRT screens, you would have probably seen a lot of red-green-blue pixels that together, seen from afar, would have made up the millions of colors that you've seen for a long time.
+
+By mixing up the 3 primary colors, you would have obtained the secondary colors for light, which are... Magenta, Yellow and Cyan!
+
+:::: trivia ::::
+This is due to how light and paint work differently. It is said that "lights are additive" and "paints are subtractive": if you mix Magenta, Yellow and Cyan paints using minuscule dots (like in printing), you will see that Red, Green and Blue are formed. This is obviously an idealization, the colors you'd actually obtain by mixing paints by hand would be closer to Orange, Purple and Dark Green. In short, this is how inkjet printing works (also a Black component is added, thus forming the CMYK model).
+::::::::::::::::
+
 #### Color Depth
 
 Raster graphics use bits to represent the color of each single pixel, the amount of bits used for each pixel is known as *color depth* (or "bit depth").
 
-The color depth used for our images can influence the performance and look of our game: more bits means more color choices, but also more memory occupied by those colors. Coupled with high resolutions, an image can easily (if uncompressed) weight MB worth of memory.
+The color depth used for our images can influence the performance and look of our game: more bits means more color choices, but also more memory occupied by those colors. Coupled with high resolutions, an image can easily (if uncompressed) weigh MB worth of memory.
 
 Let's see the most common color depths used in history, first we start with a full-color reference image:
 
