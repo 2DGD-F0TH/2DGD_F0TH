@@ -23,6 +23,38 @@ By mixing up the 3 primary colors, you would have obtained the secondary colors 
 This is due to how light and paint work differently. It is said that "lights are additive" and "paints are subtractive": if you mix Magenta, Yellow and Cyan paints using minuscule dots (like in printing), you will see that Red, Green and Blue are formed. This is obviously an idealization, the colors you'd actually obtain by mixing paints by hand would be closer to Orange, Purple and Dark Green. In short, this is how inkjet printing works (also a Black component is added, thus forming the CMYK model).
 ::::::::::::::::
 
+#### Color representations
+
+In computers, there are two main representations for colors: the RGB and the HSV representations.
+
+##### RGB Representation
+
+We can memorize our colors by addressing their primary color components: Red, Green and Blue. This is usually done with 3 pairs of bytes, one for each "color channel" (component).
+
+![An example of an RGB picker](./images/resources/RGB.svg){width=40%}
+
+This means that you can represent color with a 3-tuple: $(RRR, GGG, BBB)$, where each channel can take a value from $0$ to $255$ (or $00$ to $FF$ in hexadecimal) if we consider the more commonly used "16 million colors" scheme.
+
+Pure red is represented with the 3-tuple $(255, 0, 0)$, pure green with $(0, 255, 0)$ and pure blue with $(0, 0, 255)$. Black is the absence of any color component, which means it's represented with the $(0, 0, 0)$ 3-tuple, while White is represented with $(255, 255, 255)$.
+
+##### HSV Representation
+
+Another way to represent colors is using the HSV system (Hue, Saturation, Value). Sometimes this sytem is also called HSB (Hue, Saturation, Brightness).
+
+![A simplified "slice" of an HSV representation](./images/resources/HSV.svg){width=40%}
+
+Using the reference image above, the Hue is selected by choosing an angle on the circle: we find pure red at $0\degree$, then proceeding counterclockwise we have pure green at $120\degree$, blue at $240\degree$ and then we go back to red at $360\degree$ (which is back at $0\degree$). This means that it's represented as a value between $0$ and $359$.
+
+Saturation can be chosen by getting farther or closer to the center, with the minimum saturation being in the center and maximum at the outside. Saturation can be described as the "colorfulness of something compared to its brightness", which would mean that the color feels "less white-y" the higher the saturation. It is represented with a number between $0$ and $100$.
+
+![More slices of the HSV representation show how value changes](./images/resources/HSV_Cylinder.png){width=30%}
+
+Value (or brightness) is a bit different: the HSV representation is actually a cylinder (thus the use of "slice" in the figure description): you can imagine a stack of slices that get darker and darker the closer we get to the bottom of the cylinder. This too is represented with a number between $0$ and $100$.
+
+:::: note ::::
+Following this definition we can define pink as a "less saturated" red, as long as the brightness stays high (something like $(0, 50, 100)$). If the brightness is low (towards the lower half) we would obtain a dull brick red (for instance $(0, 50, 50)$).
+::::::::::::::
+
 #### Color Depth
 
 Raster graphics use bits to represent the color of each single pixel, the amount of bits used for each pixel is known as *color depth* (or "bit depth").
