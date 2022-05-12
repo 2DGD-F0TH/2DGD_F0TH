@@ -7,7 +7,7 @@ Before we start doing anything, we need to know some basics about graphics. In t
 
 We will see a lot of stuff, from a bird-eye view of how graphics are stored in video memory to normal maps and more.
 
-#### The color wheel
+#### The "color wheel"
 
 We can't start talking about colors without mentioning primary and secondary colors, and have a "color wheel" accompany the explanation.
 
@@ -54,6 +54,44 @@ Value (or brightness) is a bit different: the HSV representation is actually a c
 :::: note ::::
 Following this definition we can define pink as a "less saturated" red, as long as the brightness stays high (something like $(0, 50, 100)$). If the brightness is low (towards the lower half) we would obtain a dull brick red (for instance $(0, 50, 50)$).
 ::::::::::::::
+
+#### Primary, Secondary and Tertiary colors
+
+Primary colors are the basis of our color system and their definition is complex and outside the scope of this book. Let's just assume that they are the colors that we can mix together to "make other colors".
+
+On screens, the primary colors are Red, Green and Blue; while in classic painting green is usually substituted by Yellow. If we wanted to be more precise, painting uses Magenta, Cyan and Yellow.
+
+Secondary colors are made by mixing, in equal parts, two primary colors: this will give us more colors to work with.
+
+Tertiary colors are obtained by mixing a secondary color with a primary color, in equal parts, thus obtaining even more hues to play with.
+
+#### Analogous Colors
+
+Analogous colors are tertiary colors that are next to each other on the color wheel. For instance Red, Orange and Vermilion (sometimes called Red Orange) are analogous colors.
+
+They are good to create harmonious, almost-monocromatic compositions, since analogous colors are very common in nature.
+
+#### Complementary Colors
+
+Contrasting (complementary) color pairs were used in impressionism for their "eye-catching" character, they are created starting from the 3 primary colors (in screens: Red, Green, Blue), choosing one and combining the other two in a "secondary color".
+
+Complementary colors are positioned on opposite sides of the color wheel. The color star (an alternative to the color wheel to represent colors) makes this "opposition" very easy to see:
+
+![The color star shows how complementary colors are on opposite sides](./images/resources/color_star.svg){width=30%}
+
+Some complementary color for screens (color addition) pairs are:
+
+- **Red and Cyan**: Choose red, then green+blue gives cyan;
+- **Green and Magenta**: Choose green, then red+blue gives magenta;
+- **Blue and Yellow**: Choose blue, then red+green gives yellow.
+
+While, talking about colors made by paint (color subtraction) we have tre following color pairs:
+
+- **Magenta and Green:** Choose magenta, then yellow+cyan gives green;
+- **Yellow and Purple:** Choose yellow, then magenta+cyan gives purple;
+- **Cyan and Orange:** Choose cyan, then magenta+yellow gives you orange.
+
+Complementary colors tend to attract the viewer's eye in the points of intersection of their hues.
 
 #### Color Depth
 
@@ -322,23 +360,9 @@ Let's take note of rule number 3 then:
 
 #### Use contrast to your advantage {#contrast_to_your_advantage}
 
-Contrasting (complementary) color pairs were used in impressionism for their "eye-catching" character, they are created starting from the 3 primary colors (in screens: Red, Green, Blue), choosing one and combining the other two in a "secondary color".
+Complementary colors tend to attract a lot of attention in the points of intersection of their hues.
 
-Some complementary color pairs are:
-
-- **Red and Cyan**: Choose red, then green+blue gives cyan;
-- **Green and Magenta**: Choose green, then red+blue gives magenta;
-- **Blue and Yellow**: Choose blue, then red+green gives yellow.
-
-*Remember that we're talking about the RGB model of colors produced by **light** (color addition), not the traditional color wheel*
-
-While, talking about colors made by paint (color subtraction) we have tre following color pairs:
-
-- **Magenta and Green:** Choose magenta, then yellow+cyan gives green;
-- **Yellow and Purple:** Choose yellow, then magenta+cyan gives purple;
-- **Cyan and Orange:** Choose cyan, then magenta+yellow gives you orange.
-
-These colors tend to attract a lot of attention in the points of intersection of their hues, distracting the player from the main gameplay.
+If backgrounds feature complementary colors, it may distract the player from the main gameplay.
 
 Our rule number four should then be:
 

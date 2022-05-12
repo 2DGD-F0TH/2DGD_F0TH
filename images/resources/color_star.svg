@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   id="svg2"
+   sodipodi:docname="color_star.svg"
+   inkscape:export-filename="/home/romain/boulot/etoile_couleur.png"
+   viewBox="0 0 169.54993 185.16397"
+   inkscape:export-xdpi="90"
+   version="1.1"
+   inkscape:export-ydpi="90"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04, custom)"
+   width="169.54993"
+   height="185.16397"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <defs
+     id="defs28" />
+  <sodipodi:namedview
+     id="base"
+     bordercolor="#666666"
+     inkscape:pageshadow="2"
+     inkscape:window-y="0"
+     pagecolor="#ffffff"
+     inkscape:window-height="1019"
+     inkscape:window-maximized="1"
+     inkscape:zoom="1.9058824"
+     inkscape:window-x="0"
+     showgrid="false"
+     borderopacity="1.0"
+     inkscape:current-layer="g1334"
+     inkscape:cx="74.243825"
+     inkscape:cy="102.8395"
+     units="px"
+     inkscape:window-width="1920"
+     inkscape:pageopacity="0.0"
+     inkscape:document-units="px"
+     inkscape:pagecheckerboard="0" />
+  <g
+     id="layer1"
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer"
+     transform="translate(-5.5483175,-874.53388)">
+    <g
+       id="g1334"
+       transform="matrix(0.99484499,0,0,1.1049582,5.2398483,-97.704335)">
+      <path
+         id="path3789"
+         sodipodi:nodetypes="cccc"
+         style="fill:#ff00ff"
+         inkscape:connector-curvature="0"
+         d="m 2.3175,921.97 58.892,-0.53 -30.392,42.22 z" />
+      <path
+         id="path3793"
+         d="m 2.8422,1005.6 55.22,1.0594 -27.769,-41.169 z"
+         sodipodi:nodetypes="cccc"
+         style="fill:#051eef"
+         inkscape:connector-curvature="0" />
+      <path
+         id="path3795"
+         d="m 83.951,1046.6 -25.71,-39.352 h 52.469 z"
+         sodipodi:nodetypes="cccc"
+         style="fill:#00ffff"
+         inkscape:connector-curvature="0" />
+      <path
+         id="path3791"
+         sodipodi:nodetypes="cccc"
+         style="fill:#00ff00"
+         inkscape:connector-curvature="0"
+         d="m 168.77,1006.1 -57.319,-0.5147 28.818,-41.169 z" />
+      <path
+         id="path3787"
+         d="m 169.3,921.45 -54.695,-0.009 26.194,41.694 z"
+         sodipodi:nodetypes="cccc"
+         style="fill:#ffff00"
+         inkscape:connector-curvature="0" />
+      <g
+         id="g3757"
+         transform="matrix(1.66,0,0,1.7143,-57.318,-674.86)">
+        <path
+           id="path3753"
+           d="m 35.679,930.89 h 100.74 l -51.42,72.91 z"
+           sodipodi:nodetypes="cccc"
+           style="fill:none;stroke:#000000;stroke-width:1px"
+           inkscape:connector-curvature="0" />
+        <path
+           id="path3755"
+           sodipodi:nodetypes="cccc"
+           style="fill:none;stroke:#000000;stroke-width:1px"
+           inkscape:connector-curvature="0"
+           d="M 136.42,980.74 H 35.68 L 87.1,907.808 Z" />
+      </g>
+      <path
+         id="path3785"
+         sodipodi:nodetypes="cccc"
+         style="fill:#ef0505"
+         inkscape:connector-curvature="0"
+         d="m 87.623,881.84 -27.284,38.827 h 52.469 z" />
+    </g>
+  </g>
+  <metadata
+     id="metadata25">
+    <rdf:RDF>
+      <cc:Work>
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <cc:license
+           rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+        <dc:publisher>
+          <cc:Agent
+             rdf:about="http://openclipart.org/">
+            <dc:title>Openclipart</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:title>color_star</dc:title>
+        <dc:date>2011-12-02T07:41:09</dc:date>
+        <dc:description>étoiles des couleurs pour déterminer la couleur abosrbées et perçue d'une solution</dc:description>
+        <dc:source>https://openclipart.org/detail/166100/color_star-by-bidou</dc:source>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>bidou</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>1S</rdf:li>
+            <rdf:li>colors</rdf:li>
+            <rdf:li>sciences</rdf:li>
+            <rdf:li>star</rdf:li>
+            <rdf:li>étoiles des couleurs</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/licenses/publicdomain/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+</svg>
