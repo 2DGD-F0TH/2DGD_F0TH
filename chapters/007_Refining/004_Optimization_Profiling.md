@@ -292,6 +292,22 @@ For instance, Unity offers 3 update functions:
 
 `LateUpdate()` is a utility function that is run once per frame, after the `Update()` function. This is useful for all kinds of operations that would require the `update()` calculations to be completed.
 
+### Use the right data structures for the job
+
+Choosing the appropriate data structure for a task can have a lot more impact on performance that we may expect, and choosing the wrong one can have an even bigger impact.
+
+So here are some small tips that work with the majority of programming languages.
+
+Arrays are contiguous memory sections, thus indexing (finding an element at a certain position) is fast, as is scanning through the entire array itself. The limitation is that "pure arrays" have a well-defined size and cannot be resized: if you need a bigger array, you need to allocate memory for it and copy over the data. Inserting an item at the end of the array (if not full) is fast, but inserting an item at the head or in the middle of the array can be quite slow (since the items would need to be moved over).
+
+Dynamic Arrays (sometimes called "Vectors") try to solve the "frozen size" of Arrays, while keeping the advantages. Pushing to the end of a dynamic array is usually fast (with the exception of the times the array is automatically resized to hold more items), but pushing items at the beginning (or in the middle) of the array is usually quite slow (because all items would need to be moved). Dynamic arrays tend to "overcommit memory", so they may be bigger than necessary (to save on the computationally heavy task of resizing and copying over items).
+
+Linked lists are good if you need fast insertion anywhere, but they tend to lack in the iteration department: since the nodes are not contiguously packed in memory, iteration can be slow.
+
+Hash tables are good if you need to memorize items in a "key-value" fashion and retrieve them very quickly, but they use more memory and may fall short in terms of performance if a bad hashing function is involved.
+
+There is no "silver bullet" when it comes to data structures, but knowing the basics can make your code a lot better: there are more advanced data structures, like heaps, that are discussed in this book, check them out!
+
 ### Dirty Bit
 
 Not all entities in your game need to have their state updated all the time. Continuously updating all entities' internal state can be really costly in terms of game performance.
