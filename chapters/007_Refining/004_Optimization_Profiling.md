@@ -216,7 +216,17 @@ Obviously this technique can't really be applied to functions that make use of p
 
 Memoization is usually implemented via decorators that check if the arguments passed are inside a defined data structure (usually a hash table): if there is a hit, the result is returned immediately, if not the original (expensive) function is run and its result is memorized in said structure.
 
-Memoization should be used only on functions that are:
+A simple memoization system could work like the following UML diagram:
+
+![How a simple memoization pattern works](./images/profiling_optimization/memoization_simple.svg){width=50%}
+
+The biggest problem with this simple approach is that every different call to the function would be memorized, this would end up eating more and more memory, without any form of control.
+
+The solution is deciding the "table size" of the results we want to keep: sometimes keeping the 10 most recently used calls is enough, sometimes we need more. Being able to control this will allow us to fine-tune the CPU vs. memory balance.
+
+![How a more complex memoization pattern works](./images/profiling_optimization/memoization_limited.svg){width=50%}
+
+Considering what we've seen so far, we can say that memoization should be used only on functions that are:
 
 - Expensive
 - Called often with the same arguments

@@ -1,0 +1,12 @@
+@startuml
+start
+:Load arguments;
+if (arguments in table?) then (yes)
+    :Load result from table;
+else (no)
+    :Calculate result from expensive function;
+    :Save result and arguments in table;
+endif
+:Return result>
+end
+@enduml

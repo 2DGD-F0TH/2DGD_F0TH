@@ -1,0 +1,16 @@
+@startuml
+start
+:Load arguments;
+if (arguments in table?) then (yes)
+    :Load result from table;
+else (no)
+    :Calculate result from expensive function;
+    if (table full?) then (yes)
+        :Remove least recently used item in the table;
+    endif
+    :Save result and arguments in table;
+endif
+:Set the arguments and result's last used time to now;
+:Return result>
+end
+@enduml
