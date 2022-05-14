@@ -85,7 +85,7 @@ Here's a simple equation:
 
 $$ 2 \cdot x = 10$$
 
-Which can be read as "x is the number, that multiplied by 2, gives 10", the solution of this equation is $x=5$, because $5 \cdot 2 = 10$.
+Which can be read as "x is the number, that multiplied by 2, gives 10", the solution of this equation is $x=5$, because $2 \cdot 5 = 10$.
 
 There are some basic rules, here's a quick rundown.
 
