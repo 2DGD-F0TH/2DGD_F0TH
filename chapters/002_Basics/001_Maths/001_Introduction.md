@@ -166,6 +166,10 @@ $$ \lim_{x\to +\infty} \frac{1}{x} = 0 $$
 
 Because as we are counting up with x, we are dividing 1 by bigger and bigger numbers until (at the limit) we reach 0.
 
+:::: pitfall ::::
+There are some situations where a limit cannot be determined immediately (or sometimes at all). Some of these are $+ \infty - \infty$, $0 \cdot \infty$, $\frac{\infty}{\infty}$, $\frac{0}{0}$, $\infty^0$, $0^0$ and $1^{\infty}$.
+:::::::::::::::::
+
 Derivatives
 -----------
 
