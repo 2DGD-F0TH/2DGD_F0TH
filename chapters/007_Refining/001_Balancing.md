@@ -89,6 +89,10 @@ Difficulty curves
 
 {{placeholder}}
 
+![A linearly increasing wavey difficulty curve](./images/balancing/increasing_wave.svg){width=40%}
+
+{{placeholder}}
+
 <!-- TODO: A fusion of a wavy pattern and the linear increase pattern of earlier. Makes things more interesting, but the game may get really difficult if not implemented correctly. -->
 
 #### Logarithmically Increasing wave
@@ -111,15 +115,27 @@ Difficulty curves
 
 {{placeholder}}
 
+![A simple wavy difficulty interval](./images/balancing/simple_interval.svg){width=40%}
+
+{{placeholder}}
+
 <!-- TODO: Impredictable pattern, good for having impredictable challenges. Gives no real control over the initial difficulty (so you may have a run that starts really hard) -->
 
 #### Widening Interval
 
 {{placeholder}}
 
+![A widening and wavy difficulty interval](./images/balancing/widening_interval.svg){width=40%}
+
+{{placeholder}}
+
 <!-- TODO: Allows for better control over the initial difficulty, as the wave widens as the game continues. May become too hard or too easy towards the end, due to the fact that the wave widens as the game continues -->
 
 #### Widening Interval with Logarithmic trend
+
+{{placeholder}}
+
+![A widening wavy difficulty interval with a logarithmic trend](./images/balancing/widening_interval_log.svg){width=40%}
 
 {{placeholder}}
 

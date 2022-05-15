@@ -1,2 +1,202 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="433.63" height="433.22" version="1.1" viewBox="0 0 433.63 433.22" xmlns="http://www.w3.org/2000/svg"><g transform="translate(-375.43 -252.31)"><g fill="#ccc"><g stroke-width=".69359"><rect x="447.13" y="321.47" width="1.9256" height="344.32" opacity=".67257"/><rect x="494.26" y="321.47" width="1.9256" height="344.32" opacity=".67257"/><rect x="541.39" y="321.47" width="1.9256" height="344.32" opacity=".67257"/><rect x="588.53" y="321.47" width="1.9256" height="344.32" opacity=".67257"/><rect x="635.67" y="321.47" width="1.9256" height="344.32" opacity=".67257"/><rect x="682.79" y="321.47" width="1.9256" height="344.32" opacity=".67257"/><rect x="729.93" y="321.47" width="1.9256" height="344.32" opacity=".67257"/></g><g stroke-width=".69325"><rect transform="rotate(90)" x="321.47" y="-731.85" width="1.9256" height="348.1" opacity=".67257"/><rect transform="rotate(90)" x="368.6" y="-731.85" width="1.9256" height="348.1" opacity=".67257"/><rect transform="rotate(90)" x="415.74" y="-731.85" width="1.9256" height="348.1" opacity=".67257"/><rect transform="rotate(90)" x="462.87" y="-731.85" width="1.9256" height="348.1" opacity=".67257"/><rect transform="rotate(90)" x="510" y="-731.85" width="1.9256" height="348.1" opacity=".67257"/><rect transform="rotate(90)" x="557.14" y="-731.85" width="1.9256" height="348.1" opacity=".67257"/><rect transform="rotate(90)" x="604.27" y="-731.85" width="1.9256" height="348.1" opacity=".67257"/></g></g><path d="m401.01 252.31-4.9211 11.811h3.1394v419.94h3.3939v-419.94h3.309z" color="#000000" fill="#666" stroke-width="1.232" style="text-indent:0;text-transform:none"/><path d="m799.02 652.42-11.618-4.9211v3.1394h-411.97v3.3939h411.97v3.309z" color="#000000" fill="#666" stroke-width="1.2219" style="text-indent:0;text-transform:none"/><text x="407.57202" y="283.00845" font-family="'DejaVu Sans'" font-size="26.667px" letter-spacing="0px" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="407.57202" y="283.00845">Difficulty</tspan></text><text x="745.22321" y="685.15094" font-family="'DejaVu Sans'" font-size="26.667px" letter-spacing="0px" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="745.22321" y="685.15094">Time</tspan></text><path d="m403.25 557.61c25.347-142.45 139.18-140.67 328.6-139.95" fill="none" stroke="#fc0" stroke-width="2"/></g></svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="433.63"
+   height="433.22"
+   version="1.1"
+   viewBox="0 0 433.63 433.22"
+   id="svg1097"
+   sodipodi:docname="logarithmic_line.svg"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04, custom)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1101" />
+  <sodipodi:namedview
+     id="namedview1099"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     inkscape:zoom="1.9943678"
+     inkscape:cx="59.918739"
+     inkscape:cy="216.61"
+     inkscape:window-width="2560"
+     inkscape:window-height="1019"
+     inkscape:window-x="1920"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g1095" />
+  <g
+     transform="translate(-375.43 -252.31)"
+     id="g1095">
+    <g
+       fill="#ccc"
+       id="g1079">
+      <g
+         stroke-width=".69359"
+         id="g1061">
+        <rect
+           x="447.13"
+           y="321.47"
+           width="1.9256"
+           height="344.32"
+           opacity=".67257"
+           id="rect1047" />
+        <rect
+           x="494.26"
+           y="321.47"
+           width="1.9256"
+           height="344.32"
+           opacity=".67257"
+           id="rect1049" />
+        <rect
+           x="541.39"
+           y="321.47"
+           width="1.9256"
+           height="344.32"
+           opacity=".67257"
+           id="rect1051" />
+        <rect
+           x="588.53"
+           y="321.47"
+           width="1.9256"
+           height="344.32"
+           opacity=".67257"
+           id="rect1053" />
+        <rect
+           x="635.67"
+           y="321.47"
+           width="1.9256"
+           height="344.32"
+           opacity=".67257"
+           id="rect1055" />
+        <rect
+           x="682.79"
+           y="321.47"
+           width="1.9256"
+           height="344.32"
+           opacity=".67257"
+           id="rect1057" />
+        <rect
+           x="729.93"
+           y="321.47"
+           width="1.9256"
+           height="344.32"
+           opacity=".67257"
+           id="rect1059" />
+      </g>
+      <g
+         stroke-width=".69325"
+         id="g1077">
+        <rect
+           transform="rotate(90)"
+           x="321.47"
+           y="-731.85"
+           width="1.9256"
+           height="348.1"
+           opacity=".67257"
+           id="rect1063" />
+        <rect
+           transform="rotate(90)"
+           x="368.6"
+           y="-731.85"
+           width="1.9256"
+           height="348.1"
+           opacity=".67257"
+           id="rect1065" />
+        <rect
+           transform="rotate(90)"
+           x="415.74"
+           y="-731.85"
+           width="1.9256"
+           height="348.1"
+           opacity=".67257"
+           id="rect1067" />
+        <rect
+           transform="rotate(90)"
+           x="462.87"
+           y="-731.85"
+           width="1.9256"
+           height="348.1"
+           opacity=".67257"
+           id="rect1069" />
+        <rect
+           transform="rotate(90)"
+           x="510"
+           y="-731.85"
+           width="1.9256"
+           height="348.1"
+           opacity=".67257"
+           id="rect1071" />
+        <rect
+           transform="rotate(90)"
+           x="557.14"
+           y="-731.85"
+           width="1.9256"
+           height="348.1"
+           opacity=".67257"
+           id="rect1073" />
+        <rect
+           transform="rotate(90)"
+           x="604.27"
+           y="-731.85"
+           width="1.9256"
+           height="348.1"
+           opacity=".67257"
+           id="rect1075" />
+      </g>
+    </g>
+    <path
+       d="m401.01 252.31-4.9211 11.811h3.1394v419.94h3.3939v-419.94h3.309z"
+       color="#000000"
+       fill="#666"
+       stroke-width="1.232"
+       style="text-indent:0;text-transform:none"
+       id="path1081" />
+    <path
+       d="m799.02 652.42-11.618-4.9211v3.1394h-411.97v3.3939h411.97v3.309z"
+       color="#000000"
+       fill="#666"
+       stroke-width="1.2219"
+       style="text-indent:0;text-transform:none"
+       id="path1083" />
+    <text
+       x="407.57202"
+       y="283.00845"
+       font-family="'DejaVu Sans'"
+       font-size="26.667px"
+       letter-spacing="0px"
+       word-spacing="0px"
+       style="line-height:1.25"
+       xml:space="preserve"
+       id="text1087"><tspan
+         x="407.57202"
+         y="283.00845"
+         id="tspan1085">Difficulty</tspan></text>
+    <text
+       x="745.22321"
+       y="685.15094"
+       font-family="'DejaVu Sans'"
+       font-size="26.667px"
+       letter-spacing="0px"
+       word-spacing="0px"
+       style="line-height:1.25"
+       xml:space="preserve"
+       id="text1091"><tspan
+         x="745.22321"
+         y="685.15094"
+         id="tspan1089">Time</tspan></text>
+    <path
+       d="m403.25 557.61c25.347-142.45 139.18-140.67 328.6-139.95"
+       fill="none"
+       stroke="#fc0"
+       stroke-width="2"
+       id="path1093"
+       style="stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none" />
+  </g>
+</svg>

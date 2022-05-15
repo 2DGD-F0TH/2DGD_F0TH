@@ -32,7 +32,7 @@
      showgrid="false"
      borderopacity="1.0"
      inkscape:current-layer="layer1"
-     inkscape:cx="55.091604"
+     inkscape:cx="-208.17056"
      inkscape:cy="313.72776"
      showguides="true"
      inkscape:guide-bbox="true"
@@ -132,9 +132,9 @@
        style="opacity:0.67257;fill:#cccccc;stroke-width:0.693248"
        transform="rotate(90)"
        height="348.10007"
-       width="1.9256001"
        y="-731.85052"
-       x="510.00464" />
+       x="510.00464"
+       width="1.926" />
     <rect
        id="rect5041-097-5"
        style="opacity:0.67257;fill:#cccccc;stroke-width:0.693248"
@@ -184,7 +184,7 @@
          x="745.22321"
          y="685.15094">Time</tspan></text>
     <path
-       style="fill:#d40000;stroke:#ffcc00;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:#d40000;stroke:#ffcc00;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="M 403.25374,557.60843 731.85052,417.66232"
        id="path6736-3"
        sodipodi:nodetypes="cc" />
