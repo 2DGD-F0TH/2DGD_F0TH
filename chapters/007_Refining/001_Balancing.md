@@ -11,19 +11,114 @@ An imbalanced game is a frustrating game, and most of the time balancing a game 
 
 Let's talk about some principles and guidelines that can help you balancing your game and keep your players challenged but not frustrated.
 
-The "No BS" principle
-----------------------
+Do not annoy the player
+-----------------------
 
-The "master principle" everyone should follow (in my humble opinion) is what I call the "no BS" principle.
+The "master principle" everyone should follow (in my humble opinion) is "do not, under any circumstance, annoy the player".
 
-You should not trade the "fun" of your game for any other mechanic (like showing an advertisement to allow them to continue playing), that is equivalent to betraying your player, makes the game feel unfair and un-fun.
+You should not trade the "fun" of your game for any other mechanic (like showing an advertisement to allow them to continue playing): that is equivalent to betraying your player, makes the game feel unfair and un-fun.
 
-Here are some examples of mechanics that break the "no BS" principle:
+Here are some examples of mechanics that will surely annoy the player:
 
 - **Sudden spikes in difficulty:** when you have a sudden spike in difficulty, the player feels stumped and the game tends to lose its charm, you are "interrupting the flow" of the game by placing an arbitrary hurdle on your players' road;
-- **Off-screen instant-death traps:** having something deadly that pops out from off-screen and kills the player is unfair and will make your players scream "that's BS!" all the time, if you want to place some obstacles that pop from off-screen you should "telegraph" them. "Telegraphing" is a technique where you send a warning signal to the player that danger is coming. For instance a huge laser that instantly kills you should be preceded by a couple seconds by a yellow "!" signal on the right side of the screen, where the laser is due to strike. Another way to telegraph said laser would be to illuminate the part of the screen that is about to be stroke, like the light of the laser is coming up;
-- **Arbitrary invisible time limits:** If you suddenly interrupt the player's game with a "time up" and you have no countdown on the screen, the player will get frustrated, that's for sure;
+- **Off-screen instant-death traps:** having something deadly that pops out from off-screen and kills the player is unfair and will make your players scream in agony and vexation, if you want to place some obstacles that pop from off-screen you should "telegraph" them. "Telegraphing" is a technique where you send a warning signal to the player that danger is coming. For instance a huge laser that instantly kills you should be preceded by a couple seconds by a yellow "!" signal on the right side of the screen, where the laser is due to strike. Another way to telegraph said laser would be to illuminate the part of the screen that is about to be hit, like the light of the laser is coming up;
+- **Arbitrary invisible time limits:** If you suddenly interrupt the player's game with a "time up" and you have no countdown on the screen, the player will get frustrated, guaranteed;
 - **Taking control away from the player:** Not allowing the player to move (getting blocked by an enemy and killed) or just not allowing the player to adjust their jump mid-air is a surefire way to make them not play your game anymore.
+
+Difficulty curves
+-----------------
+
+{{placeholder}}
+
+<!-- TODO: Lots of charts, show some difficulty curves, this is all "perceived" so it's subjective -->
+
+### Flat Line
+
+{{placeholder}}
+
+<!-- TODO: Select a level and keep the perceived difficulty around that value. Easy to control but it can get boring rather quickly, since the player gets better at the game with time. -->
+
+### Static Lines
+
+{{placeholder}}
+
+<!-- TODO: Intro to static/fixed lines -->
+
+#### Linear Increase
+
+{{placeholder}}
+
+<!-- TODO: From the initial difficulty, the challenge gets harder the more we delve into the game. Player is challenged for longer, but it can become easy to predict -->
+
+#### Logarithmic Line
+
+{{placeholder}}
+
+<!-- TODO: The beginning is hard, but the challenge "flattens" over time, good for testing the player's patience, since it's hard at the beginning. Can get boring, it's better if combined with other patterns -->
+
+#### Exponential Line
+
+{{placeholder}}
+
+<!-- TODO: The beginning is very easy, but the challenge can get really hard really fast. The definition of "easy to learn, hard to master" -->
+
+### Wave patterns
+
+{{placeholder}}
+
+<!-- TODO: Useful to put some spice on the difficulty, making it more interesting -->
+
+#### Linearly Increasing wave
+
+{{placeholder}}
+
+<!-- TODO: A fusion of a wavy pattern and the linear increase pattern of earlier. Makes things more interesting, but the game may get really difficult if not implemented correctly. -->
+
+#### Logarithmically Increasing wave
+
+{{placeholder}}
+
+<!-- TODO: Tries to fix the issue of "impossibly hard challenges" of the linearly increasing wave, but can get more predictable -->
+
+### Interval Patterns
+
+{{placeholder}}
+
+<!-- TODO: Interval patterns are good for games that implement the concept of "run", where 2 playthroughs are not the same. -->
+
+#### Interval Linear Wave
+
+{{placeholder}}
+
+<!-- TODO: Impredictable pattern, good for having impredictable challenges. Gives no real control over the initial difficulty (so you may have a run that starts really hard) -->
+
+#### Widening Interval Wave
+
+{{placeholder}}
+
+<!-- TODO: Allows for better control over the initial difficulty, as the wave widens as the game continues. May become too hard or too easy towards the end, due to the fact that the wave widens as the game continues -->
+
+#### Widening Interval Wave with Logarithmic trend
+
+{{placeholder}}
+
+<!-- TODO: Tries to solve the issue of "too easy or too hard towards the end" by tying the difficulty to a logarithmic line. This way the game has a somewhat "increasing trend" while still giving an unpredictable challenge. Can become difficult to control. -->
+
+### This is not everything
+
+{{placeholder}}
+
+#### Sawtooth patterns
+
+{{placeholder}}
+
+<!-- TODO: Good to give some variety to the gameplay: every time a new mechanic/ability is introduced, the game gets a little bit easier. Then it gets more difficult, until you reach a difficulty higher than the last time you got an ability. Then new ability, a bit easier, etc... -->
+
+#### What not to do
+
+{{placeholder}}
+
+<!-- TODO: Avoid difficulty spikes. Avoid making the game easier for who is going well (add secret skill points in an area only expert players can reach), don't punish players further than strictly necessary if they do bad (losing a life is already enough, losing all gear without possibility of recovery is even worse), don't let players skip learning skills (this will make the game a lot harder down the line), don't overload the player with info -->
 
 Always favour the player
 ------------------------
@@ -142,7 +237,7 @@ Cheating in single player is an act that doesn't usually do a massive amount of 
 
 Playing outside of the rules can be really fun (that's one of the principles the "glitch hunters" love: doing something outside of what another person imposed them), for instance some people cheat in games to bring some mayhem into their gameplay, or they use cheats implemented inside the game itself for a comedic factor (like the omnipresent "giant head" cheat).
 
-Sometimes cheating happens because the game is unbalanced and breaks the "no BS" principle, an instance of this happening could be when a game has a great story and gameplay but there is a boss that is so hard the game just stops there. You want to see how the story continues, but the game has gone so much out of balance you are willing to break its own mechanics to be able to continue it.
+Sometimes cheating happens because the game is unbalanced and players get annoyed at it, an instance of this happening could be when a game has a great story and gameplay but there is a boss that is so hard the game just stops there. You want to see how the story continues, but the game has gone so much out of balance you are willing to break its own mechanics to be able to continue it.
 
 In this case the approach you should have is rebalancing the game, instead of limiting your players.
 
