@@ -32,19 +32,28 @@ Difficulty curves
 
 <!-- TODO: Lots of charts, show some difficulty curves, this is all "perceived" so it's subjective -->
 
-### Flat Line
 
-{{placeholder}}
-
-<!-- TODO: Select a level and keep the perceived difficulty around that value. Easy to control but it can get boring rather quickly, since the player gets better at the game with time. -->
-
-### Static Lines
+### Simple Lines
 
 {{placeholder}}
 
 <!-- TODO: Intro to static/fixed lines -->
 
+### Flat Line
+
+{{placeholder}}
+
+![A Flat line difficulty curve](./images/balancing/flat_line.svg){width=40%}
+
+{{placeholder}}
+
+<!-- TODO: Select a level and keep the perceived difficulty around that value. Easy to control but it can get boring rather quickly, since the player gets better at the game with time. -->
+
 #### Linear Increase
+
+{{placeholder}}
+
+![A linearly increasing difficulty curve](./images/balancing/increasing_line.svg){width=40%}
 
 {{placeholder}}
 
@@ -54,9 +63,17 @@ Difficulty curves
 
 {{placeholder}}
 
+![A Logarithmic difficulty curve](./images/balancing/logarithmic_line.svg){width=40%}
+
+{{placeholder}}
+
 <!-- TODO: The beginning is hard, but the challenge "flattens" over time, good for testing the player's patience, since it's hard at the beginning. Can get boring, it's better if combined with other patterns -->
 
 #### Exponential Line
+
+{{placeholder}}
+
+![An exponential difficulty curve](./images/balancing/exponential_line.svg){width=40%}
 
 {{placeholder}}
 
@@ -78,27 +95,31 @@ Difficulty curves
 
 {{placeholder}}
 
+![A Logarithmically increasing wavy difficulty curve](./images/balancing/logarithmic_wave.svg){width=40%}
+
+{{placeholder}}
+
 <!-- TODO: Tries to fix the issue of "impossibly hard challenges" of the linearly increasing wave, but can get more predictable -->
 
 ### Interval Patterns
 
 {{placeholder}}
 
-<!-- TODO: Interval patterns are good for games that implement the concept of "run", where 2 playthroughs are not the same. -->
+<!-- TODO: Interval patterns are good for games that implement the concept of "run", where 2 playthroughs are not the same. Exemplify only with waves, which are the most "difficult" kind to represent -->
 
-#### Interval Linear Wave
+#### Simple Interval
 
 {{placeholder}}
 
 <!-- TODO: Impredictable pattern, good for having impredictable challenges. Gives no real control over the initial difficulty (so you may have a run that starts really hard) -->
 
-#### Widening Interval Wave
+#### Widening Interval
 
 {{placeholder}}
 
 <!-- TODO: Allows for better control over the initial difficulty, as the wave widens as the game continues. May become too hard or too easy towards the end, due to the fact that the wave widens as the game continues -->
 
-#### Widening Interval Wave with Logarithmic trend
+#### Widening Interval with Logarithmic trend
 
 {{placeholder}}
 
@@ -107,6 +128,8 @@ Difficulty curves
 ### This is not everything
 
 {{placeholder}}
+
+<!-- TODO: Exemplify different curves (sawtooth especially), tell the reader to mix and match, represent graphically what to do and what to avoid -->
 
 #### Sawtooth patterns
 
