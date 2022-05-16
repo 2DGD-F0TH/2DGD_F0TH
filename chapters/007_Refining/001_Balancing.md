@@ -151,6 +151,10 @@ Difficulty curves
 
 {{placeholder}}
 
+![A sawtooth difficulty curve](./images/balancing/sawtooth_line.svg){width=40%}
+
+{{placeholder}}
+
 <!-- TODO: Good to give some variety to the gameplay: every time a new mechanic/ability is introduced, the game gets a little bit easier. Then it gets more difficult, until you reach a difficulty higher than the last time you got an ability. Then new ability, a bit easier, etc... -->
 
 #### What not to do
