@@ -28,88 +28,81 @@ Here are some examples of mechanics that will surely annoy the player:
 Difficulty curves
 -----------------
 
-{{placeholder}}
+When designing our game, it may be useful (sometimes mandatory) to have a high-level view of how our game's difficulty will evolve as the game itself is played. If we take a cartesian plane and define time as the $x$ axis, while the "perceived difficulty" is plotted on the $y$ axis, we would obtain a **difficulty curve**, a high-level representation of how difficulty evolves as the game is played.
 
-<!-- TODO: Lots of charts, show some difficulty curves, this is all "perceived" so it's subjective -->
-
+Knowing some basic difficulty curves, as well as their pros and cons, may give you an idea of how you want to build and balance your game. This section will be heavy on charts, so be prepared!
 
 ### Simple Lines
 
-{{placeholder}}
-
-<!-- TODO: Intro to static/fixed lines -->
+Let's start with simple lines, they can be straight lines or simple curves that don't feature any waviness or wobbliness. These are usually the simplest to learn but that doesn't mean they are free from complicated drawbacks. Let's check some out.
 
 ### Flat Line
 
-{{placeholder}}
+The first curve is the "flat line", which is a simple horizontal line that spans the whole playtime. It can't get simpler than that.
 
 ![A Flat line difficulty curve](./images/balancing/flat_line.svg){width=40%}
 
-{{placeholder}}
+When the player selects a difficulty level, the difficulty stays around that value (with no real perceivable change) for the entire playthrough. That means that there is no "evolution" to take care of and no long-term balancing to perform.
 
-<!-- TODO: Select a level and keep the perceived difficulty around that value. Easy to control but it can get boring rather quickly, since the player gets better at the game with time. -->
+This curve also represents a way of balancing your game that gets boring rather quickly, since the player gets better at the game as time passes, but the game doesn't "follow them" by giving them a higher challenge.
 
 #### Linear Increase
 
-{{placeholder}}
+To solve the issue of the flat line, you can add a linear increase to your difficulty in an effort to "keep up" with the player.
 
 ![A linearly increasing difficulty curve](./images/balancing/increasing_line.svg){width=40%}
 
-{{placeholder}}
+This curve is usually easy to manage, giving a lot of control over the initial difficulty and its evolution. The player is challenged for longer periods of time, since the game becomes more difficult the further the player plays it.
 
-<!-- TODO: From the initial difficulty, the challenge gets harder the more we delve into the game. Player is challenged for longer, but it can become easy to predict -->
+The biggest drawback of this kind of curve is its predictability: after a while, a somewhat "expert" player can predict "by feel" the upcoming challenges and prepare as a consequence, thus "squashing" the final part of the curve.
+
+![As the player learns to predict, the difficulty curve changes from our design](./images/balancing/increasing_line_squashed.svg){width=40%}
 
 #### Logarithmic Line
 
-{{placeholder}}
+The logarithmic line is usually presented as a "guide" for more advanced types of curves. This is due to the fact that it has some glaring problems.
 
 ![A Logarithmic difficulty curve](./images/balancing/logarithmic_line.svg){width=40%}
 
-{{placeholder}}
+The beginning of the game has a steep learning curve, which eases up as the game goes on. This means that the game is really hard at the beginning but the challenge dies down towards the end, which can make for a game very difficult to learn but not much more.
 
-<!-- TODO: The beginning is hard, but the challenge "flattens" over time, good for testing the player's patience, since it's hard at the beginning. Can get boring, it's better if combined with other patterns -->
+This can be a good curve if you want to "test the might and patience" of your players, but if not paired with a different approach in the late game, it may end up being plain boring.
 
 #### Exponential Line
 
-{{placeholder}}
+The complete opposite of the logarithmic line is the exponential one. This has a lot more use in game design that the previous example.
 
 ![An exponential difficulty curve](./images/balancing/exponential_line.svg){width=40%}
 
-{{placeholder}}
-
-<!-- TODO: The beginning is very easy, but the challenge can get really hard really fast. The definition of "easy to learn, hard to master" -->
+The exponential difficulty curve gives the player a very relaxed beginning as well as a late game that can get really hard really fast (to the point that it can be too hard). This curve is the literal definition of a game that is "easy to learn but hard to master".
 
 ### Wave patterns
 
-{{placeholder}}
-
-<!-- TODO: Useful to put some spice on the difficulty, making it more interesting -->
+The difficulty curves that we've seen so far have all one thing in common: they are simple and feature no real "lack of predictability", which can make a game a bit boring in the long run. Not because it's not challenging, but because it's predictable.
 
 #### Linearly Increasing wave
 
-{{placeholder}}
+Adding some waviness to the linearly increasing line can add some spice to the game very easily.
 
 ![A linearly increasing wavey difficulty curve](./images/balancing/increasing_wave.svg){width=40%}
 
-{{placeholder}}
-
-<!-- TODO: A fusion of a wavy pattern and the linear increase pattern of earlier. Makes things more interesting, but the game may get really difficult if not implemented correctly. -->
+This is a very efficient way of working, since it makes things more interesting, but if not implemented correctly it can lead to very high difficulty during the late game, since the "wave" may compound with an already high difficulty level.
 
 #### Logarithmically Increasing wave
 
-{{placeholder}}
+To try and fix the issues from the linearly increasing wave pattern, we may want to tie our difficulty to a logarithmic line.
 
 ![A Logarithmically increasing wavy difficulty curve](./images/balancing/logarithmic_wave.svg){width=40%}
 
-{{placeholder}}
+This kind of difficulty curve tends to "squash" the challenge towards the mid-to-late game, thus making the game a bit less difficult if the "wave" compounds with an already high difficulty level.
 
-<!-- TODO: Tries to fix the issue of "impossibly hard challenges" of the linearly increasing wave, but can get more predictable -->
+As a drawback, this curve may feel more "predictable" towards the late game, since the difficulty tends to get very "horizontal" towards the end.
 
 ### Interval Patterns
 
-{{placeholder}}
+For games that involve some random generation, like roguelites, we may want to "clamp" the difficulty between a "minimum" and a "maximum" but still allow for "runs" that feel different in difficulty from each other.
 
-<!-- TODO: Interval patterns are good for games that implement the concept of "run", where 2 playthroughs are not the same. Exemplify only with waves, which are the most "difficult" kind to represent -->
+In this section we will show only wavy patterns, to exemplify the most "difficult to design" patterns, butt all patterns apply to simple lines too.
 
 #### Simple Interval
 
@@ -145,7 +138,7 @@ Difficulty curves
 
 {{placeholder}}
 
-<!-- TODO: Exemplify different curves (sawtooth especially), tell the reader to mix and match, represent graphically what to do and what to avoid -->
+<!-- TODO: Exemplify different curves (sawtooth especially), tell the reader to mix and match, represent graphically what to do and what to avoid. Also explain that difficulty is not everything, that comedy and other factors can be a source of fun -->
 
 #### Sawtooth patterns
 
