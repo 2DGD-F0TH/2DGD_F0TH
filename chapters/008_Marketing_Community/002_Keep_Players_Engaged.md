@@ -95,7 +95,7 @@ Mods are a great way to engage your community, and the are just so many types of
     - HUD Modifications or upgrades (mini maps for instance);
     - New options and settings;
     - Additional/tweaked difficulty levels;
-- **Total Conversions:** These take the engine of a game (like the first DOOM) and make a completely new game out of it, an example is "Castlevania: Simon's Destiny".
+- **Total Conversions:** These take the engine of a game (like the first DOOM) and make a completely new game out of it, examples are "Castlevania: Simon's Destiny" and "Sonic Robo Blast 2".
 
 Refining and giving out your own map editor can be a really great way to make your game more "open to editing" and allow modders to enjoy working on it, after that, if your game structure allows it, you could document the engine and allow people to create their own masterpieces, maps and fan-made stories.
 
