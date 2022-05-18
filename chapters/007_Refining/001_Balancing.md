@@ -84,7 +84,7 @@ The difficulty curves that we've seen so far have all one thing in common: they 
 
 Adding some waviness to the linearly increasing line can add some spice to the game very easily.
 
-![A linearly increasing wavey difficulty curve](./images/balancing/increasing_wave.svg){width=40%}
+![A linearly increasing wavy difficulty curve](./images/balancing/increasing_wave.svg){width=40%}
 
 This is a very efficient way of working, since it makes things more interesting, but if not implemented correctly it can lead to very high difficulty during the late game, since the "wave" may compound with an already high difficulty level.
 
@@ -96,7 +96,7 @@ To try and fix the issues from the linearly increasing wave pattern, we may want
 
 This kind of difficulty curve tends to "squash" the challenge towards the mid-to-late game, thus making the game a bit less difficult if the "wave" compounds with an already high difficulty level.
 
-As a drawback, this curve may feel more "predictable" towards the late game, since the difficulty tends to get very "horizontal" towards the end.
+As a drawback, this curve may feel more "predictable" towards the late game, since the difficulty tends to get very "horizontal" towards the end; the wavy pattern helps keeping the predictability at bay, thus lengthening the enjoyability of the game.
 
 ### Interval Patterns
 
@@ -106,55 +106,65 @@ In this section we will show only wavy patterns, to exemplify the most "difficul
 
 #### Simple Interval
 
-{{placeholder}}
+The simplest way to implement an interval pattern is just defining a minimum and a maximum difficulty and setting the difficulty in such interval.
 
 ![A simple wavy difficulty interval](./images/balancing/simple_interval.svg){width=40%}
 
-{{placeholder}}
-
-<!-- TODO: Impredictable pattern, good for having impredictable challenges. Gives no real control over the initial difficulty (so you may have a run that starts really hard) -->
+This pattern is good for impredictable challenges, but it is so impredictable that you have no control over the initial difficulty either. This means that you may have a run of your game starting way too hard, while the next one may end up being very easy.
 
 #### Widening Interval
 
-{{placeholder}}
+To solve the lack of control over the initial difficulty, you may want to shape your interval like a letter "V" (just on its side).
 
 ![A widening and wavy difficulty interval](./images/balancing/widening_interval.svg){width=40%}
 
-{{placeholder}}
-
-<!-- TODO: Allows for better control over the initial difficulty, as the wave widens as the game continues. May become too hard or too easy towards the end, due to the fact that the wave widens as the game continues -->
+The widening interval allows you to have almost total control over the initial difficulty, while still keeping an unpredictable challenge in the mid and late game. The fact that the pattern widens towards the late game may end up being a drawback in some situations, since the game may have a really easy or really hard "ending". This makes for a sometimes inconsistent experience.
 
 #### Widening Interval with Logarithmic trend
 
-{{placeholder}}
+When things tend to get out of control towards the late game, logarithmic curves come to our rescue and this is one of those times.
 
 ![A widening wavy difficulty interval with a logarithmic trend](./images/balancing/widening_interval_log.svg){width=40%}
 
-{{placeholder}}
+By tying our widening interval to a logarithmic line we have a way to better control how the game's difficulty evolves in the mid-to-late game. This gives the game's difficulty an "increasing trend" and coupled with a wavy difficulty line it can still be unpredictable enough to be enjoyable.
 
-<!-- TODO: Tries to solve the issue of "too easy or too hard towards the end" by tying the difficulty to a logarithmic line. This way the game has a somewhat "increasing trend" while still giving an unpredictable challenge. Can become difficult to control. -->
+Such control doesn't come cheap though, since having so many things to control (the initial difficulty level, how much the curve widens, how fast things evolve) can be really difficult.
 
 ### This is not everything
 
-{{placeholder}}
+The difficulty curves that we've seen so far are definitely not the only ones that exist in video game development. You can mix and match until you reach a result that may look fun (in theory) and appeal to the player base that you have chosen.
 
-<!-- TODO: Exemplify different curves (sawtooth especially), tell the reader to mix and match, represent graphically what to do and what to avoid. Also explain that difficulty is not everything, that comedy and other factors can be a source of fun -->
+Here we take a look at some more elements and curves that don't fit the previous description.
 
-#### Sawtooth patterns
+#### Sawtooth pattern
 
-{{placeholder}}
+Every time we introduce a new mechanic, it may be useful and fun to let the player make large use of it, thus making the game a bit easier.
 
 ![A sawtooth difficulty curve](./images/balancing/sawtooth_line.svg){width=40%}
 
-{{placeholder}}
-
-<!-- TODO: Good to give some variety to the gameplay: every time a new mechanic/ability is introduced, the game gets a little bit easier. Then it gets more difficult, until you reach a difficulty higher than the last time you got an ability. Then new ability, a bit easier, etc... -->
+This gives our curve a sawtooth-like shape, where the game gets slightly easier every time a new mechanic (like a powerup, or a tool) gets introduced, just to climb higher than the previous maximum. This can give the player an idea of "a reward for doing something difficult", and such reward is the new mechanic.
 
 #### What not to do
 
-{{placeholder}}
+When designing a videogame, there are at least as many things you should as the ones you may want to do. One of the things you shouldn't do at all is adding "difficulty spikes" to your gameplay.
 
-<!-- TODO: Avoid difficulty spikes. Avoid making the game easier for who is going well (add secret skill points in an area only expert players can reach), don't punish players further than strictly necessary if they do bad (losing a life is already enough, losing all gear without possibility of recovery is even worse), don't let players skip learning skills (this will make the game a lot harder down the line), don't overload the player with info -->
+![Difficulty spikes are not good](./images/balancing/difficulty_spike.svg){width=40%}
+
+Difficulty spikes don't look good in graphs and don't make a game challenging or fun, they interrupt the natural flow of the game and end up frustrating the player. This may include an extremely precise jump in a 2D platformer just after a series of simple levels (even worse if such jump if far from the last checkpoint), or a very difficult boss that has no real place being there it is (difficulty-wise).
+
+Another thing that you may want to avoid is making the game easier for experts: this may include adding a secret stash of collectables (like powerups or skill points) in a place where only expert (or very very good) players can reach.
+
+Furthermore, you should avoid punishing players who "don't play that well" further than the minimum necessary: losing a life is already a strong "punishment", if you make them lose all their gear without possibility of recovery (this goes for skills too), your game will be put on the shelf by the majority of your player base.
+
+Avoid letting players "skip learning skills", since they will find themselves in a world of trouble as soon as such skill is necessary to continue the game. The player will feel lost at first, then think that the game glitched out and only then (if they didn't uninstall the game already) they make backtrack to look for something they missed.
+
+Try to avoid overloading the players with information: when dealing with a tutorial that lasts longer than it should or that presents way too much information at once, players will lose focus and will tend to skip steps just to "get over it".
+
+#### Beyond difficulty
+
+Difficulty is not everything in a game: a game may greatly enjoy from other elements, like comedy or just the feeling of relax that may come from a farming game. Some players really enjoy escaping the hectic city life to lose themselves in the rhythm of nature (although it is a simplified an virtual version of it).
+
+Other games benefit from collectathon traits: deck-building games are a prime example. You start with a basic "deck of cards" which have certain powers, as you play the game more cards unlock and soon enough the player is enjoying the feel of strategy that comes from "building the perfect deck".
 
 Always favour the player
 ------------------------
