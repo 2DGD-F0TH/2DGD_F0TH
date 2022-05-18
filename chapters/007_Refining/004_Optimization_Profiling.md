@@ -231,7 +231,9 @@ Considering what we've seen so far, we can say that memoization should be used o
 - Expensive
 - Called often with the same arguments
 
-If we start using this technique on all functions, we may end up with a software that occupies a lot of memory without any significant speedup.
+:::: pitfall ::::
+If we start using memoization techniques on all functions, we may end up with a software that occupies a lot of memory without any significant speedup. Moderation is key.
+:::::::::::::::::
 
 ### Approximations
 
