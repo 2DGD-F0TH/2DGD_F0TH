@@ -132,7 +132,7 @@ These mutators are usually compatible with each other, so you can have an overpo
 
 In recent years, a certain kind of hacks for old games (mostly built around the Legend Of Zelda and Metroid series) that mix up the gameplay by mixing up the item locations, with a certain logic to avoid unbeatable games.
 
-If your game has a somewhat linear story and no "roguelike" elements, you may be able to extend it replay value by adding a "randomized mode". This new mode would have some logic implemented to avoid "soft locking" a savefile and mixes up the items and powerups, usually making the game a bit more challenging.
+If your game has a somewhat linear story and no "roguelike" elements, you may be able to extend it replay value by adding a "randomized mode". This new mode would have some logic implemented to avoid *soft locking*~[g]~ a savefile and mixes up the items and powerups, usually making the game a bit more challenging.
 
 ### New Game+
 
