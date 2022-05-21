@@ -32,7 +32,7 @@ Input
 
 ### Events vs Real Time Input
 
-Some frameworks may be able to further abstract how they process input by giving an *API~[g]~* that allows to make use of **events**.
+Some frameworks may be able to further abstract how they process input by giving an *[API~\[g\]~](#gl_api)* that allows to make use of **events**.
 
 Most of the time, events will be put in a queue that will be processed separately. This way it's easier to program how to react to each event and keep our code neatly organized. The downside is that the performance of an event-driven input processing is directly tied to how many events are triggered: the more events are triggered, the longer the wait may be before we get to our processed input.
 
