@@ -154,7 +154,7 @@ Limits are an interesting beast: we can see them as the value a function approac
 
 $$ \lim_{x\to a} f(x) = y$$
 
-In this case it can be read as "y is the limit, for x approaching a, of $f(x)$". Limits can be seen as, "the more x gets closer to a, the more $f(x) gets closer to y".
+In this case it can be read as "y is the limit, for x approaching a, of $f(x)$". Limits can be seen as, "the more x gets closer to a, the more $f(x)$ gets closer to y".
 
 $y$ and $a$ can be any value, including infinity. In fact the following statement is true:
 
