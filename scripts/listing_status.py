@@ -3,6 +3,8 @@
 A small script to show the status of listings translations
 """
 import shutil
+import argparse
+from enum import IntEnum
 from os.path import join as pjoin
 from os.path import dirname, normpath, relpath
 from os import walk, listdir, sep
@@ -18,6 +20,11 @@ SYMBOLS = {
     "tee": "├",
     "vdots": "⁞"
 }
+
+
+class YIELD_TYPE(IntEnum):
+    LANGVAR = 1
+    FILE = 2
 
 
 class LVAPath:
@@ -74,11 +81,10 @@ def print_bar(language, max_lang_length, length, reference_max, terminal_size):
     )
 
 
-def main() -> None:
+def get_file_list() -> dict:
     """
-    Simple script to visually check the status of listings porting
+    Returns a dictionary of files
     """
-    term_size = shutil.get_terminal_size((80, 20))
     languages: list = listdir(DIRECTORY)
     files: dict = {}
     for language in languages:
@@ -94,7 +100,13 @@ def main() -> None:
                 for item in fn
                 if item.endswith("txt")
             }
-    reference = len(files["pseudocode"])
+    return files
+
+
+def print_bars(files, reference, term_size):
+    """
+    Prints the bars section of the normal view
+    """
     max_lang_length: int = len(max(files.keys(), key=len))
     print(term_size.columns * SYMBOLS["dbl_border"])
     print("Current Listings Status")
@@ -108,18 +120,62 @@ def main() -> None:
             term_size
         )
 
-    pseudocode_files: set = files["pseudocode"]
-    # ----
+
+def print_file_list(files, pseudocode_files, term_size):
+    """
+    Prints the list of missing files
+    """
+    for yield_type, var in get_missing_files(files, pseudocode_files):
+        if yield_type == YIELD_TYPE.LANGVAR:
+            print(term_size.columns * SYMBOLS["heavy_border"])
+            print("Missing Listings: {}".format(var))
+            print(term_size.columns * SYMBOLS["light_border"])
+        elif yield_type == YIELD_TYPE.FILE:
+            print(var)
+    print(term_size.columns * SYMBOLS["dbl_border"])
+
+
+def get_missing_files(files, pseudocode_files):
+    """
+    Generator that gets the missing listings
+    """
     for langvar, file_list in files.items():
         if langvar != "pseudocode":
             files_set = pseudocode_files - file_list
             if files_set:
-                print(term_size.columns * SYMBOLS["heavy_border"])
-                print("Missing Listings: {}".format(langvar))
-                print(term_size.columns * SYMBOLS["light_border"])
+                yield (YIELD_TYPE.LANGVAR, langvar)
                 for fil in files_set:
-                    print(fil)
-    print(term_size.columns * SYMBOLS["dbl_border"])
+                    yield (YIELD_TYPE.FILE, fil)
+
+
+def main() -> None:
+    """
+    Simple script to visually check the status of listings porting
+    """
+    parser = argparse.ArgumentParser()
+    parser.add_argument(
+        "-q", "--quiet", help="Just output the number of missing listings",
+        action="store_true"
+    )
+    args = parser.parse_args()
+    files: dict = get_file_list()
+    reference = len(files["pseudocode"])
+    term_size = shutil.get_terminal_size((80, 20))
+    pseudocode_files: set = files["pseudocode"]
+    if args.quiet:
+        # Quiet mode enabled, just print the sum of missing listings
+        print(
+            sum(
+                1
+                for item, _ in get_missing_files(files, pseudocode_files)
+                if item == YIELD_TYPE.FILE
+            )
+        )
+    else:
+        # Normal output
+        print_bars(files, reference, term_size)
+        print_file_list(files, pseudocode_files, term_size)
+    # ----
 
 
 if __name__ == "__main__":
