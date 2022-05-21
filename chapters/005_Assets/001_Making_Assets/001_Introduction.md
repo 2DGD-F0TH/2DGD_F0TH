@@ -14,4 +14,4 @@ This book (for now) assumes you already have some minimal knowledge of some matt
 
 - Bars (in music)
 - Beats (in music)
-- Basic music notation (either *letter notation*~[g]~ or the *modern music notation*~[g]~)
+- Basic music notation (either *[letter notation~\[g\]~](#gl_lettermusicnotation)* or the *[modern music notation~\[g\]~](#gl_modernmusicnotation)*)

@@ -276,7 +276,7 @@ If the game is forced in windowed mode, you'll have a problem like the following
 
 ![Windowed Game Example - A 640x480 game in a 1920x1080 Window](./images/resources/virtual_res_fail_1.svg){width=60%}
 
-The game window is way too small and hard to see, and can get even smaller if the HUD~[g]~ takes even more space out of the window. This can be mitigated by calculating the position of each element in comparison to the window size, this although can result in items too small (or too big if downscaling), like the following HUD example.
+The game window is way too small and hard to see, and can get even smaller if the *[HUD~\[g\]~](#gl_hud)* takes even more space out of the window. This can be mitigated by calculating the position of each element in comparison to the window size, this although can result in items too small (or too big if downscaling), like the following HUD example.
 
 ![Fullscreen Game Example - Recalculating items positions according to the window size](./images/resources/virtual_res_fail_2.svg){width=60%}
 

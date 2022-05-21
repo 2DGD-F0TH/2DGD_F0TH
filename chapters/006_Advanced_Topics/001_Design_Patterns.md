@@ -42,7 +42,7 @@ The previous singleton instantiates immediately, which may not always be necessa
 ```{src='design_patterns/singleton_lazyload' caption='Example of a singleton pattern with lazy loading'}
 ```
 
-If multiple threads are involved in using a lazy-loading singleton, you may need to take care of preventing *race conditions*~[g]~ that could result in multiple instances of the singleton being created.
+If multiple threads are involved in using a lazy-loading singleton, you may need to take care of preventing *[race conditions~\[g\]~](#gl_racecondition)* that could result in multiple instances of the singleton being created.
 
 Many critics consider the singleton to be an "anti-pattern", mostly because it is really overused and adds a possibly unwanted "global state" (see it as a global variable, but in an object-oriented sense) into the application.
 

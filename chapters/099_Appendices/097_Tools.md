@@ -8,7 +8,7 @@ Graphics {.unnumbered .unlisted}
 
 ### Aseprite {.unnumbered .unlisted}
 
-Aseprite is an open-source and commercial tool for creating pixel-art graphics. It can be either bought or compiled from source code, but cannot be redistributed according to its *EULA~[g]~*.
+Aseprite is an open-source and commercial tool for creating pixel-art graphics. At the time of writing, it can be either bought or compiled from source code, but cannot be redistributed according to its *[EULA~\[g\]~](#gl_eula)*.
 
 <https://www.aseprite.org/>
 

@@ -93,7 +93,7 @@ Now we're entering technical territory. We're going to talk about sound synthesi
 
 The first, and technically simplest way to generate sound is via AM (amplitude modulation) synthesis.
 
-With this technique you take the wave form created by an *oscillator*~[g]~ and modulate its amplitude (volume) according to a second wave form.
+With this technique you take the wave form created by an *[oscillator~\[g\]~](#gl_oscillator)* and modulate its amplitude (volume) according to a second wave form.
 
 ![Example of AM Synthesis](./images/resources/AM_Synthesis.png){width=50%}
 
@@ -101,7 +101,7 @@ In this example we see a 440Hz sine wave (in the middle) having its amplitude (q
 
 ### FM Synthesis
 
-With this technique you take the wave form created by an *oscillator*~[g]~ (called "carrier frequency") but instead of modulating its amplitude, you modulate its frequency (pitch) according to another wave (called "modulator frequency").
+With this technique you take the wave form created by an *[oscillator~\[g\]~](#gl_oscillator)* (called "carrier frequency") but instead of modulating its amplitude, you modulate its frequency (pitch) according to another wave (called "modulator frequency").
 
 ![Example of FM Synthesis](./images/resources/FM_Synthesis.png){width=50%}
 

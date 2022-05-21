@@ -14,7 +14,7 @@ C {.unnumbered .unlisted}
 -----
 
 [Call by reference]{#gl_cbr}
-: Evaluation strategy where a function parameters are bound to a function by passing a reference to the arguments, this could cause *side effects*~[g]~ since the function would be able to change variables outside its local scope.
+: Evaluation strategy where a function parameters are bound to a function by passing a reference to the arguments, this could cause *[side effects~\[g\]~](#gl_sideeffect)* since the function would be able to change variables outside its local scope.
 
 [Call by value]{#gl_cbv}
 : Evaluation strategy where a function parameters are bound to a function by making a copy of the values used as an argument.
@@ -119,7 +119,7 @@ S {.unnumbered .unlisted}
 -----
 
 [Side Effect]{#gl_sideeffect}
-: In computer science a function is said to have a "side effect" when it changes variables outside its local environment, this can happen in languages which use *call by reference*~[g]~ evaluation strategies.
+: In computer science a function is said to have a "side effect" when it changes variables outside its local environment, this can happen in languages which use *[call by reference~\[g\]~](#gl_cbr)* evaluation strategies.
 
 [Soft Locking]{#gl_softlocking}
 : This is usually referred as an anomalous situation where a game is not "frozen" and still working correctly, but the player is unable to continue playing. An example of soft-locking would be the player getting trapped inside level geometry, unable to move: the game is not frozen (the level can be restarted), but the player cannot finish the level.

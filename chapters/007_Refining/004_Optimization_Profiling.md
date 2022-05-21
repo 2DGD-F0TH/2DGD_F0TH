@@ -62,12 +62,12 @@ Your game starts well enough, but after just a few minutes it starts slowing dow
 
 If your game supports windowed mode, keep your task manager (or "top"/"htop"/"bpytop" if you're on Linux) open and look at your game's process: does the memory used by your game increase as you're playing it?
 
-If so, you may be having a so-called *memory leak*~[g]~: somewhere during its running cycle, your game forgets to clean up something, which stays resident in memory until your game closes. The result, after creating and deleting a lot of entities and leaving a lot of *garbage* behind is that the total memory used increases.
+If so, you may be having a so-called *[memory leak~\[g\]~](#gl_memoryleak)*: somewhere during its running cycle, your game forgets to clean up something, which stays resident in memory until your game closes. The result, after creating and deleting a lot of entities and leaving a lot of *garbage* behind is that the total memory used increases.
 
-This is especially common in languages like C++, where there is no automatic "garbage collecting" and having cases of so-called *unreachable memory*[g] can really mess up your memory usage.
+This is especially common in languages like C++, where there is no automatic "garbage collecting" and having cases of so-called *[unreachable memory~\[g\]~](#gl_unreachablememory)* can really mess up your memory usage.
 
 ::: pitfall :::
-Some people call unreachable memory cases "*dangling pointers*~[g]~", but technically they are two different (and opposite) things.
+Some people call unreachable memory cases "*[dangling pointers~\[g\]~](#gl_dp)*", but technically they are two different (and opposite) things.
 
 Check the glossary for more information.
 :::::::::::::::
@@ -358,7 +358,7 @@ I like to think of dead code as "wasted code", which is:
 - Unused code: complete functions that are never called are a waste of memory (because they may be loaded in RAM) and of disk space, making the executables bigger;
 - Debug code: sometimes we need to write code to debug other code, this code may end up being part of a "release version" and weigh it down, this may also make the game more sensitive to cheating and hacking.
 
-You should be careful when optimizing out dead code, even more when you are dealing with functions which result is not used: those functions may change some global state (or change stuff by usage of *side effects*~[g]~).
+You should be careful when optimizing out dead code, even more when you are dealing with functions which result is not used: those functions may change some global state (or change stuff by usage of *[side effects~\[g\]~](#gl_sideeffect)*).
 
 Non-Optimizations
 -----------------

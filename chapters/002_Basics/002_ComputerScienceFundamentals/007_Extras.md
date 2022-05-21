@@ -99,11 +99,11 @@ Introduction to Multi-Tasking
 
 When it comes to humans, we are used to have everything at our disposal immediately, but when it comes to computers, each processing unit (CPU) is usually able to perform only one task at a time.
 
-To allow for multi-tasking (doing many activities at once), the CPU switches between tasks at high speeds, giving us the illusion that many things are happening at once. There are many methods to ensure multi-tasking without *process starvation*~[g]~, the most used is *pre-emption*~[g]~ where there are forced context switches between processes, to avoid one hogging the CPU.
+To allow for multi-tasking (doing many activities at once), the CPU switches between tasks at high speeds, giving us the illusion that many things are happening at once. There are many methods to ensure multi-tasking without *[process starvation~\[g\]~](#gl_process_starvation)*, the most used is *[pre-emption~\[g\]~](#gl_preemption)* where there are forced context switches between processes, to avoid one hogging the CPU.
 
 ### Coroutines
 
-If you search for the word "coroutine" online, you will find a lot of extremely convoluted explanations involving the knowledge of the difference between *preemptive*~[g]~ and *non-preemptive* multitasking, subroutines, threads and lots more. Let's try to make sense of this.
+If you search for the word "coroutine" online, you will find a lot of extremely convoluted explanations involving the knowledge of the difference between *[preemptive~\[g\]~](#gl_preemptivemt)* and *non-preemptive* multitasking, subroutines, threads and lots more. Let's try to make sense of this.
 
 First of all, coroutines are computer programs can run in multitasking (so it can run separated from our main game loop) which are used in non-preemptive multitasking. Differently from the preemptive style defined in the glossary, in non preemptive multitasking the operating system never forces a context switch, but it's the coroutine's job to **yield** the control over to another function.
 
@@ -187,7 +187,7 @@ The easiest way to implement thread-safety is to make the shared data immutable.
 
 #### Mutex
 
-Mutex (Short for **mut**ual **ex**clusion) means that the access to the shared data is serialized in a way that only one thread can read or write to such data at any given time. Mutual exclusion can be achieved via algorithms (be careful of *out of order execution*~[g]~), via hardware or using "software mutex devices" like:
+Mutex (Short for **mut**ual **ex**clusion) means that the access to the shared data is serialized in a way that only one thread can read or write to such data at any given time. Mutual exclusion can be achieved via algorithms (be careful of *[out of order execution~\[g\]~](#gl_oooe)*), via hardware or using "software mutex devices" like:
 
 - Locks (known also as *mutexes*)
 - Semaphores

@@ -181,9 +181,9 @@ We have cases of "DRMs interacting with the games badly" left and right, for ins
 
 This brings to something that many find annoying and unfair: people pay to play an original game and are hindered by DRM, while pirates are free from such hindrance for the fact that they pirated the game. You paid for the game, and you pay the price for other people pirating it, in the form of frame drops, slowdowns and sometimes flat out unplayability.
 
-Another thing players hate is having a piece of software that acts out of its scope, or even worse as a *malware*~[g]~.
+Another thing players hate is having a piece of software that acts out of its scope or, even worse, similarly to a *[malware~\[g\]~](#gl_malware)*.
 
-There have been cases of DRM systems installing themselves as *rootkits*~[g]~, making it impossible for the player to uninstall them, even after removing the game said DRM was tied to.
+There have been cases of DRM systems installing themselves as *[rootkits~\[g\]~](#gl_rootkit)*, making it impossible for the player to uninstall them, even after removing the game said DRM was tied to.
 
 For instance that's what happened with the free game "Sonic Gather Battle", a tournament fighter fan game starring the beloved Blue Hedgehog. This game contained a piece of software that would track your browser tabs: if you searched for cheats/mods/hacks, it would close your browser and enable a "protection stage", making the game impossible to play, by adding immortal enemies that would one-shot you.
 

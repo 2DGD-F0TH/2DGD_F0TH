@@ -3,7 +3,7 @@ Generic Programming
 
 Sometimes it may be necessary (mostly in the case of containers) to have the same kind of code to work on different data types, which means that we need to **abstract types into variables** and be able to code accounting for such types.
 
-**Generic Programming** is a blanket-term that defines a style of computer programming where algorithms are written in terms of "to be specified later" data types, this usually applies to languages that make use of *static typing*~[g]~.
+**Generic Programming** is a blanket-term that defines a style of computer programming where algorithms are written in terms of "to be specified later" data types, this usually applies to languages that make use of *[static typing~\[g\]~](#gl_statictyping)*.
 
 Advanced Containers
 -------------------
@@ -149,7 +149,7 @@ Table: Summary Table for Linked Lists
 
 Hash Tables are a good way to store **unordered data** that can be referred by a "key". These structures have different names, like "maps", "dictionaries" or "hash maps".
 
-The idea behind a hash map is having a key subject to a *hash function*~[g]~ that will decide where the item will be positioned in the internal structure.
+The idea behind a hash map is having a key subject to a *[hash function~\[g\]~](#gl_hashfunc)* that will decide where the item will be positioned in the internal structure.
 
 ![Hash Table Reference Image (Hash Table with Buckets)](./images/computer_science/hashtable_reference.svg){width=40%}
 

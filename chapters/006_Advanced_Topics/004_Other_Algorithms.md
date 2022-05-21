@@ -111,7 +111,7 @@ In some versions of the algorithm we need to also keep track of cells that will 
 ```{src='algorithms/recursive_backtracker' caption='Example implementation of recursive backtracker maze generation'}
 ```
 
-This algorithm can involve a big deal of recursion, which can lead to a *stack overflow*~[g]~ in your program, stopping the algorithm from working and your game in its entirety. It is possible to work around this issue by using an explicit stack, instead of using the call stack.
+This algorithm can involve a big deal of recursion, which can lead to a *[stack overflow~\[g\]~](#gl_stackoverflow)* in your program, stopping the algorithm from working and your game in its entirety. It is possible to work around this issue by using an explicit stack, instead of using the call stack.
 
 ```{src='algorithms/recursive_backtracker_stack' caption='Example implementation of recursive backtracker with an explicit stack'}
 ```

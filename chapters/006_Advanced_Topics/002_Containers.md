@@ -246,7 +246,7 @@ Inbetweening
 
 Inbetweening, also known as "tweening", is a method that allows to "smear" a value over time, this is usually done with animations, where you set the beginning and end position of a certain object, as well as the time the movement should take, and let the program take care of the animation.
 
-This is particularly useful in animating *UI*~[g]~ objects, to give a more refined feel to the game.
+This is particularly useful in animating *[UI~\[g\]~](#gl_ui)* objects, to give a more refined feel to the game.
 
 Here we will present some simple tweenings that can be programmed, and explain them.
 
