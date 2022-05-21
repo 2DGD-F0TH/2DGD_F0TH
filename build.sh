@@ -25,7 +25,7 @@ RESULT=$(dialog --title "Penaz's (Mis)Guided Build System"\
     js "JavaScript Edition (PDF)" off\
     epub_js "JavaScript Edition (Epub)" off\
     lua "Lua Edition (PDF)" off\
-    epub_lua "Python Edition (Epub)" off\
+    epub_lua "Lua Edition (Epub)" off\
 )
 
 RETURN_VALUE=$?
@@ -36,10 +36,15 @@ case "$RETURN_VALUE" in
     0)  # Build selected
         echo "Building...";
         make ${RESULT};;
-    3)  # Build All
-        # TODO: Add checks for completeness of language listings
+    3)  # Build All Selected
         echo "Building all files...";
-        make all;;
+        MISSING_LISTINGS=$(./scripts/listing_status.py -q)
+        if [ ${MISSING_LISTINGS} -ne 0 ];
+        then
+            echo "There are ${MISSING_LISTINGS} missing listings, cannot build all editions";
+        else
+            make all;
+        fi;;
     1)  # Aborted
         echo "Build Aborted";
         exit 1;;
