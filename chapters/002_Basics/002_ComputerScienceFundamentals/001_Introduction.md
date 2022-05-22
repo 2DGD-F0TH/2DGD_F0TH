@@ -34,6 +34,8 @@ The way that a programming language gets you from code to "working product" can 
 
 Compiled languages need to go through a building process before it is possible for the product to be run anywhere. This has some advantages, as well as some disadvantages.
 
+![Example of a compiler output (G++)](./images/computer_science/gpp_example.png){width=50%}
+
 Among the disadvantages we have that the final product is usually non-portable, that means it cannot be run anywhere besides the machine it was compiled for. This means that you will have to create separate builds for each console, as well as different builds for each operating system.
 
 Another disadvantage can be development speed: before you can test anything your game needs to be rebuilt. Sometimes the rebuild process can be quick (thanks to some techniques that avoid building things that didn't change), something it can be long.
@@ -45,6 +47,10 @@ Among compiled languages we can find C and C++, as well as Rust and Go.
 ##### Interpreted Languages
 
 Interpreted languages, in their strictest sense, are at the other side of the spectrum: the program is not compiled ahead of time but instead the source code is fed into an interpreter, which executes each row of instructions, one after the other.
+
+Most interpreted languages feature an interactive *[REPL~\[g\]~](#gl_repl)* (read-eval-print loop) which allows to test code in real time.
+
+![Python's REPL Shell](./images/computer_science/python_repl.png){width=50%}
 
 They have the disadvantage of being usually slower than compiled languages and it's not easy to create builds that physically remove unused (debug) code without having to modify the sources manually. Also each console or operating system will need to have the interpreter installed, which may be an issue.
 

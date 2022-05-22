@@ -112,6 +112,9 @@ R {.unnumbered .unlisted}
 [Race Condition]{#gl_racecondition}
 : A condition where two or more threads are competing for a resource (variable, screen buffer, ...) and the order that the threads happen to take hold of such resource changes the result.
 
+[REPL]{#gl_repl}
+: Short for "Read-Eval-Print Loop", sometimes called "language shell". It's a simple computer program that presents a prompt where the user can write code in real time, line by line, and see each piece being executed immediately.
+
 [Rootkit]{#gl_rootkit}
 : Usually associated with malware, a rootkit is a software that manages to get access to reserved areas of an operating system, usually to hide its own, or other softwares' presence.
 
