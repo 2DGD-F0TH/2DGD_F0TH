@@ -81,6 +81,8 @@ In some situations (as you will see in the [SAT](#SAT)), we may need to get to p
 
 Given the formulas we've seen earlier, and doing some thinking, we can easily project a point onto any straight line. Let's see how to do it.
 
+First of all, the line we will projecting onto will have equation $y=mx+q$, just as in the slope-intercept formula.
+
 We will assume that we have a point $P(x_p,y_p)$ that we want to project onto a line $r$ with equation $y=mx+q$, with $m \neq 0$ (thus excluding horizontal lines). We will call the projected point "P onto r" with the name $P_r(x_r,y_r)$.
 
 ![Projecting the point P onto the line r](./images/maths/projection.svg){width=40%}
@@ -90,7 +92,9 @@ First, we need to find the line that goes through $P$ and is perpendicular to $r
 $$m_1 = \frac{1}{m}$$
 
 ::: pitfall :::
-This is why we excluded the case $m=0$ (horizontal lines), if we didn't we would have the chance of having $m_1 = \frac{1}{0}$ which doesn't make sense
+This is why we excluded the case $m=0$ (horizontal lines), if we didn't we would have the chance of having $m_1 = \frac{1}{0}$ which doesn't make sense.
+
+In this case we can easily conclude that if $m=0$, the projection of the point $P$ onto the line $r$ has coordinates $(x_P, y)$ (with y taken from the line we're projecting onto).
 :::::::::::::::
 
 Now we have a point and a slope, so we can use one of the formulas we've already seen to find the line with that slope that crosses $P$:

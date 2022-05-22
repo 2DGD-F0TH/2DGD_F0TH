@@ -19,7 +19,7 @@ $v = (2,4)$
 
 $u = (1,5)$
 
-The sum vector `s` will then be:
+The sum vector $s$ will then be:
 
 $s = u + v = (2+1, 4+5) = (3,9)$
 
