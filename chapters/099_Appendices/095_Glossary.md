@@ -7,8 +7,17 @@ Glossary
 A {.unnumbered .unlisted}
 -----
 
+[A.L.U.]{#gl_alu}
+: Short for "Arithmetic Logic Unit", it's a component in modern CPUs that does arithmetic and [bitwise operations~\[g\]~](#gl_bitwiseop) on integer binary numbers.
+
 [API]{#gl_api}
 : Short for "Application Programming Interface", it's a set of definitions, tools and clearly defined methods of communication between various software components.
+
+B {.unnumbered .unlisted}
+-----
+
+[Bitwise Operation]{#gl_bitwiseop}
+: Bitwise operations are operations that operate on individual bits. For instance, if bitwise operations are done between bytes, a bitwise operation will still operate bit by bit. (Example: `01001100 AND 10001100 = 00001100`)
 
 C {.unnumbered .unlisted}
 -----

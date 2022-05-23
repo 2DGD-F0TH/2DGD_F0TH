@@ -155,6 +155,12 @@ Such methods are outside the scope of this book as of now.
 
 Here we can see how big-O estimates compare to each other, graphically and how important it is to write not-inefficient algorithms.
 
+If we had to write it as an inequality, from more to least efficient, we would have something like this (only considering Big-O notation):
+
+$$
+O(1) < O(\log{n}) < O(n) < O(n\cdot\log{n}) < O(n^2) < O(2^n)
+$$
+
 ![Big-O Estimates, plotted](./images/computer_science/big_o_plot.svg){width=60%}
 
 There is a very specific reason why the $O(2^n)$ estimate is missing from the previous plot: we wouldn't be able to see anything worthwhile if it was included, as seen from the following plot:

@@ -64,7 +64,7 @@ In any project, the ability to code quickly is as important as the performance o
 
 Thus some hybrid approaches have been invented: one of these is, for instance, bytecode-compiled languages.
 
-Bytecode-compiled languages (sometimes called "Intermediate representations") are something that is not quite compiled, but it's not precisely interpreted either: the code is converted into bytecode, which is then fed to the interpreter (or "virtual machine") to run.
+Bytecode-compiled languages (sometimes called "Languages with intermediate representation") are something that is not quite compiled, but it's not precisely interpreted either: the code is converted into bytecode, which is then fed to the interpreter (or "virtual machine") to run.
 
 Being a representation that is "closer to the hardware" than the original source code, there is a gain in performance, while keeping the flexibility of interpreted code.
 
@@ -96,7 +96,7 @@ Functional languages include Haskell, Common Lisp and Scheme.
 
 ##### Multiparadigm Languages
 
-Many programming languages tend to "melt together" many programming paradygms, allowing (for instance) for functional style programming in imperative languages.
+Many programming languages tend to "meld together" many programming paradygms, allowing (for instance) for functional style programming in imperative languages.
 
 This means that functions can be bound to variables and passed around as any other object, they can be composed to reach the result if the programmer decides to do so (for instance for readability).
 
@@ -182,7 +182,7 @@ Here is a quick rundown of how the languages used in the various editions of thi
 
 - **C++**, a compiled programming language with strong static typing. It is multiparadigm (although it was born as an imperative language) and has no garbage collector.
 - **JavaScript**, an interpreted language (although some engines support Just-In-Time compiling), with weak dynamic typing that supports some duck typing principles. It is multiparadigm and features a garbage collector.
-- **Lua**, an bytecode-compiled (or Just-In-Time compiled) language, with strong dynamic typing that supports some duck typing principles. It is multiparadigm and garbage-collected.
+- **Lua**, a bytecode-compiled (or Just-In-Time compiled) language, with strong dynamic typing that supports some duck typing principles. It is multiparadigm and garbage-collected.
 - **Python**, a bytecode-compiled language, with strong duck typing. It is multiparadigm and garbage-collected.
 
 <!-- TODO: Add more languages as more editions come out -->
@@ -298,7 +298,7 @@ Catastrophic Cancellation (sometimes called "cancellation error") is an event th
 
 **Warning:** from here on, in this section, there will be some technical language. I will try to make it as simple and understandable as possible.
 
-Let's imagine a computer, such computer's memory can handle at most 8 decimals while its A.L.U. (the unit that takes case of "doing maths") can handle at most 16 decimal places.
+Let's imagine a computer, such computer's memory can handle at most 8 decimals while its *[A.L.U.~\[g\]~](#gl_alu)* (the unit that takes case of "doing maths") can handle at most 16 decimal places.
 
 Now let's take two numbers:
 
@@ -327,7 +327,7 @@ That doesn't look so bad, unless we look at the "relative error":
 
 $$\delta = \frac{| 0.239772 \times 10^{-7} - 0.2 \times 10^{-7} |}{0.239772 \times 10^{-7}} = 16.6\%$$
 
-Oh no... We're off by 16\% of the total result! That's a huge loss! A real catastrophe.
+We are off by 16\% of the total result, this is actually really bad.
 
 What happened? If you look closely, the numbers are really close and even have 7 decimal digits in common, since our computer can memorize only 8 digits, the 9th to 13th decimal digits that looked so unimportant suddenly become a huge part of the result (due to the subtraction) but are already lost.
 
