@@ -72,4 +72,21 @@ PlayableCharacter .up.> Updatable
 PlayableCharacter .up.> Visible
 PlayableCharacter .up.> Collidable
 
+note as N1
+    The fields will contain the following instances:
+    - visiblecomponent: VisibleObject
+    - collidablecomponent: CollidableObject
+    - movablecomponent: ImmovableObject
+end note
+
+note as N2
+    The fields will contain the following instances:
+    - visiblecomponent: VisibleObject
+    - collidablecomponent: CollidableObject
+    - movablecomponent: MovableObject
+end note
+
+N1 .left.> Building
+PlayableCharacter .left.> N2
+
 @enduml
