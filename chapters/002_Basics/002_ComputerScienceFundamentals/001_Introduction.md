@@ -128,9 +128,9 @@ Duck typing is probably the most misunderstood typing system. It can be describe
 
 This means that types are inferred by their behaviour (their capabilities), thus creating a series of `-like` objects that behave more or less the same. This means that types can make use of the iteration capabilities of the language as long as they implement some basic methods that allow iteration (like `nextElement()` and `length()`).
 
-This means that we have "file-like" objects, which behave like files, are used like files, but not necessarily have a counterpart in mass storage (they could be in-memory files), or "iterables" (sometimes called "list-like") which behave like lists of items, but may actually be strings (seen as a "list of letters").
+This means that we have "file-like" objects, which behave like files, are used like files, but not necessarily have a counterpart in mass storage (they could be in-memory files), or "iterables" (sometimes called "list-like") which behave like lists of items, but may actually be something else (for instance strings could be seen as a "list of letters").
 
-In the end, in duck typing, the interfaces are treated as some kind of "informal protocol" that tells the language how to use an object. The "protocol" doesn't even need to be implemented fully: if you have a "file-like" object that implements only the reading method, you can still use it as it was a file, as long as you don't try to write to it.
+In the end, in duck typing, interfaces are treated as some kind of "informal protocol" that tells the language how to use an object. The "protocol" doesn't even need to be implemented fully: if you have a "file-like" object that implements only the reading method, you can still use it in the same way you'd use a file, as long as you don't try to write to it.
 
 Duck Typing is used in the Python programming language.
 
@@ -164,7 +164,7 @@ Another way to classify programming languages is how you can (or have to) manage
 
 Some programming languages allow you to play with your system's memory as you wish: they give you all the tools (pointers, references, ...) to manually allocate and free memory.
 
-This comes with its advantages and drawbacks: higher performance is surely a big advantage. A huge disadvantage is the fact that memory management is completely manual: dangling pointers and unreachable memory are common place, because there is nothing to clear after you.
+This comes with its advantages and drawbacks: higher performance is surely a big advantage. A huge disadvantage is the fact that memory management is completely manual: dangling pointers and unreachable memory are commonplace, because there is nothing to clear after you.
 
 Non Garbage-collected languages include C and C++.
 
@@ -240,7 +240,7 @@ There are many differences between humans and computers, among those there is on
 
 This requires computers to represent numbers differently, usually with the exponent+fraction representation (IEEE 754). Also computers have limited resources, thus have no concept of "infinity" (and conversely of "infinitesimal").
 
-Let's assume a computer with a reduced precision and we execute the following C++ program:
+Let's assume a computer with a fixed (and reduced) precision and we execute the following C++ program (you can just copy it verbatim):
 
 ```{.cpp caption="A simple float precision test"}
 #include <iostream>
@@ -248,7 +248,7 @@ Let's assume a computer with a reduced precision and we execute the following C+
 
 int main ()
 {
-    // This will reduce the computer's precision for this execution
+    // This will reduce and fix the computer's precision for this execution
     std::cout << std::setprecision(20);
 
     float d1(1.0);
@@ -338,7 +338,7 @@ Computers are deterministic machines, given the same set of instructions and inp
 
 The most important number when generating random numbers is called *seed* and it's the number used by the *generator* to produce random numbers.
 
-Let's see an example of a random number generator in C++:
+Let's see an example of a random number generator in C++ (you can copy this program verbatim to try it):
 
 ```{.cpp caption="A simple random number generation program"}
 #include<iostream>
