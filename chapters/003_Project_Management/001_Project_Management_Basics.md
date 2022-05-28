@@ -7,7 +7,7 @@ Project Management Basics and tips
 Those who plan do better than those who do not plan even though they rarely stick to their plan.
 ::::::
 
-Project management is a very broad topic but I feel that some basics and tips should be covered in this book, as knowing some project management can save you a lot of headaches and can make the difference between success and a colossal failure.
+Project management is a very broad topic but I feel that some basics and tips should be covered in this book. Knowing some project management can save you a lot of headaches and can make the difference between success and a colossal failure.
 
 The figures of game design and development
 ------------------------------------------
@@ -126,11 +126,11 @@ Some general tips
 
 ### Be careful of feature creep
 
-The "it would be cool to" trap, formally called "feature creep", is a huge problem in all projects that involve any amount of passion in them.
+The "it would be cool to..." trap, formally called "feature creep", is a huge problem in all projects that involve any amount of passion in them.
 
 Saying "it would be cool to do `<insert something here>`: let's implement it!" can spiral out of control and make us implement new features forever, keeping us from taking care of the basics that make a good game (or make a game at all).
 
-Try to stick to the basics first, and then eventually expand when your game is already released, if it's worth it: First make it work, only then make it work well.
+Try to stick to the basics first, and then eventually expand when your game is already released, if it's worth it: first make it work, then make it work well and only in the end make it elegant.
 
 ### On project duration
 
@@ -154,7 +154,9 @@ This is a productive activity to perform at the beginning of the game developmen
 
 After the initial phase of brainstorming, the team analyzes the ideas and discards the impossible ones, followed by the ones that are not "as good as they sounded at first". The remaining ideas can come together to either form a concept of a videogame or some secondary component of it.
 
-In short: brainstorming is a great activity for innovation, but since it's essentially "throwing stuff at a wall and see what sticks" it can also be unproductive or even "excessively productive" and in both cases we end up with nothing in our hands.
+In short: brainstorming is a great activity for innovation, but since it's essentially "throwing stuff at a wall and see what sticks".
+
+This activity can sometimes be either unproductive or "excessively productive": in both cases we end up with nothing of use in our hands.
 
 ### On Sequels
 
@@ -162,11 +164,11 @@ In case your game becomes a hit, you will probably think about making a sequel: 
 
 When developing a sequel, you will have to live up to your previous game, as well as the expectations of the players, and this becomes more and more difficult as the "successful sequels" go on.
 
-Not only a sequel must be "as good or better" than its predecessor, but also it should add something to the original game, as well as the established lore (if there is one).
+Not only a sequel must be "as good or better" than its predecessor, but also it should add something to the original game, as well as the established lore (if there is any).
 
-Your time and resource management must be top-notch to be able to "bring more with less", since your resource needs cannot skyrocket without a reason.
+Your time and resource management must be top-notch to be able to "bring more with less", since your need for resources cannot skyrocket without a very good reason.
 
-Also don't get caught in the some kind of "sequel disease" where you end up making a sequel just to "milk the intellectual property": you will end up ruining the whole series.
+Also don't get caught in the some kind of "sequel disease" where you end up making a sequel just to "milk the intellectual property": you will end up ruining the whole series: it may end up being hated by the ones who played the first games, and new players will be discouraged by a series that either overstays its welcome, or has one or more low-quality sequels.
 
 Common Errors and Pitfalls
 ---------------------------
@@ -175,7 +177,7 @@ When you are making a new game, it's easy to feel lost and "out of your comfort 
 
 ### Losing motivation
 
-Sometimes it can happen to lose motivation, usually due to having "too much ambition": make sure you can develop the kind of game you want to make, and also leave multiplayer out of the question. It will just suck up development time, and it isn't that much of an important feature anyway (and it can still be implemented later, see *Stardew Valley*).
+Sometimes it can happen to lose motivation, usually due to having "too much ambition": make sure you can develop the kind of game you want to make, for instance leave multiplayer out of the question (multiplayer games are really hard and network code can be a real pain to work on). It will just suck up development time, and it isn't that much of an important feature anyway (and it can still be implemented later, like it happened in *Stardew Valley*).
 
 Like in music, many people prefer "mediocrity" to "something great", so don't force yourself to innovate: do things well enough and if the innovative idea comes, welcome it.
 
@@ -185,7 +187,7 @@ If you get tired, take a break, you're your own boss, and no one is behind you z
 
 It happens: you have a ton of ideas for games of all kinds, and probably you'll start thinking:
 
-> what is bad about a small "side project", to change things up a bit
+> What's bad about a small "side project"? I want to change things up a bit...
 
 You will end up having lots of "started projects" and nothing finished, your energy will deplete, things will become confusing and you won't know what game you're working on anymore.
 
@@ -193,17 +195,17 @@ Instead, make a small concept for the new mechanic and try to implement it in yo
 
 ### Making a game "in isolation"
 
-While making a game you will need to gather some public for it, as well as create some hype around it: making a game on your own without involving the public is a mistake that deprives you of a huge source of suggestions and (constructive) criticism.
+While making a game you will need to gather some public for it, as well as create some hype around it: making a game on your own without involving the public is a mistake that deprives you of a huge source of suggestions and (constructive) criticism (as well as satisfaction, when you manage to get some people interested in your game).
 
 Make your game public, on platforms like `itch.io` or `IndieDB`, get feedback and encouragement. Create trailers towards the end of development, put them on `YouTube` or `Vimeo` and if you want to go all out, get in touch with the press (locally first) and create hype around your product.
 
-### Mishandling Criticism
+### (Mis)Handling Criticism
 
-Among all the other things going on, we also need to handle feedback from our "potential players", and this requires quite the mental effort, since we can't make it "automatic".
+Among all the other things that are happening, we also need to handle feedback from our "potential players", and this requires quite the mental effort, since we can't make it "automatic".
 
-Not all criticism can be classified as "trolling", and forging our game without listening to any feedback will only mean that such game won't be liked by as many people as we would like, maybe for a very simple problem that could have been solved if only we listened to the public.
+Not all criticism can be classified as "trolling", and forging our game without listening to any feedback will only mean that such game won't be liked by as many people as we would like, maybe for a very simple problem that could have been solved if only we listened to them.
 
-At the same time, not all criticism is "useful" either, not classifying criticism as "trolling" does not mean that trolling doesn't exist, some people will take pride in ruining other people's mood by being annoying and uselessly critic, or even finding issues that don't exist.
+At the same time, not all criticism is "useful" either, not classifying criticism as "trolling" does not mean that trolling doesn't exist, some people will take pride in ruining other people's mood, either by being annoying and uselessly critic, or by finding issues that don't actually exist.
 
 The question you should ask yourself is simple:
 
@@ -260,9 +262,9 @@ This usually is related to licensing markets. And here lies the final nail on th
 
 ### Not letting others test your game
 
-This is a common mistake when you are focused on making the game: using your own skill as a "universal measure" for the world's skill level. You may be an unknown master at 2D platformers, and as such what can be "mildly difficult" for you may be "utterly impossible" for the average player. Or the opposite.
+This is a common mistake when you are focused on making the game: using your own skill as a "universal measure" for the world's skill level. You may be an unknown master at 2D platformers, and as such what is "mildly difficult" for you may be "utterly impossible" for the average player. Or the opposite.
 
-Try to keep the challenge constant through the levels, applying the usual slight upwards curve in difficulty that most games have, and let others test your game.
+Try to keep the challenge constant through the levels, applying the usual slight upwards curve in difficulty that most games have (or check the section about [difficulty curves](#diff_curves) for some ideas), and let others test your game.
 
 A beta version with feedback capabilities (or just a beta version and a form or email address can do the trick too) is pure gold when it comes to understanding what your players think about the game's challenge level.
 
@@ -270,7 +272,7 @@ Remember: when a level is (perceived as unfairly) too hard, players will stop pl
 
 ### Being perfectionist
 
-If you are called "perfectionist" by your friends, that should be a red flag in your game development process since the beginning.
+If you are called "perfectionist" by your friends, that should be a red flag in your game development process from the very beginning.
 
 Finding yourself honing the game over and over, allocating countless hours (that always feel as "not enough") into making the game "better", will end up just sabotaging the development process itself.
 

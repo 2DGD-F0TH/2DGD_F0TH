@@ -25,7 +25,7 @@ Here are some examples of mechanics that will surely annoy the player:
 - **Arbitrary invisible time limits:** If you suddenly interrupt the player's game with a "time up" and you have no countdown on the screen, the player will get frustrated, guaranteed;
 - **Taking control away from the player:** Not allowing the player to move (getting blocked by an enemy and killed) or just not allowing the player to adjust their jump mid-air is a surefire way to make them not play your game anymore.
 
-Difficulty curves
+Difficulty curves {#diff_curves}
 -----------------
 
 When designing our game, it may be useful (sometimes mandatory) to have a high-level view of how our game's difficulty will evolve as the game itself is played. If we take a cartesian plane and define time as the $x$ axis, while the "perceived difficulty" is plotted on the $y$ axis, we would obtain a **difficulty curve**, a high-level representation of how difficulty evolves as the game is played.
