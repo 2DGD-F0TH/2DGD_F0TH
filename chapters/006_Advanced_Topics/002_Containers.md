@@ -262,7 +262,9 @@ Let's explain the variables used:
 - **change**: represents the change between the beginning and destination value of the property;
 - **duration**: represents the duration of the tween.
 
-Note that the measure (time / duration) represents the "percentage of completion" of the tweening.
+:::: note ::::
+The measure (time / duration) represents the "percentage of completion" of the tweening.
+::::::::::::::
 
 In some cases a Linear tweening is not enough, that's where *easing* comes into play.
 
