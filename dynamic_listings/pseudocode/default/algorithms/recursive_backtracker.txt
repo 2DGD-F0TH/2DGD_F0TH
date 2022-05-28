@@ -11,7 +11,7 @@ class Maze{
         boolean[] cells = [width x height] 2D array filled with "True";
         }
 
-    function make_path(self, x, y){
+    function make_path(x, y){
         /*
          * Given a cell coordinates, sets the cell as a path
          */
