@@ -32,8 +32,10 @@ class Maze{
         // this will simulate the system stack
         this.carved_passages.push([x, y]);
         // When the "carved_passages" array is empty, we are back at the start of the maze
-        let stored_x = x
-        let stored_y = y
+        let stored_x = x;
+        let stored_y = y;
+        let next_x = null;
+        let next_y = null;
         // While the array is not empty
         while (!carved_passages.length != 0){
             // We dig a path in the current cell
@@ -56,8 +58,8 @@ class Maze{
                 // Calculate the new node's coordinates using the chosen direction.
                 // We are doubling the movement in each direction, so some cells
                 // can act as walls
-                let next_x = stored_x + (direction_to_try.x * 2);
-                let next_y = stored_y + (direction_to_try.y * 2);
+                next_x = stored_x + (direction_to_try.x * 2);
+                next_y = stored_y + (direction_to_try.y * 2);
 
                 // If the node we found is a wall, it means we didn't visit it
                 // (and it's inside our maze boundaries)

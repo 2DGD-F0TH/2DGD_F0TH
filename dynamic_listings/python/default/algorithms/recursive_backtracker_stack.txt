@@ -35,6 +35,8 @@ class Maze:
         # start of the maze
         stored_x = x
         stored_y = y
+        next_x = None
+        next_y = None
         while (self.carved_passages):
             # We dig a path in the current cell
             self.make_path(stored_x, stored_y)

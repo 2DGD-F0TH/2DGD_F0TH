@@ -30,6 +30,8 @@ class Maze{
         // When the "carved_passages" array is empty, we are back at the start of the maze
         int stored_x = x
         int stored_y = y
+        int next_x = null;
+        int next_y = null;
         while (not carved_passages.is_empty()){
             // We dig a path in the current cell
             make_path(stored_x, stored_y);
