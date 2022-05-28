@@ -1,5 +1,5 @@
 class Maze{
-    constructor(w, h):
+    constructor(w, h){
         /*
          * A simple constructor
          */
@@ -10,6 +10,7 @@ class Maze{
         // False = Path, True = Wall
         boolean[] cells = [width x height] 2D array filled with "True";
         Vector2D[] carved_passages = new Vector2D[];
+    }
 
     // ...
     // Same as the previous example
