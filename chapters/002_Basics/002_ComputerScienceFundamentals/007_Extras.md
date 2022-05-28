@@ -101,6 +101,12 @@ When it comes to humans, we are used to have everything at our disposal immediat
 
 To allow for multi-tasking (doing many activities at once), the CPU switches between tasks at high speeds, giving us the illusion that many things are happening at once. There are many methods to ensure multi-tasking without *[process starvation~\[g\]~](#gl_process_starvation)*, the most used is *[pre-emption~\[g\]~](#gl_preemption)* where there are forced context switches between processes, to avoid one hogging the CPU.
 
+### Multi-Threading vs Multi-Processing
+
+{{placeholder}}
+
+<!-- TODO: Add difference of multithreading vs multiprocessing -->
+
 ### Coroutines
 
 If you search for the word "coroutine" online, you will find a lot of extremely convoluted explanations involving the knowledge of the difference between *[preemptive~\[g\]~](#gl_preemptivemt)* and *non-preemptive* multitasking, subroutines, threads and lots more. Let's try to make sense of this.
