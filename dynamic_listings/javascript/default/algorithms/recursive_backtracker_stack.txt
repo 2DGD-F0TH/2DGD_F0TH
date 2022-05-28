@@ -30,7 +30,7 @@ class Maze{
         */
         // First thing, we push our cell into our "carved passages",
         // this will simulate the system stack
-        this.carved_passages.push([x, y]);
+        this.carved_passages.push({"x": x, "y": y});
         // When the "carved_passages" array is empty, we are back at the start of the maze
         let stored_x = x;
         let stored_y = y;
@@ -42,10 +42,10 @@ class Maze{
             make_path(stored_x, stored_y);
             // We create a list of available directions (x and y)
             directions = [
-                [1, 0],
-                [-1, 0],
-                [0, 1],
-                [0, -1]
+                {"x": 1, "y": 0},
+                {"x": -1, "y": 0},
+                {"x": 0, "y": 1},
+                {"x": 0, "y": -1}
             ];
             // And we shuffle them (it needs a specialized function, cause javascript doesn't have one)
             directions = shuffle_array(directions);
@@ -74,7 +74,7 @@ class Maze{
 
                     // Repeat the carving process with the new coordinates
                     // we do this by pushing into the stack
-                    carved_passages.push([next_x, next_y]);
+                    carved_passages.push({"x": next_x, "y": next_y});
                 }
             }
             // If all available directions are exhausted, we pop
