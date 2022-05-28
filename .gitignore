@@ -284,3 +284,6 @@ gladtex_imgs/*
 
 ### Personal Notes
 NOTES.md
+
+### Sumneko Lua files
+.luarc.json
