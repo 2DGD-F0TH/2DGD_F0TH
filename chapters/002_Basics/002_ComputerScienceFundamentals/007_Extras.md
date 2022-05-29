@@ -103,9 +103,17 @@ To allow for multi-tasking (doing many activities at once), the CPU switches bet
 
 ### Multi-Threading vs Multi-Processing
 
-{{placeholder}}
+Sometimes Multi-Threading and Multi-Processing are used interchangeably, but this is actually not correct. Let's see the differences between the two terms and how they contribute (in different ways) to allow multi-tasking.
 
-<!-- TODO: Add difference of multithreading vs multiprocessing -->
+**Multi-Processing** is a practice that makes use of multiple CPUs inside the same machine, this allows to process CPU-intensive calculations in a parallel manner, thus gaining performance in our software. This style of parallelization is usually done by spawning multiple processes, each of which will be run on a different CPU (or Core).
+
+Multi-Processing has some disadvantages: creating a process can be quite expensive and thus give us some tangible overhead if processes are created and destroyed often.
+
+**Multi-Threading** is a programming practice that allows to run different "lines of execution" (called "threads"), inside of the same parent process, so to achieve the maximum possible CPU utilization.
+
+Multi-Threading has the advantage of lower overhead, since threads are quite cheap to create, but also has some more limitations when the tasks to execute are "CPU-bound" (take a lot of CPU time).
+
+Multi-Threading works well when the threads are "I/O bound" (they use network or disk a lot, while the CPU usage is low), this means essentially that while one thread is waiting for I/O (like loading an asset), another thread can perform other calculations on the CPU instead of just "wait for the I/O to finish".
 
 ### Coroutines
 
