@@ -276,7 +276,13 @@ If you are called "perfectionist" by your friends, that should be a red flag in 
 
 Finding yourself honing the game over and over, allocating countless hours (that always feel as "not enough") into making the game "better", will end up just sabotaging the development process itself.
 
-When you have:
+Instead try to prefer a more "scientific approach", where you study your game's shortcomings (with the help of some testers, or "friend-made-tester"), order them by their "effort vs improvement" ratio and start with those who require the lowest effort compared to the improvements they bring.
+
+![How to approach improvements on your game](./images/project_management/effort_vs_quality.svg){width=50%}
+
+You can see that you can get really good returns for relatively little effort, but if you're a perfectionist, you may want to push forward and put more and more hours, with diminishing returns.
+
+This means that when you have:
 
 - Good Visuals and Good Audio
 - Working Gameplay

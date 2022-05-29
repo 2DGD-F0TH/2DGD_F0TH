@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   id="svg2"
+   sodipodi:docname="effort_vs_quality.svg"
+   inkscape:export-filename="C:\Users\imyers\Dropbox\0\OA_Charts\var\CartesianPlane_8.png"
+   viewBox="0 0 433.50907 431.74912"
+   inkscape:export-xdpi="90"
+   version="1.1"
+   inkscape:export-ydpi="90"
+   inkscape:version="1.2 (dc2aedaf03, 2022-05-15)"
+   width="433.50906"
+   height="431.74911"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <defs
+     id="defs118" />
+  <sodipodi:namedview
+     id="base"
+     bordercolor="#666666"
+     inkscape:pageshadow="2"
+     inkscape:window-y="0"
+     pagecolor="#ffffff"
+     inkscape:window-height="1019"
+     inkscape:window-maximized="1"
+     inkscape:zoom="2.2202765"
+     inkscape:window-x="0"
+     showgrid="false"
+     borderopacity="1.0"
+     inkscape:current-layer="layer1"
+     inkscape:cx="282.17206"
+     inkscape:cy="305.36737"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:window-width="1920"
+     inkscape:pageopacity="0.0"
+     inkscape:document-units="px"
+     inkscape:document-rotation="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:showpageshadow="2"
+     inkscape:deskcolor="#d1d1d1" />
+  <g
+     id="layer1"
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     transform="translate(-375.43204,-252.31326)">
+    <rect
+       id="rect5041-8-0"
+       style="opacity:0.67257;fill:#cccccc;stroke-width:0.693586"
+       height="344.31848"
+       width="1.925624"
+       y="321.46887"
+       x="447.12671" />
+    <rect
+       id="rect5041-6-1"
+       style="opacity:0.67257;fill:#cccccc;stroke-width:0.693586"
+       height="344.31848"
+       width="1.925624"
+       y="321.46887"
+       x="494.2637" />
+    <rect
+       id="rect5041-0-6"
+       style="opacity:0.67257;fill:#cccccc;stroke-width:0.693586"
+       height="344.31848"
+       width="1.925624"
+       y="321.46887"
+       x="541.39105" />
+    <rect
+       id="rect5041-2-5"
+       style="opacity:0.67257;fill:#cccccc;stroke-width:0.693586"
+       height="344.31848"
+       width="1.925624"
+       y="321.46887"
+       x="588.52808" />
+    <rect
+       id="rect5041-4-7"
+       style="opacity:0.67257;fill:#cccccc;stroke-width:0.693586"
+       height="344.31848"
+       width="1.925624"
+       y="321.46887"
+       x="635.6651" />
+    <rect
+       id="rect5041-86-5"
+       style="opacity:0.67257;fill:#cccccc;stroke-width:0.693586"
+       height="344.31848"
+       width="1.925624"
+       y="321.46887"
+       x="682.79242" />
+    <rect
+       id="rect5041-5-4"
+       style="opacity:0.67257;fill:#cccccc;stroke-width:0.693586"
+       height="344.31848"
+       width="1.925624"
+       y="321.46887"
+       x="729.9295" />
+    <rect
+       id="rect5041-00-9"
+       style="opacity:0.67257;fill:#cccccc;stroke-width:0.693248"
+       transform="rotate(90)"
+       height="348.10007"
+       width="1.9256001"
+       y="-731.85052"
+       x="321.46884" />
+    <rect
+       id="rect5041-61-7"
+       style="opacity:0.67257;fill:#cccccc;stroke-width:0.693248"
+       transform="rotate(90)"
+       height="348.10007"
+       width="1.9256001"
+       y="-731.85052"
+       x="368.60278" />
+    <rect
+       id="rect5041-3-6"
+       style="opacity:0.67257;fill:#cccccc;stroke-width:0.693248"
+       transform="rotate(90)"
+       height="348.10007"
+       width="1.9256001"
+       y="-731.85052"
+       x="415.73672" />
+    <rect
+       id="rect5041-89-2"
+       style="opacity:0.67257;fill:#cccccc;stroke-width:0.693248"
+       transform="rotate(90)"
+       height="348.10007"
+       width="1.9256001"
+       y="-731.85052"
+       x="462.87067" />
+    <rect
+       id="rect5041-42-9"
+       style="opacity:0.67257;fill:#cccccc;stroke-width:0.693248"
+       transform="rotate(90)"
+       height="348.10007"
+       width="1.9256001"
+       y="-731.85052"
+       x="510.00464" />
+    <rect
+       id="rect5041-097-5"
+       style="opacity:0.67257;fill:#cccccc;stroke-width:0.693248"
+       transform="rotate(90)"
+       height="348.10007"
+       width="1.9256001"
+       y="-731.85052"
+       x="557.13855" />
+    <rect
+       id="rect5041-37-2"
+       style="opacity:0.67257;fill:#cccccc;stroke-width:0.693248"
+       transform="rotate(90)"
+       height="348.10007"
+       width="1.9256001"
+       y="-731.85052"
+       x="604.27252" />
+    <text
+       id="text3867-9"
+       style="font-size:12.0003px;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;stroke-width:1.00002"
+       xml:space="preserve"
+       transform="scale(1.0859766,0.92083016)"
+       y="310.914"
+       x="351.73141"><tspan
+   style="font-size:16px;stroke-width:1.00002"
+   id="tspan330">       Quality</tspan>    </text>
+    <text
+       id="text3892-3"
+       style="line-height:0%;font-family:Andalus;letter-spacing:0px;word-spacing:0px;fill:#cccccc"
+       xml:space="preserve"
+       y="314.44348"
+       x="569.61597">       <tspan
+   id="tspan3894-34"
+   sodipodi:role="line"
+   x="569.61597"
+   y="314.44348"
+   style="font-size:39.636px;line-height:1.25">I</tspan>    </text>
+    <path
+       id="path4331-4"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccccccc"
+       style="color:#000000;text-indent:0;text-transform:none;fill:#666666;stroke-width:1.232"
+       d="m 401.01001,252.31326 -4.92114,11.81057 h 3.13941 v 419.93854 h 3.39387 V 264.12383 h 3.309 z" />
+    <path
+       id="path4331-4-2"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccccccc"
+       style="color:#000000;text-indent:0;text-transform:none;fill:#666666;stroke-width:1.22194"
+       d="m 799.01653,652.421 -11.61833,-4.92114 v 3.13941 H 375.43204 v 3.39387 H 787.3982 v 3.309 z" />
+    <text
+       id="text3867-9-3"
+       style="font-size:12.0003px;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;stroke-width:1.00002"
+       xml:space="preserve"
+       transform="scale(1.0859766,0.92083016)"
+       y="731.20978"
+       x="664.4491"><tspan
+   style="font-size:16px;stroke-width:1.00002"
+   id="tspan324">       Effort</tspan>    </text>
+    <path
+       style="fill:none;stroke:#ff0000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+       d="m 413.24998,629.00791 c 264.17909,0 31.07581,-261.13451 307.10613,-269.86335"
+       id="path424"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.02242px;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:4.08967, 4.08967;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 407.25266,416.79899 H 725.47081"
+       id="path1263" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.02242px;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:4.08967, 4.08967;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 404.34941,605.10781 H 722.56756"
+       id="path1263-3" />
+    <text
+       xml:space="preserve"
+       style="font-size:10.6667px;line-height:1.25;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';letter-spacing:0px;word-spacing:0px"
+       x="536.02808"
+       y="624.5473"
+       id="text1289"><tspan
+         sodipodi:role="line"
+         x="536.02808"
+         y="624.5473"
+         id="tspan1291"
+         style="font-size:10.6667px">1. Understanding what needs to be improved</tspan><tspan
+         sodipodi:role="line"
+         x="536.02808"
+         y="637.88068"
+         id="tspan1295"
+         style="font-size:10.6667px">requires effort without giving much result</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:10.6667px;line-height:1.25;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';letter-spacing:0px;word-spacing:0px"
+       x="586.88623"
+       y="481.07651"
+       id="text1299"><tspan
+         sodipodi:role="line"
+         x="586.88623"
+         y="481.07651"
+         style="font-size:10.6667px"
+         id="tspan1301">2. After studying the situation,</tspan><tspan
+         sodipodi:role="line"
+         x="586.88623"
+         y="494.40988"
+         style="font-size:10.6667px"
+         id="tspan1305">working on small things can give</tspan><tspan
+         sodipodi:role="line"
+         x="586.88623"
+         y="507.74326"
+         style="font-size:10.6667px"
+         id="tspan1307">great quality improvements</tspan><tspan
+         sodipodi:role="line"
+         x="586.88623"
+         y="521.07666"
+         style="font-size:10.6667px"
+         id="tspan1323">without much effort.</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:10.6667px;line-height:1.25;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';letter-spacing:0px;word-spacing:0px"
+       x="417.43704"
+       y="350.37833"
+       id="text1311"><tspan
+         sodipodi:role="line"
+         id="tspan1309"
+         x="417.43704"
+         y="350.37833"
+         style="font-size:10.6667px">3. After a certain point, we have</tspan><tspan
+         sodipodi:role="line"
+         x="417.43704"
+         y="363.7117"
+         style="font-size:10.6667px"
+         id="tspan1313">diminishing returns with increasing effort.</tspan></text>
+  </g>
+  <metadata
+     id="metadata115">
+    <rdf:RDF>
+      <cc:Work>
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <cc:license
+           rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+        <dc:publisher>
+          <cc:Agent
+             rdf:about="http://openclipart.org/">
+            <dc:title>Openclipart</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:title>Cartesian Plane 0-8</dc:title>
+        <dc:date>2012-07-14T17:10:38</dc:date>
+        <dc:description />
+        <dc:source>https://openclipart.org/detail/171175/cartesian-plane-0-8-by-xsapien-171175</dc:source>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>XSapien</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>graph</rdf:li>
+            <rdf:li>math</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/licenses/publicdomain/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+</svg>

@@ -79,6 +79,10 @@ As we can see, the test makes use of the "assert" statement, which in many langu
 
 Care should be taken when making automated tests: they should be as simple as possible, to avoid the presence of bugs in the tests themselves, also, like all code in the world, it's subject to its own maintenance: you should thoroughly comment your tests, and if the tested component changes, the connected test should change too, or it may fail.
 
+It may seem a lot of effort coding automated tests, but such effort will be rewarded with lower maintenance effort in the long run: the (sometimes considerable) effort you've put into coding automated tests will avoid a huge deal of manual testing later on and ensure that loss of quality happens a lot less often.
+
+![How the effort put in automated testing can give good returns](./images/project_management/test_effort.svg){width=50%}
+
 ### Manual Testing
 
 Sometimes also called "play testing", this is usually divided in time periods, where more and more people participate:
