@@ -1,0 +1,14 @@
+@startuml
+start
+: Preparation work;
+partition "Game Loop"{
+    repeat
+    : Process Input;
+    : Update Internal Game State;
+    : Draw Screen;
+    repeat while (game is still running?) is (yes)
+    ->no;
+}
+: Clean up;
+end
+@enduml

@@ -10,7 +10,7 @@ All loops are infinite ones for faulty RAM modules.
 The Input-Update-Draw Abstraction
 -----------------------------------
 
-As animations and movies are an illusion, so are games. Games and movies show still images tens of times per second, giving us the illusion of movement.
+Animations and movies are an illusion, and so are games. Games and movies show still images tens of times per second, giving us the illusion of movement.
 
 Any game and its menus can be abstracted into 3 main operations that are performed one after the other, in a loop:
 
@@ -18,7 +18,9 @@ Any game and its menus can be abstracted into 3 main operations that are perform
 2) Update the world (or menu) status
 3) Display (Draw) the updated world (or again, menu) to the screen
 
-![UML Diagram of the input-update-draw abstraction](./images/gameloop/gameloop.svg){width=50%}
+We call such abstraction the "game loop".
+
+![UML Diagram of the input-update-draw abstraction](./images/gameloop/gameloop.svg){width=40%}
 
 So a pseudocode implementation of such loop would be something like the following:
 
@@ -155,7 +157,7 @@ A very common fix for this phenomenon is **double buffering**, where two color b
 
 When comes the time to draw the color buffer on screen, an operation called "flipping" is performed, where the second color buffer is shown on screen, so that the game loop can draw on the first color buffer.
 
-To smooth the game, a technique called "triple buffering" can be used, which adds a third color buffer is used to make the animation smoother at the cost of a higher input lag.
+To make the game even smoother, a technique called "triple buffering" can be used, which adds a third color buffer is used to make the animation smoother at the cost of a higher input lag.
 
 Drawing to screen
 ------------------
