@@ -1,7 +1,7 @@
 constant TILE_WIDTH = 32;
 constant TILE_HEIGHT = 32;
 
-struct Rectangle{
+structure Rectangle{
     // A rectangle will represent the player
     Point corner;
     int width;

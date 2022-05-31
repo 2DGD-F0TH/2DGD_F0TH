@@ -1,4 +1,4 @@
-struct Tile{
+structure Tile{
     integer x;
     integer y;
 }
