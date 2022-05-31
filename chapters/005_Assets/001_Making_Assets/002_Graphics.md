@@ -33,9 +33,19 @@ We can memorize our colors by addressing their primary color components: Red, Gr
 
 ![An example of an RGB picker](./images/resources/RGB.svg){width=40%}
 
-This means that you can represent color with a 3-tuple: $(RRR, GGG, BBB)$, where each channel can take a value from $0$ to $255$ (or $00$ to $FF$ in hexadecimal) if we consider the more commonly used "16 million colors" scheme.
+This means that you can represent color with a 3-tuple: $(RRR, GGG, BBB)$, where each channel can take a value from $0$ to $255$ (or $00$ to $FF$ in hexadecimal, in that case the color is usually prepended by a `#` symbol) if we consider the more commonly used "16 million colors" scheme.
 
-Pure red is represented with the 3-tuple $(255, 0, 0)$, pure green with $(0, 255, 0)$ and pure blue with $(0, 0, 255)$. Black is the absence of any color component, which means it's represented with the $(0, 0, 0)$ 3-tuple, while White is represented with $(255, 255, 255)$.
+- Pure red is represented with the 3-tuple $(255, 0, 0)$ (or `#FF0000` in hex)
+- Pure green with $(0, 255, 0)$ (or `#00FF00`)
+- Pure blue with $(0, 0, 255)$ (or `#0000FF`).
+
+Black is the absence of any color component, which means it's represented with the $(0, 0, 0)$ 3-tuple (of `#000000`), while White is represented with $(255, 255, 255)$ (`#FFFFFF`).
+
+##### RGBA Representation
+
+Sometimes we need to represent transparency, in that case we need an extra pair of bytes to do so. In this case we talk about the "RGBA syste" (Red-Green-Blue-Alpha).
+
+Colors are represented by a 4-tuple: $(RRR, GGG, BBB, AAA)$, where each channel can take a value from $0$ to $255$ (or $00$ to $FF$ in hexadecimal).
 
 ##### HSV Representation
 
