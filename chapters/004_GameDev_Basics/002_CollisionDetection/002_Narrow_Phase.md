@@ -553,7 +553,7 @@ We can see 4 cases here, from the simplest to the hardest:
 - The Square **D** is outside the polygon;
 - The Pentagon **B** is completely inside the polygon
 - The Octagon **E** is colliding with the heptagon **C** and a vertex of **C** is inside of **E**;
-- The heptagon **C** is colliding with the hexagon **A**, but none of its vertices of **C** are inside of **A**;
+- The heptagon **C** is colliding with the hexagon **A**, but none of the vertices of **C** are inside of **A**;
 
 We can easily solve the cases involving **A** and **E** with a "polygon vs line" collision detection, while the case involving **B** can be checked by doing a "polygon vs point" check.
 
