@@ -508,7 +508,7 @@ You should also be very careful on "forcing grinding" on your players: players l
 :::: trivia ::::
 Super Hydlide for the Sega Genesis/MegaDrive is one of the games that had its experience requirements tailored to the tastes of the market it was targeted to.
 
-Considering the Japan release as the baseline, the US release sees its experience requirements halved.
+Considering the Japan release as the baseline, the US release sees its experience requirements halved as well as the given experience doubled.
 ::::::::::::::::
 
 ##### Farming
