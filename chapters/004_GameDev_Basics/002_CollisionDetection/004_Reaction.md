@@ -147,11 +147,11 @@ $$
 Now we need to see how the relative velocity affects the collision, which means we need to project such velocity onto the collision vector. Sounds like a job for the dot product.
 
 $$
-s = \hat{u}_coll \cdot v_{rel}
+s = \hat{u}_{coll} \cdot v_{rel}
 $$
 $s$ can be called "the speed of collision" (it's a scalar number, not a vector) and tells us what we need to know: if $s < 0$ then the objects are moving away from each other already and we don't need to do anything. If $s > 0$ then the objects are moving towards each other
 
-To react to objects that are moving towards each other, we just need to change their velocity by a factor of $s \cdot \hat{u}_coll$.
+To react to objects that are moving towards each other, we just need to change their velocity by a factor of $s \cdot \hat{u}_{coll}$.
 
 {{placeholder}}
 
