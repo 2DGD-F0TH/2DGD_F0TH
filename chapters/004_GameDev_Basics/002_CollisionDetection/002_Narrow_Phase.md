@@ -483,7 +483,7 @@ Considering the fact that the number of triangles `m` is tied to the number of v
 
 $$ m = n - 2 $$
 
-We have an upper bound of $O(n+m) = O(n+n+2) = \sim O(n)$, this is because the constant gets "squashed by the linear behaviour" of `n`, and $2 \cdot n$ behaves asymptotically in the same way as $n$ when the dataset grows.
+We have an upper bound of $O(n+m) = O(n+n-2) = \sim O(n)$, this is because the constant gets "squashed by the linear behaviour" of `n`, and $2 \cdot n$ behaves asymptotically in the same way as $n$ when the dataset grows.
 
 Even though we have a tight bound of $\Theta(n)$ in our entire algorithm (which means the amount of calculations goes up slowly with the addition of new vertices), we need to be mindful of the amount of calculation that is done, including some heavy operations like square roots.
 
