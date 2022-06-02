@@ -393,7 +393,7 @@ This pattern should be used with extreme care and only when necessary, since add
 
 **Advantages**        Decoupling, added readability.
 
-**Disadvantages**     May become overused, delegating adds a bit of overhead, sometimes it may be wrongly used where either an adapter or a decorator is needed.
+**Disadvantages**     May become overused, delegating adds a bit of overhead, sometimes it may be wrongly used where either an adapter or a decorator is needed. May become a [single point of failure~\[g\]~](#gl_spof).
 
 ------------------------------------------------------------------------------------------------
 

@@ -133,6 +133,9 @@ S {.unnumbered .unlisted}
 [Side Effect]{#gl_sideeffect}
 : In computer science a function is said to have a "side effect" when it changes variables outside its local environment, this can happen in languages which use *[call by reference~\[g\]~](#gl_cbr)* evaluation strategies.
 
+[Single Point of Failure]{#gl_spof}
+: This usually defines a part of a system that, if it fails, will stop the entire system from working. This is often used to indicate objects that have too many responsibilities.
+
 [Soft Locking]{#gl_softlocking}
 : This is usually referred as an anomalous situation where a game is not "frozen" and still working correctly, but the player is unable to continue playing. An example of soft-locking would be the player getting trapped inside level geometry, unable to move: the game is not frozen (the level can be restarted), but the player cannot finish the level.
 
