@@ -140,7 +140,7 @@ This usually ends up with opponents getting faster the further in the lead the p
 You can see as a virtual "rubber band" that ties your opponents to you, the more the rubber band is stretched, the more the opponents are "attracted" to you (or you to them, it can work both ways).
 
 ::: trivia :::
-"Rubberbanding" is not limited to racing games. For instance NBA Jam tweaks player skills to keep the game competitive and enjoyable.
+"Rubberbanding" is not limited to racing games. For instance NBA Jam tweaks player skills to keep the game competitive and enjoyable by using rubberbanding: if you're too far ahead, the opponents will get a skill boost.
 ::::::::::::::
 
 ### Static vs. Adaptive Difficulty
@@ -150,6 +150,8 @@ Each approach has its own advantages and shortcomings, which can make one or the
 Static difficulty is easy to create and leaves choice to the players between varying levels of difficulty; maybe someone wants a more "relaxing experience" instead of being continuously challenged.
 
 The biggest shortcoming is that each level of difficulty is an estimate of its difficulty, so an "easy mode" may be way too easy, while the "normal" mode may be too hard for someone. It's hard to find the balance.
+
+Static difficulty can be planned by using [difficulty curves](#diff_curves), which can be part of either a technical or a proper game design document.
 
 Also there's all the work dedicated to program the parameters for each level of difficulty.
 
