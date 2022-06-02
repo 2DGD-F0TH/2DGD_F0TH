@@ -31,6 +31,10 @@ I-Frames can be easily implemented via timers, in a way similar to the following
 ```{src='developing_mechanics/iframes' caption='Example of I-Frames Implementation'}
 ```
 
+:::: tip ::::
+Remember: feedback is important! You need to let the player know when they are invincible due to i-frames. This can be done by making the player semi-transparent, flashing or anything else that can indicate a "different status".
+:::::::::::::
+
 ### Scrolling Backgrounds and Parallax Scrolling
 
 #### Infinitely Scrolling Backgrounds {#infiniback}
@@ -82,7 +86,7 @@ This is a small improvements that can be done on menu systems: if the player is 
 
 In many frameworks when a fullscreen game window "captures" the mouse cursor, this is put on the center of the screen, which could be where a menu item is positioned.
 
-Now imagine you are "flowing through" the menu, trying to load a saved file and the cursor is detected pointing at the "delete savefile" option; you are briskly walking through the menu and what you think is the "do you want to load this file?" dialog is actually asking "do you want to **delete** this savefile?". You click "yes" and your savefile is gone!
+Now imagine you are "flowing through" the menu, trying to load a saved file and the cursor is detected pointing at the "delete savefile" option; you are briskly walking through the menu and what you think is the "do you want to load this file?" dialog is actually asking "do you want to **delete** this savefile?". You select "yes" by pressing enter on your keyboard and your savefile is gone!
 
 This is an extreme edge case, but it could happen. Even if it is a minor annoyance like starting a new savefile when instead you want to load an existing one, it diminishes the quality of your experience.
 
