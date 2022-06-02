@@ -1,0 +1,6 @@
+graph G{
+    // Neato
+    A -- B -- C;
+    A -- D -- B;
+    D -- E;
+}
