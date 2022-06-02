@@ -28,7 +28,15 @@ When making our game's audio, we should always stay around such value, since goi
 
 ![Graphical Representation of Sample Rate (8KHz)](./images/resources/Sample_Rate_8000.png){width=60%}
 
-Also we should avoid using weird sample rates, 44.1KHz (or 44100 Hz if you prefer) is a "magic value" that guarantees the most compatibility.
+Also we should avoid using weird sample rates, here are some the most commonly used:
+
+- 44.1kHz (or 44100 Hz if you prefer), used in the CD Audio format;
+- 48kHz, used in Pro Audio contexts;
+
+While working with audio (mixing and editing), we can go higher:
+
+- 88.2kHz - Double the CD Audio standard, used to record and recreate more frequencies;
+- 96kHz used in some serious Professional audio contexts.
 
 #### Bit Depth
 
