@@ -69,6 +69,10 @@ This can also work with products that offer really innovating concepts, and rare
 
 There is something psychologically magic about the number 9. When you price something at \$0.99 instead of \$1.00, it looks like you're giving away the product for almost-free. Same goes for pricing your game \$39.99 instead of \$40.00, the price will look a lot closer to \$30.00 than \$40.00, even though the difference to \$40.00 is just 1 cent.
 
+![How first impressions leave a mark, even when it comes to price](./images/marketing/price_9.svg){width=30%}
+
+This effect is due to how our brains work: we're always trying to "be lazy", so our brain does a "first pass" which reads the price as being in the 60\$ range (for the reference image), and only then we realize it's actually much closer to 70. By that time, we already had a "first impression" of the price, which will be hard to remove.
+
 ### Launch Prices
 
 Another way to create product awareness is setting a "launch price": a discounted price for the period the game is launching (for example a week), after that the game's price goes back to its "listing price".
