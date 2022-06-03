@@ -60,13 +60,13 @@ The biggest drawback of this kind of curve is its predictability: after a while,
 
 #### Logarithmic Line
 
-The logarithmic line is usually presented as a "guide" for more advanced types of curves. This is due to the fact that it has some glaring problems.
+The logarithmic line is usually presented as a "guide" for more advanced types of curves. This is due to the fact that it has some major issues.
 
 ![A Logarithmic difficulty curve](./images/balancing/logarithmic_line.svg){width=40%}
 
 The beginning of the game has a steep learning curve, which eases up as the game goes on. This means that the game is really hard at the beginning but the challenge dies down towards the end, which can make for a game very difficult to learn but not much more.
 
-This can be a good curve if you want to "test the might and patience" of your players, but if not paired with a different approach in the late game, it may end up being plain boring.
+This can be a good curve if you want to "test the might and patience" of your players, but if not paired with a different approach in the late game, it may end up being boring in the long run.
 
 #### Exponential Line
 
@@ -166,14 +166,14 @@ Difficulty is not everything in a game: a game may greatly enjoy from other elem
 
 Other games benefit from collectathon traits: deck-building games are a prime example. You start with a basic "deck of cards" which have certain powers, as you play the game more cards unlock and soon enough the player is enjoying the feel of strategy that comes from "building the perfect deck".
 
-Always favour the player
-------------------------
+Favour the player when possible
+-------------------------------
 
 In the process of balancing a game, as a game developer/designer you will surely find yourself in front of the following decision time and time again:
 
 > Shall I favour the game's precision or should I give some leeway to the player?
 
-The answer is always the latter.
+The answer is the latter 99% of the time.
 
 Giving some leeway to the player, for instance by having a more generous hit-box that allows you to stay alive even if a bullet grazes your character makes the game seem more "fair".
 

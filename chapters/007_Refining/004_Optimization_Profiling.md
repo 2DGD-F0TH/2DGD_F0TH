@@ -138,9 +138,10 @@ This way instead we're doing sanity checks and related operations only once, mov
 
 One of the biggest scourges in software development (and an even bigger one in game development) are memory leaks: the program allocates memory but doesn't release it properly.
 
-Memory management (as well as any kind of "resource management") can be summarized in 3 phases:
+Memory management (as well as any kind of "resource management") can be summarized in 4 phases:
 
 - Acquisition;
+- Initialization;
 - Usage;
 - Release.
 

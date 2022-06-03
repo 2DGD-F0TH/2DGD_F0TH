@@ -83,7 +83,9 @@ Having an option to disable or tone down flashing lights and intense (sometimes 
 No motion blur
 --------------
 
-There are some people like motion blur, some who don't and some who can't physically stand it: making motion blur a toggle can be both a quality of life improvement as well as something that can help people who have issues with sight.
+There are some people that like motion blur, some who don't and some who can't physically stand it: making motion blur a toggle can be both a quality of life improvement as well as something that can help people who have issues with sight.
+
+Making it a slider so the player can "dial it in" is a great thing too: it adds a level of customization, as well as being a performance settings too (motion blur can slow down the game on older platforms).
 
 
 Reduced Motion
