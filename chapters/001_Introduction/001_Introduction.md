@@ -98,7 +98,7 @@ If instead you're reading a version that features "language extensions", all alg
 
 This book comes in various editions, and they come with some caveats.
 
-- **Pseudocode Edition:** This is the standard edition, using a C-like syntax that tries to be as readable as possible and abstracts itself from any kind of engine;
+- **Pseudocode Edition:** This is the standard edition, using a C-like syntax that tries to be as readable as possible and abstracts itself from any kind of engine.
 - **Python Edition:** Python is considered one of the easiest language to start coding on. Many tend to complain about its performance, but its similarity to Godot Engine's GDScript and its flexibility make it a good candidate for starters.
 - **C++ Edition:** C++ is probably the most used language in game development (along with C#) but it can be really difficult to manage. It has no garbage collection, forcing you to manage the memory manually, and pointers can prove to be a difficult concept for many.
 - **JavaScript Edition:** Javascript is the de-facto "internet language" and its influence is spreading to desktop applications and videogames too. Many games now can be played on the browser thanks to it and the HTML5 canvas elements. This is a language that can be very forgiving and frustrating at the same time.
@@ -113,26 +113,27 @@ This book is structured in many chapters, here you will find a small description
 - **Introduction:** Here we present the structure of the book and the reasons why it came to exist. You are reading it now, hold tight, you're almost there!
 - **The Maths Behind Game Development:** Here we will learn the basic maths that are behind any game, like vectors, matrices and screen coordinates.
 - **Some Computer Science Fundamentals:** Here we will learn (or revise) some known computer science fundamentals (and some less-known too!) and rules that will help us managing the development of our game.
+- **A game design dictionary:** Here we will introduce some basic concepts that will help us in understanding game design: platforms, input devices and genres.
 - **Project Management Tips:** Project management is hard! Here we will take a look at some common pitfalls and tips that will help us deliver our own project and deliver it in time.
-- **Introduction to game design:** In this section we will talk about platforms games can run on, input methods as well as some game genres.
-- **Writing a Game Design Document:** In this section we will take a look at one of the first documents that comes to exist when we want to make a game, and how to write one.
+- **Writing a Game Design Document:** In this section we will take a look at one of the first documents that comes to exist when we want to make a game, and how to write one,
 - **The Game Loop:** Here we will learn the basics of the "game loop", the very base of any video game.
 - **Collision Detection and Reaction:** In this section we will talk about one of the most complex and computationally expensive operations in a video game: collision detection.
-- **Cameras:** In this section we will talk about the different types of cameras you can implement in a 2D game, with in-depth analysis and explanation;
+- **Scene Trees:** Here we will briefly talk about probably the most important structure in games and game engines: the scene tree.
+- **Cameras:** In this section we will talk about the different types of cameras you can implement in a 2D game, with in-depth analysis and explanation.
 - **Game Design:** In this chapter we will talk about level design and how to walk your player through the learning and reinforcement of game mechanics, dipping our toes into the huge topic that is game design.
 - **Creating your resources:** Small or solo game developers may need to create their own resources, in this section we will take a look at how to create our own graphics, sounds and music.
-- **Procedural Content Generation:** In this chapters we will see the difference between procedural and random content generation and how procedural generation can apply to more things than we think.
-- **Design Patterns:** A head-first dive into the software engineering side of game development, in this section we will check many software design patterns used in many games;
-- **Useful Containers and Class:** A series of useful classes and containers used to make your game more maintainable and better performing.
-- **Artificial Intelligence in Video games:** In this section we will talk about algorithms that will help you coding your enemy AI, as well as anything that must have a "semblance of intelligence" in your video game;
+- **Design Patterns:** A head-first dive into the software engineering side of game development, in this section we will check many software design patterns used in many games.
+- **Useful Containers and Classes:** A series of useful classes and containers used to make your game more maintainable and better performing.
+- **Artificial Intelligence in Video games:** In this section we will talk about algorithms that will help you coding your enemy AI, as well as anything that must have a "semblance of intelligence" in your video game.
 - **Other Useful Algorithms:** In this section we will see some algorithms that are commonly used in game, including path finding, world generation and more.
+- **Procedural Content Generation:** In this chapters we will see the difference between procedural and random content generation and how procedural generation can apply to more things than we think.
 - **Developing Game Mechanics:** Here we will dive into the game development's darkest and dirtiest secrets, how games fool us into strong emotions but also how some of the most used mechanics are implemented.
+- **Balancing Your Game:** A very idealistic vision on game balance, in this chapter we will take a look inside the player's mind and look at how something that may seem "a nice challenge" to us can translate into a "terrible balance issue" to our players.
 - **Accessibility in video games:** Here we will learn the concept of "accessibility" and see what options we can give to our players to make our game more accessible (as well as more enjoyable to use).
 - **Testing your game:** This section is all about hunting bugs, without a can of bug spray. A deep dive into the world of testing, both automated and manual.
-- **Optimizing and Profiling your game:** When things don't go right, like the game is stuttering or too slow, we have to rely on profiling and optimization. In this section we will learn tips and tricks and procedures to see how to make our games perform better.
-- **Balancing Your Game:** A very idealistic vision on game balance, in this chapter we will take a look inside the player's mind and look at how something that may seem "a nice challenge" to us can translate into a "terrible balance issue" to our players.
+- **Profiling and Optimization:** When things don't go right, like the game is stuttering or too slow, we have to rely on profiling and optimization. In this section we will learn tips and tricks and procedures to see how to make our games perform better.
 - **Marketing Your Game:** Here we will take a look at mistakes the industry has done when marketing and maintaining their own products, from the point of view of a small indie developer. We will also check some of the more controversial topics like loot boxes, micro transactions and season passes.
-- **Engaging your community:** a lot of a game's power comes from its community, in this section we will take a look at some suggestion you can implement in your game (and out-of-game too) to further engage your loyal fans.
+- **Keeping your players engaged:** a lot of a game's power comes from its community, in this section we will take a look at some suggestion you can implement in your game (and out-of-game too) to further engage your loyal fans.
 - **Game Jams:** A small section dedicated on Game Jams and how to participate to one without losing your mind in the process, and still deliver a prototype.
 - **Dissecting Games:** A small section dedicated to dissecting the characteristics of one (very) bad game, and one (very) good game, to give us more perspective on what makes a good game "good" and what instead makes a bad one.
 - **Project Ideas:** In this section we take a look at some projects you can try and make by yourself, each project is divided into 3 levels and each level will list the skills you need to master in order to be able to take on such level.
