@@ -85,12 +85,12 @@ A great way to gather some more tech-savvy fans of your game is opening your gam
 
 Mods are a great way to engage your community, and the are just so many types of mods that can be made:
 
-- **Data Packs:** These add new user-created content to the game, such as:
+- **Data Packs** - These add new user-created content to the game, such as:
     - New Maps/Levels;
     - Upgraded Textures;
     - Upgraded Models (if the game is 3D);
     - Upgraded Sounds;
-- **Feature Mods:** These add new features to the game, such as:
+- **Feature Mods** - These add new features to the game, such as:
     - New game modes;
     - HUD Modifications or upgrades (mini maps for instance);
     - New options and settings;
