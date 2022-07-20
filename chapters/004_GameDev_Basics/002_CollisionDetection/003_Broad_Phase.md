@@ -78,7 +78,7 @@ Where quad trees shine is when we have an object and we want to check for collis
 
 Using our "back pointer" we can refer back to the quad tree and severely limit the number of collision tests: any object will be able to collide only with its ancestors or descendants.
 
-![Querying a quad-tree](./images/collision_detection/quad_tree_query.svg){width=50%}
+![Querying a quad-tree will make it easy to find possible collisions](./images/collision_detection/quad_tree_query.svg){width=50%}
 
 {{placeholder}}
 
@@ -102,7 +102,7 @@ This can look a bit confusing, let's see how the tree would look like:
 
 The performance of this tree is tightly related to its "balancing": differently from other types of "balanced trees", AABB-trees rely on how evenly each parent node is split by its children (instead of the usual "depth" metric). If an AABB-tree doesn't split evenly, the algorithm won't be able to "exclude" as many nodes on each iteration, thus degrading to a brute-force method (trying the given AABB against all other bounding boxes).
 
-#### Querying
+#### Querying AABB-trees
 
 The idea behind this type of tree is making queries as fast as we can, and that can be done by checking on smaller rectangles on every iteration of our search algorithm. For instance we can find a list of possible colliding entities with a given bounding box in only a few tests (in our example).
 
@@ -126,6 +126,12 @@ We do the "left (red) child" test, we're colliding with the relative bounding bo
 {{placeholder}}
 
 <!-- TODO: A simple explanation of AABB trees to allow for account for proximity of objects -->
+
+### Collision groups
+
+{{placeholder}}
+
+<!-- TODO: Collidable objects can be separated into groups which can only collide with each other (for instance bullets can collide with enemies, but not with walls since we may not be interested). This reduces the number of queries and makes for more generic code. -->
 
 Other Collision Detection Methods
 ---------------------------------
