@@ -78,7 +78,7 @@ Where quad trees shine is when we have an object and we want to check for collis
 
 Using our "back pointer" we can refer back to the quad tree and severely limit the number of collision tests: any object will be able to collide only with its ancestors or descendants.
 
-![Querying a quad-tree will make it easy to find possible collisions](./images/collision_detection/quad_tree_query.svg){width=50%}
+<!-- TODO: Make a step-by-step query of a quad-tree -->
 
 {{placeholder}}
 
