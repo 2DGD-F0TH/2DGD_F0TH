@@ -58,7 +58,27 @@ With the original brute force method, we will make at most 49 tests for 7 items 
 - 1 Test against node 6 (6-7);
 - 1 Test against node 7 (7-6).
 
-For a total of 10 tests, which can be further optimized by avoiding testing pairs of objects that have already been tested.
+For a total of 10 tests, which can be further optimized by avoiding testing pairs of objects that have already been tested. But this is if we want to test all objects for collision against all other objects (thus it is a somewhat more optimized "brute force").
+
+#### A more precise definition
+
+To be more precise, quad-trees are part of the group of "spatial acceleration structures". They are structures that are usually used on top of other containers (like arrays) to accelerate or reduce the number of accesses.
+
+For example, you may have an existing array and using pointers you can use a quad-tree to quickly refer to the place in memory a certain object is.
+
+![Quad trees as spacial acceleration structures](./images/collision_detection/quad_tree_accelerator_1.svg){width=50%}
+
+Redundancy will help us making things quicker and easier, adding a pointer from the underlying data structure back to the quad-tree will help us understanding where an object is positioned.
+
+![Redundancy in quad-tree pointers](./images/collision_detection/quad_tree_accelerator_2.svg){width=50%}
+
+#### Querying quad trees
+
+Where quad trees shine is when we have an object and we want to check for collisions with any other object.
+
+Using our "back pointer" we can refer back to the quad tree and severely limit the number of collision tests: any object will be able to collide only with its ancestors or descendants.
+
+![Querying a quad-tree](./images/collision_detection/quad_tree_query.svg){width=50%}
 
 {{placeholder}}
 
