@@ -62,7 +62,7 @@ For a total of 10 tests, which can be further optimized by avoiding testing pair
 
 {{placeholder}}
 
-<!-- TODO: Easier on the CPU but harder to implement, every frame you build a quad tree and use that to check on collisions -->
+<!-- TODO: Easier on the CPU but harder to implement, you build a quad tree and use that to check on collisions: every frame you can use special moving operations to keep the Quad-tree up to date -->
 
 ### Building AABB-Trees
 
