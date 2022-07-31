@@ -175,7 +175,7 @@ These more specific tools can track the FPS, memory as well as the calls done to
 
 ### Resource Pools {#res_pools}
 
-Among the most performance-hungry operations in computers we find instantiation and destruction of objects: they involve context switches in the CPU, memory allocation/freeing and a sleuth of other things.
+Among the most performance-hungry operations in computers we find instantiation and destruction of objects: they involve context switches in the CPU, memory allocation/freeing and a lot of other things.
 
 If you find yourself needing to instantiate and destroy a lot of objects of the same type, you may want to consider a "resource pool" for such object.
 
