@@ -274,6 +274,18 @@ If we know that we are working with millions of values, and we are going through
 ```{src='optimization/lazy_mode' caption='A lazy object'}
 ```
 
+### Detach your updating from drawing
+
+An interesting approach to squeeze a bit more performance from your game could be detaching your updates from the drawing routine. For instance, your game could be refreshing its screen at 60fps, but its internal state is updated only 20 times a second.
+
+This will obviously introduce some complications, since you may need some interpolation to make things work smoothly. This approach will get rid of a lot of heavy work (in the case above, you will get rid of $\frac{2}{3}$ of the updates), freeing resources for new things.
+
+This means that you can process AI less times (thus "check for player's presence" once every 50ms instead of once every 16), physics can be processed less too (we don't care if a block starts falling after 15 or 50ms, the time is still too short for us to notice).
+
+Deatching your updates from the drawing routines usually entails a change of language too: when you're talking about drawing cycles, we talk about "frames", while when you're talking about updates, you should be talking about "game ticks".
+
+{{placeholder}}
+
 Tips and tricks
 ---------------
 
