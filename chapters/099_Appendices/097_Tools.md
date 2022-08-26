@@ -3,7 +3,7 @@
 Some other useful tools
 ========================
 
-Graphics {.unnumbered .unlisted}
+Graphics
 ------------
 
 ### Aseprite {.unnumbered .unlisted}
@@ -66,7 +66,7 @@ Pixelorama is a really interesting beast, since it is made using the Godot game 
 
 <https://orama-interactive.itch.io/pixelorama>
 
-Shaders {.unnumbered .unlisted}
+Shaders
 ----------
 
 ### SHADERed {.unnumbered .unlisted}
@@ -75,7 +75,7 @@ SHADERed is a fully-featured IDE for coding GLSL and HLSL shaders, it supports d
 
 <https://shadered.org/>
 
-Sounds and Music {.unnumbered .unlisted}
+Sounds and Music
 ---------------------
 
 ### Audacity {.unnumbered .unlisted}
@@ -172,7 +172,7 @@ This is another SFXR-inspired sound generator, but instead of generating static 
 
 <https://github.com/fenomas/wafxr>
 
-Maps {.unnumbered .unlisted}
+Maps
 --------
 
 ### LDtk {.unnumbered .unlisted}
@@ -187,7 +187,7 @@ Tiled is a map editor tool that can be used to draw your maps using a tilemap, s
 
 <https://www.mapeditor.org/>
 
-Libraries {.unnumbered .unlisted}
+Libraries
 ---------
 
 ### Open Adaptive Music Library (oaml) {.unnumbered .unlisted}
@@ -196,7 +196,7 @@ Oaml is a library dedicated to the development of adaptive music in videogames, 
 
 <https://oamldev.github.io/>
 
-Misc {.unnumbered .unlisted}
+Misc
 ----
 
 ### Chronolapse {.unnumbered .unlisted}
