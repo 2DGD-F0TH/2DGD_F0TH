@@ -387,6 +387,32 @@ Unity is probably among the most famous 3D engines used to create videogames, as
 
 Unity is a proprietary engine, distributed under a proprietary license, with a Free edition available.
 
+### UPBGE {.unnumbered .unlisted}
+
+**Website:** <https://upbge.org/>
+
+**Price:** Free
+
+Since 2018, Blender doesn't ship with its own game engine anymore. UPBGE is a project to bring back such feature, built on top of the newer Blender versions, and then some.
+
+**Relevant Bindings:**
+
+| C++        | C          | C#         | Go         | Java       | Python     | Ruby       | Lua        | Rust       | JavaScript |
+|:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |
+|            |            |            |            |            |  ✓         |            |            |            |            |
+
+**Other Bindings:**
+
+| Proprietary Language | Visual Programming |
+| :-:                  | :-:                |
+|  ✓                   |  ✓                 |
+
+**Platform Compatibility:**
+
+| Windows    | Linux      | Mac OS     | iOS        | Android    | Web-Based  |
+|:-------:   |:-----:     |:------:    |:---:       |:-------:   |:---------: |
+| ✓ | ✓ | ✓ |   |   |   |
+
 Genre-Specific
 --------------
 
