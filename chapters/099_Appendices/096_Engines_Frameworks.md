@@ -19,6 +19,14 @@ For each proposed engine or framework, along with a short description, you will 
 General Purpose
 ---------------
 
+### ENIGMA {.unnumbered .unlisted}
+
+{{placeholder}}
+
+<!-- TODO: Description -->
+
+<https://enigma-dev.org/docs/Wiki/ENIGMA>
+
 ### Game Maker Studio {.unnumbered .unlisted}
 
 **Website:** <https://www.yoyogames.com/gamemaker>
@@ -417,5 +425,62 @@ Genre-Specific
 --------------
 
 {{placeholder}}
+
+### EasyRPG {.unnumbered .unlisted}
+
+{{placeholder}}
+
+<!--TODO: Description -->
+
+<https://easyrpg.org/>
+
+### O.H.R.RPG.C.E. {.unnumbered .unlisted}
+
+{{placeholder}}
+
+<!--TODO: Description -->
+
+<http://rpg.hamsterrepublic.com/ohrrpgce/About>
+
+### OpenBOR {.unnumbered .unlisted}
+
+{{placeholder}}
+
+<!--TODO: Description -->
+
+<https://github.com/DCurrent/openbor>
+
+### Ren'Py {.unnumbered .unlisted}
+
+{{placeholder}}
+
+<!--TODO: Description -->
+
+<https://www.renpy.org/>
+
+### RPG Maker {.unnumbered .unlisted}
+
+{{placeholder}}
+
+<!--TODO: Description -->
+
+<https://www.rpgmakerweb.com/>
+
+### RPG Paper Maker {.unnumbered .unlisted}
+
+{{placeholder}}
+
+<!--TODO: Description -->
+
+<http://rpg-paper-maker.com/>
+
+
+### Stratagus {.unnumbered .unlisted}
+
+{{placeholder}}
+
+<!--TODO: Description -->
+
+<https://github.com/Wargus/stratagus>
 
 <!-- TODO: Here go all the specific engines, like RPG maker -->
