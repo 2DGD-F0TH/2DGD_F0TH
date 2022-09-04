@@ -19,13 +19,35 @@ For each proposed engine or framework, along with a short description, you will 
 General Purpose
 ---------------
 
+General purpose engines are the basic frameworks that allow you to build any game you want, without being tied to a specific genre. These are the tools that give you the most freedom, but also will be a bit harder to master.
+
 ### ENIGMA {.unnumbered .unlisted}
 
-{{placeholder}}
+**Website:** <https://enigma-dev.org/docs/Wiki/ENIGMA>
 
-<!-- TODO: Description -->
+**Price:** Open Source
 
-<https://enigma-dev.org/docs/Wiki/ENIGMA>
+ENIGMA (Extensible Non-Interpreted Game Maker Augmentation) is an environment that is derived from Game Maker, but with time has taken a different approach than its counterpart: it compiles its own language (EDL) to C++ and it also allows to tie into C++'s templates and functions.
+
+**Relevant Bindings:**
+
+| C++        | C          | C#         | Go         | Java       | Python     | Ruby       | Lua        | Rust       | JavaScript |
+|:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |
+| ✓          |            |            |            |            |            |            |            |            |            |
+
+**Other Bindings:**
+
+| Proprietary Language | Visual Programming |
+| :-:                  | :-:                |
+| ✓                    | ✓                  |
+
+**Platform Compatibility:**
+
+| Windows    | Linux      | Mac OS     | iOS        | Android    | Web-Based  |
+|:-------:   |:-----:     |:------:    |:---:       |:-------:   |:---------: |
+| ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+
+ENIGMA's license is GPL3, with a special exhemption that allows you to sell the products made with the software.
 
 ### Game Maker Studio {.unnumbered .unlisted}
 
@@ -263,7 +285,7 @@ Ogre3D is an open source 3D graphics engine (it's used to render 3D graphics onl
 
 | C++        | C          | C#         | Go         | Java       | Python     | Ruby       | Lua        | Rust       | JavaScript |
 |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |
-| ✓ |            | ✓ |            | ✓ | ✓ | ✓ |            |            |            |
+| ✓          |            | ✓          |            | ✓          | ✓          | ✓          |            |            |            |
 
 **Other Bindings:**
 
@@ -275,7 +297,7 @@ Ogre3D is an open source 3D graphics engine (it's used to render 3D graphics onl
 
 | Windows    | Linux      | Mac OS     | iOS        | Android    | Web-Based  |
 |:-------:   |:-----:     |:------:    |:---:       |:-------:   |:---------: |
-| ✓ | ✓ | ✓ |            |            |            |
+| ✓          | ✓          | ✓          |            |            |            |
 
 Ogre3D comes in 2 versions: version 1.x is distributed under the GNU LGPL license, while the more recent 2.x version is distributed under the more premissive MIT license.
 
@@ -421,18 +443,39 @@ Since 2018, Blender doesn't ship with its own game engine anymore. UPBGE is a pr
 |:-------:   |:-----:     |:------:    |:---:       |:-------:   |:---------: |
 | ✓ | ✓ | ✓ |   |   |   |
 
+
 Genre-Specific
 --------------
 
-{{placeholder}}
+Sometimes you don't need all the tools to make your own game, sometimes you want your adventure to fit some pretty common standards and not deviate too much from them. Genre-specific engines allow you to ditch both the complexity and freedom of the general-purpose engines to have an easier time making your own adventure.
+
+These engines allow you to focus more on the content of your game, instead of wasting time crunching code.
 
 ### EasyRPG {.unnumbered .unlisted}
 
-{{placeholder}}
+**Website:** <https://easyrpg.org/>
 
-<!--TODO: Description -->
+**Price:** Open Source
 
-<https://easyrpg.org/>
+EasyRPG is a development environment focused on creating RPG games, trying to maintain compatibility with the older RPG Maker 2000/2003 software.
+
+**Relevant Bindings:**
+
+| C++        | C          | C#         | Go         | Java       | Python     | Ruby       | Lua        | Rust       | JavaScript |
+|:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |
+|            |            |            |            |            |            |            |            |            |            |
+
+**Other Bindings:**
+
+| Proprietary Language | Visual Programming |
+| :-:                  | :-:                |
+| ✓           | ✓         |
+
+**Platform Compatibility:**
+
+| Windows    | Linux      | Mac OS     | iOS        | Android    | Web-Based  |
+|:-------:   |:-----:     |:------:    |:---:       |:-------:   |:---------: |
+| ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 
 ### O.H.R.RPG.C.E. {.unnumbered .unlisted}
 
@@ -444,11 +487,29 @@ Genre-Specific
 
 ### OpenBOR {.unnumbered .unlisted}
 
-{{placeholder}}
+**Website:** <https://github.com/DCurrent/openbor>
 
-<!--TODO: Description -->
+**Price:** Open Source
 
-<https://github.com/DCurrent/openbor>
+OpenBOR is an open source implementation of a side-scroller beat-em-up engine (in the style of Streets of Rage or Final Fight). It has an active community, even if releases are infrequent.
+
+**Relevant Bindings:**
+
+| C++        | C          | C#         | Go         | Java       | Python     | Ruby       | Lua        | Rust       | JavaScript |
+|:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |:-:         |
+|            | ✓          |            |            |            |            |            |            |            |            |
+
+**Other Bindings:**
+
+| Proprietary Language | Visual Programming |
+| :-:                  | :-:                |
+|                      |                    |
+
+**Platform Compatibility:**
+
+| Windows    | Linux      | Mac OS     | iOS        | Android    | Web-Based  |
+|:-------:   |:-----:     |:------:    |:---:       |:-------:   |:---------: |
+| ✓          | ✓          |            |            | ✓          |            |
 
 ### Ren'Py {.unnumbered .unlisted}
 
