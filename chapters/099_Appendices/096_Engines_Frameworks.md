@@ -163,6 +163,12 @@ Godot is a fully-fledged engine that makes use of a node-based approach and supp
 
 Godot is currently distributed under the MIT license, you should check the Legal section of the Godot Documentation for all the additional licenses that you may need to know about.
 
+### Gosu {.unnumbered .unlisted}
+
+<https://www.libgosu.org/>
+
+{{placeholder}}
+
 ### IRRlicht {.unnumbered .unlisted}
 
 **Website:** <http://irrlicht.sourceforge.net/>
