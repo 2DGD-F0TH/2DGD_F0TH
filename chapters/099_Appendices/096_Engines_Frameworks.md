@@ -19,6 +19,7 @@ General Purpose
 
 General purpose engines are the basic frameworks that allow you to build any game you want, without being tied to a specific genre. These are the tools that give you the most freedom, but also will be a bit harder to master.
 
+* * * * * * * * * *
 
 ### ENIGMA {.unnumbered .unlisted}
 
@@ -34,6 +35,7 @@ ENIGMA's license is GPL3, with a special exhemption that allows you to sell the 
 
 **Platform Compatibility:** Windows, Linux, Mac OS, iOS, Android and Web.
 
+* * * * * * * * * *
 
 ### Game Maker Studio {.unnumbered .unlisted}
 
@@ -51,6 +53,7 @@ Game Maker Studio is commercial software, regulated by its own EULA, but it was 
 
 **Platform Compatibility:** Windows, Linux, Mac OS, iOS, Android and Web.
 
+* * * * * * * * * *
 
 ### GDevelop {.unnumbered .unlisted}
 
@@ -66,6 +69,7 @@ GDevelop is distributed under the MIT license (although the name and logo are co
 
 **Platform Compatibility:** Windows, Linux, Mac OS, iOS, Android and Web.
 
+* * * * * * * * * *
 
 ### GLFW {.unnumbered .unlisted}
 
@@ -81,6 +85,7 @@ GLFW is distributed under the ZLib/png license, which allows for both commercial
 
 **Platform Compatibility:** Windows, Linux, Mac OS.
 
+* * * * * * * * * *
 
 ### Godot {.unnumbered .unlisted}
 
@@ -96,6 +101,7 @@ Godot is currently distributed under the MIT license, you should check the Legal
 
 **Platform Compatibility:** Windows, Linux, Mac OS, iOS, Android and Web.
 
+* * * * * * * * * *
 
 ### Gosu {.unnumbered .unlisted}
 
@@ -103,6 +109,7 @@ Godot is currently distributed under the MIT license, you should check the Legal
 
 {{placeholder}}
 
+* * * * * * * * * *
 
 ### Löve {.unnumbered .unlisted}
 
@@ -118,6 +125,7 @@ Löve is distributed under the ZLib/png license, which allows for both commercia
 
 **Platform Compatibility:** Windows, Linux, Mac OS, iOS, Android.
 
+* * * * * * * * * *
 
 ### MonoGame {.unnumbered .unlisted}
 
@@ -133,6 +141,7 @@ MonoGame is distributed under a mixed license: Microsoft Public License + MIT Li
 
 **Platform Compatibility:** Windows, Linux, Mac OS, iOS, Android and Web.
 
+* * * * * * * * * *
 
 ### olcPixelGameEngine {.unnumbered .unlisted}
 
@@ -146,6 +155,7 @@ A small framework for pixel drawing and user interface framework coded by javidx
 
 **Platform Compatibility:** Windows, Linux, Mac OS.
 
+* * * * * * * * * *
 
 ### SDL {.unnumbered .unlisted}
 
@@ -163,6 +173,7 @@ The versions of SDL up to version 1.2 are instead distributed under the GNU LGPL
 
 **Platform Compatibility:** Windows, Linux, Mac OS, iOS, Android and Web.
 
+* * * * * * * * * *
 
 ### SFML {.unnumbered .unlisted}
 
@@ -180,6 +191,7 @@ SFML is distributed under the ZLib/png license, which allows for both commercial
 
 \*: Currently in development
 
+* * * * * * * * * *
 
 Genre-Specific
 --------------
@@ -188,6 +200,7 @@ Sometimes you don't need all the tools available to make your own game, sometime
 
 These engines allow you to focus more on the content of your game, instead of wasting time crunching code.
 
+* * * * * * * * * *
 
 ### EasyRPG {.unnumbered .unlisted}
 
@@ -201,6 +214,7 @@ EasyRPG is a development environment focused on creating RPG games, trying to ma
 
 **Platform Compatibility:** Windows, Linux, Mac OS, iOS, Android and Web.
 
+* * * * * * * * * *
 
 ### O.H.R.RPG.C.E. {.unnumbered .unlisted}
 
@@ -210,6 +224,7 @@ EasyRPG is a development environment focused on creating RPG games, trying to ma
 
 <http://rpg.hamsterrepublic.com/ohrrpgce/About>
 
+* * * * * * * * * *
 
 ### OpenBOR {.unnumbered .unlisted}
 
@@ -223,6 +238,7 @@ OpenBOR is an open source implementation of a side-scroller engine (mostly famou
 
 **Platform Compatibility:** Windows, Linux, Android.
 
+* * * * * * * * * *
 
 ### Ren'Py {.unnumbered .unlisted}
 
@@ -232,6 +248,7 @@ OpenBOR is an open source implementation of a side-scroller engine (mostly famou
 
 <https://www.renpy.org/>
 
+* * * * * * * * * *
 
 ### RPG Maker {.unnumbered .unlisted}
 
@@ -241,6 +258,7 @@ OpenBOR is an open source implementation of a side-scroller engine (mostly famou
 
 <https://www.rpgmakerweb.com/>
 
+* * * * * * * * * *
 
 ### RPG Paper Maker {.unnumbered .unlisted}
 
@@ -250,6 +268,7 @@ OpenBOR is an open source implementation of a side-scroller engine (mostly famou
 
 <http://rpg-paper-maker.com/>
 
+* * * * * * * * * *
 
 ### Stratagus {.unnumbered .unlisted}
 
@@ -259,10 +278,16 @@ OpenBOR is an open source implementation of a side-scroller engine (mostly famou
 
 <https://github.com/Wargus/stratagus>
 
+* * * * * * * * * *
+
 <!-- TODO: Here go all the specific engines, like RPG maker -->
 
 3D Engines
 ----------
+
+{{placeholder}}
+
+* * * * * * * * * *
 
 ### IRRlicht {.unnumbered .unlisted}
 
@@ -278,6 +303,7 @@ IRRlicht distributed under the ZLib/png license, which allows for both commercia
 
 **Platform Compatibility:** Windows, Linux, Mac OS.
 
+* * * * * * * * * *
 
 ### Ogre3D {.unnumbered .unlisted}
 
@@ -293,6 +319,7 @@ Ogre3D comes in 2 versions: version 1.x is distributed under the GNU LGPL licens
 
 **Platform Compatibility:** Windows, Linux, Mac OS.
 
+* * * * * * * * * *
 
 ### Panda3D {.unnumbered .unlisted}
 
@@ -308,6 +335,7 @@ Panda3D itself is distributed under the modified BSD license, which is very perm
 
 **Platform Compatibility:** Windows, Linux, Mac OS.
 
+* * * * * * * * * *
 
 ### Unity 3D {.unnumbered .unlisted}
 
@@ -323,6 +351,7 @@ Unity is a proprietary engine, distributed under a proprietary license, with a F
 
 **Platform Compatibility:** Windows, Linux, Mac OS, iOS, Android and Web.
 
+* * * * * * * * * *
 
 ### UPBGE {.unnumbered .unlisted}
 
@@ -335,3 +364,5 @@ Since 2018, Blender doesn't ship with its own game engine anymore. UPBGE is a pr
 **Bindings:** Python, Proprietary Language, Visual Programming.
 
 **Platform Compatibility:** Windows, Linux, Mac OS.
+
+* * * * * * * * * *
