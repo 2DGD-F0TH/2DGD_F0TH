@@ -1,15 +1,19 @@
 {{pagebreak}}
 
-Dissecting games: two study cases
-=================================
+Dissecting games: three study cases
+===================================
 
 :::::: {.epigraph author="Hal Sparks"}
 I'm a writer, so I like dissecting things.
 ::::::
 
-In this section we will talk about two games, one bad and one good, and study their decisions closely, how a bad game inconveniences the player or how a good one reduces the space between the player's thought and the action on the screen.
+In this section we will talk about three games, one bad and two good, and study their decisions closely, how a bad game inconveniences the player or how a good one reduces the space between the player's thought and the action on the screen.
 
 This is not intended as a section to diss on a bad game or sing the praises of a good one, it is meant to be a study on how bad decisions pile up into what is universally recognized as a "bad game", while there are so many good decisions that need to be taken to make a "good game".
+
+:::: note ::::
+This section will contain spoilers of the games. This is necessary to understand them completely.
+::::::::::::::
 
 A bad game: Hoshi wo miru hito
 -------------------------------
@@ -236,9 +240,85 @@ Even though this game has earned the status of "legendary bad game" (not a liter
 
 There is even a "remake" called "STARGAZER" for windows.
 
-A good game: Dark Souls
-------------------------
+
+The first good game - VVVVVV: Slim story and essential gameplay
+----------------------------------------------------------------
 
 {{placeholder}}
 
-<!-- TODO: Analyze Dark Souls -->
+### A Slim story that holds up great
+
+{{placeholder}}
+
+### Essential gameplay: easy to learn, hard to master
+
+{{placeholder}}
+
+### Diversified challenges
+
+{{placeholder}}
+
+<!-- TODO: Each "zone" has a new "gimmick" that is easy to learn, but gives variety. Intermissions are hard with the addition of a teammate, final level is putting everything you learned to practice -->
+
+### Graphics
+
+{{placeholder}}
+
+<!-- TODO: Essential graphics that remind of the C64 era, but don't give up some special effects, like moving backgrounds and animated tiles -->
+
+### Amazing soundtrack
+
+{{placeholder}}
+
+### Accessibility Settings
+
+{{placeholder}}
+
+### "Speedrunnability"
+
+{{placeholder}}
+
+### Characters are memorable, even if you don't see them a lot
+
+{{placeholder}}
+
+<!-- TODO: Each character is well-defined: Vermillion is adventurous, Victoria is a bit of a crybaby, Verdigris is technical (chief of repair in the ship), Vitellary is analytical and curious (he's a professor). You can find some characters in the world after rescuing them (Vermillion around levels, Verdigris at the ship's antenna). -->
+
+Another good game - Undertale: A masterclass in storytelling
+----------------------------------------------------------------
+
+{{placeholder}}
+
+### The power of choice
+
+{{placeholder}}
+
+<!-- TODO: The game innovates (you can do runs without killing anything, but you're not forced to) but doesn't force you into its innovation. Rather it gently introduces you -->
+
+### The game doesn't take itself very seriously
+
+{{placeholder}}
+
+### All the major characters are very memorable
+
+{{placeholder}}
+
+<!-- TODO: Sans (Bad pun lover, "knows shortcuts", way more complex in the genocide runs), Papyrus (Bad pun hater, lover of spaghetti, wants to enter the royal guard, high self-esteem), Toriel (gentle, bad pun lover), Undyne (brave, musclehead, but kind-hearted), Alphys (pessimist, thinks bad of herself even though she is essentially a genius), Mettaton (robot that wants to become a superstar), Muffet (spider baker), Flowey ("evil" flower that actually cannot feel emotions), Asgore ("final boss", but actually a kind soul full of regret) -->
+
+### The game continuously surprises the player
+
+{{placeholder}}
+
+<!-- TODO: After a certain point the game becomes "meta" (Asgore breaking the "mercy" option, talks about "saving" and "loading", timelines...) and the game is actually a "world" that really exists, but plays by the rules of a game. This is better explained in the genocide and pacifist routes -->
+
+### Player choices influence the game
+
+{{placeholder}}
+
+<!-- TODO: If the player does a "normal run", they'll lose the meaning of the game. When a pacifist run is done, the player sees more of the game, learns more of the lore. When a genocide run is done but not completed, the player learns even more about the world. When a genocide run is completed, the game is permanently changed (soulless endings) -->
+
+### Great (and extensive!!) soundtrack
+
+{{placeholder}}
+
+<!-- TODO: Analyze VVVVVV and Undertale -->
