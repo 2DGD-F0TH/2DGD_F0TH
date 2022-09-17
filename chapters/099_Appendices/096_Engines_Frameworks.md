@@ -252,11 +252,15 @@ OpenBOR is an open source implementation of a side-scroller engine (mostly famou
 
 ### RPG Maker {.unnumbered .unlisted}
 
-{{placeholder}}
+**Website:** <https://www.rpgmakerweb.com/>
 
-<!--TODO: Description -->
+**License:** Paid
 
-<https://www.rpgmakerweb.com/>
+RPG Maker is probably the most well-known engine for building top-down RPG games that usually feature story-heavy elements.
+
+**Bindings:** Ruby (from RPG Maker XP to RPG Maker Vx Ace), JavaScript (From RPG Maker MV onwards), Proprietary Language, Visual Programming.
+
+**Platform Compatibility:** Windows, Linux, Mac OS, iOS, Android and Web.
 
 * * * * * * * * * *
 
