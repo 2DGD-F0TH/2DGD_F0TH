@@ -10,7 +10,7 @@ For each proposed engine or framework, along with a short description, you will 
 - **Website:** This contains a link to the official website of the engine/framework/library;
 - **License:** Here you will see if the product is free to use or if you need to pay a price for it, and anything in between;
 - **Bindings:** In this table you will find if the product supports one of the many famous programming languages available, as well as the following:
-    - **Proprietary Language:** This engine/framework makes use of its own scripting language, usually easier to learn than general-purpose languages. You may need to learn it;
+    - **Dedicated Language:** This engine/framework makes use of its own scripting language, usually easier to learn than general-purpose languages. You may need to learn it;
     - **Visual Programming:** This product makes use of a "Visual Scripting" (codeless) paradygm, where you can program your own game without writing code, usually by using directed graphs and nodes.
 - **Platform compatibility:** This will tell you if the product is good for your objective, by telling you which platforms you can deploy on, like Linux, Windows or even on the web via HTML5;
 
@@ -31,7 +31,7 @@ ENIGMA (Extensible Non-Interpreted Game Maker Augmentation) is an environment th
 
 ENIGMA's license is GPL3, with a special exhemption that allows you to sell the products made with the software.
 
-**Bindings:** C++, Proprietary Language (EDL), Visual Programming
+**Bindings:** C++, Dedicated Language (EDL), Visual Programming
 
 **Platform Compatibility:** Windows, Linux, Mac OS, iOS, Android and Web.
 
@@ -49,7 +49,7 @@ It makes use of its own scripting language, and some visual toolkits as well.
 
 Game Maker Studio is commercial software, regulated by its own EULA, but it was added here for sake of completeness.
 
-**Bindings:** Proprietary Language (GML), Visual Programming.
+**Bindings:** Dedicated Language (GML), Visual Programming.
 
 **Platform Compatibility:** Windows, Linux, Mac OS, iOS, Android and Web.
 
@@ -97,7 +97,7 @@ Godot is a fully-fledged engine that makes use of a node-based approach and supp
 
 Godot is currently distributed under the MIT license, you should check the Legal section of the Godot Documentation for all the additional licenses that you may need to know about.
 
-**Bindings:** C++, C#, Proprietary Language (GDScript), Visual Programming.
+**Bindings:** C++, C#, Dedicated Language (GDScript), Visual Programming.
 
 **Platform Compatibility:** Windows, Linux, Mac OS, iOS, Android and Web.
 
@@ -105,9 +105,17 @@ Godot is currently distributed under the MIT license, you should check the Legal
 
 ### Gosu {.unnumbered .unlisted}
 
-<https://www.libgosu.org/>
+**Website:** <https://www.libgosu.org/>
 
-{{placeholder}}
+**License:** Open Source
+
+Gosu is a 2D game development library that focuses on short game development competitions (game jams) and prototyping. It is lightweight and have few dependencies.
+
+The library is distributed under the MIT license, which is a very permissive one.
+
+**Bindings:** Ruby, C++.
+
+**Platform Compatibility:** Windows, Linux, Mac OS, iOS.
 
 * * * * * * * * * *
 
@@ -210,7 +218,7 @@ These engines allow you to focus more on the content of your game, instead of wa
 
 EasyRPG is a development environment focused on creating RPG games, trying to maintain compatibility with the older RPG Maker 2000/2003 software.
 
-**Bindings:** Proprietary Language, Visual Programming.
+**Bindings:** Dedicated Language, Visual Programming.
 
 **Platform Compatibility:** Windows, Linux, Mac OS, iOS, Android and Web.
 
@@ -218,11 +226,15 @@ EasyRPG is a development environment focused on creating RPG games, trying to ma
 
 ### O.H.R.RPG.C.E. {.unnumbered .unlisted}
 
-{{placeholder}}
+**Website:** <http://rpg.hamsterrepublic.com/ohrrpgce/About>
 
-<!--TODO: Description -->
+**License:** Open Source
 
-<http://rpg.hamsterrepublic.com/ohrrpgce/About>
+The "Official Hamster Republic Role Playing Game Construction Engine" is an utility that allows you to create RPGs in the style of Final Fantasy on the NES/SNES/GBA. It focuses primarily on visual programming, but it also features a custom scripting language for more advanced usage.
+
+**Bindings:** Dedicated Language, Visual Programming.
+
+**Platform Compatibility:** Windows, Linux, Mac OS, Android.
 
 * * * * * * * * * *
 
@@ -242,11 +254,17 @@ OpenBOR is an open source implementation of a side-scroller engine (mostly famou
 
 ### Ren'Py {.unnumbered .unlisted}
 
-{{placeholder}}
+**Website:** <https://www.renpy.org/>
 
-<!--TODO: Description -->
+**License:** Open Source
 
-<https://www.renpy.org/>
+Ren'Py is an engine that allows you to build visual novels and life simulation games. It features its own dedicated scripting language as well as Python for more advanced usage.
+
+This engine is used to create over 4000 visual novels, games and other works.
+
+**Bindings:** Dedicated Language, Python.
+
+**Platform Compatibility:** Windows, Linux, Mac OS, iOS, Android and Web.
 
 * * * * * * * * * *
 
@@ -258,7 +276,7 @@ OpenBOR is an open source implementation of a side-scroller engine (mostly famou
 
 RPG Maker is probably the most well-known engine for building top-down RPG games that usually feature story-heavy elements.
 
-**Bindings:** Ruby (from RPG Maker XP to RPG Maker Vx Ace), JavaScript (From RPG Maker MV onwards), Proprietary Language, Visual Programming.
+**Bindings:** Ruby (from RPG Maker XP to RPG Maker Vx Ace), JavaScript (From RPG Maker MV onwards), Dedicated Language, Visual Programming.
 
 **Platform Compatibility:** Windows, Linux, Mac OS, iOS, Android and Web.
 
@@ -266,21 +284,31 @@ RPG Maker is probably the most well-known engine for building top-down RPG games
 
 ### RPG Paper Maker {.unnumbered .unlisted}
 
-{{placeholder}}
+**Website:** <http://rpg-paper-maker.com/>
 
-<!--TODO: Description -->
+**License:** Open Source. Free for non-commercial projects, requires a one-time fee for commercial use.
 
-<http://rpg-paper-maker.com/>
+RPG Paper Maker is an engine that allows you to create 3D RPG games with 2D sprites, in the style of the famous "Paper Mario" series.
+
+It allows for creation of jRPGs, action RPGs and Tactical RPGs alike, as well as other kinds, it supports visual programming and makes use of JavaScript for more advanced features.
+
+**Bindings:** Visual Programming, JavaScript.
+
+**Platform Compatibility:** Windows, Linux, Mac OS, and Web.
 
 * * * * * * * * * *
 
 ### Stratagus {.unnumbered .unlisted}
 
-{{placeholder}}
+**Website:** <https://github.com/Wargus/stratagus>
 
-<!--TODO: Description -->
+**License:** Open Source
 
-<https://github.com/Wargus/stratagus>
+Stratagus is an open source real-time strategy engine, it's the engine behind the Wargus mod for Warcraft II. It makes use of the Lua language for scripting.
+
+**Bindings:** Lua.
+
+**Platform Compatibility:** Windows, Linux, Mac OS.
 
 * * * * * * * * * *
 
@@ -289,7 +317,7 @@ RPG Maker is probably the most well-known engine for building top-down RPG games
 3D Engines
 ----------
 
-{{placeholder}}
+Sometimes you may want to go premium, and make use of a 3D engine for your 2D game ("Castlevania: Symphony of the Night" made use of some 3D capabilities of the PlayStation, for instance). Be it either to have 3D backgrounds, make a 2.5D game or particle effects, you can use a 3D engine to make 2D games without any issue.
 
 * * * * * * * * * *
 
@@ -365,7 +393,7 @@ Unity is a proprietary engine, distributed under a proprietary license, with a F
 
 Since 2018, Blender doesn't ship with its own game engine anymore. UPBGE is a project to bring back such feature, built on top of the newer Blender versions, and then some.
 
-**Bindings:** Python, Proprietary Language, Visual Programming.
+**Bindings:** Python, Dedicated Language, Visual Programming.
 
 **Platform Compatibility:** Windows, Linux, Mac OS.
 
