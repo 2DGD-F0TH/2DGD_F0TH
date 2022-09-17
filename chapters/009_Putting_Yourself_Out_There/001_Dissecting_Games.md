@@ -244,45 +244,93 @@ There is even a "remake" called "STARGAZER" for windows.
 The first good game - VVVVVV: Slim story and essential gameplay
 ----------------------------------------------------------------
 
-{{placeholder}}
+VVVVVV is a 2D platformer that features essential gameplay mechanics, a slim story that gives the player a reason to explore the game world and get to the end, as well as a satisfying level of challenge. Let's see what makes this a good game.
 
 ### A Slim story that holds up great
 
-{{placeholder}}
+VVVVVV's story is as essential as it gets: you're in a space ship, you run into some trouble and try to teleport out of the ship. Now you and your crew are scattered in a new dimension. Your mission is to rescue your crew and explore the new dimension you're in.
+
+This is the story, it gives you enough of a reason to move from one level to the other, without being too burdensome. After you finish the game, you are free to explore the entire "dimension VVVVVV", searching shiny trinkets to unlock a final secret and learn more about the dimension you're in.
 
 ### Essential gameplay: easy to learn, hard to master
 
-{{placeholder}}
+In VVVVVV you can move left and right, but you cannot jump: you can only flip gravity. This, combined with the plentiful quantity of spikes, makes for a game that is easy to learn (it's just 3 buttons) but hard to master (you will find yourself dying over and over on the same screen).
+
+The gameplay is so simple and well-implemented that it's really hard to get mad at the game: if you die and respawn, you know it's your fault. The great majority of time, it is evident. When you learn what "not to do", the rest becomes a lot easier. Enough so that you don't get stuck in a screen for more than a few minutes.
+
+Checkpoints are plentiful and well distributed, so you won't end up going back too far if you die.
 
 ### Diversified challenges
 
-{{placeholder}}
+Each zone of the game (there are 6 in total, plus 2 intermissions and the finale) features the tight gameplay explained above, and sometimes add a new gimmick to the mix.
 
-<!-- TODO: Each "zone" has a new "gimmick" that is easy to learn, but gives variety. Intermissions are hard with the addition of a teammate, final level is putting everything you learned to practice -->
+Let's explore those new gimmicks quickly:
+
+- In the "Warp Zone", when you exit the screen on one side, you will re-enter on the opposite side: this means that if you fall on the bottom, you'll come out the top. This goes on until you reach the exit of the screen;
+- In "the lab", there are lines that make you invert your gravity when touched. This can end up being a bit confusing at first, until you get used to the mechanic. After that you'll be bouncing around with no issue;
+- In "the tower" the level automatically scrolls vertically: you can't go too slow or too fast, or spikes will come out of the top/bottom of the screen to kill you;
+- In "intermission 1" you are followed by a crew mate: if you're standing on the ground, they will walk towards you. If you're on the ceiling, they will stay still. This introduces a new layer of difficulty and management;
+- In "intermission 2" (also known as "the gravitron") you are kind-of-followed by a crew mate, but in reality you're playing alone. You will have to survive 60 seconds (with a checkpoint every 5 seconds) between two gravity-inverting lines, while items are shot at you.
+
+In the finale, you'll have to put everything you have learned to the test ("warping", "bouncing", dealing with auto-scrolling levels, ...) to save yourself from being a prisoner of dimension VVVVVV.
 
 ### Graphics
 
-{{placeholder}}
+The graphics try to imitate the Commodore 64 (there is even a fake C64-style loading screen!); but they don't give up special effects like flashes, animated sprites, animated tiles, screen shaking, and fully moving backgrounds.
 
-<!-- TODO: Essential graphics that remind of the C64 era, but don't give up some special effects, like moving backgrounds and animated tiles -->
+Even though the graphics are superior to what a Commodore 64 would be able to output, the special effects used still fit the chosen style and never really feel "out of place".
 
 ### Amazing soundtrack
 
-{{placeholder}}
+The soundtrack in VVVVVV is definitely one of the game's highlights: the chiptune-style songs that characterize every zone are catchy and so memorable that you will find yourself humming the tunes from time to time.
+
+Each tune fits the zone it's used in, and kind of "tells a story" of its own: from "Passion for exploring" (the overworld theme) to "Predestined Fate" (used in intermissions and, in a remixed fashion, in the finale).
 
 ### Accessibility Settings
 
-{{placeholder}}
+VVVVVV is as accessible as it gets: there are a ton of accessibility features crammed in such a small game. Let's take a look at them.
+
+- **Invulnerability** in case the challenge is too much, or you don't want to feel challenged all the time. This also helps people who want to enjoy the game, but can't due to mobility problems;
+- **Slowdown mode** some people with mobility issues or slower reflexes may benefit from playing the game at 75, 50 or even 25\% speed;
+- **No screen flashing or shaking** some people with photosensitivity may have huge issues with the flashing and screen shaking, there are options to disable these effects and make the game much safer for those people. It also helps if flashing and screen shaking just annoy you or simply give you headaches;
+- **No animated backgrounds** this may help with visual clarity or if the movement in the background gives you issues, like headaches.
+
+### Post-endgame Modes
+
+After finishing the game, VVVVVV still offers some challenges. If you haven't collected all the trinkets, that is a good start, since they're hard to get and will reveal a secret back at the ship.
+
+VVVVVV offers other game modes too, after you finish the main story:
+
+- Time trials: you can replay any level, but you have to finish it under a certain time limit.
+- Flip mode: the whole game is flipped vertically;
+- No death mode: the entire game must be played without dying, you cannot save, there are no checkpoints and your companions in intermissions cannot die either;
+- Intermissions mode: replay all completed intermissions, you can choose your companion too.
+
+### User-generated content
+
+If the main story didn't satisfy you enough, VVVVVV features a level editor. The game already includes some selected user levels you can play, each with its own story and mechanics.
+
+This also means that you can access the level editor yourself and create your own adventure from scratch, featuring the mechanics and characters of the original game.
 
 ### "Speedrunnability"
 
-{{placeholder}}
+Being an exceptionally difficult game, as well as the simple controls, the game has attracted an active and passionate speedrun community. The first playthroughs can take up to a couple hours, but an average speedrun can take less than 20 minutes!
+
+The barrier of entry (usually for "glitchless" speedruns) is very low: you just need to go fast and die as little as possible. There aren't too many tricks to be learned, and those are usually quite simple, with very few exceptions.
 
 ### Characters are memorable, even if you don't see them a lot
 
-{{placeholder}}
+Even though the characters are not a continuous presence in the game, each of them is memorable: they all have very different colors, and different characters.
 
-<!-- TODO: Each character is well-defined: Vermillion is adventurous, Victoria is a bit of a crybaby, Verdigris is technical (chief of repair in the ship), Vitellary is analytical and curious (he's a professor). You can find some characters in the world after rescuing them (Vermillion around levels, Verdigris at the ship's antenna). -->
+For instance: Vermillion is adventurous and always excited about exploring, after rescuing him, you will find him here and there in the overworld, sometimes even in the zones where other crew mates are stuck.
+
+Victoria is a bit of a crybaby, very emotional and gets depressed very easily, she's always feeling blue (and blue is her color too) and sniffles a lot when talking.
+
+Verdigris is technical, being the ship's technician (you will find him working on the ship's antenna after rescue). Professor Vitellary is analytical and curious (if you bring him into an intermission, he will express marvel at what's happening).
+
+### Conclusion
+
+VVVVVV is a small game (as I said, it can be completed in less than 20 minutes if you're quick), but it gives a lot of options for everyone. Lots of accessibility, replayability and "speedrunnability". Custom levels and the level editor are the cherry on top of a game that is feature-complete and fun to play.
 
 Another good game - Undertale: A masterclass in storytelling
 ----------------------------------------------------------------
@@ -322,3 +370,7 @@ Another good game - Undertale: A masterclass in storytelling
 {{placeholder}}
 
 <!-- TODO: Analyze VVVVVV and Undertale -->
+
+### Conclusion
+
+{{placeholder}}
