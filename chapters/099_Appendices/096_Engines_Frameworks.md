@@ -21,6 +21,36 @@ General purpose engines are the basic frameworks that allow you to build any gam
 
 * * * * * * * * * *
 
+### Axys {.unnumbered .unlisted #axys}
+
+**Website:** <https://github.com/axys1/axys>
+
+**License:** Open Source
+
+Axys aims to be a radical fork and refactoring of the Cocos2d-x engine, after the producer decided to work on its newest product. It aims to support OpenAL on all platforms and use more modern C++ features.
+
+**Bindings:** C++, Lua.
+
+**Platform Compatibility:** Windows, Linux, Mac OS, iOS, Android and Web.
+
+* * * * * * * * * *
+
+### Cocos2d-x/Cocos Creator {.unnumbered .unlisted}
+
+**Website:** <https://www.cocos.com/>
+
+**License:** Mixed: The code is Open Source, but has many different licenses
+
+Cocos is a set of tools and engines that allow to code your games. It supports both 2D and 3D games and it provides all the basic functions needed to create your own game, like rendering, audio, physics and user input.
+
+The producer is now working on the new iteration: Cocos Creator, but Cocos2d-x is still available and considered a very mature project. If you fear it is going to be abandoned, you may want to check [Axys](#Axys)
+
+**Bindings:** C++, Lua, Javascript.
+
+**Platform Compatibility:** Windows, Linux, Mac OS, iOS, Android and Web.
+
+* * * * * * * * * *
+
 ### ENIGMA {.unnumbered .unlisted}
 
 **Website:** <https://enigma-dev.org/docs/Wiki/ENIGMA>
