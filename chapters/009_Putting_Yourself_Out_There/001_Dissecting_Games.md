@@ -244,7 +244,7 @@ There is even a "remake" called "STARGAZER" for windows.
 The first good game - VVVVVV: Slim story and essential gameplay
 ----------------------------------------------------------------
 
-VVVVVV is a 2D platformer that features essential gameplay mechanics, a slim story that gives the player a reason to explore the game world and get to the end, as well as a satisfying level of challenge. Let's see what makes this a good game.
+VVVVVV is a 2D platformer created by Terry Cavanagh that features essential gameplay mechanics, a slim story that gives the player a reason to explore the game world and get to the end, as well as a satisfying level of challenge. Let's see what makes this a good game.
 
 ### A Slim story that holds up great
 
@@ -335,42 +335,63 @@ VVVVVV is a small game (as I said, it can be completed in less than 20 minutes i
 Another good game - Undertale: A masterclass in storytelling
 ----------------------------------------------------------------
 
-{{placeholder}}
+Undertale is an RPG game created by Toby Fox that features some unique mechanics and masterful story telling.
+
+We'll take a deeper dive into the game immediately!
 
 ### The power of choice
 
-{{placeholder}}
+The game features a huge innovation in the field of RPGs: you can run the entire game without killing anything. In fact you are encouraged from the beginning to do so.
 
-<!-- TODO: The game innovates (you can do runs without killing anything, but you're not forced to) but doesn't force you into its innovation. Rather it gently introduces you -->
+This innovation is not forced onto you though, you can play it as any other RPG out there (but you will miss a lot of the game, more on that later).
 
-### The game doesn't take itself very seriously
+### The game doesn't take itself very seriously (sometimes)
 
-{{placeholder}}
+Undertale is a very unique game that doesn't take itself very seriously, there are 4th wall breaks, bad puns, jokes, worse puns and more. This gives the game a very lighthearted tone. That is if you're doing a "pacifist run".
+
+The game becomes more somber the more you lean into a "neutral" or even "genocide" run.
+
+This gives the game a lot of layers and depth, making each "type of playthrough" a different experience.
 
 ### All the major characters are very memorable
 
-{{placeholder}}
+Each major character is extremely memorable, and will be etched into your memory for the entire game (and probably part of your life too), I can recall practically all of them on the top of my head:
 
-<!-- TODO: Sans (Bad pun lover, "knows shortcuts", way more complex in the genocide runs), Papyrus (Bad pun hater, lover of spaghetti, wants to enter the royal guard, high self-esteem), Toriel (gentle, bad pun lover), Undyne (brave, musclehead, but kind-hearted), Alphys (pessimist, thinks bad of herself even though she is essentially a genius), Mettaton (robot that wants to become a superstar), Muffet (spider baker), Flowey ("evil" flower that actually cannot feel emotions), Asgore ("final boss", but actually a kind soul full of regret) -->
+- Toriel, a gentle and motherly monster that loves puns and jokes;
+- Sans, a skeleton that loves bad puns and "knows shortcuts" to every place in the game, somewhat lazy (that is explained in a lot more detail in genocide runs);
+- Papyrus, Sans's brother. Hates bad puns, loves spaghetti and wants to enter the royal guard. Has high self-esteem;
+- Undyne, a brave, brash muscle-for-brains fish girl that has actually a very kind heart;
+- Alphys, a pessimist doctor with very low self-esteem, even though she's essentially a genius. Somewhat a nerd too;
+- Mettaton, the robot that wants to become a TV superstar,
+- Muffet, the leader of the spider bakery,
+- Asgore, the "final boss" that you have to face. Regretful of his actions and past;
+- Flowey, a yellow flower that can't have feelings (this is explained well in the pacifist run).
 
 ### The game continuously surprises the player
 
-{{placeholder}}
+The game is able to surprise the player continuously. At a certain point the player realizes that the game is playing by different rules than expected: the game (as a piece of software) and the world become blurred when Asgore breaks the "mercy" option in a pacifist run.
 
-<!-- TODO: After a certain point the game becomes "meta" (Asgore breaking the "mercy" option, talks about "saving" and "loading", timelines...) and the game is actually a "world" that really exists, but plays by the rules of a game. This is better explained in the genocide and pacifist routes -->
+From that point on, the player realizes that the UI, saving, loading are all characteristics of the world itself, and not of the game: each playthrough is treated like a timeline, and each reset is a new timeline (although some characters may have memories from previous playthroughs).
+
+It feels like the world inside the game actually exists.
 
 ### Player choices influence the game
 
-{{placeholder}}
+Each run can be a bit different than any previous run, but they can all be classified into 4 categories.
 
-<!-- TODO: If the player does a "normal run", they'll lose the meaning of the game. When a pacifist run is done, the player sees more of the game, learns more of the lore. When a genocide run is done but not completed, the player learns even more about the world. When a genocide run is completed, the game is permanently changed (soulless endings) -->
+- **Neutral runs** these are the runs that entail killing some enemies, but not everyone. The ending of this kind of runs is not satisfactory, and the game loses its meaning. The game will suggest (via its characters) to try a different approach;
+- **Pacifist runs** these runs entail not killing anyone, this will bring an extended playthrough and ending, explaining a lot more about the world (and the "meta" nature of the game);
+- **Genocide runs** these runs entail killing everything, even the "random encounters", this will bring a different ending and will permanently change the game, even in successive runs (unless you physically delete your savefile from the game folder).
+- **Partial/Aborted Genocide** these runs entail killing everything, besides one of the main characters. This will bring the player a different ending each time, but none of them will be "good".
 
 ### Great (and extensive!!) soundtrack
 
-{{placeholder}}
+The soundtrack features over 100 (a hundred!!) tracks, each of them is unique in itself and memorable. Each zone has its own fitting theme, as does each boss (so much so that many of them have different themes for normal and genocide).
 
-<!-- TODO: Analyze VVVVVV and Undertale -->
+It's hard to describe the soundtrack here, so I suggest you to try the game or at least listen to some of the most famous tracks.
 
 ### Conclusion
 
-{{placeholder}}
+I tried to keep this analysis vague so not to ruin the game too much to the people who didn't play it. The pacifist story is extremely well-written and ties extremely well with the genocide one, together giving two sides of the same world.
+
+The fact that such world is working with the mechanics of a videogame is a surprise to the player, who will be a bit confused at the beginning but will soon understand things that may have felt weird before.
