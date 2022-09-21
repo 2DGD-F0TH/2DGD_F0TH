@@ -39,7 +39,7 @@ The animation component will just be updated (like the other components) and it 
 
 <!-- TODO: A class that yields frames, with an internal counter and all the necessary facilitations for animating a sprite -->
 
-Finite State Machine
+Finite State Machine {#fsm}
 ---------------------
 
 A finite state machine is a model of computation that represents an abstract machine with a finite number of possible states but where one (or a finite number) of states can be "in execution" at a given time.
@@ -63,7 +63,7 @@ Each state can be created so it has its own member variables and methods: in a m
 
 {{placeholder}}
 
-<!-- TODO: A simple finite state machine that allows to change states, useful for menus and stuff -->
+<!-- TODO: Code example for finite state machine -->
 
 Menu Stack
 -----------
