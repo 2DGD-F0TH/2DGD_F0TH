@@ -193,10 +193,6 @@ When you're done, instead of destroying the class (thus calling memory free meth
 
 Particle systems are a prime example of resource pools: instead of continuously creating and destroying particles, you create all the particle object in advance to recycle and reuse during the game.
 
-{{placeholder}}
-
-<!-- TODO: Example images for resource pools -->
-
 ### Lookup Tables
 
 Inside older games, where CPU cycles were at a premium, a widely used trick to gain performance were "lookup tables".

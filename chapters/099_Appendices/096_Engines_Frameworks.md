@@ -342,8 +342,6 @@ Stratagus is an open source real-time strategy engine, it's the engine behind th
 
 * * * * * * * * * *
 
-<!-- TODO: Here go all the specific engines, like RPG maker -->
-
 3D Engines
 ----------
 
