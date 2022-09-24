@@ -114,11 +114,11 @@ But what if we wanted to be a lot more precise? Let's say we want to spawn an it
 It's actually pretty simple: out 13\% probability can be represented by the fraction $\frac{13}{100}$. Each number between 1 and 100 (inclusive) has a $\frac{1}{100}$ chance of being extracted. Since extracting one number bars any other number to appear in that extraction we can use the "mutually exclusive events" formula.
 
 $$
-P(1 \or 2 \or ... \or 13) = P(1) + P(2) + ... + P(13) = \frac{1}{100} + \frac{1}{100} + ... + \frac{1}{100} = \frac{13}{100}
+P(1\ or\ 2\ or\ ...\ or\ 13) = P(1) + P(2) + ... + P(13) = \frac{1}{100} + \frac{1}{100} + ... + \frac{1}{100} = \frac{13}{100}
 $$
 
 :::: tip ::::
-If the example is not 100\% clear yet, try reading the previous formula right-to-left. That may help.
+If the example is not 100% clear yet, try reading the previous formula right-to-left. That may help.
 :::::::::::::
 
 This means that the event "a number between 1 and 13 appears" has a 13\% probability of appearing. We can simplify that statement with "a number less or equal than 13". We can experiment that easily with the following code:
