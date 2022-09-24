@@ -1,0 +1,13 @@
+function main(){
+    int happened = 0
+    // Monte Carlo Method we do 10000 "extractions"
+    repeat 10000 times{
+        // Get a random number between 1 and 100
+        int n = get random integer between 1 and 100 inclusive
+        if n <= 13:
+            // If it's less or equal than 13, we got a match
+            happened = happened + 1
+    }
+    // We print the result
+    print(happened / 10000)
+}
