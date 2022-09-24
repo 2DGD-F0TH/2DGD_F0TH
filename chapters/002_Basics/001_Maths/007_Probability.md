@@ -127,3 +127,7 @@ This means that the event "a number between 1 and 13 appears" has a 13\% probabi
 ```
 
 ![Running the probability_le_13 example shows the probability floating around 13\%](./images/maths/probability_le_13.png){width=40%}
+
+:::: tip ::::
+You can extend the example above to fractions of a percentage by using bigger numbers: if you wanted a 13.5% probability, you would use all numbers less than or equal to 135, out of 1000.
+:::::::::::::
