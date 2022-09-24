@@ -131,3 +131,19 @@ This means that the event "a number between 1 and 13 appears" has a 13\% probabi
 :::: tip ::::
 You can extend the example above to fractions of a percentage by using bigger numbers: if you wanted a 13.5% probability, you would use all numbers less than or equal to 135, out of 1000.
 :::::::::::::
+
+### Tiered Prize Pools
+
+We can use what we learned with probability to create a tiered prize pool. For instance we decide that killing a certain enemy will always drop something, the tier of such item is according to the follow probability list:
+
+- 50% probability for a common item to drop (for instance a scrap of leather);
+- 30% probability for an uncommon item to drop (like a lower-grade potion);
+- 15% probability for a rare item to drop (a good sword, for instance);
+- 5% probability for an epic item to drop (a unique armor, for example);
+
+![Intuitive representation of our prize pool](./images/maths/probability_prize_pool.svg){width=40%}
+
+In that case we can chain ifs to bring our tiered prize pool to life:
+
+```{src=maths/probability_tiered_pool caption="How to implement a tiered prize pool selector"}
+```
