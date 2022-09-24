@@ -1,4 +1,9 @@
 #include <cmath>
+#include <cstdlib>
+#include <ctime>
+
+// We seed the randomizer (using the system time)
+std::srand(std::time(nullptr));
 
 int MIN = 0;
 int MAX = 100;
@@ -8,8 +13,8 @@ int OCTAVES = 5;
 float terrain* = new float[32];
 
 // We start by deciding the start and end "heights" of our terrain
-terrain[0] = rand() % MAX + MIN;
-terrain[31] = rand() % MAX + MIN;
+terrain[0] = std::rand() % MAX + MIN;
+terrain[31] = std::rand() % MAX + MIN;
 // We interpolate all the missing values
 interpolate(terrain, 0, 31);
 
@@ -22,7 +27,7 @@ function midpoint_displacement(begin, end, octave) {
     // Get the possible displacement
     float displacement = MAX / octave;
     // Displace by a random amount
-    value = value + (rand() % (2 * displacement) - displacement);
+    value = value + (std::rand() % (2 * displacement) - displacement);
     // Apply the value
     terrain[midpoint] = value;
     // Interpolate the values between begin and midpoint

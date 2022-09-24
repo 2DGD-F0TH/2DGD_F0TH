@@ -4,7 +4,7 @@ template <typename T>
 T get_random(const std::vector<T> &vect){
     // Gets a random item from a Vector
     auto it = vect.begin();
-    // C++ rand() will do for this
+    // C++ rand() will do for this (remember to seed the randomizer with srand())
     int random = rand() % vect.size();
     // Let's return the item via pointer arithmetics
     return *(it + random);
