@@ -61,9 +61,17 @@ In this more convoluted diagram we can see how pressing a certain button or clic
 
 Each state can be created so it has its own member variables and methods: in a menu system it can prove useful to have each state have its own `update(dt)` and `draw()` functions to be called from the main game loop, to improve on the code readability and better usage of the nutshell programming principle.
 
-{{placeholder}}
+```{src='containers/fsm' caption='A simple finite state machine'}
+```
 
-<!-- TODO: Code example for finite state machine -->
+The finite state machine can be used as a brain inside of anything, and use functions to commutate how things react to external events:
+
+```{src='containers/fsm_usage' caption='An example of usage of a FSM'}
+```
+
+::: tip :::
+If, for some reason, you want even more abstraction and separation, you can use the basics of a [strategy pattern](#strategy) to implement your Finite State Machine.
+::::::::::
 
 Menu Stack
 -----------

@@ -1,0 +1,53 @@
+class Enemy(){
+    /*
+     * Represents a simple enemy
+     */
+    // ...
+    const float PURSUETIME = 10.0;
+    float position_x = 0.0;
+    float position_y = 0.0;
+    Timer pursue_timer = new Timer();
+    FSM brain = new FSM();
+
+    constructor(int x, int y){
+        this.position_x = x;
+        this.position_y = y;
+        brain.setState(this.patrol);
+    }
+
+    function patrol(float dt){
+        // Normal patrolling of the enemy
+        // Move, turn, path find...
+        if (player is sighted){
+            // ...
+            // Pursue for xx seconds
+            pursue_timer.set(this.PURSUETIME);
+            pursue_timer.start();
+            // Change FSM State
+            brain.setState(this.pursue);
+        }
+    }
+
+    function pursue(float dt){
+        // Tries to pursue the enemy
+        if (player is in sight){
+            // Continue Pursuing, by resetting the timer
+            pursue_timer.set(this.PURSUETIME);
+            // ...
+        }
+        // ...
+        // If the enemy is not in sight for xx seconds
+        if (pursue_timer.is_finished){
+            // go back to patrolling
+            brain.setState(this.patrol);
+        }
+    }
+
+    function update(float dt){
+        // The enemy update function
+        // ...
+        pursue_timer.update(dt);
+        brain.update(dt);
+        // ...
+    }
+}

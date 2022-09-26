@@ -1,0 +1,23 @@
+class FSM(){
+    /*
+     * This class defines a Finite State Machine
+     * The currently active state is represented by a function
+     * pointer
+     */
+    functionptr current_state = null;
+
+    function setState(functionptr f){
+        /*
+         * Sets the state, from this point on, update will
+         * change its strategy
+         */
+        this.current_state = f;
+    }
+
+    function update(float dt){
+        // If there is a current state, execute it
+        if (this.current_state != null){
+            this.current_state(dt);
+        }
+    }
+}

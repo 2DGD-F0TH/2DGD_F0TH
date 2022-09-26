@@ -167,7 +167,7 @@ If needed, you can pass information between the subject and the observers just b
 
 Table: Summary table for the Observer Pattern
 
-Strategy
+Strategy {#strategy}
 --------
 
 In some situations it may be necessary to select a single algorithm to use, from a family of algorithms, and that decision must happen at runtime.
