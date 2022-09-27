@@ -72,9 +72,8 @@ In the previous picture, we can see how the algorithm chooses to solve the colli
 
 In this new situation, the algorithm chooses to solve the collision on the $x$ axis first; but since solving the $x$ axis solves the collision, no reaction is performed on the $y$ axis.
 
-{{placeholder}}
-
-<!-- TODO: Similar to direction + velocity, but reacts only on the most shallow direction -->
+```{src='collisiondetection/shallow_axis_resolution' caption='Possible implementation for a shallow axis collision reaction'}
+```
 
 #### Interleaving single-axis movement and collision detection
 
