@@ -5,7 +5,7 @@ function solve_collision(player, object){
      * We are assuming the player is moving
      */
     // The overlap will help us decide how to react
-    Vector2D overlap = get_overlap(player, object)
+    Vector2D overlap = get_overlap(player, object);
     if (overlap.x > overlap.y){
         // Y is the "shallow axis"
         if (player.speed.y > 0){
