@@ -81,7 +81,7 @@ In some situations (as you will see in the [SAT](#SAT)), we may need to get to p
 
 Given the formulas we've seen earlier, and doing some thinking, we can easily project a point onto any straight line. Let's see how to do it.
 
-First of all, the line we will projecting onto will have equation $y=mx+q$, just as in the slope-intercept formula.
+First of all, the line we will be projecting onto will have equation $y=mx+q$, just as in the slope-intercept formula.
 
 We will assume that we have a point $P(x_p,y_p)$ that we want to project onto a line $r$ with equation $y=mx+q$, with $m \neq 0$ (thus excluding horizontal lines). We will call the projected point "P onto r" with the name $P_r(x_r,y_r)$.
 
