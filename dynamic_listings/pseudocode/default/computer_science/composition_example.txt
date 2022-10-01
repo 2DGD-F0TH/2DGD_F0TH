@@ -1,0 +1,28 @@
+class Grinder{
+    // A simple coffee grinder component
+    function grind(){
+        // Pretend to grind some coffee
+        print("Grinding coffee");
+    }
+}
+
+class BrewingUnit{
+    // A simple brewing unit component
+    function brew(){
+        // Pretend to brew a good coffee
+        print("Brewing your coffee");
+    }
+}
+
+class CoffeeMachine{
+    // A simple coffee machine, has a grinder and a brewing unit
+    Grinder grinder = new Grinder();
+    BrewingUnit brewer = new BrewingUnit();
+
+    function make_coffee(){
+        // Uses the brewing component and the grinder to make some fresh coffee
+        this.grinder.grind();
+        this.brewer.brew();
+        print("Here's your fresh coffee!");
+    }
+}

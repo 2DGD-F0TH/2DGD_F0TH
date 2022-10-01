@@ -1,0 +1,51 @@
+abstract class Shape{
+    // An abstract shape class
+    function area() -> float{
+        // An abstract function that will be overridden by subclasses
+        throw NotImplementedError;
+    }
+    function perimeter() -> float{
+        // An abstract function that will be overridden by subclasses
+        throw NotImplementedError;
+    }
+};
+
+class Rectangle inherits from Shape{
+    // A simple rectangle class
+    float width;
+    float height;
+
+    constructor(float w, float h){
+        this.width = w;
+        this.height = h;
+    }
+
+    function area() -> float{
+        // Returns the Area of the rectangle
+        return this.width * this.height;
+    }
+
+    function perimeter() -> float{
+        // Returns the Perimeter of the rectangle
+        return 2 * (this.width + this.height);
+    }
+}
+
+class Circle inherits from Shape{
+    // A simple circle class
+    float radius;
+
+    constructor(float r){
+        this.radius = w;
+    }
+
+    function area() -> float{
+        // Returns the Area of the circle
+        return 3.1415 * 3.1415 * this.radius;
+    }
+
+    function perimeter() -> float{
+        // Returns the circumference of the circle
+        return 2 * 3.1415 * this.radius;
+    }
+}
