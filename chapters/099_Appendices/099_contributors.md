@@ -12,4 +12,4 @@ This e-book is the collective work of many game developers, critics and enthusia
 Special Thanks to the following people who helped making this work even better:
 
 - **Nikita Ivanchenko (Nivanchenko)** - For fixing some mistakes
-- **abreathingcorpse** - Proof Reading
+- **abreathingcorpse** - Proofreading
