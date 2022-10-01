@@ -114,18 +114,6 @@ This method solves the problem given by platforms that can be crossed one-way.
 
 <!-- TODO: Snapshot before and after updating, react accordingly, allows for more advanced stuff -->
 
-#### The "Tile + Offset" Method
-
-This is a really good trick that works well for games that are heavily based on grids: the player can move only in the four cardinal directions and movement is tile-based.
-
-By "tile-based movement" I mean that if you press any direction for even the smallest amount of time (even a single frame), the player will move in that direction by a tile (however big it may be).
-
-The idea behind this kind of collision detection is very simple: some tiles are marked as walls. When the player wants to move in a certain direction, the game will check the tile in the chosen direction, if it's a wall the movement will be blocked, if it's passable the game will tween (usually using an offset parameter) the player travelling between tiles.
-
-{{placeholder}}
-
-<!-- TODO: Useful for games like pacman, check the direction where you are going using the offset, if the next cell is a wall, react -->
-
 ### When two moving items collide
 
 So far we've seen methods that involve a moving object colliding with a stationary one, but what if we wanted to react to a collision between two moving objects?
