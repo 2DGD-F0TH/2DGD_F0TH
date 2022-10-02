@@ -114,8 +114,8 @@ Which finds solution in:
 
 $$
 \begin{cases}
-x = \frac{x_p + mq}{1-m^2}\\
-y = \frac{mx_p + q}{1-m^2}
+x = \frac{x_p - my_p + mq}{1-m^2}\\
+y = \frac{mx_p -m^2y_p + q}{1-m^2}
 \end{cases}
 $$
 
