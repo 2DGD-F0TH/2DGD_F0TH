@@ -56,23 +56,23 @@ Let's see how it works.
 
 First of all, we bootstrap our square with arbitrary values at the four corners, this will be our starting point.
 
-![How the diamond-square algorithm works (1/5)](images/algorithms/diamond_square_1.png){width=50%}
+![How the diamond-square algorithm works (1/5)](images/algorithms/diamond_square_1.svg){width=50%}
 
 Now we perform the first "diamond step": we have only one big square, with 4 corners, we identify its center and set its value to the average of the corners and apply a random displacement.
 
-![How the diamond-square algorithm works (2/5)](images/algorithms/diamond_square_2.png){width=50%}
+![How the diamond-square algorithm works (2/5)](images/algorithms/diamond_square_2.svg){width=50%}
 
 Now we can perform our first "square step": we have 4 diamonds, we identify their centres (in red) and set them to the average of their neighbours, plus a random displacement.
 
-![How the diamond-square algorithm works (3/5)](images/algorithms/diamond_square_3.png){width=50%}
+![How the diamond-square algorithm works (3/5)](images/algorithms/diamond_square_3.svg){width=50%}
 
 Now we can iterate with another "diamond step" on the four new smaller squares we have, get their centers and again average and displace.
 
-![How the diamond-square algorithm works (4/5)](images/algorithms/diamond_square_4.png){width=50%}
+![How the diamond-square algorithm works (4/5)](images/algorithms/diamond_square_4.svg){width=50%}
 
 As the last step, for this 5x5 grid, we perform another "square step", finding 12 smaller diamonds, and again getting the average of the corners and apply a displacement.
 
-![How the diamond-square algorithm works (5/5)](images/algorithms/diamond_square_5.png){width=50%}
+![How the diamond-square algorithm works (5/5)](images/algorithms/diamond_square_5.svg){width=50%}
 
 {{placeholder}}
 
