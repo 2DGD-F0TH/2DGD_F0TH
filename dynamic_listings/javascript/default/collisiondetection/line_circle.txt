@@ -28,7 +28,7 @@ class Circle{
 
 function distance(A, B){
     // Calculates the distance between two points
-    return Math.sqrt((A.x - B.x)^2 + (A.y - B.y)^2);
+    return Math.sqrt((A.x - B.x) ** 2 + (A.y - B.y) ** 2);
 }
 
 function line_point_collision(line, point){
@@ -53,7 +53,7 @@ function line_circle_collision(circle, line){
     let y1 = line.A.y;
     let y2 = line.B.y;
     let yk = circle.center.y;
-    let u = ((xk - x1) * (x2 - x1) + (yk - y1) * (y2 - y1))/(distance(line.A, line.B))^2;
+    let u = ((xk - x1) * (x2 - x1) + (yk - y1) * (y2 - y1))/(distance(line.A, line.B)) ** 2;
     // Now let's calculate the x and y coordinates
     let x = x1 + u * (x2 - x1);
     let y = y1 + u * (y2 - y1);

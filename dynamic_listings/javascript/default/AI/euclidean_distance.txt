@@ -6,5 +6,5 @@ class Tile{
 }
 
 function euclidean_distance(start, goal){
-    return Math.sqrt((start.x - goal.x)^2 + (start.y - goal.y)^2);
+    return Math.sqrt((start.x - goal.x) ** 2 + (start.y - goal.y) ** 2);
 }

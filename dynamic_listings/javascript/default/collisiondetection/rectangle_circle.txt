@@ -52,7 +52,7 @@ function circle_rectangle_collision(circ, rect){
     // Let's get the distance between the testing coordinates and the circle center
     let distanceX = circ.center.x - tx;
     let distanceY = circ.center.y - ty;
-    let distance = Math.sqrt(distanceX^2 + distanceY^2);
+    let distance = Math.sqrt(distanceX ** 2 + distanceY ** 2);
 
     // Note that if the center of the circle is inside the rectangle, the testing coordinates will be the circle's center itself, thus the next conditional will always return true
 
