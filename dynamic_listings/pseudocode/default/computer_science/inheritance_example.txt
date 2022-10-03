@@ -36,7 +36,7 @@ class Circle inherits from Shape{
     float radius;
 
     constructor(float r){
-        this.radius = w;
+        this.radius = r;
     }
 
     function area() -> float{
