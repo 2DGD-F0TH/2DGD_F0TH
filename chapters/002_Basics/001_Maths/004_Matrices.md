@@ -129,7 +129,7 @@ $$ \begin{bmatrix}
     ? & ? & ?
 \end{bmatrix}$$
 
-The values in the example will be combines as follows:
+The values in the example will be combined as follows:
 
 $$2 \cdot 2 + 3 \cdot 0 = 4$$
 
