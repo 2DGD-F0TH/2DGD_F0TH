@@ -89,7 +89,7 @@ We will assume that we have a point $P(x_p,y_p)$ that we want to project onto a 
 
 First, we need to find the line that goes through $P$ and is perpendicular to $r$, this is really easy. To find a slope $m_1$ of a line perpendicular to another line with slope $m$ we use the formula
 
-$$m_1 = \frac{1}{m}$$
+$$m_1 = - \frac{1}{m}$$
 
 ::: pitfall :::
 This is why we excluded the case $m=0$ (horizontal lines), if we didn't we would have the chance of having $m_1 = \frac{1}{0}$ which doesn't make sense.
@@ -99,14 +99,14 @@ In this case we can easily conclude that if $m=0$, the projection of the point $
 
 Now we have a point and a slope, so we can use one of the formulas we've already seen to find the line with that slope that crosses $P$:
 
-$$y - y_p = m_1(x - x_p) \Leftrightarrow y - y_p = \frac{1}{m}(x - x_p)$$
+$$y - y_p = m_1(x - x_p) \Leftrightarrow y - y_p = -\frac{1}{m}(x - x_p)$$
 
 To find $P_r$ we just need to find the point where the two lines collide, which is the solution to the equation system:
 
 $$
 \begin{cases}
 y = mx + q\\
-y - y_p = \frac{1}{m}(x - x_p)
+y - y_p = -\frac{1}{m}(x - x_p)
 \end{cases}
 $$
 
@@ -114,25 +114,50 @@ Which finds solution in:
 
 $$
 \begin{cases}
-x = \frac{x_p - my_p + mq}{1-m^2}\\
-y = \frac{mx_p -m^2y_p + q}{1-m^2}
+x = \frac{x_p + my_p - mq}{m^2+1}\\
+y = \frac{mx_p +m^2y_p + q}{m^2+1}
 \end{cases}
 $$
 
 The coordinates $x$ and $y$ we just found are actually the coordinates $x_r$ and $y_r$ of our projected point $P_r$.
 
+:::: pitfall ::::
+Due to the fact that we used $m_1 = - \frac{1}{m}$ the previous results are not valid for $m=0$. The denominator of the results gives no issue, since $m^2+1=0$ does not have a solution in real numbers (and we won't need to delve into the Complex number territory).
+:::::::::::::::::
+
 #### Projecting arbitrary lines on the axes
 
-Similarly to what we've done with points, we can project arbitrary lines (or better, the ends of such lines) onto the axes. This will help us in doing some calculations later.
+Similarly to what we've done with points, we can project arbitrary lines (or, to be precise, **the ends** of such lines) onto the axes. This will help us in doing some calculations later (when we'll talk about SAT).
 
-To project any line to the x-axis we can just "pass all the line's points through" the following function:
+To project any line $r$ to the x-axis we can just "pass all the line's points through" the following function:
 
-$$proj_x(x,y) = x$$
+$$proj_x(P_r(x,y)) = (x, 0)$$
+
+for each point $P_r$ in the line $r$.
 
 If we want to project such line on the y-axis, we can just use this other function:
 
-$$proj_y(x,y) = y$$
+$$proj_y(P_r(x,y)) = (0, y)$$
 
-We can see the graphical representation of projecting a line onto the axes below:
+for each point $P_r$ in the line $r$.
 
-![Projecting a line onto the axes](./images/maths/projection_on_axes.svg){width=50%}
+We can see an intuitive representation of projecting a line onto the axes below:
+
+![Projecting a line onto the axes](./images/maths/projection_on_axes.svg){width=40%}
+
+##### How does it work?
+
+Let's take the point $P(2, 5)$ from the previous figure. We want to project it on the x axis: that means we need to find a line that is 90 degrees with the $x$ axis and passes through $P$.
+
+Such line is the line with equation $x=2$, now to find the projection of P onto the x axis, we will just need to solve a simple equation system.
+
+$$
+\begin{cases}
+x = 2\\
+y = 0
+\end{cases}
+$$
+
+Where $y=0$ is the equation of the $x$ axis. So our projected point is $P_x(2,0)$.
+
+Similar thing goes for projecting the point on the y axis: the line that is 90 degrees with the $y$ axis and goes through $P$ has equation $y=5$, the y axis has equation $x=0$, thus the system of equation is solved with $P_y(0,5)$.
