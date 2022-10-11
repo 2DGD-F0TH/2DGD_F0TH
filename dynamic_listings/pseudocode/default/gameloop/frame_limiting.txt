@@ -12,7 +12,7 @@ while (game_is_running){
     draw();
     float end = get_system_time();
     // We update our dt
-    frametime = end - begin;
+    dt = end - begin
     // If some time is left, we wait until we reach 1/60th of a second.
-    wait(max(targetTime - frametime, 0));
+    wait(max(targetTime - dt, 0));
 }
