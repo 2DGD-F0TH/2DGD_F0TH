@@ -16,5 +16,5 @@ while(game_is_running){
     float end = get_system_time_millis();
     // We update our dt
     dt = end - begin;
-    wait(std::max(targetTime - dt, 0));
+    sleep(std::max(targetTime - dt, 0));
 }
