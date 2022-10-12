@@ -23,7 +23,7 @@ deploy(){
     for channel in ${!CHANNELS[@]}; do
         FILENAME=${CHANNELS[${channel}]}
         echo "$(tput setaf 5)Pushing ${FILENAME} to channel ${channel}$(tput setaf 7)"
-        butler push --if-changed --context-timeout=60 ${FILENAME} therealpenaz91/2dgd_f0th:${channel} --userversion ${VERSION}
+        butler push --if-changed --context-timeout=60 ${FILENAME} therealpenaz91/2dgd-f0th:${channel} --userversion ${VERSION}
     done
 }
 
