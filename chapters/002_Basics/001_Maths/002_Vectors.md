@@ -107,6 +107,6 @@ $$
 
 To build the new vector, we just need to multiply $||v||_{clamp}$ by $\hat{v}$:
 
-$$ v = ||v||_{clamp} \cdot \hat{v} $$
+$$ v_{clamp} = ||v||_{clamp} \cdot \hat{v} $$
 
 The new vector will have the same direction as the old one, but its magnitude will be clamped, just like we wanted.
