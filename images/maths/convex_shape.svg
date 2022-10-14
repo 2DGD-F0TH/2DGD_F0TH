@@ -5,7 +5,7 @@
    viewBox="0 0 84.32219 74.704391"
    version="1.1"
    id="svg854"
-   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20, custom)"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14, custom)"
    sodipodi:docname="convex_shape.svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -23,9 +23,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.2852116"
-     inkscape:cx="34.624649"
-     inkscape:cy="150.94791"
+     inkscape:zoom="5.7368689"
+     inkscape:cx="169.86618"
+     inkscape:cy="201.85227"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
@@ -35,7 +35,9 @@
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
-     inkscape:pagecheckerboard="0" />
+     inkscape:pagecheckerboard="0"
+     inkscape:showpageshadow="2"
+     inkscape:deskcolor="#d1d1d1" />
   <metadata
      id="metadata851">
     <rdf:RDF>
@@ -73,30 +75,6 @@
        style="fill:none;stroke:#d40000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:1, 1;stroke-dashoffset:0;stroke-opacity:1"
        d="M 45.051037,60.353068 23.613619,1.4275526"
        id="path1515" />
-    <circle
-       style="fill:#0000ff;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:1, 1;stroke-dashoffset:0;paint-order:stroke fill markers"
-       id="path1430"
-       sodipodi:type="arc"
-       sodipodi:cx="23.613619"
-       sodipodi:cy="1.4275527"
-       sodipodi:rx="1.4275527"
-       sodipodi:ry="1.4275527"
-       sodipodi:start="4.712389"
-       sodipodi:end="4.7119177"
-       sodipodi:arc-type="slice"
-       d="M 23.613619,0 A 1.4275527,1.4275527 0 0 1 25.041172,1.4273845 1.4275527,1.4275527 0 0 1 23.613955,2.8551054 1.4275527,1.4275527 0 0 1 22.186066,1.4280573 1.4275527,1.4275527 0 0 1 23.612946,1.5853344e-7 L 23.613619,1.4275527 Z" />
-    <circle
-       style="fill:#0000ff;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:1, 1;stroke-dashoffset:0;paint-order:stroke fill markers"
-       id="path1430-3"
-       sodipodi:type="arc"
-       sodipodi:cx="45.051037"
-       sodipodi:cy="60.353069"
-       sodipodi:rx="1.4275527"
-       sodipodi:ry="1.4275527"
-       sodipodi:start="4.712389"
-       sodipodi:end="4.7119177"
-       sodipodi:arc-type="slice"
-       d="m 45.051037,58.925517 a 1.4275527,1.4275527 0 0 1 1.427553,1.427384 1.4275527,1.4275527 0 0 1 -1.427217,1.427721 1.4275527,1.4275527 0 0 1 -1.427889,-1.427048 1.4275527,1.4275527 0 0 1 1.42688,-1.428057 l 6.73e-4,1.427552 z" />
     <text
        xml:space="preserve"
        style="font-size:7.7611px;line-height:1.25;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
@@ -163,5 +141,19 @@
          style="stroke-width:0.264583"
          x="53.123146"
          y="67.415131">F</tspan></text>
+    <rect
+       style="fill:#0000ff;fill-rule:evenodd;stroke:#0000ff;stroke-width:1;stroke-linecap:round;stroke-linejoin:round"
+       id="rect361"
+       width="2.8352506"
+       height="2.8352506"
+       x="22.227268"
+       y="-0.12860331" />
+    <rect
+       style="fill:#0000ff;fill-rule:evenodd;stroke:#0000ff;stroke-width:1;stroke-linecap:round;stroke-linejoin:round"
+       id="rect361-5"
+       width="2.8352506"
+       height="2.8352506"
+       x="43.356266"
+       y="59.106384" />
   </g>
 </svg>
