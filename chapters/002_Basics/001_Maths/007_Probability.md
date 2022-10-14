@@ -67,7 +67,7 @@ Table: Counting the possible outcomes of two coin tosses
 Now we know that there are 4 possible outcomes, and the "Heads + Heads" is only one of them. This confirms our formula.
 
 :::: pitfall ::::
-Someone may argue that the probability of "Heads + Tails" is $\frac{1}{2}$, but that would not be correct. We are still strictly tied to the events, that means that "Heads + Tails" means the event of "First toss is heads, second toss is tails", which is different from "Tails + Heads" (first toss is tails, second is heads).
+Someone may argue that the probability of "Heads + Tails" is $\frac{1}{2}$, but that would not be correct. We are still strictly tied to the events, that means that "Heads + Tails" (First toss is heads, second toss is tails), is different from "Tails + Heads" (first toss is tails, second is heads).
 :::::::::::::::::
 
 ### Probability of mutually exclusive events
