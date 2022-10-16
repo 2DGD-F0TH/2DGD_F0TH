@@ -7,7 +7,13 @@ In the case of 2D game development, a vector is just a pair of values `(x,y)`.
 
 Vectors usually represent a force applied to a body, its velocity or acceleration and are graphically represented with an arrow.
 
+On a cartesian plane it can be seen as "the x and y quantities you need to move to get from a point to another".
+
 ![Image of a vector](./images/maths/vector.svg){width=30%}
+
+From the previous example, the vector $v=(4,1)$ can be thought of as the following:
+
+> you need to move 4 units on the x axis and 1 on the y axis to go from the origin to the point $P(4,1)$
 
 The pain of learning about vectors is paid off by their capacity of being added and subtracted among themselves, as well as being multiplied by a number (called a "scalar") and between themselves.
 
@@ -15,41 +21,51 @@ The pain of learning about vectors is paid off by their capacity of being added 
 
 Adding vectors is as easy as adding its "members". Let's consider the following vectors:
 
-$v = (2,4)$
+$v = (4,1)$
 
-$u = (1,5)$
+$u = (1,4)$
 
 The sum vector $s$ will then be:
 
-$s = u + v = (2+1, 4+5) = (3,9)$
+$s = v + u = (4+1, 1+4) = (5,5)$
 
 Graphically it can be represented by placing the tail of the arrow `v` on the head of the arrow `u`, or vice-versa:
 
 ![Graphical representation of a sum of vectors](./images/maths/vector_sum.svg){width=30%}
 
+A different example could be the following:
+
+$v = (2,4)$
+
+$u = (1,5)$
+
+The sum vector $s$ will be:
+
+$s = u + v = (2+1, 4+5) = (3,9)$
+
 ### Scaling Vectors {#scalingvectors}
 
 There may be situations where you need to make a vector $x$ times longer. This operation is called "scalar multiplication" and it is performed as follows:
 
-$v = (2,4)$
+$v = (1,2)$
 
-$3 \cdot v = (2 \cdot 3, 4 \cdot 3) = (6,12)$
+$3 \cdot v = (1 \cdot 3, 2 \cdot 3) = (3,6)$
 
 ![Example of a vector multiplied by a value of 3](./images/maths/vector_mul_3.svg){width=30%}
 
 Obviously this works with scalars with values between $0$ and $1$:
 
-$v = (2,4)$
+$v = (4,2)$
 
-$\frac{1}{2} \cdot v = (\frac{1}{2} \cdot 2, \frac{1}{2} \cdot 4) = (1,2)$
+$\frac{1}{2} \cdot v = (\frac{1}{2} \cdot 4, \frac{1}{2} \cdot 2) = (2,1)$
 
 ![Example of a vector multiplied by a value of 0.5](./images/maths/vector_mul_half.svg){width=30%}
 
 When you multiply the vector by a value less than $0$, the vector will rotate by $180\degree$.
 
-$v = (2,4)$
+$v = (1,2)$
 
-$-2 \cdot v = (-2 \cdot 2, -2 \cdot 4) = (-4, -8)$
+$-2 \cdot v = (-2 \cdot 1, -2 \cdot 2) = (-2, -4)$
 
 ![Example of a vector multiplied by a value of -2](./images/maths/vector_mul_minus2.svg){width=30%}
 
