@@ -147,3 +147,16 @@ In that case we can chain ifs to bring our tiered prize pool to life:
 
 ```{src=maths/probability_tiered_pool caption="How to implement a tiered prize pool selector"}
 ```
+
+#### Introducing a "luck" stat
+
+In many RPGs there is a "luck" statistic that affects how item drops happen, in that case we will need to change how tiered prize pools are given out. Things can get complicated quite quickly.
+
+Let's imagine a simple situation: one point of "luck" gives a $1%$ probability of getting an item of each tier higher than "Common", while at the same time reducing the probability of finding a "common" item.
+
+At a first glance, it seems simple: take each "non-common" class and "add 1", then take the "common" class and "remove 1 for each point given". But what would happen if the luck stat is higher than the probability of a "common" item? It should probably start taking away probability from "uncommon" items to give out "rare" and "epic" items.
+
+Let's see a possible implementation:
+
+```{src=maths/probability_luck caption="A possible implementation of a luck stat"}
+```
