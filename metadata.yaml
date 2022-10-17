@@ -50,5 +50,11 @@ citecolor: "green"
 # Font Family
 fontfamily: "dejavu"
 mainfont: "DejaVuSans"
+#mainfont: OpenDyslexic-Regular.otf
+#mainfontoptions:
+#- Path=/home/penaz/.local/share/fonts/
+#- BoldFont=OpenDyslexic-Bold.otf
+#- ItalicFont=OpenDyslexic-Italic.otf
+#- BoldItalicFont=OpenDyslexic-Bold-Italic.otf
 cover-image: "images/front_cover.png"
 ---
