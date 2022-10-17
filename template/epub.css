@@ -3,6 +3,7 @@ body {
     margin: 5%;
     text-align: justify;
     font-size: medium;
+    line-height: 1.4;
 }
 blockquote{
     border-left: 4px solid #555;

@@ -1,6 +1,7 @@
 \documentclass{article}
 % --------------- Initial Package imports ---------------
 \usepackage{float}
+\usepackage{setspace}
 \usepackage{gensymb}
 \usepackage{epigraph}
 \usepackage{makecell}
@@ -25,7 +26,7 @@
 \newcommand{\paidprod}{{\color{red}\textbf{[P]}}}
 \newcommand{\freeprod}{{\color{green!80!black}\textbf{[F]}}}
 \newcommand{\donprod}{{\color{orange}\textbf{[D]}}}
-\renewcommand{\arraystretch}{1.5}
+\renewcommand{\arraystretch}{1.1}
 \newenvironment{tip}{
   \begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!white,title=Tip!]
     \begin{minipage}{.15\textwidth}
@@ -85,6 +86,7 @@
 }
 % --------------- Lengths ---------------
 \setlength\epigraphwidth{.8\textwidth}
+\linespread{1.4}
 % --------------- Gray Bar on left of blockquotes ---------------
 \renewenvironment{leftbar}[1][\hsize]
 {%
