@@ -35,10 +35,11 @@ lot: True
 lol: True
 # Geometry
 geometry:
-    - "lmargin=2.5cm"
-    - "rmargin=2.5cm"
-    - "tmargin=2.5cm"
-    - "lmargin=2.5cm"
+  - "paper=a4paper"
+  - "lmargin=2.5cm"
+  - "rmargin=2.5cm"
+  - "tmargin=2.5cm"
+  - "lmargin=2.5cm"
 # Colors For Links?
 colorlinks: True
 # Colors for internal links (to sections)
@@ -50,5 +51,14 @@ citecolor: "green"
 # Font Family
 fontfamily: "dejavu"
 mainfont: "DejaVuSans"
+monofont: "Inconsolata"
+#mainfont: OpenDyslexic-Regular.otf
+#mainfontoptions:
+#- Path=/home/penaz/.local/share/fonts/
+#- BoldFont=OpenDyslexic-Bold.otf
+#- ItalicFont=OpenDyslexic-Italic.otf
+#- BoldItalicFont=OpenDyslexic-Bold-Italic.otf
 cover-image: "images/front_cover.png"
+# Line spread/stretch
+linestretch: 1.4
 ---
