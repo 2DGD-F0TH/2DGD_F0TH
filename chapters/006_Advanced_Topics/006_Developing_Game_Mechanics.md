@@ -628,7 +628,17 @@ Instead we memorize everything first, and then delete all the matches at once, w
 
 At this point, it is easy to make the "floating tiles" get into the right position: the hardest part is taking care of the graphics inbetweening that will give us that "falling effect" that we see in many match-x games.
 
+Here is a possible implementation of the algorithm:
+
+```{src='developing_mechanics/match3_fallingtiles' caption='Eliminating matches and preparing the tween table'}
+```
+
+We can make use of the table to tween the graphics with our favourite method.
+
 After the graphics tweening, we need to create the new tiles that will go and fill up the holes that have been created by our matches and moved tiles.
+
+```{src='developing_mechanics/match3_newtiles' caption='Creating new tiles and preparing another tween table'}
+```
 
 After creating the tiles and tweening them in place, it will be necessary to check for more matches that have been created from the falling tiles (and eventually notify some kind of "combo system" to apply a "score multipier system" or even an achievement system using the [Observer Pattern](#ObserverPattern)).
 
