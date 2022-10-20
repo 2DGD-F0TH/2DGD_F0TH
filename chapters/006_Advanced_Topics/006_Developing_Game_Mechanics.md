@@ -633,7 +633,7 @@ Here is a possible implementation of the algorithm:
 ```{src='developing_mechanics/match3_fallingtiles' caption='Eliminating matches and preparing the tween table'}
 ```
 
-We can make use of the table to tween the graphics with our favourite method.
+We can make use of the table to tween the graphics with our favourite method: the map we used will contain the starting position of the tween, while the end position will be the position set on the tile itself.
 
 After the graphics tweening, we need to create the new tiles that will go and fill up the holes that have been created by our matches and moved tiles.
 
