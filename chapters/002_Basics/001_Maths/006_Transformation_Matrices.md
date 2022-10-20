@@ -158,22 +158,22 @@ These formulas **assume that the x-axis points right and the y-axis points up**,
 
 #### Rotating referred to an arbitrary point
 
-The biggest problem in rotation is rotating an object relative to a certain point: you need to know the origin of the coordinate system as well and modify the matrices as follows:
+The biggest problem in rotation is rotating an object relative to a certain point: you need to know the point of rotation $(x_p, y_p)$ in relation to the origin of the coordinate system you're using, and modify the matrices as follows:
 
 $$
 \begin{bmatrix}
     x'\\
     y'
 \end{bmatrix} = T_R \begin{bmatrix}
-    x - x_{origin}\\
-    y - y_{origin}
+    x - x_p\\
+    y - y_p
 \end{bmatrix} + \begin{bmatrix}
-    x_{origin}\\
-    y_{origin}
+    x_p\\
+    y_p
 \end{bmatrix}
 $$
 
-In short, you need to rotate the item by first "bringing it centered to the origin", rotating it and then bring it back into its original position.
+In short, you need to rotate the item by first "bringing it centered to the origin", rotate it, and then bring it back into its original position.
 
 ### Shearing
 
