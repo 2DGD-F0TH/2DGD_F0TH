@@ -1,4 +1,4 @@
-blank_issues_enabled: false
+blank_issues_enabled: true
 contact_links:
   - name: GitHub Discussions
     url: https://github.com/2DGD-F0TH/2DGD_F0TH/discussions
