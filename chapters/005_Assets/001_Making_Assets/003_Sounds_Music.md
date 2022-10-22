@@ -552,4 +552,4 @@ A simple example of Adaptive Music can be found in Super Mario World, where hopp
 
 {{placeholder}}
 
-<!-- TODO: What is adaptive music, how it contributes to
+<!-- TODO: What is adaptive music, how it contributes to making an interesting experience -->

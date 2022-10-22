@@ -1,5 +1,5 @@
 Fonts
--------
+-----
 
 ### Font Categories
 
