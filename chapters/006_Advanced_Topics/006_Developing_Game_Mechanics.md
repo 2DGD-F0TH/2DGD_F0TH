@@ -178,8 +178,7 @@ Now we can start writing some code:
 
 {{placeholder}}
 
-<!-- TODO: If you jump and are under a wall by one pixel, you would smack your head on the "ceiling", sometimes it's better moving the character on the x-axis slightly to avoid that. This can be extended to other games (like top-down) where the character may get stuck in a corner.
-This can be done by comparing how much the player sprite is overlapping the wall on the axis perpendicular to the direction you're moving (if movement is restricted to x-y), if the overlap is less than a certain amount (easy to calculate in AABB), apply correction on the axis that is perpendicular to the movement direction.
+<!-- TODO: If you jump and are under a wall by one pixel, you would smack your head on the "ceiling", sometimes it's better moving the character on the x-axis slightly to avoid that. Can be extended to other games (top-down) where the character may get stuck in a corner. This can be done by comparing how much the player sprite is overlapping the wall on the axis perpendicular to the direction you're moving (if movement is restricted to x-y), if the overlap is less than a certain amount (easy to calculate in AABB), apply correction on the axis that is perpendicular to the movement direction.
 -->
 
 2D Platformers
