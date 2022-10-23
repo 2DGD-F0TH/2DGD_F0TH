@@ -176,9 +176,25 @@ Now we can start writing some code:
 
 ### Corner correction
 
+Let's consider the following situation: our character is jumping, but due to the player being a bit too eager on their jump, the collision boxes are still slightly overlapping:
+
+![What would be a good collision response for this situation?](./images/developing_mechanics/corner_correction_1.svg){width=50%}
+
+The character's head is just slightly hitting the corner of the geometry, but since collision detection doesn't really "care" about the kind of movement you're doing the jump will be stopped.
+
+Wouldn't it be better if instead the character was just "slightly pushed" to the right so to complete the jump?
+
+![Corner correction makes for a more fluid experience](./images/developing_mechanics/corner_correction_2.svg){width=50%}
+
+That would make it so the player doesn't get frustrated at a way-too-precise collision detection (remember me saying "you don't **want** precise collision detection?) and the game flow would be a lot smoother.
+
+:::: tip ::::
+This doesn't help only with side-scroller style run'n'jump games: if you're making a top-down game (like a 2D RPG) using tiles where movement is not tile-based. This will give you a smoother gameplay.
+:::::::::::::
+
 {{placeholder}}
 
-<!-- TODO: If you jump and are under a wall by one pixel, you would smack your head on the "ceiling", sometimes it's better moving the character on the x-axis slightly to avoid that. Can be extended to other games (top-down) where the character may get stuck in a corner. This can be done by comparing how much the player sprite is overlapping the wall on the axis perpendicular to the direction you're moving (if movement is restricted to x-y), if the overlap is less than a certain amount (easy to calculate in AABB), apply correction on the axis that is perpendicular to the movement direction.
+<!-- TODO: This can be done by comparing how much the player sprite is overlapping the wall on the axis perpendicular to the direction you're moving (if movement is restricted to x-y), if the overlap is less than a certain amount (easy to calculate in AABB), apply correction on the axis that is perpendicular to the movement direction.
 -->
 
 2D Platformers
