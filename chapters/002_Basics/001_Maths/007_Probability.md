@@ -13,10 +13,12 @@ $$
 
 For instance: let's take a coin. We want to calculate the probability that a coin toss ends with "head": first we count how many outcomes are possible. Since a coin can land on "tails" or "heads", we have 2 possible outcomes, and head is only one of them.
 
+For practicality, we will call "Heads" $H$ and "Tails" $T$.
+
 Thus:
 
 $$
-P(heads) = \frac{1}{2} = 0.5
+P(H) = \frac{1}{2} = 0.5
 $$
 
 This result can be converted to a percentage, by multiplying it by 100. That means that there's a 50\% chance that a coin toss ends in "heads", shocking, I know.
@@ -32,7 +34,7 @@ $$
 Thus, by applying such formula on our coin example we have:
 
 $$
-P(\overline{Heads}) = 1 - P(A) = 1 - \frac{1}{2} = \frac{1}{2} = P(Tails)
+P(\overline{H}) = 1 - P(A) = 1 - \frac{1}{2} = \frac{1}{2} = P(T)
 $$
 
 Perfect. Everything as expected.
@@ -50,7 +52,7 @@ $$
 Let's return to our coin example: if we wanted to know the probability of two coin tosses landing both on heads, we would have:
 
 $$
-P(Heads\ and\ Heads) = P(Heads) \cdot P(Heads) = \frac{1}{2} \cdot \frac{1}{2} = \frac{1}{4}
+P(H\ and\ H) = P(H) \cdot P(H) = \frac{1}{2} \cdot \frac{1}{2} = \frac{1}{4}
 $$
 
 Let's demonstrate that intuitively: since the example is simple, we can literally count the possible outcomes:
@@ -85,6 +87,14 @@ Another example could be done using a 6-sided dice: each face can be on top with
 $$
 P(1\ or\ 6) = P(1) + P(6) = \frac{1}{6} + \frac{1}{6} = \frac{2}{6} = \frac{1}{3}
 $$
+
+:::: note ::::
+Considering the previous "tossing two coins" example, we can calculate the probability of "one coin lands on heads and the other lands on tails" with the previous formulas, since coin tosses tick both the "independence" and "mutual exclusivity" boxes.
+
+$$
+P((H\ and\ T)\ or\ (T\ and\ H)) = P(H\ and\ T) + P(T\ and\ H) = \frac{1}{4} + \frac{1}{4} = \frac{1}{2}
+$$
+::::::::::::::
 
 ### Probability of non-mutually exclusive events
 
