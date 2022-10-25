@@ -86,6 +86,35 @@ $$
 P(1\ or\ 6) = P(1) + P(6) = \frac{1}{6} + \frac{1}{6} = \frac{2}{6} = \frac{1}{3}
 $$
 
+### Probability of non-mutually exclusive events
+
+Not all events are mutually exclusive. Let's think, for instance, about a deck of cards: what if you wanted to know the probability of drawing either a card of hearts or a face card (Jack, Queen or King)?
+
+We need to use a different formula in that case, which is the following one:
+
+$$
+P(A\ or B) = P(A) + P(B) - P(A\ and\ B)
+$$
+
+:::: note ::::
+Why are we subtracting $P(A\ and\ B)$?
+Because if we didn't, we would be counting the face cards of hearts twice: once when we count the card of hearts, and once when we count the face cards.
+::::::::::::::
+
+Let's continue with our example.
+
+A standard deck has 52 cards, 13 for each seed. This means we would have 13 cards of hearts: $P(A) = \frac{13}{52}$.
+
+The same deck of cards also has 3 "face cards" for each seed, totalling 12: $P(B) = \frac{12}{52}$.
+
+Since there are face cards of the hearts seed, we need to account for those too, totalling 3: $P(A\ and\ B)= \frac{3}{52}$.
+
+This means that the probability we're looking for is calculated as follows:
+
+$$
+P(A\ or B) = P(A) + P(B) - P(A\ and\ B) = \frac{13}{52} + \frac{12}{52} - \frac{3}{52} = \frac{22}{52} = \frac{11}{26}
+$$
+
 ### Uniform Distributions
 
 In most cases, we will speak in terms of "uniform distributions", that means that we will be operating on a system where all outcomes have the same probability of happening.
