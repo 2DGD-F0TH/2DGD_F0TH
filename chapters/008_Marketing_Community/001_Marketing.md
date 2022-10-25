@@ -46,6 +46,10 @@ Last advice: Gameplay over Graphics.
 We're not Activision, we can't afford to spend 10 million bucks for a cutscene. Aim for the "old fashion gamers", the customers that play for fun, not because some game is gorgeous to see.
 Whatever your working on, whatever your game genere is, focus on making the gameplay fun to play. Things are really this simple. Work 2 hours less on a model or sprite and 2 hours more on thinking about how to not get your customer bored.
 
+:::: trivia ::::
+Around July 2015 a game called "Brutal Force" (a clone of the more successful "Nuclear Throne") was hit with a wave of criticism after they raised their base price during a sale. The game was 75% off, but its sale price quickly went from 99¢ to $1.99 until it reached $3.24. The moral of the story is "never lie to your customers".
+::::::::::::::::
+
 Pricing
 --------
 
@@ -105,8 +109,6 @@ That is actually one of the problems with Free to Play games: you must not get "
 Managing Hype
 --------------
 
-<!-- TODO: Give the programmer a view on how they are not EA or Ubisoft, and if they make a bad move (or even an illegal one - see Brutal Force raising prices during sales) they can't just "take the hit" and walk away with no (or minor) consequences -->
-
 It's time to discuss about promoting our works.
 
 Let's start with an obvious (sadly not that much obvious) statement: We are **not** a big publisher, we cannot afford to make big mistakes.
@@ -125,8 +127,6 @@ Patreon (or crowdfunding websites in general) could be an interesting compromise
 
 Downloadable Content
 --------------------------
-
-<!-- TODO: Talk how DLC can make or break a game's fame, like how a DLC can extend and "give new life" to a game, or if a game is broken down and "spoon-fed" to the user that can be detrimental to its marketing -->
 
 DLC changed the game industry, this is a fact. How? You may ask.
 
@@ -160,8 +160,6 @@ The adequate content, a fair price and we're talking about a combined 50 hours o
 
 Digital Rights Management (DRM)
 ------------------------------------
-
-<!-- TODO: Talk about how drm can protect your software, but if badly implemented, it can weigh on your game's performance and even drive away consumers if it's something known to spy on its users -->
 
 Another thing that can make or break a game's enjoyability is the presence of a Digital Rights Management System (shortly referred to as "DRM").
 
@@ -203,8 +201,6 @@ This is another situation where piracy wins, since people who pirate games have 
 
 Free-to-Play Economies and LootBoxes
 ------------------------------------
-
-<!-- TODO: Talk about how to avoid predatory EA-style lootboxes and how again microtransactions can "make or break" a game's fame. How overwatch (Blizzard) implemented a mechanism of lootboxes that can be (debatably, obviously) considered "acceptable" and how some publishers are trying to "move the goal further" to earn more money -->
 
 Let's face the most controversial topic, here we go.
 
