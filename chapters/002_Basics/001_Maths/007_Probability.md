@@ -46,7 +46,7 @@ But what if we wanted to calculate the probability of more than one event?
 If our events are independent (that means that the result of one doesn't affect the result of others), we can use the following formula:
 
 $$
-P(A\ and\ B) = P(A) \cdot P(B)
+P(A\ and\ B) = P(A \cap B) = P(A) \cdot P(B)
 $$
 
 Let's return to our coin example: if we wanted to know the probability of two coin tosses landing both on heads, we would have:
@@ -77,7 +77,7 @@ Someone may argue that the probability of "Heads + Tails" is $\frac{1}{2}$, but 
 In case the events are mutually exclusive (that means, if one event happens, none of the others can happen), the following formula may be helpful in some occasions:
 
 $$
-P(A\ or\ B) = P(A) + P(B)
+P(A\ or\ B) = P(A \cup B) = P(A) + P(B)
 $$
 
 Going back to our coin example: the probability of a coin toss being "either heads or tails" is $\frac{1}{2} + \frac{1}{2} = 1$.
@@ -103,7 +103,7 @@ Not all events are mutually exclusive. Let's think, for instance, about a deck o
 We need to use a different formula in that case, which is the following one:
 
 $$
-P(A\ or B) = P(A) + P(B) - P(A\ and\ B)
+P(A\ or\ B) = P(A \cup B) P(A) + P(B) - P(A\ and\ B)
 $$
 
 :::: note ::::
@@ -124,6 +124,60 @@ This means that the probability we're looking for is calculated as follows:
 $$
 P(A\ or B) = P(A) + P(B) - P(A\ and\ B) = \frac{13}{52} + \frac{12}{52} - \frac{3}{52} = \frac{22}{52} = \frac{11}{26}
 $$
+
+### Conditional Probability
+
+Sometimes you may need to consider the probability of a certain event, given that another event happens. This is called "conditional probability", and it can be calculated as follows:
+
+$$
+P(A|B) = \frac{P(A\ and\ B)}{P(B)} = \frac{P(A \cap B)}{P(B)}
+$$
+
+Conditional probability can be used to enrich the decision making used in enemy AI, for instance.
+
+Let's take a concrete example, taken straight from the famous tabletop RPG Dungeons&Dragons, and see how probability can be applied to decision making.
+
+> You're fighting against an enemy. Both you and the enemy are close to fatal damage: you have 1HP, while the enemy has 3HP left.
+>
+> To attack an enemy you need to roll a 20-sided dice (called a d20): if the number rolled is 13 or higher you will hit, else you will miss.
+>
+> If you hit, you will roll a 6-sided dice (called a d6): the number rolled will decide how much damage you will deal, so you need 3 or more.
+>
+> We need to find the probability of killing the enemy within the next turn to decide our next move.
+
+First of all, let's name the events:
+
+- **H** Will be the event "hit", which means that the d20 rolled a number that is 13 or higher.
+- **F** Will be the event "fatal damage", which means that the d6 rolled a number that is 3 or higher.
+
+Now we will calculate the probabilities we need for our calculation:
+
+$$
+P(H) = \frac{8}{20} = \frac{2}{5}
+$$
+$$
+P(F) = \frac{4}{6} = \frac{2}{3}
+$$
+
+Our objective is calculating "the probability of doing at least 3HP of damage, given that we hit the enemy". This is represented as:
+
+$$
+P(F|H) = \frac{P(F \cap H)}{P(H)}
+$$
+
+This means we will have to calculate another probability, which is quite easy:
+
+$$
+P(F \cap H) = P(F) \cdot P(H) = \frac{2}{3} \cdot \frac{2}{5} = \frac{4}{15}
+$$
+
+Now we are ready to calculate everything we need:
+
+$$
+P(F|H) = \frac{P(F \cap H)}{P(H)} = \frac{\frac{4}{15}}{\frac{2}{5}} = \frac{4}{15} \cdot \frac{5}{2} = \frac{2}{3}
+$$
+
+Given a 66% chance of success, you may decide that attacking is worth the risk. Such decision may be hard-coded into an AI, for instance if the probability is higher than 50% the AI may choose to attack instead of retreating and call for backup.
 
 ### Uniform Distributions
 
