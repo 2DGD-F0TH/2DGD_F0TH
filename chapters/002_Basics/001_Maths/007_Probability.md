@@ -129,6 +129,10 @@ $$
 
 ### Conditional Probability
 
+:::: wizardry ::::
+Conditional probability doesn't have a lot of uses in game development, but it's worth mentioning it if you want to have a probabilistic approach to AI. Feel free to quickly skim through this section.
+::::::::::::::::::
+
 Sometimes you may need to consider the probability of a certain event, given that another event happens. This is called "conditional probability", and it can be calculated as follows:
 
 $$

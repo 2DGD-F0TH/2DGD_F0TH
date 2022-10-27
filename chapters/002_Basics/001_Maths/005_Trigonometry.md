@@ -126,6 +126,10 @@ Here we will give some pointers over some algorithms and methods that may be use
 
 ### Newton-Raphson method {#newtonmethod}
 
+:::: wizardry ::::
+This section treats of how to approximate a function value in an iterative way. This will be useful to know what the "Fast Inverse Square Root" algorithm uses. Feel free to skim through this section.
+::::::::::::::::::
+
 Also known as Newton's method, this is an iterative algorithm that is used to get progressively better approximations to the roots of a function.
 
 The algorithm starts with a "guess", called $x_0$, and produces the first approximation using the formula:
