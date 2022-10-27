@@ -11,6 +11,8 @@ $$
 P(A) = \frac{The\ outcome\ is\ A}{All\ Outcomes}
 $$
 
+The numerator is called "event space", while the denominator is called "sample space".
+
 For instance: let's take a coin. We want to calculate the probability that a coin toss ends with "head": first we count how many outcomes are possible. Since a coin can land on "tails" or "heads", we have 2 possible outcomes, and head is only one of them.
 
 For practicality, we will call "Heads" $H$ and "Tails" $T$.
