@@ -179,7 +179,7 @@ $$
 P(F|H) = \frac{P(F \cap H)}{P(H)} = \frac{\frac{4}{15}}{\frac{2}{5}} = \frac{4}{15} \cdot \frac{5}{2} = \frac{2}{3}
 $$
 
-Given a 66% chance of success, you may decide that attacking is worth the risk. Such decision may be hard-coded into an AI, for instance if the probability is higher than 50% the AI may choose to attack instead of retreating and call for backup.
+Given a 66\% chance of success, you may decide that attacking is worth the risk. Such decision may be hard-coded into an AI, for instance if the probability is higher than 50\% the AI may choose to attack instead of retreating and call for backup.
 
 ### Uniform Distributions
 
@@ -213,7 +213,7 @@ P(1\ or\ 2\ or\ ...\ or\ 13) = P(1) + P(2) + ... + P(13) = \frac{1}{100} + \frac
 $$
 
 :::: tip ::::
-If the example is not 100% clear yet, try reading the previous formula right-to-left. That may help.
+If the example is not 100\% clear yet, try reading the previous formula right-to-left. That may help.
 :::::::::::::
 
 This means that the event "a number between 1 and 13 appears" has a 13\% probability of appearing. We can simplify that statement with "a number less or equal than 13". We can experiment that easily with the following code:
@@ -231,10 +231,10 @@ You can extend the example above to fractions of a percentage by using bigger nu
 
 We can use what we learned with probability to create a tiered prize pool. For instance we decide that killing a certain enemy will always drop something, the tier of such item is according to the follow probability list:
 
-- 50% probability for a common item to drop (for instance a scrap of leather);
-- 30% probability for an uncommon item to drop (like a lower-grade potion);
-- 15% probability for a rare item to drop (a good sword, for instance);
-- 5% probability for an epic item to drop (a unique armor, for example);
+- 50\% probability for a common item to drop (for instance a scrap of leather);
+- 30\% probability for an uncommon item to drop (like a lower-grade potion);
+- 15\% probability for a rare item to drop (a good sword, for instance);
+- 5\% probability for an epic item to drop (a unique armor, for example);
 
 ![Intuitive representation of our prize pool](./images/maths/probability_prize_pool.svg){width=40%}
 
@@ -247,7 +247,7 @@ In that case we can chain ifs to bring our tiered prize pool to life:
 
 In many RPGs there is a "luck" statistic that affects how item drops happen, in that case we will need to change how tiered prize pools are given out. Things can get complicated quite quickly.
 
-Let's imagine a simple situation: one point of "luck" gives a $1%$ probability of getting an item of each tier higher than "Common", while at the same time reducing the probability of finding a "common" item.
+Let's imagine a simple situation: one point of "luck" gives a $1\%$ probability of getting an item of each tier higher than "Common", while at the same time reducing the probability of finding a "common" item.
 
 At a first glance, it seems simple: take each "non-common" class and "add 1", then take the "common" class and "remove 1 for each point given". But what would happen if the luck stat is higher than the probability of a "common" item? It should probably start taking away probability from "uncommon" items to give out "rare" and "epic" items.
 

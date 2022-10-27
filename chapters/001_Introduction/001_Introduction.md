@@ -88,6 +88,10 @@ This is a trivia box, it will give out some small facts that can help you unders
 This is just a note box, it's not a pitfall, a tip or a trivia. This is used for reminders and just as a general purpose note
 ::::::::::::::
 
+:::: wizardry ::::
+This will warn you of complex sections, or sections treating advanced topics that have limited game development usefulness. Such sections may be skimmed on.
+::::::::::::::::::
+
 ### Engine Used
 
 Most editions of this book does not use any engine. All algorithms will be presented pretending there is some "generic engine" behind the scenes that handles sprites, vectors and the like. The objective of this book is teaching algorithms, tips and tricks and game design in the most engine-agnostic (and language-agnostic, if you're looking at the "pseudocode edition") way possible.
