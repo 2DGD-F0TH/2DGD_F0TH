@@ -1,6 +1,6 @@
 function removeMatches(){
     for (tile in matches){
-        matrix[tile.x][tile.y] = null;
+        matrix[tile.y][tile.x] = null;
     }
     matches = [];
 }
@@ -15,7 +15,7 @@ function findFallingTiles() -> Map<Tile, int>{
         // We scroll each row, from bottom to top
         int y = number of rows;
         while (y > 0){
-            Tile tile = tile;
+            Tile tile = matrix[y][x];
             if (found_space){
                 // If the current tile is not a space, bring it to the lowest space
                 if (tile != null){
