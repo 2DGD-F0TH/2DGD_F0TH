@@ -5,16 +5,16 @@ Project Status:
 
 ![Latest Version](https://img.shields.io/github/v/tag/penaz91/2dgd_f0th?label=Latest%20Version&logo=git&style=for-the-badge)
 
-![GitHub Forks](https://img.shields.io/github/forks/penaz91/2DGD_F0TH?label=GitHub%20Forks&logo=github&style=for-the-badge)
 ![GitHub Stars](https://img.shields.io/github/stars/penaz91/2DGD_F0TH?label=GitHub%20Stars&logo=github&style=for-the-badge)
+![GitHub Forks](https://img.shields.io/github/forks/penaz91/2DGD_F0TH?label=GitHub%20Forks&logo=github&style=for-the-badge)
 
 ![GitLab Stars](https://img.shields.io/gitlab/stars/Penaz/2DGD_F0TH?label=Gitlab%20Stars&logo=gitlab&style=for-the-badge)
 ![GitLab Forks](https://img.shields.io/gitlab/forks/Penaz/2DGD_F0TH?label=GitLab%20Forks&logo=gitlab&style=for-the-badge)
 
 **Commits:**
 
-![GitHub last commit (master)](https://img.shields.io/github/last-commit/penaz91/2DGD_F0TH/master?label=Last%20Commit%20%28master%29&style=for-the-badge)
-![GitHub last commit (develop)](https://img.shields.io/github/last-commit/penaz91/2DGD_F0TH/develop?label=Last%20Commit%20%28develop%29&style=for-the-badge)
+![GitHub last commit (master)](https://img.shields.io/github/last-commit/penaz91/2DGD_F0TH/master?label=Last%20Commit%20%28master%29&logo=git&style=for-the-badge)
+![GitHub last commit (develop)](https://img.shields.io/github/last-commit/penaz91/2DGD_F0TH/develop?label=Last%20Commit%20%28develop%29&logo=git&style=for-the-badge)
 
 This is a small project that aims to gather some knowledge about game development and make it available to everyone.
 
