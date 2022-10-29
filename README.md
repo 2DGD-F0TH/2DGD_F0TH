@@ -3,9 +3,13 @@
 
 Project Status:
 
-![Latest Version](https://img.shields.io/github/v/tag/penaz91/2dgd_f0th?label=Latest%20Version&style=for-the-badge)
-![GitHub Forks](https://img.shields.io/github/forks/penaz91/2DGD_F0TH?label=GitHub%20Forks&style=for-the-badge)
-![GitHub Stars](https://img.shields.io/github/stars/penaz91/2DGD_F0TH?label=GitHub%20Stars&style=for-the-badge)
+![Latest Version](https://img.shields.io/github/v/tag/penaz91/2dgd_f0th?label=Latest%20Version&logo=git&style=for-the-badge)
+
+![GitHub Forks](https://img.shields.io/github/forks/penaz91/2DGD_F0TH?label=GitHub%20Forks&logo=github&style=for-the-badge)
+![GitHub Stars](https://img.shields.io/github/stars/penaz91/2DGD_F0TH?label=GitHub%20Stars&logo=github&style=for-the-badge)
+
+![GitLab Stars](https://img.shields.io/gitlab/stars/Penaz/2DGD_F0TH?label=Gitlab%20Stars&logo=gitlab&style=for-the-badge)
+![GitLab Forks](https://img.shields.io/gitlab/forks/Penaz/2DGD_F0TH?label=GitLab%20Forks&logo=gitlab&style=for-the-badge)
 
 **Commits:**
 
