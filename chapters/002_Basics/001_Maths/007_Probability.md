@@ -105,7 +105,7 @@ Not all events are mutually exclusive. Let's think, for instance, about a deck o
 We need to use a different formula in that case, which is the following one:
 
 $$
-P(A\ or\ B) = P(A \cup B) P(A) + P(B) - P(A\ and\ B)
+P(A\ or\ B) = P(A \cup B) = P(A) + P(B) - P(A\ and\ B)
 $$
 
 :::: note ::::
