@@ -273,6 +273,11 @@ A man-in-the-middle attack can also be used to further exploit the game and find
 
 A possible solution could be completely encrypting all the game's traffic, but that will be an issue since encryption takes away precious CPU cycles, and this could lead to an hindered gaming experience.
 
+### Low-level exploits
+
+These kind of attacks don't target the game itself, but tend to attack the technology that the game is using: they can range from brute force attacks (like using Denial of Service attacks) to more articulated actions that may break the equilibrium of the game.
+
+This is not your game's fault: it's a problem with the technology stack used, the libraries or even the fact that the software is running on a computer. These exploits are really engrained into computers themselves, but they can still be mitigated with a little bit of care and attention.
 
 How cheating influences gameplay and enjoyability
 -------------------------------------------------
@@ -365,3 +370,66 @@ Some of these give you invulnerability to make sure that you can test the balanc
 When using these codes it is vital to have a build flag to distinguish between a "release build" and a "debug build", this way it is possible to completely strip out the debug code from the build, thus "reducing the attack surface": you can't abuse code that is not there.
 
 This is more difficult when dedicated servers are involved, since it would be necessary to have 2 copies of the server: a "release build" with all the debug code stripped out, and a "debug build" that allows for "debug cheats". Problem is that not having such "cheats" could make moderators work a lot harder (let's consider cases like Minecraft servers, where administrators need to be able to fly around to be able to scout possible cheaters "by eye").
+
+Some common exploits
+--------------------
+
+In this section we will take a look at some really common exploits that can be used to break the balance of a game. By knowing these kinds of exploits you will be able to plan ahead and avoid annoying (or embarrassing) situations.
+
+### Integer Under/Overflow
+
+This is probably one of the most common exploits that you can find in games. Computers have limited memory, thus they have a limit on the numbers that can be represented: what happens when such limit is exceeded?
+
+#### Two's complement
+
+First of all, integer numbers are saved on our computers in "two's complement", which requires the most significant bit to be reserved for the sign of a number. I won't explain deeply how the two's complement conversion works, but remember the following: to perform a two's complement you
+
+1. Flip all bits
+2. Add 1 to the number you obtained in step 1
+
+Let's see a simple example with 3 binary digits:
+
+| Decimal | Binary |
+| :------ | :----- |
+| -4      | 100    |
+| -3      | 101    |
+| -2      | 110    |
+| -1      | 111    |
+| 0       | 000    |
+| 1       | 001    |
+| 2       | 010    |
+| 3       | 011    |
+
+#### How the attack works
+
+Let's imagine a simple management game: you can earn money from various activities and you spend money on staff wages. There is a button that allows you to increase staff wages by 1 unit. Staff wages are saved using (for some reason) only 3 binary digits.
+
+The game calculates your monthly earnings as follows:
+
+$$
+earnings\ =\ income\ -\ wages
+$$
+
+Now that we have set up the environment, let's see how it can be broken.
+
+Let's assume we have only one staff member how is paid 3 units per month. What would happen if we paid them another unit? In decimal it would be easy: $3+1 = 4$ but in binary it is a lot more complicated:
+
+$$
+011 + 001 = 100
+$$
+
+If we look at the previous table, that's the two's complement representation of $-4$! By raising the staff wages we've ended up with the staff paying us! This is called an "integer overflow".
+
+This can work both ways: if we subtracted 1 from $-4$ in binary, we would go back to $+3$. This is what happens when an integer "underflows".
+
+:::: trivia ::::
+There is a story about the first "Civilization" game having an integer underflow bug (called "Nuclear Gandhi"): a civilization's "aggression value" was saved as an 8-bit unsigned integer. Gandhi had its initial aggression score set as 1 and when India achieved democracy, such score is lowered by 2 points, causing the "aggression value" to underflow to 255, making Gandhi the most aggressive leader in the game.
+
+This is actually not true, but "Nuclear Gandhi" was included as an Easter egg in the following games, as a joke.
+::::::::::::::::
+
+### Repeat attacks
+
+{{placeholder}}
+
+<!-- TODO: Mostly used in MMOs, they are performed by throttling the connection and repeating quickly a certain action, like turning in a mission for experience and money -->
