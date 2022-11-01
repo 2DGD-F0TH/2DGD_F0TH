@@ -70,6 +70,14 @@ Table: Counting the possible outcomes of two coin tosses
 
 Now we know that there are 4 possible outcomes, and the "Heads + Heads" is only one of them. This confirms our formula.
 
+In the exact same way, we can calculate the probability of a "Heads + Tails" result:
+
+$$
+P(H\ and\ T) = P(H) \cdot P(T) = \frac{1}{2} \cdot \frac{1}{2} = \frac{1}{4}
+$$
+
+And the previous table confirms our calculations.
+
 :::: pitfall ::::
 Someone may argue that the probability of "Heads + Tails" is $\frac{1}{2}$, but that would not be correct. We are still strictly tied to the events, that means that "Heads + Tails" (First toss is heads, second toss is tails), is different from "Tails + Heads" (first toss is tails, second is heads).
 :::::::::::::::::
@@ -91,7 +99,7 @@ P(1\ or\ 6) = P(1) + P(6) = \frac{1}{6} + \frac{1}{6} = \frac{2}{6} = \frac{1}{3
 $$
 
 :::: note ::::
-Considering the previous "tossing two coins" example, we can calculate the probability of "one coin lands on heads and the other lands on tails" with the previous formulas, since coin tosses tick both the "independence" and "mutual exclusivity" boxes.
+Considering the latest "tossing two coins" example, we can calculate the probability of "one coin lands on heads and the other lands on tails" with the previous formulas, since coin tosses tick both the "independence" and "mutual exclusivity" boxes.
 
 $$
 P((H\ and\ T)\ or\ (T\ and\ H)) = P(H\ and\ T) + P(T\ and\ H) = \frac{1}{4} + \frac{1}{4} = \frac{1}{2}
