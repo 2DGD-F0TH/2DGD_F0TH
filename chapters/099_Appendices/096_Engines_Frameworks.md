@@ -14,7 +14,7 @@ For each proposed engine or framework, along with a short description, you will 
     - **Visual Programming:** This product makes use of a "Visual Scripting" (codeless) paradygm, where you can program your own game without writing code, usually by using directed graphs and nodes.
 - **Platform compatibility:** This will tell you if the product is good for your objective, by telling you which platforms you can deploy on, like Linux, Windows or even on the web via HTML5;
 
-General Purpose
+General Purpose {.unnumbered .unlisted}
 ---------------
 
 General purpose engines are the basic frameworks that allow you to build any game you want, without being tied to a specific genre. These are the tools that give you the most freedom, but also will be a bit harder to master.
@@ -231,7 +231,7 @@ SFML is distributed under the ZLib/png license, which allows for both commercial
 
 * * * * * * * * * *
 
-Genre-Specific
+Genre-Specific {.unnumbered .unlisted}
 --------------
 
 Sometimes you don't need all the tools available to make your own game, sometimes you want your adventure to fit some pretty common standards and not deviate too much from them. Genre-specific engines allow you to ditch both the complexity and freedom of the general-purpose engines to have an easier time making your own adventure.
@@ -342,7 +342,7 @@ Stratagus is an open source real-time strategy engine, it's the engine behind th
 
 * * * * * * * * * *
 
-3D Engines
+3D Engines {.unnumbered .unlisted}
 ----------
 
 Sometimes you may want to go premium, and make use of a 3D engine for your 2D game ("Castlevania: Symphony of the Night" made use of some 3D capabilities of the PlayStation, for instance). Be it either to have 3D backgrounds, make a 2.5D game or particle effects, you can use a 3D engine to make 2D games without any issue.
