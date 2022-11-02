@@ -146,7 +146,7 @@ Here is a quick table of rules that can be used to make logarithms easier to cal
 Limits
 ------
 
-:::: note ::::
+:::: wizardry ::::
 We're entering some complex math territory here, so I will give you an "intuitive" definition of a limit. Having an idea of what it is will suffice for the needs of this book
 ::::::::::::::
 
