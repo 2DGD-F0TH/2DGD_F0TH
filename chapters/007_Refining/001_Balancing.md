@@ -430,6 +430,17 @@ This is actually not true, but "Nuclear Gandhi" was included as an Easter egg in
 
 ### Repeat attacks
 
-{{placeholder}}
+This affects for the most part multiplayer games that make use of the internet. Let's imagine the following situation: you have an online game that follows this procedure:
 
-<!-- TODO: Mostly used in MMOs, they are performed by throttling the connection and repeating quickly a certain action, like turning in a mission for experience and money -->
+1. You accept a mission;
+2. The mission is added to your journal;
+3. You perform the mission's tasks;
+4. You turn in the mission;
+5. You receive experience and gold from the mission;
+6. The mission is removed from your journal.
+
+Between points 4 and 5 there is a synchronization effort between your client and the dedicated server: if the server doesn't confirm that the mission is really turned in, no experience is received and the mission stays in the journal, ready to turn in.
+
+What if there was no control (on the server side) for turning in the mission more than once? This is what repeat attacks exploit.
+
+In our example, you would get a program that throttles the connection to the point that the network code of the game is suffering heavily, but doesn't disconnect. At this point you just turn in the mission a lot of times (and such mission will stay in the journal because the client didn't receive an answer from the server yet). Since the server doesn't have a check for multiple mission turn-ins, it will return orders to the client for adding more experience and gold.
