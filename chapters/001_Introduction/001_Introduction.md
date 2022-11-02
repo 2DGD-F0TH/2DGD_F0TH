@@ -89,7 +89,7 @@ This is just a note box, it's not a pitfall, a tip or a trivia. This is used for
 ::::::::::::::
 
 :::: wizardry ::::
-This will warn you of complex sections, or sections treating advanced topics that have limited game development usefulness. Such sections may be skimmed on.
+This will warn you of complex sections, or sections treating advanced topics that have limited game development usefulness. Such sections may be skimmed over.
 ::::::::::::::::::
 
 ### Engine Used
