@@ -70,7 +70,7 @@ In this case, we can see that the result is 1 when $A=1$, no matter the value of
 This translates into a formula of: $f = (A) \lor (B)$, considering that we don't care about the result that comes out when $A=1$ and $B=1$.
 
 :::: note ::::
-If instead of 1, we ended up choosing 0 for our "don't care", we would have obtained $f = (A) \land (B)$. For our necessities, this would have been a good solution too.
+If instead of 1, we ended up choosing 0 for our "don't care", we would have obtained $f = (A \land \bar{B}) \lor (\bar{A} \land B)$ (the extended form of $A\ XOR\ B$, which we saw earlier). For our needs, this would have been a good solution too.
 ::::::::::::::
 
 ### A more complex map
