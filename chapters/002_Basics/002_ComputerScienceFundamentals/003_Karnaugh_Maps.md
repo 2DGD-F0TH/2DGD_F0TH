@@ -1,4 +1,4 @@
-Simplifying your conditionals with Karnaugh Maps
+Simplifying your conditionals with Karnaugh Maps {#karnaugh}
 ------------------------------------------------
 
 Karnaugh maps are a useful tool to simplify boolean algebra expressions, as well as identifying and potentially solving race conditions.
