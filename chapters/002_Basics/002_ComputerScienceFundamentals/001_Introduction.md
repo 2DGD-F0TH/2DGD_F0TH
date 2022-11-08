@@ -21,32 +21,119 @@ Algorithms
 Number representations
 ----------------------
 
+When you work with computers, it's impossible to avoid learning a bit of number representations. Computers work with a different logic than humans do: humans have complex minds and thoughts, while most of the time computers work in ones and zeroes. Most of what we see on a screen can be reduced to electrons going through a semiconductor in kind of an orderly fashion: changing from 0 volts (ground) to 5 volts.
+
 ### The most used representations
 
-{{placeholder}}
+Here we will take a quick look at the most used representations. Some are more fundamental than others, but they are all useful in their own way.
+
+Each representation will use a subscript to represent its representation. If no subscript is present it means the standard decimal representation is used.
 
 #### Decimal
 
-{{placeholder}}
+This is the standard decimal notation everyone is used to, we have 10 digits at our disposal:
 
-<!-- TODO: Memo on decimal numbers -->
+$$
+0\ 1\ 2\ 3\ 4\ 5\ 6\ 7\ 8\ 9
+$$
+
+And we place them in certain positions (units, tens, hundreds, thousands, etc...) to represent a certain quantity. We will use this as a basis for all other representations.
+
+So if you want to represent $9 + 1$ you will use the $1$ digit, followed by the $0$ digit to make $10$.
 
 #### Binary
 
-{{placeholder}}
+This is the most used representation in computer science, we have only two digits at our disposal: $0\ 1$.
 
-<!-- TODO: Intro to binary -->
+Thus if you want to make $1_{bin}+1_{bin}$, you will have to use the $1$ digit, followed by the $0$ digit, thus making $10_{bin}$, which is the binary representation of 2.
+
+Here are the first 10 numbers for comparison purposes:
+
+| Decimal | Binary |
+| :-----: | :----: |
+| 0       | 0      |
+| 1       | 1      |
+| 2       | 10     |
+| 3       | 11     |
+| 4       | 100    |
+| 5       | 101    |
+| 6       | 110    |
+| 7       | 111    |
+| 8       | 1000   |
+| 9       | 1001   |
+| 10      | 1010   |
+
+Table: Comparison between decimal and binary representations
+
+Binary numbers can be used at low level to represent any kind of "binary condition" too: yes/no, true/false are usually mapped to 1 and 0 respectively. This will probe useful in some cases where we will use "binary numbers" to represent groups of "binary conditions" in a compact way, but that's an advanced thing we'll see later.
 
 #### Octal
 
-{{placeholder}}
-<!-- TODO: Intro to octal (less used but useful) -->
+In the octal representation we have 8 digits at our disposal:
+
+$$
+0\ 1\ 2\ 3\ 4\ 5\ 6\ 7
+$$
+
+Thus the representation of the decimal number $8$ in the octal system is $10_{oct}$.
+
+The octal number system doesn't find much use in computer science besides being a quicker way to represent binary numbers. The conversion is quite easy and will be explained in a bit.
+
+Here's a quick comparison between decimal and octal representations:
+
+| Decimal | Octal  |
+| :-----: | :----: |
+| 0       | 0      |
+| 1       | 1      |
+| 2       | 2      |
+| 3       | 3      |
+| 4       | 4      |
+| 5       | 5      |
+| 6       | 6      |
+| 7       | 7      |
+| 8       | 10     |
+| 9       | 11     |
+| 10      | 12     |
+
+Table: Comparison between decimal and octal representations
 
 #### Hexadecimal
 
-{{placeholder}}
+Hexadecimal is definitely the second most used representation in computer science, due to how easy it is to represent 4 bytes in a very compact notation.
 
-<!-- TODO: Intro to hexadecimal -->
+In the hexadecimal notation, we have sixteen digits at our disposal:
+
+$$
+0\ 1\ 2\ 3\ 4\ 5\ 6\ 7\ 8\ 9\ A\ B\ C\ D\ E\ F
+$$
+
+Here's a table of the first 20 numbers to clarify a bit how things work:
+
+| Decimal | Hex    |
+| :-----: | :----: |
+| 0       | 0      |
+| 1       | 1      |
+| 2       | 2      |
+| 3       | 3      |
+| 4       | 4      |
+| 5       | 5      |
+| 6       | 6      |
+| 7       | 7      |
+| 8       | 8      |
+| 9       | 9      |
+| 10      | A      |
+| 11      | B      |
+| 12      | C      |
+| 13      | D      |
+| 14      | E      |
+| 15      | F      |
+| 16      | 10     |
+| 17      | 11     |
+| 18      | 12     |
+| 19      | 13     |
+| 20      | 14     |
+
+Table: Comparison between decimal and hexadecimal representations
 
 ### Converting between decimal and binary
 
@@ -63,6 +150,10 @@ Number representations
 {{placeholder}}
 
 <!-- TODO: Talk briefly about exponent+fraction representation and the lack of precision it may bring -->
+
+### Converting between binary and octal
+
+{{placeholder}}
 
 ### Gray Code
 
