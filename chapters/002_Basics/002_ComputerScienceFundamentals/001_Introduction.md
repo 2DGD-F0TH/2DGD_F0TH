@@ -137,7 +137,41 @@ Table: Comparison between decimal and hexadecimal representations
 
 ### Converting between decimal and binary
 
-{{placeholder}}
+The algorithm to convert between decimal and binary is quite simple. It is an iterative algorithm that consists in integer dividing the number by 2, until the result of the division is 1. The modulo of such divisions will make up our binary number.
+
+An example is worth a thousand words: let's convert the number 38 to binary.
+
+First of all, we integer divide 38 by two: the result is 19, there is no remainder, so we'll use zero.
+
+| Dividend | Remainder |
+| -------: | :-------- |
+| 38       | 0         |
+| 19       |           |
+
+Let's continue: we integer divide 19 by two: the result is 9, with 1 as remainder.
+
+| Dividend | Remainder |
+| -------: | :-------- |
+| 38       | 0         |
+| 19       | 1         |
+| 9        |           |
+
+We iterate some more, by integer dividing until we get 1 as a dividend, at that point we make the last division, which will have remainder 1:
+
+| Dividend | Remainder |
+| -------: | :-------- |
+| 38       | 0         |
+| 19       | 1         |
+| 9        | 1         |
+| 4        | 0         |
+| 2        | 0         |
+| 1        | 1         |
+
+Now we just need to read our remainders from bottom to top. So the binary representation of $38_{dec}$ is $100110_{bin}$.
+
+:::: note ::::
+This is actually a much more generic algorithm: you can convert from decimal to octal and hexadecimal for instance, just by dividing by 8 and 16 respectively. You can convert 38 to octal and hexadecimal as an exercise: the results are $46_{oct}$ and $26_{hex}$.
+::::::::::::::
 
 #### Two's complement
 
@@ -168,13 +202,20 @@ Gray code isn't really used in normal situations, but it will be briefly explain
 Basics of Logic
 ---------------
 
-{{placeholder}}
+If we want our algorithms to be smart enough to be useful, we have to deal with conditionals. That's where logic comes in. In this section we will take a quick look at truth tables as well as logic operations.
 
 ### Truth tables
 
-{{placeholder}}
+Truth tables are used to represent the output of a logic operation. It represents the inputs on the left side, while on the right side the result is shown.
 
-<!-- TODO: Explain truth tables -->
+Truth tables in this book will have the following look:
+
+| A   | B   | **$f$** |
+| :-: | :-: | :-----: |
+| 0   | 0   | **0**   |
+| 0   | 1   | **0**   |
+| 1   | 0   | **1**   |
+| 1   | 1   | **0**   |
 
 ### Common operators
 
@@ -184,27 +225,55 @@ Basics of Logic
 
 #### AND
 
-{{placeholder}}
+The "AND" operator is a binary operator that outputs 1 when both inputs are 1. Here is its truth table:
 
-<!-- TODO: AND Operator -->
+| A   | B   | **AND** |
+| :-: | :-: | :-----: |
+| 0   | 0   | **0**   |
+| 0   | 1   | **0**   |
+| 1   | 0   | **0**   |
+| 1   | 1   | **1**   |
+
+This operator is used to express conditionals where you want two conditions to be true at the same time.
 
 #### OR
 
-{{placeholder}}
+The "OR" operator (sometimes called "inclusive or", as opposed to the XOR operator) is a binary operator that outputs 1 when either of the inputs is 1, including the case when both are 1. Here is its truth table:
 
-<!-- TODO: OR Operator -->
+| A   | B   | **OR**  |
+| :-: | :-: | :-----: |
+| 0   | 0   | **0**   |
+| 0   | 1   | **1**   |
+| 1   | 0   | **1**   |
+| 1   | 1   | **1**   |
+
+This operator is used to express conditionals where you want at least one condition to be true.
 
 #### NOT
 
-{{placeholder}}
+The "NOT" operator is a unary operator that takes a single input and "inverts" it. That means that if the input is 1, the "NOT" operator will output 0, if the input is 0 the "NOT" operator will output 1 instead.
 
-<!-- TODO: NOT Operator -->
+Here is its truth table:
+
+| A   | **NOT** |
+| :-: | :-----: |
+| 0   | **1**   |
+| 1   | **0**   |
 
 #### XOR
 
-{{placeholder}}
+The "XOR" operator (called "exclusive or") is an operator that takes two input and outputs 1 when only one of the two inputs is 1. If both inputs have the value 1, the "XOR" operator will output 0.
 
-<!-- TODO: XOR Operator -->
+Here is its truth table:
+
+| A   | B   | **XOR** |
+| :-: | :-: | :-----: |
+| 0   | 0   | **0**   |
+| 0   | 1   | **1**   |
+| 1   | 0   | **1**   |
+| 1   | 1   | **0**   |
+
+This operator is used when you want to express conditionals where only one of the two inputs is true.
 
 ### Logic operations vs bitwise operations
 
