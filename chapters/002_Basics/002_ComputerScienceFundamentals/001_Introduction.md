@@ -175,9 +175,28 @@ This is actually a much more generic algorithm: you can convert from decimal to 
 
 #### Two's complement
 
-{{placeholder}}
+So far we've seen how to convert positive integers from decimal to binary, but how do we represent negative integers?
 
-<!-- TODO: Brief explanation of two's complement representation and conversion -->
+That's where "two's complement" representation comes into play: there is a bunch of theory behind why it's called this way, and how it works, but what we need to know will be how to represent a negative number.
+
+> To represent a negative binary number in two's complement you invert all the bits of such number, then add 1.
+
+As usual, an example is worth a thousand words. We want to convert the number $-38$ into binary.
+
+First of all we need to define what our range of numbers will be, so that we know how many bits we will use. This is done because this range will be equally split between positive and negative numbers. In this example I will choose a normal 8-bit representation, which can represent numbers spacing from -128 to 127.
+
+The first step is to convert $38$ to binary, which as we saw is $100110_{bin}$. We will pad this binary number to 8 bits, obtaining $00100110_{bin}$ as a result.
+
+Now we just need to invert the all the bits in the number, obtaining $11011001_{bin}$ as a result.
+
+Last step is adding 1 to what we got in the previous step, thus the final result is $11011010_{bin}$.
+
+:::: note ::::
+The more perceptive of you may have noticed a problem: what if we tried to represent the number 128 with 8 bits?
+
+We would obtain $1000000_{bin}$ which is actually the representation of -128 in two's complement. This is called an "integer overflow", so be careful when mixing unsigned and signed integers.
+::::::::::::::
+
 
 #### Floating point
 
@@ -187,7 +206,18 @@ This is actually a much more generic algorithm: you can convert from decimal to 
 
 ### Converting between binary and octal
 
-{{placeholder}}
+As mentioned before, octal can be used as a "shorthand way" to represent binary. The conversion is pretty simple.
+
+> To convert from binary to octal, take the binary digits in groups of 3 (with the necessary padding) and convert them in octal. Then just "stick them together".
+
+Let's take our number 38, it has the following representation:
+
+$$
+100\ 110_{bin}
+$$
+
+$100_{bin}$ converts to $4_{oct}$, while $110_{bin}$ converts to $6_{oct}$. If we stick them together we obtain the final result: $46_{oct}$.
+
 
 ### Gray Code
 
