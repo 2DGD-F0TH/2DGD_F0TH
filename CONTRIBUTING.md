@@ -34,10 +34,9 @@ Compared to building the book, you may need some more tools to be able to make r
 - **Pandoc**: for building the book
 - **TeXLive** or equivalent: for building the PDF Version
 - **GNU Make** or equivalent: for using the MakeFile Scripts
-- **GladTex** (v3 or superior): for converting math formulas into SVG for EPub
+- **GladTex** (v3 or higher): for converting math formulas into SVG for EPub
 - **Librsvg**: for converting SVGs into a format suitable for TeXLive
 - **PlantUML**: for UML diagrams in the `*.puml` format
-- **Dia**: for editing diagrams in the `*.dia` format
 - **Gimp**: for editing images in the `*.xcf` format
 - **GraphViz** (required for PlantUml): for editing diagrams in the `*.dot` format
 - **Git**: for version control
