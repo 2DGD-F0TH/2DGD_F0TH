@@ -1,100 +1,24 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg
-   width="448.01645pt"
-   height="372.26538pt"
-   viewBox="0 0 448.01645 372.26538"
-   version="1.1"
-   id="svg23"
-   sodipodi:docname="point_circle.svg"
-   inkscape:version="1.1 (c4e8f9ed74, 2021-05-24)"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:svg="http://www.w3.org/2000/svg">
-  <defs
-     id="defs27" />
-  <sodipodi:namedview
-     id="namedview25"
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1.0"
-     inkscape:pageshadow="2"
-     inkscape:pageopacity="0.0"
-     inkscape:pagecheckerboard="0"
-     inkscape:document-units="pt"
-     showgrid="false"
-     inkscape:zoom="1.5462466"
-     inkscape:cx="290.38058"
-     inkscape:cy="247.04985"
-     inkscape:window-width="2560"
-     inkscape:window-height="1019"
-     inkscape:window-x="1920"
-     inkscape:window-y="0"
-     inkscape:window-maximized="1"
-     inkscape:current-layer="svg23" />
-  <g
-     id="surface1"
-     transform="translate(-0.00207253,-0.73254123)">
-    <path
-       style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
-       d="m 328.72656,208.11719 c 0,90.48828 -73.35547,163.84375 -163.84375,163.84375 -90.488279,0 -163.843748,-73.35547 -163.843748,-163.84375 0,-90.48828 73.355469,-163.843752 163.843748,-163.843752 90.48828,0 163.84375,73.355472 163.84375,163.843752"
-       id="path2" />
-    <path
-       style="fill:none;stroke:#000000;stroke-width:20.7398;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1"
-       d="m 3287.2656,1648.8281 c 0,-904.88279 -733.5547,-1638.437475 -1638.4375,-1638.437475 -904.88279,0 -1638.437475,733.554685 -1638.437475,1638.437475 0,904.8828 733.554685,1638.4375 1638.437475,1638.4375 904.8828,0 1638.4375,-733.5547 1638.4375,-1638.4375 z m 0,0"
-       transform="matrix(0.1,0,0,-0.1,0,373)"
-       id="path4" />
-    <path
-       style="fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-       d="m 172.03516,208.11719 c 0,3.95312 -3.20313,7.15625 -7.15235,7.15625 -3.95312,0 -7.15625,-3.20313 -7.15625,-7.15625 0,-3.94922 3.20313,-7.15235 7.15625,-7.15235 3.94922,0 7.15235,3.20313 7.15235,7.15235"
-       id="path6" />
-    <path
-       style="fill:none;stroke:#ff0000;stroke-width:20.7398;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1"
-       d="m 1720.3516,1648.8281 c 0,-39.5312 -32.0313,-71.5625 -71.5235,-71.5625 -39.5312,0 -71.5625,32.0313 -71.5625,71.5625 0,39.4922 32.0313,71.5235 71.5625,71.5235 39.4922,0 71.5235,-32.0313 71.5235,-71.5235 z m 0,0"
-       transform="matrix(0.1,0,0,-0.1,0,373)"
-       id="path8" />
-    <path
-       style="fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-       d="m 434.23437,8.925781 c 0,3.953125 -3.20703,7.152344 -7.15625,7.152344 -3.95312,0 -7.15625,-3.199219 -7.15625,-7.152344 0,-3.953125 3.20313,-7.15625 7.15625,-7.15625 3.94922,0 7.15625,3.203125 7.15625,7.15625"
-       id="path10" />
-    <path
-       style="fill:none;stroke:#ff0000;stroke-width:20.7398;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1"
-       d="m 4342.3437,3640.7422 c 0,-39.5313 -32.0703,-71.5234 -71.5625,-71.5234 -39.5312,0 -71.5625,31.9921 -71.5625,71.5234 0,39.5312 32.0313,71.5625 71.5625,71.5625 39.4922,0 71.5625,-32.0313 71.5625,-71.5625 z m 0,0"
-       transform="matrix(0.1,0,0,-0.1,0,373)"
-       id="path12" />
-    <path
-       style="fill:none;stroke:#b36300;stroke-width:20.7398;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1"
-       d="M 1713.4766,1697.9297 4206.1328,3591.6406"
-       transform="matrix(0.1,0,0,-0.1,0,373)"
-       id="path14" />
-    <path
-       style="fill:none;stroke:#0000ff;stroke-width:20.7398;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1"
-       d="m 1713.4766,1697.9297 1246.3281,946.8359"
-       transform="matrix(0.1,0,0,-0.1,0,373)"
-       id="path16" />
-    <path
-       style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-       d="m 238.0625,132.94531 c -0.22656,-0.11719 -0.48047,-0.20312 -0.75,-0.25781 -0.27344,-0.0547 -0.57031,-0.0859 -0.89844,-0.0859 -1.16015,0 -2.05078,0.375 -2.67187,1.125 -0.6211,0.75 -0.92969,1.82422 -0.92969,3.22656 v 6.64063 H 230.75 v -12.53516 h 2.0625 v 1.88672 c 0.42969,-0.7539 0.99219,-1.3125 1.67969,-1.67969 0.69531,-0.36718 1.53515,-0.55078 2.52343,-0.55078 0.14063,0 0.29688,0.0156 0.46485,0.043 0.17187,0.0273 0.36328,0.0703 0.57422,0.12891 l 0.008,2.05859"
-       id="path18" />
-    <path
-       style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-       d="m 362.56641,39.085938 -4.51954,6.101562 4.75391,6.433594 h -2.42187 l -3.63282,-4.921875 -3.63672,4.921875 h -2.42187 l 4.85156,-6.554688 -4.4375,-5.980468 h 2.42188 l 3.30859,4.464843 3.3125,-4.464843 h 2.42188"
-       id="path20" />
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="21cm" height="18cm" viewBox="454 280 420 359" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <ellipse style="fill: #ffffff" cx="614" cy="480" rx="158" ry="158"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="614" cy="480" rx="158" ry="158"/>
   </g>
-  <path
-     style="fill:none;stroke:#ff0000;stroke-width:2.99659;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-     d="M 171.88611,217.63428 C 227.448,270.37611 285.90708,134.48585 356.95017,168.36989 324.8789,104.01311 489.77577,69.481088 435.44181,17.904846"
-     id="path877"
-     sodipodi:nodetypes="ccc" />
-  <text
-     xml:space="preserve"
-     style="font-size:28px;line-height:1.25;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';letter-spacing:0px;word-spacing:0px;stroke-width:0.75"
-     x="366.45917"
-     y="192.87682"
-     id="text3008"><tspan
-       sodipodi:role="line"
-       id="tspan3006"
-       style="stroke-width:0.75"
-       x="366.45917"
-       y="192.87682">d</tspan></text>
+  <g>
+    <ellipse style="fill: #ff0000" cx="614" cy="480" rx="6.9" ry="6.9"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #ff0000" cx="614" cy="480" rx="6.9" ry="6.9"/>
+  </g>
+  <g>
+    <ellipse style="fill: #ff0000" cx="866.844" cy="287.912" rx="6.9" ry="6.9"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #ff0000" cx="866.844" cy="287.912" rx="6.9" ry="6.9"/>
+  </g>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #b56600" x1="620.235" y1="475.263" x2="860.609" y2="292.649"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #0000ff" x1="620.235" y1="475.263" x2="740.422" y2="383.956"/>
+  <text font-size="22.5778" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="675.518" y="417.774">
+    <tspan x="675.518" y="417.774">r</tspan>
+  </text>
+  <text font-size="22.5778" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="792.546" y="329.084">
+    <tspan x="792.546" y="329.084">x</tspan>
+  </text>
 </svg>
