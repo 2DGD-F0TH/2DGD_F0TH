@@ -45,6 +45,13 @@ The source code for this ebook is available through the following official repos
 
 You can learn how to build the book yourself in the Wiki!
 
+Screenshots
+------------
+
+![Cover](/docs/screenshots/Cover.png?raw=true)
+![Game Loop](/docs/screenshots/Screen_1.png?raw=true)
+![Collision Detection](/docs/screenshots/Screen_2.png?raw=true)
+
 Looking for contributors
 ------------------------
 
