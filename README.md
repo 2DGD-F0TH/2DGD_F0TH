@@ -49,7 +49,9 @@ Screenshots
 ------------
 
 ![Cover](/docs/screenshots/Cover.png?raw=true)
+
 ![Game Loop](/docs/screenshots/Screen_1.png?raw=true)
+
 ![Collision Detection](/docs/screenshots/Screen_2.png?raw=true)
 
 Looking for contributors
