@@ -193,23 +193,23 @@ If you want to have transparency in your picture, you will need to sacrifice a c
 
 This also mean that we cannot make semi-transparent surfaces, since only that specific color will be fully transparent, and that's it.
 
-### Texture Filtering {#texture_filtering}
+#### Texture Filtering {#texture_filtering}
 
 Sometimes your images will need to be scaled or filtered to avoid annoying artifacts, in this small chapter we will see some filters and how they look.
 
-#### Nearest Neighbor Filtering
+##### Nearest Neighbor Filtering
 
 {{placeholder}}
 
 <!-- TODO: Nearest Neighbor Filtering -->
 
-#### Bilinear Filtering
+##### Bilinear Filtering
 
 {{placeholder}}
 
 <!-- TODO: Bilinear Filtering -->
 
-#### Trilinear Filtering
+##### Trilinear Filtering
 
 {{placeholder}}
 
@@ -308,7 +308,7 @@ For more details, check the [filtering](#texture_filtering) section.
 
 <!-- TODO: Talk about how to make your art consistent using palettes, talk about DawnBringer's palette -->
 
-### Dithering
+#### Dithering
 
 Dithering (usually called "Color Quantization") is a technique used to give the illusion of a higher "color depth" when you're using a limited palette of colors.
 
