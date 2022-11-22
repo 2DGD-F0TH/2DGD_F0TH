@@ -1,8 +1,7 @@
 Creational Design Patterns
 --------------------------
 
-{{placeholder}}
-<!-- TODO: Introduce creational patterns -->
+Creational patterns is a category of design patterns that deal with object creation mechanisms, that means creating objects in a way that best suits the single situation.
 
 ### Singleton Pattern
 

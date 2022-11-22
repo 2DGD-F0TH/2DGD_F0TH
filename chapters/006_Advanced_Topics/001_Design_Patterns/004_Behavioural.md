@@ -1,8 +1,7 @@
 Behavioural Design Patterns
 ---------------------------
 
-{{placeholder}}
-<!-- TODO: Introduce behavioural patterns -->
+Behavioural patterns is a category of design patterns that deals with communication between objects. This is done by identifying common communication patterns between such objects and abstracting it.
 
 ### Command Pattern
 

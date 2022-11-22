@@ -1,8 +1,7 @@
 Structural Design Patterns
 --------------------------
 
-{{placeholder}}
-<!-- TODO: Introduce structural patterns -->
+Structural patterns is a category of design patterns that deals with the relationships between entities, with the objective of simplifying the realization of such relationships.
 
 ### Flyweight {#flyweight}
 
