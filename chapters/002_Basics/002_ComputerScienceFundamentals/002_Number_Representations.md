@@ -202,9 +202,25 @@ $100_{bin}$ converts to $4_{oct}$, while $110_{bin}$ converts to $6_{oct}$. If w
 ### Gray Code
 
 :::: wizardry ::::
-Gray code isn't really used in normal situations, but it will be briefly explained since it will be used in [Karnaugh Maps](#karnaugh)
+Gray code isn't really used in game development, but it will be briefly explained here since it will be used in [Karnaugh Maps](#karnaugh)
 ::::::::::::::::::
 
-{{placeholder}}
+Gray code (sometimes known as "reflected binary code") is a particular ordering of the binary system where two successive values differ by only one bit.
 
-<!-- TODO: Intro to gray code, very quick. -->
+Gray code is used in many fields, from Digital (and cable) TV (for error-correction) to analog to digital conversion. In this book we will use it as a representation inside [Karnaugh Maps](#karnaugh).
+
+Here is a simple representation of the first 10 numbers in decimal, binary and gray code:
+
+| Decimal | Binary | Gray Code |
+| :-----: | :----: | :-------: |
+| 0       | 0000   | 0000      |
+| 1       | 0001   | 0001      |
+| 2       | 0010   | 0011      |
+| 3       | 0011   | 0010      |
+| 4       | 0100   | 0110      |
+| 5       | 0101   | 0111      |
+| 6       | 0110   | 0101      |
+| 7       | 0111   | 0100      |
+| 8       | 1000   | 1100      |
+| 9       | 1001   | 1101      |
+| 10      | 1010   | 1111      |
