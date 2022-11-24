@@ -76,9 +76,33 @@ This operator is used when you want to express conditionals where only one of th
 
 ### Logic operations vs bitwise operations
 
-{{placeholder}}
+:::: wizardry ::::
+The confines between logic operations and bitwise operations can get blurry. This section introduces bitwise operations and alternative representations of data as a way to fit more data in less space. Feel free to skim over this section.
+::::::::::::::::::
 
-<!-- TODO: Difference between normal logic operations and bitwise operations -->
+So far we've seen operations that work on single binary digits, which can be seen as the numeric representation of logical statements (0 meaning "false" and 1 meaning "true"). These are logic operations.
+
+Such operations can be applied on a bit-by-bit basis to groups of bits, that's when we talk about about "bitwise operations".
+
+$$
+\begin{array}[t]{l}
+0110\ 0010\ AND \\
+0101\ 1010\\ \hline
+0100\ 0010
+\end{array}
+$$
+
+As you can see the bitwise AND operation takes each bit of the two bytes and does an "AND" operation on each one of them.
+
+#### Packing more information with less
+
+Let's imagine the following situation: we have a structure that represents a tile in a maze. We want to efficiently store whether each side of a certain tile has a wall.
+
+This can be solved by using a 4-bit positive integer and having each bit represent a side of the tile: if that bit is 1, there is a wall, 0 otherwise.
+
+After creating a convention, we can start storing data. For instance we can have the bits representing walls starting from top, going clockwise.
+
+This means that $0110$ represents a tile having two walls: on the right and bottom side.
 
 ### De Morgan's Laws and Conditional Expressions
 
