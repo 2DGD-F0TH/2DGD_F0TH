@@ -1,49 +1,225 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
-<svg width="38cm" height="9cm" viewBox="202 245 760 177" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-  <g>
-    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="244,287.336 244,286.1 244,369.1 244,370.1 "/>
-    <polygon style="fill: #ffffff" points="252,287.336 244,271.336 236,287.336 "/>
-    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="252,287.336 244,271.336 236,287.336 "/>
+<svg
+   width="44.173275cm"
+   height="8.0986004cm"
+   viewBox="202 245 883.4655 159.27247"
+   version="1.1"
+   id="svg72"
+   sodipodi:docname="class_relationships.svg"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14, custom)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs76" />
+  <sodipodi:namedview
+     id="namedview74"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="cm"
+     showgrid="false"
+     inkscape:zoom="0.62863491"
+     inkscape:cx="875.70701"
+     inkscape:cy="36.587214"
+     inkscape:window-width="1920"
+     inkscape:window-height="1019"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg72" />
+  <g
+     id="g8"
+     transform="translate(163.65066,-25.59993)">
+    <polyline
+       style="fill:none;fill-opacity:0;stroke:#000000;stroke-width:2;stroke-dasharray:12, 12;stroke-dashoffset:0"
+       points="244,287.336 244,286.1 244,369.1 244,370.1 "
+       id="polyline2" />
+    <polygon
+       style="fill:#ffffff"
+       points="252,287.336 244,271.336 236,287.336 "
+       id="polygon4" />
+    <polygon
+       style="fill:none;fill-opacity:0;stroke:#000000;stroke-width:2"
+       points="252,287.336 244,271.336 236,287.336 "
+       id="polygon6" />
   </g>
-  <g>
-    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 8; stroke: #000000" points="607,363.1 607,362.1 607,263.1 607,260.805 "/>
-    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="612,273.453 607,257.453 602,273.453 "/>
+  <text
+     font-size="12.8px"
+     style="font-style:normal;font-weight:normal;font-family:sans-serif;text-anchor:start;fill:#000000"
+     x="375.17566"
+     y="380.17642"
+     id="text54"><tspan
+       sodipodi:role="line"
+       id="tspan1067"
+       x="375.17566"
+       y="380.17642">Interface</tspan><tspan
+       sodipodi:role="line"
+       id="tspan1069"
+       x="375.17566"
+       y="396.17642">Realization</tspan></text>
+  <g
+     id="g8-3"
+     transform="translate(-0.51202,-25.59993)">
+    <polyline
+       style="fill:none;fill-opacity:0;stroke:#000000;stroke-width:2"
+       points="244,287.336 244,286.1 244,369.1 244,370.1 "
+       id="polyline2-6" />
+    <polygon
+       style="fill:#ffffff"
+       points="244,271.336 236,287.336 252,287.336 "
+       id="polygon4-7" />
+    <polygon
+       style="fill:none;fill-opacity:0;stroke:#000000;stroke-width:2"
+       points="244,271.336 236,287.336 252,287.336 "
+       id="polygon6-5" />
   </g>
-  <g>
-    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="427" y1="367.718" x2="427" y2="277.19"/>
-    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="432,284.954 427,274.954 422,284.954 "/>
+  <text
+     font-size="12.8px"
+     style="font-style:normal;font-weight:normal;font-family:sans-serif;text-anchor:start;fill:#000000"
+     x="201.48799"
+     y="380.14441"
+     id="text54-3"><tspan
+       x="201.48799"
+       y="380.14441"
+       id="tspan50-5">Generalization/</tspan><tspan
+       x="201.48799"
+       y="396.14441"
+       id="tspan52-6">Inheritance</tspan></text>
+  <g
+     id="g20"
+     transform="matrix(0.98674965,0,0,1.1491381,147.85884,-69.974846)">
+    <line
+       style="fill:none;fill-opacity:0;stroke:#000000;stroke-width:2"
+       x1="427"
+       y1="367.71799"
+       x2="427"
+       y2="277.19"
+       id="line16" />
+    <polyline
+       style="fill:none;fill-opacity:0;stroke:#000000;stroke-width:2"
+       points="432,284.954 427,274.954 422,284.954 "
+       id="polyline18" />
   </g>
-  <g>
-    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="774,336.928 774,347.1 774,247.1 774,246.1 "/>
-    <polygon style="fill: #ffffff" points="774,362.1 769.2,348.1 774,334.1 778.8,348.1 "/>
-    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="774,362.1 769.2,348.1 774,334.1 778.8,348.1 "/>
-    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="776" y="293.35"/>
-    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="785" y="359.783"/>
-    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="778" y="259.783"/>
+  <text
+     font-size="12.8px"
+     style="font-style:normal;font-weight:normal;font-family:sans-serif;text-anchor:start;fill:#000000"
+     x="534.20093"
+     y="387.99719"
+     id="text58"><tspan
+       x="534.20093"
+       y="387.99719"
+       id="tspan56">Association</tspan></text>
+  <g
+     id="g14"
+     transform="translate(123.73183,-10.600387)">
+    <polyline
+       style="fill:none;fill-opacity:0;stroke:#000000;stroke-width:2;stroke-dasharray:8"
+       points="607,363.1 607,362.1 607,263.1 607,260.805 "
+       id="polyline10" />
+    <polyline
+       style="fill:none;fill-opacity:0;stroke:#000000;stroke-width:2"
+       points="612,273.453 607,257.453 602,273.453 "
+       id="polyline12" />
   </g>
-  <g>
-    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="921.9,336.928 921.9,347.1 921.9,247.1 921.9,246.1 "/>
-    <polygon style="fill: #000000" points="921.9,362.1 917.1,348.1 921.9,334.1 926.7,348.1 "/>
-    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="921.9,362.1 917.1,348.1 921.9,334.1 926.7,348.1 "/>
-    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="923.9" y="293.35"/>
-    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="932.9" y="359.783"/>
-    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="925.9" y="259.783"/>
+  <text
+     font-size="12.8px"
+     style="font-style:normal;font-weight:normal;font-family:sans-serif;text-anchor:start;fill:#000000"
+     x="689.73181"
+     y="386.67239"
+     id="text62"><tspan
+       x="689.73181"
+       y="386.67239"
+       id="tspan60">Dependency</tspan></text>
+  <g
+     id="g34"
+     transform="translate(112.18268,-2.5999983)">
+    <polyline
+       style="fill:none;fill-opacity:0;stroke:#000000;stroke-width:2"
+       points="774,336.928 774,347.1 774,247.1 774,246.1 "
+       id="polyline22" />
+    <polygon
+       style="fill:#ffffff"
+       points="778.8,348.1 774,362.1 769.2,348.1 774,334.1 "
+       id="polygon24" />
+    <polygon
+       style="fill:none;fill-opacity:0;stroke:#000000;stroke-width:2"
+       points="778.8,348.1 774,362.1 769.2,348.1 774,334.1 "
+       id="polygon26" />
+    <text
+       font-size="12.7998px"
+       style="font-style:normal;font-weight:normal;font-family:monospace;text-anchor:start;fill:#000000"
+       x="776"
+       y="293.35001"
+       id="text28" />
+    <text
+       font-size="12.7998px"
+       style="font-style:normal;font-weight:normal;font-family:monospace;text-anchor:start;fill:#000000"
+       x="785"
+       y="359.78299"
+       id="text30" />
+    <text
+       font-size="12.7998px"
+       style="font-style:normal;font-weight:normal;font-family:monospace;text-anchor:start;fill:#000000"
+       x="778"
+       y="259.78299"
+       id="text32" />
   </g>
-  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="202" y="402">
-    <tspan x="202" y="402">Generalization/</tspan>
-    <tspan x="202" y="418">Inheritance</tspan>
-  </text>
-  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="392" y="402">
-    <tspan x="392" y="402">Association</tspan>
-  </text>
-  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="566" y="401">
-    <tspan x="566" y="401">Dependency</tspan>
-  </text>
-  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="739" y="402">
-    <tspan x="739" y="402">Aggregation</tspan>
-  </text>
-  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="885" y="405">
-    <tspan x="885" y="405">Composition</tspan>
-  </text>
+  <text
+     font-size="12.8px"
+     style="font-style:normal;font-weight:normal;font-family:sans-serif;text-anchor:start;fill:#000000"
+     x="851.18268"
+     y="386.52521"
+     id="text66"><tspan
+       x="851.18268"
+       y="386.52521"
+       id="tspan64">Aggregation</tspan></text>
+  <g
+     id="g48"
+     transform="translate(125.07356,-2.5999983)">
+    <polyline
+       style="fill:none;fill-opacity:0;stroke:#000000;stroke-width:2"
+       points="921.9,336.928 921.9,347.1 921.9,247.1 921.9,246.1 "
+       id="polyline36" />
+    <polygon
+       style="fill:#000000"
+       points="917.1,348.1 921.9,334.1 926.7,348.1 921.9,362.1 "
+       id="polygon38" />
+    <polygon
+       style="fill:none;fill-opacity:0;stroke:#000000;stroke-width:2"
+       points="917.1,348.1 921.9,334.1 926.7,348.1 921.9,362.1 "
+       id="polygon40" />
+    <text
+       font-size="12.7998px"
+       style="font-style:normal;font-weight:normal;font-family:monospace;text-anchor:start;fill:#000000"
+       x="923.90002"
+       y="293.35001"
+       id="text42" />
+    <text
+       font-size="12.7998px"
+       style="font-style:normal;font-weight:normal;font-family:monospace;text-anchor:start;fill:#000000"
+       x="932.90002"
+       y="359.78299"
+       id="text44" />
+    <text
+       font-size="12.7998px"
+       style="font-style:normal;font-weight:normal;font-family:monospace;text-anchor:start;fill:#000000"
+       x="925.90002"
+       y="259.78299"
+       id="text46" />
+  </g>
+  <text
+     font-size="12.8px"
+     style="font-style:normal;font-weight:normal;font-family:sans-serif;text-anchor:start;fill:#000000"
+     x="1010.0735"
+     y="386.52521"
+     id="text70"><tspan
+       x="1010.0735"
+       y="386.52521"
+       id="tspan68">Composition</tspan></text>
 </svg>
