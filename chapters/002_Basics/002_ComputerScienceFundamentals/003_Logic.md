@@ -18,9 +18,7 @@ Truth tables in this book will have the following look:
 
 ### Common operators
 
-{{placeholder}}
-
-<!-- TODO: Explain common operators in binary logic -->
+After we distinguish "true" (1) from "false" (0), we will need to start mixing and matching them (similarly to what we do with numbers). That's where operators come into play: they are a bit different than what we're used to in arithmetics, but they are quite intuitive.
 
 #### AND
 
