@@ -1,9 +1,18 @@
 Algorithms
 ----------
 
-{{placeholder}}
+When you talk about computer science, you always hear about algorithms: what is an algorithm?
 
-<!-- TODO: Intro to algorithms, what they are, just to bring people up to speed. More of a memo. -->
+An algorithm can be informally defined as a finite sequence (as in "not infinite") of instructions that are followed to solve certain problems.
+
+There are numerous examples of algorithms, among them we can find:
+
+- Finding the Greatest Common Divisor (GCD) of two numbers;
+- Finding the largest number in a list;
+- Calculating the $n$th Fibonacci number;
+- ...
+
+Algorithms are usually represented in flow charts, or it's more modern counterpart: the UML activity diagram. Sometimes algorithms can be represented in "plain language" (in that case we may end up talking about "pseudocode") or in a programming language.
 
 Recursion
 ---------
