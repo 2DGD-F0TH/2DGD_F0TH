@@ -102,7 +102,34 @@ This can be solved by using a 4-bit positive integer and having each bit represe
 
 After creating a convention, we can start storing data. For instance we can have the bits representing walls starting from top, going clockwise.
 
-This means that $0110$ represents a tile having two walls: on the right and bottom side.
+This convention could be summarized as follows:
+
+- $0001$ represents a "top wall";
+- $0010$ represents a "right wall";
+- $0100$ represents a "bottom wall";
+- $1000$ represents a "left wall".
+
+This means that $0110$ represents a tile having two walls: on the right and bottom side (this is the integer number 6, by the way). If we wanted to check if a certain tile has a wall, we would just need to `AND` it (bitwise) with the number that represents such wall.
+
+If the result of such operation is not zero, the wall we searched for is in our tile. Continuing with our example, if we test for a right wall we will obtain zero:
+
+$$
+\begin{array}[t]{l}
+0110\ AND \\
+0001 \\ \hline
+0000
+\end{array}
+$$
+
+But if we test for a bottom wall, we will obtain something that is not zero:
+
+$$
+\begin{array}[t]{l}
+0110\ AND \\
+0100 \\ \hline
+0100
+\end{array}
+$$
 
 ### De Morgan's Laws and Conditional Expressions
 
