@@ -136,7 +136,7 @@ LMMS (Linux Multimedia Studio) is a software used to create digital music, it wo
 
 ### MilkyTracker {.unnumbered .unlisted}
 
-MilkyTracker is an editor for tracker files, Amiga-style that takes a lot of inspiration from FastTracker II, it has a lot of functionality, it's well-documented and the community is active.o
+MilkyTracker is an editor for tracker files that takes a lot of inspiration from FastTracker II, it has a lot of functionality, it's well-documented and the community is active.o
 
 <https://milkytracker.titandemo.org/>
 
