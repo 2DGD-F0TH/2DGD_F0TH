@@ -123,7 +123,7 @@ First of all, coroutines are computer programs can run in multitasking (so it ca
 
 Instead of "fighting for resources", coroutines politely free the processor and give control of it to something else (could be the caller or another coroutine), this form of multitasking is often called **cooperative multitasking**.
 
-A particularly interesting point of coroutines is the fact that their execution can be "suspended" and "resumed" without losing its internal state. Coroutines are using in more advanced engines (using the *Actor Model*) and in some particular situations. You may never need to use a single coroutine, or you may need to use them every day, so it's worth knowing at least what they are.
+A particularly interesting point of coroutines is the fact that their execution can be "suspended" and "resumed" without losing its internal state. Coroutines are used in more advanced engines (using the *Actor Model*) and in some particular situations. You may never need to use a single coroutine, or you may need to use them every day, so it's worth knowing at least what they are.
 
 Introduction to Multi-Threading {#multithreading}
 ------------------------------
