@@ -139,7 +139,7 @@ MMO (Massively Multiplayer Online) is a term used for games that have a heavy mu
 
 ### Simulation
 
-Simulation games cover a huge variety of games that are create to "simulate reality", in more or less precise ways. Among simulation games we can find:
+Simulation games cover a huge variety of games that are created to "simulate reality", in more or less precise ways. Among simulation games we can find:
 
 - **Racing Games:** sometimes more simulative others more arcade-like, racing games simulate the experience of driving a vehicle, more or less realistic (from modern cars to futuristic nitro-fueled bikes);
 - **Social Simulation:** simulating the interaction between characters, a pioneer on the genre is surely "The Sims";
