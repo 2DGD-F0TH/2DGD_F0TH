@@ -53,7 +53,7 @@ Under the term of "Writer" you can find more roles, like:
 - Narrative Designer;
 - Creative Writer.
 
-A good writer must have good language skills, as well as creativity. The must be able to use planning programs (like everyone, communication is important) as well as writing programs, like LibreOffice/OpenOffice Writer.
+A good writer must have good language skills, as well as creativity. They must be able to use planning programs (like everyone, communication is important) as well as writing programs, like LibreOffice/OpenOffice Writer.
 
 ### Developer
 
