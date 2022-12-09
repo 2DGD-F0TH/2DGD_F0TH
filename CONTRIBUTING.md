@@ -195,6 +195,32 @@ This is a title {.unnumbered .unlisted}
 
 That `{.unnumbered .unlisted}` defines an "unnumbered and unlisted section", which is mostly an aesthetic choice that I used to make some appendices (like the Glossary) appear in a cleaner manner in the Table of Contents.
 
+Glossary
+--------
+
+This book doesn't use any special system to manage glossary entries, so to be as compatible as possible with all the current and future output formats.
+
+This means we have to estabilish some rules:
+
+- Words in the glossary should be marked in italic/slanted and with a subscript `[g]`. This has to be escaped or it may end up breaking the internal link.
+- Inside the glossary appendix, each word needs to have an anchor to be linked correctly. All anchors will begin with `#gl_` and such anchors should not be used anywhere else.
+- The glossary section needs to be created using Pandoc Markdown's "list of definitions" functionality.
+
+An example is worth a thousand words. Let's imagine that we want to create a glossary link for "complex concept", first we create a section in our glossary (the simplest part):
+
+```
+[Complex Concept]{#gl_complexconcept}
+: Definition of a complex cocept here
+```
+
+Now we save the glossary and continue on the file where we want to link our glossary topic:
+
+```
+Here we need to express a *[complex concept~\[g\]~](#gl_complexconcept)*
+```
+
+We are using square brackets to create a link to the `#gl_complexconcept` ancor, while we use the backslash to escape the letter "g" between square brackets. Then we use the tilde to make a subscript for the letter g.
+
 Miscellaneous
 -------------
 
