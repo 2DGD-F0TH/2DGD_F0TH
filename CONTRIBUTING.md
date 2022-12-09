@@ -38,7 +38,7 @@ Compared to building the book, you may need some more tools to be able to make r
 - **Librsvg**: for converting SVGs into a format suitable for TeXLive
 - **PlantUML**: for UML diagrams in the `*.puml` format
 - **Gimp**: for editing images in the `*.xcf` format
-- **GraphViz** (required for PlantUml): for editing diagrams in the `*.dot` format
+- **GraphViz** (required for PlantUml): for editing diagrams in the `*.gv` format
 - **Git**: for version control
 - **Any PDF Reader**: just to make sure that the PDF looks good
 - **Any EPub Reader**: just to make sure that the EPub looks equally good
@@ -69,7 +69,7 @@ This is the directory structure of the project, along with some descriptions tha
 
 You can also find other folders, such as:
 
-- **raw_resources**: this folder contains some raw resources used to build the book, usually the code used to generate UML and dot diagrams, or XCF files used to create some images.
+- **raw_resources**: this folder contains some raw resources used to build the book, usually the code used to generate UML and GraphViz diagrams, or XCF files used to create some images.
 - **gladtex_imgs**: this is a temporary folder used by the GladTeX tool to convert math formulas into SVG images (thus improving compatibility with EPub readers).
 
 Adding a new programming language
