@@ -29,6 +29,16 @@ Your IDE, if advanced enough, should already be able to warn you of a high cyclo
 Be mindful that cyclomatic complexity may have issues of "over-estimation" or "under-estimation", depending on a case-by-case basis. McCabe's cyclomatic complexity is far from a "silver bullet" that will suit all your needs, but as all other metrics, it can give a pointer over where refactoring may be necessary.
 ::::
 
+#### How cyclomatic complexity is calculated
+
+:::: wizardry ::::
+This section contains the technical explanation on how to calculate cyclomatic complexity. If you're not interested in this, feel free to gloss over this section.
+::::::::::::::::::
+
+{{placeholder}}
+
+<!-- TODO: How to calculate cyclomatic complexity -->
+
 ### Code Coverage
 
 When you have a test suite, you may already be thinking about a metric that tells you how much of your code is tested. Well, here it is: the *code coverage* metric tells you what percentage of your code base has been run when executing a test suite.
@@ -60,13 +70,13 @@ Among code smells we find:
 - Long Methods;
 - Excessively long (and thus complex) lines of code.
 
-### Coding Style breaches
+### Coding Style infractions
 
 When you are collaborating with someone, it is absolutely vital to enforce a coding style, so that everyone in the team is able to look at everyone else's code without having to put too much effort into it.
 
 Coding style can be enforced via static analysis tools, when properly configured.
 
-Counting (automatically) the number of coding style breaches can help you estimate how much effort working on the code is necessary, thus you would be able to foresee slowdowns in the development process.
+Counting (automatically) the number of coding style infractions can help you estimate how much effort working on the code is necessary, thus you would be able to foresee slowdowns in the development process.
 
 ### Depth of Inheritance
 
