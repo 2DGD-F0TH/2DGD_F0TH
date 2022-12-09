@@ -1,0 +1,16 @@
+@startuml
+start
+:a=input;
+if (a>1) then (yes)
+    /'-[#blue]->'/
+    :b = 1;
+else
+    if (a < 1) then (yes)
+        :b = -1;
+    else
+        :b = 0;
+    endif
+endif
+:return b;
+stop
+@enduml
