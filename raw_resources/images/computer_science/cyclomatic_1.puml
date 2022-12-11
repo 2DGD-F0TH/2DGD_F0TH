@@ -1,14 +1,13 @@
 @startuml
 start
-:a=input;
-if (a>1) then (yes)
-    /'-[#blue]->'/
-    :b = 1;
-else
-    if (a < 1) then (yes)
-        :b = -1;
-    else
-        :b = 0;
+:a=input();
+if (a == 0) then (yes)
+    :b = "zero";
+else (no)
+    if (a % 2 == 0) then (yes)
+        :b = "even";
+    else (no)
+        :b = "odd";
     endif
 endif
 :return b;

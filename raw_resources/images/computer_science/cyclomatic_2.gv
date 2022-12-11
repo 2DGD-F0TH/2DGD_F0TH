@@ -1,0 +1,17 @@
+digraph G {
+	graph [layout=dot rankdir=TB]
+
+    A[label="a=input()", shape="box"]
+    B[label="a == 0", shape="diamond"]
+    C[label="b='zero'", shape="box"]
+    D[label="a % 2 == 0", shape="diamond"]
+    E[label="b='even'", shape="box"]
+    F[label="b='odd'", shape="box"]
+    G[label="return b", shape="box"]
+
+    A -> B
+    B -> C
+    B -> D -> E
+    D -> F
+    {C E F} -> G
+}
