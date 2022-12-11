@@ -35,9 +35,31 @@ Be mindful that cyclomatic complexity may have issues of "over-estimation" or "u
 This section contains the technical explanation on how to calculate cyclomatic complexity. If you're not interested in this, feel free to gloss over this section.
 ::::::::::::::::::
 
-{{placeholder}}
+As people say, an example is worth a thousand words, so let's take the following UML activity diagram, that represents a simple program (I made it a bit more complex for the sake of demonstration).
 
-<!-- TODO: How to calculate cyclomatic complexity -->
+![UML of the program which we'll calculate the cyclomatic complexity of](./images/project_management/cyclomatic_1.svg){width=50%}
+
+First of all, we need to convert it into the corresponding flow diagram, which usually means eliminating the start nodes and merge nodes used by UML. The result should look something like the following:
+
+![Flow diagram of the program we'll calculate the cyclomatic complexity of](./images/project_management/cyclomatic_2.svg){width=50%}
+
+Now we need to count 3 things:
+
+- The number of "nodes": that is the number of boxes and diamonds in our flow diagram. In our case it is 7.
+- The number of "edges": that is the number of arrows that connect the nodes in our flow diagram. In our case it is 8.
+- The number of "exit points": usually that is the number of stop nodes in our UML diagram, in our flow diagram it's the number of return statements. In our case it is 1.
+
+Now we need to apply the following formula: $C = E - N + 2 \cdot P$.
+
+This formula can be explained as follows:
+
+$$
+Cyclomatic\ Complexity\ =\ Edges\ -\ Nodes\ +\ 2\ \cdot\ Exit\ Points
+$$
+
+In our case we have: $C = 8 - 7 + 2 \cdot 1 = 3$
+
+Usually a complexity lower than 15 is considered ok, but also the lower the better.
 
 ### Code Coverage
 
