@@ -5,7 +5,7 @@ The methods we saw so far when checking for collisions are called "time-stepping
 
 ### The "Bullet Through Paper" problem {#bulletthroughpaper}
 
-The "bullet through paper" is a common problem with collision detection, when an obstacle is really thin (our "paper"), and the object is really fast and small (the "bullet") it can happen that collision is not detected.
+The "bullet through paper" (sometimes called "tunneling") is a common problem with collision detection, when an obstacle is really thin (our "paper"), and the object is really fast and small (the "bullet") it can happen that collision is not detected.
 
 ![Example of the "Bullet through paper" problem](./images/collision_detection/Bullet_Through_Paper.svg){width=40%}
 
