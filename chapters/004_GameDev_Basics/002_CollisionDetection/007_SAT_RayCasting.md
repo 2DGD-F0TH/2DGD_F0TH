@@ -134,4 +134,10 @@ If you find that the bullet animation won't align well with the enemy dying, the
 
 {{placeholder}}
 
-<!-- TODO: Talk about ray casting, and how it can be used to fix the tunneling problem by casting the ray and an animation, without actually shooting a bullet -->
+<!-- TODO: Talk about using ray casting to fix the tunneling problem (code?) -->
+
+### Other uses for ray casting: Pseudo-3D environments
+
+{{placeholder}}
+
+<!-- TODO: Talk about how ray casting can be used to create pseudo-3d (DOOM-style) environments -->
