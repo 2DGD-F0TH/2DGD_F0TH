@@ -83,7 +83,7 @@ This is simple to achieve: we just need to loop over all the vertices and find o
 
 To check if the collision "may happen", we can just use a simple [Point vs Rectangle collision check](#point_rectangle).
 
-#### Point/Polygon collision detection with triangles
+#### Point/Polygon collision detection using triangulation
 
 Finally, after all the math and preparations, we can start working towards our collision detection algorithm.
 
