@@ -1,0 +1,16 @@
+graph G{
+	graph [layout=dot rankdir=LR]
+    A -- C
+    B -- {D E G}
+    C -- {B K J}
+    D -- {E F I}
+    E -- G
+    F -- {I G H}
+    G -- {H N}
+    H -- {I M N}
+    I -- M
+    J -- {K L}
+    K -- M
+    M -- O
+    N -- O
+}
