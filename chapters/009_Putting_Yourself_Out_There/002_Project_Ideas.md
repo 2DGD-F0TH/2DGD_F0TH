@@ -225,7 +225,7 @@ Skills required:
 
 ### Advanced level
 
-In the advanced level you should implement a life system for our playable character, so instead of dying our player will get hurt (thus reducing its health) and will have its life reduced. A health bar should be shown on screen.
+In the advanced level you should implement a life system for our playable character, so instead of dying our player will get hurt and will have its life reduced. A health bar should be shown on screen.
 
 The same should be done for each enemy, so you will need to be able to manage the state of each object (enemy) separatedly. Extra points if you show a small healthbar on top of a hit enemy, showing its current health.
 
