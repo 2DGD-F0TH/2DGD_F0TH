@@ -138,25 +138,7 @@ In this section we will take a look at some really common exploits that can be u
 
 This is probably one of the most common exploits that you can find in games. Computers have limited memory, thus they have a limit on the numbers that can be represented: what happens when such limit is exceeded?
 
-#### Two's complement
-
-First of all, integer numbers are saved on our computers in "two's complement", which requires the most significant bit to be reserved for the sign of a number. I won't explain deeply how the two's complement conversion works, but remember the following: to perform a two's complement you
-
-1. Flip all bits
-2. Add 1 to the number you obtained in step 1
-
-Let's see a simple example with 3 binary digits:
-
-| Decimal | Binary |
-| :------ | :----- |
-| -4      | 100    |
-| -3      | 101    |
-| -2      | 110    |
-| -1      | 111    |
-| 0       | 000    |
-| 1       | 001    |
-| 2       | 010    |
-| 3       | 011    |
+It might be useful to remember the section talking about [two's complement](#twos_complement).
 
 #### How the attack works
 

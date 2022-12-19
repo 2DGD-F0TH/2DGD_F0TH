@@ -153,13 +153,42 @@ Now we just need to read our remainders from bottom to top. So the binary repres
 This is actually a much more generic algorithm: you can convert from decimal to octal and hexadecimal for instance, just by dividing by 8 and 16 respectively. You can convert 38 to octal and hexadecimal as an exercise: the results are $46_{oct}$ and $26_{hex}$.
 ::::::::::::::
 
-#### Two's complement
+#### Two's complement {#twos_complement}
 
 So far we've seen how to convert positive integers from decimal to binary, but how do we represent negative integers?
 
 That's where "two's complement" representation comes into play: there is a bunch of theory behind why it's called this way, and how it works, but what we need to know will be how to represent a negative number.
 
-> To represent a negative binary number in two's complement you invert all the bits of such number, then add 1.
+Let's start with a simple example with 3 binary digits (this means we're pretending our computer can process only up to 3 bits):
+
+| Decimal | Binary |
+| :------ | :----- |
+| -4      | 100    |
+| -3      | 101    |
+| -2      | 110    |
+| -1      | 111    |
+| 0       | 000    |
+| 1       | 001    |
+| 2       | 010    |
+| 3       | 011    |
+
+As you can see, the most significant bit being set (that means having value of $1$) is a telltale sign that a number is negative. But there are some interesting features about two's complement that make it a very nice method of representing integers.
+
+This is because it makes easier to implement hardware that does operations on such numbers. If we sum $3$ and $-3$ in two's complement we will obtain the following:
+
+$$
+\begin{array}[t]{r}
+011\\
++\ 101\\ \hline
+1000\ \
+\end{array}
+$$
+
+This may look completely wrong, but since our "computer" can only process up to 3 bits, the left-most bit will be discarded, giving us the right result: $000_{bin}$.
+
+Now let's see how to represent negative numbers in two's complement.
+
+> To represent a negative binary number in two's complement you flip all the bits of such number, then add 1.
 
 As usual, an example is worth a thousand words. We want to convert the number $-38$ into binary.
 
