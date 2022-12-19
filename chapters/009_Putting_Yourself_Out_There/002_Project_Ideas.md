@@ -201,7 +201,7 @@ Shooter Arena
 
 ![Possible Shooter Arena Game](./images/project_ideas/shooter_arena.png){width=50%}
 
-This is a simple mouse-controlled arena shooting game, much in the style of "Crimsonland" and "R.I.P.": the objective of the game is surviving for as long as possible.
+This is a simple keyboard and mouse-controlled arena shooting game (technically the genre is called "twin-stick shooter"), much in the style of "Crimsonland" and "R.I.P.": the objective of the game is surviving for as long as possible.
 
 ### Basic Level
 
