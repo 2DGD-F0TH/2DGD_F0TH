@@ -122,7 +122,7 @@ Further Skills Required:
 
 For the master level we will make the shields, which are complex to code in the way of the original game, so we will "cheat".
 
-Our shields will be "force fields" which can withstand 3 shots before getting disabled: such shots can come from the aliens or our ship. After 5 to 10 seconds, the shields will come back online and ready to stop bullet again.
+Our shields will be "force fields" which can withstand 3 shots before getting disabled: such shots can come from the aliens or our ship. After 5 to 10 seconds, the shields will come back online and ready to stop bullets again.
 
 Like the original game, the shields can block both our and our enemy's bullets, making for a more challenging gameplay.
 
