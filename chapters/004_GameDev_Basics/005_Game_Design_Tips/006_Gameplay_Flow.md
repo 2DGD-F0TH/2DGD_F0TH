@@ -116,3 +116,24 @@ The most important thing when laying out a looping kind of gameplay is that the 
 
 **Disadvantages**         Needs a lot of care in laying out how the runs evolve between one and the next: if all the runs "feel the same" the player will abandon the game.
 ------------------------------------------------------------------------------
+
+#### Soft-reset mechanics
+
+Pretty often games adopting looping gameplay flow have one or more "soft-reset" mechanics. This mechanic consist in starting the whole game from the beginning, while having some advantages that come from the previous runs.
+
+A soft-reset run may see:
+
+- Main character having a higher experience gain;
+- Starting with a "box of tools". For instance you start the new run with a weapon that had to be unlocked in the previous run;
+- Main character starting with a higher attack;
+- ...
+
+This adds a new dimension to the gameplay: funnily enough, a player may progress through the entire game faster by resetting it.
+
+This adds more decision making (thus more power) to the player, who can take the risk and "invest time" by soft-resetting the game (where the investment is the time spent getting back to the point they were before) to have higher gains in the long run.
+
+Bonus points if you can add a reason for soft-resetting in the game's story.
+
+There is no real limit to the quantity of soft-resets you can stack on top of each other, although it's advisable that each soft-reset has a suitable "reward" and different "reset harshness".
+
+For instance you can have a soft-reset where you lose your weapons and levels, but have a 2% attack bonus. Then you can have a second level of soft reset where you lose money, weapons, levels and something else in exchange for 10% higher experience gain. Balance is the key.
