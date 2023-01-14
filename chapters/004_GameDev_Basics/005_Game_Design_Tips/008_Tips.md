@@ -177,3 +177,21 @@ This method can be implemented in many ways, one of them could be assigning a le
 | > +3                       | 1                 |
 
 Table: An example of "level-based" experience rewards
+
+#### "Mastering"
+
+An interesting mechanic to add in RPGs is "mastering", as in "mastering the usage of a tool", this mechanic entails having set bonuses after a certain "mission" is completed with a certain tool.
+
+Some examples could be:
+
+- Kill 1000 enemies with a spear $\rightarrow$ 20% more attack power using spears;
+- Resist 2000hp of damage while wearing a heavy armor $\rightarrow$ you can wear heavy armor without running speed penalties;
+- Kill 50 high-rank demons with a shotgun $\rightarrow$ shotgun reloads twice as fast.
+
+This can add a new level of depth in your game, as well as giving the player more choice over how they want to shape their character: do they want to spend the effort to get a "mastering bonus" or is their time spent better elsewhere?
+
+:::: trivia ::::
+*Tales of Berseria* includes a very interesting "mastering" mechanic: once you master a piece of equipment, its bonus "sticks" to the character and is kept even after the piece of equipment is removed. This stimulates the player to try new equipment to "collect bonuses".
+
+On the flip side, if you keep the same piece of equipment, such bonus is doubled. This way the player can decide between a "double bonus" or "enlarging their bonus pool".
+::::::::::::::::
