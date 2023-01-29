@@ -175,3 +175,31 @@ Table: Summary table for the Facade design pattern
 
 <!-- TODO: Code for the facade pattern -->
 
+### Proxy
+
+Sometimes, the access to a certain object may be problematic or not directly possible, for instance when:
+
+- The object is available only remotely;
+- The object needs a form of access control;
+- The object is too heavy to complex to be available in memory at all times.
+
+In these cases, the proxy pattern is the pattern that may solve your issues: in its most general form, a proxy is an interface to another object. Such interface may have additional operations attached to it (for instance for access control), or it could represent a "virtual object", where the real object is located somewhere else.
+
+![Diagram of the Proxy Pattern](./images/design_patterns/class_proxy.svg){width=50%}
+
+This can be very useful in implementing multiplayer systems: a well-designed system won't care if the input controlling a character come from the keyboard, a gamepad, another computer (while playing multiplayer) or a file (for replays, for instance). The proxy pattern will make it so that everything has the same interface and the "user object" (as in the object that uses the proxy) won't have to worry about what's on "the other side of the proxy".
+
+The proxy pattern is also very useful for lazy-loading: the Proxy object will pretend to be the original object, until the object is really needed (thus moving the instantiation weight to the "first use" of an object), then it will just "pass through" every command.
+
+------------------    ------------------------------------------------------------------------------
+**Pattern Name**      Proxy
+
+**When to Use it**    When you need to represent a remote object, a complex/heavy object that can't fit in memory or if you need to control access to an object. Useful for lazy loading, replays or remote play.
+
+**Advantages**        Decoupling.
+
+**Disadvantages**     When used for lazy-loading, "passing through" function calls will add function pointers to the stack, which may slow down performance.
+
+------------------------------------------------------------------------------------------------
+
+<!-- TODO: Code for the proxy pattern -->
