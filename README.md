@@ -126,6 +126,6 @@ License
 
 This project is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike License.
 
-[Learn more](/docs/license.md)
+[Learn more](/docs/license_reasoning.md)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
