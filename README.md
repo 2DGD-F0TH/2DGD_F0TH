@@ -1,7 +1,50 @@
-2D Game Development: From Zero To Hero
-======================================
+<a name="readme-top"></a>
+<div align="center">
+    <img src="docs/logo.svg" alt="Logo" width="160" height="160" />
+    <h3 align="center">2D Game Development: From Zero To Hero</h3>
+    <p align="center">
+        A compendium of the community knowledge on game design and development
+        <br/>
+        <a href="https://therealpenaz91.itch.io/2dgd-f0th"><strong>Get the Ebook »</strong></a>
+        <br/>
+        <br/>
+            <a href="https://gitlab.com/Penaz/2dgd_f0th">GitLab Repo</a>
+            ·
+            <a href="https://github.com/2DGD-F0TH/2DGD_F0TH">GitHub Repo</a>
+    </p>
+</div>
 
-Project Status:
+<!-- TABLE OF CONTENTS -->
+<details>
+    <summary>Table of Contents</summary>
+    <ol>
+        <li>
+            <a href="#about-the-project">About The Project</a>
+            <ul>
+                <li><a href="#project-health">Project Health</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#getting-the-book">Getting The Book</a>
+            <ul>
+                <li><a href="#ready-to-read-version">Ready-to-read Version</a></li>
+                <li><a href="#source-code">Source Code</a></li>
+            </ul>
+        </li>
+        <li><a href="#screenshots">Screenshots</a></li>
+        <li><a href="#contributing">Contributing</a></li>
+        <li><a href="#license">License</a></li>
+    </ol>
+</details>
+
+About the project
+-----------------
+
+This project aims to be a Creative Commons Licensed body of knowledge about game design and development.
+
+As well as being a source of knowledge this project aims to be a learning experience for everyone involved too, by gathering contributions from the community, teaching others how to make a game, explaining algorithms but also learning tips and tricks from people who are more experienced.
+
+### Project Health
 
 ![Latest Version](https://img.shields.io/github/v/tag/penaz91/2dgd_f0th?label=Latest%20Version&logo=git&style=for-the-badge)
 ![License](https://img.shields.io/static/v1?label=License&message=BY-NC-SA&color=black&logo=creativecommons&style=for-the-badge)
@@ -17,11 +60,8 @@ Project Status:
 ![GitHub last commit (master)](https://img.shields.io/github/last-commit/penaz91/2DGD_F0TH/master?label=Last%20Commit%20%28master%29&logo=git&style=for-the-badge)
 ![GitHub last commit (develop)](https://img.shields.io/github/last-commit/penaz91/2DGD_F0TH/develop?label=Last%20Commit%20%28develop%29&logo=git&style=for-the-badge)
 
-This is a small project that aims to gather some knowledge about game development and make it available to everyone.
 
-As well as being a source of knowledge this project aims to be a learning experience for everyone involved too, by gathering contributions from the community, teaching others how to make a game, teaching algorithms but also learning tips and tricks from people who are more experienced.
-
-**This project is looking for contributors:** [see below](#looking-for-contributors)
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 Getting the book
 -----------------
@@ -45,6 +85,8 @@ The source code for this ebook is available through the following official repos
 
 You can learn how to build the book yourself in the Wiki!
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 Screenshots
 ------------
 
@@ -52,8 +94,10 @@ Screenshots
 ![Game Loop](/docs/screenshots/Screen_1.png?raw=true)
 ![Collision Detection](/docs/screenshots/Screen_2.png?raw=true)
 
-Looking for contributors
-------------------------
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+Contributing
+------------
 
 Hi! Penaz here.
 
@@ -75,18 +119,13 @@ All contributions will be handled with maximum respect and in accordance to our 
 
 Thank you for reading.
 
-Branches
---------
-
-The `master` branch is usually pretty much final (its contents will be expanded but probably not modified), while the `develop` branch is more up-to-date but its content is subject to change.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 License
 --------
 
-This project is meant to be a free source of knowledge for who wants to develop their first game (but also be a reference book you can come back to), currently this project is under the Creative Commons Attribution-NonCommercial-ShareAlike License.
+This project is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike License.
 
-### Why this license?
+[Learn more](/docs/license.md)
 
-Because I want all contributions to be accessible by everyone for free but at the same time for the contributors to be given recognition, simple as that.
-
-The chosen license is not a "Free Culture" license, but I want to protect the "free as in price" policy of this project, as well as the "free as in freedom" one. I feel this license is the best compromise.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
