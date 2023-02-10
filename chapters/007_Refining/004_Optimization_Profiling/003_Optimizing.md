@@ -115,6 +115,8 @@ Inside older games, where CPU cycles were at a premium, a widely used trick to g
 
 These tables would store the result values for certain expensive functions, given certain inputs, thus replacing the expensive operation with a lookup inside a certain data structure (which is usually really fast).
 
+![How a lookup table works](./images/profiling_optimization/lookup_tables.svg)
+
 This has a tradeoff: you're trading CPU time for Memory space, since the lookup tables are meant to stay into RAM.
 
 In modern games instances of lookup tables are as rare as hens' teeth, but it's an interesting historical view over some older forms of optimization.
