@@ -189,6 +189,9 @@ In these cases, the proxy pattern is the pattern that may solve your issues: in 
 
 This can be very useful in implementing multiplayer systems: a well-designed system won't care if the input controlling a character come from the keyboard, a gamepad, another computer (while playing multiplayer) or a file (for replays, for instance). The proxy pattern will make it so that everything has the same interface and the "user object" (as in the object that uses the proxy) won't have to worry about what's on "the other side of the proxy".
 
+```{src='design_patterns/proxy' caption='Example Implementation Of the Proxy Pattern'}
+```
+
 The proxy pattern is also very useful for lazy-loading: the Proxy object will pretend to be the original object, until the object is really needed (thus moving the instantiation weight to the "first use" of an object), then it will just "pass through" every command.
 
 ------------------    ------------------------------------------------------------------------------
@@ -202,4 +205,3 @@ The proxy pattern is also very useful for lazy-loading: the Proxy object will pr
 
 ------------------------------------------------------------------------------------------------
 
-<!-- TODO: Code for the proxy pattern -->
