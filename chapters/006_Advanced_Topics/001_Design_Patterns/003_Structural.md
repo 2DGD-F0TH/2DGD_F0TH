@@ -204,4 +204,3 @@ The proxy pattern is also very useful for lazy-loading: the Proxy object will pr
 **Disadvantages**     When used for lazy-loading, "passing through" function calls will add function pointers to the stack, which may slow down performance.
 
 ------------------------------------------------------------------------------------------------
-
