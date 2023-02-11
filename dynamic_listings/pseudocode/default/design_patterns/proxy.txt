@@ -15,10 +15,11 @@ class Request{
 }
 
 abstract class WebPage{
-    // Represents a call to a web page
-    abstract function get() -> HttpResponse{
-        // This function gets implemented in the concrete classes;
-    }
+    /*
+     * Represents a call to a web page
+     */
+    // This function gets implemented in the concrete classes;
+    abstract function get() -> HttpResponse;
 }
 
 class WebPageProxy inherits from WebPage{

@@ -13,9 +13,8 @@ abstract class Handler{
         }
     }
 
-    function real_handler(){
-        // This function gets implemented in the concrete classes
-    }
+    // This function gets implemented in the concrete classes
+    abstract function real_handler();
 
     function add_handler(Handler new_handler) -> Handler{
         next = new_handler;

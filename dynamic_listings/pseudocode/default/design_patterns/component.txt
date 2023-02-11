@@ -1,8 +1,6 @@
 abstract class Component{
     // Defines the abstract class/interface for the component pattern
-    function update(){
-        // Do nothing, this is an abstract class
-    }
+    abstract function update();
 }
 
 class ConcreteComponent1 inherits from Component{
