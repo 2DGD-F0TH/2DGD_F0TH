@@ -110,6 +110,10 @@ Procedural (and random) generation can be used practically anywhere inside of a 
 - **Story:** In case you want to put some missions behind a level-gate, you can use procedurally generated missions to allow the players to grind for experience and resources, so they are ready for the upcoming story checkpoints;
 - **Difficulty Management:** Procedural generation can be involved into difficulty management by handing the enemy parameters and spawning to suit our needs.
 
+:::: trivia ::::
+Want to see procedural generation brought to the extreme? Check out `.kkrieger` (by `.theprodukkt`, a subdivision of the demo group Farbrausch): it's a first person shooter that weighs 96Kb (no, it's not a typo) that makes **massive** use of procedural generation, from textures, to meshes, to sound.
+::::::::::::::::
+
 Procedural Generation and Difficulty Management
 -----------------------------------------------
 
