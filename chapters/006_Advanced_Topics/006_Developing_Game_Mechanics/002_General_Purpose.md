@@ -1,6 +1,31 @@
 General Purpose
 ---------------
 
+### Tilemaps
+
+Tilemaps are a really interesting abstraction that allows us to draw maps by using pre-made "tiles" instead of having to draw them "pixel-by-pixel".
+
+![Example of a tilemap and a map drawn with it [^jawbreaker]](./images/developing_mechanics/tilemap.png){width=65%}
+
+This also allows us to have a new coordinate system that works "using tiles", which could be preferable than single pixels (since we may put properties on our tiles, like a "solid" property for collision detection).
+
+Another advantage of tilemaps is the ability to use a small texture to draw gigantic maps without adding much data in memory (tilemaps are a fantastic example of the "Flyweight Pattern").
+
+#### Rectangular Tilemaps
+
+{{placeholder}}
+<!-- TODO: Quick talk about rectangular tilemaps -->
+
+#### Hexagonal Tilemaps
+
+{{placeholder}}
+<!-- TODO: Quick talk about hexagonal tilemaps -->
+
+#### Isometric Tilemaps
+
+{{placeholder}}
+<!-- TODO: Quick talk about isometric tilemaps -->
+
 ### I-Frames
 
 I-Frames (also known as "invincibility frames") is a term used to identify that period of time after being hit, where the character either flashes or becomes transparent and is immune to damage.
