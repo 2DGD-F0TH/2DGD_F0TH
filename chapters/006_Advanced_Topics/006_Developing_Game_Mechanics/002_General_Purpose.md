@@ -5,7 +5,7 @@ General Purpose
 
 Tilemaps are a really interesting abstraction that allows us to draw maps by using pre-made "tiles" instead of having to draw them "pixel-by-pixel".
 
-![Example of a tilemap and a map drawn with it [^jawbreaker]](./images/developing_mechanics/tilemap.png){width=65%}
+![Example of a tileset and a tilemap drawn with it [^jawbreaker]](./images/developing_mechanics/tilemap.png){width=65%}
 
 This also allows us to have a new coordinate system that works "using tiles", which could be preferable than single pixels (since we may put properties on our tiles, like a "solid" property for collision detection).
 
@@ -13,10 +13,18 @@ Another advantage of tilemaps is the ability to use a small texture to draw giga
 
 #### Rectangular Tilemaps
 
+Rectangular tilemaps are the most commonly used tile maps in game development: it's easy to translate back and forth between "screen pixels" and "tiles", and if the tilesets are well-made everything looks seamless.
+
+This has the advantage of using less memory (we need to save only the tileset, plus a few coordinates and pointers), thus making our game perform better.
+
 {{placeholder}}
 <!-- TODO: Quick talk about rectangular tilemaps -->
 
 #### Hexagonal Tilemaps
+
+Sometimes you may want to underline a "tabletop" game feel, in that case a hexagonal tilemap (sometimes called "hexmap") may be a great idea (at the cost of more complicated algorithms).
+
+![Simple structure of a hexmap](./images/developing_mechanics/hexmap.svg){width=40%}
 
 {{placeholder}}
 <!-- TODO: Quick talk about hexagonal tilemaps -->
