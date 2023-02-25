@@ -17,6 +17,10 @@ Rectangular tilemaps are the most commonly used tile maps in game development: i
 
 This has the advantage of using less memory (we need to save only the tileset, plus a few coordinates and pointers), thus making our game perform better.
 
+:::: trivia ::::
+Super Mario Bros. uses maps that are based on square tiles. Even the pipes are tiles: this allows the game to have variable lengths of pipes without increasing the number of tiles.
+::::::::::::::::
+
 {{placeholder}}
 <!-- TODO: Quick talk about rectangular tilemaps -->
 
@@ -26,10 +30,20 @@ Sometimes you may want to underline a "tabletop" game feel, in that case a hexag
 
 ![Simple structure of a hexmap](./images/developing_mechanics/hexmap.svg){width=40%}
 
+Hexmaps allow for a different kind of movement (the player can move to up to 6 directions, instead of 4), which makes for an interesting remix of the classic tile-based mechanics.
+
 {{placeholder}}
 <!-- TODO: Quick talk about hexagonal tilemaps -->
 
 #### Isometric Tilemaps
+
+In some cases you may want to try and give your game a more "premium" feel: isometric maps can help you in that. The game is technically 2D, but the way the tiles are designed makes it look like it's a 3D game!
+
+Isometric tilemaps make use of more difficult algorithms, considering the odd shape the tiles are (usually they're diamond-shaped).
+
+:::: trivia ::::
+Diablo 2 is actually a 2D game that uses isometric tiles. Every item and character is a pre-rendered sprite: this means that every item drop is also pre-rendered and stored with some defined degrees of rotation to give a more variegated feeling.
+::::::::::::::::
 
 {{placeholder}}
 <!-- TODO: Quick talk about isometric tilemaps -->
