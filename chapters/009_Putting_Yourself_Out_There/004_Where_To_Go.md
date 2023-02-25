@@ -70,6 +70,10 @@ Game Design
 Game Development
 ----------------
 
+### Web Resources
+
+- **Amit's Game Programming Information:** <http://www-cs-students.stanford.edu/~amitp/gameprog.html> {{freeprod}}
+
 ### Videos
 
 - **OneLoneCoder's YT:** <https://www.youtube.com/channel/UC-yuWVUplUJZvieEligKBkA> {{freeprod}}
