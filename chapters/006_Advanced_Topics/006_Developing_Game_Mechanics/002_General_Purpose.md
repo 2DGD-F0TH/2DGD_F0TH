@@ -39,6 +39,8 @@ Hexmaps allow for a different kind of movement (the player can move to up to 6 d
 
 In some cases you may want to try and give your game a more "premium" feel: isometric maps can help you in that. The game is technically 2D, but the way the tiles are designed makes it look like it's a 3D game!
 
+![A simple isometric tiles and a tilemap](./images/developing_mechanics/isometric_tiles.svg){width=60%}
+
 Isometric tilemaps make use of more difficult algorithms, considering the odd shape the tiles are (usually they're diamond-shaped).
 
 :::: trivia ::::
