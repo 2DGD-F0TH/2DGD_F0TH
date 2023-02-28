@@ -19,7 +19,7 @@ abstract class WebPage{
      * Represents a call to a web page
      */
     // This function gets implemented in the concrete classes;
-    abstract function get() -> HttpResponse;
+    abstract function get(Request request) -> HttpResponse;
 }
 
 class WebPageProxy inherits from WebPage{
@@ -28,7 +28,7 @@ class WebPageProxy inherits from WebPage{
         // Get the requesting user
         User requesting_user = request.user;
         if (requesting_user.can_do_thing()){
-            return superclass.get();
+            return superclass.get(request);
         }else{
             return HttpResponse("This user cannot access this page");
         }

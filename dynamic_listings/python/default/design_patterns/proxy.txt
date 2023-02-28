@@ -25,7 +25,7 @@ class WebPageProxy(WebPage):
         # Get the requesting user
         requesting_user = request.user
         if (requesting_user.can_do_thing()):
-            return super().get()
+            return super().get(request)
         else:
             return HttpResponse("This user cannot access this page")
 
