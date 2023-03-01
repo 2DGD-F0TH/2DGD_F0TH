@@ -32,6 +32,31 @@ Sometimes you may want to underline a "tabletop" game feel, in that case a hexag
 
 Hexmaps allow for a different kind of movement (the player can move to up to 6 directions, instead of 4), which makes for an interesting remix of the classic tile-based mechanics.
 
+To be able to work with tilemaps, we need to get aquainted with the concept of "outer circle" of a polygon, which is the circle that intersects the edges of a polygon. In the case of our hexagon
+
+![The outer circle or an hexagon](./images/developing_mechanics/hex_circle.svg){width=40%}
+
+Now we can work out how to measure the space occupied in the cartesian system by using the radius of the outer circle. We will obtain the following results:
+
+$$size_1 = 2 \cdot radius$$
+
+$$size_2 = \sqrt{3} \cdot radius$$
+
+![The size of an hexagon, calculated](./images/developing_mechanics/hex_sizes.svg){width=40%}
+
+With this, we can calculate the distances between the centres of the outer circles, in a way that allows us to create our hexmap.
+
+
+$$dist_1 = \frac{3}{4} \cdot size_1 = \frac{3}{4} \cdot 2 \cdot radius = \frac{3}{2} \cdot radius$$
+
+$$dist_2 = size_2 = \sqrt{3} \cdot radius$$
+
+![Making a hexmap](./images/developing_mechanics/hexmap_done.svg){width=50%}
+
+:::: note ::::
+If you want to turn the hexagons "pointy side up", you just need to switch over the formulas.
+::::::::::::::
+
 {{placeholder}}
 <!-- TODO: Quick talk about hexagonal tilemaps -->
 
