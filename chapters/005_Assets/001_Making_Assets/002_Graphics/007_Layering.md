@@ -42,6 +42,8 @@ Complementary colors tend to attract a lot of attention in the points of interse
 
 If backgrounds feature complementary colors, it may distract the player from the main gameplay.
 
+![Which spaceship is easier to spot at a glance?](./images/resources/contrast.png){width=40%}
+
 Our rule number four should then be:
 
 > Keep backgrounds low-contrast to avoid distracting players
