@@ -108,7 +108,7 @@ The secret to this method is taking a snapshot of the object's position before i
 ```{src='collisiondetection/snapshot_reaction' caption='Example of the "snapshot" collision reaction method'}
 ```
 
-This method solves the problem given by platforms that can be crossed one-way.
+This method solves the problem given by platforms that can be crossed one-way, since (differently from methods based on the direction of velocity) you have an additional information: if you were colliding with the object in the previous frame.
 
 {{placeholder}}
 
