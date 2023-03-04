@@ -188,6 +188,8 @@ Normally used in GIF images, "Indexed Transparency" is the product of some limit
 
 If you want to have transparency in your picture, you will need to sacrifice a color and tell the format that such color is the "transparency color". In many images a very bright, evident color (like magenta) is used. Such color will not be painted, thus giving the transparency effect.
 
+![Indexed transparency takes a color and "marks it" as transparent](./images/resources/indexed_transparency.png){width=40%}
+
 This also mean that we cannot make semi-transparent surfaces, since only that specific color will be fully transparent, and that's it.
 
 #### Texture Filtering {#texture_filtering}
