@@ -68,15 +68,23 @@ A game needs a way to be interacted with: this "way" is given by input devices. 
 
 ### Mouse and Keyboard
 
+![](./images/game_design/keyboard.svg){width=40%}
+
 One of the most common input devices, most of the currently available frameworks and engine have support for input via mouse and keyboard. These input methods are great for visual novels, point and click adventures, FPS/TPS games and anything that is considered to be "made for PCs".
 
 ### Gamepad
+
+<figure>
+![](./images/game_design/gamepad.svg){width=40%}
+</figure>
 
 One of the classics of input devices, works well with the majority of games: FPS/TPS games may need some aim assist mechanic in your game. Point and click adventures feel clunky with this input method.
 
 As with Mouse and Keyboard, most of the currently available engines and frameworks support gamepads.
 
 ### Touch Screen
+
+![](./images/game_design/phone.svg){width=20%}
 
 With the coming of smartphones, touch screen is a new input device that we have to account for. Touch screens emulate computer mice well enough, although they lack precision.
 
@@ -85,6 +93,8 @@ The nature of being a mix between an input device and a screen brings a lot of n
 Some of the most recent framework and engines support touch screens, although there's an additional layer of complexity given by the specific operating system of the smartphone you're building for.
 
 ### Dedicated Hardware
+
+![](./images/game_design/dedicated_hw.svg){width=40%}
 
 Some games require dedicated hardware to work at their best, if at all. Guitars (guitar hero), wheels for racing games, joysticks for flying simulators, arcade sticks for arcade ports...
 
