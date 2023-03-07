@@ -7,3 +7,7 @@ The following images in this folder have been created by and are Copyright © **
 - Middle2.png
 
 The images are used under **Roe61**'s express permission for the sole purpose of writing this book and cannot be used otherwise without their express permission.
+
+The following images are a derivative work of the images above and are Copyright © of **Roe61**.
+
+- Decomposed.png
