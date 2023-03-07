@@ -159,6 +159,9 @@ pre.sourceCode{
     padding: 0.25em;
     border: 1px solid black;
 }
+div.centering{
+    text-align: center;
+}
 @media screen {
   /* Workaround for iBooks issue; see pandoc issue #6242 */
   .sourceCode {
