@@ -5,6 +5,7 @@ local metavars = require "filters/metavars"
 local dcb = require "filters/dynamic_code"
 local epigraphs = require "filters/epigraphs"
 local symbols = require "filters/symbols"
+local fences = require "filters/fences"
 
 return {
         -- Meta
@@ -15,6 +16,7 @@ return {
         {Str = pagebreak.pagebreak},
         {Str = symbols.symbols},
         -- Blocks
+        {Div = fences.fences},
         {Div = epigraphs.epigraphs},
         {Div = boxes.boxes},
         {CodeBlock = dcb.dynamic_codeblock}
