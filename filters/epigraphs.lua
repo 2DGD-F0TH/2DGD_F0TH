@@ -1,7 +1,7 @@
 local List = require 'pandoc.List'
 function epigraphs(elem)
     if FORMAT:match 'latex' then
-        -- Trivia box
+        -- Epigraph
         if elem.classes[1] == 'epigraph' then
            local author = elem.attributes["author"]
            local quote = pandoc.utils.stringify(elem.content)
