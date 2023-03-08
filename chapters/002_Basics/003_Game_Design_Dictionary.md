@@ -118,7 +118,7 @@ Dedicated hardware requires precise programming, and is usually an advanced topi
 
 A special mention is deserved for all the input devices that are "general purpose" (as in not "dedicated") but are still in a group outside what we saw so far.
 
-In this group we see gyroscopes, accelerometers (like the Nintendo Wii/Switch JoyCons), sensors, IR as well as other exotic hardware that can still be exploited in a video game.
+In this group we see gyroscopes, accelerometers (like the Nintendo Wii/Switch JoyCons), sensors, IR, as well as other exotic hardware that can still be exploited in a video game.
 
 Game Genres
 -----------
