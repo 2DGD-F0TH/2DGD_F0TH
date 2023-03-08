@@ -31,6 +31,11 @@ function boxes(elem)
             table.insert(elem.content, 1, pandoc.RawBlock('latex', '\\begin{cover}'))
             table.insert(elem.content, pandoc.RawBlock('latex', '\\end{cover}'))
         end
+        -- Centering
+        if elem.classes[1] == 'centering' then
+            table.insert(elem.content, 1, pandoc.RawBlock('latex', '\\begin{center}'))
+            table.insert(elem.content, pandoc.RawBlock('latex', '\\end{center}'))
+        end
         return elem.content
     else
         if elem.classes[1] == 'trivia' then
