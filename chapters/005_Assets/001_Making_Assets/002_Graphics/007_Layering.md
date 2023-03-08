@@ -66,9 +66,9 @@ Let's take the following image:
 
 You can notice that the grass in the foreground has a lot more hues of gold and brown, the trees and the grass are darker and more saturated compared to the background, which is more "muted".
 
-If we were to decompose the image into its main layers, from furthest to nearest, we would obtain something like this:
+If we were to break down the image into its main layers, from furthest to nearest, we would obtain something like this:
 
-![Decomposing the image allows us to see the differences between the layers [^layering_img]](./images/resources/layering/Decomposed.png){width=100%}
+![Breaking down the image allows us to see the differences between the layers [^layering_img]](./images/resources/layering/breakdown.png){width=100%}
 
 From left to right we have:
 
