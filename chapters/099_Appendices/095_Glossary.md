@@ -152,7 +152,7 @@ U {.unnumbered .unlisted}
 -----
 
 [UI]{#gl_ui}
-: Short of *User Interface*, defines the elements shown to and interacted by the user in a software or, in this case, a videogame menu.
+: Short of *User Interface*, defines the elements shown to and interacted by the user in a software or, in this case, a video game menu.
 
 [Unreachable Memory]{#gl_unreachablememory}
 : This is a phenomenon where some dynamically allocated memory has no more references pointing to it. This is a common cause of memory leaks in programming languages without automatic garbage collection (like C and C++).

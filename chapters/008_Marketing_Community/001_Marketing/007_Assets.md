@@ -1,7 +1,7 @@
 Assets and asset Flips
 ----------------------
 
-Pre-made assets are both a resource and a liability when it comes to videogame development, depending on how they are used.
+Pre-made assets are both a resource and a liability when it comes to video game development, depending on how they are used.
 
 Assets can be purchased by developers in a so-called "asset store" **as a basis**, a foundation upon which they can build their own game, that's how they are intended to be used and how they should indeed be used.
 

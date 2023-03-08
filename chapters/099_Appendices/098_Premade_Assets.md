@@ -42,7 +42,7 @@ Opengameart.org {.unnumbered .unlisted}
 
 Opengameart is a website specifically dedicated to game development, with all kinds of resources to use in your game, either as placeholders or good-quality assets that are meant to stay in your product.
 
-The interface is quite essential and sometimes the website can be slow, but this is a great source for anything you need to make your own videogame.
+The interface is quite essential and sometimes the website can be slow, but this is a great source for anything you need to make your own video game.
 
 Freesound {.unnumbered .unlisted}
 -------------

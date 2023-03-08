@@ -53,7 +53,7 @@ All of this just to be able to run on as many computers as possible. The upside 
 
 One of the most recent platforms game developers work on is right in your pocket: your smartphone.
 
-Today's smartphones have enough power to run fully-fledged videogames, on the go. Sadly the touch screen can prove to be really uncomfortable to use, unless the game is specially tailored for it.
+Today's smartphones have enough power to run fully-fledged video games, on the go. Sadly the touch screen can prove to be really uncomfortable to use, unless the game is specially tailored for it.
 
 ### Web
 
@@ -110,14 +110,14 @@ Dedicated hardware requires precise programming, and is usually an advanced topi
 
 A special mention is deserved for all the input devices that are "general purpose" (as in not "dedicated") but are still in a group outside what we saw so far.
 
-In this group we see gyroscopes, accelerometers (like the Nintendo Wii/Switch JoyCons), sensors, IR as well as other exotic hardware that can still be exploited in a videogame.
+In this group we see gyroscopes, accelerometers (like the Nintendo Wii/Switch JoyCons), sensors, IR as well as other exotic hardware that can still be exploited in a video game.
 
 Game Genres
 -----------
 
 Let's analyze some game genres to understand them better and introduce some technical language that may be useful in [writing a Game Design Document](#GDD).
 
-These genres are quite broad, so a videogame is usually a mix of these "classes" (like a strategy+simulation game).
+These genres are quite broad, so a video game is usually a mix of these "classes" (like a strategy+simulation game).
 
 ### Shooters
 

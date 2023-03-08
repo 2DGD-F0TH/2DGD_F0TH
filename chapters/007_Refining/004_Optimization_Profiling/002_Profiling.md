@@ -3,7 +3,7 @@ Profiling your game
 
 ### Does your application really need profiling?
 
-In this section we will have a small check list that will let us know if our videogame really needs to be profiled. Sometimes the FPS counter is trying to tell us a different story than the one we have in our heads.
+In this section we will have a small check list that will let us know if our video game really needs to be profiled. Sometimes the FPS counter is trying to tell us a different story than the one we have in our heads.
 
 #### Does your FPS counter roam around a certain "special" value?
 

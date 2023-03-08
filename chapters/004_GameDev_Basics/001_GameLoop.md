@@ -51,7 +51,7 @@ Again, a well-implemented and well-configured event-based system should feel no 
 Timing your loop {#timingloops}
 ----------------
 
-When it comes to anything that remotely relates to physics (that includes videogames), we need to set the relation to time in our loop. There are many ways to set our delta time (or time steps), we'll see some of the most common.
+When it comes to anything that remotely relates to physics (that includes video games), we need to set the relation to time in our loop. There are many ways to set our delta time (or time steps), we'll see some of the most common.
 
 ### What is a time step
 

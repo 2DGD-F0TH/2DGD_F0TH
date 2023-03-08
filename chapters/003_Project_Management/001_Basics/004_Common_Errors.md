@@ -70,13 +70,13 @@ There can also be some additional factors that may be considered, but these four
 
 ##### The "Review Case"
 
-Let's take a simple example: a video-review on our brand new videogame, that takes some small pieces of gameplay (totaling about 5 minutes), on video and comments on the gameplay, sound and graphics. A very common scenario with (I hope) an unsurprising turnout.
+Let's take a simple example: a video-review on our brand new video game, that takes some small pieces of gameplay (totaling about 5 minutes), on video and comments on the gameplay, sound and graphics. A very common scenario with (I hope) an unsurprising turnout.
 
 Let's take a look at the first point: the purpose is criticism, the review brings something new to the table (essentially **it is transformative**): someone's impression and comments about the commercial work.
 
 Second point: the game is an interactive medium, while the review is non-interactive by nature, the mean of transmission is different.
 
-Third point: considering the average duration of 8 to 10 hours of a videogame, 5 minutes of footage amounts for around $0.8\%$ to $1\%$ of the total experience, that's a laughable amount compared to the total experience.
+Third point: considering the average duration of 8 to 10 hours of a video game, 5 minutes of footage amounts for around $0.8\%$ to $1\%$ of the total experience, that's a laughable amount compared to the total experience.
 
 Fourth Point: this is the one many people may get wrong. A review can have a huge effect on the market of a copyrighted work (a bad score from a big reviewer can result in huge losses), but that's not really how the test works. The fourth test can usually be answered by the following questions:
 
