@@ -30,6 +30,8 @@ In the case of arcades, the hardware is usually tailored to support the software
 
 Consoles are a huge (if not the biggest) part in the video game industry. Their Hardware is dedicated solely to gaming (and some very marginal "multimedia functionalities") and it evolves in "generations": this means that each "generation" has a stable hardware programmers can study and exploit.
 
+![A portable console](./images/game_design/console.svg){width=30%}
+
 This hardware stability is a double-edged sword: the hardware can be really hard to master at the beginning, resulting in some poor-performing games at the beginning of the generation, but when mastered the results are incredible. This feeds into a cycle that looks like the following:
 
 1. New Generation is introduced
@@ -40,6 +42,8 @@ This hardware stability is a double-edged sword: the hardware can be really hard
 ### Personal Computer
 
 Personal Computers are another huge part of the video game industry. They are extremely flexible (being general-purpose machines) but have a huge drawback: their hardware is not the same from one unit to the other. This means that the programmer needs to use "abstraction layers" to be able to communicate with all the different hardware.
+
+![A personal computer](./images/game_design/pc.svg){width=40%}
 
 This compounds with the fact that "abstraction layers" used by the developer (like SDL, SFML or GLFW) are running on top of other "abstraction layers", like sound servers, device drivers, etc... which can be littered with bugs themselves. Just look at how many indirections we have on a modern Linux system (which is usually bundled with PulseAudio):
 
@@ -53,11 +57,15 @@ All of this just to be able to run on as many computers as possible. The upside 
 
 One of the most recent platforms game developers work on is right in your pocket: your smartphone.
 
+![A smartphone](./images/game_design/phone.svg){width=20%}
+
 Today's smartphones have enough power to run fully-fledged video games, on the go. Sadly the touch screen can prove to be really uncomfortable to use, unless the game is specially tailored for it.
 
 ### Web
 
 Another platform that has seen a massive rise in recent times is the Web: with WebGL and WebAssembly, fully-fledged games (including 3D games) can run on our browser, allowing for massively-multiplayer experiences (like Agar.io) without the hassle of manual installation or making sure the game is compatible with your platform.
+
+![Fully fledged games can run in your browser nowawdays](./images/game_design/browser.svg){width=40%}
 
 A drawback of the "web approach" is the limited performance that web browsers, WebGL and WebAssembly can give, as well as the need to download the game before being able to play (and sometimes you may need to re-download the game if you cleared your browser's cache).
 
