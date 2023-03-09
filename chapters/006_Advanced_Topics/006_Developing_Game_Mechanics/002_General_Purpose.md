@@ -1,6 +1,29 @@
 General Purpose
 ---------------
 
+### I-Frames
+
+I-Frames (also known as "invincibility frames") is a term used to identify that period of time after being hit, where the character either flashes or becomes transparent and is immune to damage.
+
+This mechanic can be seen as "giving the player an advantage" but instead it has deeper roots into "fairness" than "difficulty management", let's see why.
+
+Let's assume that our main character has 100 health points, and touching an enemy deals 5 points of damage. In absence of I-Frames, this would translate into 5 points of damage every frame, which would in turn come out between $5 \cdot 30 = 150$ and $5 \cdot 60 = 300$ points of damage per second (at respectively 30 and 60fps).
+
+The average human reaction time is around 1 second, this would mean that touching an enemy would kill us before we even realize we are touching such enemy.
+
+Checking if we're still colliding with an enemy after receiving damage is not a good strategy, since that would allow the player get only one point of damage from a boss, and then carefully stay inside the boss's hitbox while dealing damage to the enemy. Thus allowing the player to exploit the safeguard.
+
+Giving a brief period (usually between 0.5 and 2 seconds) of invincibility after being hit, allows the player to understand the situation, reorganize their strategy and take on the challenge at hand. After the invincibility period, the player will take damage again, patching the exploit we identified earlier.
+
+I-Frames can be easily implemented via timers, in a way similar to the following:
+
+```{src='developing_mechanics/iframes' caption='Example of I-Frames Implementation'}
+```
+
+:::: tip ::::
+Remember: feedback is important! You need to let the player know when they are invincible due to i-frames. This can be done by making the player semi-transparent, flashing or anything else that can indicate a "different status".
+:::::::::::::
+
 ### Tilemaps
 
 Tilemaps are a really interesting abstraction that allows us to draw maps by using pre-made "tiles" instead of having to draw them "pixel-by-pixel".
@@ -74,29 +97,6 @@ Diablo 2 is actually a 2D game that uses isometric tiles. Every item and charact
 
 {{placeholder}}
 <!-- TODO: Quick talk about isometric tilemaps -->
-
-### I-Frames
-
-I-Frames (also known as "invincibility frames") is a term used to identify that period of time after being hit, where the character either flashes or becomes transparent and is immune to damage.
-
-This mechanic can be seen as "giving the player an advantage" but instead it has deeper roots into "fairness" than "difficulty management", let's see why.
-
-Let's assume that our main character has 100 health points, and touching an enemy deals 5 points of damage. In absence of I-Frames, this would translate into 5 points of damage every frame, which would in turn come out between $5 \cdot 30 = 150$ and $5 \cdot 60 = 300$ points of damage per second (at respectively 30 and 60fps).
-
-The average human reaction time is around 1 second, this would mean that touching an enemy would kill us before we even realize we are touching such enemy.
-
-Checking if we're still colliding with an enemy after receiving damage is not a good strategy, since that would allow the player get only one point of damage from a boss, and then carefully stay inside the boss's hitbox while dealing damage to the enemy. Thus allowing the player to exploit the safeguard.
-
-Giving a brief period (usually between 0.5 and 2 seconds) of invincibility after being hit, allows the player to understand the situation, reorganize their strategy and take on the challenge at hand. After the invincibility period, the player will take damage again, patching the exploit we identified earlier.
-
-I-Frames can be easily implemented via timers, in a way similar to the following:
-
-```{src='developing_mechanics/iframes' caption='Example of I-Frames Implementation'}
-```
-
-:::: tip ::::
-Remember: feedback is important! You need to let the player know when they are invincible due to i-frames. This can be done by making the player semi-transparent, flashing or anything else that can indicate a "different status".
-:::::::::::::
 
 ### Scrolling Backgrounds and Parallax Scrolling
 
