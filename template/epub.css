@@ -6,9 +6,10 @@ body {
     line-height: 1.4;
 }
 blockquote{
-    border-left: 4px solid #555;
-    margin-left: 1em;
-    padding-left: 2em;
+    border-left: 4px solid #919191;
+    padding: .5em;
+    background: #EAEAEA;
+    margin: 0;
 }
 code {
     font-family: monospace;
