@@ -105,7 +105,7 @@ P {.unnumbered .unlisted}
 -----
 
 [Pre-emption]{#gl_preemption}
-: See *[preemptive multitasking]{#gl_preemptivemt}*
+: See *[preemptive multitasking](#gl_preemptivemt)*
 
 
 [Preemptive multitasking]{#gl_preemptivemt}
