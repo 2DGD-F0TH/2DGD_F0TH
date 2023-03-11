@@ -83,10 +83,10 @@ So far we've seen operations that work on single binary digits, which can be see
 Such operations can be applied on a bit-by-bit basis to groups of bits, that's when we talk about about "bitwise operations".
 
 $$
-\begin{array}[t]{l}
-0110\ 0010\ AND \\
-0101\ 1010\\ \hline
-0100\ 0010
+\begin{array}{l l}
+0110\ 0010  & AND \\
+0101\ 1010 & \\ \hline
+0100\ 0010 &
 \end{array}
 $$
 
@@ -112,20 +112,20 @@ This means that $0110$ represents a tile having two walls: on the right and bott
 If the result of such operation is not zero, the wall we searched for is in our tile. Continuing with our example, if we test for a right wall we will obtain zero:
 
 $$
-\begin{array}[t]{l}
-0110\ AND \\
-0001 \\ \hline
-0000
+\begin{array}{l l}
+0110 & AND \\
+0001 & \\ \hline
+0000 &
 \end{array}
 $$
 
 But if we test for a bottom wall, we will obtain something that is not zero:
 
 $$
-\begin{array}[t]{l}
-0110\ AND \\
-0100 \\ \hline
-0100
+\begin{array}{l l}
+0110 & AND \\
+0100 & \\ \hline
+0100 &
 \end{array}
 $$
 

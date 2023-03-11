@@ -177,10 +177,10 @@ As you can see, the most significant bit being set (that means having value of $
 This is because it makes easier to implement hardware that does operations on such numbers. If we sum $3$ and $-3$ in two's complement we will obtain the following:
 
 $$
-\begin{array}[t]{r}
-011\\
-+\ 101\\ \hline
-1000\ \
+\begin{array}{r r}
+& 011\\
++ & 101\\ \hline
+& 1000\
 \end{array}
 $$
 
