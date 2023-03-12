@@ -115,6 +115,8 @@ Inside older games, where CPU cycles were at a premium, a widely used trick to g
 
 These tables would store the result values for certain expensive functions, given certain inputs, thus replacing the expensive operation with a lookup inside a certain data structure (which is usually really fast).
 
+![How a lookup table works](./images/profiling_optimization/lookup_tables.svg)
+
 This has a tradeoff: you're trading CPU time for Memory space, since the lookup tables are meant to stay into RAM.
 
 In modern games instances of lookup tables are as rare as hens' teeth, but it's an interesting historical view over some older forms of optimization.
@@ -194,6 +196,6 @@ This will obviously introduce some complications, since you may need some interp
 
 This means that you can process AI less times (thus "check for player's presence" once every 50ms instead of once every 16), physics can be processed less too (we don't care if a block starts falling after 15 or 50ms, the time is still too short for us to notice).
 
-Deatching your updates from the drawing routines usually entails a change of language too: when you're talking about drawing cycles, we talk about "frames", while when you're talking about updates, you should be talking about "game ticks".
+Detaching your updates from the drawing routines usually entails a change of language too: when you're talking about drawing cycles, we talk about "frames", while when you're talking about updates, you should be talking about "game ticks".
 
 {{placeholder}}

@@ -77,7 +77,7 @@ This is what the "lives system" is for: it's a "sword of Damocles", hanging over
 
 "Continues" are just "a lives system for your lives", they're in a very limited number (or have a price, like putting another quarter into the arcade cabinet) and allow you to "continue the game" with a new set of "lives" without losing your progress.
 
-As with all things in videogames, it doesn't need to bring real challenge, but just the "illusion" of it.
+As with all things in video games, it doesn't need to bring real challenge, but just the "illusion" of it.
 
 Furthermore, lives and continues are a great tool to reward your player for their efforts: giving them an extra life every 20.000 points, granting a continue for a no-hit boss battle, putting a bunch of 1-ups in a hard-to-reach place are all great ways to challenge and reward your player and give your game more depth.
 

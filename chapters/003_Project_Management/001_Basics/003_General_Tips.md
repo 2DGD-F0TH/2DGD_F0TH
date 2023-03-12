@@ -29,7 +29,7 @@ Brainstorming is an activity that involves the design team writing down all the 
 
 This is a productive activity to perform at the beginning of the game development and design process, but it can be a huge source of feature creep if done further down the line.
 
-After the initial phase of brainstorming, the team analyzes the ideas and discards the impossible ones, followed by the ones that are not "as good as they sounded at first". The remaining ideas can come together to either form a concept of a videogame or some secondary component of it.
+After the initial phase of brainstorming, the team analyzes the ideas and discards the impossible ones, followed by the ones that are not "as good as they sounded at first". The remaining ideas can come together to either form a concept of a video game or some secondary component of it.
 
 In short: brainstorming is a great activity for innovation, but since it's essentially "throwing stuff at a wall and see what sticks".
 

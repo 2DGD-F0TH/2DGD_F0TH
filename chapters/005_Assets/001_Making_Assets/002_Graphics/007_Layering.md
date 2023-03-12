@@ -42,6 +42,8 @@ Complementary colors tend to attract a lot of attention in the points of interse
 
 If backgrounds feature complementary colors, it may distract the player from the main gameplay.
 
+![Which spaceship is easier to spot at a glance?](./images/resources/contrast.png){width=40%}
+
 Our rule number four should then be:
 
 > Keep backgrounds low-contrast to avoid distracting players
@@ -55,3 +57,35 @@ An orange-robed character will be easier to follow on a blue-ish background, for
 #### Find exceptions
 
 Nothing is ever set in stone, and no rules should keep you from playing a bit outside the box and fiddling with some exceptions to a couple rules.
+
+#### Summarizing Layering
+
+Let's take the following image:
+
+![How contrast and detail can help distinguishing foreground and background [^layering_img]](./images/resources/layering/Full.jpg){width=50%}
+
+You can notice that the grass in the foreground has a lot more hues of gold and brown, the trees and the grass are darker and more saturated compared to the background, which is more "muted".
+
+If we were to break down the image into its main layers, from furthest to nearest, we would obtain something like this:
+
+![Breaking down the image allows us to see the differences between the layers [^layering_img]](./images/resources/layering/breakdown.png){width=100%}
+
+From left to right we have:
+
+- **the background:** our sky box, there is very little detail here, just enough to blend the color bands together to make a coesive piece;
+- **the farthest layer:** the trees have very few hues in their bark and leaves, little detail is added, just enough to make out lights and shadows;
+- **light rays:** this semi-transparent layer is extremely simple, but being so light and monochromatic it adds variety to make the image interesting without distracting from the foreground too much;
+- **the foreground:** this layer features the highest amount of detail, the most evident is the grass (but if you look closely, you may notice some texture in the tree bark too), as well as the most saturated and darkest colors in the picture. The contrast with the other layers makes the foreground "pop up".
+
+To summarize, we can make a handy diagram that will give us a "rule of thumb" when drawing layers for our game:
+
+![A diagram to show how each section affects our perception of a layer](./images/resources/layering_diagram.svg){width=60%}
+
+In short, the closer an object is:
+
+- the more saturated its colors;
+- the darker it looks;
+- the more detail it has;
+- the more it is animated;
+
+[^layering_img]: Image by Roe61 (<https://linktr.ee/Roe61>) used with explicit permission

@@ -82,6 +82,8 @@ A stack allows us to code some other functions in an easier way, for instance we
 
 Unlike the stacks we are used to, the menu stack can also be accessed like a queue (first in - first out) so you can draw menus and dialogs on top of each other, while the last UI element (on top of the stack) keeps the control of the input-update-draw cycle.
 
+![Example of a simple menu stack](./images/containers/menu_stack.svg){width=50%}
+
 In the menu stack we also have some functionalities that may not be included in a standard stack, like a "clear" function, which allows us to completely clean the stack: this can prove useful when we are accessing the main game, since we may not want to render the menu "below" the main game, wasting precious CPU cycles.
 
 {{placeholder}}

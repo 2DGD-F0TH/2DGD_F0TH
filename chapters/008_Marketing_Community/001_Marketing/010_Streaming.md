@@ -1,7 +1,7 @@
 Streamers and Content Creators
 ------------------------------
 
-When you're developing or publishing a videogame, you should not underestimate the power of so-called "content creators": streamers and youtube stars, small or big, can turn your game from a niche project right into a cash buster.
+When you're developing or publishing a video game, you should not underestimate the power of so-called "content creators": streamers and youtube stars, small or big, can turn your game from a niche project right into a cash buster.
 
 Let's take some examples of games that, even though great on their own, would not be the same without streamers:
 
@@ -15,7 +15,7 @@ I want to bring up one last example before delving into the nitty-gritty of the 
 
 The thing is, this game was released in 2018, and it was not doing too well on its own, until streaming came in the picture. Being a very interactive game, this made it ideal for collaborations between streamer friends, striking a nice balance between suspect, suspense and strategy. After streamers came into play, the sales exploded.
 
-The Content Creator/Developer symbiotic relationship is one of the best win/win situations that can happen in the videogame development, let's see how.
+The Content Creator/Developer symbiotic relationship is one of the best win/win situations that can happen in the video game development, let's see how.
 
 ### The game developers' side
 

@@ -7,7 +7,7 @@ Game Jams
 You miss 100% of the shots you don’t take.
 ::::::
 
-Game jams are a great opportunity to test your game making skills in a tight situation, where time is at a premium and you need to "hack your way" through a fully-fledged prototype of a videogame.
+Game jams are a great opportunity to test your game making skills in a tight situation, where time is at a premium and you need to "hack your way" through a fully-fledged prototype of a video game.
 
 In this section there will be some suggestions on how to survive a game jam.
 

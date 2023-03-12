@@ -1,7 +1,7 @@
 Foreword
 ==========
 
-Every time we start a new learning experience, we may be showered by a unmeasurable amount of doubts and fears. The task, however small, may seem daunting. And considering how large the field of Game Development can be, these fears are easily understandable.
+Every time we start a new learning experience, we may be showered by a immeasurable amount of doubts and fears. The task, however small, may seem daunting. And considering how large the field of Game Development can be, these fears are easily understandable.
 
 This book is meant to be a reference for game developers, oriented at 2D, as well as being a collection of "best practices" that you should follow when developing a game by yourself (or with some friends).
 

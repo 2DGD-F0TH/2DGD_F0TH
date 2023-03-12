@@ -10,7 +10,7 @@ Science is what we understand well enough to explain to a computer. Art is every
 What is procedural generation (and what it isn't)
 -------------------------------------------------
 
-Sometimes you hear "procedural generation" being thrown around as a term describing that some part of a videogame is generated with an element of randomness to it.
+Sometimes you hear "procedural generation" being thrown around as a term describing that some part of a video game is generated with an element of randomness to it.
 
 This isn't entirely true, since "procedural generation" suggests the presence of a "procedure to generate the item", in short: an algorithm.
 
@@ -61,7 +61,7 @@ Same goes for items, each handcrafted item takes time and money, while using pro
 
 #### Lower budgets needed
 
-Creating a videogame is expensive, in fact the so-called "AAA" games costs are in the order of millions of dollars. Using procedural and random generation you can create variations of your resources (textures, for instance), lowering costs.
+Creating a video game is expensive, in fact the so-called "AAA" games costs are in the order of millions of dollars. Using procedural and random generation you can create variations of your resources (textures, for instance), lowering costs.
 
 #### More variety and replayability
 
@@ -98,7 +98,7 @@ Being uncertain, procedural generation makes set events harder to script, if not
 Where it can be used
 --------------------
 
-Procedural (and random) generation can be used practically anywhere inside of a videogame, some examples could be the following:
+Procedural (and random) generation can be used practically anywhere inside of a video game, some examples could be the following:
 
 - **World Generation:** Using an algorithm called "Perlin noise", you can generate a so-called "noise map" that can be used to generate 3D terrain, using giving areas with higher concentration a higher height. For dungeon-crawling games you might want to use a variation of maze generation algorithms, and so on so forth;
 - **Environment Population:** You can use an algorithm to position certain items in the world, and if an element of randomness is required, positioning items in a world is certainly a very easy task and can add a lot to your game, but be careful not to spawn items into walls!;
@@ -109,6 +109,10 @@ Procedural (and random) generation can be used practically anywhere inside of a 
 - **Sounds:** You can use sound manipulation libraries to change the pitch of a sound, to give a bit of randomness to it, as well as using "sound spatialization" by changing the volume of a sound to make it come from a certain place, compared to the player's position;
 - **Story:** In case you want to put some missions behind a level-gate, you can use procedurally generated missions to allow the players to grind for experience and resources, so they are ready for the upcoming story checkpoints;
 - **Difficulty Management:** Procedural generation can be involved into difficulty management by handing the enemy parameters and spawning to suit our needs.
+
+:::: trivia ::::
+Want to see procedural generation brought to the extreme? Check out `.kkrieger` (by `.theprodukkt`, a subdivision of the demo group Farbrausch): it's a first person shooter that weighs 96Kb (no, it's not a typo) that makes **massive** use of procedural generation, from textures, to meshes, to sound.
+::::::::::::::::
 
 Procedural Generation and Difficulty Management
 -----------------------------------------------

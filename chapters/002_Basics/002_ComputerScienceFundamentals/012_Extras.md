@@ -107,11 +107,15 @@ Sometimes Multi-Threading and Multi-Processing are used interchangeably, but thi
 
 **Multi-Processing** is a practice that makes use of multiple CPUs inside the same machine, this allows to process CPU-intensive calculations in a parallel manner, thus gaining performance in our software. This style of parallelization is usually done by spawning multiple processes, each of which will be run on a different CPU (or Core).
 
+![In a multi-processing environment, each CPU takes care of a task](./images/computer_science/multiprocessing.svg){width=40%}
+
 Multi-Processing has some disadvantages: creating a process can be quite expensive and thus give us some tangible overhead if processes are created and destroyed often.
 
 **Multi-Threading** is a programming practice that allows to run different "lines of execution" (called "threads"), inside of the same parent process, so to achieve the maximum possible CPU utilization.
 
 Multi-Threading has the advantage of lower overhead, since threads are quite cheap to create, but also has some more limitations when the tasks to execute are "CPU-bound" (take a lot of CPU time).
+
+![In multi-threading, the CPU uses I/O wait time to take care of another task](./images/computer_science/multithreading.svg){width=40%}
 
 Multi-Threading works well when the threads are "I/O bound" (they use network or disk a lot, while the CPU usage is low), this means essentially that while one thread is waiting for I/O (like loading an asset), another thread can perform other calculations on the CPU instead of just "wait for the I/O to finish".
 
@@ -159,7 +163,7 @@ Threads and concurrent execution are powerful tools in our "programmer's toolbox
 
 Imagine a simple situation like the following: we have two threads and one shared variable.
 
-![Two threads and a shared variable](./images/computer_science/MultiThreading1.svg){width=60%}
+![Two threads and a shared variable](./images/computer_science/RaceCond1.svg){width=60%}
 
 Both threads are very simple in their execution: they read the value of our variable, add 1 and then write the result in the same variable.
 
@@ -167,23 +171,23 @@ This seems simple enough for us humans, but there is a situation that can be rea
 
 First of all, let's say Thread 1 starts its execution and reads the variable value.
 
-![Thread 1 reads the variable](./images/computer_science/MultiThreading2.svg){width=60%}
+![Thread 1 reads the variable](./images/computer_science/RaceCond2.svg){width=60%}
 
 Now, while Thread 1 is calculating the result, Thread 2 (which is totally unrelated to Thread 1) starts its execution and reads the variable.
 
-![While Thread 1 is working, Thread 2 reads the variable](./images/computer_science/MultiThreading3.svg){width=60%}
+![While Thread 1 is working, Thread 2 reads the variable](./images/computer_science/RaceCond3.svg){width=60%}
 
 Now Thread 1 is finishing its calculation and writes the result into the variable.
 
-![Thread 1 writes the variable](./images/computer_science/MultiThreading4.svg){width=60%}
+![Thread 1 writes the variable](./images/computer_science/RaceCond4.svg){width=60%}
 
 After That, Thread 2 finishes its calculation too, and writes the result into the variable too.
 
-![Thread 2 writes the variable](./images/computer_science/MultiThreading5.svg){width=60%}
+![Thread 2 writes the variable](./images/computer_science/RaceCond5.svg){width=60%}
 
 Something is not right, the result should be "3", but it's "2" instead.
 
-![Both Threads Terminated](./images/computer_science/MultiThreading6.svg){width=60%}
+![Both Threads Terminated](./images/computer_science/RaceCond6.svg){width=60%}
 
 We just experienced what is called a **"race condition"**: there is no real order in accessing the shared variable, so things get messy and the result is not deterministic. We don't have any guarantee that the result will be right all the time (or wrong all the time either).
 

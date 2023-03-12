@@ -119,7 +119,7 @@ This gives our curve a sawtooth-like shape, where the game gets slightly easier 
 
 #### What not to do
 
-When designing a videogame, there are at least as many things you should as the ones you may want to do. One of the things you shouldn't do at all is adding "difficulty spikes" to your gameplay.
+When designing a video game, there are at least as many things you should as the ones you may want to do. One of the things you shouldn't do at all is adding "difficulty spikes" to your gameplay.
 
 ![Difficulty spikes are not good](./images/balancing/difficulty_spike.svg){width=40%}
 

@@ -40,7 +40,7 @@ Roguelikes usually allow you to complete a task in many different ways, so many 
 - Kick it down;
 - ...
 
-This also means that you have to be careful with your actions: if a weapon freezes entities when it touches their flesh, you better have a pair of gloves handy.
+This also means that you have to be careful with your actions: if a weapon freezes entities when it touches their flesh, you better have a pair of gloves handy (or you may end up frozen yourself!).
 
 #### Resource Management is key
 

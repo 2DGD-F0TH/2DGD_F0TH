@@ -3,6 +3,8 @@ Tips and Tricks
 
 ### General Purpose
 
+These tips and tricks are good for any kind of game: from the simplest platformer to twin stick shooters, to strategy games. These are good starting points to make your game feel more complete and fun to the player.
+
 #### Make that last Health Point count
 
 Players love that rush of adrenaline they get when they escape a difficult situation with just one health point. That "just barely survived" situation can be "helped" by the game itself: some programmers decide to program the last HP in a special way.

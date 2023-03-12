@@ -201,7 +201,7 @@ A small framework for pixel drawing and user interface framework coded by javidx
 
 **License:** Open Source
 
-SDL (Simple DirectMedia Layer) is one of the most famous libraries around to make multimedia applications as well as videogames.
+SDL (Simple DirectMedia Layer) is one of the most famous libraries around to make multimedia applications as well as video games.
 
 SDL is distributed under the ZLib license, which allows for both commercial and personal use, both in proprietary and open-source situations. Many of the languages listed as "usable" are compatible via extensions.
 
@@ -219,7 +219,7 @@ The versions of SDL up to version 1.2 are instead distributed under the GNU LGPL
 
 **License:** Open Source
 
-SFML (Simple Fast Multimedia Library) is a library dedicated to creation of multimedia applications (not limited to videogames), providing a simple interface to the system's components.
+SFML (Simple Fast Multimedia Library) is a library dedicated to creation of multimedia applications (not limited to video games), providing a simple interface to the system's components.
 
 SFML is distributed under the ZLib/png license, which allows for both commercial and personal use, both in proprietary and open-source situations.
 
@@ -403,7 +403,7 @@ Panda3D itself is distributed under the modified BSD license, which is very perm
 
 **License:** Free for Personal Use + Paid Version for commercial projects
 
-Unity is probably among the most famous 3D engines used to create videogames, as well as other projects that make use of its 3D capabilities (like VR/AR-based projects). It uses the C# programming language.
+Unity is probably among the most famous 3D engines used to create video games, as well as other projects that make use of its 3D capabilities (like VR/AR-based projects). It uses the C# programming language.
 
 Unity is a proprietary engine, distributed under a proprietary license, with a Free edition available.
 

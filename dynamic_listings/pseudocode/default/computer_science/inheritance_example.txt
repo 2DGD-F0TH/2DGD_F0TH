@@ -1,12 +1,10 @@
 abstract class Shape{
-    // An abstract shape class
-    function area() -> float{
-        // An abstract function that will be overridden by subclasses
-        throw NotImplementedError;
-    }
-    function perimeter() -> float{
-        // An abstract function that will be overridden by subclasses
-        throw NotImplementedError;
+    /*
+     * An abstract shape class
+     */
+    // Abstract functions that will be overridden by subclasses
+    abstract function area() -> float;
+    abstract function perimeter() -> float;
     }
 };
 

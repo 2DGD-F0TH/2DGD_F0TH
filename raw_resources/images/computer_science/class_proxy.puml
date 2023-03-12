@@ -1,0 +1,25 @@
+@startuml
+class Client{}
+
+interface Subject{
+    + operation();
+}
+
+class RealSubject{
+    + operation();
+}
+
+class Proxy{
+    - realsubject: RealSubject;
+    + operation();
+}
+
+note bottom of Proxy: realsubject.operation();
+
+Client .right.> Subject
+
+Proxy .up.|> Subject
+RealSubject .up.|> Subject
+
+Proxy -right-> RealSubject : <<delegate>>
+@enduml

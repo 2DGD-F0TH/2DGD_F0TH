@@ -1,0 +1,44 @@
+class User{
+    // This class represents a user, with their permissions
+    // ...
+    function can_do_thing() -> boolean{
+        // Changes according to user permissions
+        // ...
+    }
+}
+
+class Request{
+    // This class represents a web request
+    constructor(User user){
+        this.user = user;
+    }
+}
+
+abstract class WebPage{
+    /*
+     * Represents a call to a web page
+     */
+    // This function gets implemented in the concrete classes;
+    abstract function get(Request request) -> HttpResponse;
+}
+
+class WebPageProxy inherits from WebPage{
+    // Represents an authentication proxy for a web page
+    function get(Request request) -> HttpResponse{
+        // Get the requesting user
+        User requesting_user = request.user;
+        if (requesting_user.can_do_thing()){
+            return superclass.get(request);
+        }else{
+            return HttpResponse("This user cannot access this page");
+        }
+    }
+}
+
+int main(){
+    User user = User();
+    // The following line is valid due to polimorphism
+    WebPage page = WebPageProxy();
+    // If the user has permission the page will come through.
+    page.get(Request(user));
+}

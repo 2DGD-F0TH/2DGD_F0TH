@@ -30,6 +30,8 @@ In the case of arcades, the hardware is usually tailored to support the software
 
 Consoles are a huge (if not the biggest) part in the video game industry. Their Hardware is dedicated solely to gaming (and some very marginal "multimedia functionalities") and it evolves in "generations": this means that each "generation" has a stable hardware programmers can study and exploit.
 
+![A portable console](./images/game_design/console.svg){width=30%}
+
 This hardware stability is a double-edged sword: the hardware can be really hard to master at the beginning, resulting in some poor-performing games at the beginning of the generation, but when mastered the results are incredible. This feeds into a cycle that looks like the following:
 
 1. New Generation is introduced
@@ -40,6 +42,8 @@ This hardware stability is a double-edged sword: the hardware can be really hard
 ### Personal Computer
 
 Personal Computers are another huge part of the video game industry. They are extremely flexible (being general-purpose machines) but have a huge drawback: their hardware is not the same from one unit to the other. This means that the programmer needs to use "abstraction layers" to be able to communicate with all the different hardware.
+
+![A personal computer](./images/game_design/pc.svg){width=40%}
 
 This compounds with the fact that "abstraction layers" used by the developer (like SDL, SFML or GLFW) are running on top of other "abstraction layers", like sound servers, device drivers, etc... which can be littered with bugs themselves. Just look at how many indirections we have on a modern Linux system (which is usually bundled with PulseAudio):
 
@@ -53,11 +57,15 @@ All of this just to be able to run on as many computers as possible. The upside 
 
 One of the most recent platforms game developers work on is right in your pocket: your smartphone.
 
-Today's smartphones have enough power to run fully-fledged videogames, on the go. Sadly the touch screen can prove to be really uncomfortable to use, unless the game is specially tailored for it.
+![A smartphone](./images/game_design/phone.svg){width=20%}
+
+Today's smartphones have enough power to run fully-fledged video games, on the go. Sadly the touch screen can prove to be really uncomfortable to use, unless the game is specially tailored for it.
 
 ### Web
 
 Another platform that has seen a massive rise in recent times is the Web: with WebGL and WebAssembly, fully-fledged games (including 3D games) can run on our browser, allowing for massively-multiplayer experiences (like Agar.io) without the hassle of manual installation or making sure the game is compatible with your platform.
+
+![Fully fledged games can run in your browser nowawdays](./images/game_design/browser.svg){width=40%}
 
 A drawback of the "web approach" is the limited performance that web browsers, WebGL and WebAssembly can give, as well as the need to download the game before being able to play (and sometimes you may need to re-download the game if you cleared your browser's cache).
 
@@ -68,15 +76,27 @@ A game needs a way to be interacted with: this "way" is given by input devices. 
 
 ### Mouse and Keyboard
 
+:::: centering ::::
+![](./images/game_design/keyboard.svg){width=40%}
+:::::::::::::::::::
+
 One of the most common input devices, most of the currently available frameworks and engine have support for input via mouse and keyboard. These input methods are great for visual novels, point and click adventures, FPS/TPS games and anything that is considered to be "made for PCs".
 
 ### Gamepad
+
+:::: centering ::::
+![](./images/game_design/gamepad.svg){width=40%}
+:::::::::::::::::::
 
 One of the classics of input devices, works well with the majority of games: FPS/TPS games may need some aim assist mechanic in your game. Point and click adventures feel clunky with this input method.
 
 As with Mouse and Keyboard, most of the currently available engines and frameworks support gamepads.
 
 ### Touch Screen
+
+:::: centering ::::
+![](./images/game_design/phone.svg){width=20%}
+:::::::::::::::::::
 
 With the coming of smartphones, touch screen is a new input device that we have to account for. Touch screens emulate computer mice well enough, although they lack precision.
 
@@ -86,6 +106,10 @@ Some of the most recent framework and engines support touch screens, although th
 
 ### Dedicated Hardware
 
+:::: centering ::::
+![](./images/game_design/dedicated_hw.svg){width=40%}
+:::::::::::::::::::
+
 Some games require dedicated hardware to work at their best, if at all. Guitars (guitar hero), wheels for racing games, joysticks for flying simulators, arcade sticks for arcade ports...
 
 Dedicated hardware requires precise programming, and is usually an advanced topic. On PCs many "dedicated input devices" are recognized as "game pads" and use an "axis" and "buttons" abstraction that makes coding easier.
@@ -94,14 +118,14 @@ Dedicated hardware requires precise programming, and is usually an advanced topi
 
 A special mention is deserved for all the input devices that are "general purpose" (as in not "dedicated") but are still in a group outside what we saw so far.
 
-In this group we see gyroscopes, accelerometers (like the Nintendo Wii/Switch JoyCons), sensors, IR as well as other exotic hardware that can still be exploited in a videogame.
+In this group we see gyroscopes, accelerometers (like the Nintendo Wii/Switch JoyCons), sensors, IR, as well as other exotic hardware that can still be exploited in a video game.
 
 Game Genres
 -----------
 
 Let's analyze some game genres to understand them better and introduce some technical language that may be useful in [writing a Game Design Document](#GDD).
 
-These genres are quite broad, so a videogame is usually a mix of these "classes" (like a strategy+simulation game).
+These genres are quite broad, so a video game is usually a mix of these "classes" (like a strategy+simulation game).
 
 ### Shooters
 

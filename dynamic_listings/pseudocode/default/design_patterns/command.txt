@@ -1,6 +1,6 @@
 abstract class Command{
     // This is the abstract class that will be used as interface
-    function execute();
+    abstract function execute();
 }
 
 class JumpCommand inherits from Command{

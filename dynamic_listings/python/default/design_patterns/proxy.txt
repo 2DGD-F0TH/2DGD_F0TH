@@ -1,0 +1,38 @@
+class User:
+    # This class represents a user, with their permissions
+    # ...
+    def can_do_thing(self):
+        # Changes according to user permissions
+        # ...
+
+
+class Request:
+    # This class represents a web request
+    def __init__(self, user):
+        self.user = user
+
+
+class WebPage:
+    # Represents a call to a web page
+    # This function gets implemented in the concrete classes;
+    def get(self, request):
+        raise NotImplementedError
+
+
+class WebPageProxy(WebPage):
+    # Represents an authentication proxy for a web page
+    def get(self, request):
+        # Get the requesting user
+        requesting_user = request.user
+        if (requesting_user.can_do_thing()):
+            return super().get(request)
+        else:
+            return HttpResponse("This user cannot access this page")
+
+
+if __name__ == '__main__':
+    user = User()
+    # The following line is valid due to polimorphism
+    page = WebPageProxy()
+    # If the user has permission the page will come through.
+    page.get(Request(user))

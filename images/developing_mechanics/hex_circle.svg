@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="90.174652mm"
+   height="90.174652mm"
+   viewBox="0 0 90.174655 90.174652"
+   version="1.1"
+   id="svg364"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   sodipodi:docname="hex_circle.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview366"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.93631734"
+     inkscape:cx="142.57987"
+     inkscape:cy="127.09366"
+     inkscape:window-width="1920"
+     inkscape:window-height="1019"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g164" />
+  <defs
+     id="defs361">
+    <marker
+       style="overflow:visible"
+       id="Arrow1L"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Arrow1L"
+       markerWidth="8.75"
+       markerHeight="5"
+       viewBox="0 0 8.75 5"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:context-stroke;fill-rule:evenodd;stroke:none"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="arrow1L"
+         transform="scale(-0.5)" />
+    </marker>
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-68.130359,-131.3913)">
+    <g
+       id="g164"
+       style="fill:none;stroke:#000000;stroke-width:2.8;stroke-opacity:1"
+       transform="matrix(0.26458333,0,0,0.26458333,71.928805,135.19144)">
+      <g
+         id="g1822"
+         transform="matrix(4.2003112,0,0,4.2003112,33.243396,33.263886)">
+        <circle
+           style="fill:none;fill-rule:evenodd;stroke:#b3b3b3;stroke-width:1.88976;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+           id="path1318"
+           cx="29.238089"
+           cy="29.231684"
+           r="39.625637" />
+        <path
+           sodipodi:type="star"
+           style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:0.899821;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+           id="path708"
+           inkscape:flatsided="true"
+           sodipodi:sides="6"
+           sodipodi:cx="10.898254"
+           sodipodi:cy="12.65501"
+           sodipodi:r1="18.86795"
+           sodipodi:r2="16.340124"
+           sodipodi:arg1="1.0471976"
+           sodipodi:arg2="1.5707963"
+           inkscape:rounded="0"
+           inkscape:randomized="0"
+           d="m 20.332229,28.995135 -18.8679506,-1e-6 -9.4339744,-16.340125 9.433976,-16.3401236 18.86795,9e-7 9.433975,16.3401247 z"
+           transform="matrix(2.100156,0,0,2.100156,6.3500542,2.6541883)" />
+        <path
+           style="fill:#ff0000;stroke:#ff0000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1L)"
+           d="m 29.238088,29.027138 33.285391,0.204545"
+           id="path1448"
+           sodipodi:nodetypes="cc" />
+      </g>
+      <text
+         xml:space="preserve"
+         style="font-size:18.6667px;line-height:1.25;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';letter-spacing:0px;word-spacing:0px;fill:#000000;stroke:#000000;stroke-width:1.28882;stroke-dasharray:none;stroke-opacity:1"
+         x="201.85031"
+         y="144.5722"
+         id="text1846"><tspan
+           sodipodi:role="line"
+           id="tspan1844"
+           x="201.85031"
+           y="144.5722"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.6667px;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';fill:#000000;stroke:#000000;stroke-width:1.28882;stroke-dasharray:none;stroke-opacity:1">radius</tspan></text>
+    </g>
+  </g>
+</svg>

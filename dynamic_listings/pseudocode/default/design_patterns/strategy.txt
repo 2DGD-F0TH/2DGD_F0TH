@@ -1,9 +1,10 @@
 abstract class Strategy{
-    // This class defines the strategy interface the client will refer to
+    /*
+     * This class defines the strategy interface the client will refer to
+     */
 
-    function algorithm(){
-        // This algorithm will be implemented by the subclasses
-    }
+    // This algorithm will be implemented by the subclasses
+    abstract function algorithm();
 }
 
 class ConcreteStrategy1 inherits from Strategy{

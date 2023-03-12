@@ -15,7 +15,9 @@ There are still countless questions remaining, which we can condense in one big 
 
 > "Where do I go from here?"
 
-Here below, we can see, divided by category, some resources you can check out to become a better game developer and designer.
+You can try and take on a game jam, Itch hosts a myriad of game jams at <https://itch.io/jams> and many of them are beginner friendly, then there is the famous "Ludum Dare" game jam that you can find at <https://ldjam.com/>.
+
+If you want to know more about the game development process and how it works, Here are some resources you can check out to become a better game developer and designer. Everything is divided by category for convenience.
 
 But first, here's a small legend to distinguish paid products from free products.
 
@@ -69,6 +71,10 @@ Game Design
 
 Game Development
 ----------------
+
+### Web Resources
+
+- **Amit's Game Programming Information:** <http://www-cs-students.stanford.edu/~amitp/gameprog.html> {{freeprod}}
 
 ### Videos
 

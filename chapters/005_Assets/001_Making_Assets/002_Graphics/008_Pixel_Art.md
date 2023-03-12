@@ -31,6 +31,12 @@ You can always "flatten the image" (merge all the layers into one) later.
 
 #### Sub-pixel animation
 
+When drawing pixel-art, artists may face what looks to be an insormountable issue: pixels are a discrete measure which cannot be divided further.
+
+This means that subtle movements may end up really difficult to represent: a character may look like it's laughing or shrugging, while it's only meant to breathe calmly (for instance in an idle animation).
+
+This is where sub-pixel animation comes into play: the basic idea is to play with the colors inside what you're drawing in a way that simulates movement, but the overall shape of the subject doesn't change (or is delayed in such a way that the change of shape looks smoother).
+
 {{placeholder}}
 
 <!-- TODO: Style of animation where the "outlines" don't move, but the color change in the internal pixels can give illusion of sub-pixel movement -->

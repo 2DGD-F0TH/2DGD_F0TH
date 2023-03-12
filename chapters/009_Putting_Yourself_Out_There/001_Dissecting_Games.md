@@ -394,4 +394,4 @@ It's hard to describe the soundtrack here, so I suggest you to try the game or a
 
 I tried to keep this analysis vague so not to ruin the game too much to the people who didn't play it. The pacifist story is extremely well-written and ties extremely well with the genocide one, together giving two sides of the same world.
 
-The fact that such world is working with the mechanics of a videogame is a surprise to the player, who will be a bit confused at the beginning but will soon understand things that may have felt weird before.
+The fact that such world is working with the mechanics of a video game is a surprise to the player, who will be a bit confused at the beginning but will soon understand things that may have felt weird before.

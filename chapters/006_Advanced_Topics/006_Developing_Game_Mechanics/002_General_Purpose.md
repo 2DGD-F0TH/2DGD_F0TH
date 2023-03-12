@@ -24,6 +24,80 @@ I-Frames can be easily implemented via timers, in a way similar to the following
 Remember: feedback is important! You need to let the player know when they are invincible due to i-frames. This can be done by making the player semi-transparent, flashing or anything else that can indicate a "different status".
 :::::::::::::
 
+### Tilemaps
+
+Tilemaps are a really interesting abstraction that allows us to draw maps by using pre-made "tiles" instead of having to draw them "pixel-by-pixel".
+
+![Example of a tileset and a tilemap drawn with it [^jawbreaker]](./images/developing_mechanics/tilemap.png){width=65%}
+
+This also allows us to have a new coordinate system that works "using tiles", which could be preferable than single pixels (since we may put properties on our tiles, like a "solid" property for collision detection).
+
+Another advantage of tilemaps is the ability to use a small texture to draw gigantic maps without adding much data in memory (tilemaps are a fantastic example of the "Flyweight Pattern").
+
+#### Rectangular Tilemaps
+
+Rectangular tilemaps are the most commonly used tile maps in game development: it's easy to translate back and forth between "screen pixels" and "tiles", and if the tilesets are well-made everything looks seamless.
+
+This has the advantage of using less memory (we need to save only the tileset, plus a few coordinates and pointers), thus making our game perform better.
+
+:::: trivia ::::
+Super Mario Bros. uses maps that are based on square tiles. Even the pipes are tiles: this allows the game to have variable lengths of pipes without increasing the number of tiles.
+::::::::::::::::
+
+{{placeholder}}
+<!-- TODO: Quick talk about rectangular tilemaps -->
+
+#### Hexagonal Tilemaps
+
+Sometimes you may want to underline a "tabletop" game feel, in that case a hexagonal tilemap (sometimes called "hexmap") may be a great idea (at the cost of more complicated algorithms).
+
+![Simple structure of a hexmap](./images/developing_mechanics/hexmap.svg){width=40%}
+
+Hexmaps allow for a different kind of movement (the player can move to up to 6 directions, instead of 4), which makes for an interesting remix of the classic tile-based mechanics.
+
+To be able to work with tilemaps, we need to get aquainted with the concept of "outer circle" of a polygon, which is the circle that intersects the edges of a polygon. In the case of our hexagon
+
+![The outer circle or an hexagon](./images/developing_mechanics/hex_circle.svg){width=40%}
+
+Now we can work out how to measure the space occupied in the cartesian system by using the radius of the outer circle. We will obtain the following results:
+
+$$size_1 = 2 \cdot radius$$
+
+$$size_2 = \sqrt{3} \cdot radius$$
+
+![The size of an hexagon, calculated](./images/developing_mechanics/hex_sizes.svg){width=40%}
+
+With this, we can calculate the distances between the centres of the outer circles, in a way that allows us to create our hexmap.
+
+
+$$dist_1 = \frac{3}{4} \cdot size_1 = \frac{3}{4} \cdot 2 \cdot radius = \frac{3}{2} \cdot radius$$
+
+$$dist_2 = size_2 = \sqrt{3} \cdot radius$$
+
+![Making a hexmap](./images/developing_mechanics/hexmap_done.svg){width=50%}
+
+:::: note ::::
+If you want to turn the hexagons "pointy side up", you just need to switch over the formulas.
+::::::::::::::
+
+{{placeholder}}
+<!-- TODO: Quick talk about hexagonal tilemaps -->
+
+#### Isometric Tilemaps
+
+In some cases you may want to try and give your game a more "premium" feel: isometric maps can help you in that. The game is technically 2D, but the way the tiles are designed makes it look like it's a 3D game!
+
+![A simple isometric tiles and a tilemap](./images/developing_mechanics/isometric_tiles.svg){width=60%}
+
+Isometric tilemaps make use of more difficult algorithms, considering the odd shape the tiles are (usually they're diamond-shaped).
+
+:::: trivia ::::
+Diablo 2 is actually a 2D game that uses isometric tiles. Every item and character is a pre-rendered sprite: this means that every item drop is also pre-rendered and stored with some defined degrees of rotation to give a more variegated feeling.
+::::::::::::::::
+
+{{placeholder}}
+<!-- TODO: Quick talk about isometric tilemaps -->
+
 ### Scrolling Backgrounds and Parallax Scrolling
 
 #### Infinitely Scrolling Backgrounds {#infiniback}

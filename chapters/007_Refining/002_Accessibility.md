@@ -1,6 +1,6 @@
 {{pagebreak}}
 
-Accessibility in videogames
+Accessibility in video games
 ===========================
 
 :::::: {.epigraph author="Steve Ballmer"}
@@ -64,7 +64,7 @@ One of such specialty fonts is "OpenDyslexic" (available at <https://www.opendys
 "Slow Mode"
 -----------
 
-Having an option that allows to slow down the game is an authentic boon for anyone who wants to enjoy a videogame but has some issues when it comes to reaction time or muscle control, but this makes the game more enjoyable for audiences who may not appreciate a high level of challenge but still want to play your game.
+Having an option that allows to slow down the game is an authentic boon for anyone who wants to enjoy a video game but has some issues when it comes to reaction time or muscle control, but this makes the game more enjoyable for audiences who may not appreciate a high level of challenge but still want to play your game.
 
 Colorblind mode
 ---------------

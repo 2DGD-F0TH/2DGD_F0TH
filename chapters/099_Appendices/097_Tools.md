@@ -192,7 +192,7 @@ Libraries {.unnumbered .unlisted}
 
 ### Open Adaptive Music Library (oaml) {.unnumbered .unlisted}
 
-Oaml is a library dedicated to the development of adaptive music in videogames, it supports Unity and Godot as of now. Last development at the time of writing was in 2018, though.
+Oaml is a library dedicated to the development of adaptive music in video games, it supports Unity and Godot as of now. Last development at the time of writing was in 2018, though.
 
 <https://oamldev.github.io/>
 
