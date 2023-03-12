@@ -14,7 +14,7 @@ If you're curious, normal maps usually have this color to direction mapping:
 
 This is an example of a texture, along with a possible normal map:
 
-![Example of a normal map](./images/resources/normal_mapping_1.jpg){width=50%}
+![A texture (on theleft), with a possible normal map (on the right)](./images/resources/normal_mapping_1.jpg){width=50%}
 
 There are many ways to get a normal map: you can try to get a program to generate one for you, make the object in a 3D modeler and extract the normal map from there, or just draw it by hand.
 
