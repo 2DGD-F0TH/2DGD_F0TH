@@ -11,5 +11,5 @@ Anonymous
 <li>To my friends, both international and not</li>
 <li>To the ones who never give up</li>
 </ul>
-<em> {{%author%}} </em>
+<em>Daniele Penazzo</em>
 </div>
