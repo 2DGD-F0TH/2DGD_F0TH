@@ -4,7 +4,7 @@ Line/Line collision is quite simple to implement once you know the inner working
 
 Let's look at the following image:
 
-![Example image for line/line collision](./images/collision_detection/line_line.png){width=60%}
+![Example image for line/line collision](./images/collision_detection/line_line.svg){width=50%}
 
 A generic point $P_a$ of line A can be represented with the following formula:
 
