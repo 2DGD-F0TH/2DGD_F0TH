@@ -59,7 +59,7 @@ $$
 
 In our case we have: $C = 8 - 7 + 2 \cdot 1 = 3$
 
-Usually a complexity lower than 15 is considered ok, but also the lower the better.
+Usually a complexity lower than 15 is considered OK, but also the lower the better.
 
 ### Code Coverage
 
