@@ -58,7 +58,7 @@ This is a computer issue in general: this may not be a huge problem for general 
 ### Catastrophic cancellation
 
 :::: wizardry ::::
-Catastrophic cancellation is one of the many pitfalls that you may encounter when dealing with very small numbers. This doesn't happen really often in the world of game development, feel free to just skim thrhough this mostly informative section.
+Catastrophic cancellation is one of the many pitfalls that you may encounter when dealing with very small numbers. This doesn't happen really often in the world of game development, feel free to just skim through this mostly informative section.
 ::::::::::::::::::
 
 With a name as dangerous-sounding as "catastrophic cancellation", this sure looks like a dangerous phenomenon, but it's only dangerous if we don't know what it is.

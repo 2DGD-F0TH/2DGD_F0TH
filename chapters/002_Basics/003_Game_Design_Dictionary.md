@@ -65,7 +65,7 @@ Today's smartphones have enough power to run fully-fledged video games, on the g
 
 Another platform that has seen a massive rise in recent times is the Web: with WebGL and WebAssembly, fully-fledged games (including 3D games) can run on our browser, allowing for massively-multiplayer experiences (like Agar.io) without the hassle of manual installation or making sure the game is compatible with your platform.
 
-![Fully fledged games can run in your browser nowawdays](./images/game_design/browser.svg){width=40%}
+![Fully fledged games can run in your browser nowadays](./images/game_design/browser.svg){width=40%}
 
 A drawback of the "web approach" is the limited performance that web browsers, WebGL and WebAssembly can give, as well as the need to download the game before being able to play (and sometimes you may need to re-download the game if you cleared your browser's cache).
 
