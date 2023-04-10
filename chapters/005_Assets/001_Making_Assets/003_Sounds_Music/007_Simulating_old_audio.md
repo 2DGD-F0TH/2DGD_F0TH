@@ -89,7 +89,7 @@ The base console had 5 channels, distributed as follows:
 But what's most interesting is that such capabilities could be extended by cartridge hardware, the most famous is probably the Konami VRC6, which added 2 more square wave channels, as well as a sawtooth one, used in Castlevania III.
 
 :::: trivia ::::
-Just to underline how extensible this system was, the Konami VRC7 contained a sound chip that provided a 6-channel FM sythetizer. Sadly its extended audio capabilities were used in a single, japan-exclusive game.
+Just to underline how extensible this system was, the Konami VRC7 contained a sound chip that provided a 6-channel FM synthesizer. Sadly its extended audio capabilities were used in a single, japan-exclusive game.
 ::::::::::::::::
 
 #### SNES
