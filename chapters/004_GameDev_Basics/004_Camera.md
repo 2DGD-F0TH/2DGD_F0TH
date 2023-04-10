@@ -7,7 +7,7 @@ Cameras
 Nothing's beautiful from every point of view
 ::::::
 
-The great majority of games don't limit the size of their own maps to the screen size only, but instead they mave maps way bigger than the screen.
+The great majority of games don't limit the size of their own maps to the screen size only, but instead they have maps way bigger than the screen.
 
 To be able to manage and display such maps to the screen, we need to talk about cameras (sometimes called "viewports"): they will allow us to show only a portion of our world to the user, making our game much more expansive and involving.
 
@@ -73,7 +73,7 @@ This is the camera used in the classic Super Mario Bros. for the Nintendo Entert
 
 #### Full-Tracking Camera {#fully_tracking_camera}
 
-Sometimes our levels don't span only horizontally, so we need to track the player in both axes, keeping it in the center of the screen at all times. This is good for platformers that don't require extremely precise manouvering, since precise manouvering could result in way too much movement from the camera.
+Sometimes our levels don't span only horizontally, so we need to track the player in both axes, keeping it in the center of the screen at all times. This is good for platformers that don't require extremely precise maneuvering, since precise maneuvering could result in way too much movement from the camera.
 
 ![Example of a full-tracking camera](./images/camera/fulltrack.png){width=50%}
 

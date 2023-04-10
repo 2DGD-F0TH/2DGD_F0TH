@@ -13,7 +13,7 @@ Let's see the code:
 ```{src='collisiondetection/point_triangle' caption='Point/Triangle Collision Detection'}
 ```
 
-Let's see how we can change the algorithm to accomodate for some leeway, since the we may be requiring too much precision from our algorithms. We can do that by using epsilon values.
+Let's see how we can change the algorithm to accommodate for some leeway, since the we may be requiring too much precision from our algorithms. We can do that by using epsilon values.
 
 Our main test is that the sum of the area of the 3 triangles we create ($A_1,A_2,A_3$) is equal to the area of the original triangle ($A_0$), in math terms:
 
