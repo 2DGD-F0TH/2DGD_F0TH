@@ -39,12 +39,12 @@ Satisfying customers is no easy feat, we all know this. So one question you may 
 
 So, my second advice: There are million of games out there, so creating something never seen before is very, very, very, very difficult. So, try to innovate what already exists, make usual features in your own way. This is how sub-genres come to life.
 
-You think this is not the right way? Then go and tell the people from `From Software` that the "Souls-like" sub-genere was not innovating.
+You think this is not the right way? Then go and tell the people from `From Software` that the "Souls-like" sub-genre was not innovating.
 
 Last advice: Gameplay over Graphics.
 
 We're not Activision, we can't afford to spend 10 million bucks for a cutscene. Aim for the "old fashion gamers", the customers that play for fun, not because some game is gorgeous to see.
-Whatever your working on, whatever your game genere is, focus on making the gameplay fun to play. Things are really this simple. Work 2 hours less on a model or sprite and 2 hours more on thinking about how to not get your customer bored.
+Whatever your working on, whatever your game genre is, focus on making the gameplay fun to play. Things are really this simple. Work 2 hours less on a model or sprite and 2 hours more on thinking about how to not get your customer bored.
 
 :::: trivia ::::
 Around July 2015 a game called "Brutal Force" (a clone of the more successful "Nuclear Throne") was hit with a wave of criticism after they raised their base price during a sale. The game was 75% off, but its sale price quickly went from 99¢ to $1.99 until it reached $3.24. The moral of the story is "never lie to your customers".

@@ -105,7 +105,7 @@ And you cannot un-equip items and weapons.
 
 #### Buying Weapons makes you weaker
 
-When unarmed, from level 1 onwards, the fight option lets you deal a damage equal to a random number between 0 and 4 (bounds included), regardless of the enemy defense stat, which is a real low amount of attack power.
+When unarmed, from level 1 onward, the fight option lets you deal a damage equal to a random number between 0 and 4 (bounds included), regardless of the enemy defense stat, which is a real low amount of attack power.
 
 When armed, the enemies defense values are taken into account instead, which means that most of the time, the boosted attack power given by the weapon doesn't overcome the enemies defense enough to make using weapons an advantage.
 
@@ -184,7 +184,7 @@ If you select the wrong ingredient to make a potion, you most probably will have
 
 In the NES/Famicom era, games that made use of battery-backed RAM modules to save game progress were rare. This means that the most used save method was using "passwords": a jumble of letters (and eventually numbers and symbols) that needed to be written down precisely, or you wouldn't be able to restore your progress.
 
-This game's passwords are **massive** and use a mix of katakana japanese characters and English alphabet, (while the rest of the game uses hiragana characters), which can be confusing.
+This game's passwords are **massive** and use a mix of katakana Japanese characters and English alphabet, (while the rest of the game uses hiragana characters), which can be confusing.
 
 Also passwords don't really save your progress "as is": your levels are saved in multiples of 4 (so if you're level 6, you will restore your progress but be level 4) and money is saved in multiples of 255 (if you have 3000 gold, you will restore your progress but have $255 \cdot 11=2805$ gold)
 
@@ -234,7 +234,7 @@ If you choose to fight, you will automatically lose the battle and the game will
 
 The game has interesting ideas for its time: a cyberpunk theme, Extra-sensory powers, the character sprites "grow up" as they gain levels, the enemy sprites are artistically well-done, ... but the execution is littered with problems, obstacles to the player, bad design decisions and bugs.
 
-It seems that the developers were not familiar with the NES/Famicom architecture, game designers weren't really familiar with game design concecpts and play testers were completely nonexistant.
+It seems that the developers were not familiar with the NES/Famicom architecture, game designers weren't really familiar with game design concepts and play testers were completely nonexistent.
 
 Even though this game has earned the status of "legendary bad game" (not a literal translation of "Densetsu no Kusoge"), "Hoshi wo miru hito" has gained a cult following that is really devoted, to the point that a hacker took upon themselves the daunting task of patching the game and redraw the graphics, as well as rebalancing the weapons and fix the walking speed.
 
@@ -381,7 +381,7 @@ Each run can be a bit different than any previous run, but they can all be class
 
 - **Neutral runs** these are the runs that entail killing some enemies, but not everyone. The ending of this kind of runs is not satisfactory, and the game loses its meaning. The game will suggest (via its characters) to try a different approach;
 - **Pacifist runs** these runs entail not killing anyone, this will bring an extended playthrough and ending, explaining a lot more about the world (and the "meta" nature of the game);
-- **Genocide runs** these runs entail killing everything, even the "random encounters", this will bring a different ending and will permanently change the game, even in successive runs (unless you physically delete your savefile from the game folder).
+- **Genocide runs** these runs entail killing everything, even the "random encounters", this will bring a different ending and will permanently change the game, even in successive runs (unless you physically delete your save file from the game folder).
 - **Partial/Aborted Genocide** these runs entail killing everything, besides one of the main characters. This will bring the player a different ending each time, but none of them will be "good".
 
 ### Great (and extensive!!) soundtrack

@@ -42,7 +42,7 @@ An example of a purely interpreted language is BASIC.
 
 ##### Hybrid Approaches
 
-In any project, the ability to code quickly is as important as the performance of the final product: there is a thin balance to strike between "having a product with good performance" and "having a product that is released when needed". If your product releases too late, it doesn't matter how performant it is, the market will have chosen another product. If your product releases early but it underperforms, it will be replaced by better products.
+In any project, the ability to code quickly is as important as the performance of the final product: there is a thin balance to strike between "having a product with good performance" and "having a product that is released when needed". If your product releases too late, it doesn't matter how performing it is, the market will have chosen another product. If your product releases early but it underperforms, it will be replaced by better products.
 
 Thus some hybrid approaches have been invented: one of these is, for instance, bytecode-compiled languages.
 
@@ -54,19 +54,19 @@ Being a representation that is "closer to the hardware" than the original source
 Some programming languages, like Haskell and Vala use the C programming language as an intermediate language, since C was meant to be an abstraction of the assembly language.
 ::::::::::::::::
 
-Other approaches include Just-In-Time compiling, which trades off some longer starting times (sometimes called "warmup times") for better overall performance.
+Other approaches include Just-In-Time compiling, which trades off some longer starting times (sometimes called "warm-up times") for better overall performance.
 
 Among the bytecode-compiled languages we can find Java and Python, while Lua can be considered a Just-In-Time Compiled language (thanks to LuaJIT).
 
-#### By Paradygm
+#### By Paradigm
 
-A programming paradygm is how the programming language lets you program. There is not a single, definitive way to code, thus programming languages can be distinguished by their paradygm.
+A programming paradigm is how the programming language lets you program. There is not a single, definitive way to code, thus programming languages can be distinguished by their paradigm.
 
 ##### Imperative Languages
 
 Imperative languages are probably the most spread in modern programming: they make use of "orders" (called "statements") to change the status of the program.
 
-This paradygm makes use of variables, statements, subroutines to make the program look like a set of instructions, a recipe, to make the program do what it needs to do (an algorithm).
+This paradigm makes use of variables, statements, subroutines to make the program look like a set of instructions, a recipe, to make the program do what it needs to do (an algorithm).
 
 Imperative languages include C, COBOL, Basic and Fortran.
 
@@ -76,13 +76,13 @@ Functional languages make programs work by applying and composing functions (in 
 
 Functional languages include Haskell, Common Lisp and Scheme.
 
-##### Multiparadigm Languages
+##### Multi-paradigm Languages
 
-Many programming languages tend to "meld together" many programming paradygms, allowing (for instance) for functional style programming in imperative languages.
+Many programming languages tend to "meld together" many programming paradigms, allowing (for instance) for functional style programming in imperative languages.
 
 This means that functions can be bound to variables and passed around as any other object, they can be composed to reach the result if the programmer decides to do so (for instance for readability).
 
-Multiparadigm languages include Python, Lua and Go.
+Multi-paradigm languages include Python, Lua and Go.
 
 #### By the way types are determined
 
@@ -162,9 +162,9 @@ Garbage collected languages include Java and Python.
 
 Here is a quick rundown of how the languages used in the various editions of this book (excluding "pseudocode", which is not really a programming language) are classified.
 
-- **C++**, a compiled programming language with strong static typing. It is multiparadigm (although it was born as an imperative language) and has no garbage collector.
-- **JavaScript**, an interpreted language (although some engines support Just-In-Time compiling), with weak dynamic typing that supports some duck typing principles. It is multiparadigm and features a garbage collector.
-- **Lua**, a bytecode-compiled (or Just-In-Time compiled) language, with strong dynamic typing that supports some duck typing principles. It is multiparadigm and garbage-collected.
-- **Python**, a bytecode-compiled language, with strong duck typing. It is multiparadigm and garbage-collected.
+- **C++**, a compiled programming language with strong static typing. It is multi-paradigm (although it was born as an imperative language) and has no garbage collector.
+- **JavaScript**, an interpreted language (although some engines support Just-In-Time compiling), with weak dynamic typing that supports some duck typing principles. It is multi-paradigm and features a garbage collector.
+- **Lua**, a bytecode-compiled (or Just-In-Time compiled) language, with strong dynamic typing that supports some duck typing principles. It is multi-paradigm and garbage-collected.
+- **Python**, a bytecode-compiled language, with strong duck typing. It is multi-paradigm and garbage-collected.
 
 <!-- TODO: Add more languages as more editions come out -->

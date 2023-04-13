@@ -183,7 +183,7 @@ $$ \lim_{h\to0}\frac{f(x+h) - f(h)}{h} $$
 
 They also have a nifty property that is used extensively in calculus: if $f'(x) > 0$ then $f(x)$ is increasing, while if $f'(x) < 0$ then $f(x)$ is decreasing. This means that the equation $f'(x)=0$ can be used to find local extrema: also known as "local minimums" and "local maximums".
 
-There are some rules to quickly derivate functions, here we list some of the most basic.
+There are some rules to quickly derivative functions, here we list some of the most basic.
 
 : Some simple derivation rules (k is any constant number and e is Euler's number)
 
@@ -216,10 +216,10 @@ Then there are rules for sums, multiplications and divisions.
 The Cartesian Plane
 -------------------
 
-The cartesian plane is a plane that features a 2-dimensional coordinate system. This way we can represent points with a pair of coordinates $(x, y)$.
+The Cartesian plane is a plane that features a 2-dimensional coordinate system. This way we can represent points with a pair of coordinates $(x, y)$.
 
-![Example of a cartesian plane](./images/maths/coord.svg){width=60%}
+![Example of a Cartesian plane](./images/maths/coord.svg){width=60%}
 
-Using a cartesian plane we can represent the position of items, as well as their shape, space occupation, as well as vectors that represent forces, velocity and direction.
+Using a Cartesian plane we can represent the position of items, as well as their shape, space occupation, as well as vectors that represent forces, velocity and direction.
 
 It is an essential tool for 2D game development, and it will be one of the abstractions we will use to represent items in a 2-Dimensional plane.

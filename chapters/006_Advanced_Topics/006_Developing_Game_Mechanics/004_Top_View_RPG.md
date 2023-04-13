@@ -31,7 +31,7 @@ If you're good at map building, this simple way of doing things can get you far 
 
 [^dungeon]: Dungeon Tileset, listed as Public Domain at [https://opengameart.org/content/dungeon-tileset](https://opengameart.org/content/dungeon-tileset)
 
-#### Mananging height for real
+#### Managing height for real
 
 {{placeholder}}
 

@@ -129,7 +129,7 @@ Regression testing (sometimes also called *non regression testing*, you'll see w
 
 This means that every time you find a serious bug in your software, you should fix it and make a test that will check for you if said bug is resurfacing.
 
-With time, bugs and regression tests will accumulate, which usually means that automation is involved (like continuous intergration and delivery) to execute them at each push or at regular intervals.
+With time, bugs and regression tests will accumulate, which usually means that automation is involved (like continuous integration and delivery) to execute them at each push or at regular intervals.
 
 Playtesting
 -----------

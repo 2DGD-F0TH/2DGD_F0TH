@@ -1,7 +1,7 @@
 Streamers and Content Creators
 ------------------------------
 
-When you're developing or publishing a video game, you should not underestimate the power of so-called "content creators": streamers and youtube stars, small or big, can turn your game from a niche project right into a cash buster.
+When you're developing or publishing a video game, you should not underestimate the power of so-called "content creators": streamers and YouTube stars, small or big, can turn your game from a niche project right into a cash buster.
 
 Let's take some examples of games that, even though great on their own, would not be the same without streamers:
 

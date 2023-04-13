@@ -97,7 +97,7 @@ Website: <http://soundbible.com>
 | :------:   | :--------: | :-----------: |
 |            |            | ✓    |
 
-SoundBible.com is another great website wehere you can look for sound effects for your games: the interface is quick and all sound effects are listed along with their license, which is definitely a plus.
+SoundBible.com is another great website where you can look for sound effects for your games: the interface is quick and all sound effects are listed along with their license, which is definitely a plus.
 
 Incompetech {.unnumbered .unlisted}
 ---------------

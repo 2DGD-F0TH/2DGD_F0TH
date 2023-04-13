@@ -1,7 +1,7 @@
 Separating Axis Theorem {#SAT}
 -----------------------
 
-We have taken an in-depth look at a series of specialized algorithms, but there is a more generic theorem that allows us to determine if two convex polygons are colliding: The *Separating Axis Theroem* or SAT. This theorem states:
+We have taken an in-depth look at a series of specialized algorithms, but there is a more generic theorem that allows us to determine if two convex polygons are colliding: The *Separating Axis Theorem* or SAT. This theorem states:
 
 > If two convex objects are not penetrating, there exists an axis for which the projection of the objects will not overlap.
 
@@ -26,7 +26,7 @@ To explain this, we'll use the "human explanation": if one of the shapes is conc
 Thus our algorithm would return a collision where there is none.
 
 ::: tip :::
-This problem can be solved by "decomposing" the concave polygons in two or more convex polygons, but for the sake of semplicity we'll assume all polygons we are checking for collisions are convex.
+This problem can be solved by "decomposing" the concave polygons in two or more convex polygons, but for the sake of simplicity we'll assume all polygons we are checking for collisions are convex.
 :::::::::::
 
 Now let's check the more "technical explanation".
@@ -126,7 +126,7 @@ Attached to our gun, is an invisible line (our ray), that will follow every move
 
 ![How Ray Casting Works: Gun (2/2)](./images/collision_detection/ray_casting_2.svg){width=50%}
 
-When we want to shoot the gun, instead of using the previously stated "time-stepping techniques", we perform a line-to-rectangle (or line-to-circle, or whatever we find best) collision detection, at the same time we play a really fast animation of the bullet shooting along the casted ray. If the cast ray hits an enemy, they'll die (or get destroyed).
+When we want to shoot the gun, instead of using the previously stated "time-stepping techniques", we perform a line-to-rectangle (or line-to-circle, or whatever we find best) collision detection, at the same time we play a really fast animation of the bullet shooting along the cast ray. If the cast ray hits an enemy, they'll die (or get destroyed).
 
 :::: tip ::::
 If you find that the bullet animation won't align well with the enemy dying, the animation may not be fast enough. Some games even give up showing the bullet at all, and instead show a white line for a split second, that fades away. The effect works really well!

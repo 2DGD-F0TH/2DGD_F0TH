@@ -31,7 +31,7 @@ You can always "flatten the image" (merge all the layers into one) later.
 
 #### Sub-pixel animation
 
-When drawing pixel-art, artists may face what looks to be an insormountable issue: pixels are a discrete measure which cannot be divided further.
+When drawing pixel-art, artists may face what looks to be an insurmountable issue: pixels are a discrete measure which cannot be divided further.
 
 This means that subtle movements may end up really difficult to represent: a character may look like it's laughing or shrugging, while it's only meant to breathe calmly (for instance in an idle animation).
 

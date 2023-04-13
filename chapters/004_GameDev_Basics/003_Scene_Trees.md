@@ -33,7 +33,7 @@ The situation here is more complex than it seems: this "troop" has a "captain" l
 
 ![What happens when the ship attack formation rotates](./images/scene_trees/ship_attack_rotation_example.svg){width=40%}
 
-This can quickly get messy, since we'll have to rotate the leader according to the screen, then rotate the "soldier ships" according to the leaer first, and then to the screen.
+This can quickly get messy, since we'll have to rotate the leader according to the screen, then rotate the "soldier ships" according to the leader first, and then to the screen.
 
 Scene trees can be used to make things easier, each node will rotate in relation to its parent.
 

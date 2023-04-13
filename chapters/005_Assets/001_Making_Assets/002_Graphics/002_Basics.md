@@ -17,7 +17,7 @@ In fact if you looked really close on old CRT screens, you would have probably s
 By mixing up the 3 primary colors, you would have obtained the secondary colors for light, which are... Magenta, Yellow and Cyan!
 
 :::: trivia ::::
-This is due to how light and paint work differently. It is said that "lights are additive" and "paints are subtractive": if you mix Magenta, Yellow and Cyan paints using minuscule dots (like in printing), you will see that Red, Green and Blue are formed. This is obviously an idealization, the colors you'd actually obtain by mixing paints by hand would be closer to Orange, Purple and Dark Green. In short, this is how inkjet printing works (also a Black component is added, thus forming the CMYK model).
+This is due to how light and paint work differently. It is said that "lights are additive" and "paints are subtractive": if you mix Magenta, Yellow and Cyan paints using minuscule dots (like in printing), you will see that Red, Green and Blue are formed. This is obviously an idealization, the colors you'd actually obtain by mixing paints by hand would be closer to Orange, Purple and Dark Green. In short, this is how ink-jet printing works (also a Black component is added, thus forming the CMYK model).
 ::::::::::::::::
 
 #### Color representations
@@ -40,13 +40,13 @@ Black is the absence of any color component, which means it's represented with t
 
 ##### RGBA Representation
 
-Sometimes we need to represent transparency, in that case we need an extra pair of bytes to do so. In this case we talk about the "RGBA syste" (Red-Green-Blue-Alpha).
+Sometimes we need to represent transparency, in that case we need an extra pair of bytes to do so. In this case we talk about the "RGBA system" (Red-Green-Blue-Alpha).
 
 Colors are represented by a 4-tuple: $(RRR, GGG, BBB, AAA)$, where each channel can take a value from $0$ to $255$ (or $00$ to $FF$ in hexadecimal).
 
 ##### HSV Representation
 
-Another way to represent colors is using the HSV system (Hue, Saturation, Value). Sometimes this sytem is also called HSB (Hue, Saturation, Brightness).
+Another way to represent colors is using the HSV system (Hue, Saturation, Value). Sometimes this system is also called HSB (Hue, Saturation, Brightness).
 
 ![A simplified "slice" of an HSV representation](./images/resources/HSV.svg){width=40%}
 
@@ -76,7 +76,7 @@ Tertiary colors are obtained by mixing a secondary color with a primary color, i
 
 Analogous colors are tertiary colors that are next to each other on the color wheel. For instance Red, Orange and Vermilion (sometimes called Red Orange) are analogous colors.
 
-They are good to create harmonious, almost-monocromatic compositions, since analogous colors are very common in nature.
+They are good to create harmonious, almost-monochromatic compositions, since analogous colors are very common in nature.
 
 #### Complementary Colors
 
@@ -92,7 +92,7 @@ Some complementary color for screens (color addition) pairs are:
 - **Green and Magenta**: Choose green, then red+blue gives magenta;
 - **Blue and Yellow**: Choose blue, then red+green gives yellow.
 
-While, talking about colors made by paint (color subtraction) we have tre following color pairs:
+While, talking about colors made by paint (color subtraction) we have three following color pairs:
 
 - **Magenta and Green:** Choose magenta, then yellow+cyan gives green;
 - **Yellow and Purple:** Choose yellow, then magenta+cyan gives purple;

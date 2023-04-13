@@ -1,7 +1,7 @@
 Difficulty curves {#diff_curves}
 -----------------
 
-When designing our game, it may be useful (sometimes mandatory) to have a high-level view of how our game's difficulty will evolve as the game itself is played. If we take a cartesian plane and define time as the $x$ axis, while the "perceived difficulty" is plotted on the $y$ axis, we would obtain a **difficulty curve**, a high-level representation of how difficulty evolves as the game is played.
+When designing our game, it may be useful (sometimes mandatory) to have a high-level view of how our game's difficulty will evolve as the game itself is played. If we take a Cartesian plane and define time as the $x$ axis, while the "perceived difficulty" is plotted on the $y$ axis, we would obtain a **difficulty curve**, a high-level representation of how difficulty evolves as the game is played.
 
 Knowing some basic difficulty curves, as well as their pros and cons, may give you an idea of how you want to build and balance your game. This section will be heavy on charts, so be prepared!
 
@@ -83,7 +83,7 @@ The simplest way to implement an interval pattern is just defining a minimum and
 
 ![A simple wavy difficulty interval](./images/balancing/simple_interval.svg){width=40%}
 
-This pattern is good for impredictable challenges, but it is so impredictable that you have no control over the initial difficulty either. This means that you may have a run of your game starting way too hard, while the next one may end up being very easy.
+This pattern is good for unpredictable challenges, but it is so unpredictable that you have no control over the initial difficulty either. This means that you may have a run of your game starting way too hard, while the next one may end up being very easy.
 
 #### Widening Interval
 
@@ -125,7 +125,7 @@ When designing a video game, there are at least as many things you should as the
 
 Difficulty spikes don't look good in graphs and don't make a game challenging or fun, they interrupt the natural flow of the game and end up frustrating the player. This may include an extremely precise jump in a 2D platformer just after a series of simple levels (even worse if such jump if far from the last checkpoint), or a very difficult boss that has no real place being there it is (difficulty-wise).
 
-Another thing that you may want to avoid is making the game easier for experts: this may include adding a secret stash of collectables (like powerups or skill points) in a place where only expert (or very very good) players can reach.
+Another thing that you may want to avoid is making the game easier for experts: this may include adding a secret stash of collectibles (like powerups or skill points) in a place where only expert (or very very good) players can reach.
 
 Furthermore, you should avoid punishing players who "don't play that well" further than the minimum necessary: losing a life is already a strong "punishment", if you make them lose all their gear without possibility of recovery (this goes for skills too), your game will be put on the shelf by the majority of your player base.
 

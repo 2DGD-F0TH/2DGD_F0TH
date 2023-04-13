@@ -7,7 +7,7 @@ In the case of 2D game development, a vector is just a pair of values `(x,y)`.
 
 Vectors usually represent a force applied to a body, its velocity or acceleration and are graphically represented with an arrow.
 
-On a cartesian plane it can be seen as "the x and y quantities you need to move to get from a point to another".
+On a Cartesian plane it can be seen as "the x and y quantities you need to move to get from a point to another".
 
 ![Image of a vector](./images/maths/vector.svg){width=30%}
 

@@ -12,7 +12,7 @@ Every economy is (at least in part) governed by the laws of supply and demand, w
 ![A simplified vision of supply and demand](./images/balancing/supply_demand.svg){width=50%}
 
 :::: note ::::
-This is an oversemplification of how the market (and the economy in general) works, just enough to keep you far away from the most common issues.
+This is an oversimplification of how the market (and the economy in general) works, just enough to keep you far away from the most common issues.
 ::::::::::::::
 
 We can get some takeaways from such graph:

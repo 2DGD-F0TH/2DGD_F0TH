@@ -30,7 +30,7 @@ So another rule can be written as:
 
 As detail and saturation are due to attract attention from the player, movement is another one of those "eye-catchers" that can make the gameplay more chaotic and difficult for the player.
 
-Small amounts of movement are ok, but fully-fledged animations in the background will prove distracting.
+Small amounts of movement are OK, but fully-fledged animations in the background will prove distracting.
 
 Let's take note of rule number 3 then:
 
@@ -72,7 +72,7 @@ If we were to break down the image into its main layers, from furthest to neares
 
 From left to right we have:
 
-- **the background:** our sky box, there is very little detail here, just enough to blend the color bands together to make a coesive piece;
+- **the background:** our sky box, there is very little detail here, just enough to blend the color bands together to make a cohesive piece;
 - **the farthest layer:** the trees have very few hues in their bark and leaves, little detail is added, just enough to make out lights and shadows;
 - **light rays:** this semi-transparent layer is extremely simple, but being so light and monochromatic it adds variety to make the image interesting without distracting from the foreground too much;
 - **the foreground:** this layer features the highest amount of detail, the most evident is the grass (but if you look closely, you may notice some texture in the tree bark too), as well as the most saturated and darkest colors in the picture. The contrast with the other layers makes the foreground "pop up".

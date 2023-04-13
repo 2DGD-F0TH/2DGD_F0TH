@@ -179,7 +179,7 @@ We select one of the two sub-sub-area, and add another wall, with a random posit
 
 ![How the Recursive Division Algorithm Works (3/6)](./images/algorithms/recursive_division_3.svg){width=30%}
 
-We keep on diving each sub-area recursively, adding walls, until the sub-area had one of its 2 dimensions (horizontal or vertial) equal to 1 cell.
+We keep on diving each sub-area recursively, adding walls, until the sub-area had one of its 2 dimensions (horizontal or vertical) equal to 1 cell.
 
 ![How the Recursive Division Algorithm Works (4/6)](./images/algorithms/recursive_division_4.svg){width=30%}
 

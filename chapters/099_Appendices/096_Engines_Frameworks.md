@@ -11,7 +11,7 @@ For each proposed engine or framework, along with a short description, you will 
 - **License:** Here you will see if the product is free to use or if you need to pay a price for it, and anything in between;
 - **Bindings:** In this table you will find if the product supports one of the many famous programming languages available, as well as the following:
     - **Dedicated Language:** This engine/framework makes use of its own scripting language, usually easier to learn than general-purpose languages. You may need to learn it;
-    - **Visual Programming:** This product makes use of a "Visual Scripting" (codeless) paradygm, where you can program your own game without writing code, usually by using directed graphs and nodes.
+    - **Visual Programming:** This product makes use of a "Visual Scripting" (codeless) paradigm, where you can program your own game without writing code, usually by using directed graphs and nodes.
 - **Platform compatibility:** This will tell you if the product is good for your objective, by telling you which platforms you can deploy on, like Linux, Windows or even on the web via HTML5;
 
 General Purpose {.unnumbered .unlisted}
@@ -59,7 +59,7 @@ The producer is now working on the new iteration: Cocos Creator, but Cocos2d-x i
 
 ENIGMA (Extensible Non-Interpreted Game Maker Augmentation) is an environment that is derived from Game Maker, but with time has taken a different approach than its counterpart: it compiles its own language (EDL) to C++ and it also allows to tie into C++'s templates and functions.
 
-ENIGMA's license is GPL3, with a special exhemption that allows you to sell the products made with the software.
+ENIGMA's license is GPL3, with a special exemption that allows you to sell the products made with the software.
 
 **Bindings:** C++, Dedicated Language (EDL), Visual Programming
 
@@ -306,7 +306,7 @@ This engine is used to create over 4000 visual novels, games and other works.
 
 RPG Maker is probably the most well-known engine for building top-down RPG games that usually feature story-heavy elements.
 
-**Bindings:** Ruby (from RPG Maker XP to RPG Maker Vx Ace), JavaScript (From RPG Maker MV onwards), Dedicated Language, Visual Programming.
+**Bindings:** Ruby (from RPG Maker XP to RPG Maker Vx Ace), JavaScript (From RPG Maker MV onward), Dedicated Language, Visual Programming.
 
 **Platform Compatibility:** Windows, Linux, Mac OS, iOS, Android and Web.
 
@@ -373,7 +373,7 @@ IRRlicht distributed under the ZLib/png license, which allows for both commercia
 
 Ogre3D is an open source 3D graphics engine (it's used to render 3D graphics only).
 
-Ogre3D comes in 2 versions: version 1.x is distributed under the GNU LGPL license, while the more recent 2.x version is distributed under the more premissive MIT license.
+Ogre3D comes in 2 versions: version 1.x is distributed under the GNU LGPL license, while the more recent 2.x version is distributed under the more permissive MIT license.
 
 **Bindings:** C++, C#, Java, Python, Ruby.
 

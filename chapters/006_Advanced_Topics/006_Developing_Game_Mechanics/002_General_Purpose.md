@@ -55,11 +55,11 @@ Sometimes you may want to underline a "tabletop" game feel, in that case a hexag
 
 Hexmaps allow for a different kind of movement (the player can move to up to 6 directions, instead of 4), which makes for an interesting remix of the classic tile-based mechanics.
 
-To be able to work with tilemaps, we need to get aquainted with the concept of "outer circle" of a polygon, which is the circle that intersects the edges of a polygon. In the case of our hexagon
+To be able to work with tilemaps, we need to get acquainted with the concept of "outer circle" of a polygon, which is the circle that intersects the edges of a polygon. In the case of our hexagon
 
 ![The outer circle or an hexagon](./images/developing_mechanics/hex_circle.svg){width=40%}
 
-Now we can work out how to measure the space occupied in the cartesian system by using the radius of the outer circle. We will obtain the following results:
+Now we can work out how to measure the space occupied in the Cartesian system by using the radius of the outer circle. We will obtain the following results:
 
 $$size_1 = 2 \cdot radius$$
 
@@ -149,9 +149,9 @@ This is a small improvements that can be done on menu systems: if the player is 
 
 In many frameworks when a fullscreen game window "captures" the mouse cursor, this is put on the center of the screen, which could be where a menu item is positioned.
 
-Now imagine you are "flowing through" the menu, trying to load a saved file and the cursor is detected pointing at the "delete savefile" option; you are briskly walking through the menu and what you think is the "do you want to load this file?" dialog is actually asking "do you want to **delete** this savefile?". You select "yes" by pressing enter on your keyboard and your savefile is gone!
+Now imagine you are "flowing through" the menu, trying to load a saved file and the cursor is detected pointing at the "delete save file" option; you are briskly walking through the menu and what you think is the "do you want to load this file?" dialog is actually asking "do you want to **delete** this save file?". You select "yes" by pressing enter on your keyboard and your save file is gone!
 
-This is an extreme edge case, but it could happen. Even if it is a minor annoyance like starting a new savefile when instead you want to load an existing one, it diminishes the quality of your experience.
+This is an extreme edge case, but it could happen. Even if it is a minor annoyance like starting a new save file when instead you want to load an existing one, it diminishes the quality of your experience.
 
 ### Sprite Stenciling/Masking
 
@@ -161,7 +161,7 @@ This is an extreme edge case, but it could happen. Even if it is a minor annoyan
 
 ### Loading screens {#loadingscreen}
 
-If you load your resources in the same thread that executes the main game loop, your game will lock up while loading, which may trigger windows to ask you if you want to terminate the task. In this case it is better to dip our toes into [multithreading](#multithreading) and create a proper loading screen.
+If you load your resources in the same thread that executes the main game loop, your game will lock up while loading, which may trigger windows to ask you if you want to terminate the task. In this case it is better to dip our toes into [multi-threading](#multithreading) and create a proper loading screen.
 
 The loading screen will be composed of two main components:
 
@@ -170,7 +170,7 @@ The loading screen will be composed of two main components:
 
 We can represent the two "loops" in the following UML diagram:
 
-![Rough UML diagram of a multithreaded loading screen](./images/developing_mechanics/loading_multithread.svg){width=50%}
+![Rough UML diagram of a multi-threaded loading screen](./images/developing_mechanics/loading_multithread.svg){width=50%}
 
 {{placeholder}}
 
