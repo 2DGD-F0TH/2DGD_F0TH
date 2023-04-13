@@ -42,7 +42,7 @@ E {.unnumbered .unlisted}
 -----
 
 [EULA]{#gl_eula}
-: Short of "End User License Agreement", is essentially a contract that estabilishes the purchaser's right to use the software, usually with some limitations on how the copy can be used.
+: Short of "End User License Agreement", is essentially a contract that establishes the purchaser's right to use the software, usually with some limitations on how the copy can be used.
 
 G {.unnumbered .unlisted}
 -----
@@ -99,7 +99,7 @@ O {.unnumbered .unlisted}
 : An oscillator is a device (usually hardware) used to create an alternating current. Oscillators can be used in audio synthesis to create pitches.
 
 [Out of order execution]{#gl_oooe}
-: Paradygm used in high performance CPUs to reduce the wasted instruction cycles. The instructions are performed in an order given by the availability of the input data and execution units instead than the original order defined by the programmer.
+: Paradigm used in high performance CPUs to reduce the wasted instruction cycles. The instructions are performed in an order given by the availability of the input data and execution units instead than the original order defined by the programmer.
 
 P {.unnumbered .unlisted}
 -----
