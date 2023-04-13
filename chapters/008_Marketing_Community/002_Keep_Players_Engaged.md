@@ -132,13 +132,13 @@ These mutators are usually compatible with each other, so you can have an overpo
 
 In recent years, a certain kind of hacks for old games (mostly built around the Legend Of Zelda and Metroid series) that mix up the gameplay by mixing up the item locations, with a certain logic to avoid unbeatable games.
 
-If your game has a somewhat linear story and no "roguelike" elements, you may be able to extend it replay value by adding a "randomized mode". This new mode would have some logic implemented to avoid *[soft locking~\[g\]~](#gl_softlocking)* a savefile and mixes up the items and powerups, usually making the game a bit more challenging.
+If your game has a somewhat linear story and no "roguelike" elements, you may be able to extend it replay value by adding a "randomized mode". This new mode would have some logic implemented to avoid *[soft locking~\[g\]~](#gl_softlocking)* a save file and mixes up the items and powerups, usually making the game a bit more challenging.
 
 ### New Game+
 
 A good way to lengthen the life span of your game is adding a "New Game+" mode. Let's see what it is.
 
-New Game+ is a mode that gets unlocked when you finish a game on a certain savefile, this mode allows you to re-play the same story and game with some additions (hence the "plus"), those additions may be multiple, like:
+New Game+ is a mode that gets unlocked when you finish a game on a certain save file, this mode allows you to re-play the same story and game with some additions (hence the "plus"), those additions may be multiple, like:
 
 - **Keep your inventory/equipment:** this is especially handy in story-driven, multiple-path/multiple-ending games. This allows the player to gloss over the fighting and instead concentrate more on "taking a different path" in the story. Let's not understate the willingness of a player to play a "power fantasy" by mowing through enemies in a fighting-heavy game, though;
 - **Keep your statistics:** this is very useful, in a similar way to the "keep your equipment" bullet point, just more specific to RPG-style games;
@@ -157,7 +157,7 @@ In short, transmog solves the issue that is represented by the following sentenc
 
 Using transmog you can have both the power of your best armor (or weapon, or mighty stick) with the looks of the (less powerful) armor (or weapon, and don't forget the stick) that just looks so cool.
 
-Transmogrification can be implemented quite easily by allowing each instance of an object have a customizable sprite, instead of locking it behind the item itself. You just have to remember to save the skin used by each object's skin in your inventory/savefile.
+Transmogrification can be implemented quite easily by allowing each instance of an object have a customizable sprite, instead of locking it behind the item itself. You just have to remember to save the skin used by each object's skin in your inventory/save file.
 
 Design-wise, you should make transmogrification quite challenging to get, since it's a "quality of life" enhancement, but at the same time it shouldn't be so frustrating that the players just give up trying.
 
