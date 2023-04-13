@@ -21,7 +21,7 @@ Input lag is something that we cannot avoid, but there are countermeasures, as w
 
 ![Reference image for video lag](./images/developing_mechanics/video_lag.svg){width=50%}
 
-As with the input lag, there is also a not-neglegible video lag. The game has to prepare the image, send it to the video card, the card has to render it, apply effects and then send it to the screen, where the liquid crystals (or whatever technology we will have in the future) will have the re-align to create the colored pixels on screen.
+As with the input lag, there is also a not-negligible video lag. The game has to prepare the image, send it to the video card, the card has to render it, apply effects and then send it to the screen, where the liquid crystals (or whatever technology we will have in the future) will have the re-align to create the colored pixels on screen.
 
 #### Audio Lag
 
@@ -33,7 +33,7 @@ When the audio doesn't exactly match with the video, we talk about "audio lag", 
 
 When it comes to lag, it is really difficult to estimate how the computer will react to our game, so we need a metric that will tell us what corrections we need to apply.
 
-Such corrections are estimated comparing video and audio to the input: this way we will keep everything syncronized to the player input, making the game feel tighter.
+Such corrections are estimated comparing video and audio to the input: this way we will keep everything synchronized to the player input, making the game feel tighter.
 
 First kind of test is done "video vs. input", the player has to push a button when something on the screen happens (like pushing rhythmically with a dot changing color), this way we can account for the video lag, compared to the input. This means we will obtain a $(video+input)$ lag measurement.
 

@@ -62,7 +62,7 @@ If needed, you can pass information between the subject and the observers just b
 
 **When to Use it**    Event Handling systems, making objects react to other objects' actions
 
-**Advantages**        Decoupling, added flexibility, more performant than if statements for conditions that happen rarely.
+**Advantages**        Decoupling, added flexibility, more performing than if statements for conditions that happen rarely.
 
 **Disadvantages**     Can be a bit hard to set up, makes the architecture more complex, if un-registration is not done well there could be serious memory leaks (even in garbage-collected languages).
 
@@ -74,7 +74,7 @@ Table: Summary table for the Observer Pattern
 
 In some situations it may be necessary to select a single algorithm to use, from a family of algorithms, and that decision must happen at runtime.
 
-In this case, the *strategy pattern* (also knowns as the "policy pattern"), allows the code to receive runtime instructions over what algorithm to execute. This allows for the algorithm to vary independently from the client that makes use of such algorithm.
+In this case, the *strategy pattern* (also known as the "policy pattern"), allows the code to receive runtime instructions over what algorithm to execute. This allows for the algorithm to vary independently from the client that makes use of such algorithm.
 
 ![The UML diagram of the strategy pattern](./images/design_patterns/strategy.svg){width=60%}
 

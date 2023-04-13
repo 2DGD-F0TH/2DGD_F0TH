@@ -77,7 +77,7 @@ After the graphics tweening, we need to create the new tiles that will go and fi
 ```{src='developing_mechanics/match3_newtiles' caption='Creating new tiles and preparing another tween table'}
 ```
 
-After creating the tiles and tweening them in place, it will be necessary to check for more matches that have been created from the falling tiles (and eventually notify some kind of "combo system" to apply a "score multipier system" or even an achievement system using the [Observer Pattern](#ObserverPattern)).
+After creating the tiles and tweening them in place, it will be necessary to check for more matches that have been created from the falling tiles (and eventually notify some kind of "combo system" to apply a "score multiplier system" or even an achievement system using the [Observer Pattern](#ObserverPattern)).
 
 {{placeholder}}
 

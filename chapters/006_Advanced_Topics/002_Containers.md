@@ -22,7 +22,7 @@ First of all, we need to know how we want to identify our resource; there are ma
 - **The file path:** this is an approach used to make things "more transparent", but every time a resource changes place, we will need to update the code that refers to such resource too;
 - **A mnemonic name:** this allows us to use a special string to get a certain resource (for instance `skeleton_spritesheet`), and every time our resource folder changes, we will just need to update our loading routines (similarly to the Enum solution).
 
-Secondarily, we need to make sure that the container is **thread-safe** (see more about multithreading in the [multithreading section](#multithreading)), since we will probably need to implement a threaded loading screen (see how to do it [here](#loadingscreen)) to avoid our game locking up during resource loading.
+Secondarily, we need to make sure that the container is **thread-safe** (see more about multi-threading in the [multi-threading section](#multithreading)), since we will probably need to implement a threaded loading screen (see how to do it [here](#loadingscreen)) to avoid our game locking up during resource loading.
 
 {{placeholder}}
 
@@ -80,7 +80,7 @@ Although menus can be represented via a finite state machine, the structure of a
 
 A stack allows us to code some other functions in an easier way, for instance we can code the "previous menu" function by just popping the current menu out of the stack; when we access a new menu, we just push it into the menu stack and the menu stack will take care of the rest.
 
-Unlike the stacks we are used to, the menu stack can also be accessed like a queue (first in - first out) so you can draw menus and dialogs on top of each other, while the last UI element (on top of the stack) keeps the control of the input-update-draw cycle.
+Unlike the stacks we are used to, the menu stack can also be accessed like a queue (first in - first out) so you can draw menus and dialog windows on top of each other, while the last UI element (on top of the stack) keeps the control of the input-update-draw cycle.
 
 ![Example of a simple menu stack](./images/containers/menu_stack.svg){width=50%}
 

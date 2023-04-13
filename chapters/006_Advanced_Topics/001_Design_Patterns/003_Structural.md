@@ -29,7 +29,7 @@ This is just speculation, but SFML's graphics system may make use of the Flyweig
 
 **Advantages**        Saves memory when a large number of similar objects is involved, avoids some of the overhead given by the creation of many objects.
 
-**Disadvantages**     The intrinsic state must be "context independent", so it cannot change (or all the flyweights that refer to that state will change too). Flyweight instantiation requires particular attention in multithreaded environments, due to the shared memory.
+**Disadvantages**     The intrinsic state must be "context independent", so it cannot change (or all the flyweights that refer to that state will change too). Flyweight instantiation requires particular attention in multi-threaded environments, due to the shared memory.
 
 ------------------------------------------------------------------------------------------------
 
