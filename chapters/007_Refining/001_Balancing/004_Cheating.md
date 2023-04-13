@@ -13,7 +13,7 @@ Information-based cheats are all those cheats that rely additional information t
 
 These cheats include also x-ray hacks, all cheats that invalidate invisibility (as the server or peer would still need to transmit the coordinates of the hidden unit) and anything that can show information that is not meant to be shown to the user.
 
-A possibile solution is for the game to just "not transmit" the data, making the cheat useless, but sometimes that is just not possible.
+A possible solution is for the game to just "not transmit" the data, making the cheat useless, but sometimes that is just not possible.
 
 ### Mechanics-based cheating
 
@@ -76,7 +76,7 @@ The main difficulty in preventing cheating is that there is no "authoritative ga
 
 Giving such "authoritative game state" to either of the players is not a good idea, because that way they would be able to cheat themselves and since they're the "game master", everything they do would be accepted.
 
-![What would happen if one of the Peers had the autoritative game state](./images/balancing/auth_P2P.svg){width=60%}
+![What would happen if one of the Peers had the authoritative game state](./images/balancing/auth_P2P.svg){width=60%}
 
 This is also the reason why many games that make use of P2P connections have implementations of anti-cheat systems that are shoddy at best.
 
@@ -123,7 +123,7 @@ We can be sure that the simulation would be equal to a video because a game (as 
 
 Sometimes it may prove useful (and sometimes it is just plain necessary) to have some "cheats" to use as "shortcuts" while doing some development tasks.
 
-Some of these give you invulnerability to make sure that you can test the balancement of the weapons without worrying about dying in the harder stages, some other times you need a "level skip code" to quickly get to later levels when you have made incompatible edits to the savefile format.
+Some of these give you invulnerability to make sure that you can test the balance of the weapons without worrying about dying in the harder stages, some other times you need a "level skip code" to quickly get to later levels when you have made incompatible edits to the save file format.
 
 When using these codes it is vital to have a build flag to distinguish between a "release build" and a "debug build", this way it is possible to completely strip out the debug code from the build, thus "reducing the attack surface": you can't abuse code that is not there.
 

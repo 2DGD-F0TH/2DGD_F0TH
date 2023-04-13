@@ -26,7 +26,7 @@ UI and HUD scaling is a great customization for any player, not only the ones wh
 Subtitles
 ---------
 
-This feature is really useful if you can't afford to keep the volume too high without disturbing someone (and don't have headphones). Another great use for subtitles is to expand the game's audience to non-native english speakers, who may have a bit of trouble with pronunciation.
+This feature is really useful if you can't afford to keep the volume too high without disturbing someone (and don't have headphones). Another great use for subtitles is to expand the game's audience to non-native English speakers, who may have a bit of trouble with pronunciation.
 
 Some games further expand their demographic by using speech in a certain language and enabling support for subtitles in another language, other times it can be used as a story ploy: in Rayman 2 the characters speak "Raymanian" (sometimes called Wandayē), a fantasy language which is subtitled in the language of choice.
 

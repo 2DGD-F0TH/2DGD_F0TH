@@ -65,7 +65,7 @@ These pieces of code will be compiled without any optimization, using G++, using
 g++ -Wall -Wextra -Werror -O0 filename.cpp -o filename.bin
 ```
 
-Where "filename" is replaced by the source name, then each file will be executed using the "time" linux command, like follows:
+Where "filename" is replaced by the source name, then each file will be executed using the "time" Linux command, like follows:
 
 ```{.sh}
 time ./filename.bin
