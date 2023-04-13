@@ -126,7 +126,7 @@ Our shields will be "force fields" which can withstand 3 shots before getting di
 
 Like the original game, the shields can block both our and our enemy's bullets, making for a more challenging gameplay.
 
-For an even more challenging gameplay, we can (rarely) make a random ship detach from the horde to try and attack us directly: on such event, the ship will start shooting more often and move towards our laser cannon, before going back into position (a bit like galaxian).
+For an even more challenging gameplay, we can (rarely) make a random ship detach from the horde to try and attack us directly: on such event, the ship will start shooting more often and move towards our laser cannon, before going back into position (a bit like Galaxian).
 
 Further Skills Required:
 
@@ -227,7 +227,7 @@ Skills required:
 
 In the advanced level you should implement a life system for our playable character, so instead of dying our player will get hurt and will have its life reduced. A health bar should be shown on screen.
 
-The same should be done for each enemy, so you will need to be able to manage the state of each object (enemy) separatedly. Extra points if you show a small healthbar on top of a hit enemy, showing its current health.
+The same should be done for each enemy, so you will need to be able to manage the state of each object (enemy) separately. Extra points if you show a small health bar on top of a hit enemy, showing its current health.
 
 You should also implement a way to easily code in new enemy types, this will require refactoring your code to support importing entities from data. Each enemy should at least have different speeds and health.
 
