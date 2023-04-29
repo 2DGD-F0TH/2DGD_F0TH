@@ -24,7 +24,7 @@ You can see the palette colors on the top row and the left column, then you can 
 
 There are different dithering patterns, that allow for different type of colors, intensity and patterns:
 
-![Some more dithering examples](./images/resources/dithering_patterns.png){width=50%}
+![Some more dithering examples](./images/resources/dithering_patterns.png){width=70%}
 
 #### Palette Swapping
 
