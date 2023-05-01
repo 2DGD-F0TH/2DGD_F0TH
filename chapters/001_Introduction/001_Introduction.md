@@ -118,14 +118,14 @@ This book is structured in many chapters, here you will find a small description
 - **The Maths Behind Game Development:** Here we will learn the basic maths that are behind any game, like vectors, matrices and screen coordinates.
 - **Some Computer Science Fundamentals:** Here we will learn (or revise) some known computer science fundamentals (and some less-known too!) and rules that will help us managing the development of our game.
 - **A game design dictionary:** Here we will introduce some basic concepts that will help us in understanding game design: platforms, input devices and genres.
-- **Project Management Tips:** Project management is hard! Here we will take a look at some common pitfalls and tips that will help us deliver our own project and deliver it in time.
+- **Project Management Basics and Tips:** Project management is hard! Here we will take a look at some common pitfalls and tips that will help us deliver our own project and deliver it in time.
 - **Writing a Game Design Document:** In this section we will take a look at one of the first documents that comes to exist when we want to make a game, and how to write one,
 - **The Game Loop:** Here we will learn the basics of the "game loop", the very base of any video game.
 - **Collision Detection and Reaction:** In this section we will talk about one of the most complex and computationally expensive operations in a video game: collision detection.
 - **Scene Trees:** Here we will briefly talk about probably the most important structure in games and game engines: the scene tree.
 - **Cameras:** In this section we will talk about the different types of cameras you can implement in a 2D game, with in-depth analysis and explanation.
-- **Game Design:** In this chapter we will talk about level design and how to walk your player through the learning and reinforcement of game mechanics, dipping our toes into the huge topic that is game design.
-- **Creating your resources:** Small or solo game developers may need to create their own resources, in this section we will take a look at how to create our own graphics, sounds and music.
+- **Game Design Tips:** In this chapter we will talk about level design and how to walk your player through the learning and reinforcement of game mechanics, dipping our toes into the huge topic that is game design.
+- **Creating your own assets:** Small or solo game developers may need to create their own assets, in this section we will take a look at how to create our own graphics, sounds and music.
 - **Design Patterns:** A head-first dive into the software engineering side of game development, in this section we will check many software design patterns used in many games.
 - **Useful Containers and Classes:** A series of useful classes and containers used to make your game more maintainable and better performing.
 - **Artificial Intelligence in Video games:** In this section we will talk about algorithms that will help you coding your enemy AI, as well as anything that must have a "semblance of intelligence" in your video game.
@@ -138,9 +138,9 @@ This book is structured in many chapters, here you will find a small description
 - **Profiling and Optimization:** When things don't go right, like the game is stuttering or too slow, we have to rely on profiling and optimization. In this section we will learn tips and tricks and procedures to see how to make our games perform better.
 - **Marketing Your Game:** Here we will take a look at mistakes the industry has done when marketing and maintaining their own products, from the point of view of a small indie developer. We will also check some of the more controversial topics like loot boxes, micro transactions and season passes.
 - **Keeping your players engaged:** a lot of a game's power comes from its community, in this section we will take a look at some suggestion you can implement in your game (and out-of-game too) to further engage your loyal fans.
-- **Game Jams:** A small section dedicated on Game Jams and how to participate to one without losing your mind in the process, and still deliver a prototype.
 - **Dissecting Games:** A small section dedicated to dissecting the characteristics of one (very) bad game, and two (very) good games, to give us more perspective on what makes a good game "good" and what instead makes a bad one.
 - **Project Ideas:** In this section we take a look at some projects you can try and make by yourself, each project is divided into 3 levels and each level will list the skills you need to master in order to be able to take on such level.
+- **Game Jams:** A small section dedicated on Game Jams and how to participate to one without losing your mind in the process, and still deliver a prototype.
 - **Where to go from here:** We're at the home stretch, you learned a lot so far, here you will find pointers to other resources that may be useful to learn even more.
 - **Glossary:** Any world that has a ~[g]~ symbol will find a definition here.
 - **Engines and Frameworks:** A collection of frameworks and engines you can choose from to begin your game development.

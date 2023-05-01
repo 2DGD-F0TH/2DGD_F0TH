@@ -19,7 +19,7 @@ We will now talk about the most common Big-O notations, from "most efficient" to
 
 :::: pitfall ::::
 Be mindful of one specific thing: these notations simply tie how the algorithm performs in relation to how a certain variable grows (usually a dataset). If you know for certain that a dataset stays relatively small, a less efficient algorithm may not make a huge difference.
-::::
+:::::::::::::::::
 
 ### O(1)
 
@@ -144,6 +144,21 @@ We can calculate the total estimate as $O(n^2) + O(n)$ and that would be absolut
 ![O(n) growth rate, compared to O(n²)](./images/computer_science/o_n_vs_o_n2.svg){width=60%}
 
 So we can drop the $O(n)$ and consider the entire algorithm as an $O(n^2)$ algorithm in its entirety: this means that when dealing with complexity estimates, you always keep the terms that have the largest "growth rate" (check the [Big-O estimates comparison](#big_o_comp) section for more details).
+
+### A problem with asymptotic complexity
+
+An important problem with asymptotic complexity is that it tends to hide coefficients and smaller terms, no matter how important they may be.
+
+Let's take an example: we need to order a list of 500000 elements and we found two algorithms:
+
+- Algorithm 1 works in $O(n^2)$
+- Algorithm 2 works in $O(n)$, but its "non-simplified" complexity is $O(1000000n)$
+
+Which one would be more efficient? From a first inspection it may seem surprising that until we reach 1 million elements, algorithm 1 is better performing.
+
+If we plot how the CPU cycles behave for each algorithm, we can see how the reality is different.
+
+![When coefficients have important values, asymptotic complexity may trick us](./images/computer_science/bigo_constants.svg){width=60%}
 
 ### What do we do with recursive algorithms?
 
