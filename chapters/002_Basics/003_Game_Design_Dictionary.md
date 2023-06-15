@@ -183,3 +183,24 @@ Some examples of Rhythm games are "Dance-Dance Revolution" (also known as DDR), 
 Visual novels are graphical adventures whose primary objective is "telling a story", they can be linear or have a "choose your own path" component. They usually feature multiple endings and hand-crafted still images as artwork.
 
 The more modern versions feature more interactive components and fully-fledged 3D graphics, but what ties the genre together is usually a "point and click" style of gameplay.
+
+Miscellaneous
+-------------
+
+Here we will talk about some other terms that you may hear in the game development and design world, but that don't fit into a specific category.
+
+### Emergent Gameplay
+
+Sometimes, when interacting with simple game mechanics, players can give life to complex situations. When that happens usually we talk about "emergent gameplay".
+
+Emergent gameplay can take place in open-ended games, where there are many solutions to a situation and none of them is "preferred by the game". For instance, we can think of someone guarding a door, there are many ways to get through the guard, such as:
+
+- Attacking the guard (and winning);
+- Find an alternative path;
+- Sneak around the guard to knock them unconscious;
+- Find a way to make the guard leave their post;
+- ...
+
+::: trivia :::
+A prime example of a game that leverages emergent gameplay is Minecraft. Players can either survive, build palaces, build redstone circuits and much more.
+::::::::::::::
