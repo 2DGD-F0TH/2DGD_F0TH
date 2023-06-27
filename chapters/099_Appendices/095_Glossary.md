@@ -1,5 +1,4 @@
 {{pagebreak}}
-\appendix
 
 Glossary
 ========
