@@ -161,6 +161,10 @@ We can see an intuitive representation of projecting a line onto the axes below:
 
 ![Projecting a line onto the axes](./images/maths/projection_on_axes.svg){width=40%}
 
+:::: longdesc ::::
+The first quadrant of a Cartesian plane. A black line is overlaid on the plane, starting from $(2, 5)$ and ending on $(5,2)$. Red dashed lines start from the two points and go leftwards horizontally towards the Y axis. On the Y axis there is a red line (representing the projection of the black line onto the Y axis) that goes from $(0,2)$ to $(0,5)$. There are also blue dashes that go from the black line's ends downwards towards the X axis. On the X axis there is a blue line (representing the projectiong of the black line onto the X axis) that goes from $(2,0)$ to $(5,0)$.
+::::::::::::::::::
+
 ##### How does it work?
 
 Let's take the point $P(2, 5)$ from the previous figure. We want to project it on the x axis: that means we need to find a line that is 90 degrees with the $x$ axis and passes through $P$.
