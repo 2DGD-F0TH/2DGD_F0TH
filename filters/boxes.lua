@@ -26,6 +26,11 @@ function boxes(elem)
             table.insert(elem.content, 1, pandoc.RawBlock('latex', '\\begin{wizardry}'))
             table.insert(elem.content, pandoc.RawBlock('latex', '\\end{wizardry}'))
         end
+        -- Accessibility Long Description
+        if elem.classes[1] == 'longdesc' then
+            table.insert(elem.content, 1, pandoc.RawBlock('latex', '\\begin{longdesc}'))
+            table.insert(elem.content, pandoc.RawBlock('latex', '\\end{longdesc}'))
+        end
         -- Cover
         if elem.classes[1] == 'cover' then
             table.insert(elem.content, 1, pandoc.RawBlock('latex', '\\begin{cover}'))
@@ -52,6 +57,9 @@ function boxes(elem)
         end
         if elem.classes[1] == 'wizardry' then
             table.insert(elem.content, 1, pandoc.RawBlock('html', '<div class="box-title">Advanced Wizardry!</div>'))
+        end
+        if elem.classes[1] == 'longdesc' then
+            table.insert(elem.content, 1, pandoc.RawBlock('html', '<div class="box-title">Long Description</div>'))
         end
         return elem
     end

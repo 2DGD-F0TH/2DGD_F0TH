@@ -117,6 +117,15 @@ div.wizardry div.box-title{
     border: 2px solid #515151;
     font-weight: bold;
 }
+div.longdesc{
+    background-color: #FFFFFF;
+    border: 2px solid #000000;
+}
+div.longdesc div.box-title{
+    background-color: #FFFFFF;
+    border: 2px solid #000000;
+    font-weight: bold;
+}
 div.box-title{
     padding: 0.25em;
 }

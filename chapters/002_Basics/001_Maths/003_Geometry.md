@@ -9,9 +9,17 @@ A polygon is considered convex essentially when **any line** (not tangent to an 
 
 ![Example of a convex shape](./images/maths/convex_shape.svg){width=35%}
 
+:::: longdesc ::::
+A regular hexagon. Each vertex is named with letters from A to F, starting from the right most one, going counterclockwise. There is a dashed red line that goes through the shape at an about 30 degree incline, stopping on the CB and EF edges of the hexagon with blue dots.
+::::::::::::::::::
+
 Any shape where you can find at least one line that crosses the shape more than twice is considered "non-convex" (commonly referred as "concave").
 
 ![Example of a concave shape](./images/maths/concave_shape.svg){width=35%}
+
+:::: longdesc ::::
+An irregular 7-sided shape, the shape reminds a bit of the letter C. Each vertex of the shape is named with letters from A to G, starting from the right most one, going counterclockwise. There is a dashed red line that goes from the top right (starting from the AB edge) down towards the bottom left (ending on the EF edge). The dashed red line has 4 blue dots on the edges AB, GA, FG and EF.
+::::::::::::::::::
 
 ::: note :::
 Not all non-convex shapes are technically called "concave" (they should be called "non-convex"), but for the sake of simplicity we'll use the term "non-convex" and "concave" interchangeably in this book.
@@ -22,6 +30,10 @@ Not all non-convex shapes are technically called "concave" (they should be calle
 Contrary to what many think, polygons can self-intersect too, which can make calculations a lot harder.
 
 ![Example of a self-intersecting polygon](./images/maths/self_intersecting_poly.svg){width=40%}
+
+:::: longdesc ::::
+A 4-sided self-intersecting shape, looking like two triangles joined at the tips (or a very stylized butterfly). Due to it being self-intersecting, each vertex is named with letters from A to D in the following order: top right, bottom left, top left, bottom right.
+::::::::::::::::::
 
 For the sake of game development, we will usually talk about simple polygons which are polygons that don't self-intersect and have no holes in them. More strictly we will (for 99.9% of the time) talk about **convex simple polygons**.
 
@@ -86,6 +98,10 @@ First of all, the line we will be projecting onto will have equation $y=mx+q$, j
 We will assume that we have a point $P(x_p,y_p)$ that we want to project onto a line $r$ with equation $y=mx+q$, with $m \neq 0$ (thus excluding horizontal lines). We will call the projected point "P onto r" with the name $P_r(x_r,y_r)$.
 
 ![Projecting the point P onto the line r](./images/maths/projection.svg){width=40%}
+
+:::: longdesc ::::
+A line called `r` is shown, starting from the left side of the image, sloping downwards at about 30 degrees. A point called `P` is represented on top right of the image. A line is shown connecting P to the line `r` at a 90 degree angle of incidence. The point where such line meets `r` is called with $P_r$, which represents the projection of `P` onto `r`.
+::::::::::::::::::
 
 First, we need to find the line that goes through $P$ and is perpendicular to $r$, this is really easy. To find a slope $m_1$ of a line perpendicular to another line with slope $m$ we use the formula
 
