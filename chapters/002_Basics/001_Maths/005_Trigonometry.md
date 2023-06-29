@@ -35,6 +35,10 @@ Given the unit circle, let a line through the origin with an angle $\theta$ with
 
 ![Unit Circle definition of sine and cosine](./images/maths/sincos.svg){width=40%}
 
+:::: longdesc ::::
+The image represents 4 quadrants of the Cartesian plane. A circle with center on the origin $(0,0)$ and radius 1 is drawn. A red line is drawn from $(0,0)$ and meets the circle, forming an angle of $\Theta$ degrees with the X axis. The point where the line meets the circle is projected onto the X axis, the distance between the origin and this projection is $cos(\Theta)$. The point where the line meets the circle is similarly projected on the Y axis, giving $sin(\Theta)$.
+::::::::::::::::::
+
 For the purposes of this book, we will just avoid the complete definition of the tangent function, and just leave it as a formula of sine and cosine:
 
 $$tan(\theta) = \frac{sin(\theta)}{cos(\theta)} $$
@@ -119,6 +123,10 @@ $$ \theta = arctan(\frac{y}{x}) $$
 
 ![Graphical plotting of the angle of a vector](./images/maths/arctan2.svg){width=40%}
 
+:::: longdesc ::::
+A representation of the 4 quadrants of the Cartesian plane. A red line connects the origin with a point with coordinates $(x,y)$. The angle between the red line and the X axis is represented in blue, with the simbol $\Theta$.
+::::::::::::::::::
+
 Numerical Analysis
 ------------------
 
@@ -153,8 +161,16 @@ In our maths courses we learned about the Coordinate Plane, with an origin and a
 
 ![Image of a coordinate plane](images/maths/coord.svg){width=30%}
 
+:::: longdesc ::::
+A Cartesian plane, representing a grid overlaid by two axes, 90 degrees from each other. The X axis is represented with a double arrow going left to right. The Y axis is represented with a double arrow going bottom to top. The two axes cross each other in the center of the image (at the origin) and divide the plane in 4 quadrants which are numbered I, II, III, IV, starting from top right and going counterclockwise. Each axis is numbered from -8 to +8.
+::::::::::::::::::
+
 When it comes to 2D graphics on computers and game development, the coordinate plane looks like this:
 
 ![Image of a screen coordinate plane](images/maths/screen_coord.svg){width=30%}
+
+:::: longdesc ::::
+Image of a rectangle, representing a screen. A red arrow, representing the X axis starts from the top left corner of the screen, going rightwards. Another red arrow, representing the Y axis starts from the top left corner of the screen, going downwards.
+::::::::::::::::::
 
 The origin is placed on the top left of the screen (at coordinates `(0,0)`) and the `y` axis is going from top to bottom. It's a little weird at the beginning, but it's not hard to get used to it.
