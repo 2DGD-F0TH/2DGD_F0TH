@@ -15,6 +15,10 @@ And to do so, we will use the following reference image, complete with a quadran
 
 ![Reference image for transformation matrices](./images/maths/transform_reference.svg){width=35%}
 
+:::: longdesc ::::
+Representation of the first quadrant of a Cartesian plane. There is a red square drawn on the plane with vertices at coordinates $(2, 2)$, $(5,2)$, $(5,5)$, $(2,5)$.
+::::::::::::::::::
+
 ### Stretching
 
 Stretching is a transformation that enlarges all distances in a certain direction by a defined constant factor. In 2D graphics you can stretch (or squeeze) along the x-axis, the y-axis or both.
@@ -61,6 +65,10 @@ $$
 Stretching our reference image along the x and y axes respectively would look something like this:
 
 ![Stretching along the x and y axes](./images/maths/transform_stretch.svg){width=55%}
+
+:::: longdesc ::::
+The image is composed by two representation of the first quadrant of the Cartesian plane with a red rectangle drawn on. In the first, the rectangle has been stretched on the Y axis, moving its vertices to coordinates $(2,1)$, $(5,1)$, $(5,6)$ and $(2,6)$. In the second representation, the rectangle has been stretched along the X axis, moving its vertices to coordinates $(1,2)$, $(7,2)$, $(7,5)$ and $(1,5)$.
+::::::::::::::::::
 
 You can mix and match the factors and obtain different kinds of stretching, if the same factor $k$ is used both on the x and y-axis, we are performing a *scaling* operation, like follows:
 
@@ -143,6 +151,10 @@ This could how our square could look, after a rotation:
 
 ![The result of applying a rotation matrix](./images/maths/transform_rotate.svg){width=35%}
 
+:::: longdesc ::::
+Representation of the first quadrant of a Cartesian plane. On the cartesian plane, a red square is drawn. The square has been rotated so that its vertices are located on coordinates $(3, 5.5)$, $(1.5, 3)$, $(4, 1.5)$ and $(5.5, 4)$.
+::::::::::::::::::
+
 If instead we want our rotation to be **counterclockwise**, we will instead use the following matrix:
 
 $$
@@ -214,3 +226,7 @@ $$
 Here is how shearing would look, as an example:
 
 ![Shearing along the x and y axes](./images/maths/transform_shear.svg){width=55%}
+
+:::: longdesc ::::
+The image is composed by two representation of the first quadrant of the Cartesian plane with a red rectangle drawn on. In the first, the rectangle has been sheared on the X axis, moving its vertices to coordinates $(1.5,2)$, $(4.5, 2)$, $(5.5,5)$ and $(2.5,5)$. In the second representation, the rectangle has been sheared along the Y axis, moving its vertices to coordinates $(2,2.5)$, $(5,1.5)$, $(5,4.5)$ and $(2,5.5)$.
+::::::::::::::::::
