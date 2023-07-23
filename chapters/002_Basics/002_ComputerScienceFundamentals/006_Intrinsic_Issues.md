@@ -42,6 +42,15 @@ This program will temporarily set a reduced precision in our number representati
 
 ![Results of the simple float precision test](./images/computer_science/precision_1.png){width=50%}
 
+:::: longdesc ::::
+The image shows the results of the precision test as follows:
+
+- This should be 1.0: 1
+- This should be 0.1: 0.10000000149011611938
+- This should be 0.01: 0.0099999997764825820923
+- This should be true (1): 0
+::::::::::::::::::
+
 With the number $1$ it's all good, but... what is going on with $0.1$? What is all that garbage? The number $0.01$ is even worse! That's not even close! Why $0.1 + 0.1 + 0.1$ comes out as not $0.3$! **What is maths anymore?**
 
 We have just met one of the (many) limitations of computers: computers cannot represent certain numbers without "approximating". Compilers and libraries exist to work around these issues, but we need to be ready to avoid surprises.
@@ -50,7 +59,15 @@ Just to reiterate: this is not a problem of the single programming language, we 
 
 ![Python 2 has the same issues with precision as C++](./images/computer_science/precision_2.png){width=50%}
 
+:::: longdesc ::::
+Python 2.7.18's REPL shows that the expression `0.1+0.1+0.1==0.3` is False, due to how float numbers are represented in binary.
+::::::::::::::::::
+
 ![Python 3 doesn't fare much better when it comes to precision](./images/computer_science/precision_3.png){width=50%}
+
+:::: longdesc ::::
+Python 3.9.5's REPL shows that the expression `0.1+0.1+0.1==0.3` is still False, due to how float numbers are represented in binary.
+::::::::::::::::::
 
 This is a computer issue in general: this may not be a huge problem for general use but, if we try to be too precise with our calculations, this may come back to bite us.
 
