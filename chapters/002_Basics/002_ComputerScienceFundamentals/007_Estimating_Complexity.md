@@ -143,6 +143,10 @@ We can calculate the total estimate as $O(n^2) + O(n)$ and that would be absolut
 
 ![O(n) growth rate, compared to O(n²)](./images/computer_science/o_n_vs_o_n2.svg){width=60%}
 
+:::: longdesc ::::
+A graph showing the difference between a linear growth rate and an exponential one. The linear growth rate starts at `(0,0)` and ends at `(0,100)` while the exponential growth starts at `(0,0)` and ends at `(0,10000)`.
+::::::::::::::::::
+
 So we can drop the $O(n)$ and consider the entire algorithm as an $O(n^2)$ algorithm in its entirety: this means that when dealing with complexity estimates, you always keep the terms that have the largest "growth rate" (check the [Big-O estimates comparison](#big_o_comp) section for more details).
 
 ### A problem with asymptotic complexity
@@ -159,6 +163,10 @@ Which one would be more efficient? From a first inspection it may seem surprisin
 If we plot how the CPU cycles behave for each algorithm, we can see how the reality is different.
 
 ![When coefficients have important values, asymptotic complexity may trick us](./images/computer_science/bigo_constants.svg){width=60%}
+
+:::: longdesc ::::
+A graph showing the relation between `1000000n` and `n` squared. Since the factor used to multiply `n` is really large, `n` squared stays below `1000000n` for the first 1000000 values.
+::::::::::::::::::
 
 ### What do we do with recursive algorithms?
 
@@ -178,9 +186,17 @@ $$
 
 ![Big-O Estimates, plotted](./images/computer_science/big_o_plot.svg){width=60%}
 
+:::: longdesc ::::
+A chart showing the main Big-O estimates, with values of `n` between 0 and 30. All lines start at `(0,0)`, besides the constant growth rate. The constant growth rate stays at one, the linear ends at `(30,30)`, the linearithmic at `(30, 102)`, the exponential at `(30, 900)`.
+::::::::::::::::::
+
 There is a very specific reason why the $O(2^n)$ estimate is missing from the previous plot: we wouldn't be able to see anything worthwhile if it was included, as seen from the following plot:
 
 ![How O(2^n^) overpowers lower complexities](./images/computer_science/big_o_plot2.svg){width=60%}
+
+:::: longdesc ::::
+A chart showing the main Big-O estimates, with values of `n` between 0 and 30. All lines start at `(0,0)`, but since the 2 to the power of n growth rate ends at `(30, 1073741824)` all the other growth rates are not visible.
+::::::::::::::::::
 
 {{placeholder}}
 
