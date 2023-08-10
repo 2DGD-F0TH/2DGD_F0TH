@@ -1,3 +1,10 @@
+The principle of locality {#locality_principle}
+-----------------------------------------------
+
+{{placeholder}}
+
+<!-- TODO: [Penaz] [2023-08-10] Talk about the principle of locality: temporal and spatial (and memory too) -->
+
 Treating multidimensional structures like one-dimensional ones
 --------------------------------------------------------------
 
