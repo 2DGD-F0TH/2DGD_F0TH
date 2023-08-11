@@ -1,9 +1,14 @@
 The principle of locality {#locality_principle}
 -----------------------------------------------
 
-{{placeholder}}
+This is one of the most-talked about principles in computer science: it usually refers to the principle of "memory locality", but it may also refer to other kinds, like "temporal locality" or "branch locality".
 
-<!-- TODO: [Penaz] [2023-08-10] Talk about the principle of locality: temporal and spatial (and memory too) -->
+Let's analyze the most common ones.
+
+- **Spatial locality:** (sometimes called "memory locality") if a certain region of storage (or memory) is referenced, there is a good probability that nearby regions of storage (or memory) will be referenced in the near future. This is true, for instance, in Arrays.
+- **Temporal locality:** if a certain region of storage (or memory) is referenced, there is a good probability that the same region will be referenced in the near future. CPU caches leverage this principle by copying recently-used data into faster storage.
+
+Temporal locality can be seen as a special case of spatial locality.
 
 Treating multidimensional structures like one-dimensional ones
 --------------------------------------------------------------
