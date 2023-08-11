@@ -33,6 +33,15 @@ You should use a "press to continue prompt" when at least one of the following c
 
 ### Avoiding a loading screen altogether
 
+Dynamic loading is a technique that is usually implemented in 3D games, but nothing stops you from using it in your 2D game!
+
+The main issue is avoiding the player noticing that you unloaded a piece of the map that you previously visited, while loading the next piece. This means:
+
+- **Avoiding "popping":** the player won't appreciate seeing pieces of the game appear or disappear in front of their eyes;
+- **Avoiding slowdowns:** the player will immediately realize something is going on if the game slows down or drops frames at a certain point. Plus it will feel like the game is not well-optimized.
+
+Popping can be avoided
+
 {{placeholder}}
 
 <!-- TODO: Dynamic loading: some games use closed rooms with nothing in them (double door) to unload the old map and load the new one dynamically without forcing a loading screen -->
