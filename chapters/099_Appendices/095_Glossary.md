@@ -44,6 +44,12 @@ E {.unnumbered .unlisted}
 [EULA]{#gl_eula}
 : Short of "End User License Agreement", is essentially a contract that establishes the purchaser's right to use the software, usually with some limitations on how the copy can be used.
 
+F {.unnumbered .unlisted}
+-------------------------
+
+[FOV]{#gl_fov}
+: Short of "Field of View", it denotes what can be visible by something, it is measured in degrees. Common used values are 90 (in the style of the original DOOM), but it can go up to 120 (standard binocular vision). Higher values may make the environment look distorted.
+
 G {.unnumbered .unlisted}
 -----
 

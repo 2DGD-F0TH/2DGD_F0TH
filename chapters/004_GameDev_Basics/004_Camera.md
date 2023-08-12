@@ -34,8 +34,33 @@ In a more friendly way, we can see our viewport as a "window" that moves around 
 
 [^jawbreaker]: Jawbreaker tileset, listed as public domain at [https://adamatomic.itch.io/jawbreaker](https://adamatomic.itch.io/jawbreaker)
 
-Most used camera types
-----------------------
+Cameras and projections
+-----------------------
+
+:::: wizardry ::::
+This subsection gives a general idea on how cameras work in a 3D engine, but it is definitely useful to better understand how cameras work in general.
+::::::::::::::::::
+
+Cameras are just an approximation of of how we see things as humans. This approximation is due to a number of tradeoffs made to make things seem realistic, but avoid the issues that reality brings with itself.
+
+Let's look at how a person sees, in a somewhat schematic way:
+
+![How a person sees things](./images/camera/real_vision.svg){width=40%}
+
+A person can see anything directly in front of their eyes, to infinity (or at least until something blocks their vision, like a mountain, a building or fog).
+
+We're definitely having a couple of problems: the first one is that we cannot represent infinity on a computer. If we try to represent everything from the camera's point of view to infinity, we won't be able to play the game at all.
+
+The second issue is very close objects: in real life an object that is right up to your face will cover your entire vision. This may not be something that you want.
+
+This is why computers render only things between two given planes, like the following:
+
+![How videogame cameras see things](./images/camera/camera_vision.svg){width=40%}
+
+A videogame camera renders only what is situated between a "close plane" and a "far plane". Moreover objects are projected onto the screen, which may deform them if odd ["Field of View" (FOV)~\[g\]~](#gl_fov) values are used.
+
+Most used camera transitions and types
+--------------------------------------
 
 ### Static Camera
 
