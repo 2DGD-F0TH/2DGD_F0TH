@@ -184,6 +184,16 @@ Visual novels are graphical adventures whose primary objective is "telling a sto
 
 The more modern versions feature more interactive components and fully-fledged 3D graphics, but what ties the genre together is usually a "point and click" style of gameplay.
 
+### Puzzle games
+
+Puzzle games are centered about making the player think: they can test a lot of problem-solving skills from pattern recognition, to word completion, to logic.
+
+Some example of puzzle games include Lemmings, Boulder Dash, any match-3 game (started with "Shariki", followed by "Bejeweled" until the more modern titles for mobile phones), and Tetris.
+
+Puzzle games can involve math (like Sudoku), Physics (like the game "Peggle"), Hidden objects or even programming (for instance "Shenzen I/O" for "realistic programming", or "Opus Magnum" for a different approach).
+
+Nothing stops other genres from including puzzle elements, but this small section is dedicated to the games that feature puzzle elements as their core mechanic.
+
 Miscellaneous
 -------------
 
