@@ -57,7 +57,7 @@ This is why computers render only things between two given planes, like the foll
 
 ![How videogame cameras see things](./images/camera/camera_vision.svg){width=40%}
 
-A videogame camera renders only what is situated between a "close plane" and a "far plane". Moreover objects are projected onto the screen, which may deform them if odd ["Field of View" (FOV)~\[g\]~](#gl_fov) values are used.
+A videogame camera renders only what is situated between a "close plane" and a "far plane" (this means that objects too close or too far from the camera will not be rendered). Moreover objects are projected onto the screen, which may deform them if odd ["Field of View" (FOV)~\[g\]~](#gl_fov) values are used.
 
 Most used camera transitions and types
 --------------------------------------
