@@ -250,6 +250,10 @@ We can use what we learned with probability to create a tiered prize pool. For i
 
 ![Intuitive representation of our prize pool](./images/maths/probability_prize_pool.svg){width=40%}
 
+:::: longdesc ::::
+A bar showing the distribution of prize categories. The bar starts from 0 and ends at 100. The bar is divided in 4 colours: gray (common items) takes up 50% of the total space, green (uncommon items) takes up 30% of the total space, blue (rare items) takes up 15% of the total space, while orange (epic items) takes up the remaining 5%.
+::::::::::::::::::
+
 In that case we can chain ifs to bring our tiered prize pool to life:
 
 ```{src=maths/probability_tiered_pool caption="How to implement a tiered prize pool selector"}

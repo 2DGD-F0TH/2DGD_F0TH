@@ -191,3 +191,7 @@ Special note about clearing the screen: this is an operation that sometimes may 
 ![How not clearing the screen can create glitches](./images/gameloop/glitchy_noclear.png){width=50%}
 
 In the previous image, we can see how a black screen with only a FPS counter can end up drawing all kinds of glitches when the screen buffer is not cleared: we can clearly see the FPS counter, but the rest of the screen should be empty, instead the GPU is trying to represent residual data from its memory, causing the glitches.
+
+![Another type of glitch created by not clearing the screen](./images/gameloop/glitchy_noclear_2.png){width=50%}
+
+If you forget to clear your screen or set a background every frame, the old buffer data will remain on screen, creating a "trail-like" effect on your game, which is probably undesirable.

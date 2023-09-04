@@ -19,6 +19,9 @@ all: pseudocode python cpp js lua epub_pseudocode epub_python epub_cpp epub_js e
 pseudocode: Makefile | output
 	$(PANDOC_STANDALONE) $(PANDOC_DEFAULT_ARGS) $(CHAPTERS_CMD) $(VERSION) $(PDF_TEMPLATE) -M proglang=pseudocode -o output/Pseudocode_Edition.pdf
 
+pseudocode_accessible: Makefile | output
+	$(PANDOC_STANDALONE) $(PANDOC_DEFAULT_ARGS) $(CHAPTERS_CMD) $(VERSION) $(PDF_TEMPLATE) -M proglang=pseudocode -M accessibility=1 -o output/Pseudocode_Edition.pdf
+
 python: Makefile | output
 	$(PANDOC_STANDALONE) $(PANDOC_DEFAULT_ARGS) $(CHAPTERS_CMD) $(VERSION) $(PDF_TEMPLATE) -M proglang=python -o output/Python_Edition.pdf
 

@@ -1,5 +1,9 @@
 local List = require 'pandoc.List'
+local metavars = require 'filters/metavars'
+
 function boxes(elem)
+    local has_longdesc = metavars.find_var("accessibility")
+
     if FORMAT:match 'latex' then
         -- Trivia box
         if elem.classes[1] == 'trivia' then
@@ -25,6 +29,15 @@ function boxes(elem)
         if elem.classes[1] == 'wizardry' then
             table.insert(elem.content, 1, pandoc.RawBlock('latex', '\\begin{wizardry}'))
             table.insert(elem.content, pandoc.RawBlock('latex', '\\end{wizardry}'))
+        end
+        -- Accessibility Long Description
+        if elem.classes[1] == 'longdesc' then
+            if has_longdesc ~= nil then
+                table.insert(elem.content, 1, pandoc.RawBlock('latex', '\\begin{longdesc}'))
+                table.insert(elem.content, pandoc.RawBlock('latex', '\\end{longdesc}'))
+            else
+                return {}
+            end
         end
         -- Cover
         if elem.classes[1] == 'cover' then
@@ -52,6 +65,13 @@ function boxes(elem)
         end
         if elem.classes[1] == 'wizardry' then
             table.insert(elem.content, 1, pandoc.RawBlock('html', '<div class="box-title">Advanced Wizardry!</div>'))
+        end
+        if elem.classes[1] == 'longdesc' then
+            if has_longdesc ~= nil then
+                table.insert(elem.content, 1, pandoc.RawBlock('html', '<div class="box-title">Long Description</div>'))
+            else
+                return {}
+            end
         end
         return elem
     end

@@ -220,6 +220,10 @@ The Cartesian plane is a plane that features a 2-dimensional coordinate system. 
 
 ![Example of a Cartesian plane](./images/maths/coord.svg){width=60%}
 
+:::: longdesc ::::
+A Cartesian plane, representing a grid overlaid by two axes, 90 degrees from each other. The X axis is represented with a double arrow going left to right. The Y axis is represented with a double arrow going bottom to top. The two axes cross each other in the center of the image (at the origin) and divide the plane in 4 quadrants which are numbered I, II, III, IV, starting from top right and going counterclockwise. Each axis is numbered from -8 to +8.
+::::::::::::::::::
+
 Using a Cartesian plane we can represent the position of items, as well as their shape, space occupation, as well as vectors that represent forces, velocity and direction.
 
 It is an essential tool for 2D game development, and it will be one of the abstractions we will use to represent items in a 2-Dimensional plane.
