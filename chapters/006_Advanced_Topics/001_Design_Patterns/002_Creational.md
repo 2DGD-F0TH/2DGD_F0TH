@@ -48,9 +48,40 @@ Table: Summary table for the Singleton Pattern
 
 ### Dependency Injection
 
+Dependency Injection is a very simple concept that is really hard to explain. It is essentially used to avoid having classes build instances of services (which may be other classes or functions) inside of themselves and instead receiving such services from outside.
+
+Let's make a concrete example. You have a class that takes care of everything concerning a file upload: from getting it from the internet, to logging to saving it to the hard disk.
+
+A first implementation would look something like the following:
+
+<!-- TODO: Add a "naive" implementation of a file upload system code -->
+
+What would happen if, instead of a hard disk you need to transfer the files to an external service like S3, or maybe it just needs to be saved into memory for further processing? You would probably need to duplicate the class to allow for these new "services".
+
+<!-- TODO: Add "duplicated" of file upload system -->
+
+A better solution for reuse would be having the "file saving service" separated from the entire "file upload" class, and instead having this service "injected" onto the "file upload" class. This can happen via setter functions, via constructors, builders, factories or even interface injection (where it's the dependency interface that provides a method to inject the dependency).
+
+<!-- TODO: Add Dependency injection version of the file upload system -->
+
+Since now the "file upload" class doesn't depend on how or where the file is saved, you can also substitute such "file saving service" with a mock during tests.
+
 {{placeholder}}
 
 <!-- TODO: Dependency injection design pattern -->
+
+------------------    ------------------------------------------------------------------------------
+**Pattern Name**      Dependency Injection
+
+**When to Use it**    In all situations that require a degree of configurability or where the behaviour of the code needs to be changed without direct editing.
+
+**Advantages**        Decreased coupling, reusability, maintainability, flexibility, less boilerplate code, allows for concurrent development of services, allows for easier unit testing.
+
+**Disadvantages**     Behaviour and construction are separated, which may make tracing code harder. May hinder IDE automation if implemented using reflection or dynamic programming.
+
+------------------------------------------------------------------------------------------------
+
+Table: Summary table for the Dependency Injection Pattern
 
 ### Prototype
 
