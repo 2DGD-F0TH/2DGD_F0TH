@@ -48,6 +48,6 @@ This can be done by "cutting" the player's field of vision using doors and unloa
 
 Another way could be using so-called "points of no return": rooms where you can't go back, forcing the player to continue on a certain almost-linear path. Be careful to not use too many of them, though! Players don't really appreciate seeing possibilities cut off from them.
 
-{{placeholder}}
-
-<!-- TODO: Dynamic loading: some games use closed rooms with nothing in them (double door) to unload the old map and load the new one dynamically without forcing a loading screen -->
+:::: tip ::::
+Elevators make good dynamic loading rooms: you're changing floors, so it makes sense to not being able to see anything outside and having an elevator animating while changing floors can "hide" that a loading operation is happening.
+:::::::::::::
