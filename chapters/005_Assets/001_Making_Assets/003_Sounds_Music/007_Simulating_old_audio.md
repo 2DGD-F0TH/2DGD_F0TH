@@ -57,10 +57,11 @@ Another limitation of the Paula chip is that 2 channels are strictly dedicated t
 
 The Sega Master System is a quite famous 8-bit console, which had moderate success, and has a lot in common (hardware-wise) with the portable Sega GameGear and those similarities extend to the sound chip too.
 
-The sound chip used is an equivalent of the Texas Instruments SN76489 which features 3 channels dedicated to square/pulse waves + a noise channel.
+The sound chip used is an equivalent of the Texas Instruments SN76489 (also known as PSG) which features 3 channels dedicated to square/pulse waves + a noise channel.
 
 :::: trivia ::::
 To be precise, the ancestor of the Master System, the SEGA SG-1000, used a real TI-SN76489, while the Master System uses a "clone" integrated into its VDP (Video Display Processor).
+Also the Japanese version of the Master system had an FM synthesizer chip too! To be precise it was the Yamaha YM2413, which gave a sound similar to the newer Sega Genesis/MegaDrive. Sadly such chip was removed for the international release.
 ::::::::::::::::
 
 #### Sega Genesis/MegaDrive
