@@ -7,16 +7,12 @@ deploy(){
     declare -A CHANNELS
 
     # Declare the channels
-    CHANNELS["pseudocode"]="output/Pseudocode_Edition.pdf"
-    CHANNELS["pseudocode-epub"]="output/Pseudocode_Edition.epub"
-    CHANNELS["python"]="output/Python_Edition.pdf"
-    CHANNELS["python-epub"]="output/Python_Edition.epub"
-    CHANNELS["cpp"]="output/C++_Edition.pdf"
-    CHANNELS["cpp-epub"]="output/C++_Edition.epub"
-    CHANNELS["javascript"]="output/JS_Edition.pdf"
-    CHANNELS["javascript-epub"]="output/JS_Edition.epub"
-    CHANNELS["lua"]="output/Lua_Edition.pdf"
-    CHANNELS["lua-epub"]="output/Lua_Edition.epub"
+    CHANNELS["pseudocode"]="output/pseudocode/"
+    CHANNELS["python"]="output/python/"
+    CHANNELS["cpp"]="output/cpp"
+    CHANNELS["javascript"]="output/js/"
+    CHANNELS["lua"]="output/lua/"
+    CHANNELS["complete_collection"]="output/"
 
     # Do the push thingy
     for channel in ${!CHANNELS[@]}; do
