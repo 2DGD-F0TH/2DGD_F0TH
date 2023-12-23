@@ -29,13 +29,15 @@ Layers allow you to work on something new without affecting what's already "read
 
 You can always "flatten the image" (merge all the layers into one) later.
 
-#### Sub-pixel animation
+#### Sub-pixel animation with palette cycling
 
 When drawing pixel-art, artists may face what looks to be an insurmountable issue: pixels are a discrete measure which cannot be divided further.
 
 This means that subtle movements may end up really difficult to represent: a character may look like it's laughing or shrugging, while it's only meant to breathe calmly (for instance in an idle animation).
 
 This is where sub-pixel animation comes into play: the basic idea is to play with the colors inside what you're drawing in a way that simulates movement, but the overall shape of the subject doesn't change (or is delayed in such a way that the change of shape looks smoother).
+
+This technique is called "palette cycling": by alternating two shades of the same colors in rapid succession, you are able to simulate animations that give the illusion of being "smaller than a single pixel".
 
 {{placeholder}}
 
