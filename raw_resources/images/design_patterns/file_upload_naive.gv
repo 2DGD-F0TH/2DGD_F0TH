@@ -1,0 +1,12 @@
+//
+// file_upload_naive.dot
+//
+// Created on 11-01-2024 by penaz
+//
+digraph G{
+	graph [layout=dot rankdir=LR]
+    A[label="Read HTTP input stream"]
+    B[label="Save to Local File"]
+
+    A -> B
+}

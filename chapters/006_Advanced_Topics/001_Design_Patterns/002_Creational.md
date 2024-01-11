@@ -54,17 +54,19 @@ Let's make a concrete example. You have a class that takes care of everything co
 
 A first implementation would look something like the following:
 
-<!-- TODO: Add a "naive" implementation of a file upload system code -->
+![A naive implementation of a local file upload system](./images/design_patterns/file_upload_naive.svg){width=50%}
 
 What would happen if, instead of a hard disk you need to transfer the files to an external service like S3, or maybe it just needs to be saved into memory for further processing? You would probably need to duplicate the class to allow for these new "services".
 
-<!-- TODO: Add "duplicated" of file upload system -->
+![A naive implementation of a file upload system on S3](./images/design_patterns/file_upload_naive_s3.svg){width=50%}
 
 A better solution for reuse would be having the "file saving service" separated from the entire "file upload" class, and instead having this service "injected" onto the "file upload" class. This can happen via setter functions, via constructors, builders, factories or even interface injection (where it's the dependency interface that provides a method to inject the dependency).
 
-<!-- TODO: Add Dependency injection version of the file upload system -->
+![Using Interfaces and DI to build a flexible file upload](./images/design_patterns/file_upload_di.svg){width=75%}
 
 Since now the "file upload" class doesn't depend on how or where the file is saved, you can also substitute such "file saving service" with a mock during tests.
+
+![Possible class structure for a DI file upload](./images/design_patterns/dependency_injection.svg){width=75%}
 
 {{placeholder}}
 

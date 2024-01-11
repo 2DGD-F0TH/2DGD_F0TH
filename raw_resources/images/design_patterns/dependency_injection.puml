@@ -1,0 +1,44 @@
+@startuml
+class UploadSystem{
+    -readStream();
+    -saveFunction: function;
+    +saveFromHttp(stream: HttpStream);
+}
+
+note left of UploadSystem
+    saveFromHttp() uses both readStream()
+    and calls the saveFunction variable
+    as a function (it is a function reference)
+end note
+
+interface SaveSystem{
+    +save(file:File);
+}
+
+class S3SaveSystem{
+    +save(file: File);
+}
+
+class LocalSaveSystem{
+    +save(file: File);
+}
+
+class UploadSystemBuilder{
+    + build_system(type: str);
+}
+
+note right of UploadSystemBuilder
+    if type == "S3" then
+       create UploadSystem and assign S3SaveSystem
+       to its saveFunction
+    else if type == "Local" then
+        create UploadSystem and assign LocalSaveSystem
+        to its saveFunction
+    end if
+end note
+
+S3SaveSystem ..|> SaveSystem
+LocalSaveSystem ..|> SaveSystem
+UploadSystem ..> SaveSystem: <<uses>>
+UploadSystemBuilder ..> UploadSystem: <<instantiates>>
+@enduml
