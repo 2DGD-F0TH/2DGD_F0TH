@@ -36,7 +36,7 @@ One of the characters, called "Misa", is the only character that is able to walk
 
 This means that you have to die multiple times before finding out that only one of the four characters in your party is able to cross certain floor tiles, that may be no different than the other tiles.
 
-#### Can't run away from battles, but enemies can
+#### You can't run away from battles, but enemies can
 
 In this RPG you lack the option to run away from battles.
 
