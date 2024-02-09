@@ -150,6 +150,11 @@ Considering what we've seen so far, we can say that memoization should be used o
 If we start using memoization techniques on all functions, we may end up with a software that occupies a lot of memory without any significant speedup. Moderation is key.
 :::::::::::::::::
 
+Here's how a memoization pattern could be implemented:
+
+```{src='optimization/memoization' caption='An example of memoization'}
+```
+
 ### Approximations
 
 Many times when developing games we don't need to have a value that is precise to the 10th decimal digit, that's where approximation comes into hand.
