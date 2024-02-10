@@ -99,6 +99,10 @@ Mods are a great way to engage your community, and the are just so many types of
 
 Refining and giving out your own map editor can be a really great way to make your game more "open to editing" and allow modders to enjoy working on it, after that, if your game structure allows it, you could document the engine and allow people to create their own masterpieces, maps and fan-made stories.
 
+::: trivia :::
+Even after over 30 years since its release, the original DOOM is still receiving a lot of support from modders, and not only modders! John Romero has released "Sigil" in 2019, a megawad that is an "officially unofficial" 5th episode. And in 2023 "Sigil II" was released. That's quite a lifespan!
+::::::::::::::
+
 ### Fan games
 
 If your game becomes so famous that you manage to get a full franchise out of it, fan games are bound to happen: small games that take inspiration from your storyline and take different directions, according to the creators' will. This is a great opportunity to test how your current game is liked, and how people would like for its story to develop.
