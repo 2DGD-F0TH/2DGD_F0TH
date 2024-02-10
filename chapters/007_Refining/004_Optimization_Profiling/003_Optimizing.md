@@ -193,6 +193,10 @@ If we know that we are working with millions of values, and we are going through
 ```{src='optimization/lazy_mode' caption='A lazy object'}
 ```
 
+::: tip :::
+Lazy objects are great when you're working with bigger-than-RAM lists: each single value is in memory when needed, instead of the whole list. This comes at a cost: when you need to iterate on such list multiple times, the cost or re-evaluating the result may become a problem.
+:::::::::::
+
 ### Detach your updating from drawing
 
 An interesting approach to squeeze a bit more performance from your game could be detaching your updates from the drawing routine. For instance, your game could be refreshing its screen at 60fps, but its internal state is updated only 20 times a second.
