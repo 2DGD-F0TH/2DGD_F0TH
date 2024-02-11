@@ -171,9 +171,10 @@ This pattern should be used with extreme care and only when necessary, since add
 
 Table: Summary table for the Facade design pattern
 
-{{placeholder}}
+Here's an example of a possible facade pattern:
 
-<!-- TODO: Code for the facade pattern -->
+```{src='design_patterns/facade' caption='Example Implementation Of the Facade Pattern'}
+```
 
 ### Proxy
 
