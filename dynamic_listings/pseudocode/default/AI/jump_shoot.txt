@@ -1,0 +1,44 @@
+class Player{
+    // ...
+    function registerShootingObserver(function callback){
+        // Function used to register an observer that will be called when the
+        // player shoots a projectile.
+    }
+}
+
+class JumpingBoss{
+    // A boss that jumps when the player shoots. Sometimes.
+
+    boolean player_shot = False;
+    float y_velocity = 0.0;
+
+    constructor(float x, float y, Player player){
+        // ...
+        player.registerShootingObserver(this.setPlayerShot);
+        // ...
+    }
+
+    function setPlayerShot(){
+        // Sets a state that tells the AI that the player shot a bullet
+        this.player_shot = True;
+    }
+
+    function jump(){
+        // Sets the boss velocity to -10, making it jump
+        this.y_velocity = -10;
+    }
+
+    function update(float dt){
+        // ...
+        if (this.player_shot is True){
+            if (random_int(1, 5) == 1){
+                // Jump only 20% of the times the player shoots
+                this.jump();
+            }
+        }
+        // We reset player_shot to false, if we didn't the boss would jump
+        // a lot more often than 20% of the time
+        this.player_shot = False;
+        // ...
+    }
+}
