@@ -43,7 +43,7 @@ Axys aims to be a radical fork and refactoring of the Cocos2d-x engine, after th
 
 Cocos is a set of tools and engines that allow to code your games. It supports both 2D and 3D games and it provides all the basic functions needed to create your own game, like rendering, audio, physics and user input.
 
-The producer is now working on the new iteration: Cocos Creator, but Cocos2d-x is still available and considered a very mature project. If you fear it is going to be abandoned, you may want to check [Axys](#Axys)
+The producer is now working on the new iteration: Cocos Creator, but Cocos2d-x is still available and considered a very mature project. If you fear it is going to be abandoned, you may want to check [Axys](#axys)
 
 **Bindings:** C++, Lua, Javascript.
 

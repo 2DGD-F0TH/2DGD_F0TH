@@ -82,7 +82,7 @@ Sounds and Music {.unnumbered .unlisted}
 
 Audacity is an open-source tool for audio editing and recording, extensible with plugins. In the hands of an expert, this seemingly simple program can perform great feats.
 
-This program has been object of controversy due to licensing and telemetry, thus a fork has been made, called "Tenacity", which is [described below](#Tenacity)
+This program has been object of controversy due to licensing and telemetry, thus a fork has been made, called "Tenacity", which is [described below](#tenacity)
 
 <https://www.audacityteam.org/>
 
@@ -160,7 +160,7 @@ SFXR (and its other iterations) is a small software that can help you create 8-b
 
 <http://www.drpetter.se/project_sfxr.html>
 
-### Tenacity {.unnumbered .unlisted}
+### Tenacity {.unnumbered .unlisted #tenacity}
 
 Tenacity is a fork of the Audacity audio editor, mostly due to licensing woes and complaints about new telemetry functionalities and data collection inserted by the company that bought Audacity.
 
