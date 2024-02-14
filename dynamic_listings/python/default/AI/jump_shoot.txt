@@ -13,6 +13,7 @@ class JumpingBoss:
 
     player_shot = False
     y_velocity = 0.0
+    on_ground = False
 
     def __init__(self, x, y, player):
         # ...
@@ -25,7 +26,8 @@ class JumpingBoss:
 
     def jump(self):
         # Sets the boss velocity to -10, making it jump
-        self.y_velocity = -10
+        if self.on_ground:
+            self.y_velocity = -10
 
     def update(self, dt):
         # ...

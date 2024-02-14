@@ -10,6 +10,7 @@ class JumpingBoss{
     // A boss that jumps when the player shoots. Sometimes.
 
     boolean player_shot = False;
+    boolean on_ground = False;
     float y_velocity = 0.0;
 
     constructor(float x, float y, Player player){
@@ -25,7 +26,9 @@ class JumpingBoss{
 
     function jump(){
         // Sets the boss velocity to -10, making it jump
-        this.y_velocity = -10;
+        if (this.on_ground){
+            this.y_velocity = -10;
+        }
     }
 
     function update(float dt){

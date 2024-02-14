@@ -15,6 +15,7 @@ class JumpingBoss{
 
     private:
         bool player_shot = false;
+        bool on_ground = false;
         float y_velocity = 0.0;
 
     public:
@@ -32,7 +33,9 @@ class JumpingBoss{
 
         void jump(){
             // Sets the boss velocity to -10, making it jump
-            y_velocity = -10;
+            if (on_ground){
+                y_velocity = -10;
+            }
         }
 
         void update(float dt){
