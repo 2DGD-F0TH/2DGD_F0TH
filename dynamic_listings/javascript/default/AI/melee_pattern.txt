@@ -4,6 +4,8 @@ class Boss{
         this.player_too_far = false;
         this.base_movement_velocity = 10;
         this.too_far_space = 30;
+        this.velocity = Vector2D();
+        this.position = Vector2D();
     }
 
     update(dt){
