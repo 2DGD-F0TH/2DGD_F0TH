@@ -6,7 +6,7 @@ import shutil
 import argparse
 from enum import IntEnum
 from os.path import join as pjoin
-from os.path import dirname, normpath, relpath
+from os.path import dirname, normpath, relpath, splitext
 from os import walk, listdir, sep
 
 ROOT_DIR = dirname(dirname(__file__))
@@ -43,7 +43,7 @@ class LVAPath:
         normalized_path = relpath(normpath(path), DIRECTORY)
         split_path = normalized_path.split(sep)
         self.path_components = split_path[2:]
-        self.internal_path = pjoin(*self.path_components, filename)
+        self.internal_path = pjoin(*self.path_components, splitext(filename)[0])
 
     def __eq__(self, o):
         """
@@ -98,7 +98,6 @@ def get_file_list() -> dict:
                 LVAPath(d, item)
                 for d, _, fn in walk(pjoin(DIRECTORY, language, variant))
                 for item in fn
-                if item.endswith("txt")
             }
     return files
 
