@@ -10,8 +10,8 @@ class Boss{
 
     function update(float dt){
         // ...
-        if (abs(player.position.x - this.position.x) < this.too_close_space){
-            if (abs(player.position.y - this.position.y) < this.too_close_space){
+        if (abs(this.player.position.x - this.position.x) < this.too_close_space){
+            if (abs(this.player.position.y - this.position.y) < this.too_close_space){
                 // The player is too close
                 if (rand_int(1,5) == 1){
                     // Add a bit of randomization
@@ -22,7 +22,7 @@ class Boss{
         // We're using a variable to preserve the "too close" state between frames
         if (this.player_too_close){
             // The player is too close, make some distance
-            Vector2D distance = this.position - player.position;
+            Vector2D distance = this.position - this.player.position;
             // Make it a direction
             Vector2D direction = distance.normalize();
             // This is the direction the boss should go now, transfer it to velocity
@@ -31,8 +31,8 @@ class Boss{
         // ...
         // The boss and player now have moved, let's see if they're far enough
         // ...
-        if (abs(player.position.x - this.position.x) > this.too_close_space){
-            if (abs(player.position.y - this.position.y) > this.too_close_space){
+        if (abs(this.player.position.x - this.position.x) > this.too_close_space){
+            if (abs(this.player.position.y - this.position.y) > this.too_close_space){
                 // The player is far enough now
                 this.player_too_close = False;
             }
