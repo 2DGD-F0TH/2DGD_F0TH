@@ -1,6 +1,14 @@
 local List = require 'pandoc.List'
 local metavars = require 'filters/metavars'
 
+local SUPPORTED_EXT = {
+    ["C++"] = ".cpp",
+    lua = ".lua",
+    python = ".py",
+    javascript = ".js",
+    pseudocode = ".txt"
+}
+
 function dynamic_codeblock(blk)
     if blk.attributes.src then
         local content = ""
@@ -12,7 +20,8 @@ function dynamic_codeblock(blk)
         if extension == nil or extension == "" then
             extension = "default"
         end
-        local fullpath = "dynamic_listings/" .. language .. "/" .. extension .. "/" .. blk.attributes.src .. ".txt"
+        local file_ext = SUPPORTED_EXT[language]
+        local fullpath = "dynamic_listings/" .. language .. "/" .. extension .. "/" .. blk.attributes.src .. file_ext
         local file_handler = io.open(fullpath)
         if not file_handler then
             io.stderr:write("Cannot open file " .. fullpath .. " | Skipping\n")
