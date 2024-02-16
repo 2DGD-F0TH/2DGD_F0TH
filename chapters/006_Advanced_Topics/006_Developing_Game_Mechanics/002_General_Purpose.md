@@ -143,6 +143,11 @@ As stated earlier, a third optional background can be added to deepen the parall
 
 The backgrounds should move all in the same direction, depending on the direction our character is moving: if our character is moving right, our moving backgrounds should move left.
 
+Here's an example of how a simple parallax scrolling can be implemented between two rectangles:
+
+```{src='developing_mechanics/parallax' caption='Example of parallax scrolling implementation'}
+```
+
 ### Avoid interactions between different input systems
 
 This is a small improvements that can be done on menu systems: if the player is using a keyboard to navigate the menu, the mouse should not interact with the menu.
