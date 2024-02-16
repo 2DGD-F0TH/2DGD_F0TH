@@ -68,6 +68,11 @@ Since now the "file upload" class doesn't depend on how or where the file is sav
 
 ![Possible class structure for a DI file upload](./images/design_patterns/dependency_injection.svg){width=75%}
 
+Dependency injection can be divided in two main categories:
+
+- **Setter injection:** In this case, an object has specific `set()` methods that allow you to set the dependency after the object has been constructed. This allows also for changing the dependency on the fly (useful to change the effect of a weapon, for instance);
+- **Constructor injection:** In this case, the injection happens in the class's constructor. The injected functionality is decided before the object that needs the dependency is constructed.
+
 {{placeholder}}
 
 <!-- TODO: Dependency injection design pattern -->
