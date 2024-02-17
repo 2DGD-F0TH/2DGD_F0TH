@@ -119,13 +119,9 @@ Particle can be even more complex: for instance you could add a variable to trac
 If you want your particles to behave in a more "randomized way", you may want to save less "initial status variables" and delegate more of the "reset logic" to the particle system.
 :::::::::::::
 
-{{placeholder}}
-
-<!-- TODO: What is a particle, how does it work, etc... -->
-
 ### Emitters
 
-A particle emitter represents a spot that "emits particles", it instantiates a list of particles and defines their initial settings. An emitter usually takes care of ignoring "dead particles" (the ones whose lifespan is over) as well as the ancillary cleanup.
+A particle emitter represents a spot that "emits particles", it instantiates a list of particles and defines their initial settings. An emitter usually takes care of ignoring (not rendering) "dead particles" (the ones whose lifespan is over) as well as the ancillary cleanup.
 
 Emitters can emit a stream of particles, as well as just a burst of them, or even both: it all depends on what you want your system to do.
 
@@ -144,10 +140,6 @@ If you want to recycle particles, your emitter will be a little more complex.
 
 ```{src='containers/particle_emitter_complex' caption='A more complex (and complete) particle emitter class'}
 ```
-
-{{placeholder}}
-
-<!-- TODO: What is a particle emitter, how does it work, etc... -->
 
 ### Force Application
 
@@ -169,9 +161,8 @@ This way we can influence the acceleration of a particle by using a force (repre
 
 ```{src='containers/particle_force' caption='A particle with mass and force application'}
 ```
-{{placeholder}}
 
-<!-- TODO: Talk about applying forces to particles -->
+This way, you can change how a particle behaves: for instance, you can apply a lateral force to a falling leaf to simulate wind. This way the falling leaves will not seem boring.
 
 Timers
 ------
