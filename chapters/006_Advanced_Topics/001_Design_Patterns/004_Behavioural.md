@@ -124,4 +124,4 @@ Table: Summary table for the Chain of Responsibility Pattern
 
 {{placeholder}}
 
-<!-- TODO: Visitor Design pattern -->
+<!-- TODO: Visitor Design pattern + code -->
