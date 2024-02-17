@@ -75,7 +75,7 @@ Dependency injection can be divided in two main categories:
 
 {{placeholder}}
 
-<!-- TODO: Dependency injection design pattern -->
+<!-- TODO: Code for dependency injection design pattern -->
 
 ------------------    ------------------------------------------------------------------------------
 **Pattern Name**      Dependency Injection
