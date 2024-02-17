@@ -20,6 +20,8 @@ rectangle_2 = Rectangle(x=245,
                         width=150,
                         height=100,
                         fill_color=(0, 255, 0))
+rectangle_1_speed = 7
+rectangle_2_speed = 14
 
 # This will be 1 for right and -1 for left
 movement_direction = 0
@@ -55,7 +57,7 @@ while running:
     # Fill the display with black
     screen_surface.fill((0, 0, 0))
     # Draw the rectangles
-    rectangle_1.draw_on(screen)
-    rectangle_2.draw_on(screen)
+    rectangle_1.draw_on(screen_surface)
+    rectangle_2.draw_on(screen_surface)
     # Show the result on screen
     screen_surface.display()
