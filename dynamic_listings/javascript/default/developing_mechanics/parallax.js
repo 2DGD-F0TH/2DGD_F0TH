@@ -5,7 +5,7 @@ class Rectangle{
 }
 
 // We create a display surface of 640x480 pixels
-let screen_surface = engine.set_display((640, 480))
+let screen_surface = engine.set_display((640, 480));
 
 // We keep the second rectangle a bit lower to be able to see both
 let rectangle_1 = new Rectangle(x=245,
