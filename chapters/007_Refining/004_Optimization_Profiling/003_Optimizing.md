@@ -207,4 +207,14 @@ This means that you can process AI less times (thus "check for player's presence
 
 Detaching your updates from the drawing routines usually entails a change of language too: when you're talking about drawing cycles, we talk about "frames", while when you're talking about updates, you should be talking about "game ticks".
 
+### Be mindful of how you query your data structures
+
+Sometimes small precautions can avoid a great deal of pain when it comes to optimizing our game.
+
+Let's imagine that our game makes use of a single-file database (for instance SQLite) to save and load settings.
+
+It is a lot harder for a database to deal with multiple small queries than dealing with one big query instead. So if you need to extract some data, try to avoid querying a database inside of a loop: instead focus on what data you need, extract all the data you need at once and then loop on the result of the extraction.
+
+This doesn't apply only to databases, but also other data structures that allow for filtering.
+
 {{placeholder}}
