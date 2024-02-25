@@ -39,7 +39,7 @@ function make_text(string to_write){
         final_text.draw(graphical_letter, {current_pixel, 0});
         // Now we prepare for the next loop, by increasing the current pixel by 32 (thus moving
         // our "cursor" right)
-        current_pixel += 32;
+        current_pixel += TILE_WIDTH;
     }
     // After the loop exits, our text is ready to be used
     return final_text;
