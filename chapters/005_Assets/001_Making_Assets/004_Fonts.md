@@ -41,9 +41,28 @@ Monospaced fonts are used for computer texts, coding and ascii-art. Examples of 
 
 ### Using textures to make text
 
-{{placeholder}}
+If you want to make text to show on the screen, an idea could be creating a sprite sheet that contains all the characters that you want to use, then you can split it at runtime and (knowing that each letter is in a grid) you can index each letter by its position and write text.
 
-<!-- TODO: Good and fast, but issues with scaling and resizing -->
+Let's imagine the simplest case: we need to use only uppercase letters, and our sprite sheet is 1 row by 26 columns:
+
+![A simple spritesheet for rendering text using textures](./images/resources/texture_text.svg){width=90%}
+
+That looks awfully similar to an array, doesn't it? We just need to know how big each tile is (and the easiest way to do so it making them all the same size) and their index in the array, connect them to a letter and we can make text!
+
+![Indexing our spritesheet for rendering](./images/resources/texture_text_index.svg){width=40%}
+
+So, if we were to write the word "HELLO", we would need the letters at index 7, 4, 11 (twice) and 14. If the tiles were 32 x 32 pixels, we would need a surface that is 32 pixels tall and 160 pixels wide.
+
+The code to make text from a texture could look something like this:
+
+```{src='resources/texture_text' caption='A simple algorithm to create a text using a texture'}
+```
+
+And that's how you get a text from a texture. Pun (maybe) not intended.
+
+This is a really quick way to render some text, and it has some great advantages: the characters can be as complex as you want, your spritesheet contains only the characters that you need (and not anything else), for instance.
+
+But with those advantages, you can have some disadvantages: scaling and resizing can be a true issue. You are not rendering any "vector graphics" (like real fonts do), so if you have to scale up the text, it may result in fuzziness or pixellated look.
 
 ### Using Fonts to make text
 
