@@ -1,6 +1,8 @@
 Want to contribute? Thank you!
 ==============================
 
+Want to start from scratch? [Check out the in-depth guide!](https://github.com/2DGD-F0TH/2DGD_F0TH/wiki/Contributing_Advanced)
+
 How to contribute
 -----------------
 
