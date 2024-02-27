@@ -60,13 +60,30 @@ The code to make text from a texture could look something like this:
 
 And that's how you get a text from a texture. Pun (maybe) not intended.
 
-This is a really quick way to render some text, and it has some great advantages: the characters can be as complex as you want, your spritesheet contains only the characters that you need (and not anything else), for instance.
+------------------    ------------------------------------------------------------------------------
+**Rendering style**   Spritesheet-based
 
-But with those advantages, you can have some disadvantages: scaling and resizing can be a true issue. You are not rendering any "vector graphics" (like real fonts do), so if you have to scale up the text, it may result in fuzziness or pixellated look.
+**When to use it**    When you need very complex shapes and colors (even multiple colors in the same letter).
+
+**Advantages**        Customizability. Simplicity (once you have created the rendering functions). May save some space compared to other methods (you only have the characters that you need). Editing the font doesn't need extra programs (you just need your usual spritesheet editor).
+
+**Disadvantages**     Scaling and resizing can be problematic: scaling up may look fuzzy (if filtering is applied) or pixellated (if no filtering is applied), scaling down can result in loss of shape and detail.
+------------------    ------------------------------------------------------------------------------
 
 ### Using Fonts to make text
 
-{{placeholder}}
+Another way to make text is using fonts: there are a couple of formats you can use, like TTF and OTF.
 
-<!-- TODO: Good and resizes well, but can be slower cause the text needs to be rendered -->
+The advantage of this system is that usually well supported by the engine or library that you use. This means that you don't need to write code exclusive to font rendering, which means you don't have to write code that may contain bugs itself.
 
+There are also some limitations, due to how fonts are built: you can only use a single color, for instance.
+
+------------------    ------------------------------------------------------------------------------
+**Rendering style**   Font-based
+
+**When to use it**    When you want fonts that won't lost detail or crispness when they get resized.
+
+**Advantages**        Rendering functions are usually part of the engine or library. Fonts resist resizing very well, being usually based on vector graphics.
+
+**Disadvantages**     Editing fonts requires specific programs. Can only use one color at a time. Limited customizability.
+------------------    ------------------------------------------------------------------------------
