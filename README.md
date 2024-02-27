@@ -34,6 +34,7 @@
         <li><a href="#screenshots">Screenshots</a></li>
         <li><a href="#contributing">Contributing</a></li>
         <li><a href="#license">License</a></li>
+        <li><a href="#my-stance-on-ai">My stance on AI</a></li>
     </ol>
 </details>
 
@@ -127,5 +128,22 @@ License
 This project is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike License.
 
 [Learn more](/docs/license_reasoning.md)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+My stance on AI
+---------------
+
+Even though AI can be an undeniably useful tool in some situations, I seriously don't like the thought of seeing my (and other people's) hard work being mixed into what is essentially a probabilistic melting pot that can be used by unprincipled people for their own personal gain.
+
+This means that any contribution that is found to be the product of generative AI will also immediately be deleted and the contributor may be banned from making further contributions if the usage of AI was done in bad faith.
+
+This also means that any use of this book to train generative AI is **forbidden**.
+
+AI is an ethical mess right now: books, blogs, microblogging posts are all melded together without any regard for copyright, correctness or quality into a result that is "semantically and syntactically *probably* correct" but is of inferior quality to the sum of its sources.
+
+To that we have to add the issue of AI self-feeding: AI-generated solutions and posts are invading the Internet, which in turn will enter the generative AI training loop, lowering the quality of responses further.
+
+I know that this is a further restriction on the "free as in freedom" principle of this project, and this book may not be "the ultimate Body of Knowledge" on game development, but I want it to be at least somewhat curated.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
