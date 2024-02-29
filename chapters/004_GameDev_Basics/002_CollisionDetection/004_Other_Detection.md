@@ -49,6 +49,7 @@ By "tile-based movement" I mean that if you press any direction for even the sma
 
 The idea behind this kind of collision detection is very simple: some tiles are marked as walls. When the player wants to move in a certain direction, the game will check the tile in the chosen direction, if it's a wall the movement will be blocked, if it's passable the game will tween (usually using an offset parameter) the player travelling between tiles.
 
-{{placeholder}}
+```{src='collisiondetection/tile_offset' caption='Tile + Offset collision detection'}
+```
 
-<!-- TODO: Useful for games like pacman, check the direction where you are going using the offset, if the next cell is a wall, react -->
+This code shows only how to update the internal status of the player, which is what we care about. As you can see, the code is extremely simple, which makes for a great collision detection algorithm that doesn't use a lot of resources. This algorithm can be extended and improved by handling collision with anything else that isn't a wall (maybe enemy units?).
