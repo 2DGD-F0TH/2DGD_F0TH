@@ -79,6 +79,8 @@ We can switch back and forth between the two domains with "transforms", the most
 
 <!-- TODO: FFT, to turn time domain into frequency domain -->
 
+<!-- Something that could be helpful is the small SFML spectrum analyzer @ https://github.com/lienminhquang/Spectrum , it contains a small FFT algorithm and how to draw a spectrum. Beat detection could be done by detecting when an average over certain frequencies goes over a certain threshold -->
+
 #### Beat Detection
 
 {{placeholder}}
