@@ -7,23 +7,23 @@ class TiledPlayer{
         // ...
         // Check which direction is the player going
         if (KEYBOARD.Up_Arrow_Pressed){
-            offset.y = -1;
+            this.offset.y = -1;
         }
         if (KEYBOARD.Down_Arrow_Pressed){
-            offset.y = 1;
+            this.offset.y = 1;
         }
         if (KEYBOARD.Right_Arrow_Pressed){
-            offset.x = 1;
+            this.offset.x = 1;
         }
         if (KEYBOARD.Left_Arrow_Pressed){
-            offset.x = -1;
+            this.offset.x = -1;
         }
         // Get the destination tile
-        next_position = current_position + offset;
+        this.next_position = this.current_position + this.offset;
         // Is the tile a wall?
-        if (not MAP.get_tile(next_position).isWall()){
+        if (not MAP.get_tile(this.next_position).isWall()){
             // No, move the player to the new tile
-            current_position = next_position;
+            this.current_position = this.next_position;
         }
         // ...
     }
