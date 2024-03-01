@@ -76,3 +76,35 @@ Using the table, we can see that we have a $1$ in "row A, column B", which means
 ### Trees
 
 {{placeholder}}
+
+<!-- TODO: Talk about trees, with a special focus on binary trees -->
+
+#### Depth-first Search
+
+{{placeholder}}
+
+<!-- TODO: Talk about DFS and what uses it has -->
+
+##### Pre-order Traversal
+
+{{placeholder}}
+
+<!-- TODO: Node - Right - Left in Binary Trees -->
+
+##### In-order Traversal
+
+{{placeholder}}
+
+<!-- TODO: Left - Node - Right in Binary Trees -->
+
+##### Post-order Traversal
+
+{{placeholder}}
+
+<!-- TODO: Left - Right - Node in Binary Trees -->
+
+#### Breadth-first search
+
+{{placeholder}}
+
+<!-- TODO: Search by layers -->
