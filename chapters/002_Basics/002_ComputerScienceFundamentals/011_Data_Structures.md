@@ -93,7 +93,7 @@ The Depth-first search is a so-called "tree traversal algorithm", which means th
 
 As said earlier, we will focus on binary trees.
 
-![Order in which the nodes are visited during DFS](./images/computer_science/dfs_traversal_order.svg){width=40%}
+![Order in which the nodes are visited during DFS](./images/computer_science/tree_traversal_dfs.svg){width=40%}
 
 Depth-first search can be useful in the following situations (as well as others):
 
