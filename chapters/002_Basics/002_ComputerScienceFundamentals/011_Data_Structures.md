@@ -87,6 +87,13 @@ Trees are the base structure for a lot of other data structures, like heaps and 
 
 In this book we will focus mostly on binary trees: trees where each node has at most 2 children.
 
+A possible implementation of a tree could be the following:
+
+```{src='computer_science/tree' caption='A possible implementation of a tree class'}
+```
+
+<!-- TODO: Tree code implementation -->
+
 #### Depth-first Search
 
 The Depth-first search is a so-called "tree traversal algorithm", which means that it's essentially a way to explore a tree structure. In this case, the algorithm will try to reach the nodes farthest from the root first, before "backtracking" (that means before going "back towards the root").
