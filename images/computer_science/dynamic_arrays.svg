@@ -1,40 +1,189 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
-<svg width="35cm" height="17cm" viewBox="72 55 686 336" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-  <text font-size="27.0933" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="72" y="84">
-    <tspan x="72" y="84">Dynamic_Array</tspan>
-  </text>
-  <g>
-    <rect style="fill: #ffffff" x="273" y="158" width="484" height="232"/>
-    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="273" y="158" width="484" height="232"/>
+<svg
+   width="35cm"
+   height="17cm"
+   viewBox="72 55 686 336"
+   version="1.1"
+   id="svg8"
+   sodipodi:docname="dynamic_arrays.svg"
+   inkscape:version="1.3.2 (091e20ef0f, 2023-11-25, custom)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs8" />
+  <sodipodi:namedview
+     id="namedview8"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="cm"
+     inkscape:zoom="1.3120221"
+     inkscape:cx="661.57424"
+     inkscape:cy="321.25984"
+     inkscape:window-width="2560"
+     inkscape:window-height="1019"
+     inkscape:window-x="1920"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg8" />
+  <text
+     font-size="27.0933"
+     style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal"
+     x="72"
+     y="84"
+     id="text1"><tspan
+       x="72"
+       y="84"
+       id="tspan1">Dynamic_Array</tspan></text>
+  <g
+     id="g2">
+    <rect
+       style="fill: #ffffff"
+       x="273"
+       y="158"
+       width="484"
+       height="232"
+       id="rect1" />
+    <rect
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       x="273"
+       y="158"
+       width="484"
+       height="232"
+       id="rect2" />
   </g>
-  <g>
-    <rect style="fill: #ffffff" x="435" y="297" width="286" height="54"/>
-    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #7f7f7f" x1="506.5" y1="297" x2="506.5" y2="351"/>
-    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #7f7f7f" x1="578" y1="297" x2="578" y2="351"/>
-    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #7f7f7f" x1="649.5" y1="297" x2="649.5" y2="351"/>
-    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="435" y="297" width="286" height="54"/>
+  <g
+     id="g5">
+    <rect
+       style="fill: #ffffff"
+       x="435"
+       y="297"
+       width="286"
+       height="54"
+       id="rect3" />
+    <line
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #7f7f7f"
+       x1="506.5"
+       y1="297"
+       x2="506.5"
+       y2="351"
+       id="line3" />
+    <line
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #7f7f7f"
+       x1="578"
+       y1="297"
+       x2="578"
+       y2="351"
+       id="line4" />
+    <line
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #7f7f7f"
+       x1="649.5"
+       y1="297"
+       x2="649.5"
+       y2="351"
+       id="line5" />
+    <rect
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       x="435"
+       y="297"
+       width="286"
+       height="54"
+       id="rect5" />
   </g>
-  <text font-size="18.0622" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="463" y="330">
-    <tspan x="463" y="330">1           2          3</tspan>
-  </text>
-  <g>
-    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 356,249 A 84.1625,84.1625 0 0 0 424.149,322.685"/>
-    <polygon style="fill: #000000" points="423.739,328.381 434.002,323.944 424.295,318.397 "/>
-    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="423.739,328.381 434.002,323.944 424.295,318.397 "/>
+  <g
+     id="g6">
+    <path
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       d="M 356,249 A 84.1625,84.1625 0 0 0 424.149,322.685"
+       id="path5" />
+    <polygon
+       style="fill: #000000"
+       points="423.739,328.381 434.002,323.944 424.295,318.397 "
+       id="polygon5" />
+    <polygon
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       points="423.739,328.381 434.002,323.944 424.295,318.397 "
+       id="polygon6" />
   </g>
-  <text font-size="18.0622" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="288" y="239">
-    <tspan x="288" y="239">Native_array</tspan>
-  </text>
-  <text font-size="18.0622" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="617" y="187">
-    <tspan x="617" y="187">Capacity: 4</tspan>
-  </text>
-  <g>
-    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 131,107 A 172.901,172.901 0 0 0 262.261,271.697"/>
-    <polygon style="fill: #000000" points="261.284,276.956 272.016,273.821 263.07,267.116 "/>
-    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="261.284,276.956 272.016,273.821 263.07,267.116 "/>
+  <text
+     font-size="18.0622"
+     style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal"
+     x="288"
+     y="239"
+     id="text6"><tspan
+       x="288"
+       y="239"
+       id="tspan6">Native_array</tspan></text>
+  <text
+     font-size="18.0622"
+     style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal"
+     x="617"
+     y="187"
+     id="text7"><tspan
+       x="617"
+       y="187"
+       id="tspan7">Capacity: 4</tspan></text>
+  <g
+     id="g8">
+    <path
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       d="M 131,107 A 172.901,172.901 0 0 0 262.261,271.697"
+       id="path7" />
+    <polygon
+       style="fill: #000000"
+       points="261.284,276.956 272.016,273.821 263.07,267.116 "
+       id="polygon7" />
+    <polygon
+       style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+       points="261.284,276.956 272.016,273.821 263.07,267.116 "
+       id="polygon8" />
   </g>
-  <text font-size="18.0622" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="617.9" y="213.366">
-    <tspan x="617.9" y="213.366">Filled: 3</tspan>
-  </text>
+  <text
+     font-size="18.0622"
+     style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal"
+     x="617.9"
+     y="213.366"
+     id="text8"><tspan
+       x="617.9"
+       y="213.366"
+       id="tspan8">Filled: 3</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:16.7341px;line-height:1.25;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';letter-spacing:0px;word-spacing:0px;stroke-width:0.522941"
+     x="535.99561"
+     y="328.22543"
+     id="text9"><tspan
+       sodipodi:role="line"
+       id="tspan9"
+       style="stroke-width:0.522941"
+       x="535.99561"
+       y="328.22543">2</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:16.7341px;line-height:1.25;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';letter-spacing:0px;word-spacing:0px;stroke-width:0.522941"
+     x="608.04584"
+     y="328.10693"
+     id="text10"><tspan
+       sodipodi:role="line"
+       id="tspan10"
+       style="stroke-width:0.522941"
+       x="608.04584"
+       y="328.10693">3</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:16.7341px;line-height:1.25;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';letter-spacing:0px;word-spacing:0px;stroke-width:0.522941"
+     x="463.38162"
+     y="328.11511"
+     id="text11"><tspan
+       sodipodi:role="line"
+       id="tspan11"
+       style="stroke-width:0.522941"
+       x="463.38162"
+       y="328.11511">1</tspan></text>
 </svg>

@@ -1,201 +1,834 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
-<svg width="74cm" height="38cm" viewBox="72 48 1465 755" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-  <g>
-    <text font-size="27.0933" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="845.9" y="490.748">
-      <tspan x="845.9" y="490.748">Dynamic_Array</tspan>
-    </text>
-    <g>
-      <rect style="fill: #ffffff" x="1046.9" y="564.748" width="484" height="232"/>
-      <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="1046.9" y="564.748" width="484" height="232"/>
+<svg
+   width="74cm"
+   height="38cm"
+   viewBox="72 48 1465 755"
+   version="1.1"
+   id="svg48"
+   sodipodi:docname="dynamic_arrays_insert_tail.svg"
+   inkscape:version="1.3.2 (091e20ef0f, 2023-11-25, custom)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs48" />
+  <sodipodi:namedview
+     id="namedview48"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="cm"
+     inkscape:zoom="0.71194823"
+     inkscape:cx="2400.4554"
+     inkscape:cy="1085.0508"
+     inkscape:window-width="2560"
+     inkscape:window-height="1019"
+     inkscape:window-x="1920"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g12" />
+  <g
+     id="g12">
+    <text
+       font-size="27.0933"
+       style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal"
+       x="845.9"
+       y="490.748"
+       id="text1"><tspan
+         x="845.9"
+         y="490.748"
+         id="tspan1">Dynamic_Array</tspan></text>
+    <g
+       id="g2">
+      <rect
+         style="fill: #ffffff"
+         x="1046.9"
+         y="564.748"
+         width="484"
+         height="232"
+         id="rect1" />
+      <rect
+         style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+         x="1046.9"
+         y="564.748"
+         width="484"
+         height="232"
+         id="rect2" />
     </g>
-    <g>
-      <rect style="fill: #ffffff" x="1209.9" y="672.748" width="286" height="97.2514"/>
-      <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #7f7f7f" x1="1209.9" y1="721.374" x2="1495.9" y2="721.374"/>
-      <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #7f7f7f" x1="1281.4" y1="672.748" x2="1281.4" y2="769.999"/>
-      <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #7f7f7f" x1="1352.9" y1="672.748" x2="1352.9" y2="769.999"/>
-      <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #7f7f7f" x1="1424.4" y1="672.748" x2="1424.4" y2="769.999"/>
-      <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="1209.9" y="672.748" width="286" height="97.2514"/>
+    <g
+       id="g6">
+      <rect
+         style="fill: #ffffff"
+         x="1209.9"
+         y="672.748"
+         width="286"
+         height="97.2514"
+         id="rect3" />
+      <line
+         style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #7f7f7f"
+         x1="1209.9"
+         y1="721.374"
+         x2="1495.9"
+         y2="721.374"
+         id="line3" />
+      <line
+         style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #7f7f7f"
+         x1="1281.4"
+         y1="672.748"
+         x2="1281.4"
+         y2="769.999"
+         id="line4" />
+      <line
+         style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #7f7f7f"
+         x1="1352.9"
+         y1="672.748"
+         x2="1352.9"
+         y2="769.999"
+         id="line5" />
+      <line
+         style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #7f7f7f"
+         x1="1424.4"
+         y1="672.748"
+         x2="1424.4"
+         y2="769.999"
+         id="line6" />
+      <rect
+         style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+         x="1209.9"
+         y="672.748"
+         width="286"
+         height="97.2514"
+         id="rect6" />
     </g>
-    <g>
-      <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 1129.9,655.748 A 76.9173,76.9173 0 0 0 1198.99,721.153"/>
-      <polygon style="fill: #000000" points="1199.17,726.925 1208.9,721.425 1198.66,716.938 "/>
-      <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="1199.17,726.925 1208.9,721.425 1198.66,716.938 "/>
+    <g
+       id="g7">
+      <path
+         style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+         d="M 1129.9,655.748 A 76.9173,76.9173 0 0 0 1198.99,721.153"
+         id="path6" />
+      <polygon
+         style="fill: #000000"
+         points="1199.17,726.925 1208.9,721.425 1198.66,716.938 "
+         id="polygon6" />
+      <polygon
+         style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+         points="1199.17,726.925 1208.9,721.425 1198.66,716.938 "
+         id="polygon7" />
     </g>
-    <text font-size="18.0622" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="1061.9" y="645.748">
-      <tspan x="1061.9" y="645.748">Native_array</tspan>
-    </text>
-    <text font-size="18.0622" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="1390.9" y="593.748">
-      <tspan x="1390.9" y="593.748">Capacity: 8</tspan>
-    </text>
-    <g>
-      <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 904.9,513.748 A 172.901,172.901 0 0 0 1036.16,678.445"/>
-      <polygon style="fill: #000000" points="1035.18,683.704 1045.92,680.569 1036.97,673.864 "/>
-      <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="1035.18,683.704 1045.92,680.569 1036.97,673.864 "/>
+    <text
+       font-size="18.0622"
+       style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal"
+       x="1061.9"
+       y="645.748"
+       id="text7"><tspan
+         x="1061.9"
+         y="645.748"
+         id="tspan7">Native_array</tspan></text>
+    <text
+       font-size="18.0622"
+       style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal"
+       x="1390.9"
+       y="593.748"
+       id="text8"><tspan
+         x="1390.9"
+         y="593.748"
+         id="tspan8">Capacity: 8</tspan></text>
+    <g
+       id="g9">
+      <path
+         style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+         d="M 904.9,513.748 A 172.901,172.901 0 0 0 1036.16,678.445"
+         id="path8" />
+      <polygon
+         style="fill: #000000"
+         points="1035.18,683.704 1045.92,680.569 1036.97,673.864 "
+         id="polygon8" />
+      <polygon
+         style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+         points="1035.18,683.704 1045.92,680.569 1036.97,673.864 "
+         id="polygon9" />
     </g>
-    <text font-size="18.0622" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="1391.8" y="620.114">
-      <tspan x="1391.8" y="620.114">Filled: 5</tspan>
-    </text>
-    <text font-size="18.0622" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="1241.4" y="752.248">
-      <tspan x="1241.4" y="752.248">0</tspan>
-    </text>
-    <text font-size="18.0622" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="1192" y="548">
-      <tspan x="1192" y="548">Inserting new element</tspan>
-    </text>
-    <text font-size="18.0622" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="1239.9" y="705.366">
-      <tspan x="1239.9" y="705.366">1           2          3          4</tspan>
-    </text>
+    <text
+       font-size="18.0622"
+       style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal"
+       x="1391.8"
+       y="620.114"
+       id="text9"><tspan
+         x="1391.8"
+         y="620.114"
+         id="tspan9">Filled: 5</tspan></text>
+    <text
+       font-size="18.0622"
+       style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal"
+       x="1241.4"
+       y="752.248"
+       id="text10"><tspan
+         x="1241.4"
+         y="752.248"
+         id="tspan10">0</tspan></text>
+    <text
+       font-size="18.0622"
+       style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal"
+       x="1192"
+       y="548"
+       id="text11"><tspan
+         x="1192"
+         y="548"
+         id="tspan11">Inserting new element</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:16.8219px;line-height:1.25;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';letter-spacing:0px;word-spacing:0px;stroke-width:0.525685"
+       x="1241.05"
+       y="705.50909"
+       id="text49-9"><tspan
+         sodipodi:role="line"
+         id="tspan49-1"
+         style="stroke-width:0.525685"
+         x="1241.05"
+         y="705.50909">1</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:16.8219px;line-height:1.25;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';letter-spacing:0px;word-spacing:0px;stroke-width:0.525685"
+       x="1313.3347"
+       y="705.62"
+       id="text50-2"><tspan
+         sodipodi:role="line"
+         id="tspan50-7"
+         style="stroke-width:0.525685"
+         x="1313.3347"
+         y="705.62">2</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:16.8219px;line-height:1.25;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';letter-spacing:0px;word-spacing:0px;stroke-width:0.525685"
+       x="1385.0526"
+       y="705.50085"
+       id="text51-0"><tspan
+         sodipodi:role="line"
+         id="tspan51-9"
+         style="stroke-width:0.525685"
+         x="1385.0526"
+         y="705.50085">3</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:16.8219px;line-height:1.25;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';letter-spacing:0px;word-spacing:0px;stroke-width:0.525685"
+       x="1456.9923"
+       y="705.50909"
+       id="text52-3"><tspan
+         sodipodi:role="line"
+         id="tspan52-6"
+         style="stroke-width:0.525685"
+         x="1456.9923"
+         y="705.50909">4</tspan></text>
   </g>
-  <g>
-    <text font-size="27.0933" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="72.9" y="489.748">
-      <tspan x="72.9" y="489.748">Dynamic_Array</tspan>
-    </text>
-    <g>
-      <rect style="fill: #ffffff" x="273.9" y="563.748" width="484" height="232"/>
-      <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="273.9" y="563.748" width="484" height="232"/>
+  <g
+     id="g25">
+    <text
+       font-size="27.0933"
+       style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal"
+       x="72.9"
+       y="489.748"
+       id="text13"><tspan
+         x="72.9"
+         y="489.748"
+         id="tspan13">Dynamic_Array</tspan></text>
+    <g
+       id="g14">
+      <rect
+         style="fill: #ffffff"
+         x="273.9"
+         y="563.748"
+         width="484"
+         height="232"
+         id="rect13" />
+      <rect
+         style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+         x="273.9"
+         y="563.748"
+         width="484"
+         height="232"
+         id="rect14" />
     </g>
-    <g>
-      <rect style="fill: #ffffff" x="436.9" y="671.748" width="286" height="97.2514"/>
-      <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #7f7f7f" x1="436.9" y1="720.374" x2="722.9" y2="720.374"/>
-      <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #7f7f7f" x1="508.4" y1="671.748" x2="508.4" y2="768.999"/>
-      <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #7f7f7f" x1="579.9" y1="671.748" x2="579.9" y2="768.999"/>
-      <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #7f7f7f" x1="651.4" y1="671.748" x2="651.4" y2="768.999"/>
-      <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="436.9" y="671.748" width="286" height="97.2514"/>
+    <g
+       id="g18">
+      <rect
+         style="fill: #ffffff"
+         x="436.9"
+         y="671.748"
+         width="286"
+         height="97.2514"
+         id="rect15" />
+      <line
+         style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #7f7f7f"
+         x1="436.9"
+         y1="720.374"
+         x2="722.9"
+         y2="720.374"
+         id="line15" />
+      <line
+         style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #7f7f7f"
+         x1="508.4"
+         y1="671.748"
+         x2="508.4"
+         y2="768.999"
+         id="line16" />
+      <line
+         style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #7f7f7f"
+         x1="579.9"
+         y1="671.748"
+         x2="579.9"
+         y2="768.999"
+         id="line17" />
+      <line
+         style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #7f7f7f"
+         x1="651.4"
+         y1="671.748"
+         x2="651.4"
+         y2="768.999"
+         id="line18" />
+      <rect
+         style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+         x="436.9"
+         y="671.748"
+         width="286"
+         height="97.2514"
+         id="rect18" />
     </g>
-    <g>
-      <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 356.9,654.748 A 76.9173,76.9173 0 0 0 425.986,720.153"/>
-      <polygon style="fill: #000000" points="426.168,725.925 435.901,720.425 425.661,715.938 "/>
-      <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="426.168,725.925 435.901,720.425 425.661,715.938 "/>
+    <g
+       id="g19">
+      <path
+         style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+         d="M 356.9,654.748 A 76.9173,76.9173 0 0 0 425.986,720.153"
+         id="path18" />
+      <polygon
+         style="fill: #000000"
+         points="426.168,725.925 435.901,720.425 425.661,715.938 "
+         id="polygon18" />
+      <polygon
+         style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+         points="426.168,725.925 435.901,720.425 425.661,715.938 "
+         id="polygon19" />
     </g>
-    <text font-size="18.0622" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="288.9" y="644.748">
-      <tspan x="288.9" y="644.748">Native_array</tspan>
-    </text>
-    <text font-size="18.0622" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="617.9" y="592.748">
-      <tspan x="617.9" y="592.748">Capacity: 8</tspan>
-    </text>
-    <g>
-      <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 131.9,512.748 A 172.901,172.901 0 0 0 263.161,677.445"/>
-      <polygon style="fill: #000000" points="262.184,682.704 272.916,679.569 263.97,672.864 "/>
-      <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="262.184,682.704 272.916,679.569 263.97,672.864 "/>
+    <text
+       font-size="18.0622"
+       style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal"
+       x="288.9"
+       y="644.748"
+       id="text19"><tspan
+         x="288.9"
+         y="644.748"
+         id="tspan19">Native_array</tspan></text>
+    <text
+       font-size="18.0622"
+       style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal"
+       x="617.9"
+       y="592.748"
+       id="text20"><tspan
+         x="617.9"
+         y="592.748"
+         id="tspan20">Capacity: 8</tspan></text>
+    <g
+       id="g21">
+      <path
+         style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+         d="M 131.9,512.748 A 172.901,172.901 0 0 0 263.161,677.445"
+         id="path20" />
+      <polygon
+         style="fill: #000000"
+         points="262.184,682.704 272.916,679.569 263.97,672.864 "
+         id="polygon20" />
+      <polygon
+         style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+         points="262.184,682.704 272.916,679.569 263.97,672.864 "
+         id="polygon21" />
     </g>
-    <text font-size="18.0622" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="618.8" y="619.114">
-      <tspan x="618.8" y="619.114">Filled: 4</tspan>
-    </text>
-    <g>
-      <rect style="fill: #ffffff" x="153.9" y="713.748" width="63" height="53"/>
-      <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="153.9" y="713.748" width="63" height="53"/>
+    <text
+       font-size="18.0622"
+       style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal"
+       x="618.8"
+       y="619.114"
+       id="text21"><tspan
+         x="618.8"
+         y="619.114"
+         id="tspan21">Filled: 4</tspan></text>
+    <g
+       id="g22">
+      <rect
+         style="fill: #ffffff"
+         x="153.9"
+         y="713.748"
+         width="63"
+         height="53"
+         id="rect21" />
+      <rect
+         style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+         x="153.9"
+         y="713.748"
+         width="63"
+         height="53"
+         id="rect22" />
     </g>
-    <text font-size="18.0622" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="181.4" y="747.248">
-      <tspan x="181.4" y="747.248">0</tspan>
-    </text>
-    <text font-size="15.8044" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="129.9" y="798.748">
-      <tspan x="129.9" y="798.748">Value to Insert</tspan>
-    </text>
-    <text font-size="18.0622" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="356" y="547">
-      <tspan x="356" y="547">Inserting previously present elements</tspan>
-    </text>
-    <text font-size="18.0622" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="466.9" y="704.366">
-      <tspan x="466.9" y="704.366">1           2          3          4</tspan>
-    </text>
+    <text
+       font-size="18.0622"
+       style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal"
+       x="181.4"
+       y="747.248"
+       id="text22"><tspan
+         x="181.4"
+         y="747.248"
+         id="tspan22">0</tspan></text>
+    <text
+       font-size="15.8044"
+       style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal"
+       x="129.9"
+       y="798.748"
+       id="text23"><tspan
+         x="129.9"
+         y="798.748"
+         id="tspan23">Value to Insert</tspan></text>
+    <text
+       font-size="18.0622"
+       style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal"
+       x="356"
+       y="547"
+       id="text24"><tspan
+         x="356"
+         y="547"
+         id="tspan24">Inserting previously present elements</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:16.8219px;line-height:1.25;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';letter-spacing:0px;word-spacing:0px;stroke-width:0.525685"
+       x="464.89139"
+       y="703.26068"
+       id="text49-3"><tspan
+         sodipodi:role="line"
+         id="tspan49-6"
+         style="stroke-width:0.525685"
+         x="464.89139"
+         y="703.26068">1</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:16.8219px;line-height:1.25;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';letter-spacing:0px;word-spacing:0px;stroke-width:0.525685"
+       x="537.17609"
+       y="703.37158"
+       id="text50-7"><tspan
+         sodipodi:role="line"
+         id="tspan50-5"
+         style="stroke-width:0.525685"
+         x="537.17609"
+         y="703.37158">2</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:16.8219px;line-height:1.25;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';letter-spacing:0px;word-spacing:0px;stroke-width:0.525685"
+       x="608.89398"
+       y="703.25244"
+       id="text51-3"><tspan
+         sodipodi:role="line"
+         id="tspan51-5"
+         style="stroke-width:0.525685"
+         x="608.89398"
+         y="703.25244">3</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:16.8219px;line-height:1.25;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';letter-spacing:0px;word-spacing:0px;stroke-width:0.525685"
+       x="680.83368"
+       y="703.26068"
+       id="text52-6"><tspan
+         sodipodi:role="line"
+         id="tspan52-2"
+         style="stroke-width:0.525685"
+         x="680.83368"
+         y="703.26068">4</tspan></text>
   </g>
-  <g>
-    <text font-size="27.0933" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="72" y="79">
-      <tspan x="72" y="79">Dynamic_Array</tspan>
-    </text>
-    <g>
-      <rect style="fill: #ffffff" x="273" y="153" width="484" height="232"/>
-      <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="273" y="153" width="484" height="232"/>
+  <g
+     id="g36">
+    <text
+       font-size="27.0933"
+       style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal"
+       x="72"
+       y="79"
+       id="text26"><tspan
+         x="72"
+         y="79"
+         id="tspan26">Dynamic_Array</tspan></text>
+    <g
+       id="g27">
+      <rect
+         style="fill: #ffffff"
+         x="273"
+         y="153"
+         width="484"
+         height="232"
+         id="rect26" />
+      <rect
+         style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+         x="273"
+         y="153"
+         width="484"
+         height="232"
+         id="rect27" />
     </g>
-    <g>
-      <rect style="fill: #ffffff" x="435" y="292" width="286" height="54"/>
-      <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #7f7f7f" x1="506.5" y1="292" x2="506.5" y2="346"/>
-      <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #7f7f7f" x1="578" y1="292" x2="578" y2="346"/>
-      <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #7f7f7f" x1="649.5" y1="292" x2="649.5" y2="346"/>
-      <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="435" y="292" width="286" height="54"/>
+    <g
+       id="g30">
+      <rect
+         style="fill: #ffffff"
+         x="435"
+         y="292"
+         width="286"
+         height="54"
+         id="rect28" />
+      <line
+         style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #7f7f7f"
+         x1="506.5"
+         y1="292"
+         x2="506.5"
+         y2="346"
+         id="line28" />
+      <line
+         style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #7f7f7f"
+         x1="578"
+         y1="292"
+         x2="578"
+         y2="346"
+         id="line29" />
+      <line
+         style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #7f7f7f"
+         x1="649.5"
+         y1="292"
+         x2="649.5"
+         y2="346"
+         id="line30" />
+      <rect
+         style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+         x="435"
+         y="292"
+         width="286"
+         height="54"
+         id="rect30" />
     </g>
-    <text font-size="18.0622" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="463" y="325">
-      <tspan x="463" y="325">1           2          3          4</tspan>
-    </text>
-    <g>
-      <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 356,244 A 84.1625,84.1625 0 0 0 424.149,317.685"/>
-      <polygon style="fill: #000000" points="423.739,323.381 434.002,318.944 424.295,313.397 "/>
-      <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="423.739,323.381 434.002,318.944 424.295,313.397 "/>
+    <g
+       id="g31">
+      <path
+         style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+         d="M 356,244 A 84.1625,84.1625 0 0 0 424.149,317.685"
+         id="path30" />
+      <polygon
+         style="fill: #000000"
+         points="423.739,323.381 434.002,318.944 424.295,313.397 "
+         id="polygon30" />
+      <polygon
+         style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+         points="423.739,323.381 434.002,318.944 424.295,313.397 "
+         id="polygon31" />
     </g>
-    <text font-size="18.0622" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="288" y="234">
-      <tspan x="288" y="234">Native_array</tspan>
-    </text>
-    <text font-size="18.0622" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="617" y="182">
-      <tspan x="617" y="182">Capacity: 4</tspan>
-    </text>
-    <g>
-      <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 131,102 A 172.901,172.901 0 0 0 262.261,266.697"/>
-      <polygon style="fill: #000000" points="261.284,271.956 272.016,268.821 263.07,262.116 "/>
-      <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="261.284,271.956 272.016,268.821 263.07,262.116 "/>
+    <text
+       font-size="18.0622"
+       style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal"
+       x="288"
+       y="234"
+       id="text31"><tspan
+         x="288"
+         y="234"
+         id="tspan31">Native_array</tspan></text>
+    <text
+       font-size="18.0622"
+       style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal"
+       x="617"
+       y="182"
+       id="text32"><tspan
+         x="617"
+         y="182"
+         id="tspan32">Capacity: 4</tspan></text>
+    <g
+       id="g33">
+      <path
+         style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+         d="M 131,102 A 172.901,172.901 0 0 0 262.261,266.697"
+         id="path32" />
+      <polygon
+         style="fill: #000000"
+         points="261.284,271.956 272.016,268.821 263.07,262.116 "
+         id="polygon32" />
+      <polygon
+         style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+         points="261.284,271.956 272.016,268.821 263.07,262.116 "
+         id="polygon33" />
     </g>
-    <text font-size="18.0622" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="617.9" y="208.366">
-      <tspan x="617.9" y="208.366">Filled: 4</tspan>
-    </text>
-    <g>
-      <rect style="fill: #ffffff" x="153" y="303" width="63" height="53"/>
-      <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="153" y="303" width="63" height="53"/>
+    <text
+       font-size="18.0622"
+       style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal"
+       x="617.9"
+       y="208.366"
+       id="text33"><tspan
+         x="617.9"
+         y="208.366"
+         id="tspan33">Filled: 4</tspan></text>
+    <g
+       id="g34">
+      <rect
+         style="fill: #ffffff"
+         x="153"
+         y="303"
+         width="63"
+         height="53"
+         id="rect33" />
+      <rect
+         style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+         x="153"
+         y="303"
+         width="63"
+         height="53"
+         id="rect34" />
     </g>
-    <text font-size="18.0622" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="180.5" y="336.5">
-      <tspan x="180.5" y="336.5">0</tspan>
-    </text>
-    <text font-size="15.8044" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="129" y="388">
-      <tspan x="129" y="388">Value to Insert</tspan>
-    </text>
-    <text font-size="18.0622" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="360.9" y="132.365">
-      <tspan x="360.9" y="132.365">The array is full, doubling needed</tspan>
-    </text>
+    <text
+       font-size="18.0622"
+       style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal"
+       x="180.5"
+       y="336.5"
+       id="text34"><tspan
+         x="180.5"
+         y="336.5"
+         id="tspan34">0</tspan></text>
+    <text
+       font-size="15.8044"
+       style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal"
+       x="129"
+       y="388"
+       id="text35"><tspan
+         x="129"
+         y="388"
+         id="tspan35">Value to Insert</tspan></text>
+    <text
+       font-size="18.0622"
+       style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal"
+       x="360.9"
+       y="132.365"
+       id="text36"><tspan
+         x="360.9"
+         y="132.365"
+         id="tspan36">The array is full, doubling needed</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:16.8219px;line-height:1.25;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';letter-spacing:0px;word-spacing:0px;stroke-width:0.525685"
+       x="464.58334"
+       y="325.23886"
+       id="text49"><tspan
+         sodipodi:role="line"
+         id="tspan49"
+         style="stroke-width:0.525685"
+         x="464.58334"
+         y="325.23886">1</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:16.8219px;line-height:1.25;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';letter-spacing:0px;word-spacing:0px;stroke-width:0.525685"
+       x="536.86804"
+       y="325.34976"
+       id="text50"><tspan
+         sodipodi:role="line"
+         id="tspan50"
+         style="stroke-width:0.525685"
+         x="536.86804"
+         y="325.34976">2</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:16.8219px;line-height:1.25;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';letter-spacing:0px;word-spacing:0px;stroke-width:0.525685"
+       x="608.58594"
+       y="325.23065"
+       id="text51"><tspan
+         sodipodi:role="line"
+         id="tspan51"
+         style="stroke-width:0.525685"
+         x="608.58594"
+         y="325.23065">3</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:16.8219px;line-height:1.25;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';letter-spacing:0px;word-spacing:0px;stroke-width:0.525685"
+       x="680.52563"
+       y="325.23886"
+       id="text52"><tspan
+         sodipodi:role="line"
+         id="tspan52"
+         style="stroke-width:0.525685"
+         x="680.52563"
+         y="325.23886">4</tspan></text>
   </g>
-  <g>
-    <text font-size="27.0933" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="850.9" y="77.7486">
-      <tspan x="850.9" y="77.7486">Dynamic_Array</tspan>
-    </text>
-    <g>
-      <rect style="fill: #ffffff" x="1051.9" y="151.749" width="484" height="232"/>
-      <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="1051.9" y="151.749" width="484" height="232"/>
+  <g
+     id="g48">
+    <text
+       font-size="27.0933"
+       style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal"
+       x="850.9"
+       y="77.7486"
+       id="text37"><tspan
+         x="850.9"
+         y="77.7486"
+         id="tspan37">Dynamic_Array</tspan></text>
+    <g
+       id="g38">
+      <rect
+         style="fill: #ffffff"
+         x="1051.9"
+         y="151.749"
+         width="484"
+         height="232"
+         id="rect37" />
+      <rect
+         style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+         x="1051.9"
+         y="151.749"
+         width="484"
+         height="232"
+         id="rect38" />
     </g>
-    <g>
-      <rect style="fill: #ffffff" x="1214.9" y="259.748" width="286" height="97.2514"/>
-      <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #7f7f7f" x1="1214.9" y1="308.374" x2="1500.9" y2="308.374"/>
-      <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #7f7f7f" x1="1286.4" y1="259.748" x2="1286.4" y2="356.999"/>
-      <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #7f7f7f" x1="1357.9" y1="259.748" x2="1357.9" y2="356.999"/>
-      <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #7f7f7f" x1="1429.4" y1="259.748" x2="1429.4" y2="356.999"/>
-      <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="1214.9" y="259.748" width="286" height="97.2514"/>
+    <g
+       id="g42">
+      <rect
+         style="fill: #ffffff"
+         x="1214.9"
+         y="259.748"
+         width="286"
+         height="97.2514"
+         id="rect39" />
+      <line
+         style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #7f7f7f"
+         x1="1214.9"
+         y1="308.374"
+         x2="1500.9"
+         y2="308.374"
+         id="line39" />
+      <line
+         style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #7f7f7f"
+         x1="1286.4"
+         y1="259.748"
+         x2="1286.4"
+         y2="356.999"
+         id="line40" />
+      <line
+         style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #7f7f7f"
+         x1="1357.9"
+         y1="259.748"
+         x2="1357.9"
+         y2="356.999"
+         id="line41" />
+      <line
+         style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #7f7f7f"
+         x1="1429.4"
+         y1="259.748"
+         x2="1429.4"
+         y2="356.999"
+         id="line42" />
+      <rect
+         style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+         x="1214.9"
+         y="259.748"
+         width="286"
+         height="97.2514"
+         id="rect42" />
     </g>
-    <g>
-      <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 1134.9,242.748 A 76.9173,76.9173 0 0 0 1203.99,308.153"/>
-      <polygon style="fill: #000000" points="1204.17,313.925 1213.9,308.425 1203.66,303.938 "/>
-      <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="1204.17,313.925 1213.9,308.425 1203.66,303.938 "/>
+    <g
+       id="g43">
+      <path
+         style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+         d="M 1134.9,242.748 A 76.9173,76.9173 0 0 0 1203.99,308.153"
+         id="path42" />
+      <polygon
+         style="fill: #000000"
+         points="1204.17,313.925 1213.9,308.425 1203.66,303.938 "
+         id="polygon42" />
+      <polygon
+         style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+         points="1204.17,313.925 1213.9,308.425 1203.66,303.938 "
+         id="polygon43" />
     </g>
-    <text font-size="18.0622" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="1066.9" y="232.748">
-      <tspan x="1066.9" y="232.748">Native_array</tspan>
-    </text>
-    <text font-size="18.0622" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="1395.9" y="180.749">
-      <tspan x="1395.9" y="180.749">Capacity: 8</tspan>
-    </text>
-    <g>
-      <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 909.9,100.749 A 172.9,172.9 0 0 0 1041.16,265.445"/>
-      <polygon style="fill: #000000" points="1040.18,270.704 1050.92,267.569 1041.97,260.864 "/>
-      <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="1040.18,270.704 1050.92,267.569 1041.97,260.864 "/>
+    <text
+       font-size="18.0622"
+       style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal"
+       x="1066.9"
+       y="232.748"
+       id="text43"><tspan
+         x="1066.9"
+         y="232.748"
+         id="tspan43">Native_array</tspan></text>
+    <text
+       font-size="18.0622"
+       style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal"
+       x="1395.9"
+       y="180.749"
+       id="text44"><tspan
+         x="1395.9"
+         y="180.749"
+         id="tspan44">Capacity: 8</tspan></text>
+    <g
+       id="g45">
+      <path
+         style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+         d="M 909.9,100.749 A 172.9,172.9 0 0 0 1041.16,265.445"
+         id="path44" />
+      <polygon
+         style="fill: #000000"
+         points="1040.18,270.704 1050.92,267.569 1041.97,260.864 "
+         id="polygon44" />
+      <polygon
+         style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+         points="1040.18,270.704 1050.92,267.569 1041.97,260.864 "
+         id="polygon45" />
     </g>
-    <text font-size="18.0622" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="1396.8" y="207.114">
-      <tspan x="1396.8" y="207.114">Filled: 0</tspan>
-    </text>
-    <g>
-      <rect style="fill: #ffffff" x="931.9" y="301.748" width="63" height="53"/>
-      <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="931.9" y="301.748" width="63" height="53"/>
+    <text
+       font-size="18.0622"
+       style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal"
+       x="1396.8"
+       y="207.114"
+       id="text45"><tspan
+         x="1396.8"
+         y="207.114"
+         id="tspan45">Filled: 0</tspan></text>
+    <g
+       id="g46">
+      <rect
+         style="fill: #ffffff"
+         x="931.9"
+         y="301.748"
+         width="63"
+         height="53"
+         id="rect45" />
+      <rect
+         style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000"
+         x="931.9"
+         y="301.748"
+         width="63"
+         height="53"
+         id="rect46" />
     </g>
-    <text font-size="18.0622" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="959.4" y="335.248">
-      <tspan x="959.4" y="335.248">0</tspan>
-    </text>
-    <text font-size="15.8044" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="907.9" y="386.748">
-      <tspan x="907.9" y="386.748">Value to Insert</tspan>
-    </text>
-    <text font-size="18.0622" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="1165" y="135">
-      <tspan x="1165" y="135">Doubling the size of the array</tspan>
-    </text>
+    <text
+       font-size="18.0622"
+       style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal"
+       x="959.4"
+       y="335.248"
+       id="text46"><tspan
+         x="959.4"
+         y="335.248"
+         id="tspan46">0</tspan></text>
+    <text
+       font-size="15.8044"
+       style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal"
+       x="907.9"
+       y="386.748"
+       id="text47"><tspan
+         x="907.9"
+         y="386.748"
+         id="tspan47">Value to Insert</tspan></text>
+    <text
+       font-size="18.0622"
+       style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal"
+       x="1165"
+       y="135"
+       id="text48"><tspan
+         x="1165"
+         y="135"
+         id="tspan48">Doubling the size of the array</tspan></text>
   </g>
 </svg>
