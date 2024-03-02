@@ -117,9 +117,10 @@ The pre-order traversal visits the current node before visiting its children. Th
 
 If we traverse the example tree with pre-order traversal, and print the visited node, the output will be: `GDBACFEHI`
 
-<!-- TODO: Add output -->
-
 Here is how an example implementation of a pre-order traversal of a binary tree using DFS would look like:
+
+```{src='computer_science/dfs_preorder' caption='Pre-order traversal of a tree using DFS'}
+```
 
 {{placeholder}}
 
@@ -135,11 +136,12 @@ The in-order traversal visits the tree "from left to right", by prioritizing the
 
 If we traverse the example tree with in-order traversal, and print the visited node, the output will be: `ABCDEFGHI`
 
-<!-- TODO: Add output -->
-
 Notice how in this case, the output is ordered. This is because the example tree is a special kind of tree, called a "binary search tree". We will see more in the [dedicated paragraph](#bst).
 
 Here is how an example implementation of a in-order traversal of a binary tree using DFS would look like:
+
+```{src='computer_science/dfs_inorder' caption='In-order traversal of a tree using DFS'}
+```
 
 {{placeholder}}
 
@@ -155,9 +157,11 @@ The post-order traveral method prioritizes traversing both the children to visit
 
 If we traverse the example tree with post-order traversal, and print the visited node, the output will be: `ACBEFDIHG`
 
-<!-- TODO: Add output -->
-
 Here is how an example implementation of a post-order traversal of a binary tree using DFS would look like:
+
+
+```{src='computer_science/dfs_postorder' caption='Post-order traversal of a tree using DFS'}
+```
 
 {{placeholder}}
 
