@@ -75,33 +75,93 @@ Using the table, we can see that we have a $1$ in "row A, column B", which means
 
 ### Trees
 
-{{placeholder}}
+When you are a programmer, sooner or later you will have to deal with trees: they are a data structure that represents a hierarchy, using a set of nodes.
 
-<!-- TODO: Talk about trees, with a special focus on binary trees -->
+Trees can be defined as a "recursive data structure", made up of a node and a bunch of sub-trees connected to it.
+
+![Example of a tree structure](./images/computer_science/tree.svg){width=40%}
+
+The fact that we can define trees recursively also means that they're a good candidate for all kinds of recursive algorithms, which can help simplifying the code quite a bit.
+
+Trees are the base structure for a lot of other data structures, like heaps and binary search trees.
+
+In this book we will focus mostly on binary trees: trees where each node has at most 2 children.
 
 #### Depth-first Search
 
-{{placeholder}}
+The Depth-first search is a so-called "tree traversal algorithm", which means that it's essentially a way to explore a tree structure. In this case, the algorithm will try to reach the nodes farthest from the root first, before "backtracking" (that means before going "back towards the root").
 
-<!-- TODO: Talk about DFS and what uses it has -->
+As said earlier, we will focus on binary trees.
+
+![Order in which the nodes are visited during DFS](./images/computer_science/dfs_traversal_order.svg){width=40%}
+
+Depth-first search can be useful in the following situations (as well as others):
+
+- Sorting;
+- Maze generation (see the [Randomized DFS Method](#rdfs) in the [Maze generation](#mazegen) section);
+- Maze solving (which may be useful for [Path finding](#pathfinding));
+
+The DFS algorithm hides some subtleties, though: the algorithm will "traverse" the tree in the same order, but different implementations will "visit the tree nodes" differently. We will take a look at how nodes are visited now.
+
+In explaining the DFS algorithm, we will refer to the following example tree:
+
+![Example tree that will be traversed by DFS](./images/computer_science/dfs_example.svg){width=40%}
 
 ##### Pre-order Traversal
 
+The pre-order traversal visits the current node before visiting its children. That means that the algorithm performs the following operations, in order:
+
+1. Visit the current node
+2. Recursively traverse the current node's left subtree
+3. Recursively traverse the current node's right subtree
+
+If we traverse the example tree with pre-order traversal, and print the visited node, the output will be: `???`
+
+<!-- TODO: Add output -->
+
+Here is how an example implementation of a pre-order traversal of a binary tree using DFS would look like:
+
 {{placeholder}}
 
-<!-- TODO: Node - Right - Left in Binary Trees -->
+<!-- TODO: Example code for Pre-order DFS -->
 
 ##### In-order Traversal
 
+The in-order traversal visits the tree "from left to right", by prioritizing the traversal of the left subtrees before visiting the current node. That means that the algorithm performs the following operations, in order:
+
+1. Recursively traverse the current node's left subtree
+2. Visit the current node
+3. Recursively traverse the current node's right subtree
+
+If we traverse the example tree with in-order traversal, and print the visited node, the output will be: `???`
+
+<!-- TODO: Add output -->
+
+Notice how in this case, the output is ordered. This is because the example tree is a special kind of tree, called a "binary search tree". We will see more in the [dedicated paragraph](#bst).
+
+Here is how an example implementation of a in-order traversal of a binary tree using DFS would look like:
+
 {{placeholder}}
 
-<!-- TODO: Left - Node - Right in Binary Trees -->
+<!-- TODO: Code for in-order DFS -->
 
 ##### Post-order Traversal
 
+The post-order traveral method prioritizes traversing both the children to visiting the current node, thus it will perform the following operations:
+
+1. Recursively traverse the current node's left subtree
+2. Recursively traverse the current node's right subtree
+3. Visit the current node
+
+If we traverse the example tree with post-order traversal, and print the visited node, the output will be: `???`
+
+<!-- TODO: Add output -->
+
+Here is how an example implementation of a post-order traversal of a binary tree using DFS would look like:
+
 {{placeholder}}
 
-<!-- TODO: Left - Right - Node in Binary Trees -->
+<!-- TODO: Code for post-order DFS -->
 
 #### Breadth-first search
 

@@ -183,7 +183,7 @@ Table: Performance table for Hash Tables
 
 Table: Summary Table for Hash Tables
 
-### Binary Search Trees (BST)
+### Binary Search Trees (BST) {#bst}
 
 Binary search trees, sometimes called "ordered trees" are a container that have an "order relation" between their own elements.
 

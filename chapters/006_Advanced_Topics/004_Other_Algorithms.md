@@ -78,13 +78,13 @@ As the last step, for this 5x5 grid, we perform another "square step", finding 1
 
 <!-- TODO: Evolution of the Midpoint displacement, usable for 2D height maps -->
 
-### Maze Generation
+### Maze Generation {#mazegen}
 
 Maze generation is the base of a great majority of dungeon generation systems, you can create a maze, carve out a few rooms, put an entrance and an exit and you have a nice quick dungeon!
 
 There are many ideas that can be used to generate a maze, some are based on a prepared map that gets refined into a maze, some other are based on walls instead of tiles, here we will see some of the many algorithms that exist.
 
-#### Randomized Depth-First Search (Recursive Backtracker)
+#### Randomized Depth-First Search (Recursive Backtracker) {#rdfs}
 
 The Depth-First Search (DFS) algorithm is known in the world of tree and graph structure as a traversal algorithm. We can use a randomized DFS algorithm as a simple maze-generation algorithm.
 
