@@ -79,7 +79,7 @@ When you are a programmer, sooner or later you will have to deal with trees: the
 
 Trees can be defined as a "recursive data structure", made up of a node and a bunch of sub-trees connected to it.
 
-![Example of a tree structure](./images/computer_science/tree.svg){width=40%}
+![Example of a tree structure](./images/computer_science/dfs_example.svg){width=40%}
 
 The fact that we can define trees recursively also means that they're a good candidate for all kinds of recursive algorithms, which can help simplifying the code quite a bit.
 
@@ -103,7 +103,7 @@ Depth-first search can be useful in the following situations (as well as others)
 
 The DFS algorithm hides some subtleties, though: the algorithm will "traverse" the tree in the same order, but different implementations will "visit the tree nodes" differently. We will take a look at how nodes are visited now.
 
-In explaining the DFS algorithm, we will refer to the following example tree:
+In explaining the DFS algorithm, we will refer to the example tree we saw earlier, here it is again:
 
 ![Example tree that will be traversed by DFS](./images/computer_science/dfs_example.svg){width=40%}
 
@@ -115,7 +115,7 @@ The pre-order traversal visits the current node before visiting its children. Th
 2. Recursively traverse the current node's left subtree
 3. Recursively traverse the current node's right subtree
 
-If we traverse the example tree with pre-order traversal, and print the visited node, the output will be: `???`
+If we traverse the example tree with pre-order traversal, and print the visited node, the output will be: `GDBACFEHI`
 
 <!-- TODO: Add output -->
 
@@ -133,7 +133,7 @@ The in-order traversal visits the tree "from left to right", by prioritizing the
 2. Visit the current node
 3. Recursively traverse the current node's right subtree
 
-If we traverse the example tree with in-order traversal, and print the visited node, the output will be: `???`
+If we traverse the example tree with in-order traversal, and print the visited node, the output will be: `ABCDEFGHI`
 
 <!-- TODO: Add output -->
 
@@ -153,7 +153,7 @@ The post-order traveral method prioritizes traversing both the children to visit
 2. Recursively traverse the current node's right subtree
 3. Visit the current node
 
-If we traverse the example tree with post-order traversal, and print the visited node, the output will be: `???`
+If we traverse the example tree with post-order traversal, and print the visited node, the output will be: `ACBEFDIHG`
 
 <!-- TODO: Add output -->
 
@@ -162,6 +162,30 @@ Here is how an example implementation of a post-order traversal of a binary tree
 {{placeholder}}
 
 <!-- TODO: Code for post-order DFS -->
+
+##### Reverse Traversals
+
+These kinds of traversals are essentially the same of the ones we've already seen, but the right subtree is given priority over the left. Here are the operations, listed for reference.
+
+Reverse Pre-Order:
+
+1. Visit the current node
+2. Recursively traverse the current node's right subtree
+3. Recursively traverse the current node's left subtree
+
+Reverse In-Order:
+
+1. Recursively traverse the current node's right subtree
+2. Visit the current node
+3. Recursively traverse the current node's left subtree
+
+Reverse Post-Order:
+
+1. Recursively traverse the current node's right subtree
+2. Recursively traverse the current node's left subtree
+3. Visit the current node
+
+The code will be omitted, since it is easy to infer how the code would look, given the previous examples.
 
 #### Breadth-first search
 
