@@ -129,10 +129,6 @@ Here is how an example implementation of a pre-order traversal of a binary tree 
 ```{src='computer_science/dfs_preorder' caption='Pre-order traversal of a tree using DFS'}
 ```
 
-{{placeholder}}
-
-<!-- TODO: Example code for Pre-order DFS -->
-
 ##### In-order Traversal
 
 The in-order traversal visits the tree "from left to right", by prioritizing the traversal of the left subtrees before visiting the current node. That means that the algorithm performs the following operations, in order:
@@ -150,10 +146,6 @@ Here is how an example implementation of a in-order traversal of a binary tree u
 ```{src='computer_science/dfs_inorder' caption='In-order traversal of a tree using DFS'}
 ```
 
-{{placeholder}}
-
-<!-- TODO: Code for in-order DFS -->
-
 ##### Post-order Traversal
 
 The post-order traveral method prioritizes traversing both the children to visiting the current node, thus it will perform the following operations:
@@ -169,10 +161,6 @@ Here is how an example implementation of a post-order traversal of a binary tree
 
 ```{src='computer_science/dfs_postorder' caption='Post-order traversal of a tree using DFS'}
 ```
-
-{{placeholder}}
-
-<!-- TODO: Code for post-order DFS -->
 
 ##### Reverse Traversals
 
