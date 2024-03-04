@@ -99,6 +99,21 @@ The SNES is a huge step forward in time for audio on Nintendo systems, featuring
 
 The S-SMP Chip also features a variety of filters and effects, so you have pretty much full freedom except for the number of channels.
 
+#### Game Boy
+
+The Game Boy is definitely not a step forward in audio technology, due to the lower amount of channels and less available waveforms. Yet, this console has a distinctive sound and some amazing tracks (just listen to any song from Bionic Commando, for instance).
+
+In this console you have:
+
+- 2 square wave generators;
+- 1 noise generator;
+- 1 PCM 4-bit wave sample, this allows the programmer to create their own wave forms, for instance;
+- 1 audio input from the cartridge although this has never been used commercially
+
+All the square wave and the noise generator feature envelopes (ADSR), while the first square wave generator also features a frequency sweeping functionality (allowing for slides between notes).
+
+The Game Boy has a lot of obscure audio behaviour, but following the limitations above should give you enough of an idea to make something that sounds like it.
+
 #### AdLib / SoundBlaster
 
 The AdLib and SoundBlaster cards are based on the Yamaha YM3812 chip, which features 9 channels that use a digital oscillator. Given the high number of channels and the freedom given by them, it's pretty easy to get a result that sounds like old DOS game as soon as you get the tone down.
