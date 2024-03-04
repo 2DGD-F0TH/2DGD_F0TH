@@ -1,0 +1,24 @@
+function traverse_bfs(Node root){
+    // We will use a queue for this algorithm
+    Queue q = new Queue();
+    // First thing, we enqueue the root
+    q.enqueue(root);
+    // Now comes the iterative part. This will keep going until
+    // the tree is completely explored.
+    while (q is not empty){
+        // We take the first node in the queue
+        Node n = q.dequeue();
+        // We enqueue its children, if they exist
+        if (n.left is not null){
+            q.enqueue(n.left);
+        }
+        if (n.right is not null){
+            q.enqueue(n.right);
+        }
+        // Now we visit the current node
+        print(n.content);
+        // The loop will continue with the next node in the layer,
+        // automatically start the next layer, or stop because there
+        // are no more nodes to visit.
+    }
+}

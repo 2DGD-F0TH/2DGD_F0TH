@@ -188,6 +188,21 @@ The code will be omitted, since it is easy to infer how the code would look, giv
 
 #### Breadth-first search
 
-{{placeholder}}
+Breadth-first search, or BFS, uses a concept that is opposite of the one in DFS (Depth-first search): instead of going as deep as possible inside the tree, this algorithm prefers exploring "in layers".
 
-<!-- TODO: Search by layers -->
+The root will be visited first, then all its children, after that all its nephews, etc...
+
+![Order in which the nodes are visited during BFS](./images/computer_science/tree_traversal_bfs.svg){width=40%}
+
+In the implementation shown here, the steps are the following:
+
+1. Make a queue and enqueue the root
+2. If the queue is not empty, take the first node, if it is empty, just stop
+3. If such node has any children, enqueue them, in order
+4. Visit the node
+5. Go back to point 2
+
+A possible implementation of a BFS algorithm could be the following:
+
+```{src='computer_science/bfs' caption='Traversal of a tree using BFS'}
+```
