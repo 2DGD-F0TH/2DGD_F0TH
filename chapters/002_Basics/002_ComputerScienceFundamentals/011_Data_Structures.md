@@ -206,3 +206,5 @@ A possible implementation of a BFS algorithm could be the following:
 
 ```{src='computer_science/bfs' caption='Traversal of a tree using BFS'}
 ```
+
+BFS is a great algorithm to solve mazes and find the shortest path between two nodes, making it a good choice for [Path finding](#pathfinding).
