@@ -65,7 +65,7 @@ So we can say that
 
 > The nth root of a number x is a number r so that $r^n = x$
 
-Taking the examples of earlier, we have that $\sqrt[3]{8} = 2$, $\sqrt[4]{4} = 4$ and $\sqrt[9532]{0} = 0$. Omitting the index $n$ on the root is a short way to write the "square root", which is the root with index 2. That means:
+Taking the examples of earlier, we have that $\sqrt[3]{8} = 2$, $\sqrt[4]{256} = 4$ and $\sqrt[9532]{0} = 0$. Omitting the index $n$ on the root is a short way to write the "square root", which is the root with index 2. That means:
 
 $\sqrt[2]{4} = \sqrt{4} = 2$
 
