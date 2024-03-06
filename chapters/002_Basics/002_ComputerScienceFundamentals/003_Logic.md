@@ -100,6 +100,8 @@ This can be solved by using a 4-bit positive integer and having each bit represe
 
 After creating a convention, we can start storing data. For instance we can have the bits representing walls starting from top, going clockwise.
 
+![How we can pack wall information with a 4-bit integer](./images/computer_science/info_packing.svg){width=40%}
+
 This convention could be summarized as follows:
 
 - $0001$ represents a "top wall";
