@@ -260,7 +260,7 @@ That would make it so the player doesn't get frustrated at a way-too-precise col
 This doesn't help only with side-scroller style run'n'jump games: if you're making a top-down game (like a 2D RPG) using tiles where movement is not tile-based. This will give you a smoother gameplay.
 :::::::::::::
 
-{{placeholder}}
+A possible implementation of a corner-correction algorithm, specifically for avoiding the jumping problem, could be the following:
 
-<!-- TODO: This can be done by comparing how much the player sprite is overlapping the wall on the axis perpendicular to the direction you're moving (if movement is restricted to x-y), if the overlap is less than a certain amount (easy to calculate in AABB), apply correction on the axis that is perpendicular to the movement direction.
--->
+```{src='developing_mechanics/corner_correction' caption='Possible implementation of a simple corner correction'}
+```
