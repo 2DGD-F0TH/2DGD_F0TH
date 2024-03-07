@@ -5,6 +5,10 @@ Before delving into the topic at hand, we need to familiarize ourselves with the
 
 ### Producer/Project Manager
 
+:::: centering ::::
+![](./images/project_management/project_manager.svg){width=40%}
+:::::::::::::::::::
+
 The producer is a figure that has experience in many fields and has an overall view of the project. They essentially keep the project together.
 
 Their duties are:
@@ -23,6 +27,10 @@ A good project manager will need tools to manage tasks (Like a Kanban Board), as
 
 ### Game Designer
 
+:::: centering ::::
+![](./images/project_management/designer.svg){width=40%}
+:::::::::::::::::::
+
 The game designer takes care of the game concept, usually (but not only!) working with really specific software, usually provided by the programmers in the team (like specific level editors).
 
 They design balanced game mechanics, manage the learning curve and take care of level design too.
@@ -37,6 +45,10 @@ Under the "Game Designer" term you can find different roles, among them:
 A good game designer must know mathematics, some scripting and be able to use planning tools (again, our friendly Kanban Board comes into play) as well as diagram drawing tools.
 
 ### Writer
+
+:::: centering ::::
+![](./images/project_management/writer.svg){width=40%}
+:::::::::::::::::::
 
 Writers are the ones who can help you give your game its own story, but also help with things that are outside the mere game itself.
 
@@ -57,6 +69,10 @@ A good writer must have good language skills, as well as creativity. They must b
 
 ### Developer
 
+:::: centering ::::
+![](./images/project_management/developer.svg){width=40%}
+:::::::::::::::::::
+
 Logic and mathematics are the strong suit of programmers, the people who take care of making the game tick, they can also have many specializations like:
 
 - Problem Solver
@@ -71,6 +87,10 @@ Logic and mathematics are the strong suit of programmers, the people who take ca
 They must be familiar with IDEs and programming environments, as well as Source Control Tools (Like Git), knowledge of game engines like Unity is preferred, but also tied to the kind of game that is made.
 
 ### Visual Artist
+
+:::: centering ::::
+![](./images/project_management/graphic_designer.svg){width=40%}
+:::::::::::::::::::
 
 In 2D games visual art is as important as in 3D games and good graphics can really boost the game's quality greatly, as bad graphics can break a game easily.
 
@@ -93,6 +113,10 @@ Visual Artists must be knowledgeable in the use of drawing programs, like Krita,
 
 ### Sound Artist
 
+:::: centering ::::
+![](./images/project_management/sound_engineer.svg){width=40%}
+:::::::::::::::::::
+
 As with graphics, sound and music can make or break a game. Sound artists may also be musicians, and their task is to create audio that can be used in a video game, like sound effects, atmospheres or background music.
 
 Under the umbrella of a sound artist, you can find:
@@ -104,7 +128,20 @@ Under the umbrella of a sound artist, you can find:
 
 The knowledge of DAW (Digital Audio Workstation) software is fundamental, as well as knowing some so-called "middlewares", like FMOD. Another important bit of knowledge is being able to use Audio editors effectively.
 
+### Marketing/Public Relations Manager
+
+:::: centering ::::
+![](./images/project_management/marketing.svg){width=40%}
+:::::::::::::::::::
+
+<!-- TODO: Forgot about this, needs to be filled asap! -->
+{{placeholder}}
+
 ### Tester
+
+:::: centering ::::
+![](./images/project_management/tester.svg){width=40%}
+:::::::::::::::::::
 
 Probably the most important job in a game development team, testing needs people with high attention to detail, as well as the ability to handle stress well.
 
