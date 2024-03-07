@@ -149,9 +149,17 @@ Some of the most popular strategy genres are:
 
 ### Platformer
 
+:::: centering ::::
+![](./images/game_design/Platformer.svg){width=40%}
+:::::::::::::::::::
+
 Platformer games involve difficult jumps and precise movement, they can both be 2D and 3D games. A prime example of platformer games is the Mario series: Mario 1,2,3 for 2D games and Mario 64 for 3D.
 
 ### RPG
+
+:::: centering ::::
+![](./images/game_design/RPG.svg){width=30%}
+:::::::::::::::::::
 
 RPGs or "Role Playing Games" are games where you assume the role of a character in a fictional setting. In RPGs the world is well-defined and usually have some level or class system and quite advanced item management.
 
@@ -185,6 +193,10 @@ Visual novels are graphical adventures whose primary objective is "telling a sto
 The more modern versions feature more interactive components and fully-fledged 3D graphics, but what ties the genre together is usually a "point and click" style of gameplay.
 
 ### Puzzle games
+
+:::: centering ::::
+![](./images/game_design/Puzzle.svg){width=40%}
+:::::::::::::::::::
 
 Puzzle games are centered about making the player think: they can test a lot of problem-solving skills from pattern recognition, to word completion, to logic.
 
