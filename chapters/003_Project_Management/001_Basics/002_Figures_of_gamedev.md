@@ -134,8 +134,15 @@ The knowledge of DAW (Digital Audio Workstation) software is fundamental, as wel
 ![](./images/project_management/marketing.svg){width=40%}
 :::::::::::::::::::
 
-<!-- TODO: Forgot about this, needs to be filled asap! -->
-{{placeholder}}
+Even the best game in the world will get no attention without someone who takes care of letting people know about it. The marketing and public relations manager is responsible for promoting a game through various channels, from specialized outlets to social media.
+
+Their job include:
+
+- developing and executing marketing campaigns;
+- creating press releases and other promotional materials;
+- managing social media accounts;
+- working with journalists and influencers to publicize the game;
+- publicizing the game on dedicated trade shows.
 
 ### Tester
 
