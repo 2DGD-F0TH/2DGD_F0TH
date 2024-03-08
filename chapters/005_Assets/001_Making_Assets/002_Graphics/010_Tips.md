@@ -42,9 +42,7 @@ And we obtain the following result:
 
 ![Example of "inside room" with the black/transparent overlay](./images/resources/inside_example_2.png){width=40%}
 
-{{placeholder}}
-
-<!-- TODO: Finish talking about "inside room" tilesets -->
+As you can see, something as simple as some shadow can really sell the effect of being "inside a dark place".
 
 #### Sprites and icons
 

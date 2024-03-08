@@ -1,8 +1,6 @@
 Sounds And Music
 ----------------
 
-{{placeholder}}
+The best gameplay and graphics mean nothing if they are not accompanied by good audio. Audio can make or break a game, as does music: some games have really memorable soundtracks even if their graphics may not be "top-notch".
 
-<!-- TODO: Talk about the importance of good sound quality, introduce people to chip tunes and tools to create music and sounds , talk about the importance of having areas where you have to apply a certain effect or it will happen on the whole level -->
-
-
+In this section you will find the basics, tips and tricks to make your own music and sound effects.
