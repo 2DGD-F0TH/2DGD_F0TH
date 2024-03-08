@@ -69,6 +69,6 @@ If you suspect a memory leak, you may want to take a look at these sections:
 - [Using memory analyzers to detect leaks](#mem_analyzers)
 - [Resource Pools](#res_pools)
 
-{{placeholder}}
+{{extend}}
 
 <!-- TODO: Continue with more investigation suggestions -->

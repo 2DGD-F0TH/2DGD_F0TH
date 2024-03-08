@@ -134,9 +134,7 @@ In the game "The Witcher III", precisely in patch 1.05, a mechanic to prevent su
 On the flip side, higher level players could exploit this endlessly respawning monster to gain Chort Hides, which are worth more currency than Cow Hides. This was patched by making only one Chort spawn.
 ::::::::::::::::
 
-{{placeholder}}
-
-<!-- TODO: Finish talking about farming -->
+{{extend}}
 
 #### Leveling Curves
 

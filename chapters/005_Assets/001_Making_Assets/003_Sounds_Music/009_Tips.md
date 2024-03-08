@@ -8,6 +8,6 @@ Sometimes we may find our audio samples lacking that "punch" they would need, th
 
 It's better to cut the higher frequencies instead, and eventually boost the entire volume of the sample during mixing. This way the nature of the sample doesn't get tainted by boosting, and we obtain the result we wanted.
 
-{{placeholder}}
+{{extend}}
 
 <!-- TODO: Give some tips to process audio files -->

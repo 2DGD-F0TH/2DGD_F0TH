@@ -97,8 +97,6 @@ No matter how the 1-UP is achieved, this should be celebrated with a jingle that
 
 Some games even go as far as temporarily pause the game while the (short) jingle plays, that how important an extra-life is: "Stop everything! We got a 1-UP here!".
 
-{{placeholder}}
-
 #### Other approaches
 
 There are different approaches to a "lives system" that don't necessarily involve lives. The main objective is creating a mechanic that rewards the player for doing the right thing and punish them for doing the wrong thing (although not too harshly, or the player will stop playing).
@@ -106,5 +104,7 @@ There are different approaches to a "lives system" that don't necessarily involv
 One such approach was used in the first System Shock (1994) game: the space station the game takes place in is divided into floors. Each floor (with few exceptions) have a "cyborg conversion chamber": if you die your body will be brought to a conversion chamber in the floor you're in and will become a cyborg, serving the enemy. Being converted into a cyborg is the losing condition, and the punishment is being sent to the main menu and being forced to load a save file.
 
 Here's the catch: the "cyborg conversion chambers" are fashioned out of "restoration bays", that means that disabling the cyborg conversion process will allow the player to be immediately resurrected at the nearest restoration bay, although they won't start at full health. This rewards the player for finding such restoration bays by giving them essentially infinite lives.
+
+{{extend}}
 
 <!-- TODO: Talk about other level design tips -->

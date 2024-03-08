@@ -30,6 +30,6 @@ By using hi-hats, a kick drum and a snare drum, you can create a very simple roc
 
 ![A simple rock beat](./images/resources/simple_rock_beat.png){width=50%}
 
-{{placeholder}}
+{{extend}}
 
 <!-- TODO: Teach more basic rhythms to get people going -->
