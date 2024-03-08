@@ -120,6 +120,10 @@ Even if the frame is limited, it's necessary that all updates are tied to our de
 
 ### Frame Skipping/Dropping
 
+:::: centering ::::
+![](./images/gameloop/frame_skipping.svg){width=50%}
+:::::::::::::::::::
+
 A common solution used when a frame takes longer to update and render than the target time is using the so-called "frame dropping". The game won't render the next frame, in an effort to "catch up" to the desired frame rate.
 
 This will obviously cause a perceptible visual stutter.
