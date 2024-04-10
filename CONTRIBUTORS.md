@@ -14,3 +14,4 @@ Special Thanks to the following people who helped making this work even better:
 
 - **Nikita Ivanchenko (Nivanchenko)** - For fixing some mistakes
 - **abreathingcorpse** - Proofreading and fixing some math mistakes
+- **LuosRestil** - For fixing some mistakes
