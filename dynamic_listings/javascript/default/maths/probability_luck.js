@@ -13,7 +13,11 @@ let luck = 25;
 luck = Math.min(luck, 100);
 
 // We "overload" the prize pool, making the sum go over 100%
-let overloadedPool = pool.map(tier => [tier[0], tier[1] + luck]);
+let overloadedPool = [];
+for (let i = 0; i < pool.length; i++){
+  let newProb = pool[i][1] + luck;
+  overloadedPool.push([pool[i][0], newProb]);
+}
 // We calculate how much we "overloaded" the prize pool
 let overloadFactor = luck * pool.length;
 
