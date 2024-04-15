@@ -30,8 +30,8 @@ Overload_factor = Overload_factor - 100
 Rebalanced_pool = {}
 -- We need to start from the most common, which means we will iterate backwards
 for i = #pool, 0, -1 do
-    local item = pool[i][1]
-    local probability = pool[i][2];
+    local item = Overloaded_pool[i][1]
+    local probability = Overloaded_pool[i][2];
     -- This will be modified later, if the pool is "overloaded"
     local new_probability = probability
     -- If the prize pool is still "overloaded"

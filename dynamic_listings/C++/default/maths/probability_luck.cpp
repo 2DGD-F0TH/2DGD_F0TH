@@ -33,9 +33,9 @@ overload_factor = overload_factor - 100;
 // We rebalance the prizes to a total of 100, from most to least common
 int rebalanced_pool[4][2];
 // We need to start from the most common, which means we will iterate backwards
-for (int i = 3; i > 0; i--){
-    const int item = pool[i][0];
-    const int probability = pool[i][1];
+for (int i = 3; i >= 0; i--){
+    const int item = overloaded_pool[i][0];
+    const int probability = overloaded_pool[i][1];
     // This will be modified later, if the pool is "overloaded"
     int new_probability = probability;
     // If the prize pool is still "overloaded"
