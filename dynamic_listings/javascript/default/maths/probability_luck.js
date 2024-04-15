@@ -1,9 +1,9 @@
 // Our probabilities, from least to most common
 let pool = [
-  ["EPIC", 5],
-  ["RARE", 15],
-  ["UNCOMMON", 30],
-  ["COMMON", 50],
+    ["EPIC", 5],
+    ["RARE", 15],
+    ["UNCOMMON", 30],
+    ["COMMON", 50],
 ];
 
 // Our "luck stat": each point gives 1% more chance to get a higher-tier item
@@ -15,8 +15,8 @@ luck = Math.min(luck, 100);
 // We "overload" the prize pool, making the sum go over 100%
 let overloadedPool = [];
 for (let i = 0; i < pool.length; i++){
-  let newProb = pool[i][1] + luck;
-  overloadedPool.push([pool[i][0], newProb]);
+    let newProb = pool[i][1] + luck;
+    overloadedPool.push([pool[i][0], newProb]);
 }
 // We calculate how much we "overloaded" the prize pool
 let overloadFactor = luck * pool.length;
@@ -25,19 +25,19 @@ let overloadFactor = luck * pool.length;
 let rebalancedPool = [];
 // We need to start from the most common, which means we will iterate backwards
 for (let i = overloadedPool.length - 1; i >= 0; i--){
-  const item = overloadedPool[i][0];
-  const probability = overloadedPool[i][1];
-  // This will be modified later, if the pool is "overloaded"
-  let newProbability = probability;
-  // If the prize pool is still "overloaded"
-  if (overloadFactor > 0){
-      // We calculate a "discharge factor" of sorts
-      let valueToRemove = Math.min(probability, overloadFactor);
-      // We reduce our "overload"
-      overloadFactor -= valueToRemove;
-      // And put the new probability for the class
-      newProbability = probability - valueToRemove;
-  }
-  // We append the new pool item
-  rebalancedPool.push([item, newProbability]);
+    const item = overloadedPool[i][0];
+    const probability = overloadedPool[i][1];
+    // This will be modified later, if the pool is "overloaded"
+    let newProbability = probability;
+    // If the prize pool is still "overloaded"
+    if (overloadFactor > 0){
+        // We calculate a "discharge factor" of sorts
+        let valueToRemove = Math.min(probability, overloadFactor);
+        // We reduce our "overload"
+        overloadFactor -= valueToRemove;
+        // And put the new probability for the class
+        newProbability = probability - valueToRemove;
+    }
+    // We append the new pool item
+    rebalancedPool.push([item, newProbability]);
 }
