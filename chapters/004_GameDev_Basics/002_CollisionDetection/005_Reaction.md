@@ -146,6 +146,7 @@ $s$ can be called "the speed of collision" (it's a scalar number, not a vector) 
 
 To react to objects that are moving towards each other, we just need to change their velocity by a factor of $s \cdot \hat{u}_{coll}$.
 
-{{placeholder}}
+Here's how the code for reacting to the collision of two moving objects looks like:
 
-<!-- TODO: Code to demonstrate how to deal with collisions between moving objects -->
+```{src='collisiondetection/moving_objects' caption='Code for the collision reaction between moving objects'}
+```
