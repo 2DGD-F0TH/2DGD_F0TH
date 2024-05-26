@@ -57,5 +57,9 @@ If you want to view a copy of the license, visit <a href="http://creativecommons
     <strong>NO AI TRAINING:</strong> any use of this publication to train generative artificial intelligence (AI) technologies to generate text is expressly prohibited.
 </p>
 
+<p>
+    <strong>Please avoid printing this book:</strong> this work is being periodically updated and changed as new things get added and remade, thus printing it does not make sense. Printing this book would be a waste of resources, so please think well before printing.
+</p>
+
 <p>This work shall be attributed to Daniele Penazzo and the "2D Game Development: From Zero To Hero" community, to see a full list of the contributors, please check the CONTRIBUTORS file in the repository, or head to the contributors section in this book.</p>
 </div>
