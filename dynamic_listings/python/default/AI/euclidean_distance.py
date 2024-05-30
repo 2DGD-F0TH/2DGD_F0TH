@@ -3,8 +3,8 @@ from math import sqrt
 
 class Tile:
     def __init__(self, x: int, y: int) -> None:
-        self.x = x
-        self.y = y
+        self.x: int = x
+        self.y: int = y
 
 
 def euclidean_distance(start: Vector2D, goal: Vector2D) -> float:

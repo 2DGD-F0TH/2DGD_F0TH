@@ -11,9 +11,11 @@ class TwoDimension_Grid:
 
     def __init__(self, rows: int, cols: int) -> None:
         # Prepares the memory for the grid
-        self.grid = [[Tile() for _ in range(cols)] for _ in range(rows)]
-        self.height = rows
-        self.width = cols
+        self.grid: list[list[Tile]] = [
+            [Tile() for _ in range(cols)] for _ in range(rows)
+        ]
+        self.height: int = rows
+        self.width: int = cols
 
     def getCell(self, row: int, col: int) -> Tile | None:
         # Gets a cell from the 2D Grid

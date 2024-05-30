@@ -3,12 +3,12 @@ from random import randint
 
 class Boss:
     def __init__(self, player: Player) -> None:
-        self.player = player
-        self.player_too_far = False
-        self.base_movement_velocity = 10
-        self.too_far_space = 30
-        self.velocity = Vector2D()
-        self.position = Vector2D()
+        self.player: Player = player
+        self.player_too_far: bool = False
+        self.base_movement_velocity: float = 10
+        self.too_far_space: float = 30
+        self.velocity: Vector2D = Vector2D()
+        self.position: Vector2D = Vector2D()
 
     def update(self, dt: float) -> None:
         # ...
