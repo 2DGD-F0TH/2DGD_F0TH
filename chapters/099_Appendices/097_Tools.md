@@ -94,6 +94,12 @@ This tool is open source, made in Adobe AIR, available for Windows, Linux and Ma
 
 <https://terrycavanagh.itch.io/bosca-ceoil>
 
+### Bosca Ceoil: The Blue Album {.unnumbered .unlisted}
+
+A Godot port of the original Bosca Ceoil, created by Yuri Sizov (with Terry Cavanagh's permission). This allows the tool to be ported to new platforms and be maintained.
+
+<https://yurisizov.itch.io/boscaceoil-blue>
+
 ### Chiptone {.unnumbered .unlisted}
 
 An alternative to SFXR, Chiptone is an online tool (made with HTML5, Haxe and OpenFL) that can be used to create chiptune-like sounds for your games.
