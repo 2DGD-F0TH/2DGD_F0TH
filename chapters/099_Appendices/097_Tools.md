@@ -186,6 +186,16 @@ This is another SFXR-inspired sound generator, but instead of generating static 
 
 <https://github.com/fenomas/wafxr>
 
+### Zrythm {.unnumbered .unlisted}
+
+Zrythm is an open-source Digital Audio Workstation (DAW) that aims to be intuitive and highly automated. It features chord assistance, mixing, effects, support for VST plugins (among others), automatic project backups.
+
+The basic release is free with some limitations (25 tracks maximum).
+
+The software is available for Windows, MacOS and Linux.
+
+<https://www.zrythm.org/en/index.html>
+
 Maps {.unnumbered .unlisted}
 --------
 
