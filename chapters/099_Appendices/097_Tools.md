@@ -116,6 +116,14 @@ The software is available for Windows, MacOS and Linux.
 
 <https://famistudio.org/>
 
+### Furnace {.unnumbered .unlisted}
+
+Furnace defines itself as "the ultimate music tracker", supporting almost all 8 and 16 bit systems, including the Atari 2600, Commodore VIC-20, Sega Genesis/Master System and more. It counts over 60 supported chips, it has a really slick interface and supports DefleMask (*.dmf and *.dmw).
+
+The software is available for Windows, MacOS and Linux.
+
+<https://tildearrow.org/furnace/>
+
 ### Helio {.unnumbered .unlisted}
 
 The Helio project poses itself as "an attempt to rethink a music sequencer to create a tool that feels right". It strives for an extremely clean interface, throwing the idea of it being used as a tool to "grow as a composer".
