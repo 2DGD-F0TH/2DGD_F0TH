@@ -150,9 +150,17 @@ LMMS (Linux Multimedia Studio) is a software used to create digital music, it wo
 
 ### MilkyTracker {.unnumbered .unlisted}
 
-MilkyTracker is an editor for tracker files that takes a lot of inspiration from FastTracker II, it has a lot of functionality, it's well-documented and the community is active.o
+MilkyTracker is an editor for tracker files that takes a lot of inspiration from FastTracker II, it has a lot of functionality, it's well-documented and the community is active.
 
 <https://milkytracker.titandemo.org/>
+
+### OpenMPT {.unnumbered .unlisted}
+
+OpenMPT (Open Modplug Tracker) is a tracker software that supports VST plugins and the ASIO protocol. It also hosts libopenmpt, a cross-platform library to play module files; this allows you to implement native tracker music (without converting it to PCM files) in your games.
+
+The software is available for Windows, but it works on Linux via Wine.
+
+<https://openmpt.org/>
 
 ### rFXGen {.unnumbered .unlisted}
 
