@@ -18,7 +18,7 @@ class Rectangle:
     A rectangle, made with an upper-left corner, width and height
     """
 
-    def __init__(self, point: Vector2D, width: int, height: int) -> None:
+    def __init__(self, point: Point, width: int, height: int) -> None:
         """Creates the rectange
 
         :point: The upper left corner point of the rectangle
@@ -26,7 +26,7 @@ class Rectangle:
         :height: The rectangle Height
 
         """
-        self._point: Vector2D = point
+        self._point: Point = point
         self._width: int = width
         self._height: int = height
 
