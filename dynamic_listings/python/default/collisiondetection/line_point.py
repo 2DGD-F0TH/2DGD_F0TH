@@ -1,7 +1,7 @@
 from math import sqrt
 
 
-class Point(object):
+class Point:
 
     """A simple Point"""
 
@@ -15,7 +15,7 @@ class Point(object):
         self.y = y
 
 
-class Line(object):
+class Line:
 
     """Defines a line, drawn between two points"""
 

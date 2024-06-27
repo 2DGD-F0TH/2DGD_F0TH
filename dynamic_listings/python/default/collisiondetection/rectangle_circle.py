@@ -1,7 +1,7 @@
 from math import sqrt
 
 
-class Point(object):
+class Point:
 
     """A simple Point"""
 
@@ -15,7 +15,7 @@ class Point(object):
         self.y = y
 
 
-class Rectangle(object):
+class Rectangle:
 
     """A rectangle, made with an upper-left corner, width and height"""
 
@@ -32,7 +32,7 @@ class Rectangle(object):
         self._height = height
 
 
-class Circle(object):
+class Circle:
 
     """Defines a circle, with center and radius"""
 

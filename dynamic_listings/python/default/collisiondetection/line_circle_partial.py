@@ -6,7 +6,7 @@ def circle_point_collision(circle, point):
     pass
 
 
-class Point(object):
+class Point:
 
     """A simple Point"""
 
@@ -20,7 +20,7 @@ class Point(object):
         self.y = y
 
 
-class Line(object):
+class Line:
 
     """Defines a line, drawn between two points"""
 
@@ -36,7 +36,7 @@ class Line(object):
         self.B = B
 
 
-class Circle(object):
+class Circle:
 
     """Defines a circle, with center and radius"""
 

@@ -1,4 +1,4 @@
-class Point(object):
+class Point:
     """
     A simple Point
     """
@@ -13,7 +13,7 @@ class Point(object):
         self.y = y
 
 
-class Rectangle(object):
+class Rectangle:
     """
     A rectangle, made with an upper-left corner, width and height
     """

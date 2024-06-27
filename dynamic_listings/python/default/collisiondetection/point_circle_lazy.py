@@ -1,7 +1,7 @@
 from math import sqrt
 
 
-class Circle(object):
+class Circle:
 
     """Defines a circle, with center and radius"""
 
