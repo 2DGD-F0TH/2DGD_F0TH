@@ -1,8 +1,10 @@
 import random
+from typing import Callable
+
 
 class Player:
     # ...
-    def registerShootingObserver(callback):
+    def registerShootingObserver(callback: Callable) -> None:
         # Function used to register an observer that will be called when the
         # player shoots a projectile.
         pass
@@ -11,25 +13,25 @@ class Player:
 class JumpingBoss:
     # A boss that jumps when the player shoots. Sometimes.
 
-    player_shot = False
-    y_velocity = 0.0
-    on_ground = False
+    player_shot: bool = False
+    y_velocity: float = 0.0
+    on_ground: bool = False
 
-    def __init__(self, x, y, player):
+    def __init__(self, x: int, y: int, player: Player) -> None:
         # ...
         player.registerShootingObserver(self.setPlayerShot)
         # ...
 
-    def setPlayerShot(self):
+    def setPlayerShot(self) -> None:
         # Sets a state that tells the AI that the player shot a bullet
         self.player_shot = True
 
-    def jump(self):
+    def jump(self) -> None:
         # Sets the boss velocity to -10, making it jump
         if self.on_ground:
             self.y_velocity = -10
 
-    def update(self, dt):
+    def update(self, dt: float) -> None:
         # ...
         if self.player_shot is True:
             if random.randint(1, 6) == 1:

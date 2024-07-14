@@ -1,4 +1,4 @@
-class Color(object):
+class Color:
 
     """
     Defines a color
@@ -12,7 +12,7 @@ class Color(object):
         return self.colorData == 0xFFFFFF
 
 
-class Bitmask(object):
+class Bitmask:
 
     """A sprite bitmask"""
 

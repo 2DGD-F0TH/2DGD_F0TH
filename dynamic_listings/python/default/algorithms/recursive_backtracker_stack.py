@@ -2,25 +2,25 @@ import random
 
 
 class Maze:
-    def __init__(self, width, height):
+    def __init__(self, width: int, height: int) -> None:
         """
         A simple constructor
         """
-        self.width = width  # Needs to be an odd number
-        self.height = height  # Needs to be an odd number
+        self.width: int = width  # Needs to be an odd number
+        self.height: int = height  # Needs to be an odd number
 
         # Create a 2D matrix containing the maze data
         # False = Path, True = Wall
-        self.cells = [
+        self.cells: list[list[bool]] = [
             [True] * self.width
         ] * self.height
-        self.carved_passages = []
+        self.carved_passages: list[tuple[int]] = []
 
     # ...
     # Same as the previous example
     # ...
 
-    def draw_maze(self, x, y):
+    def draw_maze(self, x: int, y: int) -> None:
         """
         Draws a maze using the recursive backtracker algorithm and
         system stack recursion.
@@ -33,25 +33,25 @@ class Maze:
         self.carved_passages.append((x, y))
         # When the "carved_passages" array is empty, we are back at the
         # start of the maze
-        stored_x = x
-        stored_y = y
-        next_x = None
-        next_y = None
-        while (self.carved_passages):
+        stored_x: int = x
+        stored_y: int = y
+        next_x: int = None
+        next_y: int = None
+        while self.carved_passages:
             # We dig a path in the current cell
             self.make_path(stored_x, stored_y)
             # We create a list of available directions (x and y)
-            directions = (
+            directions: list[tuple[int]] = [
                 (1, 0),
                 (-1, 0),
                 (0, 1),
                 (0, -1)
-            )
+            ]
             # And we shuffle them
             random.shuffle(directions)
 
             # While there is at least one direction available
-            while (directions):
+            while directions:
                 # We take the last item in directions list (which is random)
                 direction_to_try = directions.pop()
 
@@ -63,7 +63,7 @@ class Maze:
 
                 # If the node we found is a wall, it means we didn't visit it
                 # (and it's inside our maze boundaries)
-                if (self.is_wall(next_x, next_y)):
+                if self.is_wall(next_x, next_y):
                     # We have found a new node to dig towards
 
                     # Since we are moving 2 cells at a time, we need to carve
@@ -77,7 +77,7 @@ class Maze:
                     self.carved_passages.append((next_x, next_y))
             # If all available directions are exhausted, we pop
             # one layer from our stack: we go back one step
-            if (not directions):
+            if not directions:
                 popped_vector = self.carved_passages.pop()
                 stored_x = popped_vector.x
                 stored_y = popped_vector.y

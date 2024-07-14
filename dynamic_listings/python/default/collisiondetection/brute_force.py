@@ -1,4 +1,4 @@
-def is_collision(A, B):
+def is_collision(A: Circle, B: Circle) -> bool:
     """
     Defines how two items collide
     (being circles, this could be a difference of radii)
@@ -11,8 +11,8 @@ def is_collision(A, B):
     pass
 
 
-items = [1, 2, 3, 4, 5, 6, 7]
-colliding_items = []
+items: list[int] = [1, 2, 3, 4, 5, 6, 7]
+colliding_items: list[tuple[Circle]] = []
 
 for A in items:
     for B in items:

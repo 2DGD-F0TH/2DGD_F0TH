@@ -1,13 +1,13 @@
 # We bootstrap the variables
-openSet = []
-closedSet = []
-currentNode = start
+openSet: list = []
+closedSet: list = []
+currentNode: Node = start
 closedSet.append(currentNode)
 while (currentNode != end):
     for n in currentNode.getAdjacentList():
         if n in closedSet:
             continue
-        elif n in openSet:  # Check if this path is better
+        if n in openSet:  # Check if this path is better
             new_g = getPathCost(n, start)
             if new_g < n.g:
                 # We found a better path from start to currentNode
