@@ -1,6 +1,6 @@
 def update(dt):
     # Using the brute force checking for simplicity
-    for block in player.findCollisions(blocks):
+    for block in player.find_collisions(blocks):
         # ...
         if player.is_jumping:
             # We are jumping, we need to check if we are ascending

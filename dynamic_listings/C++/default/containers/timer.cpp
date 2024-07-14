@@ -31,7 +31,7 @@ class Timer{
                 return;
             }
             // Like any other entity, we update it
-            time = time - dt;
+            time -= dt;
             // When the timer "ticks", we execute the function
             if (time <= 0){
                 function_to_execute();

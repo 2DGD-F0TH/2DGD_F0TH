@@ -7,10 +7,10 @@ class Subject(object):
     def __init__(self):
         self.observers = []
 
-    def register_observer(self, observer):
+    def register_observer(self, observer: Observer):
         self.observers.append(observer)
 
-    def notifyObservers(self):
+    def notify_observers(self):
         for observer in self.observers:
             observer.update()
 
@@ -27,4 +27,4 @@ class Observer(object):
 subject = Subject()
 observer = Observer()
 subject.register_observer(observer)
-subject.notifyObservers()
+subject.notify_observers()

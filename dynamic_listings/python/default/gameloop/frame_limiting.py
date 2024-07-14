@@ -1,6 +1,6 @@
 import time
 
-targetTime = 1.0/60.0
+TARGET_TIME = 1.0/60.0
 game_is_running = True
 
 # We bootstrap dt to 1/60th of a second for the first frame
@@ -16,4 +16,4 @@ while game_is_running:
     # We update our dt
     dt = end - begin
     # If some time is left, we wait until we reach 1/60th of a second.
-    time.sleep(max(targetTime - dt, 0))
+    time.sleep(max(TARGET_TIME - dt, 0))

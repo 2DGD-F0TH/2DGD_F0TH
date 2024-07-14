@@ -13,19 +13,19 @@ class Player:
         # or we'll be working on "residual data"
         self.input_accel = Vector2.ZERO
         # Now we can handle movement
-        if KEYBOARD.Left_Arrow_Pressed:
+        if KEYBOARD.is_left_arrow_pressed:
             self.input_accel.x = self.input_accel.x - 1
-        if KEYBOARD.Right_Arrow_Pressed:
+        if KEYBOARD.is_right_arrow_pressed:
             self.input_accel.x = self.input_accel.x + 1
-        if KEYBOARD.Down_Arrow_Pressed:
+        if KEYBOARD.is_down_arrow_pressed:
             self.input_accel.y = self.input_accel.y + 1
-        if KEYBOARD.Right_Arrow_Pressed:
+        if KEYBOARD.is_up_arrow_pressed:
             self.input_accel.y = self.input_accel.y - 1
         # If any component of the acceleration vector isn't zero, we are moving
         if self.input_accel != Vector2.ZERO:
             self.is_moving = True
 
-    def handle_movement(self, dt):
+    def handle_movement(self, dt: float):
         if self.is_moving:
             # Vectors will take care of summing forces
             self.velocity = self.velocity + self.ACCEL * dt * self.input_accel

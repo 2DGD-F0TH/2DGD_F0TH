@@ -6,11 +6,11 @@ class Player:
 
     def get_input():
         # ...
-        if right_key.is_Pressed:
+        if right_key.is_pressed:
             speed = speed + Vector(1, 0)  # Move right
             needs_update = True
             # ...
-        if up_key.is_Pressed:
+        if up_key.is_pressed:
             speed = speed + Vector(0, -100)  # Move up (jump)
             needs_update = True
         # ...

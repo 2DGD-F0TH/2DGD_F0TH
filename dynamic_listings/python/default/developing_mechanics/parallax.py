@@ -36,7 +36,7 @@ while running:
             # We are quitting the game
             running = False
 
-        if event.type == KEYPRESS:
+        if event.type == KEY_PRESS:
             # We are pressing a key
             if event.key == RIGHT:
                 # We are pressing the right key (moving the camera rightwards)
@@ -46,11 +46,11 @@ while running:
                 # We are pressing the left key (moving the camera leftwards)
                 movement_direction = 1
 
-        if event.type == KEYRELEASE:
+        if event.type == KEY_RELEASE:
             if event.key in (RIGHT, LEFT):
                 movement_direction = 0
     # --------------- UPDATE ---------------
-    if movement_direction != 0:
+    if movement_direction:
         rectangle_1.x += rectangle_1_speed * movement_direction
         rectangle_2.x += rectangle_2_speed * movement_direction
     # --------------- DRAW ---------------

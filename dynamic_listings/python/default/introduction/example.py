@@ -1,4 +1,4 @@
-def pythonExample(phrase):
+def python_example(phrase):
     # This is a simple example function
     print(phrase)
 

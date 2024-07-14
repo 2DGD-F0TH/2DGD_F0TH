@@ -3,13 +3,13 @@ class Timer:
     This is a simple timer class that executes a function after
     a certain amount of time
     """
-    time = 0
-    set_time = 0
+    time: float = 0
+    set_time: float = 0
     function_to_execute = None
     one_shot = False
     active = False
 
-    def __init__(self, time, function, one_shot=False, active=False):
+    def __init__(self, time: float, function, one_shot: bool = False, active: bool = False):
         # We prepare the timer and memorize the setting
         self.time = time
         self.set_time = time
@@ -20,7 +20,7 @@ class Timer:
         # Does this timer need to be active when constructed?
         self.active = active
 
-    def update(self, dt):
+    def update(self, dt: float):
         """
         A simple update function for out timer
         """
