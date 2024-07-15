@@ -4,13 +4,13 @@ class Node:
     It can be used as root or any other node
     """
 
-    def __init__(self, value):
+    def __init__(self, value: str):
         self.content = value
         self.left = None
         self.right = None
 
 
-def build_example_tree():
+def build_example_tree() -> Node:
     # Let's build the example tree starting with the nodes
     A = Node("A")
     B = Node("B")

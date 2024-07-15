@@ -1,13 +1,13 @@
 class Grinder:
     # A simple coffee grinder component
-    def grind(self):
+    def grind(self) -> None:
         # Pretend to grind some coffee
         print("Grinding coffee")
 
 
 class BrewingUnit:
     # A simple brewing unit component
-    def brew(self):
+    def brew(self) -> None:
         # Pretend to brew a good coffee
         print("Brewing your coffee")
 
@@ -19,7 +19,7 @@ class CoffeeMachine:
         self.grinder: Grinder = Grinder()
         self.brewer: BrewingUnit = BrewingUnit()
 
-    def make_coffee(self):
+    def make_coffee(self) -> None:
         # Uses the brewing component and the grinder to make some fresh coffee
         self.grinder.grind()
         self.brewer.brew()

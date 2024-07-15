@@ -37,7 +37,7 @@ class Circle : public Shape{
 
     float area(){
         // Returns the Area of the circle
-        return 3.1415 * 3.1415 * radius;
+        return 3.1415 * radius * radius;
     }
 
     float perimeter(){

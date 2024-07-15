@@ -1,5 +1,5 @@
 # Interleaving movement and collision reaction with rectangles
-def update(dt):
+def update(dt: float) -> None:
     # ...
     player.position.x += player.x_speed * dt
     # Refer to your favourite collision detection and broad/fine passes

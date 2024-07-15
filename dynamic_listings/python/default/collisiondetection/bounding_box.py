@@ -1,8 +1,8 @@
-class Point(object):
+class Point:
 
     """A simple Point"""
 
-    def __init__(self, x, y):
+    def __init__(self, x: int, y: int):
         """
         Creates the point
         :x: The X Coordinate of the point
@@ -12,7 +12,7 @@ class Point(object):
         self.y = y
 
 
-class Rectangle(object):
+class Rectangle:
 
     """A rectangle, made with an upper-left corner, width and height"""
 
@@ -29,10 +29,10 @@ class Rectangle(object):
         self._height = height
 
     @staticmethod
-    def from_points(p1, p2):
-        # ...
+    def from_points(topleft: Point, bottomright: Point) -> Rectangle:
+        ...
 
-def bounding_box(vertices):
+def bounding_box(vertices: list[Point]) -> Rectangle:
     # First we create and bootstrap the variables
     xmin = vertices[0].x
     xmax = vertices[0].x

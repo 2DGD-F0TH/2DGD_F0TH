@@ -5,7 +5,7 @@ class Timer:
     ...
     """
 
-    def update(self, dt: float):
+    def update(self, dt: float) -> None:
         """
         A simple update function for out timer
         """

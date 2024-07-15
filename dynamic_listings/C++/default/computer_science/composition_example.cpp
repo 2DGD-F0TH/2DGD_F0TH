@@ -2,6 +2,7 @@
 
 class Grinder{
     // A simple coffee grinder component
+public:
     void grind(){
         // Pretend to grind some coffee
         std::cout << "Grinding coffee" << std::endl;
@@ -10,6 +11,7 @@ class Grinder{
 
 class BrewingUnit{
     // A simple brewing unit component
+public:
     void brew(){
         // Pretend to brew a good coffee
         std::cout << "Brewing your coffee" << std::endl;

@@ -1,3 +1,6 @@
+from typing import Callable
+
+
 class Timer:
     """
     This is a simple timer class that executes a function after
@@ -5,11 +8,11 @@ class Timer:
     """
     time: float = 0
     set_time: float = 0
-    function_to_execute = None
-    one_shot = False
-    active = False
+    function_to_execute: Callable = None
+    one_shot: bool = False
+    active: bool = False
 
-    def __init__(self, time: float, function, one_shot: bool = False, active: bool = False):
+    def __init__(self, time: float, function: Callable, one_shot: bool = False, active: bool = False) -> None:
         # We prepare the timer and memorize the setting
         self.time = time
         self.set_time = time
@@ -20,7 +23,7 @@ class Timer:
         # Does this timer need to be active when constructed?
         self.active = active
 
-    def update(self, dt: float):
+    def update(self, dt: float) -> None:
         """
         A simple update function for out timer
         """

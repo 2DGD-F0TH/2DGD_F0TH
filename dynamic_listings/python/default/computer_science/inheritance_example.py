@@ -1,5 +1,6 @@
 from math import pi
 
+
 class Shape:
     # An abstract shape class
     def area() -> float:
@@ -16,9 +17,9 @@ class Rectangle(Shape):
     width: float = 0.0
     height: float = 0.0
 
-    def __init__(self, w: float, h: float):
-        self.width = w
-        self.height = h
+    def __init__(self, width: float, height: float) -> None:
+        self.width = width
+        self.height = height
 
     def area(self) -> float:
         # Returns the Area of the rectangle
@@ -33,13 +34,13 @@ class Circle(Shape):
     # A simple circle class
     radius: float = 0.0
 
-    def __init__(self, r: float):
-        self.radius = r
+    def __init__(self, radius: float) -> None:
+        self.radius = radius
 
     def area(self) -> float:
         # Returns the Area of the circle
-        return this.radius * pi ** 2
+        return pi * self.radius ** 2
 
     def perimeter(self) -> float:
         # Returns the circumference of the circle
-        return 2 * pi * this.radius
+        return 2 * pi * self.radius

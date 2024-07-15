@@ -1,4 +1,4 @@
-def is_collision(A, B):
+def is_collision(A: Item, B: Item) -> bool:
     """
     Defines how two items collide
     (being circles, this could be a difference of radii)
@@ -8,15 +8,15 @@ def is_collision(A, B):
     :returns: Boolean telling if the items collide
 
     """
-    pass
+    ...
 
 
-items = [1, 2, 3, 4, 5, 6, 7]
+items: list[Item] = [item1, item2, item3, ...]
 colliding_items = []
 
 for A in items:
     for B in items:
-        if A is not B:
+        if A != B:
             # We avoid checking if an item collides with itself,
             # for obvious reasons
             if is_collision(A, B):
