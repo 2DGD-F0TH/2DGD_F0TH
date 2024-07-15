@@ -3,7 +3,7 @@ def line_line_collision(x1: float, y1: float, x2: float, y2: float, x3: float, y
     ...
 
 
-def point_rect_collision(x1, y1, rectx, recty, rectwidth, rectheight) -> bool:
+def point_rect_collision(x1: float, y1: float, rectx: float, recty: float, rectwidth: float, rectheight: float) -> bool:
     # our previous implementation of a point/rectangle collision detection
     ...
 

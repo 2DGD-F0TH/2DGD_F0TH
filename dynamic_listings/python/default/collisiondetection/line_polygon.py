@@ -1,5 +1,5 @@
 # ...
-def line_polygon_collision(line: Line, poly: Polygon):
+def line_polygon_collision(line: Line, poly: Polygon) -> bool:
     # First of all, let's check if either of the line ends are inside the polygon
     # This covers cases AB and CD
     if polygon_point_collision(poly, line.A) or polygon_point_collision(poly, line.B):
@@ -7,9 +7,9 @@ def line_polygon_collision(line: Line, poly: Polygon):
         return True
 
     # Now we check for case EF
-    for i in range(len(poly.vertices)):
+    for i in enumerate(poly.vertices):
         # We iterate through all the vertices
-        j = i + 1
+        j: int = i + 1
         # If we get to the end, we wrap around j
         if j == len(poly.vertices):
             j = 0

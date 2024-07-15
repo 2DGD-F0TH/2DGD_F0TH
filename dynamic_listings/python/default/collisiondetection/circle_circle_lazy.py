@@ -5,7 +5,7 @@ class Circle:
 
     """Defines a circle, with center and radius"""
 
-    def __init__(self, center: Point, radius: int) -> None:
+    def __init__(self, center: Point, radius: float) -> None:
         """
         Initializes the circle
 

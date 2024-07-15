@@ -1,12 +1,12 @@
 from random import uniform as random_float
 from math import floor
 
-MIN = 0
-MAX = 100
-OCTAVES = 5
+MIN: int = 0
+MAX: int = 100
+OCTAVES: int = 5
 
 # This will contain the "heights" of our terrain
-terrain = [0] * 32
+terrain: list[float] = [0.0] * 32
 
 # We start by deciding the start and end "heights" of our terrain
 terrain[0] = random_float(MIN, MAX)
@@ -15,13 +15,13 @@ terrain[31] = random_float(MIN, MAX)
 interpolate(terrain, 0, 31)
 
 
-def midpoint_displacement(begin, end, octave):
+def midpoint_displacement(begin: int, end: int, octave: int) -> None:
     # Get the midpoint
-    midpoint = floor((end - begin) / 2)
+    midpoint: int = floor((end - begin) / 2)
     # Get the midpoint value
-    value = (abs(terrain[end] - terrain[begin])) / 2
+    value: float = (abs(terrain[end] - terrain[begin])) / 2
     # Get the possible displacement
-    displacement = MAX / octave
+    displacement: float = MAX / octave
     # Displace by a random amount
     value += random_float(-displacement, displacement)
     # Apply the value

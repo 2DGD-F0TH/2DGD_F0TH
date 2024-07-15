@@ -4,7 +4,7 @@ def circle_polygon_collision(poly: Polygon, circ: Circle) -> bool:
     # a point/polygon check, so let's do them first
     for i in range(len(poly.vertices)):
         # We iterate through all the vertices
-        j = i + 1
+        j: int = i + 1
         # If we get to the end, we wrap around j
         if j == len(poly.vertices):
             j = 0

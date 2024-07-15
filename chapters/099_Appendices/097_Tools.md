@@ -94,6 +94,12 @@ This tool is open source, made in Adobe AIR, available for Windows, Linux and Ma
 
 <https://terrycavanagh.itch.io/bosca-ceoil>
 
+### Bosca Ceoil: The Blue Album {.unnumbered .unlisted}
+
+A Godot port of the original Bosca Ceoil, created by Yuri Sizov (with Terry Cavanagh's permission). This allows the tool to be ported to new platforms and be maintained.
+
+<https://yurisizov.itch.io/boscaceoil-blue>
+
 ### Chiptone {.unnumbered .unlisted}
 
 An alternative to SFXR, Chiptone is an online tool (made with HTML5, Haxe and OpenFL) that can be used to create chiptune-like sounds for your games.
@@ -109,6 +115,14 @@ FamiStudio is a DAW (Digital Audio Workstation) software that allows you to edit
 The software is available for Windows, MacOS and Linux.
 
 <https://famistudio.org/>
+
+### Furnace {.unnumbered .unlisted}
+
+Furnace defines itself as "the ultimate music tracker", supporting almost all 8 and 16 bit systems, including the Atari 2600, Commodore VIC-20, Sega Genesis/Master System and more. It counts over 60 supported chips, it has a really slick interface and supports DefleMask (*.dmf and *.dmw).
+
+The software is available for Windows, MacOS and Linux.
+
+<https://tildearrow.org/furnace/>
 
 ### Helio {.unnumbered .unlisted}
 
@@ -136,9 +150,17 @@ LMMS (Linux Multimedia Studio) is a software used to create digital music, it wo
 
 ### MilkyTracker {.unnumbered .unlisted}
 
-MilkyTracker is an editor for tracker files that takes a lot of inspiration from FastTracker II, it has a lot of functionality, it's well-documented and the community is active.o
+MilkyTracker is an editor for tracker files that takes a lot of inspiration from FastTracker II, it has a lot of functionality, it's well-documented and the community is active.
 
 <https://milkytracker.titandemo.org/>
+
+### OpenMPT {.unnumbered .unlisted}
+
+OpenMPT (Open Modplug Tracker) is a tracker software that supports VST plugins and the ASIO protocol. It also hosts libopenmpt, a cross-platform library to play module files; this allows you to implement native tracker music (without converting it to PCM files) in your games.
+
+The software is available for Windows, but it works on Linux via Wine.
+
+<https://openmpt.org/>
 
 ### rFXGen {.unnumbered .unlisted}
 
@@ -171,6 +193,16 @@ Tenacity is a fork of the Audacity audio editor, mostly due to licensing woes an
 This is another SFXR-inspired sound generator, but instead of generating static WAV files, it generates audio dynamically via Web Audio. This, coupled with the `wasgen` library allows you to save the "playback code" of a certain sound to include it in your games.
 
 <https://github.com/fenomas/wafxr>
+
+### Zrythm {.unnumbered .unlisted}
+
+Zrythm is an open-source Digital Audio Workstation (DAW) that aims to be intuitive and highly automated. It features chord assistance, mixing, effects, support for VST plugins (among others), automatic project backups.
+
+The basic release is free with some limitations (25 tracks maximum).
+
+The software is available for Windows, MacOS and Linux.
+
+<https://www.zrythm.org/en/index.html>
 
 Maps {.unnumbered .unlisted}
 --------

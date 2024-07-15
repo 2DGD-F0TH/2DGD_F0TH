@@ -2,15 +2,15 @@ from random import randint
 
 
 class Boss:
-    def __init__(self, player):
-        self.player = player
-        self.player_too_far = False
-        self.base_movement_velocity = 10
-        self.too_far_space = 30
-        self.velocity = Vector2D()
-        self.position = Vector2D()
+    def __init__(self, player: Player) -> None:
+        self.player: Player = player
+        self.player_too_far: bool = False
+        self.base_movement_velocity: float = 10
+        self.too_far_space: float = 30
+        self.velocity: Vector2D = Vector2D()
+        self.position: Vector2D = Vector2D()
 
-    def update(self, dt):
+    def update(self, dt: float) -> None:
         # ...
         if (abs(self.player.position.x - self.position.x) > self.too_far_space):
             if (abs(self.player.position.y - self.position.y) > self.too_far_space):
@@ -22,9 +22,9 @@ class Boss:
         # We're using a variable to preserve the "too far" state between frames
         if self.player_too_far:
             # The player is too far, close in
-            distance = self.player.position - self.position
+            distance: Vector2D = self.player.position - self.position
             # Make it a direction
-            direction = distance.normalize()
+            direction: Vector2D = distance.normalize()
             # self is the direction the boss should go now, transfer it to velocity
             self.velocity = direction * self.base_movement_velocity
 

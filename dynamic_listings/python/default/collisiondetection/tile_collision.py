@@ -3,7 +3,7 @@ TILE_WIDTH = 32
 TILE_HEIGHT = 32
 
 
-class Rectangle(object):
+class Rectangle:
 
     """
     Represents a rectangle with an upper left corner, width and height

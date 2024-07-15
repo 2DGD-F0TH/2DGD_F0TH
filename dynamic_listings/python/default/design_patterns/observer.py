@@ -1,4 +1,4 @@
-class Subject(object):
+class Subject:
     """
     This is the observed class that contains the list of observers
     and the notifyObservers method
@@ -14,7 +14,7 @@ class Subject(object):
         for observer in self.observers:
             observer.update()
 
-class Observer(object):
+class Observer:
     """
     This is the class that contains the update method, used to force an
     update in the observer

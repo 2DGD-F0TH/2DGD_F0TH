@@ -2,8 +2,9 @@ from math import sqrt
 
 
 class Point:
-
-    """A simple Point"""
+    """
+    A simple Point
+    """
 
     def __init__(self, x: int, y: int) -> None:
         """
@@ -11,13 +12,14 @@ class Point:
         :x: The X Coordinate of the point
         :y: The Y Coordinate of the point
         """
-        self.x = x
-        self.y = y
+        self.x: int = x
+        self.y: int = y
 
 
 class Line:
-
-    """Defines a line, drawn between two points"""
+    """
+    Defines a line, drawn between two points
+    """
 
     def __init__(self, A: Point, B: Point) -> None:
         """
@@ -27,8 +29,8 @@ class Line:
         :B: Second Point of the Line
 
         """
-        self.A = A
-        self.B = B
+        self.A: Point = A
+        self.B: Point = B
 
 
 def distance(A: Point, B: Point) -> float:
