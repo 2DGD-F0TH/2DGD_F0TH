@@ -1,12 +1,12 @@
 class Polygon:
-    vertices = []
+    vertices: list[Point] = []
 
-    def calculate_bounding_box(self):
+    def calculate_bounding_box(self) -> Rectangle:
         # This function calculates the bounding box
         # -------------------------
         # First we create and bootstrap the variables
-        xmin = vertices[0].x
-        xmax = vertices[0].x
+        xmin = self.vertices[0].x
+        xmax = self.vertices[0].x
         # ...
         # see the bounding box algorithm for the full version
         # ...
@@ -15,14 +15,14 @@ class Polygon:
         # and return it
         return boundingBox
 
-    def do_fanning(self):
+    def do_fanning(self) -> list[Triangle]:
         """
         This function iterates over the vertices and returns
         an array of triangles corresponding to the "fan triangulation"
         """
         # We fix the "base" of the fan on the first vertex
         root_vertex = self.vertices[0]
-        temp_triangles = []
+        temp_triangles: list[Triangle] = []
         # Now we iterate through all the other vertices
         for j in range(2, len(self.vertices)):
             # j goes from the third vertex, to the last

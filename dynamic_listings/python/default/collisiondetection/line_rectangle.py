@@ -16,10 +16,10 @@ def line_rectangle_collision(x1: float, y1: float, x2: float, y2: float, rectx: 
         return True
 
     # Now to test the rectangle against the line, if it's not completely inside
-    left = line_line_collision(x1, y1, x2, y2, rectx, recty, rectx, recty + rectheight)
-    right = line_line_collision(x1, y1, x2, y2, rectx + rectwidth, recty, rectx + rectwidth, recty + rectheight)
-    top = line_line_collision(x1, y1, x2, y2, rectx, recty, rectx + rectwidth, recty)
-    bottom = line_line_collision(x1, y1, x2, y2, rectx, recty + rectheight, rectx + rectwidth, recty + rectheight)
+    left: bool = line_line_collision(x1, y1, x2, y2, rectx, recty, rectx, recty + rectheight)
+    right: bool = line_line_collision(x1, y1, x2, y2, rectx + rectwidth, recty, rectx + rectwidth, recty + rectheight)
+    top: bool = line_line_collision(x1, y1, x2, y2, rectx, recty, rectx + rectwidth, recty)
+    bottom: bool = line_line_collision(x1, y1, x2, y2, rectx, recty + rectheight, rectx + rectwidth, recty + rectheight)
 
     is_colliding = left or right or top or bottom
     # If we hit one of the sides, we are colliding

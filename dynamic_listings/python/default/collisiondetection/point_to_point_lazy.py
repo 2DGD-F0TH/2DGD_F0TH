@@ -1,4 +1,4 @@
-def point_collision(A, B):
+def point_point_collision(A: Point, B: Point) -> bool:
     """
     Detects a collision between two points
 

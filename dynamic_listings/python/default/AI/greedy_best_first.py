@@ -1,9 +1,9 @@
 # We bootstrap the variables
-openSet: list = []
-closedSet: list = []
+openSet: list[Node] = []
+closedSet: list[Node] = []
 currentNode: Node = start
 closedSet.append(currentNode)
-while (currentNode != end):
+while currentNode != end:
     for n in currentNode.getAdjacentList():
         if n in closedSet:
             # We already analyzed this node, continue to next n

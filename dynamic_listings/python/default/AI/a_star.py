@@ -1,6 +1,6 @@
 # We bootstrap the variables
-openSet: list = []
-closedSet: list = []
+openSet: list[Node] = []
+closedSet: list[Node] = []
 currentNode: Node = start
 closedSet.append(currentNode)
 while (currentNode != end):

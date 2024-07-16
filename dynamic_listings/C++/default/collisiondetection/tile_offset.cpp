@@ -23,7 +23,7 @@ class TiledPlayer{
             // Get the destination tile
             next_position = current_position + offset;
             // Is the tile a wall?
-            if (not MAP.get_tile(next_position).isWall()){
+            if (!MAP.get_tile(next_position).isWall()){
                 // No, move the player to the new tile
                 current_position = next_position;
             }

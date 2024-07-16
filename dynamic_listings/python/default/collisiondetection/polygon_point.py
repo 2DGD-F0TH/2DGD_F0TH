@@ -1,9 +1,9 @@
 # ...
-def polygon_point(poly, point):
+def polygon_point_collision(poly, point):
     # First of all, we get the polygon's bounding box
     bounding_box = poly.calculate_bounding_box();
     # Then we do a simple point vs. rectangle check
-    if not point_rectangle(bounding_box, point):
+    if not point_rectangle_collision(point, bounding_box):
         # We are not even in the bounding box, we can't collide
         return False
     # If instead we are in the bounding box, we need to get the "fan triangulation"

@@ -3,7 +3,7 @@ TILE_WIDTH = 32
 TILE_HEIGHT = 32
 
 
-def convert_pixels_to_tile(x, y):
+def convert_pixels_to_tile(x: int, y: int) -> tuple[int, int]:
     """
     Converts a point into tile coordinates
 

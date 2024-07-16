@@ -1,4 +1,4 @@
-def solve_collision(player, object):
+def solve_collision(player: Entity, object: Entity) -> None:
     """
     This algorithm solves a collision between the player
     and an unmovable object
@@ -6,10 +6,10 @@ def solve_collision(player, object):
     """
 
     # The overlap will help us decide how to react
-    overlap = get_overlap(player, object)
-    if (overlap.x > overlap.y):
+    overlap: Vector2 = get_overlap(player, object)
+    if overlap.x > overlap.y:
         # Y is the "shallow axis"
-        if (player.speed.y > 0):
+        if player.speed.y > 0:
             # Player is going towards the bottom of screen
             player.rect.bottom = object.rect.top
         else:
@@ -17,7 +17,7 @@ def solve_collision(player, object):
             player.rect.top = object.rect.bottom
     else:
         # X is the "shallow axis"
-        if (player.speed.x > 0):
+        if player.speed.x > 0:
             # Player is going right
             player.rect.right = object.rect.left
         else:

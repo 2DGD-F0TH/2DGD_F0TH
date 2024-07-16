@@ -7,7 +7,7 @@ def dot_product(u: Vector2, v: Vector2) -> float:
 
 
 def scale_vector(factor: float, v: Vector2) -> Vector2:
-    return Vector2D(
+    return Vector2(
         x=factor * v.x,
         y=factor * v.y
     )

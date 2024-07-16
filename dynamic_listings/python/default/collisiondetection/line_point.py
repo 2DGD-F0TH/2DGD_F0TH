@@ -49,8 +49,8 @@ def line_point_collision(line: Line, point: Point) -> bool:
     """
     Calculates a possible line/point collision
 
-    :pt: A point
-    :ln: A line
+    :line: A line
+    :point: A point
     :returns: A boolean telling us if the point and line collide
 
     """

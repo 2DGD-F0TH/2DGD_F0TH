@@ -28,9 +28,9 @@ class Rectangle:
         :height: The rectangle Height
 
         """
-        self._point: Point = point
-        self._width: int = width
-        self._height: int = height
+        self.corner: Point = point
+        self.width: int = width
+        self.height: int = height
 
     @staticmethod
     def from_points(topleft: Point, bottomright: Point) -> Self:

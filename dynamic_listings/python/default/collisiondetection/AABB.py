@@ -8,8 +8,8 @@ class Point:
         :x: The X Coordinate of the point
         :y: The Y Coordinate of the point
         """
-        self.x = x
-        self.y = y
+        self.x: int = x
+        self.y: int = y
 
 
 class Rectangle:
@@ -24,9 +24,9 @@ class Rectangle:
         :height: The rectangle Height
 
         """
-        self.corner = point
-        self.width = width
-        self.height = height
+        self.corner: Point = point
+        self.width: int = width
+        self.height: int = height
 
 
 def rect_rect_collision(A: Rectangle, B: Rectangle) -> bool:

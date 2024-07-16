@@ -9,7 +9,7 @@ class Rectangle:
     Represents a rectangle with an upper left corner, width and height
     """
 
-    def __init__(self, corner, width, height):
+    def __init__(self, corner: Point, width: int, height: int) -> None:
         """
         Initializes the rectangle
 
@@ -18,12 +18,12 @@ class Rectangle:
         :height: The rectangle height
 
         """
-        self._corner = corner
-        self._width = width
-        self._height = height
+        self.corner: Point = corner
+        self.width: int = width
+        self.height: int = height
 
 
-def convert_pixels_to_tile(x, y):
+def convert_pixels_to_tile(x: int, y: int) -> tuple[int, int]:
     """
     Converts a point into tile coordinates
 
@@ -47,4 +47,4 @@ for point in points_to_check:
     detected_tile = level.get_tile(detected_tile_coordinates)
     if AABB(player, detected_tile.rectangle):
         # React to the collision
-        pass
+        ...

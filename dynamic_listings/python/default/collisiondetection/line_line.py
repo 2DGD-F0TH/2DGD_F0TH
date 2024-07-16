@@ -11,6 +11,6 @@ def line_line_collision(x1: float, y1: float, x2: float, y2: float, x3: float, y
     uB: float = ((x2 - x1) * (y1 - y3) - (y2 - y1) * (x1 - x3)) / den
 
     # Let's see if uA and uB tell us the lines are colliding
-    is_colliding = 0 <= uA <= 1 and 0 <= uB <= 1
+    is_colliding = (0 <= uA <= 1) and (0 <= uB <= 1)
     # If not, they don't collide
     return is_colliding
