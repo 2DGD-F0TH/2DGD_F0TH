@@ -3,6 +3,6 @@ void update(float dt){
     Vector vector_right(1, 0);
     // ...
     Vector total_movement = vector_up + vector_right;
-    characterController.Move(total_movement * dt);
+    characterController.move(total_movement * dt);
     // ...
 }
