@@ -1,4 +1,4 @@
-class LazyObject:
+class EagerObject:
     halved_numbers: list[int] = None
 
     def __init__(self, lst: list[int]):
