@@ -5,8 +5,8 @@ class Polygon:
         # This function calculates the bounding box
         # -------------------------
         # First we create and bootstrap the variables
-        xmin = self.vertices[0].x
-        xmax = self.vertices[0].x
+        xmin: int = self.vertices[0].x
+        xmax: int = self.vertices[0].x
         # ...
         # see the bounding box algorithm for the full version
         # ...
@@ -21,7 +21,7 @@ class Polygon:
         an array of triangles corresponding to the "fan triangulation"
         """
         # We fix the "base" of the fan on the first vertex
-        root_vertex = self.vertices[0]
+        root_vertex: Point = self.vertices[0]
         temp_triangles: list[Triangle] = []
         # Now we iterate through all the other vertices
         for j in range(2, len(self.vertices)):

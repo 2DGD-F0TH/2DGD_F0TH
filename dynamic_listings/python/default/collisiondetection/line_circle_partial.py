@@ -63,8 +63,8 @@ def line_circle_collision(circle: Circle, line: Line) -> bool:
     :line: The line which we should check collision for
     :returns: A boolean telling us if the line and circle collide
     """
-    collides_with_A = circle_point_collision(circle, line.A)
-    collides_with_B = circle_point_collision(circle, line.B)
+    collides_with_A: bool = circle_point_collision(circle, line.A)
+    collides_with_B: bool = circle_point_collision(circle, line.B)
     if collides_with_A or collides_with_B:
         return True
     # ...

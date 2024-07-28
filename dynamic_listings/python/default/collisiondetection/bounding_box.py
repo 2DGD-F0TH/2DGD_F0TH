@@ -1,5 +1,6 @@
 from typing import Self
 
+
 class Point:
     """
     A simple Point
@@ -36,6 +37,7 @@ class Rectangle:
     def from_points(topleft: Point, bottomright: Point) -> Self:
         ...
 
+
 def bounding_box(vertices: list[Point]) -> Rectangle:
     # First we create and bootstrap the variables
     xmin: int = vertices[0].x
@@ -49,9 +51,9 @@ def bounding_box(vertices: list[Point]) -> Rectangle:
         ymin = min(ymin, vertex.y)
         ymax = max(ymax, vertex.y)
     # Now we can build the needed points for the bounding box
-    A = Point(xmin, ymin)
-    C = Point(xmax, ymax)
+    A: Point = Point(xmin, ymin)
+    C: Point = Point(xmax, ymax)
     # We build our bounding box
-    boundingBox = Rectangle.from_points(A, C)
+    boundingBox: Rectangle = Rectangle.from_points(A, C)
     # and return it
     return boundingBox

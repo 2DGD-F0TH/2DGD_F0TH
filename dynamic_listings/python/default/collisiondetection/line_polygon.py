@@ -13,7 +13,7 @@ def line_polygon_collision(line: Line, poly: Polygon) -> bool:
         # If we get to the end, we wrap around j
         if j == len(poly.vertices):
             j = 0
-        temp_line = Line.from_points(poly.vertices[i], poly.vertices[j])
+        temp_line: Line = Line.from_points(poly.vertices[i], poly.vertices[j])
         if line_line_collsion(temp_line, line):
             return True
     # If none of the previous checks was triggered, we don't have a collision

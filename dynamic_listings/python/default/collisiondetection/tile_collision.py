@@ -32,19 +32,19 @@ def convert_pixels_to_tile(x: int, y: int) -> tuple[int, int]:
     :returns: A 2-tuple containing the tile coordinates detected
 
     """
-    tile_x = floor(x / TILE_WIDTH)
-    tile_y = floor(y / TILE_HEIGHT)
+    tile_x: int = floor(x / TILE_WIDTH)
+    tile_y: int = floor(y / TILE_HEIGHT)
     return (tile_x, tile_y)
 
 
 # We assume the player is falling, so no check will be shown here
-points_to_check = [
+points_to_check: list[Point] = [
     Point(player.corner.x, player.corner.y + player.height),
     Point(player.corner.x + player.width, player.corner.y + player.height),
 ]
 for point in points_to_check:
-    detected_tile_coordinates = convert_pixels_to_tile(point.x, point.y)
-    detected_tile = level.get_tile(detected_tile_coordinates)
+    detected_tile_coordinates: tuple[int, int] = convert_pixels_to_tile(point.x, point.y)
+    detected_tile: Tile = level.get_tile(detected_tile_coordinates)
     if AABB(player, detected_tile.rectangle):
         # React to the collision
         ...

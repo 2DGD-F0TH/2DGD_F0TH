@@ -8,7 +8,7 @@ def circle_polygon_collision(poly: Polygon, circ: Circle) -> bool:
         # If we get to the end, we wrap around j
         if j == len(poly.vertices):
             j = 0
-        temp_line = Line.from_points(poly.vertices[i], poly.vertices[j])
+        temp_line: Line = Line.from_points(poly.vertices[i], poly.vertices[j])
         # In case we find a hit, we already know there is a collision
         if line_circle_collision(circ, temp_line):
             return True

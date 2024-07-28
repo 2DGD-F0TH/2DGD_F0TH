@@ -13,8 +13,8 @@ class Circle:
         :radius: Radius of the circle, as a float
 
         """
-        self.center = center
-        self.radius = radius
+        self.center: Point = center
+        self.radius: float = radius
 
 
 def distance(A: Point, B: Point) -> float:

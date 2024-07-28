@@ -6,7 +6,7 @@ def polygon_polygon_collision(p1: Polygon, p2: Polygon) -> bool:
         if j == len(p2.vertices):
             # Wrap around in case we get to the end
             j = 0
-        temp_line = Line.from_points(p2.vertices[i], p2.vertices[j])
+        temp_line: Line = Line.from_points(p2.vertices[i], p2.vertices[j])
         if line_polygon_collision(p1, temp_line):
             # We have a hit
             return True

@@ -16,8 +16,9 @@ colliding_items: list[tuple[Circle]] = []
 
 for A in items:
     for B in items:
-        if A != B:
+        if A == B:
+            continue
             # We avoid checking if an item collides with itself,
             # for obvious reasons
-            if is_collision(A, B):
-                colliding_items.append((A, B))
+        if is_collision(A, B):
+            colliding_items.append((A, B))

@@ -55,12 +55,12 @@ def line_point_collision(line: Line, point: Point) -> bool:
 
     """
     # First, let's calculate the length of the line
-    length = distance(line.A, line.B)
+    length: float = distance(line.A, line.B)
     # Now let's calculate the distance between the point pt
     # and the point "A" of the line
-    point_to_a = distance(line.A, point)
+    point_to_a: float = distance(line.A, point)
     # Same Goes for the distance between pt and "B"
-    point_to_b = distance(line.B, point)
+    point_to_b: float = distance(line.B, point)
     # Now for the detection
     
     is_colliding = point_to_a + point_to_b == length

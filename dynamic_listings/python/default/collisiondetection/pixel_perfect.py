@@ -63,8 +63,8 @@ def pixel_perfect_collision(A: Sprite, B: Sprite) -> bool:
     # For each pixel in the intersecting rectangle, let's check
     for y in range(y1, y2):
         for x in range(x1, x2):
-            a = A.bitmask.get_color(x - A.x, y - A.y)
-            b = B.bitmask.get_color(x - B.x, y - B.y)
+            a: Color = A.bitmask.get_color(x - A.x, y - A.y)
+            b: Color = B.bitmask.get_color(x - B.x, y - B.y)
 
             if (a.isWhite() and b.isWhite()):
                 return True
