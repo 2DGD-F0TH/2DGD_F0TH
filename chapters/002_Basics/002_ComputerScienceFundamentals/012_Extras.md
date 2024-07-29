@@ -67,7 +67,31 @@ As we can see, circles `A` and `B` are considered "equal", according to the rule
 Truthiness and "Falsiness"
 --------------------------
 
-{{placeholder}}
+Some programming languages try to make themselves more readable by shortcutting some boolean condition, using so-called "truthy" and "falsy" values.
+
+These values are automatically converted into a boolean according to some rules that have been set by the language itself.
+
+For instance some "falsy" values can be:
+
+- The `false` keyword (obviously);
+- The number `0` (zero);
+- The empty string;
+- The empty list (in Python, for instance);
+- The language's "NULL" value (`None` for Python, `null` for JS, ...);
+
+while some "truthy" values can be:
+
+- The `true` keyword (again, obviously);
+- Any number that is not zero;
+- Any string with at least one character;
+- A list with at least one element (in Python, for instance);
+- Any object that is "non-NULL".
+
+This allows us to write code that is a little bit more terse, improving readability.
+
+:::: pitfall ::::
+Keep in mind the difference between equality and identity when dealing with "truthy" and "falsy" values. In some cases, terser code (that leverages the so-called "type coercion") might hide some corner cases that result in bugs.
+:::::::::::::::::
 
 The principle of locality {#locality_principle}
 -----------------------------------------------
