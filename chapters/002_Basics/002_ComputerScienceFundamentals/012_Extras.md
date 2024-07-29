@@ -1,3 +1,74 @@
+Equality vs. Identity
+---------------------
+
+In many programming languages there is a difference between things that are "equal" and things that are "identical".
+
+This can translate in different operators in each programming language, for instance:
+
+- `==` (equality) versus `is` (identity) in Python;
+- `==` (equality) versus `===` (identity) in JavaScript;
+
+So it is important to remember the difference.
+
+Equality checks if two objects are "equal", given a certain set of rules. For instance, two circles may be considered "equal" if they have the same values for center and radius.
+
+Identity checks is two objects are actually the same object (usually by checking if the pointers refer to the same region in memory).
+
+Let's take the following code:
+
+```{.python caption="Checking identity vs. checking equality"}
+from typing import Self
+
+class Circle:
+    center: tuple[int, int] = (0, 0)
+    radius: int = 0
+
+    def __init__(self, center: int, radius: int):
+        self.center = center
+        self.radius = radius
+
+    def __eq__(self, other: Self):
+        """
+        Here we apply the rules to decide if two circles are equal
+        """
+        return (
+            self.center == other.center
+            and self.radius == other.radius
+        )
+
+
+if __name__ == "__main__":
+    # Let's create two circles
+    A: Circle = Circle((10, 20), 30)
+    B: Circle = Circle((10, 20), 30)
+    # Let's check if they're equal
+    if A == B:
+        print("A and B are equal")
+    else:
+        print("A and B are different")
+    # Let's check for identity
+    if A is B:
+        print("A and B are identical")
+    else:
+        print("A and B are not identical")
+    # Let's print the memory ids
+    print("id(A) = ", id(A))
+    print("id(B) = ", id(B))
+```
+
+It creates a set of rules to define if two circles are equal (same center and radius), then it creates two circles with the same parameters and checks for equality and identity.
+
+The result of running the code is the following:
+
+![The result of running the identity vs equality code](./images/computer_science/identity_equality.png){width=40%}
+
+As we can see, circles `A` and `B` are considered "equal", according to the rules we have set, but they are not the same object (we have called the constructor twice), and thus the identity check fails.
+
+Truthiness and "Falsiness"
+--------------------------
+
+{{placeholder}}
+
 The principle of locality {#locality_principle}
 -----------------------------------------------
 
