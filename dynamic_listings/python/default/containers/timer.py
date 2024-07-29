@@ -8,11 +8,12 @@ class Timer:
     """
     time: float = 0
     set_time: float = 0
-    function_to_execute: Callable = None
+    function_to_execute: Callable[[], None] = None
     one_shot: bool = False
     active: bool = False
 
-    def __init__(self, time: float, function: Callable, one_shot: bool = False, active: bool = False) -> None:
+    def __init__(self, time: float, function: Callable[[], None],
+                 one_shot: bool = False, active: bool = False) -> None:
         # We prepare the timer and memorize the setting
         self.time = time
         self.set_time = time

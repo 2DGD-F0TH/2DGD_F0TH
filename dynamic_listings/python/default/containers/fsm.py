@@ -8,9 +8,9 @@ class FSM:
     pointer
     """
 
-    current_state: Callable = None
+    current_state: Callable[[float], None] = None
 
-    def set_state(self, f: Callable) -> None:
+    def set_state(self, f: Callable[[float], None]) -> None:
         """
         Sets the state, from this point on, update will
         change its strategy

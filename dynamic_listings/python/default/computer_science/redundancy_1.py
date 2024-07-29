@@ -5,7 +5,7 @@ class List:
 
     def __len__(self):
         counter: int = 0
-        node = self.node_list[0]
+        node: Node = self.node_list[0]
         while node:
             counter += 1
             node = node.next

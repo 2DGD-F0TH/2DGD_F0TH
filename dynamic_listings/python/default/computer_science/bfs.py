@@ -9,9 +9,9 @@ def traverse_bfs(root: Node):
         # We take the first node in the queue
         n = q.pop(0)
         # We enqueue its children, if they exist
-        if n.left:
+        if n.left is not None:
             q.append(n.left)
-        if n.right:
+        if n.right is not None:
             q.append(n.right)
         # Now we visit the current node
         print(n.content)

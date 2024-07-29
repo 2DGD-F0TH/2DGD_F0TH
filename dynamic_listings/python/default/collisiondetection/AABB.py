@@ -37,10 +37,12 @@ def rect_rect_collision(A: Rectangle, B: Rectangle) -> bool:
     :B: The Second Rectangle
     :returns: A boolean that tells if the rectangles collided
     """
-    
-    is_colliding = (A.corner.x < B.corner.x + B.width) and\
-       (A.corner.x + A.width > B.corner.x) and\
-       (A.corner.y < B.corner.y + B.height) and\
-       (A.corner.y + A.height > A.corner.y)
-    
+
+    is_colliding = (
+        (A.corner.x < B.corner.x + B.width) and
+        (A.corner.x + A.width > B.corner.x) and
+        (A.corner.y < B.corner.y + B.height) and
+        (A.corner.y + A.height > A.corner.y)
+    )
+
     return is_colliding
