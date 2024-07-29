@@ -165,6 +165,20 @@ Löve is distributed under the ZLib/png license, which allows for both commercia
 
 * * * * * * * * * *
 
+### microStudio {.unnumbered .unlisted}
+
+**Website:** <http://microstudio.dev/>
+
+**License:** Open Source
+
+microStudio is a free, open source online game engine, and a platform to learn and practice programming.
+
+**Bindings:** Microscript, Lua, Javascript, Python.
+
+**Platform Compatibility:** Windows, Linux, Mac OS, Android, Web.
+
+* * * * * * * * * *
+
 ### MonoGame {.unnumbered .unlisted}
 
 **Website:** <http://www.monogame.net/>

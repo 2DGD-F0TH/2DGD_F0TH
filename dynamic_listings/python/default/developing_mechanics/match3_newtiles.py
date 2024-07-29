@@ -1,4 +1,4 @@
-def createNewTiles():
+def create_new_tiles():
     # Our falling tiles list, will be used for tweening
     falling_tiles = {}
     # We scroll each column of the board

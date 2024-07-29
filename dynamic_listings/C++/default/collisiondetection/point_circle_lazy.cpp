@@ -2,7 +2,7 @@
 
 struct Circle{
     Point center;
-    int radius;
+    float radius;
 };
 
 float distance(Point A, Point B){

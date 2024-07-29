@@ -1,6 +1,6 @@
-def update(dt):
+def update(dt: float):
     # ...
-    if controls.jump.isPressed():
-        if player.on_ground:
+    if controls.jump.is_pressed():
+        if player.is_on_ground:
             player.jump()
     # ...

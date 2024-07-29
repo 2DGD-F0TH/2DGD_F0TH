@@ -1,7 +1,9 @@
+from math import sqrt
+
+
 class Point:
-    """
-    A simple Point
-    """
+
+    """A simple Point"""
 
     def __init__(self, x: int, y: int) -> None:
         """
@@ -43,8 +45,8 @@ class Circle:
         :radius: Radius of the circle, as a float
 
         """
-        self._center: Point = center
-        self._radius: float = radius
+        self.center: Point = center
+        self.radius: float = radius
 
 
 def circle_point_collision(circle: Circle, point: Point) -> bool:
@@ -52,10 +54,18 @@ def circle_point_collision(circle: Circle, point: Point) -> bool:
     Defines if a circle and a point are colliding
     """
     # Already defined earlier...
-    pass
+    ...
 
 
-def distance(A, B):
+def line_point_collision(line: Line, point: Point) -> bool:
+    """
+    Defines if a line and a point are colliding
+    """
+    # Already defined earlier...
+    ...
+
+
+def distance(A: Point, B: Point) -> float:
     """
     Calculates the distance between two points
 
@@ -67,7 +77,7 @@ def distance(A, B):
     return sqrt((A.x - B.x)**2 + (A.y - B.y)**2)
 
 
-def line_circle_collision(circle: Circle, line: Line) -> bool:
+def line_circle_collision(line: Line, circle: Circle) -> bool:
     """
     Defines if a line collides with a circle
 
@@ -77,7 +87,7 @@ def line_circle_collision(circle: Circle, line: Line) -> bool:
     """
     collides_A: bool = circle_point_collision(circle, line.A)
     collides_B: bool = circle_point_collision(circle, line.B)
-    if (collides_A or collides_B):
+    if collides_A or collides_B:
         return True
     # ...
     # We pre-calculate "u", we'll use some variables for readability
@@ -87,7 +97,7 @@ def line_circle_collision(circle: Circle, line: Line) -> bool:
     y1: float = line.A.y
     y2: float = line.B.y
     yk: int = circle.center.y
-    u = (
+    u: float = (
         ((xk - x1) * (x2 - x1) + (yk - y1) * (y2 - y1))
         / (distance(line.A, line.B))**2
     )
@@ -98,10 +108,10 @@ def line_circle_collision(circle: Circle, line: Line) -> bool:
     # with the coordinates we found
     P: Point = Point(x, y)
     # Let's check if the "closest point" we found is on the line
-    if (line_point_collision(line, P)) is False:
+    if not line_point_collision(line, P):
         # If the point is outside the line, we return false,
         # because the ends have already been checked against collisions
         return False
-    else:
-        # Let's Reuse the Point/Circle Algorithm
-        return circle_point_collision(circle, P)
+    
+    # Let's Reuse the Point/Circle Algorithm
+    return circle_point_collision(circle, P)

@@ -4,5 +4,5 @@ class Tile:
         self.y: int = y
 
 
-def manhattan_distance(start: Vector2D, goal: Vector2D) -> int:
+def manhattan_distance(start: Vector2, goal: Vector2) -> int:
     return abs(start.x - goal.x) + abs(start.y - goal.y)

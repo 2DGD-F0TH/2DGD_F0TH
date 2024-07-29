@@ -1,6 +1,4 @@
-def lineLineCollision(
-    x1: int, y1: int, x2: int, y2: int, x3: int, y3: int, x4: int, y4: int
-) -> bool:
+def line_line_collision(x1: float, y1: float, x2: float, y2: float, x3: float, y3: float, x4: float, y4: float) -> bool:
     # Let's calculate the denominator, this will allow us to avoid a
     # "divide by zero" error
     den: int = ((y4 - y3) * (x2 - x1) - (x4 - x3) * (y2 - y1))
@@ -13,8 +11,6 @@ def lineLineCollision(
     uB: float = ((x2 - x1) * (y1 - y3) - (y2 - y1) * (x1 - x3)) / den
 
     # Let's see if uA and uB tell us the lines are colliding
-    if (0 <= uA <= 1) and (0 <= uB <= 1):
-        return True
-
+    is_colliding = (0 <= uA <= 1) and (0 <= uB <= 1)
     # If not, they don't collide
-    return False
+    return is_colliding

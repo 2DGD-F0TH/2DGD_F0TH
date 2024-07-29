@@ -1,5 +1,6 @@
 # -------------------------------------
-n = len(lst)
+#arr is an array of integers
+n = len(arr)
 # Traverse through all elements
 for i in range(n):
     # Last i elements are in place due to the nature of the sort
@@ -11,5 +12,5 @@ for i in range(n):
 
 # -------------------------------------
 
-for item in lst:
+for item in arr:
     print(item)

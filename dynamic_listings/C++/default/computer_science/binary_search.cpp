@@ -1,8 +1,7 @@
 int binarySearch(int[] lst, int item){
     int first = 0;
     int last = lst.size() - 1;
-    bool found = false;
-    while(first <= last && !found){
+    while(first <= last){
         // Find the middle element
         int midpoint = (int) (first + last) / 2;
         if (lst[midpoint] == item){
@@ -18,8 +17,6 @@ int binarySearch(int[] lst, int item){
             }
         }
     }
-    if (!found){
-        // We return -1 to tell "not found"
-        return -1;
-    }
+    // We return -1 to tell "not found"
+    return -1;
 }

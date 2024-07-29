@@ -5,7 +5,7 @@ class Circle:
 
     """Defines a circle, with center and radius"""
 
-    def __init__(self, center: Point, radius: float):
+    def __init__(self, center: Point, radius: float) -> None:
         """
         Initializes the circle
 
@@ -13,11 +13,11 @@ class Circle:
         :radius: Radius of the circle, as a float
 
         """
-        self._center: Point = center
-        self._radius: float = radius
+        self.center = center
+        self.radius = radius
 
 
-def distance(A: Point, B: Point) -> float:
+def get_distance(A: Point, B: Point) -> float:
     """
     Calculates the distance between two points
 
@@ -38,6 +38,5 @@ def circle_circle_collision(A: Circle, B: Circle) -> bool:
     :returns: A boolean telling if the circles collide
 
     """
-    if distance(A.center, B.center) <= A.radius + B.radius:
-        return True
-    return False
+    is_colliding = get_distance(A.center, B.center) <= A.radius + B.radius
+    return is_colliding

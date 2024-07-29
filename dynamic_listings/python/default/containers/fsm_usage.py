@@ -4,12 +4,12 @@ class Enemy:
     """
     # ...
     PURSUETIME = 10.0
-    position_x = 0.0
-    position_y = 0.0
-    pursue_timer = Timer()
-    brain = FSM()
+    position_x: float = 0.0
+    position_y: float = 0.0
+    pursue_timer: Timer = Timer()
+    brain: FSM = FSM()
 
-    def __init__(self, x, y):
+    def __init__(self, x: float, y: float):
         """
         Constructor
         """
@@ -17,14 +17,14 @@ class Enemy:
         self.position_y = y
         self.brain.setState(self.patrol)
 
-    def sees(self, other):
+    def sees(self, other: Entity) -> bool:
         """
         Implements logic for the "sight" of the enemy
         """
         # ...
         pass
 
-    def patrol(self, dt):
+    def patrol(self, dt: float) -> None:
         # Normal patrolling of the enemy
         # Move, turn, path find...
         if self.sees(player):
@@ -35,7 +35,7 @@ class Enemy:
             # Change FSM State
             self.brain.setState(self.pursue)
 
-    def pursue(self, dt):
+    def pursue(self, dt: float) -> None:
         # Tries to pursue the enemy
         if self.sees(player):
             # Continue Pursuing, by resetting the timer
@@ -47,7 +47,7 @@ class Enemy:
             # go back to patrolling
             self.brain.setState(self.patrol)
 
-    def update(self, dt):
+    def update(self, dt: float) -> None:
         # The enemy update function
         # ...
         self.pursue_timer.update(dt)

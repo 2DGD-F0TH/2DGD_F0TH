@@ -7,7 +7,7 @@ class Player:
     def registerShootingObserver(callback: Callable) -> None:
         # Function used to register an observer that will be called when the
         # player shoots a projectile.
-        pass
+        ...
 
 
 class JumpingBoss:

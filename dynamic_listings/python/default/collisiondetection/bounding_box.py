@@ -1,5 +1,6 @@
 from typing import Self
 
+
 class Point:
     """
     A simple Point
@@ -28,14 +29,13 @@ class Rectangle:
         :height: The rectangle Height
 
         """
-        self._point: Point = point
-        self._width: int = width
-        self._height: int = height
+        self.corner: Point = point
+        self.width: int = width
+        self.height: int = height
 
     @staticmethod
-    def from_points(p1: Point, p2: Point) -> Self:
-        # ...
-        pass
+    def from_points(topleft: Point, bottomright: Point) -> Self:
+        ...
 
 
 def bounding_box(vertices: list[Point]) -> Rectangle:
@@ -51,9 +51,9 @@ def bounding_box(vertices: list[Point]) -> Rectangle:
         ymin = min(ymin, vertex.y)
         ymax = max(ymax, vertex.y)
     # Now we can build the needed points for the bounding box
-    A = Point(xmin, ymin)
-    C = Point(xmax, ymax)
+    A: Point = Point(xmin, ymin)
+    C: Point = Point(xmax, ymax)
     # We build our bounding box
-    boundingBox = Rectangle.from_points(A, C)
+    boundingBox: Rectangle = Rectangle.from_points(A, C)
     # and return it
     return boundingBox

@@ -43,8 +43,8 @@ class Circle:
         :radius: Radius of the circle, as a float
 
         """
-        self._center: Point = center
-        self._radius: float = radius
+        self.center: Point = center
+        self.radius: float = radius
 
 
 def circle_point_collision(circle: Circle, point: Point) -> bool:
@@ -52,7 +52,7 @@ def circle_point_collision(circle: Circle, point: Point) -> bool:
     Defines if a circle and a point are colliding
     """
     # Already defined earlier...
-    pass
+    ...
 
 
 def line_circle_collision(circle: Circle, line: Line) -> bool:
@@ -63,8 +63,8 @@ def line_circle_collision(circle: Circle, line: Line) -> bool:
     :line: The line which we should check collision for
     :returns: A boolean telling us if the line and circle collide
     """
-    collides_A: bool = circle_point_collision(circle, line.A)
-    collides_B: bool = circle_point_collision(circle, line.B)
-    if (collides_A or collides_B):
+    collides_with_A: bool = circle_point_collision(circle, line.A)
+    collides_with_B: bool = circle_point_collision(circle, line.B)
+    if collides_with_A or collides_with_B:
         return True
     # ...

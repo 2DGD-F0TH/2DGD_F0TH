@@ -4,11 +4,11 @@ class Color:
     Defines a color
     """
 
-    def __init__(self, colorData=0x0):
+    def __init__(self, colorData: int = 0x0) -> None:
         """Initializes the color """
-        self.colorData = colorData
+        self.colorData: int = colorData
 
-    def isWhite(self):
+    def is_white(self) -> bool:
         return self.colorData == 0xFFFFFF
 
 
@@ -16,15 +16,15 @@ class Bitmask:
 
     """A sprite bitmask"""
 
-    def __init__(self, data=[]):
+    def __init__(self, data: list[Color] = None) -> None:
         """Initializes the bitmask with an array of colors
 
         :data: An array of colors
 
         """
-        self._data = data
+        self._data: list[Color] = data
 
-    def getColor(self, x, y):
+    def get_color(self, x: int, y: int) -> Color:
         """
         Gets the color at a certain x and y of the bitmap
 
@@ -34,10 +34,17 @@ class Bitmask:
 
         """
         # Just an example
-        pass
+        ...
 
+class Sprite:
+    def __init__(self, bitmask: Bitmask, x: int, y: int, width: int, height: int) -> None:
+        self.bitmask: Bitmask = bitmask
+        self.x: int = x
+        self.y: int = y
+        self.width: int = width
+        self.height: int = height
 
-def pixel_perfect_collision(A, B):
+def pixel_perfect_collision(A: Sprite, B: Sprite) -> bool:
     """
     Calculates a pixel-perfect collsion
 
@@ -47,17 +54,17 @@ def pixel_perfect_collision(A, B):
 
     """
     # Calculate the intersecting rectangle to limit checks
-    x1 = max(A.x, B.x)
-    x2 = min((A.x + A.width), (B.x + B.width))
+    x1: int = max(A.x, B.x)
+    x2: int = min((A.x + A.width), (B.x + B.width))
 
-    y1 = max(A.y, B.y)
-    y2 = min((A.y + A.height), (B.y + B.height))
+    y1: int = max(A.y, B.y)
+    y2: int = min((A.y + A.height), (B.y + B.height))
 
     # For each pixel in the intersecting rectangle, let's check
     for y in range(y1, y2):
         for x in range(x1, x2):
-            a = A.bitmask.getColor(x - A.x, y - A.y)
-            b = B.bitmask.getColor(x - B.x, y - B.y)
+            a: Color = A.bitmask.get_color(x - A.x, y - A.y)
+            b: Color = B.bitmask.get_color(x - B.x, y - B.y)
 
             if (a.isWhite() and b.isWhite()):
                 return True

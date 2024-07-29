@@ -1,19 +1,19 @@
 # ...
-jumpBufferTime = 5.0
+JUMP_BUFFER_TIME = 5.0
 # ...
 
 
-def update(dt):
+def update(dt: float):
     # ...
-    if controls.jump.isPressed():
-        player.hasBufferedJump = True
-        player.jumpBufferCountdown = jumpBufferTime
+    if controls.jump.is_pressed():
+        player.has_buffered_jump = True
+        player.jump_buffer_countdown = JUMP_BUFFER_TIME
     # Take note on how this piece is outside the "jump is pressed" section
-    if player.hasBufferedJump:
-        player.jumpBufferCountdown -= dt
-    if player.on_ground:
-        if player.jumpBufferCountdown > 0.0:
+    if player.has_buffered_jump:
+        player.jump_buffer_countdown -= dt
+    if player.is_on_ground:
+        if player.jump_buffer_countdown > 0.0:
             player.jump()
-            player.jumpBufferCountdown = 0.0
-            player.hasBufferedJump = False
+            player.jump_buffer_countdown = 0.0
+            player.has_buffered_jump = False
     # ...

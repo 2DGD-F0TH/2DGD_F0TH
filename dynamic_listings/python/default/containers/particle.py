@@ -3,14 +3,13 @@ class Particle:
     This is a simple particle class, it contains a reference to
     its texture, as well as some state
     """
-    texture = None
-    position = None
-    velocity = None
-    acceleration = None
-    lifespan = None
+    texture: Texture = None
+    position: Vector2 = None
+    velocity: Vector2 = None
+    acceleration: Vector2 = None
+    lifespan: float = 2000
 
-    def __init__(self, texture, position, velocity,
-                 acceleration, lifespan=2000):
+    def __init__(self, texture: Texture, position: Vector2, velocity: Vector2, acceleration: Vector2, lifespan: float = 2000) -> None:
         # We prepare the particle for usage
         self.texture = texture
         self.position = position
@@ -18,7 +17,7 @@ class Particle:
         self.acceleration = acceleration
         self.lifespan = lifespan  # About 2 seconds by default
 
-    def update(self, dt):
+    def update(self, dt: float) -> None:
         # We update the velocity (assuming dt is in milliseconds)
         self.velocity += self.acceleration
         # Then the position
@@ -26,10 +25,10 @@ class Particle:
         # Now we update the lifespan of the particle
         self.lifespan -= dt
 
-    def is_dead(self):
+    def is_dead(self) -> bool:
         # Returns a boolean representing if the particle is dead
         return self.lifespan <= 0
 
-    def setPosition(self, position):
+    def setPosition(self, position: Vector2) -> None:
         # Sets the particle position
         self.position = position

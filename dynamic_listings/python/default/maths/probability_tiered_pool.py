@@ -1,9 +1,9 @@
 import random
 
 
-def get_tiered_drop():
+def get_tiered_drop() -> int:
     # 1 = Common, 2 = Uncommon, 3 = Rare, 4 = Epic
-    n = random.randint(1, 100)
+    n: int = random.randint(1, 100)
     if (n <= 50):
         # Common Tier
         return 1

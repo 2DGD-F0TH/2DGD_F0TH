@@ -15,8 +15,8 @@ class Facade:
     by "wrapping" them in a comfortable startAll
     function
     """
-    service1 = None
-    service2 = None
+    service1: FirstService = None
+    service2: SecondService = None
 
     def __init__(self):
         self.service1 = FirstService()

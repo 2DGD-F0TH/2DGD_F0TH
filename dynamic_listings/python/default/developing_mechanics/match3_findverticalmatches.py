@@ -1,26 +1,26 @@
-def findVerticalMatches():
-    matchLength = 0
-    minMatchLength = 3
+def find_vertical_matches():
+    match_length = 0
+    min_match_length = 3
     for column in matrix:
-        lastMatchingTile = None
+        last_matching_tile = None
         for row in column:
-            currentTile = matrix[row][column].tile
-            if currentTile == lastMatchingTile:
-                matchLength += 1
+            current_tile = matrix[row][column].tile
+            if current_tile == last_matching_tile:
+                match_length += 1
             else:
-                if matchLength >= minMatchLength:
+                if match_length >= min_match_length:
                     # We need to memorize all the tiles involved in the match
-                    for r in range(row-matchLength, column+1):
+                    for r in range(row-match_length, column+1):
                         tile = matrix[r][column]
                         memorize(tile)
                 else:
                     # No matches, reset the counter and set the current tile as last matching
-                    matchLength = 1
-                    lastMatchingTile = currentTile
+                    match_length = 1
+                    last_matching_tile = current_tile
             # We need to account for the bottom border corner case
             if row == len(matrix[column]):
-                if matchLength >= minMatchLength:
+                if match_length >= min_match_length:
                     # We need to memorize all the tiles involved in the match
-                    for r in range(row-matchLength, column+1):
+                    for r in range(row-match_length, column+1):
                         tile = matrix[r][column]
                         memorize(tile)

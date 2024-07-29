@@ -2,12 +2,12 @@ class Player:
     coyote_time_started = False
     coyote_time = 0
     has_jumped = False
-    on_ground = False
+    is_on_ground = False
     # ...
 
     def update(self, dt):
         # ...
-        if self.onground:
+        if self.is_on_ground:
             # Do stuff when player is on ground
             # ...
             pass

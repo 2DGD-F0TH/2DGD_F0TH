@@ -1,7 +1,6 @@
 class Point:
-    """
-    A simple Point
-    """
+
+    """A simple Point"""
 
     def __init__(self, x: int, y: int) -> None:
         """
@@ -9,14 +8,13 @@ class Point:
         :x: The X Coordinate of the point
         :y: The Y Coordinate of the point
         """
-        self.x = x
-        self.y = y
+        self.x: int = x
+        self.y: int = y
 
 
 class Rectangle:
-    """
-    A rectangle, made with an upper-left corner, width and height
-    """
+
+    """A rectangle, made with an upper-left corner, width and height"""
 
     def __init__(self, point: Point, width: int, height: int) -> None:
         """Creates the rectange
@@ -26,12 +24,12 @@ class Rectangle:
         :height: The rectangle Height
 
         """
-        self._point: Point = point
-        self._width: int = width
-        self._height: int = height
+        self.corner: Point = point
+        self.width: int = width
+        self.height: int = height
 
 
-def rect_rect_collision(A: Rectangle, B: Rectangle):
+def rect_rect_collision(A: Rectangle, B: Rectangle) -> bool:
     """
     Checks for an axis-aligned bounding rectangle collision
 
@@ -39,10 +37,10 @@ def rect_rect_collision(A: Rectangle, B: Rectangle):
     :B: The Second Rectangle
     :returns: A boolean that tells if the rectangles collided
     """
-
-    if (A.corner.x < B.corner.x + B.width) and\
+    
+    is_colliding = (A.corner.x < B.corner.x + B.width) and\
        (A.corner.x + A.width > B.corner.x) and\
        (A.corner.y < B.corner.y + B.height) and\
-       (A.corner.y + A.height > A.corner.y):
-        return True
-    return False
+       (A.corner.y + A.height > A.corner.y)
+    
+    return is_colliding

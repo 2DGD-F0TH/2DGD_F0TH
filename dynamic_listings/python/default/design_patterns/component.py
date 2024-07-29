@@ -16,7 +16,7 @@ class ConcreteComponent2(Component):
     # Defines the concrete component number 2
 
     # The component can contain a list of other components that get updated
-    component_list = []
+    component_list: list[Component] = []
 
     def update(self):
         for comp in self.component_list:

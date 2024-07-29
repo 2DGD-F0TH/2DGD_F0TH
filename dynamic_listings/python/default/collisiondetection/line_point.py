@@ -45,23 +45,23 @@ def distance(A: Point, B: Point) -> float:
     return sqrt((A.x - B.x)**2 + (A.y - B.y)**2)
 
 
-def line_point_collision(pt: Point, ln: Line) -> bool:
+def line_point_collision(line: Line, point: Point) -> bool:
     """
     Calculates a possible line/point collision
 
-    :pt: A point
-    :ln: A line
+    :line: A line
+    :point: A point
     :returns: A boolean telling us if the point and line collide
 
     """
     # First, let's calculate the length of the line
-    length: float = distance(ln.A, ln.B)
+    length: float = distance(line.A, line.B)
     # Now let's calculate the distance between the point pt
     # and the point "A" of the line
-    pt_a: float = distance(ln.A, pt)
+    point_to_a: float = distance(line.A, point)
     # Same Goes for the distance between pt and "B"
-    pt_b: float = distance(ln.B, pt)
+    point_to_b: float = distance(line.B, point)
     # Now for the detection
-    if pt_a + pt_b == length:
-        return True
-    return False
+    
+    is_colliding = point_to_a + point_to_b == length
+    return is_colliding

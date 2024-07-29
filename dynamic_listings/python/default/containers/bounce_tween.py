@@ -1,5 +1,5 @@
-def bounce_tween(t):
+def bounce_tween(t: float) -> float:
     # This constant will allow us to overshoot the max value by around 10%
-    c = 1.70158
+    C = 1.70158
 
-    return 1 + (c + 1) * (t - 1) ** 3 + c * (t - 1) ** 2
+    return 1 + (C + 1) * (t - 1) ** 3 + C * (t - 1) ** 2

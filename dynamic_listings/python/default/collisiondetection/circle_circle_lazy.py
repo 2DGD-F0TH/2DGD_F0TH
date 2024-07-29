@@ -5,7 +5,7 @@ class Circle:
 
     """Defines a circle, with center and radius"""
 
-    def __init__(self, center: Point, radius: float):
+    def __init__(self, center: Point, radius: float) -> None:
         """
         Initializes the circle
 
@@ -13,8 +13,8 @@ class Circle:
         :radius: Radius of the circle, as a float
 
         """
-        self._center: Point = center
-        self._radius: float = radius
+        self.center = center
+        self.radius = radius
 
 
 def distance(A: Point, B: Point) -> float:

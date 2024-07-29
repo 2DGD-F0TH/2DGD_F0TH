@@ -1,12 +1,12 @@
 class List:
-    nodeList = None
+    node_list: list[Node] = None
 
     # ...
 
     def __len__(self):
-        counter = 0
-        nodeptr = self.nodeList
-        while nodeptr:
+        counter: int = 0
+        node = self.node_list[0]
+        while node:
             counter += 1
-            nodeptr = nodeptr.next
+            node = node.next
         return counter

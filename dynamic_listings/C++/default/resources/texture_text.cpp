@@ -1,9 +1,9 @@
 #include <utility>
 #include <string>
 
-int TILE_WIDTH = 32;
-int TILE_HEIGHT = 32;
-Surface SPRITESHEET = engine.load_spritesheet("resources/font.png");
+const int TILE_WIDTH = 32;
+const int TILE_HEIGHT = 32;
+const Surface SPRITESHEET = engine.load_spritesheet("resources/font.png");
 
 int get_cell_from_letter(char letter){
     /*
