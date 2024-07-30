@@ -21,7 +21,7 @@ while (currentNode != end):
             n.f = n.g + n.h
             openSet.append(currentNode)
 
-    if openSet.empty():
+    if not openSet:
         # We exhausted all possibilities
         break
     openSet = sorted(openSet, key=lambda n: n.f)

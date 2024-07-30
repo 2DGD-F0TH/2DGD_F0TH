@@ -21,10 +21,10 @@ class Timer:
         if self.time <= 0:
             self.function_to_execute()
             if self.one_shot:
-                # If this time is a one-shot, we disable it
+                # If this timer is a one-shot, we disable it
                 self.active = False
             # We reset the timer differently, by adding the "set time" with
-            # a multiplier: this.time is guaranteed to be negative or zero,
-            # by dividing by a negative number  we have a positive multiplier
-            multiplier = ceil(self.time / -self.set_time)
+            # a multiplier: self.time is guaranteed to be negative or zero,
+            # by dividing by a negative number we have a positive multiplier
+            multiplier: int = ceil(self.time / -self.set_time)
             self.time = self.time + (multiplier * self.set_time)

@@ -30,7 +30,7 @@ class TwoDimensionGrid:
         REMEMBER: We index at 0 so the first row is 0, the last one is at
         "height - 1", same goes for columns
         """
-        result: list = []
+        result: list[Tile] = []
         if all(row >= 0, row < self.height, col >= 0, col < self.width):
             # We better check if we are inside the grid
             if row > 0:

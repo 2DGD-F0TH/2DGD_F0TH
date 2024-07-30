@@ -18,11 +18,11 @@ class Facade:
     service1: FirstService = None
     service2: SecondService = None
 
-    def __init__(self):
+    def __init__(self) -> None:
         self.service1 = FirstService()
         self.service2 = FirstService()
 
-    def startAll(self):
+    def startAll(self) -> bool:
         """
         The facade starts all the services and does
         some status checking, self.is hidden from the

@@ -1,5 +1,6 @@
 class Singleton:
     __instance = None
+
     @staticmethod
     def get_instance():
         """ Static access method. """
@@ -7,9 +8,10 @@ class Singleton:
             Singleton()
         return Singleton.__instance
 
-    def __init__(self):
+    def __init__(self) -> None:
         """ Virtually private constructor. """
         if Singleton.__instance:
-            raise Exception("This class is a singleton, cannot instantiate")
-        else:
-            Singleton.__instance = self
+            raise RuntimeError(
+                "This class is a singleton, cannot instantiate"
+            )
+        Singleton.__instance = self

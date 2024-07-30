@@ -1,7 +1,9 @@
+from typing import Self
+
 class Singleton:
 
     @staticmethod
-    def get_instance():
+    def get_instance() -> Self:
         return Singleton.__instance
 
     def __init__(self):
@@ -9,8 +11,7 @@ class Singleton:
         We make it so the constructor is unusable from outside
         """
         if Singleton.__instance:
-            raise Exception("This class is a singleton, cannot instantiate")
-        else:
-            Singleton.__instance = self
+            raise RuntimeError("This class is a singleton, cannot instantiate")
+        Singleton.__instance = self
 
     __instance = __init__()
