@@ -10,9 +10,5 @@ function distance(Point A, Point B) -> float{
 }
 
 function circle_circle_collision(Circle A, Circle B) -> bool{
-    if (distance(A.center, B.center) <= A.radius + B.radius){
-        return True;
-    }else{
-        return False;
-    }
+    return distance(A.center, B.center) <= A.radius + B.radius;
 }

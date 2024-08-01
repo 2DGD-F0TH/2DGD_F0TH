@@ -17,7 +17,7 @@ class Circle:
         self.radius: float = radius
 
 
-def get_distance(A: Point, B: Point) -> float:
+def distance(A: Point, B: Point) -> float:
     """
     Calculates the distance between two points
 
@@ -38,5 +38,4 @@ def circle_circle_collision(A: Circle, B: Circle) -> bool:
     :returns: A boolean telling if the circles collide
 
     """
-    is_colliding = get_distance(A.center, B.center) <= A.radius + B.radius
-    return is_colliding
+    return distance(A.center, B.center) <= A.radius + B.radius
