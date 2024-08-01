@@ -1,7 +1,3 @@
 function point_collision(point A, point B) -> bool{
-    if (A.x == B.x AND A.y == B.y){
-        return True;
-    }else{
-        return False;
-    }
+    return A.x == B.x AND A.y == B.y;
 }

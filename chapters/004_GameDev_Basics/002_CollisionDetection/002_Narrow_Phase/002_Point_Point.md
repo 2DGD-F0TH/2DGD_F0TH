@@ -7,11 +7,6 @@ An example algorithm would be the following:
 ```{src='collisiondetection/point_to_point' caption='Point to point collision detection'}
 ```
 
-A possible lazy/shorter version could be:
-
-```{src='collisiondetection/point_to_point_lazy' caption='Shortened version of a point to point collision detection'}
-```
-
 This algorithm consists in a constant number of operations, so it runs in O(1).
 
 Since numbers in computers can be **really** precise, a collision between two points may be a bit too precise, so it could prove useful to have a "buffer" around the point, so that we can say that the two points collided when they're **around the same place**.
