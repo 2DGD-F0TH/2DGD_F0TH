@@ -1,0 +1,34 @@
+// Operators can be treated as functions, that means you can
+// Assign them to a variable.
+
+// This...
+
+if (a == b AND c == d){
+    // Do something...
+}
+
+// Is equivalent to this
+
+bool complex_condition = (a == b AND c == d);
+
+if (complex_condition){
+    // ...
+}
+
+// ---------------8<---------------
+
+// Also this...
+
+function thing(int a, int b) -> boolean{
+    if (a == b){
+        return True;
+    }else{
+        return False;
+    }
+}
+
+// Is equivalent to...
+
+function thing(int a, int b) -> boolean{
+    return a == b;
+}

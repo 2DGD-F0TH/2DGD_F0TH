@@ -93,6 +93,26 @@ This allows us to write code that is a little bit more terse, improving readabil
 Keep in mind the difference between equality and identity when dealing with "truthy" and "falsy" values. In some cases, terser code (that leverages the so-called "type coercion") might hide some corner cases that result in bugs.
 :::::::::::::::::
 
+Operators are functions too
+---------------------------
+
+In most programming languages operators are just another way to write a function. Something like `a = 2+2` could be written as `a=operator_add(2, 2)`.
+
+This also means that comparison operators are functions, there's essentially no semantic difference between `a == 2` and `equals(a, 2)`. This has some interesting consequences.
+
+If you start thinking of comparison operators as functions, you may ask yourself:
+
+> If comparison operators are functions, can I assign their result to a variable?
+
+And the answer is (most of the time) yes!
+
+You will see this all throughout the book: assigning a complicated chain of comparisons into a variable and then using such variable in an if statement, or using a comparison statement in a return statement.
+
+Here's an example:
+
+```{src='computer_science/operators' caption='Using operators as functions'}
+```
+
 The principle of locality {#locality_principle}
 -----------------------------------------------
 
