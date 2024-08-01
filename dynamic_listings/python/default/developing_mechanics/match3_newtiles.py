@@ -1,6 +1,6 @@
 def create_new_tiles():
     # Our falling tiles list, will be used for tweening
-    falling_tiles = {}
+    falling_tiles: dict[Tile, int] = {}
     # We scroll each column of the board
     for column in matrix:
         for tile in column:

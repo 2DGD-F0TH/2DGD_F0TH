@@ -1,5 +1,6 @@
 from typing import Self
 
+
 class Handler:
     # This is the handler abstract/class interface that the sender connects to
     next_handler: Self = None  # The next handler in the chain

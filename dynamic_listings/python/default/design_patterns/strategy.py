@@ -1,20 +1,20 @@
 class Strategy:
     # This class defines the strategy interface the client will refer to
 
-    def algorithm(self):
+    def algorithm(self) -> None:
         # This algorithm will be implemented by the subclasses
         raise NotImplementedError("You should implement this")
 
 
 class ConcreteStrategy1(Strategy):
-    def algorithm():
+    def algorithm(self) - None:
         # Real implementation of the algorithm
         # DO STUFF
         pass
 
 
 class ConcreteStrategy2(Strategy):
-    def algorithm():
+    def algorithm(self) -> None:
         # Real implementation of the algorithm
         # DO STUFF SLIGHTLY DIFFERENTLY
         pass
@@ -22,7 +22,7 @@ class ConcreteStrategy2(Strategy):
 
 # Example Usage
 def main():
-    to_execute = None
+    to_execute: Strategy = None
     if condition:
         to_execute = ConcreteStrategy1()
     else:

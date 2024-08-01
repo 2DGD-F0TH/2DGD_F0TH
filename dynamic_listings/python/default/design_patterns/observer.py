@@ -25,7 +25,7 @@ class Subject:
             observer.update()
 
 
-subject = Subject()
-observer = Observer()
+subject: Subject = Subject()
+observer: Observer = Observer()
 subject.register_observer(observer)
 subject.notify_observers()

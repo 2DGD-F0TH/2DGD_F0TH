@@ -4,7 +4,7 @@ from typing import Callable
 
 class Player:
     # ...
-    def registerShootingObserver(callback: Callable) -> None:
+    def registerShootingObserver(callback: Callable[[], None]) -> None:
         # Function used to register an observer that will be called when the
         # player shoots a projectile.
         ...

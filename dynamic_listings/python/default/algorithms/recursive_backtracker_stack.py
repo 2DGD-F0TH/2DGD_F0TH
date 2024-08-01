@@ -53,13 +53,13 @@ class Maze:
             # While there is at least one direction available
             while directions:
                 # We take the last item in directions list (which is random)
-                direction_to_try = directions.pop()
+                direction_to_try: tuple[int] = directions.pop()
 
                 # Calculate the new node coordinates using the chosen direction.
                 # We are doubling the movement in each direction, so some cells
                 # can act as walls
-                next_x = stored_x + (direction_to_try.x * 2)
-                next_y = stored_y + (direction_to_try.y * 2)
+                next_x: int = stored_x + (direction_to_try[0] * 2)
+                next_y: int = stored_y + (direction_to_try[1] * 2)
 
                 # If the node we found is a wall, it means we didn't visit it
                 # (and it's inside our maze boundaries)
@@ -68,8 +68,8 @@ class Maze:
 
                     # Since we are moving 2 cells at a time, we need to carve
                     # the cell that "links" our "current node" and the "next node"
-                    link_cell_x = stored_x + direction_to_try.x
-                    link_cell_y = stored_y + direction_to_try.y
+                    link_cell_x: int = stored_x + direction_to_try[0]
+                    link_cell_y: int = stored_y + direction_to_try[1]
                     self.make_path(link_cell_x, link_cell_y)
 
                     # Repeat the carving process with the new coordinates
@@ -79,8 +79,8 @@ class Maze:
             # one layer from our stack: we go back one step
             if not directions:
                 popped_vector = self.carved_passages.pop()
-                stored_x = popped_vector.x
-                stored_y = popped_vector.y
+                stored_x = popped_vector[0]
+                stored_y = popped_vector[1]
             else:
                 # If not, we continue
                 stored_x = next_x

@@ -15,5 +15,5 @@ class Particle:
 
     def applyForce(self, force: Vector2) -> None:
         # This function influences the acceleration by applying force
-        da = force / self.mass
+        da: float = force / self.mass
         self.acceleration += da

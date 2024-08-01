@@ -1,8 +1,8 @@
 def find_horizontal_matches():
-    match_length = 0
-    min_match_length = 3
+    match_length: int = 0
+    min_match_length: int = 3
     for row in matrix:
-        last_matching_tile = None
+        last_matching_tile: Tile = None
         for column in row:
             current_tile = matrix[row][column].tile
             if current_tile == last_matching_tile:

@@ -53,7 +53,7 @@ class AIEntity:
         chosen_direction: str = "NORTH"  # Just a default
         if len(available_directions) == 0:
             # No directions are available, let's go back
-            chosen_direction: str = DIRECTIONS[
+            chosen_direction = DIRECTIONS[
                 (self.forward_direction_index + 2) % 4
             ]
         else:

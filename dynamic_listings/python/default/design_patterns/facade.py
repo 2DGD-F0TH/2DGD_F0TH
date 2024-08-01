@@ -30,11 +30,11 @@ class Facade:
         Returns true if all services started successfully
         false otherwise
         """
-        firstServiceStarted = self.service1.start()
+        firstServiceStarted: bool = self.service1.start()
         if not firstServiceStarted:
             return False
 
-        secondServiceStarted = self.service2.start()
+        secondServiceStarted: bool = self.service2.start()
         if not secondServiceStarted:
             return False
 

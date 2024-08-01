@@ -1,8 +1,8 @@
 def find_vertical_matches():
-    match_length = 0
-    min_match_length = 3
+    match_length: int = 0
+    min_match_length: int = 3
     for column in matrix:
-        last_matching_tile = None
+        last_matching_tile: Tile = None
         for row in column:
             current_tile = matrix[row][column].tile
             if current_tile == last_matching_tile:

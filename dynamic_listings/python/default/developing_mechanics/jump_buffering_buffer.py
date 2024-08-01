@@ -1,9 +1,9 @@
 # ...
-JUMP_BUFFER_TIME = 5.0
+JUMP_BUFFER_TIME: float = 5.0
 # ...
 
 
-def update(dt: float):
+def update(dt: float) -> None:
     # ...
     if controls.jump.is_pressed():
         player.has_buffered_jump = True

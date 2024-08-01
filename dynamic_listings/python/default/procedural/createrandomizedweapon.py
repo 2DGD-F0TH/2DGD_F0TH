@@ -18,8 +18,7 @@ def create_randomized_weapon() -> Weapon:
     # Set weapon damage to a value between 35 and 50
     weapon.set_damage(randint(35, 50))
     # Set weapon range to a value between 13 and 18
-    weapon.set_range(randint(13,28))
+    weapon.set_range(randint(13, 28))
     # Set weapon spread to a value between 20 and 30
-    weapon.set_spread(randint(20,30))
+    weapon.set_spread(randint(20, 30))
     return weapon
-

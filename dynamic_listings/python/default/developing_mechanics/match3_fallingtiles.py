@@ -9,10 +9,10 @@ def find_falling_tiles() -> dict[Tile, int]:
     falling_tiles: dict[Tile, int] = {}
     # We scroll each column of the board
     for column in matrix:
-        found_space = False
-        space_y = 0
+        found_space: bool = False
+        space_y: int = 0
         # We scroll each row, from bottom to top
-        y = len(column) #number of rows
+        y: int = len(column) #number of rows
         while (y > 0):
             tile: Tile = matrix[y][x]
             if found_space:

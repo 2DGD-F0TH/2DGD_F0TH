@@ -1,7 +1,7 @@
-INVINCIBILITY_TIME = 0.75  # Seconds of invincibility
+INVINCIBILITY_TIME: float = 0.75  # Seconds of invincibility
 ...
-def update(dt):
-    inv_time = 0
+def update(dt) -> None:
+    inv_time: float = 0
     ...
     if inv_time <= 0:
         # Check for collision

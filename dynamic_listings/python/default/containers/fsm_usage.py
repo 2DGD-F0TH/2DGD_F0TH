@@ -3,7 +3,7 @@ class Enemy:
     Represents a simple enemy
     """
     # ...
-    PURSUETIME = 10.0
+    PURSUETIME: float = 10.0
     position_x: float = 0.0
     position_y: float = 0.0
     pursue_timer: Timer = Timer()

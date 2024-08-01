@@ -26,7 +26,7 @@ if currentNode == end:
     # We reached the end and solved the path, we need to do a stack
     # reversal to find the path
     finalPath: list = []
-    n = end
+    n: Node = end
     while n is not None:
         finalPath.append(n)
         n = n.parent  # We use "parent" to run the found path backwards
