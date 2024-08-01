@@ -1,9 +1,8 @@
 #include <cmath>
 
 struct Circle{
-    // Let's define a circle class/structure
     Point center;
-    int radius;
+    float radius;
 };
 
 float distance(Point A, Point B){
@@ -12,9 +11,5 @@ float distance(Point A, Point B){
 }
 
 bool circle_point_collision(Circle A, Point B){
-    if (distance(A.center, B) <= A.radius){
-        return true;
-    }else{
-        return false;
-    }
+    return distance(A.center, B) <= A.radius;
 }

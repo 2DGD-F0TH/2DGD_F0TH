@@ -27,9 +27,4 @@ An example could be the following:
 ```{src='collisiondetection/point_circle' caption='Point to circle collision detection'}
 ```
 
-Again, the lazier version:
-
-```{src='collisiondetection/point_circle_lazy' caption='Shorter version of a point to circle collision detection'}
-```
-
 Although slightly more heavy, computation-wise, this algorithm still runs in O(1).
