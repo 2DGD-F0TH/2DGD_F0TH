@@ -1,13 +1,18 @@
-class Singleton {
+class LazySingleton {
 
     private:
-        static Singleton* INSTANCE = new Singleton();
-
-        // This makes the constructor impossible to use outside of the class
-        private Singleton() {}
+        static LazySingleton* instance = nullptr;
+        LazySingleton() {}
 
     public:
         static Singleton getInstance() {
-            return *INSTANCE;
+            // Multi-threading: manage race conditions
+            // ----- Critical region start -----
+            if (instance == nullptr) {
+                instance = new Singleton();
+            }
+            // ----- Critical region end -----
+
+            return *instance;
         }
 };

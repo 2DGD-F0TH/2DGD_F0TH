@@ -1,17 +1,17 @@
-from typing import Self
-
 class Singleton:
+    __instance = None
 
     @staticmethod
-    def get_instance() -> Self:
+    def get_instance():
+        """ Static access method. """
+        if not Singleton.__instance:
+            Singleton()
         return Singleton.__instance
 
-    def __init__(self):
-        """
-        We make it so the constructor is unusable from outside
-        """
+    def __init__(self) -> None:
+        """ Virtually private constructor. """
         if Singleton.__instance:
-            raise RuntimeError("This class is a singleton, cannot instantiate")
+            raise RuntimeError(
+                "This class is a singleton, cannot instantiate"
+            )
         Singleton.__instance = self
-
-    __instance = __init__()

@@ -1,12 +1,13 @@
-class Singleton {
-    // This is actually a lazy implementation of the singleton pattern
-    // since we can't instance classes at "import time"
+class LazySingleton {
 
     // This way the constructor always returns the singleton instance
     constructor(){
+        // Multi-threading: manage race conditions
+        // ----- Critical region start -----
         if (!Singleton.INSTANCE){
             Singleton.INSTANCE = this;
         }
+        // ----- Critical region end -----
         return Singleton.INSTANCE;
     }
 
