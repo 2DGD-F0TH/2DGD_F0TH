@@ -1,9 +1,9 @@
 def binary_search(lst: list[int], item: int) -> int | None:
-    first = 0
-    last = len(lst) - 1
+    first: int = 0
+    last: int = len(lst) - 1
     while first <= last:
         # Find the middle element
-        midpoint = (first + last) // 2
+        midpoint: int = (first + last) // 2
         if lst[midpoint] == item:
             # We found it!
             return midpoint

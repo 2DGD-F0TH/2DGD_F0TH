@@ -5,7 +5,7 @@ def create_new_tiles():
     for column in matrix:
         for tile in column:
             if tile is None:
-                new_tile = Tile.random()
+                new_tile: Tile = Tile.random()
                 new_tile.y = - 64   # A value that is out of the board
                 matrix[column][tile] = new_tile
 

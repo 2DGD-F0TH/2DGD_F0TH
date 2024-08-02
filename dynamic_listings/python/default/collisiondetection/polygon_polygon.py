@@ -2,7 +2,7 @@
 def polygon_polygon_collision(p1: Polygon, p2: Polygon) -> bool:
     # First we do a polygon vs line check for all the edges
     for i in range(len(p2.vertices)):
-        j = i + 1
+        j: int = i + 1
         if j == len(p2.vertices):
             # Wrap around in case we get to the end
             j = 0

@@ -12,7 +12,7 @@ def circle_polygon_collision(poly: Polygon, circ: Circle) -> bool:
         # In case we find a hit, we already know there is a collision
         if line_circle_collision(circ, temp_line):
             return True
-        
+
     # Now Let's check for cases "A" and "B"
     # A: If the center is inside the polygon, we have a collision
     if polygon_point_collision(poly, circ.center):

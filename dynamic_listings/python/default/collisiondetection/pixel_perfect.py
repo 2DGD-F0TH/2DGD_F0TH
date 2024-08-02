@@ -1,5 +1,4 @@
 class Color:
-
     """
     Defines a color
     """

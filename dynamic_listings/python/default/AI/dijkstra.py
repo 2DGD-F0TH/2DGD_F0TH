@@ -18,7 +18,7 @@ while (currentNode != end):
             n.g = getPathCost(n, start)
             openSet.append(currentNode)
 
-    if openSet.empty():
+    if not openSet:
         # We exhausted all possibilities
         break
     openSet = sorted(openSet, key=lambda n: n.g)

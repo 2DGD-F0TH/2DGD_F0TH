@@ -1,4 +1,4 @@
-def update(dt) -> None:
+def update(dt: float) -> None:
     # Using the brute force checking for simplicity
     for block in player.find_collisions(blocks):
         # ...

@@ -1,6 +1,6 @@
 from math import floor
-TILE_WIDTH = 32
-TILE_HEIGHT = 32
+TILE_WIDTH: int = 32
+TILE_HEIGHT: int = 32
 
 
 def convert_pixels_to_tile(x: int, y: int) -> tuple[int, int]:

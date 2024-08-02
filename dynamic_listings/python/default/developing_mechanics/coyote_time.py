@@ -2,7 +2,7 @@ class Player:
     coyote_time_started: bool = False
     coyote_time: float = 0
     has_jumped: bool = False
-    is_on_ground:bool = False
+    is_on_ground: bool = False
     # ...
 
     def update(self, dt: float) -> None:

@@ -7,7 +7,7 @@ pool: list[tuple[str, int]] = [
 ]
 
 # Our "luck stat": each point gives 1% more chance to get a higher-tier item
-LUCK = 25
+LUCK: int = 25
 
 # We cap the Luck stat at 100, the limit is 100% epic items
 LUCK = min(LUCK, 100)

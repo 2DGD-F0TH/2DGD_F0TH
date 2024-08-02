@@ -112,6 +112,6 @@ def line_circle_collision(line: Line, circle: Circle) -> bool:
         # If the point is outside the line, we return false,
         # because the ends have already been checked against collisions
         return False
-    
+
     # Let's Reuse the Point/Circle Algorithm
     return circle_point_collision(circle, P)

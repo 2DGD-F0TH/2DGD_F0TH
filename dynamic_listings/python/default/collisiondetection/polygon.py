@@ -11,7 +11,7 @@ class Polygon:
         # see the bounding box algorithm for the full version
         # ...
         # We build our bounding box
-        boundingBox = Rectangle.from_points(A, C)
+        boundingBox: Rectangle = Rectangle.from_points(A, C)
         # and return it
         return boundingBox
 

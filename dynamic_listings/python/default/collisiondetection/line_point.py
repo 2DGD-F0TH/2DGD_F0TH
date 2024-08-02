@@ -62,6 +62,6 @@ def line_point_collision(line: Line, point: Point) -> bool:
     # Same Goes for the distance between pt and "B"
     point_to_b: float = distance(line.B, point)
     # Now for the detection
-    
+
     is_colliding = point_to_a + point_to_b == length
     return is_colliding

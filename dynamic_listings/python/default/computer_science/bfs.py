@@ -7,7 +7,7 @@ def traverse_bfs(root: Node):
     # the tree is completely explored.
     while q:
         # We take the first node in the queue
-        n = q.pop(0)
+        n: Node = q.pop(0)
         # We enqueue its children, if they exist
         if n.left is not None:
             q.append(n.left)

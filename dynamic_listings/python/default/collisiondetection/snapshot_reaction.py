@@ -3,7 +3,8 @@
 snapshot: Player = player_instance.copy()  # The "snapshot"
 
 # Update the player_instance here
-player_instance += (velocity * dt)
+player_instance.x += (velocity.x * dt)
+player_instance.y += (velocity.y * dt)
 
 # Now check for collisions
 ...

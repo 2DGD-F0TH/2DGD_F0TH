@@ -57,5 +57,5 @@ class Particle:
         # This function resets the initial status of the particle
         self.velocity = self.initial_velocity
         self.rotation = self.initial_rotation
-        self.a_vel = self.initial_a_vel
+        self.angular_velocity = self.initial_a_vel
         self.lifespan = self.initial_lifespan

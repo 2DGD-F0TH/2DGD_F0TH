@@ -12,7 +12,7 @@ while currentNode != end:
         if n not in openSet:
             n.h = getHeuristics(n, end)  # Computes the value of n's h(x)
             openSet.append(n)
-    if openSet.empty():
+    if not openSet:
         # We exhausted all the possibilities
         break
     # Select a new "currentNode"

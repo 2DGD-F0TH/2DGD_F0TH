@@ -1,5 +1,6 @@
 from typing import Self
 
+
 class Node:
     """
     This is an example of a simple node structure for a tree.
