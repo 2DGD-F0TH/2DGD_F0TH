@@ -48,5 +48,6 @@ for (int i = 3; i >= 0; i--){
         int new_probability = probability - value_to_remove;
     }
     // We append the new pool item
-    rebalanced_pool[i][0] = {item, new_probability};
+    rebalanced_pool[i][0] = item;
+    rebalanced_pool[i][1] = new_probability;
 }
