@@ -17,7 +17,7 @@ class Handler{
         }
 
         if (this.next != null){
-            next.handle_request();
+            return next.handle_request();
         }
     }
 

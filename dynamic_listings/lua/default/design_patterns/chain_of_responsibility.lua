@@ -17,7 +17,7 @@ function Handler:handle_request()
     end
 
     if (next ~= nil) then
-        next.handle_request()
+        return next.handle_request()
     end
 end
 
