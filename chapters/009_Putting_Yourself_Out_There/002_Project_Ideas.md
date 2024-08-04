@@ -26,7 +26,7 @@ Each cell has 8 neighbours, and its new state is defined by 4 simple rules:
 
 - If an alive cell has less than two live neighbours, it dies due to loneliness;
 - If an alive cell has two or three live neighbours, it continues living;
-- If an alive cell has more than three live neighbours, it died by overpopulation;
+- If an alive cell has more than three live neighbours, it dies by overpopulation;
 - If a dead cell has exactly three neighbours, it becomes alive by reproduction.
 
 ### Basic Level
