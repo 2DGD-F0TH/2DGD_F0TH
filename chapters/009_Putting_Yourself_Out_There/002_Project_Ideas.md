@@ -41,7 +41,7 @@ If these work well, check Wikipedia for some more patterns.
 Skills Required:
 
 - Drawing to a screen;
-- Loops;
+- Manipulating the game's state.
 
 ### Advanced Level
 
