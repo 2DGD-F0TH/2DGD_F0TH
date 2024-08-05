@@ -28,7 +28,7 @@ Weapon createRandomizedWeapon(){
     get_directory_listing(bodies_dir, "weaponBodies/shotguns");
     get_directory_listing(scopes_dir, "weaponScopes/shotguns");
     get_directory_listing(barrels_dir, "weaponBarrels/shotguns");
-    get_directory_listing(mag_dir, "weaponMagazines/shotguns");
+    get_directory_listing(mags_dir, "weaponMagazines/shotguns");
     // Get a random item for each component list
     Sprite body* = new Sprite(get_random<std::string>(*bodies_dir));
     Sprite scope* = new Sprite(get_random<std::string>(*scopes_dir));

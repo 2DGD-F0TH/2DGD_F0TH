@@ -15,9 +15,5 @@ local function distance(A, B)
 end
 
 local function circle_point_collision(A, B)
-    if (distance(A.center, B) <= A.radius) then
-        return true
-    else
-        return false
-    end
+    return distance(A.center, B) <= A.radius
 end

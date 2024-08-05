@@ -1,3 +1,118 @@
+Equality vs. Identity
+---------------------
+
+In many programming languages there is a difference between things that are "equal" and things that are "identical".
+
+This can translate in different operators in each programming language, for instance:
+
+- `==` (equality) versus `is` (identity) in Python;
+- `==` (equality) versus `===` (identity) in JavaScript;
+
+So it is important to remember the difference.
+
+Equality checks if two objects are "equal", given a certain set of rules. For instance, two circles may be considered "equal" if they have the same values for center and radius.
+
+Identity checks is two objects are actually the same object (usually by checking if the pointers refer to the same region in memory).
+
+Let's take the following code:
+
+```{.python caption="Checking identity vs. checking equality"}
+from typing import Self
+
+class Circle:
+    center: tuple[int, int] = (0, 0)
+    radius: int = 0
+
+    def __init__(self, center: int, radius: int):
+        self.center = center
+        self.radius = radius
+
+    def __eq__(self, other: Self):
+        """
+        Here we apply the rules to decide if two circles are equal
+        """
+        return (
+            self.center == other.center
+            and self.radius == other.radius
+        )
+
+
+if __name__ == "__main__":
+    # Let's create two circles
+    A: Circle = Circle((10, 20), 30)
+    B: Circle = Circle((10, 20), 30)
+    # Let's check if they're equal
+    if A == B:
+        print("A and B are equal")
+    else:
+        print("A and B are different")
+    # Let's check for identity
+    if A is B:
+        print("A and B are identical")
+    else:
+        print("A and B are not identical")
+    # Let's print the memory ids
+    print("id(A) = ", id(A))
+    print("id(B) = ", id(B))
+```
+
+It creates a set of rules to define if two circles are equal (same center and radius), then it creates two circles with the same parameters and checks for equality and identity.
+
+The result of running the code is the following:
+
+![The result of running the identity vs equality code](./images/computer_science/identity_equality.png){width=40%}
+
+As we can see, circles `A` and `B` are considered "equal", according to the rules we have set, but they are not the same object (we have called the constructor twice), and thus the identity check fails.
+
+Truthiness and "Falsiness"
+--------------------------
+
+Some programming languages try to make themselves more readable by shortcutting some boolean condition, using so-called "truthy" and "falsy" values.
+
+These values are automatically converted into a boolean according to some rules that have been set by the language itself.
+
+For instance some "falsy" values can be:
+
+- The `false` keyword (obviously);
+- The number `0` (zero);
+- The empty string;
+- The empty list (in Python, for instance);
+- The language's "NULL" value (`None` for Python, `null` for JS, ...);
+
+while some "truthy" values can be:
+
+- The `true` keyword (again, obviously);
+- Any number that is not zero;
+- Any string with at least one character;
+- A list with at least one element (in Python, for instance);
+- Any object that is "non-NULL".
+
+This allows us to write code that is a little bit more terse, improving readability.
+
+:::: pitfall ::::
+Keep in mind the difference between equality and identity when dealing with "truthy" and "falsy" values. In some cases, terser code (that leverages the so-called "type coercion") might hide some corner cases that result in bugs.
+:::::::::::::::::
+
+Operators are functions too
+---------------------------
+
+In most programming languages operators are just another way to write a function. Something like `a = 2+2` could be written as `a=operator_add(2, 2)`.
+
+This also means that comparison operators are functions, there's essentially no semantic difference between `a == 2` and `equals(a, 2)`. This has some interesting consequences.
+
+If you start thinking of comparison operators as functions, you may ask yourself:
+
+> If comparison operators are functions, can I assign their result to a variable?
+
+And the answer is (most of the time) yes!
+
+You will see this all throughout the book: assigning a complicated chain of comparisons into a variable and then using such variable in an if statement, or using a comparison statement in a return statement.
+
+Here's an example:
+
+```{src='computer_science/operators' caption='Using operators as functions'}
+```
+
 The principle of locality {#locality_principle}
 -----------------------------------------------
 

@@ -17,6 +17,52 @@ The projects will be put in order of (perceived) difficulty and each one will us
 
 A title screen for each game is not required or necessary, but if you want to make one, feel free to do so.
 
+Life
+----
+
+Also known as "Conway's Game of Life", this is a cellular automaton and it's also called a "zero-player" game. Every step of its evolution is determined by the previous step.
+
+Each cell has 8 neighbours, and its new state is defined by 4 simple rules:
+
+- If an alive cell has less than two live neighbours, it dies due to loneliness;
+- If an alive cell has two or three live neighbours, it continues living;
+- If an alive cell has more than three live neighbours, it dies by overpopulation;
+- If a dead cell has exactly three neighbours, it becomes alive by reproduction.
+
+### Basic Level
+
+Make a simple 50x50 grid that implements the rules of Life, you can set the initial state inside the source code and make it run as soon as the game begins. Make sure that the normal patterns work as they should, here's a couple of those:
+
+- Block: a 2x2 block of alive cells, it's a so-called still life, it shouldn't change;
+- Blinker, a 1x3 row of alive cells, it should switch between two states;
+
+If these work well, check Wikipedia for some more patterns.
+
+Skills Required:
+
+- Drawing to a screen;
+- Manipulating the game's state.
+
+### Advanced Level
+
+Instead of setting the initial state from the source code and making it start at the opening of the game, start the game with an empty grid and the simulation paused.
+
+Allow the player to enable/disable cells using the mouse and then start the simulation with the press of a button. Also allow the player to reset the simulation with another button.
+
+Further skills required:
+
+- Keyboard handling;
+- Mouse handling;
+- Event handling.
+
+### Master Level
+
+Make a new version of Life where coordinates "wrap around", so a cell on the very right side of the screen is influenced by the cells at the very left of the screen. How do some of the more advanced patterns (like the gliders, glider guns, etc...) behave?
+
+Further skills required:
+
+- Some modulo maths;
+
 Tic-Tac-Toe
 -----------
 

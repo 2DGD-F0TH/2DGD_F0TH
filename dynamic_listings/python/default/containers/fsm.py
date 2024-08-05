@@ -1,3 +1,6 @@
+from typing import Callable
+
+
 class FSM:
     """
     This class defines a Finite State Machine
@@ -5,16 +8,16 @@ class FSM:
     pointer
     """
 
-    current_state = None
+    current_state: Callable[[float], None] = None
 
-    def setState(self, f):
+    def set_state(self, f: Callable[[float], None]) -> None:
         """
         Sets the state, from this point on, update will
         change its strategy
         """
         self.current_state = f
 
-    def update(self, dt):
+    def update(self, dt: float) -> None:
         # If there is a current state, execute it
-        if self.current_state is not None:
+        if self.current_state:
             self.current_state(dt)

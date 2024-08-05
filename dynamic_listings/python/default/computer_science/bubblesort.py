@@ -1,5 +1,5 @@
-def bubbleSort(lst):
-    n = len(lst)
+def bubble_sort(lst: list[int]):
+    n: int = len(lst)
     # Traverse through all elements
     for i in range(n):
         # Last i elements are in place due to the nature of the sort

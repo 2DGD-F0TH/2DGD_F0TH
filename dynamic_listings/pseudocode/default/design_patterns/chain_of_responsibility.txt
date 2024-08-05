@@ -9,7 +9,7 @@ abstract class Handler{
         }
 
         if (next is not null){
-            next.handle_request();
+            return next.handle_request();
         }
     }
 

@@ -1,4 +1,4 @@
-def point_collision(A, B):
+def point_point_collision(A: Point, B: Point) -> bool:
     """
     Detects a collision between two points
 
@@ -7,7 +7,4 @@ def point_collision(A, B):
     :returns: A boolean telling us if the two points collide
 
     """
-    if A.x == B.x and A.y == B.y:
-        return True
-    else:
-        return False
+    return A.x == B.x and A.y == B.y

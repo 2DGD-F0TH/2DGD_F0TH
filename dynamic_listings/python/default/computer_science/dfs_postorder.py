@@ -1,4 +1,4 @@
-def dfs_traverse_postorder(n):
+def dfs_traverse_postorder(n: Node):
     # Step 1: We traverse the left subtree, using recursion
     if n.left is not None:
         dfs_traverse_postorder(n.left)
@@ -10,5 +10,5 @@ def dfs_traverse_postorder(n):
 
 
 if __name__ == "__main__":
-    root = build_example_tree()
+    root: Node = build_example_tree()
     dfs_traverse_postorder(root)

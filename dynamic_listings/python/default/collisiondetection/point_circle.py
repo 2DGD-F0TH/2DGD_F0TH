@@ -1,11 +1,11 @@
 from math import sqrt
 
 
-class Circle(object):
+class Circle:
 
     """Defines a circle, with center and radius"""
 
-    def __init__(self, center, radius):
+    def __init__(self, center: Point, radius: float) -> None:
         """
         Initializes the circle
 
@@ -13,11 +13,11 @@ class Circle(object):
         :radius: Radius of the circle, as a float
 
         """
-        self._center = center
-        self._radius = radius
+        self.center: Point = center
+        self.radius: float = radius
 
 
-def distance(A, B):
+def distance(A: Point, B: Point) -> float:
     """
     Calculates the distance between two points
 
@@ -29,8 +29,13 @@ def distance(A, B):
     return sqrt((A.x - B.x)**2 + (A.y - B.y)**2)
 
 
-def circle_point_collision(A, B):
-    if distance(A.center, B) <= A.radius:
-        return True
-    else:
-        return False
+def circle_point_collision(A: Circle, B: Point) -> bool:
+    """
+    Detects a collision between a circle and a point
+
+    :A: The circle being checked
+    :B: The point being checked
+    :returns: A boolean telling is if the point and circle collided
+
+    """
+    return distance(A.center, B) <= A.radius

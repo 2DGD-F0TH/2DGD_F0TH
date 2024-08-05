@@ -1,4 +1,4 @@
-def count_backwards(n):
+def count_backwards(n: int) -> None:
     # Condition for the loop
     while n != 0:
         # The function body

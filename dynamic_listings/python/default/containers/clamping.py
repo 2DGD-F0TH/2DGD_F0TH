@@ -1,4 +1,4 @@
-def clamp(value, min, max):
+def clamp(value: float, min: float, max: float) -> float:
     # Clamps "value" so it is always between "min" and "max"
     if value < min:
         return min

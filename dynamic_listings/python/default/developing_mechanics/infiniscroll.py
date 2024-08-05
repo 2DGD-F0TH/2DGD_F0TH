@@ -1,9 +1,11 @@
-background_x_offset = 0.0  # The x offset of the background
-BACKGROUND_X_SIZE = 512  # The horizontal size of the background
-LOOP_POINT = 256  # The horizontal loop point of the image
-DISTANCE_FACTOR = 0.5  # The background moves at half the player speed
+BACKGROUND_X_SIZE: int = 512  # The horizontal size of the background
+LOOP_POINT: int = 256  # The horizontal loop point of the image
+DISTANCE_FACTOR: float = 0.5  # The background moves at half the player speed
 
-def update(dt):
+
+background_x_offset: float = 0.0  # The x offset of the background
+
+def update(dt: float) -> None:
     ...
     # In case we're moving right, the background scrolls left slightly
     if player.speed_x > 0:

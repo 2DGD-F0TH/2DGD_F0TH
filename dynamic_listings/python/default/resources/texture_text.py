@@ -1,9 +1,9 @@
-TILE_WIDTH = 32
-TILE_HEIGHT = 32
-SPRITESHEET = engine.load_spritesheet("resources/font.png")
+TILE_WIDTH: int = 32
+TILE_HEIGHT: int = 32
+SPRITESHEET: Surface = engine.load_spritesheet("resources/font.png")
 
 
-def get_cell_from_letter(letter):
+def get_cell_from_letter(letter: str) -> int:
     """
     Here we will use a bit of ASCII magic, each letter
     has a "number attached to it", related to its position
@@ -12,24 +12,24 @@ def get_cell_from_letter(letter):
     This means we can "convert" each letter to its ASCII index,
     subtract 65 and have our "array index"
     """
-    ascii_index = ord(letter)
-    array_index = ascii_index - 65
+    ascii_index: int = ord(letter)
+    array_index: int = ascii_index - 65
     return array_index
 
 
-def make_text(to_write):
+def make_text(to_write: str) -> Surface:
     # First, we create the surface to write the text onto
-    surface_width = TILE_WIDTH * len(to_write)
-    final_text = Surface(surface_width, TILE_HEIGHT)
+    surface_width: int = TILE_WIDTH * len(to_write)
+    final_text: Surface = Surface(surface_width, TILE_HEIGHT)
     # This will keep track of the left side of the first free "cell"
-    current_pixel = 0
+    current_pixel: int = 0
     # Now we iterate each letter of the word we want to render
     for letter in to_write:
         # First, we need to find which cell corresponds to the letter
-        letter_cell = get_cell_from_letter(letter)
+        letter_cell: int = get_cell_from_letter(letter)
         # After that, we need to get the subsurface, which contains only the letter
         # It will start at letter_cell * TILE_WIDTH
-        graphical_letter = SPRITESHEET.get_subsurface(
+        graphical_letter: Surface = SPRITESHEET.get_subsurface(
             left=letter_cell * TILE_WIDTH,
             top=0,
             width=TILE_WIDTH,

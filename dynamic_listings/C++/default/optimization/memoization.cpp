@@ -5,7 +5,7 @@ class MyMemoizedObject{
         std::unordered_map<std::string, std::string>* memory = new std::unordered_map<std::string, std::string>();
 
     public:
-        std::string memoizedfunction(string parameter){
+        std::string memoizedFunction(string parameter){
             if (memory->contains(parameter)){
                 // If the result was calculated earlier, we can just return it
                 return memory[parameter];

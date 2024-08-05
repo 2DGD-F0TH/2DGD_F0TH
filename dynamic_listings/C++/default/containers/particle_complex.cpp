@@ -19,12 +19,12 @@ class Particle{
 
         // Initial Status, for resetting
         Vector2D initial_velocity;
-        Vector2D initial_rotation;
-        Vector2D initial_a_vel;
+        float initial_rotation;
+        float initial_a_vel;
         float initial_lifespan;
 
     public:
-        Particle(Texture tx, Vector2D pos, Vector2D vel, Vector2D accel, float ls = 2000, float rot = 0, float a_vel = 0, float a_accel = 0){
+        Particle(Texture tex, Vector2D pos, Vector2D vel, Vector2D accel, float ls = 2000, float rot = 0, float a_vel = 0, float a_accel = 0){
             // We prepare the particle for usage
             texture = tex;
             position = pos;
@@ -59,7 +59,7 @@ class Particle{
             // This function resets the initial status of the particle
             velocity = initial_velocity;
             rotation = initial_rotation;
-            a_vel = initial_a_vel;
+            angular_velocity = initial_a_vel;
             lifespan = initial_lifespan;
         }
 };

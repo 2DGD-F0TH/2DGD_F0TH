@@ -1,26 +1,29 @@
+from typing import Self
+
+
 class Node:
     """
     This is an example of a simple node structure for a tree.
     It can be used as root or any other node
     """
 
-    def __init__(self, value):
-        self.content = value
-        self.left = None
-        self.right = None
+    def __init__(self, value: str):
+        self.content: str = value
+        self.left: Self = None
+        self.right: Self = None
 
 
-def build_example_tree():
+def build_example_tree() -> Node:
     # Let's build the example tree starting with the nodes
-    A = Node("A")
-    B = Node("B")
-    C = Node("C")
-    D = Node("D")
-    E = Node("E")
-    F = Node("F")
-    G = Node("G")
-    H = Node("H")
-    I = Node("I")
+    A: Node = Node("A")
+    B: Node = Node("B")
+    C: Node = Node("C")
+    D: Node = Node("D")
+    E: Node = Node("E")
+    F: Node = Node("F")
+    G: Node = Node("G")
+    H: Node = Node("H")
+    I: Node = Node("I")
     # Now we connect the various components (the edges)
     B.left = A
     B.right = C

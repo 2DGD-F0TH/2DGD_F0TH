@@ -3,14 +3,14 @@ class Emitter:
     This is a simple particle emitter, it contains a list
     of particles and it updates and manages them
     """
-    origin = None
-    particles = None
+    origin: Vector2 = None
+    particles: list[Particle] = []
 
-    def __init__(self, location):
+    def __init__(self, location: Vector2) -> None:
         self.origin = location
-        self.particles = []  # We prepare a list of particles, we'll use 8
+        self.particles = [Particle() for _ in range(8)]  # We prepare 8 particles
 
-    def update(self, dt):
+    def update(self, dt: float) -> None:
         # Update the entire system, by updating each particle
         for particle in self.particles:
             if not particle.is_dead():

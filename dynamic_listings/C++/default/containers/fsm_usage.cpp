@@ -18,7 +18,7 @@ class Enemy{
         brain.setState(patrol);
     }
 
-    void sees(Entity other){
+    bool sees(Entity other){
         /*
          *Implements logic for the "sight" of the enemy
          */

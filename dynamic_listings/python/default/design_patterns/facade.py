@@ -15,14 +15,14 @@ class Facade:
     by "wrapping" them in a comfortable startAll
     function
     """
-    service1 = None
-    service2 = None
+    service1: FirstService = None
+    service2: SecondService = None
 
-    def __init__(self):
+    def __init__(self) -> None:
         self.service1 = FirstService()
         self.service2 = FirstService()
 
-    def startAll(self):
+    def startAll(self) -> bool:
         """
         The facade starts all the services and does
         some status checking, self.is hidden from the
@@ -30,11 +30,11 @@ class Facade:
         Returns true if all services started successfully
         false otherwise
         """
-        firstServiceStarted = self.service1.start()
+        firstServiceStarted: bool = self.service1.start()
         if not firstServiceStarted:
             return False
 
-        secondServiceStarted = self.service2.start()
+        secondServiceStarted: bool = self.service2.start()
         if not secondServiceStarted:
             return False
 

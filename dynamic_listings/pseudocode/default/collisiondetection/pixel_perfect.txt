@@ -24,9 +24,11 @@ function pixel_perfect_collision(Sprite A, Sprite B) -> bool{
     int y1 = max(A.y, B.y);
     int y2 = min((A.y + A.height), (B.y + B.height));
 
-    // For each pixes in the intersecting rectangle, let's check
+    // For each pixel in the intersecting rectangle, let's check
     for (each y from y1 to y2){
         for (each x from x1 to x2){
+            // We're working in the intersecting rectangle, so we'll need to
+            // rework our coordinates
             a = A.bitmask.getColor(x - A.x, y - A.y);
             b = B.bitmask.getColor(x - B.x, y - B.y);
 

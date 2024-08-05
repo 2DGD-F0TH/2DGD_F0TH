@@ -25,9 +25,4 @@ In pseudo code this would be:
 ```{src='collisiondetection/circle_circle' caption='Circle to Circle Collision Detection'}
 ```
 
-The shorter version would be:
-
-```{src='collisiondetection/circle_circle_lazy' caption='Shorter Version of a Circle to Circle Collision Detection'}
-```
-
 Again, this algorithm performs a number of operations that is constant, so it runs in O(1).

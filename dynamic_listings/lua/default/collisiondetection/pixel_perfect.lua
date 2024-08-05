@@ -50,9 +50,11 @@ local function pixel_perfect_collision(A, B)
     local y1 = math.max(A.y, B.y)
     local y2 = math.min((A.y + A.height), (B.y + B.height))
 
-    -- For each pixes in the intersecting rectangle, let's check
+    -- For each pixel in the intersecting rectangle, let's check
     for y = y1, y2 do
         for x = x1, x2 do
+            -- We're working in the intersecting triangle, so we'll need to
+            -- rework our coordinates
             local a = A.bitmask.getColor(x - A.x, y - A.y)
             local b = B.bitmask.getColor(x - B.x, y - B.y)
 

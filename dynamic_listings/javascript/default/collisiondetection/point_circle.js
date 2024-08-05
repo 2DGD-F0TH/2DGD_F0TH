@@ -12,9 +12,5 @@ function distance(A, B){
 }
 
 function circle_point_collision(A, B){
-    if (distance(A.center, B) <= A.radius){
-        return true;
-    }else{
-        return false;
-    }
+    return distance(A.center, B) <= A.radius;
 }

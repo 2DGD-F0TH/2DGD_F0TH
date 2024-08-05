@@ -12,9 +12,5 @@ float distance(Point A, Point B){
 }
 
 bool circle_circle_collision(Circle A, Circle B){
-    if (distance(A.center, B.center) <= A.radius + B.radius){
-        return true;
-    }else{
-        return false;
-    }
+    return distance(A.center, B.center) <= A.radius + B.radius;
 }

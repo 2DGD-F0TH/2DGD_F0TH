@@ -15,12 +15,9 @@ The UML diagram for a singleton is really simple.
 
 ![The UML diagram for a singleton pattern](./images/design_patterns/singleton.svg){width=20%}
 
-```{src='design_patterns/singleton' caption='Example of a singleton pattern'}
-```
+Some singleton implementations may instantiate themselves immediately, which is not always necessary, in that case a good idea could be implementing what is called "lazy loading", where the instantiation happens the first time you ask the object for its own instance.
 
-The previous singleton instantiates immediately, which may not always be necessary, in that case a good idea could be implementing the so-called "lazy loading", where the instantiation happens the first time you ask the object for its own instance.
-
-```{src='design_patterns/singleton_lazyload' caption='Example of a singleton pattern with lazy loading'}
+```{src='design_patterns/singleton' caption='Example of a singleton pattern with lazy loading'}
 ```
 
 If multiple threads are involved in using a lazy-loading singleton, you may need to take care of preventing *[race conditions~\[g\]~](#gl_racecondition)* that could result in multiple instances of the singleton being created.

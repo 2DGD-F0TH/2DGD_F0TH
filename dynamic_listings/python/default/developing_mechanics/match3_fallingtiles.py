@@ -1,26 +1,26 @@
-def removeMatches():
+def remove_matches():
     for tile in matches:
         matrix[tile.x][tile.y] = None
     matches = []
 
 
-def findFallingTiles:
+def find_falling_tiles() -> dict[Tile, int]:
     # Our falling tiles list, will be used for tweening
-    falling_tiles = {}
+    falling_tiles: dict[Tile, int] = {}
     # We scroll each column of the board
-    for (column in matrix):
-        found_space = False
-        spaceY = 0
+    for column in matrix:
+        found_space: bool = False
+        space_y: int = 0
         # We scroll each row, from bottom to top
-        y = number of rows
+        y: int = len(column) #number of rows
         while (y > 0):
-            Tile tile = matrix[y][x]
-            if (found_space):
+            tile: Tile = matrix[y][x]
+            if found_space:
                 # If the current tile is not a space, bring it to the lowest space
-                if (tile is not None):
+                if tile:
                     # Put it in the correct spot
-                    matrix[spaceY][column] = tile
-                    tile.y = spaceY
+                    matrix[space_y][column] = tile
+                    tile.y = space_y
 
                     # Set the old position to empty
                     matrix[column][y] = None
@@ -29,17 +29,17 @@ def findFallingTiles:
                     falling_tiles[tile] = y
 
                     # We reset the found_space for next loop
-                    found_space = false
+                    found_space = False
                     # We need to re-scan this tile (it will be empty, but there may be more tiles above)
-                    y = spaceY
+                    y = space_y
 
                     # Reset spaceY for next loop
-                    spaceY = 0
-            elif (tile is None):
+                    space_y = 0
+            elif not tile:
                 found_space = True
                 # In case we didn't find a space yet, this is the one
-                if (spaceY == 0):
-                    spaceY = y
+                if not space_y:
+                    space_y = y
             # We go up one tile
             y -= 1
     return falling_tiles

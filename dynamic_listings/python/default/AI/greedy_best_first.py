@@ -1,19 +1,18 @@
 # We bootstrap the variables
-openSet = []
-closedSet = []
-currentNode = start
+openSet: list[Node] = []
+closedSet: list[Node] = []
+currentNode: Node = start
 closedSet.append(currentNode)
-while (currentNode != end):
+while currentNode != end:
     for n in currentNode.getAdjacentList():
         if n in closedSet:
             # We already analyzed this node, continue to next n
             continue
-        else:
-            n.parent = currentNode
-            if n not in openSet:
-                n.h = getHeuristics(n, end)  # Computes the value of n's h(x)
-                openSet.append(n)
-    if openSet.empty():
+        n.parent = currentNode
+        if n not in openSet:
+            n.h = getHeuristics(n, end)  # Computes the value of n's h(x)
+            openSet.append(n)
+    if not openSet:
         # We exhausted all the possibilities
         break
     # Select a new "currentNode"
@@ -26,8 +25,8 @@ while (currentNode != end):
 if currentNode == end:
     # We reached the end and solved the path, we need to do a stack
     # reversal to find the path
-    finalPath = []
-    n = end
+    finalPath: list = []
+    n: Node = end
     while n is not None:
         finalPath.append(n)
         n = n.parent  # We use "parent" to run the found path backwards

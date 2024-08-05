@@ -3,17 +3,17 @@ class Emitter:
     This is a simple particle emitter, it contains a list
     of particles and it updates and manages them
     """
-    origin = None
-    particles = None
+    origin: Vector2 = None
+    particles: list[Particle] = []
     # Defines if this emitter streams continuously or only a burst of particles
-    one_shot = False
+    one_shot: bool = False
 
-    def __init__(self, location, one_shot=False):
+    def __init__(self, location: Vector2, one_shot: bool = False) -> None:
         self.origin = location
-        self.particles = []  # We prepare a list of particles, we'll use 8
+        self.particles = [Particle() for _ in range(8)]  # We prepare 8 particles
         self.one_shot = one_shot
 
-    def update(self, dt):
+    def update(self, dt: float) -> None:
         # Update the entire system, by updating each particle
         for particle in self.particles:
             if self.one_shot:

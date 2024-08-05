@@ -30,9 +30,11 @@ bool pixel_perfect_collision(Sprite A, Sprite B){
     int y1 = std::max(A.y, B.y);
     int y2 = std::min((A.y + A.height), (B.y + B.height));
 
-    // For each pixes in the intersecting rectangle, let's check
+    // For each pixel in the intersecting rectangle, let's check
     for (int y=y1; y < y2; y++){
         for (int x=x1; x < x2; x++){
+            // We're working in the intersecting triangle, so we'll need to
+            // rework our coordinates
             Color a = A.bitmask.getColor(x - A.x, y - A.y);
             Color b = B.bitmask.getColor(x - B.x, y - B.y);
             if (a.isWhite() && b.isWhite()){

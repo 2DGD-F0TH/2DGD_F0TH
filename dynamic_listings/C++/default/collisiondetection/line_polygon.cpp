@@ -23,9 +23,6 @@ bool line_polygon(Line line, Polygon poly){
             return true;
         }
     }
-    if (line_line_collision(temp_line, line)){
-        return true;
-    }
     // If none of the previous checks was triggered, we don't have a collision
     return false;
 }

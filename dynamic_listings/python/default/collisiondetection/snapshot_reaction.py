@@ -1,9 +1,10 @@
 # Snapshot collision reaction
 # All the sprite origins are on the top-left corner of the entity
-snapshot = player_instance.copy()  # The "snapshot"
+snapshot: Player = player_instance.copy()  # The "snapshot"
 
 # Update the player_instance here
-player_instance += (velocity * dt)
+player_instance.x += (velocity.x * dt)
+player_instance.y += (velocity.y * dt)
 
 # Now check for collisions
 ...
