@@ -18,7 +18,7 @@ There are 3 types of Asymptotic notation you should know: $\Omega$, $\Theta$ and
 We will now talk about the most common Big-O notations, from "most efficient" to "least efficient".
 
 :::: pitfall ::::
-Be mindful of one specific thing: these notations simply tie how the algorithm performs in relation to how a certain variable grows (usually a dataset). If you know for certain that a dataset stays relatively small, an algorithm with a "worse **O()** may not make a huge difference or may even be more efficient.
+Be mindful of one specific thing: these notations simply tie how the algorithm performs in relation to how a certain variable grows (usually a dataset). If you know for certain that a dataset stays relatively small, an algorithm with a "worse" **O()** may not make a huge difference or may even be more efficient.
 :::::::::::::::::
 
 ### O(1)
