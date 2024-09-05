@@ -213,3 +213,18 @@ Sometimes your images will need to be scaled or filtered to avoid annoying artif
 {{placeholder}}
 
 <!-- TODO: Trilinear Filtering -->
+
+#### What is a sprite?
+
+While reading this book, you might already have seen the term "sprite" being used a lot, but what is a sprite?
+
+A sprite is a 2D image (or animation), that is composited with other sprites or textures into a larger scene. In a game, usually they are composed by at least 2 elements:
+
+- A texture (which represents the image itself);
+- A position (usually represented with an $(x,y)$ pair).
+
+In some media, you may find other terms that are used as synonyms of "sprite", like:
+
+- Player Graphics/Missile Graphics: These terms come from the Atari line of computers and consoles;
+- Objects (or OBJs): These terms usually come from the Nintendo line of consoles, for instance when referring to the memory region where sprite attributes are stored; in that case it was called OAM (Object Attribute Memory);
+- MOBs (or Movable Object Block): Coming from the MOS Technology data sheets. Strangely enough Commodore, the main user of MOS products, used the term "sprite" instead.
