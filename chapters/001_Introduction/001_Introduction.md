@@ -125,6 +125,7 @@ This book is structured in many chapters, here you will find a small description
 - **Scene Trees:** Here we will briefly talk about probably the most important structure in games and game engines: the scene tree.
 - **Cameras:** In this section we will talk about the different types of cameras you can implement in a 2D game, with in-depth analysis and explanation.
 - **Game Design Tips:** In this chapter we will talk about level design and how to walk your player through the learning and reinforcement of game mechanics, dipping our toes into the huge topic that is game design.
+- **World Building:** A section completely dedicated to the art of building a world that will make sense in the player's mind, with tips and tricks on how to make it more engaging and fun.
 - **Creating your own assets:** Small or solo game developers may need to create their own assets, in this section we will take a look at how to create our own graphics, sounds and music.
 - **Design Patterns:** A head-first dive into the software engineering side of game development, in this section we will check many software design patterns used in many games.
 - **Useful Containers and Classes:** A series of useful classes and containers used to make your game more maintainable and better performing.
