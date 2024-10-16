@@ -21,4 +21,20 @@ Even something as simple as a somewhat detailed description of the item may give
 The "Dark Souls" series brings this concept to the extreme: there is no narration and almost the entirety of the story is told through the description of the objects you find along the way. It is your task to piece everything together and discover what the lore is.
 ::::::::::::::::
 
+### Details matter
+
+Details can, in some cases, matter as much as the bigger picture: a small animation of grass rustling in the wind or moving when characters cross it can make the world feel a lot more cohesive and cared for.
+
+Some people may gloss over such details, but others may really appreciate the added care and thought that went onto creating your world.
+
+Some details that you can include may be:
+
+- Trees rustling in breezy or windy areas;
+- Leaves falling in autumn (you can use [Particle systems for that](#particle_systems));
+- Grass rustling when an entity crosses it (or when a smaller entity hides in it);
+- "Dangling Physics": anything that can reproduce the behaviour of a dangling object when touched by someone;
+- "Breakable Objects": an object that can fall and shatter if bumped, or something that explodes if shot (even just a bottle);
+- Soundscapes, like having reverb in very big empty spaces, making metal bunkers sound tinny and dry ...;
+- Much, much more.
+
 {{extend}}

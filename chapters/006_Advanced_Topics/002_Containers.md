@@ -90,7 +90,7 @@ In the menu stack we also have some functionalities that may not be included in 
 
 <!-- TODO: Make a structure with a menu stack with "UI Elements" that can refer to the stack itself (for the "back" action for instance), add diagram and code -->
 
-Particle Systems
+Particle Systems {#particle_systems}
 -----------------
 
 Many special effects in games (like fire, dust and even falling leaves) are done using particle systems. Particle systems consist mainly of 2 parts: the particles themselves and the emitters. This is where we will be focusing.
