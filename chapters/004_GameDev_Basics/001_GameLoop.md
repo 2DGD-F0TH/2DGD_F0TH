@@ -126,7 +126,7 @@ Even if the frame is limited, it's necessary that all updates are tied to our de
 
 A common solution used when a frame takes longer to update and render than the target time is using the so-called "frame dropping". The game won't render the next frame, in an effort to "catch up" to the desired frame rate.
 
-This will obviously cause a perceptible visual stutter.
+This means that the old frame will stay on screen, which will cause a perceptible visual stutter.
 
 ### Multi-threaded Loops
 

@@ -31,3 +31,8 @@ Looking around you can help you grow as an artist and aid you in the difficult s
 Every complex object can be deconstructed into simpler shapes: circles, ellipses, triangles, rectangles, squares...
 
 You can use such simple shapes, overlapping them to create a skeleton of your subject (living or not), so that you can draw it in an easier way: with the layer system introduced by huge part of the current drawing applications, you don't have to do precision work when it comes to removing such skeleton.
+
+#### Graphics Smearing
+
+{{placeholder}}
+<!--TODO: Talk about graphics smearing (Github #124) -->

@@ -28,6 +28,11 @@ If we continue with copying, rotating and pasting, we can obtain a great basis f
 
 After that we can edit and make it so tiles are seamless, while putting the minimum amount of necessary effort to create something convincing.
 
+##### 9-slice Scaling
+
+{{placeholder}}
+<!--TODO: Talk about 9-slice scaling, following up from the "rotation trick" (See Github #118) -->
+
 ##### Creating "Inside rooms" tilesets
 
 In many cases, when dealing with tile-based games, we need to create a tileset that is good to represent "inside" environments, like a basement, a cave or the inside of a building. A simple way to reach that goal is creating a set of black and transparent tiles that can be overlaid on another tileset, like the following:

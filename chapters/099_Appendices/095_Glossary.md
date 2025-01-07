@@ -95,6 +95,9 @@ M {.unnumbered .unlisted}
 [Memory Leak]{#gl_memoryleak}
 : A memory leak is usually the result of a programming error, where the memory is not correctly managed. This usually entails allocating and using memory without releasing it, thus the program will eat more and more memory as it keeps running.
 
+[Meta-Gaming]{#gl_metagaming}
+: Meta-Gaming consists in the act of playing a game by applying rules that are outside of the game itself to gain an advantage. This includes thoughts like "It's the first level, the game wouldn't kill my character so early". This mostly consists in applying real-world logic to a game as "a piece of the real world", instead of being fully immersed in the game itself and its world.
+
 [Modern music notation]{#gl_modernmusicnotation}
 : The most common way to write music, using symbols to indicate the duration and type of note, while the symbol's positioning in a 5-line staff defines its pitch.
 

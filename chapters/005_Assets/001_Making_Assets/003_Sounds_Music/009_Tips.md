@@ -8,6 +8,11 @@ Sometimes we may find our audio samples lacking that "punch" they would need, th
 
 It's better to cut the higher frequencies instead, and eventually boost the entire volume of the sample during mixing. This way the nature of the sample doesn't get tainted by boosting, and we obtain the result we wanted.
 
+#### Spatial sound is not only for 3D Games
+
+{{placeholder}}
+<!-- TODO: Talk about spatial sound in 2D games (See GitHub #125). Very useful in Doom-style games, which are 2D but "look 3D". -->
+
 {{extend}}
 
 <!-- TODO: Give some tips to process audio files -->
