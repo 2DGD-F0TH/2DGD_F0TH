@@ -57,7 +57,7 @@ As well as being a source of knowledge this project aims to be a learning experi
 ![GitLab Forks](https://img.shields.io/gitlab/forks/Penaz/2DGD_F0TH?label=GitLab%20Forks&logo=gitlab&style=for-the-badge)
 
 ![Placeholders](https://img.shields.io/badge/Placeholders-84-%23FF8800?style=for-the-badge)
-![Extension Points](https://img.shields.io/badge/Extension%20Points-10-%23FF8800?style=for-the-badge)
+![Extension Points](https://img.shields.io/badge/Extension%20Points-11-%23FF8800?style=for-the-badge)
 
 **Commits:**
 
