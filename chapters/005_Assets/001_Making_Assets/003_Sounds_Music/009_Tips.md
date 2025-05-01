@@ -31,7 +31,8 @@ This can be expanded and made as complex as you want:
 - Technically speaking, each ear would hear the sound at a slightly different delay (although considering an average distance between ears of 20cm - less than 10 inches, the delay between each ear would be about 0.0006 seconds);
 - The sound gets lowered in volume and muffled if it goes through walls;
 - If you're peeking from a corner with only one eye (like you're spying), one ear would be behind a wall, thus hearing less than the other;
-- Sounds reflect on surfaces, thus a sound may feel like it comes from another direction than the one where the source is, thus a second "echoed source" should be mixed in.
+- Sounds reflect on surfaces, thus a sound may feel like it comes from another direction than the one where the source is, thus a second "echoed source" should be mixed in;
+- Different sounds react differently to walls: lower frequencies travel through walls more easily, while high frequencies get filtered more. This means that booming sounds can be perceived farther away than for instance, whistles or high-pitch squeals.
 
 It can be as simple or as complex as you want, but the more complex something becomes, the more diminishing your returns will probably be.
 
