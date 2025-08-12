@@ -69,6 +69,14 @@ Another platform that has seen a massive rise in recent times is the Web: with W
 
 A drawback of the "web approach" is the limited performance that web browsers, WebGL and WebAssembly can give, as well as the need to download the game before being able to play (and sometimes you may need to re-download the game if you cleared your browser's cache).
 
+### Fantasy consoles
+
+Since limitations breed creativity, the game development community has come up with a bunch of nonexisting consoles that have their own specifications, trying to match (in part) older systems, while letting developers still work on their games with modern tools.
+
+These systems have arbitrary limitations (like color palettes, resolution or number of sound channels) to imitate a certain "generation" of systems (be it 8 or 16 bit, usually).
+
+Games for these consoles are distributed in "virtual carts" or "virtual floppies", which are essentially just files containing the game code and assets. These software consoles are developed with learning in mind, so each game can be played and then, at the press of a button, you can enter the editor mode, check the game's code and assets and learn from them.
+
 Input Devices
 -------------
 
