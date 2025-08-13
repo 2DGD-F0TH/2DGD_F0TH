@@ -105,7 +105,7 @@ The only thing that remains is how to switch from an "arbitrary axis" to our usu
 
 If we look closely, we're just projecting polygons onto a bunch of axes so that they get "flattened to lines", then we're projecting such lines onto the x and y axes to see if there those lines are touching or not.
 
-Ray Casting
+Ray Casting {#raycasting}
 -----------
 
 Sometimes it can necessary to use unusual techniques to detect collisions: ray casting is one of them. If well used (and with some "illusion magic"), ray casting can be a nice way to solve the "bullet through paper" problem.
