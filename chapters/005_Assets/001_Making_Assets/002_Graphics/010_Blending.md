@@ -38,9 +38,33 @@ This approach is a little bit limited: you need to align the surfaces correctly,
 
 #### Subtraction
 
-{{placeholder}}
+Similarly to what happens with addition, you can "subtract" colors too.
 
-<!-- TODO: Speak about blending surfaces via subtractive blending -->
+So if we were to take two overlapping rectangles, one yellow (with RGB tuple $(255, 255, 0)$) and one red (with RGB tuple $(255, 0, 0)$):
+
+![Surface blending - subtraction (1/2)](./images/resources/blending/subtraction_1.svg){width=30%}
+
+We can take the tuples and calculate the resulting color:
+
+$$
+\begin{array}{r r r r}
+  & 255 & 255 & 0 \\
+- & 255 & 0   & 0\\ \hline
+  & 0   & 255 & 0
+\end{array}
+$$
+
+The resulting color is green.
+
+![Surface blending - difference (2/2)](./images/resources/blending/subtraction_2.svg){width=30%}
+
+This can be useful for shadows, for instance:
+
+![Simple shadow effect using 2 surfaces and blending](./images/resources/blending/subtraction_shadows.svg){width=50%}
+
+:::: pitfall ::::
+"Subtraction" and "difference" may refer to different blending modes: in the "difference" case, it may happen that the first surface is subtracted from the second or vice-versa, depending on which one returns a non-negative result.
+:::::::::::::::::
 
 #### Alpha Blending
 
