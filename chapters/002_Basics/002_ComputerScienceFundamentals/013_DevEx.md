@@ -5,6 +5,23 @@ Developer Experience (DX/DevEx)
 
 <!-- TODO: Small intro to developer experience -->
 
+What to do when coding
+----------------------
+
+{{placeholder}}
+<!-- TODO: Small intro to some universally good practices -->
+
+### Safe default initialization
+
+{{placeholder}}
+<!-- TODO: Initialize arrays with default values, avoiding out of range issues where possible, for instance -->
+
+### Abstraction
+
+{{placeholder}}
+<!-- TODO: Use functions, classes and abstraction facilities -->
+
+
 What to avoid when coding
 -------------------------
 
