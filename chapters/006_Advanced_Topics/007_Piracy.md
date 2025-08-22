@@ -25,15 +25,23 @@ After that period, the damage from cracked anti-piracy is diminished, since the 
 Alternatives to anti-piracy measures
 ------------------------------------
 
-{{placeholder}}
+Even though piracy infringes on someone's copyright and right to earn money from their hard work, "wagging their finger" and implementing strict anti-piracy measures might not be the best solution.
 
-<!-- TODO: Discuss how anti-piracy is not the best solution, as it usually hides other issues that can be solved without an anti-piracy system -->
+Piracy may hide some underlying issues: it is a "service problem"; we are missing something that may be considered fundamental by others.
 
 ### Regional Pricing
 
-{{placeholder}}
+Not all regions have the same per-capita income. Let's make an example with data from the year 2025, both for income and price for triple-A games.
 
-<!-- TODO: Not all regions have the same per-capita income, so a straight currency conversion may mean that a game is essentially inaccessible to some regions due to the price being too high -->
+If we consider a triple-A game that costs about 80$ we can find out that:
+
+- The US has a monthly per-capita income of about 5400$. A 80$ game would take up about 1.5% of such income. Some might consider it a fair price for entertainment, some may not (I think 80$ is too high, but I'm used to the good old times of 60$ games).
+- Albania has a monthly per-capita income of about 850 to 1000$. An 80$ game would take up about 8% to 9.4% of such income. Starting to see a problem?
+- In Brazil there is a monthly income that averages at about 612$. An 80$ game would take up a staggering 13% of such income. If a person was at minimum wage (barely scraping 275$) buying such a game would be crazy (taking up about 30% of the income).
+
+So the lower-income countries may see a higher piracy rate for a simple reason: they cannot afford the game.
+
+Having regional pricing that make your games possible to purchase in all regions can be a good way to cater to this audience: people who want to support you, but can't. Sometimes a simple currency-conversion is not enough, since it doesn't always keep track of the spending power of people.
 
 ### Give out free demos
 
