@@ -60,21 +60,33 @@ By giving out a scope-limited demo (the first few levels or the first chapter) y
 Implementing anti-piracy measures
 ---------------------------------
 
-{{placeholder}}
+If you really want to implement anti-piracy in your game, you may want to take some precautions and make things harder for pirates, just to earn enough time to last for the majority of the sales period.
 
-<!-- TODO: If push comes to shove, describe some methods to slow down pirates -->
+:::: note ::::
+Note from the author: I don't like DRM systems in general. I find their modern DRM behaviour invasive and bordering on spyware-like. For fairness I will report on DRM and anti-piracy systems, but I don't really encourage their use, since it's really easy to border on "abuse".
+::::::::::::::
 
 ### Third-party DRM systems
 
-{{placeholder}}
+The best way to do something, is to make someone else do it.
 
-<!-- TODO: Talk about some third-party DRM systems, like Steam's -->
+As much as trying to make your own anti-piracy and Digital Rights Management system might sound exciting, it may soon become extremely tedious and not as effective as some solutions offered by players who have been working on the matter for years.
+
+Steam has its own DRM which is, for better or worse, well-understood by pirates and easily defeated, but it's always better than "no DRM" when it comes to protecting your own copyright.
+
+There are third party solutions that I won't list here, but if you really want to implement one, you can look for more information online: giving out names might date this book since solutions change quickly.
 
 ### Debugger detection
 
-{{placeholder}}
+One way to stop the more "naive" trials to crack your game is debugger detection.
 
-<!-- TODO: Windows has some APIs that allow for detecting if a debugger is attached, for instance -->
+Implementations vary with your programming language, but here are various methods:
+
+- On Linux you can check `/proc/self/status` and check for a value in the `TracePid` field, if it's not zero then a debugger is attached;
+- On Windows, there is a handy `IsDebuggerPresent` function that returns a boolean;
+- With JavaScript you can create a small script that takes the current date and time, calls the `debugger` keyword and then takes the date and time again. If the difference between the two dates is longer than an arbitrary length of time, a debugger might be attached. This works because the `debugger` keyword triggers the debugger only if a browser console is open.
+
+Once you find that a debugger is attached, you can decide the best course of action, usually by closing the program or forcibly crashing it.
 
 ### Obfuscation and redundancy of checks
 
