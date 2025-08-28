@@ -102,18 +102,34 @@ Once you find that a debugger is attached, you can decide the best course of act
 
 ### When an anti-piracy flag is triggered, be generic
 
-{{placeholder}}
+When implementing anti-piracy checks, you should not show any piracy-related message: those messages can be traced in the executable file (the `strings` GNU/Linux command can show all the "printable strings" inside an executable) and thus give a lead on where your anti-piracy code is located, making its removal that much easier.
 
-<!-- TODO: Showing a warning that you know the game is pirated will just make it easier to detect where the anti-piracy check is. It's better to just crash the program or raise a generic error that already exists in plentiful quantities throughout the code base. -->
+When an anti-piracy is triggered, you should try and hide it behind a generic error that is already used somewhere else (the more often such error is used, the better, like hiding a tree in a forest). Such error can crash the program and deter some people by making them think that the pirated copy is low quality.
+
+Another way could be tinkering with the game variables and make the game misbehave worse and worse until it's unplayable or it crashes.
 
 #### Play with the pirates
 
-{{placeholder}}
+Another way could be toying with the people who pirate the game: to make it more or less obvious that you know they're pirating the game.
 
-<!-- TODO: Sometimes a good way to make life difficult for the pirates is playing with them. For example Serious Sam 3 Invincible Arachnid. -->
+Here are some examples:
+
+- Game dev tycoon: after playing a while, your studio will go bankrupt due to piracy;
+- The Talos Principle: you get stuck in an elevator;
+- Crysis Warhead: guns shoot chickens which deal no damage;
+- Alan Wake: the character wears a pirate-like eyepatch for the whole game;
+- Serious Sam 3: an invincible, super-fast and enraged Arachnid spawns, following you for the whole time you are alive.
+
+Your game does not need to become unplayable, that will only annoy the players and make them hate you, but a stern warning essentially saying "hey, we know you didn't buy this game" might have a bigger effect than you think.
+
+Some situations may even lend them to occasions where the players are led to publicly oust themselves as people who are not playing a legitimate copy: if a problem pops out that seems a bug, but is actually something that happens only to pirated games, the player may open a support ticket asking for information which will just get a "if you stop pirating the game, it will fix itself" as a response.
 
 ### Don't stop the pirates immediately
 
-{{placeholder}}
+When a piracy flag is triggered, you shouldn't immediately crash the game. Crashing the game immediately will tell whoever is trying to pirate the game that their edits to the executable have been detected, giving them an immediate feedback on their job.
 
-<!-- TODO: When a piracy check flag is triggered, the game shouldn't stop immediately at boot: that will make it easier to detect where the  check is and tighten the feedback loop. It's better to let the people play a chunk of the game, slowing down the testing phase or even making them throw out a bad pirated copy. -->
+If you slowly begin introducing issues, or wait for a few minutes or hours before crashing your game, you will slow down the pirates.
+
+Even better if, when a piracy check is triggered and a game crashed, that every save file is wiped, forcing the pirate to re-play a good portion of the game at least once (before they start backing up their save files) to see if their edits work.
+
+Another interesting thing to implement would be wiping the saves at the game boot if a flag has been set (for instance in the settings, with a name completely unrelated to piracy, again "hiding a tree in the forest"), making restoring save files harder or even meaningless.
