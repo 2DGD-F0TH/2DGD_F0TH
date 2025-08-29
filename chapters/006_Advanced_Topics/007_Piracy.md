@@ -7,9 +7,13 @@ Dealing with piracy
 One thing that we have learned is that piracy is not a pricing issue. It’s a service issue. The easiest way to stop piracy is not by putting anti piracy technology to work. It’s by giving those people a service that’s better than what they’re receiving from the pirates.
 ::::::
 
-{{placeholder}}
+When you're selling a videogame (or anything that is covered by copyright), you will sooner or later have to deal with piracy.
 
-<!-- TODO: Gentle introduction on what piracy is -->
+Piracy usually refers to the act of distributing (either physically or digitally) copyrighted works (including music, software and movies) without the copyright holder's permission, usually regardless of whether such distribution is done for free or not.
+
+:::: note ::::
+There are some exceptions to forbidding the physical distribution of copyrighted goods: you usually can sell your regularly purchased physical books, movies and games, but you cannot make a copy of them and distribute that. For more information about the matter search for the terms "first-sale doctrine".
+::::::::::::::
 
 Objectives of anti-piracy measures
 ----------------------------------
@@ -53,9 +57,11 @@ By giving out a scope-limited demo (the first few levels or the first chapter) y
 
 ### No DRM entirely
 
-{{placeholder}}
+Let's face it, if someone doesn't want to pay for a game, they will find a way to not pay for it, either by finding a cracked copy, or by cracking it themselves (provided they have tools and knowledge on how to do so). It's a sad reality.
 
-<!-- TODO: People who don't want to pay for a game, will find a way to crack it, while who does will most probably pay for it if they can afford it. -->
+Considering how invasive DRM systems have become (including but not limited to Kernel-mode drivers which sometimes almost behave like spyware) and their consequences on performance, people are becoming more and more conscious.
+
+So the choice of using no DRM at all might be considered favourably by the general public, to the point it might be considered a positive feature.
 
 Implementing anti-piracy measures
 ---------------------------------
