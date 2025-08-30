@@ -63,6 +63,20 @@ Considering how invasive DRM systems have become (including but not limited to K
 
 So the choice of using no DRM at all might be considered favourably by the general public, to the point it might be considered a positive feature.
 
+### Poisoning the well
+
+I'm putting this as an "alternative" because you don't really need a DRM to enact this.
+
+An alternative could be putting a "pirate version" out there yourself: many groups see pirating software as challenges to overcome, thus putting out a fake "pirate version" of the game may stop the pirates from targeting your game for a bit.
+
+The secret is that such "special version" is actually different from the retail version: it is built in such a way that it either crashes randomly, has a game-breaking bug down the story or misbehaves in such a way that makes it impossible for the person who downloaded the pirated copy to enjoy the game as it should be. Your fantasy is your friend here, just make things believable enough that the bug you introduce can be chalked to a "bad release" or something else but a honeypot.
+
+It's a dirty tactic, but it can prove to be effective.
+
+:::: trivia ::::
+Game dev Tycoon has implemented a similar tactic, but also had some "call home" code that notified the developers about how many copies of their game were pirated. As much as it might seem innocent from an outside view (it's just statistics), this wasn't well-received by all gamers (including the ones who purchased the game) because of its spyware-like behaviour.
+::::::::::::::::
+
 Implementing anti-piracy measures
 ---------------------------------
 
