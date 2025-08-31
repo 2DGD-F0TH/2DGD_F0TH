@@ -1,0 +1,13 @@
+enum FUEL_TYPES {
+    GASOLINE,
+    DIESEL,
+    LPG
+};
+
+if (car.fuel_type == FUEL_TYPES::GASOLINE){
+    gasolinepump.use();
+} else if (car.fuel_type == FUEL_TYPES::DIESEL){
+    dieselpump.use();
+} else if (car.fuel_type == FUEL_TYPES::LPG){
+    lpgpump.use();
+}
