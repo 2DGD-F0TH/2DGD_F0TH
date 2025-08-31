@@ -275,6 +275,10 @@ TSWLatexianTemp*
 
 # End of https://www.gitignore.io/api/latex
 
+### Rope autoimport db and others
+
+.ropeproject/
+
 ### Dia Diagram SwapFiles
 
 *.dia~
