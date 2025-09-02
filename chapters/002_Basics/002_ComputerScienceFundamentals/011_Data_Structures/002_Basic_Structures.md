@@ -13,9 +13,17 @@ Basic Data Structures
 
 ### Structs
 
-{{placeholder}}
+Structs are composite data types that are composed of other, simpler, data types.
 
-<!-- TODO: Talk about structs/composite structures (can be "dicts" for Python) -->
+Sometimes structs may be mixed up with classes, but the difference usually is that structs have data storage as their objective, while classes may have functions (called "methods") to work on themselves or the data they contain (usually called "fields").
+
+Structs can be used to group together a bunch of variables that are related to each other, without making a class.
+
+Structs is mainly a C/C++ term, the most similar types in other languages are:
+
+- Dicts in Python;
+- Tables in Lua (which is also the only complex data type available);
+- Objects in JavaScript;
 
 ### Enums
 
