@@ -68,6 +68,8 @@ This can be useful for shadows, for instance:
 
 #### Alpha Blending
 
-{{placeholder}}
+Another way to blend surfaces is via "Alpha Blending": the way it is implemented changes depending on implementation (engine, libraries, etc...) but they all share some common points.
 
-<!-- TODO: Speak about blending surfaces via alpha blending -->
+Instead of having 3 channels for red, green and blue, there is an additional channel dedicated to the "alpha value": this value ranges from 0 (fully transparent) to 255 (fully opaque).
+
+By overlaying surfaces with alpha channels, you can achieve transparency effects, which may be useful for water effects, for instance.
