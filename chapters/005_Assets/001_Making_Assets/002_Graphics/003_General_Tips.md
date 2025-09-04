@@ -34,5 +34,16 @@ You can use such simple shapes, overlapping them to create a skeleton of your su
 
 #### Graphics Smearing
 
-{{placeholder}}
-<!--TODO: Talk about graphics smearing (Github #124) -->
+No matter how good our graphics are and how high our frame rate, there are very few things that give the same effect of "smearing" when it comes to animations: deforming an image to make it look more dynamic when animated by simulating "motion blur".
+
+Sometimes graphics smearing are referred to "smear frames" or "elongated inbetweens".
+
+![Example of using smearing for animating a sword slash](./images/resources/smear.png){width=30%}
+
+Smearing has been used in animation for decades (since the 1930s!): just take any famous animated movie from the late 20th century and pause at any moment, you'll probably find one. Some are actually quite funny to look at, others may be even disturbing!
+
+:::: trivia ::::
+It has been used in 3D graphics too, for example in the famous game "Crash Bandicoot" features smearing for the spin move: changing the model with a "smeared version" was less resource-intensive than more realistic "motion blur" techniques back in the PS1 era, plus it matched the "cartoony mood" of the game.
+::::::::::::::::
+
+There are programs dedicated to help you with animating and smearing pixel art, but don't fear to experiment by manually smearing frames using your favourite paint program: some interesting results (even if not the ones you were looking for at that moment) might arise!
