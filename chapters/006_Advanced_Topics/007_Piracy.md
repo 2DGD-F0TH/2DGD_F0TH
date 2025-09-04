@@ -108,17 +108,13 @@ Implementations vary with your programming language, but here are various method
 
 Once you find that a debugger is attached, you can decide the best course of action, usually by closing the program or forcibly crashing it.
 
-### Obfuscation and redundancy of checks
-
-{{placeholder}}
-
-<!-- TODO: Obfuscating strings and making multiple copies of the anti-piracy checks is a good way to slow down the cracking process -->
-
 ### Checksums
 
-{{placeholder}}
+A possible check you can do to prevent, or at least limit, piracy is checksums: your program will need the ability to inspect its own executable and its parts, take the bytes that make it up and get a result.
 
-<!-- TODO: Talk about checksums as a way to detect executable tampering -->
+Such result is the "summary" of your own game, a function or a bunch of functions. If such "summary" (which is called "checksum") is wrong, you'll know that the executable has been tampered with.
+
+Checksum algorithms are beyond the scope of this book, thus we won't present any, but there are lots of interesting resources online about the matter.
 
 ### When an anti-piracy flag is triggered, be generic
 
@@ -127,6 +123,18 @@ When implementing anti-piracy checks, you should not show any piracy-related mes
 When an anti-piracy is triggered, you should try and hide it behind a generic error that is already used somewhere else (the more often such error is used, the better, like hiding a tree in a forest). Such error can crash the program and deter some people by making them think that the pirated copy is low quality.
 
 Another way could be tinkering with the game variables and make the game misbehave worse and worse until it's unplayable or it crashes.
+
+### Obfuscation and redundancy of checks
+
+As stated in the previous paragraph, it's quite easy to extract the printable strings from an executable file, so trying to make those strings not meaningful (or "obfuscated") is definitely a tool to slow down piracy of your game.
+
+Another means of obfuscation is making parts of the code needlessly complex (usually the ones related to piracy checks), and never referring to the piracy checks directly, where possible. This is another layer of obfuscation.
+
+The final objective is sending the pirates in a wild goose-chase, where they go through reams of code to get almost nowhere (like going through a stack of functions just to get to an index that is the current one, plus two) and have them try to wrap their head around code that is much too complex for what it should do.
+
+Also there should be many (possibly different) versions of your "piracy check code" that should be replicated throughout your game, so that if a version is "patched out", there will be 5 more that can be triggered somewhere down the line. This is called "redundancy".
+
+It is willfully inefficient and "not dry", but it is necessary when you want to slow down pirates.
 
 #### Play with the pirates
 
