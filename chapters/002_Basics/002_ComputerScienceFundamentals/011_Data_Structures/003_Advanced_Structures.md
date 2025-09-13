@@ -1,4 +1,4 @@
-Advanced Data Structures
+Advanced Data Structures {#advanced_data_structures}
 ------------------------
 
 This section is dedicated to give some basic explanation of some advanced containers and data structures that are used in computer science, allowing us to make an informed choice when we want to implement some even more advanced containers in the future.

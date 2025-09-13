@@ -1,15 +1,21 @@
 Basic Data Structures
 ---------------------
 
-{{placeholder}}
+Before diving into the more complicated and customizable structures, we should familiarize ourselves with those basic data structures that are offered by essentially all programming languages in one way or another.
 
-<!-- TODO: Small intro -->
+These will be the foundational blocks upon which we'll build more advanced structures.
 
 ### Statically-Allocated Arrays
 
-{{placeholder}}
+Statically-Allocated arrays are a data structure that is equivalent to a list of variables of the same type, and such list is referred by the variable name.
 
-<!-- TODO: Talk about what are statically-allocated arrays (normal arrays) -->
+![Example of a 4-element integer array](./images/computer_science/static_array.svg){width=30%}
+
+At a lower level a certain amount of memory is allocated, depending on the type of items contained in the array (ints, strings, classes, ...) and how many items such array should contain at most. You can think of it as some machine code that allocates a defined number of "cells" that are contiguous in memory, dedicated to your array.
+
+Since the program needs to allocate memory and the amount of memory allocated depends on how many items are contained in the array, such number of items is defined while coding and changing size is not really possible (there will be solutions in the [advanced data structures section](#advanced_data_structures)).
+
+Given the structure of "adjacent cells", arrays are efficient at being iterated and directly indexed (so you can browse through all the items quickly, or find an item quickly if you know its position), but they are not as efficient in searching its contents (there will be solutions in the [advanced data structures section](#advanced_data_structures)).
 
 ### Structs
 
