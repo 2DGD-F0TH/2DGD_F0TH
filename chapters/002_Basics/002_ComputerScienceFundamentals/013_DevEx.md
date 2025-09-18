@@ -85,6 +85,12 @@ This approach also has some additional advantages, besides readability:
 
 ### Code monoliths
 
-{{placeholder}}
+Another thing that should usually be avoided is having long files. This usually is signal that whatever is in such file is taking care of too many things: you certainly can program an entire small game in a single file, but good luck with its maintenance.
 
-<!-- TODO: Talk about how having huge files/classes/functions may make things harder to maintain and how they probably violate the single responsibility principle -->
+Same goes for long classes, functions and pieces of code in general. These are usually called "code monoliths".
+
+If classes are very long (as in "thousands of lines") maybe they're taking care of too many responsibilities, and need to be broken down into simpler pieces and then composed back together.
+
+If functions are long maybe they're too complex, or they're doing more than one task (so they're like a small program by themselves), and may be useful to break them down in smaller functions that call each other, or are called by a function that works as "orchestrator".
+
+Try to code your software with reuse in mind, if you find a pattern of very similar but slightly different pieces of code, maybe it's time to abstract them into something more generic that can be fed some parameters to do the same thing.
