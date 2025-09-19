@@ -71,7 +71,10 @@ A drawback of the "web approach" is the limited performance that web browsers, W
 
 ### Fantasy consoles
 
+
 Since limitations breed creativity, the game development community has come up with a bunch of nonexisting consoles that have their own specifications, trying to match (in part) older systems, while letting developers still work on their games with modern tools.
+
+![When there is no console people just invent theirs, in software form](./images/game_design/virtual_console.svg){width=30%}
 
 These systems have arbitrary limitations (like color palettes, resolution or number of sound channels) to imitate a certain "generation" of systems (be it 8 or 16 bit, usually).
 
