@@ -15,6 +15,10 @@ The numerator is called "event space", while the denominator is called "sample s
 
 For instance: let's take a coin. We want to calculate the probability that a coin toss ends with "head": first we count how many outcomes are possible. Since a coin can land on "tails" or "heads", we have 2 possible outcomes, and head is only one of them.
 
+:::: centering ::::
+![](./images/maths/coin_h_t.svg){width=20%}
+:::::::::::::::::::
+
 For practicality, we will call "Heads" $H$ and "Tails" $T$.
 
 Thus:
@@ -51,7 +55,13 @@ $$
 P(A\ and\ B) = P(A \cap B) = P(A) \cdot P(B)
 $$
 
-Let's return to our coin example: if we wanted to know the probability of two coin tosses landing both on heads, we would have:
+Let's return to our coin example.
+
+:::: centering ::::
+![](./images/maths/coin_h_h.svg){width=20%}
+:::::::::::::::::::
+
+If we wanted to know the probability of two coin tosses landing both on heads, we would have:
 
 $$
 P(H\ and\ H) = P(H) \cdot P(H) = \frac{1}{2} \cdot \frac{1}{2} = \frac{1}{4}
@@ -92,7 +102,13 @@ $$
 
 Going back to our coin example: the probability of a coin toss being "either heads or tails" is $\frac{1}{2} + \frac{1}{2} = 1$.
 
-Another example could be done using a 6-sided dice: each face can be on top with a probability of $\frac{1}{6}$. Let's calculate the probability of either 1 or 6 being face up:
+Another example could be done using a 6-sided dice.
+
+:::: centering ::::
+![](./images/maths/dice.svg){width=10%}
+:::::::::::::::::::
+
+Each face can be on top with a probability of $\frac{1}{6}$. Let's calculate the probability of either 1 or 6 being face up:
 
 $$
 P(1\ or\ 6) = P(1) + P(6) = \frac{1}{6} + \frac{1}{6} = \frac{2}{6} = \frac{1}{3}
@@ -110,6 +126,10 @@ $$
 
 Not all events are mutually exclusive. Let's think, for instance, about a deck of cards: what if you wanted to know the probability of drawing either a card of hearts or a face card (Jack, Queen or King)?
 
+:::: centering ::::
+![](./images/maths/cards.svg){width=20%}
+:::::::::::::::::::
+
 We need to use a different formula in that case, which is the following one:
 
 $$
@@ -118,7 +138,7 @@ $$
 
 :::: note ::::
 Why are we subtracting $P(A\ and\ B)$?
-Because if we didn't, we would be counting the face cards of hearts twice: once when we count the card of hearts, and once when we count the face cards.
+Because if we didn't, we would be counting the face cards of hearts twice: once when we count the card of hearts, and once when we count all the face cards.
 ::::::::::::::
 
 Let's continue with our example.
