@@ -34,7 +34,7 @@ int main ()
 
 We save it as "precision_test.cpp" and compile it with the following command line (on Linux):
 
-```{.sh}
+```{.bash}
 g++ -Wall -Wextra -Werror -O0 precision_test.cpp -o precision_test.bin
 ```
 
@@ -148,7 +148,7 @@ int main(){
 
 We can save this program as `random_seed.cpp` compile this program with the following command:
 
-```{.sh}
+```{.bash}
 g++ -Wall -Wextra -Werror -O0 random_seed.cpp -o random_seed.bin
 ```
 
@@ -197,7 +197,7 @@ int main(){
 
 We can save this program as `rand.cpp` compile this program with the following command:
 
-```{.sh}
+```{.bash}
 g++ -Wall -Wextra -Werror -O0 rand.cpp -o rand.bin
 ```
 
