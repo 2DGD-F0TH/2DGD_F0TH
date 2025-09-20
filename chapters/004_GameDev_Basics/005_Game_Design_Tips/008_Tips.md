@@ -171,7 +171,7 @@ This method can be implemented in many ways, one of them could be assigning a le
 | < -3 (very underleveled)   | + 600%                | 35.000            |
 | -2 (moderately underlevel) | + 300%                | 20.000            |
 | -1 (slightly underlevel)   | + 100%                | 10.000            |
-| 0 (ideal)                  | 󰦒 0%                  | 5.000             |
+| 0 (ideal)                  |   0%                  | 5.000             |
 | +1 (slightly overlevel)    | - 50%                 | 2.500             |
 | +2 (moderately overlevel)  | - 84%                 | 800               |
 | > +3                       | Fixed Value           | 1                 |
