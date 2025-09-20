@@ -166,17 +166,19 @@ This method allows you to further shape the curve not only to try and prevent mi
 
 This method can be implemented in many ways, one of them could be assigning a level to the enemy itself and then scale the experience rewarded by the difference between the player level and the enemy level.
 
-| Player Level - Enemy Level | Experience Reward |
-| :------------------------: | :---------------: |
-| < -3 (very underleveled)   | 35.000            |
-| -2 (moderately underlevel) | 20.000            |
-| -1 (slightly underlevel)   | 10.000            |
-| 0 (ideal)                  | 5.000             |
-| +1 (slightly overlevel)    | 2.500             |
-| +2 (moderately overlevel)  | 800               |
-| > +3                       | 1                 |
+| Player Level - Enemy Level | Experience Variation  | Experience Reward |
+| :------------------------: | :-------------------: | :---------------: |
+| < -3 (very underleveled)   | + 600%                | 35.000            |
+| -2 (moderately underlevel) | + 300%                | 20.000            |
+| -1 (slightly underlevel)   | + 100%                | 10.000            |
+| 0 (ideal)                  | 󰦒 0%                  | 5.000             |
+| +1 (slightly overlevel)    | - 50%                 | 2.500             |
+| +2 (moderately overlevel)  | - 84%                 | 800               |
+| > +3                       | Fixed Value           | 1                 |
 
 Table: An example of "level-based" experience rewards
+
+This can be done in many ways, from changing the formula itself to having "hidden status effects" that change the experience output according to the level difference.
 
 #### "Mastering"
 
