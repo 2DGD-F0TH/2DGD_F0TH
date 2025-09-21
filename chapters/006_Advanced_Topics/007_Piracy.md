@@ -37,11 +37,11 @@ Piracy may hide some underlying issues: it is a "service problem"; we are missin
 
 Not all regions have the same per-capita income. Let's make an example with data from the year 2025, both for income and price for triple-A games.
 
-If we consider a triple-A game that costs about 80$ we can find out that:
+If we consider a triple-A game that costs about 80\$ we can find out that:
 
-- The US has a monthly per-capita income of about 5400$. A 80$ game would take up about 1.5% of such income. Some might consider it a fair price for entertainment, some may not (I think 80$ is too high, but I'm used to the good old times of 60$ games).
-- Albania has a monthly per-capita income of about 850 to 1000$. An 80$ game would take up about 8% to 9.4% of such income. Starting to see a problem?
-- In Brazil there is a monthly income that averages at about 612$. An 80$ game would take up a staggering 13% of such income. If a person earned minimum wage (barely scraping 275$) buying such a game would be crazy (taking up about 30% of their income).
+- The US has a monthly per-capita income of about 5400\$. A 80\$ game would take up about 1.5% of such income. Some might consider it a fair price for entertainment, some may not (I think 80\$ is too high, but I'm used to the good old times of 60\$ games).
+- Albania has a monthly per-capita income of about 850 to 1000$. An 80\$ game would take up about 8% to 9.4% of such income. Starting to see a problem?
+- In Brazil there is a monthly income that averages at about 612$. An 80\$ game would take up a staggering 13% of such income. If a person earned minimum wage (barely scraping 275\$) buying such a game would be crazy (taking up about 30% of their income).
 
 So the lower-income countries may see a higher piracy rate for a simple reason: they cannot afford the game.
 
