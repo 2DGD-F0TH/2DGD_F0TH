@@ -441,8 +441,12 @@ Since 2018, Blender doesn't ship with its own game engine anymore. UPBGE is a pr
 
 * * * * * * * * * *
 
-Virtual Consoles {.unnumbered .unlisted}
+Fantasy Consoles {.unnumbered .unlisted}
 ----------------
+
+If you want to challenge yourself, or feel "burdened by choice" (which can be a real problem, having "too much power" can hinder creativity), you can make some small (or not-so-small) games on a Fantasy Console: a software that pretends to be a console from a certain era, adhering to arbitrary limitations.
+
+* * * * * * * * * *
 
 ### MEG4 {.unnumbered .unlisted}
 
@@ -458,6 +462,8 @@ Its programs are stored in "floppies" which can be just PNG images with addition
 
 **Platform Compatibility:** Windows, Linux.
 
+* * * * * * * * * *
+
 ### Pico-8 {.unnumbered .unlisted}
 
 **Website:** <https://lexaloffle.itch.io/pico-8>
@@ -471,6 +477,8 @@ Contains its own code editor, sprite editor, tracker and even a cartridge browse
 **Bindings:** Lua.
 
 **Platform Compatibility:** Windows, Linux, Mac OS.
+
+* * * * * * * * * *
 
 ### Pyxel {.unnumbered .unlisted}
 
@@ -486,6 +494,8 @@ Features its own sprite and music editor.
 
 **Platform Compatibility:** Windows, Linux, Mac OS.
 
+* * * * * * * * * *
+
 ### TIC-80 {.unnumbered .unlisted}
 
 **Website:** <http://tic80.com/>
@@ -497,6 +507,8 @@ Similar to the Pico-8 in specifications, but features a widescreen resolution of
 **Bindings:** Lua.
 
 **Platform Compatibility:** Windows, Linux, Mac OS.
+
+* * * * * * * * * *
 
 ### WASM4 {.unnumbered .unlisted}
 
@@ -511,3 +523,5 @@ Features a 160x160 pixel resolution and 4 colors a 4 channel audio (2 pulse wave
 **Bindings:** Any programming language that compiles to WebAssembly (C, C++, Go, Odin, Zig, Rust...).
 
 **Platform Compatibility:** Windows, Linux, Mac OS.
+
+* * * * * * * * * *
