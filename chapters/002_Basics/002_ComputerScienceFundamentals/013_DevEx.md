@@ -48,11 +48,6 @@ Using a for loop to take care of the default values and then taking care of the 
 Use Enums for an even more readable code, since in most languages Enums map to integers, you can loop through an array of integers and then use the "named integers" offered by Enums to make the code even better.
 :::::::::::
 
-### Abstraction
-
-{{placeholder}}
-<!-- TODO: Use functions, classes and abstraction facilities -->
-
 
 What to avoid when coding
 -------------------------
