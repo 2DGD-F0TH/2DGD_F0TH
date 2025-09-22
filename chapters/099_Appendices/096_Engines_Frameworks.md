@@ -440,3 +440,88 @@ Since 2018, Blender doesn't ship with its own game engine anymore. UPBGE is a pr
 **Platform Compatibility:** Windows, Linux, Mac OS.
 
 * * * * * * * * * *
+
+Fantasy Consoles {.unnumbered .unlisted}
+----------------
+
+If you want to challenge yourself, or feel "burdened by choice" (which can be a real problem, having "too much power" can hinder creativity), you can make some small (or not-so-small) games on a Fantasy Console: a software that pretends to be a console from a certain era, adhering to arbitrary limitations.
+
+* * * * * * * * * *
+
+### MEG4 {.unnumbered .unlisted}
+
+**Website:** <https://gitlab.com/bztsrc/meg4>
+
+**License:** Open Source
+
+The "Amiga" of fantasy consoles. Has more features than other fantasy consoles, with a 320x200 (DOS) resolution, with 256 colors, 4 channel tracker music and 1024 8x8 pixel sprites.
+
+Its programs are stored in "floppies" which can be just PNG images with additional data.
+
+**Bindings:** ANSI C, Basic, Assembly, Lua.
+
+**Platform Compatibility:** Windows, Linux.
+
+* * * * * * * * * *
+
+### Pico-8 {.unnumbered .unlisted}
+
+**Website:** <https://lexaloffle.itch.io/pico-8>
+
+**License:** Commercial
+
+Probably the most famous fantasy console, features a 128x128 pixel resolution with 16 colours taken from a pre-defined palette, 4 channel sound, and 8x8 pixel sprites.
+
+Contains its own code editor, sprite editor, tracker and even a cartridge browser (called "Splore") to download and play other people's carts.
+
+**Bindings:** Lua.
+
+**Platform Compatibility:** Windows, Linux, Mac OS.
+
+* * * * * * * * * *
+
+### Pyxel {.unnumbered .unlisted}
+
+**Website:** <https://github.com/kitao/pyxel>
+
+**License:** Open Source
+
+A slightly more powerful Pico-8, programmed in Python. Features a 256x256 pixel resolution with 16 colors, taken from a pre-defined palette and 4 channel soundtracks.
+
+Features its own sprite and music editor.
+
+**Bindings:** Python.
+
+**Platform Compatibility:** Windows, Linux, Mac OS.
+
+* * * * * * * * * *
+
+### TIC-80 {.unnumbered .unlisted}
+
+**Website:** <http://tic80.com/>
+
+**License:** Open Source
+
+Similar to the Pico-8 in specifications, but features a widescreen resolution of 240x136 pixels, has its own code editor, music editor/tracker as well as sprite and map editor.
+
+**Bindings:** Lua.
+
+**Platform Compatibility:** Windows, Linux, Mac OS.
+
+* * * * * * * * * *
+
+### WASM4 {.unnumbered .unlisted}
+
+**Website:** <https://wasm4.org/>
+
+**License:** Open Source
+
+What if there was a console with features very close to a famous portable console of the past, but with modern multiplayer netcode? WASM4 would probably be that console.
+
+Features a 160x160 pixel resolution and 4 colors a 4 channel audio (2 pulse waves, 1 triangle, 1 noise) and **huge** programming language support.
+
+**Bindings:** Any programming language that compiles to WebAssembly (C, C++, Go, Odin, Zig, Rust...).
+
+**Platform Compatibility:** Windows, Linux, Mac OS.
+
+* * * * * * * * * *

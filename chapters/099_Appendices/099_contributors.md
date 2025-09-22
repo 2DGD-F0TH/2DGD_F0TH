@@ -8,7 +8,7 @@ This e-book is the collective work of many game developers, critics and enthusia
 - **Daniele Penazzo (Penaz)** - Project creator, maintainer and main writer
 - **Luca Violato (Rei)** - Marketing section
 - **Sjofin (Fin)** - Art Tips
-- **Roe61** - Art (<https://linktr.ee/Roe61>)
+- **DashingRaven** - Art (<https://linktr.ee/DashingRaven>)
 
 Special Thanks to the following people who helped making this work even better:
 

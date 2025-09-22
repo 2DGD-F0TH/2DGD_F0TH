@@ -1,0 +1,12 @@
+// ...
+CharacterExpression tyler = new CharacterExpression[64];
+tyler[0] = CharacterExpression.neutral;
+tyler[1] = CharacterExpression.neutral;
+tyler[2] = CharacterExpression.neutral;
+// 31 more lines
+tyler[33] = CharacterExpression.angry;
+tyler[34] = CharacterExpression.sad;
+tyler[35] = CharacterExpression.neutral;
+// 26 more lines
+tyler[63] = CharacterExpression.neutral;
+// ... Next character ...

@@ -81,7 +81,7 @@ There are also some limitations, due to how fonts are built: you can only use a 
 ------------------    ------------------------------------------------------------------------------
 **Rendering style**   Font-based
 
-**When to use it**    When you want fonts that won't lost detail or crispness when they get resized.
+**When to use it**    When you want fonts that won't lose detail or crispness when they get resized.
 
 **Advantages**        Rendering functions are usually part of the engine or library. Fonts resist resizing very well, being usually based on vector graphics.
 

@@ -13,8 +13,7 @@ What's the reason behind a small fetch quest that you've been tasked to complete
 
 Even something as simple as a somewhat detailed description of the item may give it more depth. Here's a small example:
 
-> Seeds of the Lifeblood Tree
-> A small seedling coming from a shrub that used to be cultivated centuries ago. Its thick, blood-colored sap is said to be the blood of the Earth God, able to cure wounds and poisoning alike.
+> Seeds of the Lifeblood Tree: A small seedling coming from a shrub that used to be cultivated centuries ago. Its thick, blood-colored sap is said to be the blood of the Earth God, able to cure wounds and poisoning alike.
 > Due to the 3rd Pontian-Saarland war, the scorches caused by the battles destroyed all known places where this shrub could be found. This seed pod seems to have survived the fires and may still sprout.
 
 :::: trivia ::::

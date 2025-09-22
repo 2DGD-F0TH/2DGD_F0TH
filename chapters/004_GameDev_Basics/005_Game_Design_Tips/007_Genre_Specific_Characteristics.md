@@ -9,9 +9,17 @@ The most accepted interpretation of a roguelike game is the "Berlin Interpretati
 
 #### Use of pseudo-randomness and procedural generation
 
+:::: centering ::::
+![](./images/game_design/diceset.svg){width=20%}
+:::::::::::::::::::
+
 This is done to increase replayability: the dungeons (or levels alike) are generated procedurally, with a tinge of randomness added to them. Joining procedural generation and pseudo-randomness is better than simple pseudo-randomness, since the rules applied will make the level beatable without special equipment, as well as lead to more aesthetically pleasing levels overall.
 
 #### Permadeath
+
+:::: centering ::::
+![](./images/game_design/tomb.svg){width=10%}
+:::::::::::::::::::
 
 In the great majority of roguelike games, the death of a character is permanent. When a character dies, the player will have to begin a new "run": the levels will be generated anew and the available loot will change too.
 
@@ -23,13 +31,25 @@ Permadeath makes the "save game" functionality more of a "suspension of the game
 
 #### Turn-based Gameplay
 
+:::: centering ::::
+![](./images/game_design/turns.svg){width=20%}
+:::::::::::::::::::
+
 Like tabletop games, the gameplay of roguelikes is usually turn-based: this allows the player to take as much time as needed to take a decision.
 
 #### Lack of mode-based gameplay
 
+:::: centering ::::
+![](./images/game_design/signs.svg){width=20%}
+:::::::::::::::::::
+
 Roguelikes don't have a real concept of "progression": they allow you to do anything from the get-go, without blocking any action just because you're at a certain point in the game.
 
 #### Multiple ways to accomplish (or fail!) a task
+
+:::: centering ::::
+![](./images/game_design/choices.svg){width=30%}
+:::::::::::::::::::
 
 Roguelikes usually allow you to complete a task in many different ways, so many in fact that it seems the developers thought of everything. Let's take for example a locked door, a roguelike game would give you many options:
 
@@ -44,13 +64,25 @@ This also means that you have to be careful with your actions: if a weapon freez
 
 #### Resource Management is key
 
+:::: centering ::::
+![](./images/game_design/suitcase.svg){width=20%}
+:::::::::::::::::::
+
 Resource Management in roguelike games is vital: usually they feature a hunger mechanic, as well as healing items, weapons and various loot that the player must sort through to be able to survive. The player will be forced to leave some loot on the floor of the dungeon, or choose between a known weapon and something unknown that may be weaker or "cursed".
 
 #### Peace was never an option
 
+:::: centering ::::
+![](./images/game_design/weapons.svg){width=20%}
+:::::::::::::::::::
+
 Most roguelike games are based on hack and slash mechanics, where your main goal is killing monsters. In this kind of games, "peaceful options" don't exist (although they may exist, in a somewhat temporary fashion, to put leverage on some stealth mechanics - like getting a better weapon to kill a powerful enemy by first sneaking around them).
 
 #### Dealing with the unknown
+
+:::: centering ::::
+![](./images/game_design/unknown.svg){width=20%}
+:::::::::::::::::::
 
 Roguelike games are heavily based on the concept of "unknown": you need to explore an unknown place, finding loot which powers are unknown and should be identified. Magical items change with every run, and give just vague descriptions (like "a red potion") which may heal in one run and kill you in another.
 

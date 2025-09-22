@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="21.911726cm"
+   height="6.3907776cm"
+   viewBox="72 55 429.46983 126.31184"
+   version="1.1"
+   id="svg8"
+   sodipodi:docname="static_array.svg"
+   inkscape:version="1.4.2 (ebf0e940d0, 2025-05-08)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs8" />
+  <sodipodi:namedview
+     id="namedview8"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="cm"
+     inkscape:zoom="0.47490124"
+     inkscape:cx="164.24468"
+     inkscape:cy="30.532664"
+     inkscape:window-width="1920"
+     inkscape:window-height="1019"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg8" />
+  <g
+     id="g5"
+     transform="translate(-219.80351,-170.68817)">
+    <rect
+       style="fill:#ffffff"
+       x="435"
+       y="297"
+       width="286"
+       height="54"
+       id="rect3" />
+    <line
+       style="fill:none;fill-opacity:0;stroke:#7f7f7f;stroke-width:2"
+       x1="506.5"
+       y1="297"
+       x2="506.5"
+       y2="351"
+       id="line3" />
+    <line
+       style="fill:none;fill-opacity:0;stroke:#7f7f7f;stroke-width:2"
+       x1="578"
+       y1="297"
+       x2="578"
+       y2="351"
+       id="line4" />
+    <line
+       style="fill:none;fill-opacity:0;stroke:#7f7f7f;stroke-width:2"
+       x1="649.5"
+       y1="297"
+       x2="649.5"
+       y2="351"
+       id="line5" />
+    <rect
+       style="fill:none;fill-opacity:0;stroke:#000000;stroke-width:2"
+       x="435"
+       y="297"
+       width="286"
+       height="54"
+       id="rect5" />
+  </g>
+  <g
+     id="g6"
+     transform="translate(-219.80351,-170.68817)">
+    <path
+       style="fill:none;fill-opacity:0;stroke:#000000;stroke-width:2"
+       d="m 356,249 a 84.1625,84.1625 0 0 0 68.149,73.685"
+       id="path5" />
+    <polygon
+       style="fill:#000000"
+       points="424.295,318.397 423.739,328.381 434.002,323.944 "
+       id="polygon5" />
+    <polygon
+       style="fill:none;fill-opacity:0;stroke:#000000;stroke-width:2"
+       points="424.295,318.397 423.739,328.381 434.002,323.944 "
+       id="polygon6" />
+  </g>
+  <text
+     font-size="18.0622px"
+     style="font-style:normal;font-weight:normal;font-family:sans-serif;text-anchor:start;fill:#000000"
+     x="68.196495"
+     y="68.311836"
+     id="text6"><tspan
+       x="68.196495"
+       y="68.311836"
+       id="tspan6">Static Array</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:16.7341px;line-height:1.25;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';letter-spacing:0px;word-spacing:0px;stroke-width:0.522941"
+     x="316.19211"
+     y="157.53726"
+     id="text9"><tspan
+       sodipodi:role="line"
+       id="tspan9"
+       style="stroke-width:0.522941"
+       x="316.19211"
+       y="157.53726">2</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:16.7341px;line-height:1.25;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';letter-spacing:0px;word-spacing:0px;stroke-width:0.522941"
+     x="388.24234"
+     y="157.41876"
+     id="text10"><tspan
+       sodipodi:role="line"
+       id="tspan10"
+       style="stroke-width:0.522941"
+       x="388.24234"
+       y="157.41876">3</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:16.7341px;line-height:1.25;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';letter-spacing:0px;word-spacing:0px;stroke-width:0.522941"
+     x="243.57811"
+     y="157.42694"
+     id="text11"><tspan
+       sodipodi:role="line"
+       id="tspan11"
+       style="stroke-width:0.522941"
+       x="243.57811"
+       y="157.42694">1</tspan></text>
+</svg>

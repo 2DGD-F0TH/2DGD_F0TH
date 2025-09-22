@@ -88,4 +88,4 @@ In short, the closer an object is:
 - the more detail it has;
 - the more it is animated;
 
-[^layering_img]: Image by Roe61 (<https://linktr.ee/Roe61>) used with explicit permission
+[^layering_img]: Image by DashingRaven (<https://linktr.ee/DashingRaven>) used with explicit permission

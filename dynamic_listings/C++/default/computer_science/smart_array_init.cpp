@@ -1,0 +1,10 @@
+// ...
+int tyler_array_len = 64;
+CharacterExpression* tyler = new CharacterExpression[tyler_array_len];
+for (int i = 0; i < tyler_array_len; i++){
+    tyler[i] = CharacterExpression.neutral;
+}
+// Here we take care of the exceptions
+tyler[33] = CharacterExpression.angry;
+tyler[34] = CharacterExpression.sad;
+// ... Next character ...
