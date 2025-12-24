@@ -14,9 +14,9 @@ So, given a triangle ABC:
 
 We get the following 3 inequalities:
 
-$$ \overline{AB} + \overline{BC} \leq \overline{AC} $$
-$$ \overline{AC} + \overline{BC} \leq \overline{AB} $$
-$$ \overline{AB} + \overline{AC} \leq \overline{BC} $$
+$$ \overline{AB} + \overline{BC} \geq \overline{AC} $$
+$$ \overline{AC} + \overline{BC} \geq \overline{AB} $$
+$$ \overline{AB} + \overline{AC} \geq \overline{BC} $$
 
 What is more interesting to us is that when the one of the vertices of the triangle is **on** its opposite side, the triangle degenerates:
 
