@@ -1,6 +1,6 @@
 <!-- FRONT MATTER -->
 <div style="page-break-after: always;">
-<p>Copyright © 2019-2025 Daniele Penazzo</p>
+<p>Copyright © 2019-2026 Daniele Penazzo</p>
 
 2D Game Development: From Zero To Hero ( {{%proglang%}} edition, version {{%version%}} ) is distributed under the terms of the Creative Commons Attribution-NonCommercial-ShareAlike International 4.0 license.
 
