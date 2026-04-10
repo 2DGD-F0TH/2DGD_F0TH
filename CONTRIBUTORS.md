@@ -16,3 +16,4 @@ Special Thanks to the following people who helped making this work even better:
 - **abreathingcorpse** - Proofreading and fixing some math mistakes
 - **LuosRestil** - For fixing some mistakes
 - **Doublestuf** - For improving code listings
+- **HectorLira** - For fixing some mistakes
