@@ -90,9 +90,9 @@ $$ A_{3, 2} = \begin{bmatrix}
     2 & 3\\
     1 & 2\\
     4 & 0
-\end{bmatrix} B_{2,3} = \begin{bmatrix}
-    2 & 3 & 4\\
-    0 & 1 & 0
+\end{bmatrix} B_{2,4} = \begin{bmatrix}
+    2 & 3 & 4 & 1\\
+    0 & 1 & 0 & 2
 \end{bmatrix}$$
 
 We can calculate the multiplication between these two matrices, in the following way.
@@ -106,12 +106,12 @@ $$ \begin{bmatrix}
     1 & 2\\
     4 & 0
 \end{bmatrix} \times \begin{bmatrix}
-    2 & 3 & 4\\
-    0 & 1 & 0
+    2 & 3 & 4 & 1\\
+    0 & 1 & 0 & 1
 \end{bmatrix} = \begin{bmatrix}
-    ? & ? & ?\\
-    ? & ? & ?\\
-    ? & ? & ?
+    ? & ? & ? & ?\\
+    ? & ? & ? & ?\\
+    ? & ? & ? & ?
 \end{bmatrix}$$
 
 Matrix multiplication is called a "rows by columns" multiplication, so to calculate the first row - first column value we'll need the first row of one matrix and the first column of the other.
@@ -121,12 +121,12 @@ $$ \begin{bmatrix}
     1 & 2\\
     4 & 0
 \end{bmatrix} \times \begin{bmatrix}
-    \textcolor{red}{2} & 3 & 4\\
-    \textcolor{red}{0} & 1 & 0
+    \textcolor{red}{2} & 3 & 4 & 1\\
+    \textcolor{red}{0} & 1 & 0 & 1
 \end{bmatrix} = \begin{bmatrix}
-    \textcolor{red}{?} & ? & ?\\
-    ? & ? & ?\\
-    ? & ? & ?
+    \textcolor{red}{?} & ? & ? & ?\\
+    ? & ? & ? & ?\\
+    ? & ? & ? & ?
 \end{bmatrix}$$
 
 The values in the example will be combined as follows:
@@ -140,13 +140,15 @@ $$ \begin{bmatrix}
     1 & 2\\
     4 & 0
 \end{bmatrix} \times \begin{bmatrix}
-    2 & 3 & 4\\
-    0 & 1 & 0
+    2 & 3 & 4 & 1\\
+    0 & 1 & 0 & 1
 \end{bmatrix} = \begin{bmatrix}
-    4 & ? & ?\\
-    ? & ? & ?\\
-    ? & ? & ?
+    4 & ? & ? & ?\\
+    ? & ? & ? & ?\\
+    ? & ? & ? & ?
 \end{bmatrix}$$
+
+Notice how it was required to have the same number of elements in the first matrix's row (which is determined by the number of columns) and the second matrix's column (which is determined by the number of rows) to be able to combine them in a valid way.
 
 Let's try the next value:
 
@@ -155,12 +157,12 @@ $$ \begin{bmatrix}
     1 & 2\\
     4 & 0
 \end{bmatrix} \times \begin{bmatrix}
-    2 & \textcolor{red}{3} & 4\\
-    0 & \textcolor{red}{1} & 0
+    2 & \textcolor{red}{3} & 4 & 1\\
+    0 & \textcolor{red}{1} & 0 & 1
 \end{bmatrix} = \begin{bmatrix}
-    4 & \textcolor{red}{?} & ?\\
-    ? & ? & ?\\
-    ? & ? & ?
+    4 & \textcolor{red}{?} & ? & ?\\
+    ? & ? & ? & ?\\
+    ? & ? & ? & ?
 \end{bmatrix}$$
 
 The values will be combined as follows:
@@ -174,27 +176,27 @@ $$ \begin{bmatrix}
     1 & 2\\
     4 & 0
 \end{bmatrix} \times \begin{bmatrix}
-    2 & 3 & 4\\
-    0 & 1 & 0
+    2 & 3 & 4 & 1\\
+    0 & 1 & 0 & 1
 \end{bmatrix} = \begin{bmatrix}
-    4 & 9 & ?\\
-    ? & ? & ?\\
-    ? & ? & ?
+    4 & 9 & ? & ?\\
+    ? & ? & ? & ?\\
+    ? & ? & ? & ?
 \end{bmatrix}$$
 
-Same goes for the last value, when we are done with the first row, we keep going similarly with the second row:
+Same goes for the last 2 values. When we are done with the first row, we keep going similarly with the second row:
 
 $$ \begin{bmatrix}
     2 & 3\\
     \textcolor{red}{1} & \textcolor{red}{2}\\
     4 & 0
 \end{bmatrix} \times \begin{bmatrix}
-    \textcolor{red}{2} & 3 & 4\\
-    \textcolor{red}{0} & 1 & 0
+    \textcolor{red}{2} & 3 & 4 & 1\\
+    \textcolor{red}{0} & 1 & 0 & 1
 \end{bmatrix} = \begin{bmatrix}
-    4 & 9 & 8\\
-    \textcolor{red}{?} & ? & ?\\
-    ? & ? & ?
+    4 & 9 & 8 & 5\\
+    \textcolor{red}{?} & ? & ? & ?\\
+    ? & ? & ? & ?
 \end{bmatrix}$$
 
 Which leads to the following calculation:
@@ -208,12 +210,12 @@ $$ \begin{bmatrix}
     1 & 2\\
     4 & 0
 \end{bmatrix} \times \begin{bmatrix}
-    2 & 3 & 4\\
-    0 & 1 & 0
+    2 & 3 & 4 & 1\\
+    0 & 1 & 0 & 1
 \end{bmatrix} = \begin{bmatrix}
-    4 & 9 & 8\\
-    2 & ? & ?\\
-    ? & ? & ?
+    4 & 9 & 8 & 5\\
+    2 & ? & ? & ?\\
+    ? & ? & ? & ?
 \end{bmatrix}$$
 
 You can try completing this calculation yourself, the final result is as follows:
@@ -223,12 +225,12 @@ $$ \begin{bmatrix}
     1 & 2\\
     4 & 0
 \end{bmatrix} \times \begin{bmatrix}
-    2 & 3 & 4\\
-    0 & 1 & 0
+    2 & 3 & 4 & 1\\
+    0 & 1 & 0 & 1
 \end{bmatrix} = \begin{bmatrix}
-    4 & 9 & 8\\
-    2 & 5 & 4\\
-    8 & 12 & 16
+    4 & 9 & 8 & 5\\
+    2 & 5 & 4 & 3\\
+    8 & 12 & 16 & 4
 \end{bmatrix}$$
 
 :::: note ::::
