@@ -84,7 +84,7 @@ $$A_{2,3}^T  = \begin{bmatrix}
 
 ### Multiplication between matrices
 
-Given 2 matrices with sizes $m \times n$ and $n \times p$ (mind how the number of rows of the first matrix is the same of the number of columns of the second matrix):
+Given 2 matrices with sizes $m \times n$ and $n \times p$ (mind how the number of columns of the first matrix is the same as the number of rows of the second matrix):
 
 $$ A_{3, 2} = \begin{bmatrix}
     2 & 3\\
