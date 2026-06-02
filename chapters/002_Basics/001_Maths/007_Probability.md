@@ -143,11 +143,11 @@ Because if we didn't, we would be counting the face cards of hearts twice: once 
 
 Let's continue with our example.
 
-A standard deck has 52 cards, 13 for each seed. This means we would have 13 cards of hearts: $P(A) = \frac{13}{52}$.
+A standard deck has 52 cards, 13 for each suit. This means we would have 13 cards of hearts: $P(A) = \frac{13}{52}$.
 
-The same deck of cards also has 3 "face cards" for each seed, totalling 12: $P(B) = \frac{12}{52}$.
+The same deck of cards also has 3 "face cards" for each suit, totalling 12: $P(B) = \frac{12}{52}$.
 
-Since there are face cards of the hearts seed, we need to account for those too, totalling 3: $P(A\ and\ B)= \frac{3}{52}$.
+Since there are face cards of the hearts suit, we need to account for those too, totalling 3: $P(A\ and\ B)= \frac{3}{52}$.
 
 This means that the probability we're looking for is calculated as follows:
 
