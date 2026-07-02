@@ -95,6 +95,24 @@ To that we have to add the issue of AI self-feeding: AI-generated solutions and 
 
 This sees the addition of willful poisoning by people who are against the widespread diffusion of "AI". Systems are created that will let the AI scan an infinite number of pages containing completely meaningless content.
 
+### Boiling the frog alive: you will own nothing and be happy (or else)
+
+Now we're entering in what some could define as "conspiracy theory" territory. So your mileage will vary here.
+
+The rush for AI has brought huge increases in RAM, SSD and even HDD prices. This is making a lot harder for common people to have a "personal computer", this has given the rise (so far on the "gaming" side of things) to "cloud personal computers" where you pay a monthly fee to use a virtual machine through the internet (in the gaming department, it would feature streaming the gameplay back to you, so you'll just need a good internet connection to play any game).
+
+It has already been expressed that many big tech dream to have "desktop as a service" become mainstream. [The idea was vented in January 2026](https://web.archive.org/web/20260301201441/https://www.sdxcentral.com/control-plane/jeff-bezos-wants-you-to-rent-cloud-space-instead-of-buying-pcs-for-gamers-thats-truly-terrible/).
+
+The forced digitalization of services, phasing out physical media (and thus the concept of "property of a copy of a game/book/movie" - very different from the property of the IP - becoming harder to obtain), and now trying to phase out anything that could be used to create a service that makes them "less necessary", including the personal computer.
+
+This opens a new very prolific market for the big companies who can afford to hoard the same RAM, SSDs and HDDs for their data centers, just to flip them back to you for a monthly fee.
+
+Now for the darker part: once everyone is forced through the same mesh of services, it becomes a lot easier to engage in surveillance. There is a lot less friction and when there is less friction, it becomes easier to rely on something more and more. The less friction there is to get someone's data, the more the people who can access it will do so. Be it for selling your preferences to advertisers or to make sure you don't oppose the wrong people - the difference in effort is none.
+
+Not sure if you noticed the [sudden](https://www.justice.gc.ca/eng/csj-sjc/pl/c22/index.html) [surge](https://www.digitalidsystem.gov.au/news/social-media-minimum-age-verification-law-and-digital-id) [in surveillance-like](https://www.ofcom.org.uk/online-safety/protecting-children/age-checks-for-online-safety--what-you-need-to-know-as-a-user?__cf_chl_f_tk=gAzIGBAq4CDt7X55kHoz7fLfxyILt_XGos_qq25F8zI-1783017735-1.0.1.1-XiZfqB9ZVR4WNhimFCyxlaJy1XXsH6lmlfY4dNMM0h8) [proposals](https://londondaily.com/denmark-revives-eu-chat-control-proposal-for-encrypted-message-scanning). Most of the time they're hidden behind child protection, where online services should stop minors from interacting as soon as they know a minor is interacting with them - looking at it from the other side, it's also a way to isolate and know who the minors are. This is real scary stuff.
+
+The huge masses of data are even easier to parse with the help of AI. Provided they don't [get things wrong](https://edition.cnn.com/2026/03/29/us/angela-lipps-ai-facial-recognition).
+
 ### Countering some excuses
 
 #### "The cost per token is getting lower"
