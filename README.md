@@ -41,6 +41,8 @@
 About the project
 -----------------
 
+![Antagonistic AGENTS](https://img.shields.io/badge/%F0%9F%92%A2%F0%9F%A4%96-Antagonistic%20Agents-blue?style=for-the-badge)
+
 This project aims to be a Creative Commons Licensed body of knowledge about game design and development.
 
 As well as being a source of knowledge this project aims to be a learning experience for everyone involved too, by gathering contributions from the community, teaching others how to make a game, explaining algorithms but also learning tips and tricks from people who are more experienced.
