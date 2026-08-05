@@ -87,3 +87,9 @@ Most roguelike games are based on hack and slash mechanics, where your main goal
 Roguelike games are heavily based on the concept of "unknown": you need to explore an unknown place, finding loot which powers are unknown and should be identified. Magical items change with every run, and give just vague descriptions (like "a red potion") which may heal in one run and kill you in another.
 
 Furthermore items can be subject to change, acquiring or losing traits due to environmental alterations or player modification.
+
+### Deck builders
+
+{{placeholder}}
+
+<!-- TODO: Talk about deckbuilder games -->
