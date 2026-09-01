@@ -1,0 +1,39 @@
+
+let mut open_set = Vec::new();
+let mut closed_set = Vec::new();
+let mut current_node = start.clone();
+
+closed_set.push(current_node.clone());
+
+while current_node != end {
+    for mut n in current_node.adjacent_list() {
+        // closed_set Contains N
+        if let Some(pos) = closed_set.iter().position(|x| x == &current_node) && pos != closed_set.len() - 1 {
+            // We already analyzed this node, skip it
+            continue;
+        } else {
+            if let Some(pos) = open_set.iter().position(|x| x == &current_node) && pos != open_set.len() - 1 {
+                let new_g = path_cost(&n, &start);
+                if new_g < n.g {
+                    n.parent = Some(Box::new(current_node.clone()));
+                    n.g = new_g;
+                }
+            } else {
+                n.parent = Some(Box::new(current_node.clone()));
+                n.g = path_cost(&n, &start);
+                open_set.push(current_node.clone());
+            }
+        }
+
+        // Order openSet by g
+        open_set.sort_by(|a, b| a.g.total_cmp(&b.g));
+        // Since openset is ordered by g, the first element is the one with the lowest total cost
+        if let Some(first) = open_set.pop() {
+            current_node = first;
+        } else {
+            // We exhausted all the possibilities
+            break;
+        }
+        closed_set.push(current_node.clone());
+    }
+}

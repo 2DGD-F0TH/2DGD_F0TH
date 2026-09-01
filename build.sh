@@ -26,6 +26,8 @@ RESULT=$(dialog --title "Penaz's (Mis)Guided Build System"\
     epub_js "JavaScript Edition (Epub)" off\
     lua "Lua Edition (PDF)" off\
     epub_lua "Lua Edition (Epub)" off\
+    rust "Rust Edition (PDF)" off\
+    epub_rust "Rust Edition (Epub)" off\
 )
 
 RETURN_VALUE=$?

@@ -17,3 +17,4 @@ Special Thanks to the following people who helped making this work even better:
 - **LuosRestil** - For fixing some mistakes
 - **Doublestuf** - For improving code listings
 - **HectorLira** - For fixing some mistakes
+- **Sanpi** - For rust listings

@@ -6,7 +6,8 @@ local SUPPORTED_EXT = {
     lua = ".lua",
     python = ".py",
     javascript = ".js",
-    pseudocode = ".txt"
+    pseudocode = ".txt",
+    rust = ".rs"
 }
 
 function dynamic_codeblock(blk)
