@@ -1,3 +1,4 @@
+# #![allow(dead_code)]
 fn count_forwards(n: u32) {
     // Stop condition
     if n == 0 {

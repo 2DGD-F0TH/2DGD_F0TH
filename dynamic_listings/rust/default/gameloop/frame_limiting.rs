@@ -1,3 +1,10 @@
+# #![allow(unused)]
+#
+# fn system_time_millis() -> u64 { todo!() }
+# fn process_user_input() {}
+# fn update_world(_: u64) {}
+# fn draw() {}
+# fn main() {
 use std::time::Duration;
 use std::thread::sleep;
 
@@ -20,3 +27,4 @@ while game_is_running {
     let millis = u64::max(target_time - dt, 0);
     sleep(Duration::from_millis(millis));
 }
+# }

@@ -1,3 +1,13 @@
+# //! ```cargo
+# //! [dependencies]
+# //! vector2d = "3.1"
+# //! ```
+#
+# #![allow(dead_code, unused)]
+#
+# type Vector2D = vector2d::Vector2D<f32>;
+# #[derive(Clone)]
+# struct Texture;
 #[derive(Clone)]
 struct Particle {
     /*

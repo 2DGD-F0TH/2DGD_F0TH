@@ -1,3 +1,10 @@
+# #![allow(dead_code, unused)]
+#
+# fn system_time_millis() -> u64 { todo!() }
+# fn process_user_input() {}
+# fn update_world(_: u64) {}
+# fn draw() {}
+# fn main() {
 let dt = 1_000 / 60;
 let mut game_is_running = true;
 
@@ -20,3 +27,4 @@ while game_is_running {
     // We memorize how long this frame lasted
     frame_time = end - begin;
 }
+# }

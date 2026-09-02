@@ -1,3 +1,4 @@
+# #![allow(dead_code)]
 struct Player {
     coyote_time_started: bool,
     coyote_time: f32,

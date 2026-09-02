@@ -25,6 +25,7 @@ impl Strategy for ConcreteStrategy2 {
 
 // Example Usage
 fn main() {
+#   let condition = true;
     let to_execute = if condition {
         Box::new(&ConcreteStrategy1 as &dyn Strategy)
     } else {

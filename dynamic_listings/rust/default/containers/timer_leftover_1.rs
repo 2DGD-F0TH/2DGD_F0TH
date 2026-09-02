@@ -1,9 +1,15 @@
+# #![allow(dead_code)]
 struct Timer {
     /*
      * ...
      * This is the same as the older version
      * ...
      */
+#    time: f32,
+#    set_time: f32,
+#    function_to_execute: fn(),
+#    one_shot: bool,
+#    active: bool,
 }
 
 impl Timer {

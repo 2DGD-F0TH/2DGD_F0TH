@@ -1,3 +1,6 @@
+# #![allow(unused)]
+# fn main() {
+# let mut speed_y = 0.;
 const GRAVITY_ACCELERATION: f32 = 10.;
 const MAX_FALL_VELOCITY: f32 = 500.;
 const GRAVITY_FALL_MULTIPLIER: f32 = 1.5;
@@ -15,3 +18,4 @@ if speed_y > MAX_FALL_VELOCITY {
     speed_y = MAX_FALL_VELOCITY;
 }
 // ...
+# }

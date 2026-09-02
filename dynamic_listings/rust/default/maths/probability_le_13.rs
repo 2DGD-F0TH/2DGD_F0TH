@@ -1,3 +1,9 @@
+# //! ```cargo
+# //! [dependencies]
+# //! rand = "0.10"
+# //! ```
+#
+# #![allow(dead_code, unused)]
 fn main() {
     let mut happened = 0;
     // Monte Carlo Method we do 10000 "extractions"

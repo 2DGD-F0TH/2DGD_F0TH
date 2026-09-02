@@ -1,3 +1,23 @@
+# #![allow(dead_code)]
+#
+# struct Point {
+#     x: u32,
+#     y: u32,
+# }
+# struct Circle {
+#     center: Point,
+# }
+# struct Polygon {
+#     vertices: Vec<Point>,
+# }
+# struct Line {
+# }
+# impl Line {
+#     fn from_points(_: &Point, _: &Point) -> Self { todo!() }
+# }
+# fn line_circle_collision(_: &Circle, _: &Line) -> bool { todo!() }
+# fn polygon_point(_: &Polygon, _: &Point) -> bool { todo!() }
+# fn circle_point_collision(_: &Circle, _: &Point) -> bool { todo!() }
 // ...
 fn circle_polygon(poly: &Polygon, circ: &Circle) -> bool {
     // Case C (and partly B) are less resource-intensive than

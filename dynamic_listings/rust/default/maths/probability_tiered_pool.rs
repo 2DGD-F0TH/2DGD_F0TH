@@ -1,3 +1,9 @@
+# //! ```cargo
+# //! [dependencies]
+# //! rand = "0.10"
+# //! ```
+#
+# #![allow(dead_code, unused)]
 fn tiered_drop() -> u8 {
     // 1 = Common, 2 = Uncommon, 3 = Rare, 4 = Epic
     let n = rand::random_range(1..=100);

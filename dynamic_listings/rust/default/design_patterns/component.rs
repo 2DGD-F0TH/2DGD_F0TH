@@ -1,3 +1,4 @@
+# #![allow(dead_code)]
 // Defines the abstract class/interface for the component pattern
 trait Component {
     // Do nothing, this is an abstract class

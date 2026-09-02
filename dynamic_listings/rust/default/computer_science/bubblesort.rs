@@ -1,3 +1,4 @@
+# #![allow(dead_code)]
 fn bubble_sort(a: &mut [u32]) {
     let n = a.len();
     // Traverse Through all Elements

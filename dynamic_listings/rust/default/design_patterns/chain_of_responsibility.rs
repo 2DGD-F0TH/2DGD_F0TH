@@ -1,5 +1,7 @@
+# #![allow(dead_code)]
 trait Handler {
     fn handle_request(&mut self) {
+#       let condition = true;
         if condition {
             return self.real_handler();
         }

@@ -1,3 +1,9 @@
+# enum CharacterExpression {
+#     Neutral,
+#     Angry,
+#     Sad,
+# }
+# fn main() {
 // ...
 let mut tyler = Vec::new();
 tyler.push(CharacterExpression::Neutral);
@@ -10,3 +16,4 @@ tyler.push(CharacterExpression::Neutral);
 // 26 more lines
 tyler.push(CharacterExpression::Neutral);
 // ...push( character ...
+# }

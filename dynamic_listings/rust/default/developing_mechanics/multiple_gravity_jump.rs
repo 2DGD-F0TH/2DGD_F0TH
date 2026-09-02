@@ -1,3 +1,7 @@
+# #![allow(dead_code, unused)]
+#
+# fn main() {
+# let mut speed_y = 0.;
 const GRAVITY_ACCELERATION: f32 = 10.;
 // We consider the jump "peaking" when the speed is between -50 and 50
 const PEAKING_SPEED: f32 = 50.;
@@ -21,3 +25,4 @@ if speed_y > MAX_FALL_VELOCITY {
     speed_y = MAX_FALL_VELOCITY;
 }
 // ...
+# }

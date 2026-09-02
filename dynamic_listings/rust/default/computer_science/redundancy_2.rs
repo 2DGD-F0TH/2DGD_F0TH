@@ -1,3 +1,5 @@
+# #![allow(dead_code, unused)]
+# struct Node;
 struct List {
     node_list: Vec<Node>,
     length: usize,

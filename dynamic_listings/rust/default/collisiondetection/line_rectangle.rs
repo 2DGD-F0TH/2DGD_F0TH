@@ -1,3 +1,4 @@
+# #![allow(dead_code, unused)]
 fn line_line_collision(
     x1: f32,
     y1: f32,
@@ -9,6 +10,7 @@ fn line_line_collision(
     y4: f32,
 ) -> bool {
     // our previous implementation of the line/line collision detection
+# todo!()
 }
 
 fn point_rect_collision(
@@ -20,6 +22,7 @@ fn point_rect_collision(
     rectheight: f32,
 ) -> bool {
     // our previous implementation of a point/rectangle collision detection
+# todo!()
 }
 
 fn line_rectangle_collision(

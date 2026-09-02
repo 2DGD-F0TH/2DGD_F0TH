@@ -1,3 +1,21 @@
+# //! ```cargo
+# //! [dependencies]
+# //! rand = "0.10"
+# //! ```
+#
+# #![allow(dead_code, unused)]
+#
+# #[derive(Clone, PartialEq)]
+# struct Cell {
+#     x: u32,
+#     y: u32,
+# }
+# impl Cell {
+#     fn is_wall(&self) -> bool { todo!() }
+# }
+# impl Cell {
+#     fn new(_: u32, _: u32) -> Self { todo!() }
+# }
 fn random<T>(vect: &[T]) -> &T {
     // Gets a random item from a Vector
     let x = rand::random_range(0..vect.len());
@@ -15,6 +33,7 @@ struct AiEntity {
 }
 
 impl AiEntity {
+#   fn move_to(&mut self, _: &Cell) {}
     pub fn new() -> Self {
         Self {
             forward_direction_index: 0,

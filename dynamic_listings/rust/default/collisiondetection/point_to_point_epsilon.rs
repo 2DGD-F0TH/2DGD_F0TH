@@ -1,3 +1,9 @@
+# #![allow(dead_code)]
+#
+# struct Point {
+#     x: f32,
+#     y: f32,
+# }
 fn point_collision(a: &Point, b: &Point) -> bool {
     let epsilon = 0.0001; // Let's take a sufficiently low value
     // If both coordinates are "close enough", we trigger a collision.

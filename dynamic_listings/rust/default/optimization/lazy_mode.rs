@@ -1,3 +1,4 @@
+# #![allow(dead_code)]
 struct LazyObject {
     numbers_reference: Vec<u32>,
 }

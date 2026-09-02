@@ -1,3 +1,6 @@
+# #![allow(dead_code)]
+#
+# struct Node;
 struct List {
     node_list: Vec<Node>,
     // ...

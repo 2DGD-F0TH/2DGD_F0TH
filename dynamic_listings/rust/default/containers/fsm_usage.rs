@@ -1,3 +1,19 @@
+# #![allow(dead_code, unused)]
+# struct Entity;
+# #[derive(Default)]
+# struct Timer;
+# impl Timer {
+#     fn set(&mut self, _: f32) {}
+#     fn is_finished(&self) -> bool { todo!() }
+#     fn update(&mut self, _: f32) {}
+#     fn start(&mut self) {}
+# }
+# #[derive(Clone, Default)]
+# struct Fsm;
+# impl Fsm {
+#     fn set_state(&mut self, _: fn(&mut Enemy, f32)) {}
+#     fn update(&mut self, _: &mut Enemy, dt: f32) {}
+# }
 struct Enemy {
     /*
      * Represents a simple enemy
@@ -32,9 +48,11 @@ impl Enemy {
          *Implements logic for the "sight" of the enemy
          */
         // ...
+# todo!()
     }
 
     fn patrol(&mut self, dt: f32) {
+# let player = Entity;
         // Normal patrolling of the enemy
         // Move, turn, path find...
         if self.sees(&player) {
@@ -48,6 +66,7 @@ impl Enemy {
     }
 
     fn pursue(&mut self, dt: f32) {
+# let player = Entity;
         // Tries to pursue the enemy
         if self.sees(&player) {
             // Continue Pursuing, by resetting the timer

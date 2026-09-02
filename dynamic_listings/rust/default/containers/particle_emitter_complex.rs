@@ -1,3 +1,20 @@
+# //! ```cargo
+# //! [dependencies]
+# //! vector2d = "3.1"
+# //! ```
+#
+# #![allow(dead_code, unused)]
+#
+# type Vector2D = vector2d::Vector2D<f32>;
+# #[derive(Clone)]
+# struct Particle;
+# impl Particle {
+#     fn new() -> Self { Self }
+#     fn is_dead(&self) -> bool { todo!() }
+#     fn update(&mut self, _: f32) {}
+#     fn reset(&mut self) {}
+#     fn set_position(&mut self, _: Vector2D) {}
+# }
 struct Emitter {
     /*
      * This is a simple particle emitter, it contains a list

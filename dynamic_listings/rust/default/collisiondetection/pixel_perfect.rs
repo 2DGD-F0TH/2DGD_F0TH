@@ -1,3 +1,4 @@
+# #![allow(dead_code, unused)]
 struct Color {
     color_data: u32,
 }
@@ -5,6 +6,7 @@ struct Color {
 impl Color {
     fn is_white(&self) -> bool {
         //...
+#       todo!()
     }
 }
 
@@ -15,6 +17,7 @@ struct Bitmask {
 impl Bitmask {
     fn color(&self, x: u32, y: u32) -> Color {
         // ...
+#       todo!()
     }
 }
 

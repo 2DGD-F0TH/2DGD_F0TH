@@ -1,3 +1,4 @@
+# #![allow(dead_code)]
 /*
  * This is an example of a simple node structure for a tree.
  * It can be used as root or any other node

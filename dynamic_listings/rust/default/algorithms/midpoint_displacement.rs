@@ -1,3 +1,12 @@
+# //! ```cargo
+# //! [dependencies]
+# //! rand = "0.10"
+# //! ```
+#
+# #![allow(dead_code, unused)]
+#
+# fn interpolate(_: &[f32], _: usize, _: usize) -> f32 { todo!() }
+# fn main() {
 const MIN: f32 = 0.;
 const MAX: f32 = 100.;
 const OCTAVES: f32 = 5.;
@@ -9,6 +18,7 @@ terrain[31] = rand::random_range(MIN..=MAX);
 interpolate(&terrain, 0, 31);
 
 fn midpoint_displacement(begin: usize, end: usize, octave: f32) {
+#   let mut terrain = [0_f32; 32];
     // Get the midpoint
     let midpoint = (end - begin) / 2;
     // Get the midpoint value
@@ -21,11 +31,11 @@ fn midpoint_displacement(begin: usize, end: usize, octave: f32) {
     terrain[midpoint] = value;
     // Interpolate the values between begin and midpoint
     for x in begin + 1..midpoint {
-        terrain[x] = interpolate(terrain, begin, midpoint);
+        terrain[x] = interpolate(&terrain, begin, midpoint);
     }
     // Interpolate the values between midpoint and the end
     for x in midpoint + 1..end {
-        terrain[x] = interpolate(terrain, midpoint, end);
+        terrain[x] = interpolate(&terrain, midpoint, end);
     }
     // Recursion on the subtree
     if octave < OCTAVES {
@@ -35,3 +45,4 @@ fn midpoint_displacement(begin: usize, end: usize, octave: f32) {
         midpoint_displacement(midpoint, end, octave + 1.);
     }
 }
+# }

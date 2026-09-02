@@ -1,3 +1,6 @@
+# #![allow(dead_code)]
+#
+# struct Enemy;
 #[derive(Clone, Default)]
 struct Fsm {
     /*

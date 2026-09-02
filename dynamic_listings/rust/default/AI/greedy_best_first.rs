@@ -1,3 +1,23 @@
+# //! ```cargo
+# //! [package]
+# //! edition = "2024"
+# //! ```
+#
+# #![allow(dead_code, unused)]
+#
+# #[derive(Clone, PartialEq)]
+# struct Node {
+#     parent: Option<Box<Node>>,
+#     f: f32,
+#     g: f32,
+#     h: f32,
+# }
+# impl Node {
+#     fn adjacent_list(&self) -> Vec<Node> { todo!() }
+# }
+# fn heuristics(_: &Node, _: &Node) -> f32 { todo!() }
+# fn path_cost(_: &Node, _: &Node) -> f32 { todo!() }
+# fn greedy_best_first(start: Node, end: Node) {
 // We bootstrap the variables
 let mut open_set = Vec::new();
 let mut closed_set = Vec::new();
@@ -44,3 +64,4 @@ if current_node == end {
 } else {
     println!("Cannot find a path between 'start' and 'end'");
 }
+# }

@@ -1,3 +1,15 @@
+# //! ```cargo
+# //! [dependencies]
+# //! rand = "0.10"
+# //! vector2d = "3.1"
+# //! ```
+#
+# #![allow(dead_code, unused)]
+#
+# type Vector2D = vector2d::Vector2D<f32>;
+# struct Player {
+#     position: Vector2D,
+# }
 struct Boss {
     player: Player,
     player_too_close: bool,

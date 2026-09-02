@@ -1,3 +1,4 @@
+# #![allow(dead_code)]
 trait Shape {
     // A shape trait
     // An associated method that will be implemented by struct

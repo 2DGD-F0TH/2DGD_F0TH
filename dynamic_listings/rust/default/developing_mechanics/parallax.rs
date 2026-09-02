@@ -1,12 +1,52 @@
-let mut running = true;
-
+# #![allow(dead_code)]
 struct Rgb {
     // ...
 }
+# impl Rgb {
+#     fn new(_: u8, _: u8, _: u8) -> Self { todo!() }
+# }
 
 struct Rectangle{
     // ...
+#   x: f32,
+#   y: f32,
 }
+# impl Rectangle {
+#    fn new(_: u32, _: u32, _: u32, _: u32, _: Rgb) -> Self { todo!() }
+#    fn draw_on(&self, _: &mut Surface) {}
+# }
+
+# #[derive(PartialEq)]
+# enum EventType {
+#     Quit,
+#     Keypress,
+#     Keyrelease,
+# }
+# #[derive(PartialEq)]
+# enum Key {
+#     Right,
+#     Left,
+# }
+# struct Event {
+#     ty: EventType,
+#     key: Key,
+# }
+# struct Surface;
+# impl Surface {
+#     fn fill(&mut self, _: Rgb) {}
+#     fn display(&self) {}
+# }
+# #[derive(Default)]
+# struct Engine {
+#     event_queue: Vec<Event>,
+# }
+# impl Engine {
+#     fn set_display(&self, _: (u32, u32)) -> Surface { todo!() }
+# }
+# fn main() {
+# let engine = Engine::default();
+# let event_queue = &engine.event_queue;
+let mut running = true;
 
 // We create a display surface of 640x480 pixels
 let mut screen_surface = engine.set_display((640, 480));
@@ -72,3 +112,4 @@ while running {
     // Show the result on screen
     screen_surface.display();
 }
+# }

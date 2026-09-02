@@ -1,3 +1,4 @@
+# #![allow(dead_code)]
 fn point_rect_collision(
     x1: f32,
     y1: f32,

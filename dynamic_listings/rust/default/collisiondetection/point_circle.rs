@@ -1,3 +1,8 @@
+# #![allow(dead_code)]
+# struct Point {
+#     x: f32,
+#     y: f32,
+# }
 struct Circle {
     center: Point,
     radius: f32,

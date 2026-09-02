@@ -1,3 +1,21 @@
+# //! ```cargo
+# //! [dependencies]
+# //! rand = "0.10"
+# //! ```
+#
+# #![allow(dead_code, unused)]
+#
+# struct Sprite;
+# impl Sprite {
+#     fn from<P: AsRef<std::path::Path>>(_: P) -> Self { todo!() }
+# }
+# struct Weapon;
+# impl Weapon {
+#     fn compose(_: Sprite, _: Sprite, _: Sprite, _: Sprite) -> Self { todo!() }
+#     fn set_damage(&mut self, _: u32) {}
+#     fn set_range(&mut self, _: u32) {}
+#     fn set_spread(&mut self, _: u32) {}
+# }
 fn directory_listing<P: AsRef<std::path::Path>>(
     path: P,
 ) -> std::io::Result<Vec<std::path::PathBuf>> {

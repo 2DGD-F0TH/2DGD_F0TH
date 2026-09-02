@@ -1,11 +1,23 @@
-const TILE_WIDTH: u32 = 32;
-const TILE_HEIGHT: u32 = 32;
-
+# #[derive(Default)]
 struct Rectangle {
     corner: Point,
     width: u32,
     height: u32,
 }
+# #[derive(Default)]
+# struct Point {
+#     x: u32,
+#     y: u32,
+# }
+# struct Tile {
+#     rectangle: Rectangle,
+# }
+# fn aabb(_: &Rectangle, _: &Rectangle) -> bool { todo!() }
+# fn tile(_: &[u32]) -> Tile { todo!() }
+# fn main() {
+# let player = Rectangle::default();
+const TILE_WIDTH: u32 = 32;
+const TILE_HEIGHT: u32 = 32;
 
 fn convert_pixels_to_tile(x: u32, y: u32) -> [u32; 2] {
     // Converts a point into tile coordinates
@@ -27,3 +39,4 @@ for point in points_to_check {
         // React to the collision
     }
 }
+# }

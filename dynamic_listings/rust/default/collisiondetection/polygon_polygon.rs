@@ -1,3 +1,14 @@
+# #![allow(dead_code)]
+# struct Point;
+# struct Polygon {
+#     vertices: Vec<Point>,
+# }
+# struct Line;
+# impl Line {
+#     fn from_points(_: &Point, _: &Point) -> Self { todo!() }
+# }
+# fn polygon_point(_: &Polygon, _: &Point) -> bool { todo!() }
+# fn polygon_line(_: &Polygon, _: &Line) -> bool { todo!() }
 // ...
 fn polygon_polygon(p1: &Polygon, p2: &Polygon) -> bool {
     // First we do a polygon vs line check for all the edges

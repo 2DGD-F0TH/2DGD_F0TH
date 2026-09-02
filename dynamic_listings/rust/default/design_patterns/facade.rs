@@ -1,10 +1,19 @@
+# #![allow(dead_code)]
 struct FirstService {
     // Implementation here...
 }
+# impl FirstService {
+#     fn new() -> Self { todo!() }
+#     fn start(&self) -> bool { todo!() }
+# }
 
 struct SecondService {
     // Implementation here...
 }
+# impl SecondService {
+#     fn new() -> Self { todo!() }
+#     fn start(&self) -> bool { todo!() }
+# }
 
 struct Facade {
     /*

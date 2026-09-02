@@ -1,3 +1,4 @@
+# #![allow(dead_code)]
 fn example(phrase: &str) {
     println!("{phrase}");
 }

@@ -1,3 +1,4 @@
+# #![allow(dead_code)]
 // A simple coffee grinder component
 struct Grinder;
 

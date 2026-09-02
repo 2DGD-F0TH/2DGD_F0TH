@@ -1,3 +1,4 @@
+# #![allow(dead_code)]
 #[derive(Clone, PartialEq)]
 struct Node {
     parent: Option<Box<Node>>, // This will be used to build the path

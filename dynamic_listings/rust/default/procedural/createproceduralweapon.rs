@@ -1,3 +1,15 @@
+# #![allow(dead_code)]
+# struct Sprite;
+# impl Sprite {
+#     fn from<P: AsRef<std::path::Path>>(_: P) -> Self { todo!() }
+# }
+# struct Weapon;
+# impl Weapon {
+#     fn compose(_: Sprite, _: Sprite, _: Sprite, _: Sprite) -> Self { todo!() }
+#     fn set_damage(&mut self, _: u32) {}
+#     fn set_range(&mut self, _: u32) {}
+#     fn set_spread(&mut self, _: u32) {}
+# }
 // ...
 fn create_procedural_weapon() -> Weapon {
     let body = Sprite::from("body0001.png");

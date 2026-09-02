@@ -1,3 +1,4 @@
+# #![allow(dead_code)]
 fn point_triangle_collision(
     px: f32,
     py: f32,

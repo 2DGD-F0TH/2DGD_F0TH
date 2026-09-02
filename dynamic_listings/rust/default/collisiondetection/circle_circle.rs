@@ -1,3 +1,9 @@
+# #![allow(dead_code)]
+#
+# struct Point {
+#     x: f32,
+#     y: f32,
+# }
 struct Circle {
     // Let's define a circle class/structure
     center: Point,

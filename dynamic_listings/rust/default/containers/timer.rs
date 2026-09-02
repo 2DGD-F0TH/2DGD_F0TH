@@ -1,3 +1,4 @@
+# #![allow(dead_code)]
 struct Timer {
     time: f32,
     set_time: f32,

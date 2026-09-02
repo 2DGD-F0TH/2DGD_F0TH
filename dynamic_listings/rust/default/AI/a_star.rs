@@ -1,3 +1,23 @@
+# //! ```cargo
+# //! [package]
+# //! edition = "2024"
+# //! ```
+#
+# #![allow(dead_code, unused)]
+#
+# #[derive(Clone, PartialEq)]
+# struct Node {
+#     parent: Option<Box<Node>>,
+#     f: f32,
+#     g: f32,
+#     h: f32,
+# }
+# impl Node {
+#     fn adjacent_list(&self) -> Vec<Node> { todo!() }
+# }
+# fn heuristic_cost(_: &Node, _: &Node) -> f32 { todo!() }
+# fn path_cost(_: &Node, _: &Node) -> f32 { todo!() }
+# fn a_start(start: Node, end: Node) {
 let mut open_set = Vec::new();
 let mut closed_set = Vec::new();
 let mut current_node = start.clone();
@@ -40,3 +60,4 @@ while current_node != end {
         closed_set.push(current_node.clone());
     }
 }
+# }

@@ -11,6 +11,7 @@ PDF_TEMPLATE=--pdf-engine=$(LATEX_ENGINE) --template template/template.tex
 EPUB_TEMPLATE=--css template/epub.css --highlight-style pygments --template template/template.xhtml
 VERSION=-M version=`git describe --tags`
 GLADTEX_PKG=gladtex -d "gladtex_imgs" --png -P -p "\usepackage{cancel}\usepackage{gensymb}" -
+RUST_SCRIPT=rust-script
 # Phony targets
 .PHONY: clean all
 
@@ -70,6 +71,14 @@ epub_lua: Makefile | output
 epub_rust: Makefile | output
 	mkdir -p output/rust
 	$(PANDOC) $(PANDOC_DEFAULT_ARGS) template/epub_addons/front_matter.md template/epub_addons/dedication.md $(CHAPTERS_CMD) $(VERSION) -M proglang="rust" -t json | $(GLADTEX_PKG) | $(PANDOC_STANDALONE) -f json $(EPUB_TEMPLATE) --to=epub -o output/rust/Rust_Edition.epub
+
+tests_rust: $(addsuffix -test, $(wildcard dynamic_listings/rust/default/*/*.rs))
+.PHONY: tests_rust
+
+%.rs-test: %.rs
+	@sed 's/^# //;s/^#$$//' $^ > $@
+	$(RUST_SCRIPT) --test $@
+	@rm $@
 
 clean:
 	rm -f *.aux *.toc *.lol *.lot *.log *.out *.latex outsourced_descriptions.html gladtex_imgs/* output/*

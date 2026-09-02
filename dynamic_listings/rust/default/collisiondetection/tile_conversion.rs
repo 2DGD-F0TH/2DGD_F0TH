@@ -1,3 +1,4 @@
+# #![allow(dead_code)]
 const TILE_WIDTH: u32 = 32;
 const TILE_HEIGHT: u32 = 32;
 

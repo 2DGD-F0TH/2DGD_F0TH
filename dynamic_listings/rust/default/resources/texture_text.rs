@@ -1,3 +1,17 @@
+# #![allow(dead_code)]
+#
+# struct Surface;
+# impl Surface {
+#     fn new(_: u32, _: u32) -> Self { todo!() }
+#     fn subsurface(&self, _: u32, _: u32, _: u32, _: u32) -> Self { todo!() }
+#     fn draw(&mut self, _: Self, _: (u32, u32)) { todo!() }
+# }
+# struct Engine;
+# impl Engine {
+#     const fn new() -> Self { Self }
+#     const fn load_spritesheet(&self, _: &str) -> Surface { Surface }
+# }
+# const ENGINE: Engine = Engine::new();
 const TILE_WIDTH: u32 = 32;
 const TILE_HEIGHT: u32 = 32;
 const SPRITESHEET: Surface = ENGINE.load_spritesheet("resources/font.png");

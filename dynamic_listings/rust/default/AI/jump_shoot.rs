@@ -1,3 +1,9 @@
+# //! ```cargo
+# //! [dependencies]
+# //! rand = "0.10"
+# //! ```
+#
+# #![allow(dead_code, unused)]
 struct Player {
     // ...
 }

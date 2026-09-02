@@ -1,4 +1,35 @@
+# //! ```cargo
+# //! [dependencies]
+# //! vector2d = "3.1"
+# //! ```
+#
+# #![allow(dead_code, unused)]
+#
+# type Vector2D = vector2d::Vector2D<f32>;
+# struct Rectangle {
+#     right: f32,
+#     left: f32,
+#     bottom: f32,
+#     top: f32,
+# }
+# struct Block {
+#     rect: Rectangle,
+# }
+# #[derive(Default)]
+# struct Player {
+#     velocity: Vector2D,
+#     position: Vector2D,
+#     width: f32,
+# }
+# impl Player {
+#     fn find_collisions(&self, _: &[Block]) -> Vec<Block> { todo!() }
+#     fn is_jumping(&self) -> bool { todo!() }
+# }
+# struct Game;
+# impl Game {
 fn update(&mut self, dt: f32) {
+# let mut player = Player::default();
+# let blocks = [];
     // Using the brute force checking for simplicity
     for block in player.find_collisions(&blocks) {
         // ...
@@ -26,3 +57,4 @@ fn update(&mut self, dt: f32) {
         }
     }
 }
+# }

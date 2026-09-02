@@ -1,3 +1,4 @@
+# #![allow(dead_code)]
 fn count_backwards(n: u32) {
     let mut n = n;
     // Condition for the loop

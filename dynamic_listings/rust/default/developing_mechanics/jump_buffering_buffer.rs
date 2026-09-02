@@ -1,3 +1,21 @@
+# #![allow(dead_code)]
+# struct Key;
+# impl Key {
+#     fn is_pressed(&self) -> bool { todo!() }
+# }
+# struct Controls {
+#     jump: Key
+# }
+# struct Player {
+#     on_ground: bool,
+#     has_buffered_jump: bool,
+#     jump_buffer_countdown: f32,
+# }
+# struct Game {
+#     controls: Controls,
+#     player: Player,
+# }
+# impl Game {
 // ...
 const JUMP_BUFFER_TIME: f32 = 5.;
 // ...
@@ -20,3 +38,4 @@ fn update(&mut self, dt: f32) {
     }
     //...
 }
+# }

@@ -1,4 +1,7 @@
+# #![allow(dead_code)]
+# fn memorize(_: f32) {}
 fn find_horizontal_matches() {
+# let matrix = [[0.; 1]; 1];
     let mut match_length = 0;
     let min_match_length = 3;
     let rowsize = matrix.len();

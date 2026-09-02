@@ -1,3 +1,4 @@
+# #![allow(dead_code)]
 struct EagerObject {
     halved_numbers: Vec<u32>,
 }

@@ -1,3 +1,22 @@
+# //! ```cargo
+# //! [dependencies]
+# //! vector2d = "3.1"
+# //! ```
+#
+# #![allow(dead_code, unused)]
+#
+# type Vector2D = vector2d::Vector2D<i32>;
+# struct Rectangle {
+#     bottom: f32,
+#     top: f32,
+#     right: f32,
+#     left: f32,
+# }
+# struct Entity {
+#     speed: Vector2D,
+#     rect: Rectangle,
+# }
+# fn overlap(_: &Entity, _: &Entity) -> Vector2D { todo!() }
 fn solve_collision(player: &mut Entity, object: &Entity) {
     /*
      * This algorithm solves a collision between the player

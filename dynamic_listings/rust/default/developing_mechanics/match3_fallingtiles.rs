@@ -1,5 +1,15 @@
+# #![allow(dead_code)]
 use std::collections::BTreeMap;
 
+# #[derive(Clone, Copy, PartialEq, Eq, PartialOrd, Ord)]
+# struct Tile {
+#     x: usize,
+#     y: usize,
+# }
+# struct Game {
+#     matrix: Vec<Vec<Option<Tile>>>,
+# }
+# impl Game {
 fn remove_matches(&mut self, matches: &mut Vec<Tile>) {
     while let Some(tile) = matches.pop() {
         self.matrix[tile.y][tile.x] = None;
@@ -52,3 +62,4 @@ fn find_falling_tiles(&mut self) -> BTreeMap<Tile, usize> {
     }
     falling_tiles
 }
+# }

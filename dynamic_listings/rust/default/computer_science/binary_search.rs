@@ -1,3 +1,4 @@
+# #![allow(dead_code)]
 fn binary_search(lst: &[u32], item: u32) -> Option<usize> {
     let mut first = 0;
     let mut last = lst.len() - 1;

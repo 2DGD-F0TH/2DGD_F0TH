@@ -1,5 +1,8 @@
+# #![allow(dead_code, unused)]
 const INVINCIBILITY_TIME: f32 = 0.75; // Seconds of invincibility
 // ...
+# struct Game;
+# impl Game {
 fn update(&mut self, dt: f32) {
     let mut inv_time = 0.;
     // ...
@@ -13,3 +16,4 @@ fn update(&mut self, dt: f32) {
         inv_time = inv_time - dt; // We decrease the invincibility time
     }
 }
+# }

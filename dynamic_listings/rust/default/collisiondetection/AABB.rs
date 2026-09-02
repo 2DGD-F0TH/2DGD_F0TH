@@ -1,3 +1,4 @@
+# #![allow(dead_code)]
 struct Point {
     // Rewritten as a memo
     x: u32,

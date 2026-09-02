@@ -1,3 +1,7 @@
+# #![allow(dead_code)]
+# struct Mesh;
+# struct Texture;
+# struct Vector2D;
 struct Common {
     mesh: Mesh,
     texture: Texture,

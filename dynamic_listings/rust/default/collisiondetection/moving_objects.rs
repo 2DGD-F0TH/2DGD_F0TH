@@ -1,3 +1,16 @@
+# //! ```cargo
+# //! [dependencies]
+# //! vector2d = "3.1"
+# //! ```
+#
+# #![allow(dead_code, unused)]
+#
+# type Vector2D = vector2d::Vector2D<f32>;
+#
+# struct Object {
+#     position: Vector2D,
+#     velocity: Vector2D,
+# }
 fn dot_product(u: &Vector2D, v: &Vector2D) -> f32 {
     u.x * v.x + u.y * v.y
 }

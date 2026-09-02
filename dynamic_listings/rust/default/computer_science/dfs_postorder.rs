@@ -1,3 +1,9 @@
+# struct Node {
+#     content: &'static str,
+#     left: Option<Box<Node>>,
+#     right: Option<Box<Node>>,
+# }
+# fn build_example_tree() -> Node { todo!() }
 impl Node {
     fn traverse_postorder(&self) {
         // Step 1: We traverse the left subtree, using recursion;

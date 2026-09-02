@@ -1,5 +1,37 @@
+# //! ```cargo
+# //! [dependencies]
+# //! vector2d = "3.1"
+# //! ```
+#
+# #![allow(dead_code, unused)]
+#
+# type Vector2D = vector2d::Vector2D<f32>;
+#
+# #[derive(Default)]
+# struct Player {
+#     position: Vector2D,
+#     speed: Vector2D,
+#     x_speed: f32,
+#     y_speed: f32,
+# }
+# #[derive(Default)]
+# struct Object {
+#     rectangle: Rectangle,
+# }
+# #[derive(Default)]
+# struct Rectangle {
+#     left: f32,
+#     right: f32,
+#     top: f32,
+#     bottom: f32,
+# }
+# fn collision(_: &Player, _: &Object) -> bool { todo!() }
+#
+# impl Player {
 // Naive collision reaction with rectangles
 fn update(&mut self, dt: f32) {
+# let mut player = Player::default();
+# let object = Object::default();
     // ...
     player.position = player.position + player.speed * dt;
     // Refer to your favourite collision detection and broad/fine passes
@@ -30,3 +62,4 @@ fn update(&mut self, dt: f32) {
         // ...
     }
 }
+# }

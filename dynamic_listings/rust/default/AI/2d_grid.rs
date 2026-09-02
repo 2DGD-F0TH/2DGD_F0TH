@@ -1,3 +1,7 @@
+# #![allow(dead_code)]
+#
+# #[derive(Clone, Default)]
+# struct Tile;
 struct Grid2d {
     grid: Vec<Vec<Tile>>, // A 2D array of pointers
     width: usize,

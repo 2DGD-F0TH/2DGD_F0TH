@@ -1,3 +1,4 @@
+# #![allow(dead_code)]
 struct HttpResponse(&'static str);
 
 struct User {
@@ -6,9 +7,11 @@ struct User {
 }
 
 impl User {
+#   fn new() -> Self { todo!() }
     pub fn can_do_thing(&self) -> bool {
         // Changes according to user permissions
         // ...
+#       todo!()
     }
 }
 
@@ -32,6 +35,9 @@ trait WebPage {
 }
 
 struct WebPageProxy(Box<dyn WebPage>);
+# impl WebPageProxy {
+#   fn new() -> Self { todo!() }
+# }
 
 impl WebPage for WebPageProxy {
     // Represents an authentication proxy for a web page

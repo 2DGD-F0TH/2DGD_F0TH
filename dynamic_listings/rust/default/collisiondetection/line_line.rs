@@ -1,3 +1,4 @@
+# #![allow(dead_code)]
 fn line_line_collision(
     x1: f32,
     y1: f32,

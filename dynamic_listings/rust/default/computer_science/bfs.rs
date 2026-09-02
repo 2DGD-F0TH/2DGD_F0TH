@@ -1,3 +1,9 @@
+# #![allow(dead_code)]
+# struct Node {
+#     content: &'static str,
+#     left: Option<Box<Node>>,
+#     right: Option<Box<Node>>,
+# }
 impl Node {
     fn traverse_bfs(self) {
         // We will use a queue for this algorithm

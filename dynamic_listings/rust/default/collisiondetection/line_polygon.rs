@@ -1,3 +1,18 @@
+# #![allow(dead_code)]
+# struct Point;
+# struct Polygon {
+#     vertices: Vec<Point>,
+# }
+# struct Line {
+#     a: Point,
+#     b: Point,
+# }
+# impl Line {
+#     fn from_points(_: &Point, _: &Point) -> Self { todo!() }
+# }
+# fn polygon_point(_: &Polygon, _: &Point) -> bool { todo!() }
+# fn line_line_collision(_: &Line, _: &Line) -> bool { todo!() }
+
 // ...
 fn line_polygon(line: &Line, poly: &Polygon) -> bool {
     // First of all, let's check if either of the line ends are inside the polygon

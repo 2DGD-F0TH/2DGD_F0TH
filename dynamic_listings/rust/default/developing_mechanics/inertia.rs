@@ -1,3 +1,24 @@
+# //! ```cargo
+# //! [dependencies]
+# //! vector2d = "3.1"
+# //! ```
+#
+# #![allow(dead_code, unused)]
+#
+# type Vector2D = vector2d::Vector2D<f32>;
+#
+# struct Keyboard {
+#     left_arrow_pressed: bool,
+#     right_arrow_pressed: bool,
+#     down_arrow_pressed: bool,
+#     up_arrow_pressed: bool,
+# }
+# static KEYBOARD: Keyboard = Keyboard {
+#     left_arrow_pressed: false,
+#     right_arrow_pressed: false,
+#     down_arrow_pressed: false,
+#     up_arrow_pressed: false
+# };
 // ...
 struct Player {
     input_accel: Vector2D,

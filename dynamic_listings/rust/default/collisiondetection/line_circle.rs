@@ -1,3 +1,4 @@
+# #![allow(dead_code, unused)]
 struct Point {
     x: u32,
     y: u32,
@@ -20,10 +21,12 @@ fn distance(a: &Point, b: &Point) -> f32 {
 
 fn line_point_collision(l: &Line, p: &Point) -> bool {
     // ...
+#   todo!()
 }
 
 fn circle_point_collision(c: &Circle, p: &Point) -> bool {
     // ...
+#   todo!()
 }
 
 fn line_circle_collision(circle: &Circle, line: &Line) -> bool {

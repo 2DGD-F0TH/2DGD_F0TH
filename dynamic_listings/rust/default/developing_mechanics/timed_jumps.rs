@@ -1,3 +1,4 @@
+# #![allow(dead_code)]
 struct Player {
     y_speed: f32,
 }

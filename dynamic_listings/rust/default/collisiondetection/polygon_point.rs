@@ -1,3 +1,16 @@
+# #![allow(dead_code)]
+# struct Point;
+# struct Triangle;
+# struct Rectangle;
+# struct Polygon {
+#     vertices: Vec<Point>,
+# }
+# impl Polygon {
+#     fn calculate_bounding_box(&self) -> Rectangle { todo!() }
+#     fn do_fanning(&self) -> Vec<Triangle> { todo!() }
+# }
+# fn point_rectangle(_: &Rectangle, _: &Point) -> bool { todo!() }
+# fn point_triangle(_: &Triangle, _: &Point) -> bool { todo!() }
 // ...
 fn polygon_point(poly: &Polygon, point: &Point) -> bool {
     // First of all, we get the polygon's bounding box

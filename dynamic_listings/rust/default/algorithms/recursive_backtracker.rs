@@ -1,3 +1,12 @@
+# //! ```cargo
+# //! [dependencies]
+# //! vector2d = "3.1"
+# //! ```
+#
+# #![allow(dead_code, unused)]
+#
+# type Vector2D = vector2d::Vector2D<i32>;
+# fn shuffle_in_place(_: &mut Vec<Vector2D>) {}
 struct Maze {
     width: usize,
     height: usize,

@@ -1,9 +1,26 @@
+# #![allow(dead_code, unused)]
+#
+# #[derive(Default)]
+# struct Point {
+#     x: f32,
+#     y: f32,
+# }
+# struct Triangle;
+# impl Triangle {
+#     fn from_points(_: &Point, _: &Point, _: &Point) -> Self { todo!() }
+# }
+# struct Rectangle;
+# impl Rectangle {
+#     fn from_points(_: &Point, _: &Point) -> Self { todo!() }
+# }
 struct Polygon {
     vertices: Vec<Point>,
 }
 
 impl Polygon {
     pub fn calculate_bounding_box(&self) -> Rectangle {
+# let a = Point::default();
+# let c = Point::default();
         // This function calculates the bounding box
         // -------------------------
         // First we create and bootstrap the variables

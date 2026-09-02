@@ -1,3 +1,26 @@
+# //! ```cargo
+# //! [dependencies]
+# //! vector2d = "3.1"
+# //! ```
+#
+# #![allow(dead_code, unused)]
+#
+# type Vector2D = vector2d::Vector2D<f32>;
+# #[derive(Clone)]
+# struct Player {
+#     y: f32,
+#     x: f32,
+#     on_ground: bool,
+#     width: f32,
+#     height: f32,
+# }
+# impl std::ops::AddAssign<Vector2D> for Player {
+#     fn add_assign(&mut self, rhs: Vector2D) {
+#         todo!()
+#     }
+# }
+# fn snapshot_recation(player_instance: &mut Player, velocity: Vector2D, dt: f32) {
+# let colliding_blocks: Vec<Player> = Vec::new();
 // Snapshot collision reaction
 // All the sprite origins are on the top-left corner of the entity
 let snapshot = player_instance.clone();  // The "snapshot"
@@ -31,3 +54,4 @@ for block in colliding_blocks {
         player_instance.x = block.x + block.width;
     }
 }
+# }

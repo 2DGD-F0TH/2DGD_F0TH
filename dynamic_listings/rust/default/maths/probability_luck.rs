@@ -14,6 +14,7 @@ const POOL: [(Rarity, u8); 4] = [
     (Rarity::Common, 50),
 ];
 
+# fn main() {
 // Our "luck stat": each point gives 1% more chance to get a higher-tier item
 let mut luck = 25;
 
@@ -56,3 +57,4 @@ for x in (0..=3).rev() {
     rebalanced_pool[x].0 = item;
     rebalanced_pool[x].1 = new_probability;
 }
+# }

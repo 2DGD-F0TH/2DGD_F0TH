@@ -1,3 +1,4 @@
+# #![allow(dead_code, unused)]
 struct Point {
     // Rewritten as a memo
     x: u32,
@@ -15,6 +16,7 @@ impl Rectangle {
     // ...
     fn from_points(topleft: &Point, bottomright: &Point) -> Self {
         // ...
+#       todo!()
     }
 
     fn bounding_box(vertices: &[Point]) -> Self {

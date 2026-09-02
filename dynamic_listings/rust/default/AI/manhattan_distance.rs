@@ -1,3 +1,4 @@
+# #![allow(dead_code)]
 struct Tile {
     x: i32,
     y: i32,
