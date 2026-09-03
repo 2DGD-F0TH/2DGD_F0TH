@@ -12,7 +12,7 @@ void findHorizontalMatches(){
             }else{
                 if (matchLength >= minMatchLength){
                     // We need to memorize all the tiles involved in the match
-                    for (int k = column-matchlength; k < column; ++k) {
+                    for (int k = column-matchLength; k < column; ++k) {
                         Tile* tile = matrix[row][k];
                         memorize(tile);
                     }
@@ -26,8 +26,8 @@ void findHorizontalMatches(){
             if (column == rowsize){
                 if (matchLength >= minMatchLength){
                     // We need to memorize all the tiles involved in the match
-                    for (int k = column-matchlength; k < column; ++k) {
-                        Tile* tile = matrix[i][k];
+                    for (int k = column-matchLength; k < column; ++k) {
+                        Tile* tile = matrix[row][k];
                         memorize(tile);
                     }
                 }

@@ -6,7 +6,7 @@ function findVerticalMatches(){
         Tile* lastMatchingTile = nullptr;
         int rowsize = (sizeof matrix / sizeof matrix[0]);
         for (int row = 0; row < rowsize; ++row){
-            Tile currentTile = matrix[row][column]->tile;
+            Tile currentTile = matrix[row][column];
             if (currentTile == lastMatchingTile){
                 matchLength = matchLength + 1;
             }else{
@@ -26,7 +26,7 @@ function findVerticalMatches(){
             if (row == colsize){
                 if (matchLength >= minMatchLength){
                     // We need to memorize all the tiles involved in the match
-                    for (int k = row-matchlength; k < row; ++k){
+                    for (int k = row-matchLength; k < row; ++k){
                         Tile* tile = matrix[k][column];
                         memorize(tile);
                     }

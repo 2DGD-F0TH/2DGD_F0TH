@@ -20,7 +20,7 @@ class Facade{
     public:
         Facade(){
             service1 = FirstService();
-            service2 = FirstService();
+            service2 = SecondService();
         }
 
         bool startAll(){

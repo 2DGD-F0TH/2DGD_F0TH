@@ -52,7 +52,7 @@ while (running){
             }
         }
         if (event.type == KEYRELEASE){
-            if (event.key == RIGHT or event.key == LEFT){
+            if (event.key == RIGHT || event.key == LEFT){
                 movement_direction = 0;
             }
         }

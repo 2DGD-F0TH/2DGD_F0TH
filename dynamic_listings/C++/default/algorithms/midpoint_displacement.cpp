@@ -19,7 +19,7 @@ terrain[31] = std::rand() % MAX + MIN;
 interpolate(terrain, 0, 31);
 
 
-function midpoint_displacement(begin, end, octave) {
+function midpoint_displacement(int begin, int end, int octave) {
     // Get the midpoint
     int midpoint = std::floor((end - begin) / 2);
     // Get the midpoint value
@@ -32,11 +32,11 @@ function midpoint_displacement(begin, end, octave) {
     terrain[midpoint] = value;
     // Interpolate the values between begin and midpoint
     for (i = begin + 1; i < midpoint; ++i) {
-        value[i] = interpolate(terrain, begin, midpoint);
+        terrain[i] = interpolate(terrain, begin, midpoint);
     }
     // Interpolate the values between midpoint and the end
     for (i = midpoint + 1; i < end; ++i) {
-        value[i] = interpolate(terrain, midpoint, end);
+        terrain[i] = interpolate(terrain, midpoint, end);
     }
     // Recursion on the subtree
     if (octave < OCTAVES) {

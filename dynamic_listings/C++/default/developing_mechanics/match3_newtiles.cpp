@@ -12,7 +12,7 @@ std::unordered_map<Tile, int> createNewTiles(){
                 matrix[column][tile] = new_tile;
 
                 // Add this tile to the falling tiles mapping
-                falling_tiles[new_tile] = tile->y;
+                falling_tiles[new_tile] = new_tile->y;
             }
         }
     }

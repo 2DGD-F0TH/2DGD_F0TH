@@ -7,7 +7,7 @@ class EagerObject{
             halved_numbers = new int[numbers.length()];
             // Prepares the halved numbers list
             for (int i=0; i < numbers.length(); i++){
-                halved_numbers[i] = number / 2;
+                halved_numbers[i] = numbers[x] / 2;
             }
         }
 
