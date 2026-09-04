@@ -28,11 +28,10 @@ if collides(obj1, obj2) then
     local vrel = obj2.velocity - obj1.velocity;
     -- Now we calculate s
     local s = dot_product(unit_ucoll, vrel);
-    -- If s > 0, we need to change the velocity of the objects
-    if (s > 0) then
-        local factor = dot_product(s, unit_ucoll);
-        obj2.velocity = scale_vector(factor, obj2.velocity);
-        obj1.velocity = scale_vector(factor, obj1.velocity);
+    -- If s < 0, we need to change the velocity of the objects
+    if (s < 0) then
+        obj2.velocity = obj2.velocity + scale_vector(s, unit_ucoll);
+        obj1.velocity = obj1.velocity + scale_vector(s, unit_ucoll);
     end
     -- ...
 end

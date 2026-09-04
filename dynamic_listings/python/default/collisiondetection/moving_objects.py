@@ -7,10 +7,7 @@ def dot_product(u: Vector2, v: Vector2) -> float:
 
 
 def scale_vector(factor: float, v: Vector2) -> Vector2:
-    return Vector2(
-        x=factor * v.x,
-        y=factor * v.y
-    )
+    return Vector2(x=factor * v.x, y=factor * v.y)
 
 
 def magnitude(v: Vector2) -> float:
@@ -31,11 +28,10 @@ if collides(obj1, obj2):
     vrel: Vector2 = obj2.velocity - obj1.velocity
     # Now we calculate s
     s: float = dot_product(unit_ucoll, vrel)
-    # If s > 0, we need to change the velocity of the objects
-    if s > 0:
-        factor: float = dot_product(s, unit_ucoll)
-        obj2.velocity = scale_vector(factor, obj2.velocity)
-        obj1.velocity = scale_vector(factor, obj1.velocity)
+    # If s < 0, we need to change the velocity of the objects
+    if s < 0:
+        obj2.velocity += scale_vector(s, unit_ucoll)
+        obj1.velocity += scale_vector(s, unit_ucoll)
 
     # ...
 
