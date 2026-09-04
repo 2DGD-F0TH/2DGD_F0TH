@@ -150,3 +150,10 @@ Here's how the code for reacting to the collision of two moving objects looks li
 
 ```{src='collisiondetection/moving_objects' caption='Code for the collision reaction between moving objects'}
 ```
+
+There are a couple of considerations to make with this simplified example:
+
+- The moving objects are assumed to have the same mass. If they don't the calculation will change a bit.
+- The collision is assumed to be "perfectly elastic", that means (in math terms) that the "restitution factor" will always be 1 (none of the impact is "absorbed").
+
+Making a proper physics engine is beyond the scope of this book, so we'll leave it at the simpler version.
