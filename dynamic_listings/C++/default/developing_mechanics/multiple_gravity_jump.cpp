@@ -1,6 +1,6 @@
 const int GRAVITY_ACCELERATION = 10;
 // We consider the jump "peaking" when the speed is between -50 and 50
-const float PEAKING_SPEED = 50
+const float PEAKING_SPEED = 50;
 const float MAX_FALL_VELOCITY = 500;
 const float GRAVITY_FALL_MULTIPLIER = 1.5;
 const float PEAKING_MULTIPLIER = 0.5;

@@ -17,6 +17,6 @@ for (int row = 0; row < HEIGHT; ++ row) {
         // Most colors are made of Red Green and Blue, by placing them at the
         // same value, we get a tone of gray
         Color rand_color = Color(rand_gray_tone, rand_gray_tone, rand_gray_tone);
-        pixel.setColor(rand_color);
+        texture.setColor(row, pixel, rand_color);
     }
 }

@@ -21,7 +21,7 @@ class Maze{
             // Create a 2D matrix containing the maze data
             // False = Path, True = Wall
             for (int i = 0; i < h; i++) {
-                for (int j = 0; j < h; j++) {
+                for (int j = 0; j < w; j++) {
                     cells[i * w + j] = true;  // We fill the array with true
                 }
             }
