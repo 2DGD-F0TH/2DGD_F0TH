@@ -107,6 +107,7 @@ This book comes in various editions, and they come with some caveats.
 - **C++ Edition:** C++ is probably the most used language in game development (along with C#) but it can be really difficult to manage. It has no garbage collection, forcing you to manage the memory manually, and pointers can prove to be a difficult concept for many.
 - **JavaScript Edition:** Javascript is the de-facto "internet language" and its influence is spreading to desktop applications and video games too. Many games now can be played on the browser thanks to it and the HTML5 canvas elements. This is a language that can be very forgiving and frustrating at the same time.
 - **Lua Edition:** Lua is one of the most spread scripting languages in the world of video games. Since it has a very small interpreter, it can be added to a lot of code bases without weighing them down much. It is not a proper object-oriented language, but it has very strong metaprogramming capabilities (where you can "program the programming language"). There are also some libraries that allow for classes and object-oriented concepts to fit in Lua.
+- **Rust Edition:** Rust is the most admired language since it was release. Rust has gained a lot of traction as an alternative to C++ thanks for its performance and focus on memory safety.
 
 Structure of this Book
 ----------------------

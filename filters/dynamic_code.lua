@@ -6,7 +6,8 @@ local SUPPORTED_EXT = {
     lua = ".lua",
     python = ".py",
     javascript = ".js",
-    pseudocode = ".txt"
+    pseudocode = ".txt",
+    rust = ".rs"
 }
 
 function dynamic_codeblock(blk)
@@ -40,6 +41,9 @@ function dynamic_codeblock(blk)
         if language == "pseudocode" then
             -- Workaround to allow pseudocode to be enclosed in frames
             table.insert(code.classes, "sourceCode")
+        elseif language == "rust" then
+            code.text = code.text:gsub("# [^\n]*\n", "")
+            code.text = code.text:gsub("#\n", "")
         end
         if FORMAT ~= "latex" then
             if blk.attributes.caption then

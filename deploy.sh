@@ -12,6 +12,7 @@ deploy(){
     CHANNELS["cpp"]="output/cpp"
     CHANNELS["javascript"]="output/js/"
     CHANNELS["lua"]="output/lua/"
+    CHANNELS["rust"]="output/rust/"
     CHANNELS["complete_collection"]="output/"
 
     # Do the push thingy

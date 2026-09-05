@@ -11,10 +11,11 @@ PDF_TEMPLATE=--pdf-engine=$(LATEX_ENGINE) --template template/template.tex
 EPUB_TEMPLATE=--css template/epub.css --highlight-style pygments --template template/template.xhtml
 VERSION=-M version=`git describe --tags`
 GLADTEX_PKG=gladtex -d "gladtex_imgs" --png -P -p "\usepackage{cancel}\usepackage{gensymb}" -
+RUST_SCRIPT=rust-script
 # Phony targets
 .PHONY: clean all
 
-all: pseudocode python cpp js lua epub_pseudocode epub_python epub_cpp epub_js epub_lua
+all: pseudocode python cpp js lua rust epub_pseudocode epub_python epub_cpp epub_js epub_lua epub_rust
 
 pseudocode: Makefile | output
 	mkdir -p output/pseudocode
@@ -40,6 +41,10 @@ lua: Makefile | output
 	mkdir -p output/lua
 	$(PANDOC_STANDALONE) $(PANDOC_DEFAULT_ARGS) $(CHAPTERS_CMD) $(VERSION) $(PDF_TEMPLATE) -M proglang=lua -o output/lua/Lua_Edition.pdf
 
+rust: Makefile | output
+	mkdir -p output/rust
+	$(PANDOC_STANDALONE) $(PANDOC_DEFAULT_ARGS) $(CHAPTERS_CMD) $(VERSION) $(PDF_TEMPLATE) -M proglang=rust -o output/rust/Rust_Edition.pdf
+
 latex:
 	$(PANDOC_STANDALONE) $(PANDOC_DEFAULT_ARGS) $(CHAPTERS_CMD) $(VERSION) $(PDF_TEMPLATE) -M proglang=pseudocode -o Book_LaTeX.latex
 
@@ -62,6 +67,18 @@ epub_js: Makefile | output
 epub_lua: Makefile | output
 	mkdir -p output/lua
 	$(PANDOC) $(PANDOC_DEFAULT_ARGS) template/epub_addons/front_matter.md template/epub_addons/dedication.md $(CHAPTERS_CMD) $(VERSION) -M proglang="lua" -t json | $(GLADTEX_PKG) | $(PANDOC_STANDALONE) -f json $(EPUB_TEMPLATE) --to=epub -o output/lua/Lua_Edition.epub
+
+epub_rust: Makefile | output
+	mkdir -p output/rust
+	$(PANDOC) $(PANDOC_DEFAULT_ARGS) template/epub_addons/front_matter.md template/epub_addons/dedication.md $(CHAPTERS_CMD) $(VERSION) -M proglang="rust" -t json | $(GLADTEX_PKG) | $(PANDOC_STANDALONE) -f json $(EPUB_TEMPLATE) --to=epub -o output/rust/Rust_Edition.epub
+
+tests_rust: $(addsuffix -test, $(wildcard dynamic_listings/rust/default/*/*.rs))
+.PHONY: tests_rust
+
+%.rs-test: %.rs
+	@sed 's/^# //;s/^#$$//' $^ > $@
+	$(RUST_SCRIPT) --test $@
+	@rm $@
 
 clean:
 	rm -f *.aux *.toc *.lol *.lot *.log *.out *.latex outsourced_descriptions.html gladtex_imgs/* output/*

@@ -1,0 +1,28 @@
+# #![allow(dead_code, unused)]
+#
+# fn main() {
+# let mut speed_y = 0.;
+const GRAVITY_ACCELERATION: f32 = 10.;
+// We consider the jump "peaking" when the speed is between -50 and 50
+const PEAKING_SPEED: f32 = 50.;
+const MAX_FALL_VELOCITY: f32 = 500.;
+const GRAVITY_FALL_MULTIPLIER: f32 = 1.5;
+const PEAKING_MULTIPLIER: f32 = 0.5;
+// ...
+// Are we jumping?
+if speed_y < -PEAKING_SPEED {
+    // We're rising: apply Gravity Normally
+    speed_y = speed_y + GRAVITY_ACCELERATION;
+} else if speed_y > PEAKING_SPEED {
+    // We're falling, enhance gravity
+    speed_y = speed_y + GRAVITY_ACCELERATION * GRAVITY_FALL_MULTIPLIER;
+} else {
+    // Our jump is peaking, lower gravity to give more time
+    speed_y = speed_y + GRAVITY_ACCELERATION * PEAKING_MULTIPLIER;
+}
+// Cap the fall speed
+if speed_y > MAX_FALL_VELOCITY {
+    speed_y = MAX_FALL_VELOCITY;
+}
+// ...
+# }

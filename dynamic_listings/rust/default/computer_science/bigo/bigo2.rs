@@ -1,0 +1,4 @@
+// A simple O(n) algirithm: iterating through a list
+for item in my_list {
+    println!("{item}");
+}
