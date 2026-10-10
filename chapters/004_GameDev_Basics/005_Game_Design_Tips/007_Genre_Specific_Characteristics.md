@@ -90,6 +90,17 @@ Furthermore items can be subject to change, acquiring or losing traits due to en
 
 ### Deck builders
 
-{{placeholder}}
+:::: centering ::::
+![](./images/game_design/cards.svg){width=20%}
+:::::::::::::::::::
 
-<!-- TODO: Talk about deckbuilder games -->
+Deck builders are games where the player's actions and possibilities are dictated partially by a deck of cards (which may contain characters, abilities, moves, attacks, etc...).
+
+These types of games have two layers of strategy involved:
+
+- A micro-strategic element, which entails reacting to the luck of the draw: sometimes you may draw a bad hand and you need to make the best with what you have, and sometimes a really bad draw might spell the end for the run;
+- A macro-strategic element: the player is usually able to decide which cards enter their "virtual deck", which would dictate their overall strategy throughout the game. Sometimes they'll need to change their deck structure to suit new necessities (an enemy immune to their current strategy).
+
+Many deck builder games let the player build their deck as they play, while others (more similar to Trading Card Games) might require the deck to be prepared before the start of a new "run".
+
+Many deck builders share some characteristics and elements with rogue-like/rogue-lite games.
