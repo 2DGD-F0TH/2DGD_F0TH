@@ -145,7 +145,9 @@ Skills Required:
 
 ### Advanced Level
 
-For the advanced level, we will make our alien foes more menacing by introducing movement and making the shoot at random intervals towards our laser cannon. The aliens do not need to accelerate as in the original game (but it's not really difficult to implement).
+For the advanced level, we will make our alien foes more menacing by introducing movement and making them shoot at random intervals towards our laser cannon. The aliens do not need to accelerate as in the original game (but it's not really difficult to implement).
+
+Each shot from the aliens and our ship should now produce a sound.
 
 When an alien touches the ground, we will lose the game. Thus making the game a bit more difficult to manage (as well as to play).
 
@@ -160,13 +162,14 @@ If you separate behaviour from the objects well, with methods, you can use subcl
 Further Skills Required:
 
 - Timers (for the ship movement, and if you want, the bonus ship);
+- Playing sounds;
 - Random number generation (for the bonus ship and the alien bullets);
 - Subclassing;
 - Losing conditions.
 
 ### Master level
 
-For the master level we will make the shields, which are complex to code in the way of the original game, so we will "cheat".
+For the master level we will make the shields, which are complex to code in the way the original game did, so we will "cheat".
 
 Our shields will be "force fields" which can withstand 3 shots before getting disabled: such shots can come from the aliens or our ship. After 5 to 10 seconds, the shields will come back online and ready to stop bullets again.
 
@@ -215,11 +218,19 @@ To make the game a bit more interesting, it could be an idea to implement differ
 - **Multiple-hit Blocks:** They simply require more than one hit to destroy;
 - **Score Blocks:** When destroyed, these blocks drop score items that slowly descend toward the bottom of the screen. If you catch these items with the paddle, you get extra points.
 
+Add some different sounds when the ball hits:
+
+- Each different type of block;
+- The paddle;
+- A wall or the ceiling.
+
+
 Furthermore, the ball should progressively get faster with gameplay, you can either do it every few bounces or just every bounce with the paddle. The choice is yours.
 
 Further Skills Required:
 
 - Managing Object's states;
+- Playing sounds;
 - Subclassing;
 - Managing Game State.
 
@@ -302,6 +313,94 @@ Further Skills Required:
 - Animators;
 - Ray Casting.
 
+Simple Platformer
+=================
+
+Create a simple platformer, much in the style of Mario, Zuul or Sonic, where a character has to jump over obstacles to get to the end.
+
+### Basic Level
+
+This level encompasses the basic game structure: you will start with a single-screen level, loaded from a list of strings. You can use the following structure as a starting point:
+
+```
+###########################
+#             #E          #
+#            #######      #
+#                      ####
+#   ##            ##      #
+#S ####      #########    #
+###########################
+```
+
+All the tiles and the player will be rectangles, so don't worry about animation and sprites yet.
+
+Each `#` symbol defines a walkable tile, the `S` symbol is the tile where the player spawns (start), while the `E` is the goal, spaces are just empty space (air).
+
+Implement simple movement mechanics, jumping and be careful when you jump and bump onto a ceiling: if you stick to the ceiling for a bit, you're doing it wrong (the jump speed should be zeroed out when you hit a ceiling).
+
+Also make sure that you can't jump while mid-air.
+
+When the player reaches the goal tile, you can show a writing on screen saying "You win" or close the game and print the message on console.
+
+Feel free to experiment with various layouts.
+
+Skills required:
+
+- Drawing to a screen;
+- Vectors;
+- Collision detection and reaction;
+- Win conditions;
+- Keyboard Controls;
+- Character statuses (on ground, jumping, falling...);
+- Tile maps.
+
+### Advanced level
+
+In the advanced level you should expand upon the game by changing its core mechanic: drawing the level.
+
+You should strip away the level layout from the code and instead implement the loading from a text file (which you can just call `level.txt`).
+
+You'll have to take care of the minimum mandatory validation, that means:
+
+- Make sure that all the rows of the file have the same length (number of characters);
+- The level has one `S` tile (no more, no less);
+- The level has one `E` tile (no more, no less);
+- The level is a closed rectangle (the first and last row are all `#`), as well as the first and last column.
+
+You will also implement edge leniency (coyote time) and input buffering for the jump button.
+
+When the character jumps, you should play a sound (you can use tools like `sfxr` to generate one, or just grab a public domain one off the internet).
+
+Further skills required:
+
+- File reading;
+- Data validation;
+- Timers (Coyote time and input buffering);
+- Sound playing.
+
+### Master level
+
+For the hardest level, we're taking things up a notch. You will have to add a life system, with 5 lives to start with, and every time the character dies, remove 1 from the life counter. When the counter reaches zero, either show "You lost" on screen, or close the game and show that message on the console.
+
+Lives should be shown as text somewhere on the screen.
+
+Code a new kind of tile, with the symbol `^` that will represent spikes: if the player walks on them, they will die and go back to the beginning.
+
+Be mindful that the player shouldn't die if they merely touch the spikes: they should die only if they fall on them (so touching them from the side is okay).
+
+Refine your level loading algorithm to check for the bare minimum that makes a level solvable: the end tile should be reachable from the start tile (aka not be walled off). You will use the `A*` algorithm for that. You won't need to check if the end tile is actually reachable by the player (for instance if the end is placed too high for the player's jump).
+
+Add a camera system that follows the player, allowing for larger levels to be created, choose your favourite one.
+
+Further skills required:
+
+- Life System;
+- Text writing on screen;
+- Advanced collision reaction;
+- Path finding;
+- Camera systems;
+- Losing conditions.
+
 <!--
 Picross
 =======
@@ -309,11 +408,6 @@ Picross
 {{placeholder}}
  TODO: A simple picross clone, helps people understand matrices better, as well as loading and saving from files
 
-Simple Platformer
-=================
-
-{{placeholder}}
-TODO: A 2D platformer without scrolling (maybe scrolling can be advanced)
 
 Random Dot Gobbler
 ==================
