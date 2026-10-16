@@ -96,9 +96,9 @@ You can learn how to build the book yourself in the Wiki!
 My Stance on AI
 ---------------
 
-My stance on AI has evolved as time passed. You are encouraged to check the newer [AI Policy](AI_POLICY.md).
+This repository has Antagonistic tactics to deter AI contributions: my stance on AI has evolved as time passed. You are encouraged to check the newer [AI Policy](AI_POLICY.md).
 
-This is a mandatory step if you want to contribute.
+**This is a mandatory step if you want to contribute.**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
