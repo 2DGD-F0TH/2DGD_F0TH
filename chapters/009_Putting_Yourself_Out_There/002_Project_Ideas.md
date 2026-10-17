@@ -17,6 +17,8 @@ The projects will be put in order of (perceived) difficulty and each one will us
 
 A title screen for each game is not required or necessary, but if you want to make one, feel free to do so.
 
+I strongly suggest creating a small [Design Document](#GDD) for each game you're making: having everything "on paper" will help you loads and you'll get in the habit of keeping your documentation up to date.
+
 Life
 ----
 
