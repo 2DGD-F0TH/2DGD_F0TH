@@ -11,6 +11,8 @@
             <a href="https://gitlab.com/Penaz/2dgd_f0th">GitLab Repo</a>
             ·
             <a href="https://github.com/2DGD-F0TH/2DGD_F0TH">GitHub Repo</a>
+            ·
+            <a href="https://github.com/2DGD-F0TH/Companion">Companion Repository</a>
     </p>
 </div>
 
